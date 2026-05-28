@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     CONCEPTUAL PHYSICS - TEACHER DASHBOARD / INDEX
+     File: index.html
+
+     Pattern based on the uploaded AP Calculus AB / Precalculus dashboards.
+
+     LINK RULES USED IN THIS DRAFT
+       - Unknown external resources use https://chatgpt.com as placeholder.
+       - Internal resources use relative paths such as notes/u1_1_notes.html.
+       - Textbook section citations are preserved in each section as
+         "Conceptual Physics Textbook: ..." so source sections are easy
+         to find when building notes, investigations, and practice.
+     ============================================================ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptual Physics - Teacher Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <style>
+        :root {
+            --navy: #1F3864;
+            --gold: #C9A84C;
+            --gold-light: #F5EDD5;
+            --gold-mid: #e8d49a;
+            --text: #1a1a1a;
+            --text-muted: #555555;
+            --border: #dddddd;
+            --bg: #ffffff;
+            --bg-subtle: #f7f7f5;
+            --teacher-dark: #2d6a2d;
+            --teacher-mid: #b8d8b8;
+            --teacher-light: #eaf3ea;
+            --textbook-dark: #6a3d00;
+            --textbook-mid: #e2c07a;
+            --textbook-light: #fff7e2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: var(--bg-subtle);
+            color: var(--text);
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .page-wrap { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+        .teacher-banner {
+            background: var(--teacher-dark);
+            color: white;
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 6px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .page-header { border-bottom: 3px solid var(--navy); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+        .page-title { font-size: 26px; font-weight: normal; color: var(--navy); letter-spacing: -0.3px; }
+        .page-subtitle { font-size: 13px; font-family: Arial, sans-serif; color: var(--text-muted); margin-top: 4px; }
+
+        .resources-bar {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 2rem;
+        }
+        .resources-bar-label {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #7a6020;
+            margin-bottom: 8px;
+        }
+        .resources-bar-links { display: flex; flex-wrap: wrap; gap: 7px; }
+        .res-chip {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: var(--navy);
+            text-decoration: none;
+            background: white;
+            padding: 4px 11px;
+            border-radius: 20px;
+            border: 1px solid var(--gold-mid);
+        }
+        .res-chip:hover { background: var(--gold-mid); }
+
+        .unit-block { margin-bottom: 2.5rem; }
+        .unit-header {
+            background: var(--navy);
+            border-radius: 6px 6px 0 0;
+            padding: 0.65rem 1rem;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .unit-header:hover { background: #26447a; }
+        .unit-label {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+        .unit-name { font-size: 16px; font-family: Georgia, serif; color: white; font-weight: normal; flex: 1; }
+        .unit-pacing {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            color: #f4e4ad;
+            white-space: nowrap;
+        }
+        .unit-chevron { font-size: 15px; color: var(--gold); transition: transform 0.18s; flex-shrink: 0; }
+        .unit-chevron.open { transform: rotate(180deg); }
+        .unit-collapsible { display: none; }
+        .unit-collapsible.open { display: block; }
+
+        .unit-meta {
+            background: #f0f3f8;
+            border-left: 1px solid #c5cfe0;
+            border-right: 1px solid #c5cfe0;
+            padding: 0.6rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+        .unit-meta-chip {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: var(--navy);
+            text-decoration: none;
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: white;
+            border: 1px solid #b8c5d8;
+        }
+        .unit-meta-chip:hover { background: #dce6f5; }
+        .unit-meta-chip.teacher { color: var(--teacher-dark); border-color: var(--teacher-mid); background: var(--teacher-light); }
+        .unit-meta-chip.teacher:hover { background: #c8e6c8; }
+
+        .unit-body { border: 1px solid #c5cfe0; border-top: none; border-radius: 0 0 6px 6px; overflow: hidden; }
+        .section-row { border-top: 1px solid var(--border); }
+        .section-row:first-child { border-top: none; }
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.55rem 1rem;
+            background: var(--bg-subtle);
+            cursor: pointer;
+            user-select: none;
+        }
+        .section-head:hover { background: #eef1f7; }
+        .section-num {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: var(--gold);
+            background: var(--navy);
+            padding: 2px 8px;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .section-title { font-size: 13px; font-family: Arial, sans-serif; color: var(--text); flex: 1; }
+        .section-topic {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+        .section-chevron { font-size: 14px; color: var(--text-muted); transition: transform 0.18s; flex-shrink: 0; }
+        .section-chevron.open { transform: rotate(180deg); }
+        .section-body { display: none; padding: 0.6rem 1rem 0.75rem; background: white; border-top: 1px solid var(--border); }
+        .section-body.open { display: block; }
+        .section-note {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: var(--text-muted);
+            margin-bottom: 9px;
+        }
+        .btn-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+        .btn-row:last-child { margin-bottom: 0; }
+        .btn-row-label {
+            font-size: 10px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: var(--text-muted);
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        .r-btn {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            background: var(--bg-subtle);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .r-btn:hover { border-color: var(--navy); color: var(--navy); }
+        .r-btn.primary { border-color: #b8c5d8; color: var(--navy); background: #f0f3f8; font-weight: bold; }
+        .r-btn.primary:hover { background: #dce6f5; }
+        .r-btn.teacher { border-color: var(--teacher-mid); color: var(--teacher-dark); background: var(--teacher-light); }
+        .r-btn.teacher:hover { background: #c8e6c8; }
+        .r-btn.textbook { border-color: var(--textbook-mid); color: var(--textbook-dark); background: var(--textbook-light); }
+        .r-btn.textbook:hover { background: #f2dca6; }
+        .r-btn i { font-size: 13px; }
+
+        @media (max-width: 640px) {
+            .unit-header { align-items: center; flex-wrap: wrap; }
+            .unit-pacing, .section-topic { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-wrap">
+
+    <div class="teacher-banner">
+        <i class="ti ti-lock" aria-hidden="true"></i>
+        &nbsp; Teacher View
+    </div>
+
+    <div class="page-header">
+        <div class="page-title">Conceptual Physics</div>
+        <div class="page-subtitle">Manistee High School &nbsp;&middot;&nbsp; Teacher Dashboard &nbsp;&middot;&nbsp; 8 Units / 5 Sections Each</div>
+    </div>
+
+    <div class="resources-bar">
+        <div class="resources-bar-label">Core Resources</div>
+        <div class="resources-bar-links">
+            <a href="syllabus.html" class="res-chip" target="_blank">Syllabus</a>
+            <a href="year_at_a_glance.html" class="res-chip" target="_blank">Year at a Glance</a>
+            <a href="activity_structures.html" class="res-chip" target="_blank">Activity Structures</a>
+            <a href="physics_curriculum_framework.docx" class="res-chip" target="_blank">Curriculum Framework</a>
+            <a href="https://chatgpt.com" class="res-chip" target="_blank">Conceptual Textbook</a>
+            <a href="https://chatgpt.com" class="res-chip" target="_blank">Hewitt Videos</a>
+            <a href="https://chatgpt.com" class="res-chip" target="_blank">Simulations</a>
+            <a href="https://phet.colorado.edu/" class="res-chip" target="_blank">PhET</a>
+            <a href="https://www.desmos.com/calculator" class="res-chip" target="_blank">Desmos</a>
+            <a href="https://chatgpt.com" class="res-chip" target="_blank">Canvas</a>
+        </div>
+
+        <div class="resources-bar-label" style="margin-top: 10px;">Assessment Plans</div>
+        <div class="resources-bar-links">
+            <a href="assessments/unit_1_assessment_plan.html" class="res-chip" target="_blank">Unit 1</a>
+            <a href="assessments/unit_2_assessment_plan.html" class="res-chip" target="_blank">Unit 2</a>
+            <a href="assessments/unit_3_assessment_plan.html" class="res-chip" target="_blank">Unit 3</a>
+            <a href="assessments/unit_4_assessment_plan.html" class="res-chip" target="_blank">Unit 4</a>
+            <a href="assessments/unit_5_assessment_plan.html" class="res-chip" target="_blank">Unit 5</a>
+            <a href="assessments/unit_6_assessment_plan.html" class="res-chip" target="_blank">Unit 6</a>
+            <a href="assessments/unit_7_assessment_plan.html" class="res-chip" target="_blank">Unit 7</a>
+            <a href="assessments/unit_8_assessment_plan.html" class="res-chip" target="_blank">Unit 8</a>
+        </div>
+    </div>
+
+    <div id="units"></div>
+
+</div>
+
+<script>
+    function studentResources(unitId, sectionId) {
+        const key = 'u' + unitId + '_' + sectionId;
+        return [
+            { label: 'Notes', cls: 'primary', icon: 'ti-notes', href: 'notes/' + key + '_notes.html' },
+            { label: 'Practice Set', cls: 'primary', icon: 'ti-pencil', href: 'practice/' + key + '_practice.html' },
+            { label: 'Investigation', cls: '', icon: 'ti-search', href: 'investigations/' + key + '_investigation.html' },
+            { label: 'Activity 1', cls: '', icon: 'ti-puzzle', href: 'activities/' + key + '_act1.html' },
+            { label: 'Activity 2', cls: '', icon: 'ti-puzzle', href: 'activities/' + key + '_act2.html' },
+            { label: 'Extra Practice', cls: '', icon: 'ti-plus', href: 'practice/' + key + '_extra.html' },
+            { label: 'C.Y.U.', cls: '', icon: 'ti-checkbox', href: 'checks/' + key + '_cyu.html' }
+        ];
+    }
+
+    function outsideResources() {
+        return [
+            { label: 'Video / Demo', icon: 'ti-video', href: 'https://chatgpt.com' },
+            { label: 'Simulation', icon: 'ti-device-gamepad-2', href: 'https://chatgpt.com' },
+            { label: 'Reading Support', icon: 'ti-book', href: 'https://chatgpt.com' },
+            { label: 'Lab Idea', icon: 'ti-flask', href: 'https://chatgpt.com' }
+        ];
+    }
+
+    function teacherResources(unitId, sectionId) {
+        const key = 'u' + unitId + '_' + sectionId;
+        return [
+            { label: 'Bank', icon: 'ti-database', href: 'banks/' + key + '_teacher_bank.html' },
+            { label: 'Notes Teacher', icon: 'ti-chalkboard', href: 'notes/' + key + '_notes_teacher.html' },
+            { label: 'Practice Set 2', icon: 'ti-circle-number-2', href: 'practice/' + key + '_practice_2.html' },
+            { label: 'Practice Set 3', icon: 'ti-circle-number-3', href: 'practice/' + key + '_practice_3.html' },
+            { label: 'Reflection', icon: 'ti-message-2', href: 'reflections/' + key + '_reflection.html' }
+        ];
+    }
+
+    function section(unitId, sectionId, title, textbook) {
+        return {
+            title: title,
+            textbook: textbook,
+            studentResources: studentResources(unitId, sectionId),
+            outsideResources: outsideResources(),
+            teacherResources: teacherResources(unitId, sectionId)
+        };
+    }
+
+    const units = [
+        {
+            id: '1',
+            label: 'Unit 01',
+            name: 'Forces, Motion, and Equilibrium',
+            pacing: '15 days',
+            sections: [
+                section(1, 1, 'Thinking Like a Physicist', '1.1 Scientific Measurements; 1.2 Scientific Methods'),
+                section(1, 2, 'Forces and Newton\'s First Law', '2.3 Newton\'s First Law of Motion; 2.6 Support Force'),
+                section(1, 3, 'Net Force and Vectors', '2.4 Net Force and Vectors'),
+                section(1, 4, 'Equilibrium and Balanced Motion', '2.5 The Equilibrium Rule; 2.7 Equilibrium of Moving Things'),
+                section(1, 5, 'Modeling Forces in the Real World', '2.3-2.7 Newton\'s First Law, net force, vectors, equilibrium, support force')
+            ],
+            meta: metaForUnit(1)
+        },
+        {
+            id: '2',
+            label: 'Unit 02',
+            name: 'Motion and Kinematics',
+            pacing: '15 days',
+            sections: [
+                section(2, 1, 'Motion and Reference Frames', '3.1 Motion Is Relative'),
+                section(2, 2, 'Speed and Velocity', '3.2 Speed; 3.3 Velocity'),
+                section(2, 3, 'Acceleration', '3.4 Acceleration'),
+                section(2, 4, 'Free Fall Motion', '3.5 Free Fall'),
+                section(2, 5, 'Velocity Vectors and Motion Modeling', '3.6 Velocity Vectors')
+            ],
+            meta: metaForUnit(2)
+        },
+        {
+            id: '3',
+            label: 'Unit 03',
+            name: 'Forces and Motion',
+            pacing: '15 days',
+            sections: [
+                section(3, 1, 'Force and Acceleration', '4.1 Force Causes Acceleration; 4.4 Newton\'s Second Law of Motion'),
+                section(3, 2, 'Friction and Real-World Forces', '4.2 Friction; 4.3 Mass and Weight'),
+                section(3, 3, 'Free Fall and Nonfree Fall', '4.5 When Acceleration Is g-Free Fall; 4.6 When Acceleration Is Less Than g-Nonfree Fall'),
+                section(3, 4, 'Newton\'s Third Law and Interactions', '5.1 Forces and Interactions; 5.2 Newton\'s Third Law of Motion; 5.3 Action and Reaction on Different Masses; 5.4 Vectors and the Third Law; 5.5 Summary of Newton\'s Three Laws'),
+                section(3, 5, 'Projectile Motion', '10.1 Projectile Motion')
+            ],
+            meta: metaForUnit(3)
+        },
+        {
+            id: '4',
+            label: 'Unit 04',
+            name: 'Momentum and Energy',
+            pacing: '15 days',
+            sections: [
+                section(4, 1, 'Momentum and Impulse', '6.1 Momentum; 6.2 Impulse; 6.3 Impulse Changes Momentum'),
+                section(4, 2, 'Conservation of Momentum', '6.4 Bouncing; 6.5 Conservation of Momentum; 6.6 Collisions; 6.7 More Complicated Collisions'),
+                section(4, 3, 'Work and Energy', '7.1 Work; 7.2 Potential Energy; 7.3 Kinetic Energy'),
+                section(4, 4, 'Conservation of Energy', '7.4 Work-Energy Theorem; 7.5 Conservation of Energy'),
+                section(4, 5, 'Energy in Society', '7.8 Sources of Energy')
+            ],
+            meta: metaForUnit(4)
+        },
+        {
+            id: '5',
+            label: 'Unit 05',
+            name: 'Waves and Sound',
+            pacing: '15 days',
+            sections: [
+                section(5, 1, 'Vibrations and Wave Properties', '19.1 Good Vibrations; 19.2 Wave Description; 19.3 Wave Motion; 19.4 Wave Speed'),
+                section(5, 2, 'Wave Interactions', '19.5 Wave Interference; 19.6 Doppler Effect'),
+                section(5, 3, 'Nature of Sound', '20.1 Nature of Sound; 20.2 Sound in Air'),
+                section(5, 4, 'Reflection, Refraction, and Resonance', '20.3 Reflection of Sound; 20.4 Refraction of Sound; 20.5 Forced Vibrations; 20.6 Resonance'),
+                section(5, 5, 'Sound Interference and Beats', '20.7 Interference; 20.8 Beats')
+            ],
+            meta: metaForUnit(5)
+        },
+        {
+            id: '6',
+            label: 'Unit 06',
+            name: 'Light and Optics',
+            pacing: '15 days',
+            sections: [
+                section(6, 1, 'Nature of Light', '26.1 Electromagnetic Waves; 26.2 Electromagnetic Wave Velocity; 26.3 The Electromagnetic Spectrum; 26.4 Transparent Materials; 26.5 Opaque Materials; 26.6 Seeing Light-The Eye'),
+                section(6, 2, 'Reflection and Mirrors', '28.1 Reflection; 28.2 Law of Reflection; plane, concave, and convex mirrors extension'),
+                section(6, 3, 'Refraction and Total Internal Reflection', '28.3 Refraction; 28.4 Cause of Refraction; 28.5 Dispersion and Rainbows; 28.6 Total Internal Reflection'),
+                section(6, 4, 'Lenses and Optical Systems', '28.7 Lenses; image formation by a lens'),
+                section(6, 5, 'Optical Applications', '28.1-28.8 Reflection, refraction, lenses, and lens defects synthesis')
+            ],
+            meta: metaForUnit(6)
+        },
+        {
+            id: '7',
+            label: 'Unit 07',
+            name: 'Electricity and Circuits',
+            pacing: '15 days',
+            sections: [
+                section(7, 1, 'Electric Charge and Forces', '22.1 Electricity; 22.2 Electric Charges; 22.3 Conservation of Charge; 22.4 Coulomb\'s Law; 22.5 Conductors and Insulators; 22.6 Charging'),
+                section(7, 2, 'Electric Potential and Current', '22.9 Electric Potential; 23.1 Flow of Charge and Electric Current; 23.2 Voltage Sources'),
+                section(7, 3, 'Resistance and Ohm\'s Law', '23.3 Electrical Resistance; 23.4 Ohm\'s Law'),
+                section(7, 4, 'Power and Electrical Energy', '23.5 Direct Current and Alternating Current; 23.6 Speed and Source of Electrons in a Circuit; 23.7 Electric Power; 16.7 Solar Power'),
+                section(7, 5, 'Complex Electric Circuits', '23.9 Electric Circuits; series circuits; parallel circuits; overloading; safety fuses')
+            ],
+            meta: metaForUnit(7)
+        },
+        {
+            id: '8',
+            label: 'Unit 08',
+            name: 'Magnetism and Electromagnetism',
+            pacing: '15 days',
+            sections: [
+                section(8, 1, 'Magnetism and Magnetic Fields', '24.1 Magnetism; 24.2 Magnetic Poles; 24.3 Magnetic Fields; 24.4 Magnetic Domains'),
+                section(8, 2, 'Electricity and Magnetism', '24.5 Electric Currents and Magnetic Fields'),
+                section(8, 3, 'Electromagnets and Magnetic Forces', '24.6 Electromagnets; 24.7 Magnetic Forces'),
+                section(8, 4, 'Generators and Alternating Current', '25.1 Electromagnetic Induction; 25.2 Faraday\'s Law; 25.3 Generators and Alternating Current'),
+                section(8, 5, 'Modern Electromagnetic Systems', '25.4 Power Production; 25.5 Transformers; 25.7 Power Transmission; synthesis/application')
+            ],
+            meta: metaForUnit(8)
+        }
+    ];
+
+    function metaForUnit(unitId) {
+        return [
+            { label: 'Outline', teacher: false, href: 'outlines/unit_' + unitId + '_outline.html' },
+            { label: 'Progress Tracker', teacher: false, href: 'progress/unit_' + unitId + '_progress.html' },
+            { label: 'Warm Ups', teacher: false, href: 'warmups/unit_' + unitId + '_warmups.html' },
+            { label: 'Textbook Map', teacher: false, href: 'textbook_maps/unit_' + unitId + '_textbook_map.html' },
+            { label: 'All Banks', teacher: true, href: 'banks/unit_' + unitId + '_all_teacher_banks.html' },
+            { label: 'Assessment Plan', teacher: true, href: 'assessments/unit_' + unitId + '_assessment_plan.html' },
+            { label: 'Discourse & Reflection', teacher: true, href: 'reflections/unit_' + unitId + '_reflection.html' }
+        ];
+    }
+
+    function buildUnit(u) {
+        const metaHTML = u.meta.map(function(m) {
+            const cls = m.teacher ? 'unit-meta-chip teacher' : 'unit-meta-chip';
+            return '<a href="' + m.href + '" class="' + cls + '" target="_blank">' + m.label + '</a>';
+        }).join('');
+
+        const sectionsHTML = u.sections.map(function(sec, i) {
+            return buildSection(u.id, i + 1, sec);
+        }).join('');
+
+        const block = document.createElement('div');
+        block.className = 'unit-block';
+        block.innerHTML =
+            '<div class="unit-header" onclick="toggleUnit(this)">' +
+                '<span class="unit-label">' + u.label + '</span>' +
+                '<span class="unit-name">' + u.name + '</span>' +
+                '<span class="unit-pacing">' + u.pacing + '</span>' +
+                '<i class="ti ti-chevron-down unit-chevron" aria-hidden="true"></i>' +
+            '</div>' +
+            '<div class="unit-collapsible">' +
+                '<div class="unit-meta">' + metaHTML + '</div>' +
+                '<div class="unit-body">' + sectionsHTML + '</div>' +
+            '</div>';
+        return block;
+    }
+
+    function buildButton(r, extraClass) {
+        const cls = ['r-btn', r.cls || '', extraClass || ''].join(' ').trim();
+        return '<a href="' + r.href + '" class="' + cls + '" target="_blank">' +
+            '<i class="ti ' + r.icon + '" aria-hidden="true"></i>' + r.label + '</a>';
+    }
+
+    function buildSection(unitId, index, sec) {
+        const num = unitId + '.' + index;
+        const studentBtns = sec.studentResources.map(function(r) { return buildButton(r, ''); }).join('');
+        const outsideBtns = sec.outsideResources.map(function(r) { return buildButton(r, 'textbook'); }).join('');
+        const teacherBtns = sec.teacherResources.map(function(r) { return buildButton(r, 'teacher'); }).join('');
+
+        return '<div class="section-row">' +
+            '<div class="section-head" onclick="toggleSection(this)">' +
+                '<span class="section-num">' + num + '</span>' +
+                '<span class="section-title">' + sec.title + '</span>' +
+                '<span class="section-topic">Textbook: ' + sec.textbook + '</span>' +
+                '<i class="ti ti-chevron-down section-chevron" aria-hidden="true"></i>' +
+            '</div>' +
+            '<div class="section-body">' +
+                '<div class="section-note"><strong>Conceptual Physics Textbook:</strong> ' + sec.textbook + '</div>' +
+                '<div class="btn-row"><div class="btn-row-label">Student resources</div>' + studentBtns + '</div>' +
+                '<div class="btn-row"><div class="btn-row-label">Textbook / outside resources</div>' + outsideBtns + '</div>' +
+                '<div class="btn-row"><div class="btn-row-label">Teacher resources</div>' + teacherBtns + '</div>' +
+            '</div>' +
+        '</div>';
+    }
+
+    function toggleUnit(header) {
+        const collapsible = header.nextElementSibling;
+        const chevron = header.querySelector('.unit-chevron');
+        const isOpen = collapsible.classList.toggle('open');
+        chevron.classList.toggle('open', isOpen);
+    }
+
+    function toggleSection(header) {
+        const body = header.nextElementSibling;
+        const chevron = header.querySelector('.section-chevron');
+        const isOpen = body.classList.toggle('open');
+        chevron.classList.toggle('open', isOpen);
+    }
+
+    const container = document.getElementById('units');
+    units.forEach(function(u) { container.appendChild(buildUnit(u)); });
+</script>
+
+</body>
+</html>
