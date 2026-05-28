@@ -1,0 +1,1 @@
+No required external figures for this generated version. Folder included to preserve standard structure.
