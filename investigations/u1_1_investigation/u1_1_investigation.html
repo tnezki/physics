@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>u1_1_investigation</title>
+  <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};
+</script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.45;color:#222;background:#fff;padding:20px;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+.container{max-width:900px;margin:0 auto;}
+.page-break{page-break-before:always;}
+h1{color:#00003d;font-size:2rem;margin-bottom:8px;}
+h2{color:#00003d;font-size:1.45rem;margin-top:10px;margin-bottom:10px;border-left:5px solid #00003d;padding-left:10px;}
+h3{color:#004d99;font-size:1.1rem;margin-top:8px;margin-bottom:8px;}
+h4{color:#00003d;font-size:1rem;margin:10px 0 6px 0;}
+p{margin-bottom:8px;}
+ul,ol{margin-left:24px;margin-bottom:8px;}
+li{margin-bottom:6px;}
+strong{color:#00003d;}
+.title-page{min-height:9.5in;display:flex;flex-direction:column;justify-content:center;text-align:center;border:4px solid #00003d;padding:42px;break-inside:avoid;page-break-inside:avoid;}
+.title-page .course{font-size:1rem;text-transform:uppercase;letter-spacing:2px;color:#555;margin-bottom:18px;}
+.title-page h1{font-size:2.35rem;line-height:1.15;margin-bottom:18px;}
+.title-page .subtitle{font-size:1.35rem;color:#004d99;font-weight:700;margin-bottom:24px;}
+.title-page .details{font-size:1.05rem;color:#333;margin-top:18px;}
+.header-strip{background:#00003d;color:#fff;padding:10px 14px;margin:0 0 14px 0;font-weight:700;font-size:1.1rem;break-after:avoid;}
+.problem,.teacher-box,.key-point{border:1px solid #777;padding:14px 14px 12px 14px;margin-bottom:14px;break-inside:avoid;page-break-inside:avoid;}
+.problem-number{font-weight:700;color:#00003d;margin-bottom:8px;font-size:1.03rem;}
+.small-note{font-size:.92rem;color:#555;}
+.teacher-note{background:#f7f7f7;border-left:4px solid #777;padding:8px 10px;margin:10px 0;}
+.workspace{width:100%;margin-top:8px;border-top:1px solid #777;break-inside:avoid;page-break-inside:avoid;}
+.workspace-60{height:60px}.workspace-80{height:80px}.workspace-100{height:100px}.workspace-120{height:120px}.workspace-150{height:150px}.workspace-180{height:180px}.workspace-220{height:220px}.workspace-260{height:260px}
+.workspace-label{margin-top:8px;font-size:.85rem;font-weight:600;color:#444;}
+.cut-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0 8px 0;align-items:stretch;}
+.cut-card{border:1.5px dashed #555;padding:12px;min-height:265px;height:265px;display:flex;flex-direction:column;justify-content:flex-start;break-inside:avoid;page-break-inside:avoid;background:#fff;overflow:hidden;}
+.cut-card-title{text-align:center;font-weight:800;color:#00003d;text-transform:uppercase;font-size:1rem;letter-spacing:.4px;margin-bottom:10px;}
+.cut-card p{font-size:1.08rem;line-height:1.35;margin:0;}
+.cut-card-spacer{border:1.5px dashed transparent;min-height:265px;height:265px;}
+.mini-table{width:100%;font-size:1rem;margin:0 auto;border-collapse:collapse;}
+.mini-table th,.mini-table td{padding:6px;border:1px solid #777;text-align:center;}
+.mini-graph{width:100%;max-height:210px;object-fit:contain;margin-top:2px;}
+.equation-card{display:flex;align-items:center;justify-content:center;flex:1;font-size:1.75rem;}
+.cut-line-note{font-size:.95rem;border:1px dashed #555;padding:6px 8px;margin:8px 0;background:#fafafa;}
+.card-page-title{font-weight:800;color:#00003d;margin:4px 0 8px 0;font-size:1.08rem;}
+.rule-box{background:#f7f7f7;border-left:4px solid #00003d;padding:10px;margin:10px 0;}
+.challenge-title{font-size:1.18rem;font-weight:800;color:#00003d;margin-bottom:8px;}
+.given-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0;align-items:stretch;}
+.given-box{border:1px solid #999;padding:10px;break-inside:avoid;page-break-inside:avoid;}
+.given-box h3{margin-top:0;}
+.graph-box{text-align:center;}
+.graph-box img{max-width:100%;max-height:340px;object-fit:contain;}
+table{width:100%;border-collapse:collapse;margin:10px 0;break-inside:avoid;page-break-inside:avoid;}
+th,td{border:1px solid #888;padding:7px;text-align:center;vertical-align:middle;}
+th{background:#eaf1fb;color:#00003d;}
+td.left,th.left{text-align:left;}
+.blank-line{display:inline-block;border-bottom:1px solid #555;min-width:170px;height:1.2em;}
+@media print{body{padding:10px}.container{max-width:100%}.title-page{min-height:9.75in}.cut-card-grid,.given-grid{grid-template-columns:1fr 1fr;gap:10px}.cut-card,.cut-card-spacer{height:265px;min-height:265px}.cut-card{padding:10px}.mini-graph{max-height:205px}.graph-box img{max-height:315px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="title-page">
+      <div class="course">Algebra 1 - Unit 1</div>
+      <h1>Section 1.1 Investigation</h1>
+      <div class="subtitle">Multiple Representations of Relationships</div>
+      <p><strong>Investigation:</strong> The Case of the Missing Representations</p>
+      <p><strong>Time:</strong> 15-20 minutes</p>
+      <p><strong>Format:</strong> Match-up, missing representation challenge, partner talk, and whole-class discussion</p>
+      <div class="details">Learning Target: Connect tables, graphs, equations, and contexts that represent the same relationship.</div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Investigation Directions</div>
+      <div class="problem">
+        <h2>Setup</h2>
+        <ul>
+          <li><strong>Grouping:</strong> Partners or groups of 3.</li>
+          <li><strong>Materials:</strong> Student handout, pencil, and scissors if students physically cut and sort cards.</li>
+          <li><strong>Teacher display:</strong> Project one simple table and ask students what graph, equation, or story could match it.</li>
+          <li><strong>Timing:</strong> 5 minutes for card sorting, 8-10 minutes for missing representation challenges, and 5 minutes for discussion and synthesis.</li>
+        </ul>
+      </div>
+      <div class="problem">
+        <h2>Student Goal</h2>
+        <p>Today you will investigate how one relationship can be shown in different ways.</p>
+        <p style="text-align:center;font-size:1.15rem;">$\text{Context} \qquad \text{Table} \qquad \text{Graph} \qquad \text{Equation}$</p>
+        <p>By the end, you should be able to explain how you know when different representations describe the same relationship.</p>
+      </div>
+      <div class="problem">
+        <h2>Norms for the Investigation</h2>
+        <ul>
+          <li>Match by meaning, not by surface features only.</li>
+          <li>Ask: “What quantities are changing?” and “How are they changing?”</li>
+          <li>Use at least two pieces of evidence before deciding that representations match.</li>
+          <li>Be ready to explain your reasoning to another group.</li>
+        </ul>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Student Investigation Handout</div>
+      <div class="problem">
+        <h2>Part 1: Match-Up Challenge (Cut-Out Cards)</h2>
+        <p>Cut apart the cards. Each relationship has 4 cards that belong together: one context, one table, one graph, and one equation.</p>
+        <ol>
+          <li>Shuffle all cards after cutting.</li>
+          <li>Sort the cards into 3 complete sets.</li>
+          <li>For each set, explain how you know the 4 cards show the same relationship.</li>
+        </ol>
+        <div class="cut-line-note"><strong>Teacher note:</strong> Cards are grouped by type below and scrambled within each type so students must match by meaning.</div>
+        <div class="card-page-title">Context Cards</div>
+        <div class="cut-card-grid">
+          <div class="cut-card"><div class="cut-card-title">Context</div><p>Admission to the fair is \$12, plus \$4 for each ride ticket.</p></div>
+          <div class="cut-card"><div class="cut-card-title">Context</div><p>A phone plan costs \$8 plus \$2 for each gigabyte used.</p></div>
+          <div class="cut-card"><div class="cut-card-title">Context</div><p>A student raises \$3 for each mile walked in a fundraiser.</p></div>
+          <div class="cut-card-spacer"></div>
+        </div>
+      </div>
+      <div class="page-break"></div>
+      <div class="problem">
+        <h2>Part 1: Match-Up Challenge (Cut-Out Cards)</h2>
+        <div class="card-page-title">Table Cards</div>
+        <div class="cut-card-grid">
+          <div class="cut-card"><div class="cut-card-title">Table</div><table class="mini-table"><tr><th>Miles ($x$)</th><th>Money ($y$)</th></tr><tr><td>0</td><td>0</td></tr><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>6</td></tr><tr><td>3</td><td>9</td></tr></table></div>
+          <div class="cut-card"><div class="cut-card-title">Table</div><table class="mini-table"><tr><th>Tickets ($x$)</th><th>Cost ($y$)</th></tr><tr><td>0</td><td>12</td></tr><tr><td>1</td><td>16</td></tr><tr><td>2</td><td>20</td></tr><tr><td>3</td><td>24</td></tr></table></div>
+          <div class="cut-card"><div class="cut-card-title">Table</div><table class="mini-table"><tr><th>Gigabytes ($x$)</th><th>Cost ($y$)</th></tr><tr><td>0</td><td>8</td></tr><tr><td>1</td><td>10</td></tr><tr><td>2</td><td>12</td></tr><tr><td>3</td><td>14</td></tr></table></div>
+          <div class="cut-card-spacer"></div>
+        </div>
+      </div>
+      <div class="page-break"></div>
+      <div class="problem">
+        <h2>Part 1: Match-Up Challenge (Cut-Out Cards)</h2>
+        <div class="card-page-title">Graph Cards</div>
+        <div class="cut-card-grid">
+          <div class="cut-card"><div class="cut-card-title">Graph</div><img class="mini-graph" src="figures/ticket_graph.png" alt="Graph of y equals 4x plus 12"></div>
+          <div class="cut-card"><div class="cut-card-title">Graph</div><img class="mini-graph" src="figures/phone_plan_graph.png" alt="Graph of y equals 2x plus 8"></div>
+          <div class="cut-card"><div class="cut-card-title">Graph</div><img class="mini-graph" src="figures/walkathon_graph.png" alt="Graph of y equals 3x"></div>
+          <div class="cut-card-spacer"></div>
+        </div>
+      </div>
+      <div class="page-break"></div>
+      <div class="problem">
+        <h2>Part 1: Match-Up Challenge (Cut-Out Cards)</h2>
+        <div class="card-page-title">Equation Cards</div>
+        <div class="cut-card-grid">
+          <div class="cut-card"><div class="cut-card-title">Equation</div><div class="equation-card">$y=3x$</div></div>
+          <div class="cut-card"><div class="cut-card-title">Equation</div><div class="equation-card">$y=4x+12$</div></div>
+          <div class="cut-card"><div class="cut-card-title">Equation</div><div class="equation-card">$y=2x+8$</div></div>
+          <div class="cut-card-spacer"></div>
+        </div>
+        <div class="workspace-label">After sorting, write one reason each set belongs together.</div>
+        <div class="workspace workspace-150"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Part 2: Missing Representation Challenge</div>
+      <div class="problem">
+        <div class="challenge-title">Challenge D: Start with a Context and Table</div>
+        <p><strong>Task:</strong> Write an equation that matches the context and table. Then explain how you know.</p>
+        <div class="given-grid">
+          <div class="given-box"><h3>Given Context</h3><p>A water tank starts with 5 gallons. It fills at 2 gallons per minute.</p></div>
+          <div class="given-box"><h3>Given Table</h3><table><tr><th>Minutes ($x$)</th><th>Gallons ($y$)</th></tr><tr><td>0</td><td>5</td></tr><tr><td>1</td><td>7</td></tr><tr><td>2</td><td>9</td></tr><tr><td>3</td><td>11</td></tr></table></div>
+        </div>
+        <p><strong>Your equation:</strong> <span class="blank-line"></span></p>
+        <div class="workspace-label">Explain how the context and table support your equation.</div>
+        <div class="workspace workspace-220"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Part 2: Missing Representation Challenge</div>
+      <div class="problem">
+        <div class="challenge-title">Challenge E: Start with an Equation and Table</div>
+        <p><strong>Task:</strong> Create a real-world context that matches both the equation and the table.</p>
+        <div class="given-grid">
+          <div class="given-box"><h3>Given Equation</h3><p style="font-size:1.6rem;text-align:center;">$y=5x+10$</p></div>
+          <div class="given-box"><h3>Given Table</h3><table><tr><th>Input ($x$)</th><th>Output ($y$)</th></tr><tr><td>0</td><td>10</td></tr><tr><td>1</td><td>15</td></tr><tr><td>2</td><td>20</td></tr><tr><td>3</td><td>25</td></tr></table></div>
+        </div>
+        <div class="workspace-label">Write your context. Make sure your story explains both the starting value and the repeated change.</div>
+        <div class="workspace workspace-260"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Part 2: Missing Representation Challenge</div>
+      <div class="problem">
+        <div class="challenge-title">Challenge F: Start with a Graph and Context</div>
+        <p><strong>Task:</strong> Create a table and write an equation that match the graph and context.</p>
+        <div class="given-grid">
+          <div class="given-box"><h3>Given Context</h3><p>A plant is 6 cm tall and grows 4 cm each week.</p></div>
+          <div class="given-box graph-box"><h3>Given Graph</h3><img src="figures/plant_growth_graph.png" alt="Graph for plant growth relationship"></div>
+        </div>
+        <table><tr><th>Weeks ($x$)</th><th>Height ($y$)</th></tr><tr><td>0</td><td></td></tr><tr><td>1</td><td></td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td></td></tr></table>
+        <p><strong>Your equation:</strong> <span class="blank-line"></span></p>
+        <div class="workspace-label">Explain how the graph supports your table and equation.</div>
+        <div class="workspace workspace-100"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Part 2: Missing Representation Challenge</div>
+      <div class="problem">
+        <div class="challenge-title">Challenge G: Start with a Graph Only</div>
+        <p><strong>Task:</strong> Create a context, a table, and an equation that could match this graph.</p>
+        <div class="given-box graph-box"><h3>Given Graph</h3><img src="figures/mystery_graph.png" alt="Mystery graph with a linear relationship"></div>
+        <div class="workspace-label">Create a context that matches the graph.</div>
+        <div class="workspace workspace-100"></div>
+        <table><tr><th>Input ($x$)</th><th>Output ($y$)</th></tr><tr><td>0</td><td></td></tr><tr><td>1</td><td></td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td></td></tr></table>
+        <p><strong>Your equation:</strong> <span class="blank-line"></span></p>
+        <div class="workspace-label">Explain how your three representations match the graph.</div>
+        <div class="workspace workspace-100"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Part 3: Build the Rule</div>
+      <div class="problem">
+        <p>Use Parts 1 and 2 to complete each statement.</p>
+        <ol>
+          <li>The table shows the relationship by listing ______________________.</li>
+          <li>The graph shows the relationship by plotting ______________________.</li>
+          <li>The equation shows the relationship by giving ______________________.</li>
+          <li>The context shows the relationship by explaining ______________________.</li>
+          <li>Two representations match when they have the same ______________________ between the quantities.</li>
+        </ol>
+        <div class="workspace-label">Final rule in your own words:</div>
+        <div class="workspace workspace-150"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Discussion Questions</div>
+      <div class="problem">
+        <ol>
+          <li>Which representation helped you see the starting value most clearly? Why?</li>
+          <li>Which representation helped you see the repeated change most clearly? Why?</li>
+          <li>How can you tell from a table whether it matches an equation?</li>
+          <li>How can you tell from a graph whether it matches a context?</li>
+          <li>If one representation changes, what has to happen to the other representations?</li>
+        </ol>
+        <div class="workspace-label">Class Notes / Final Discovery</div>
+        <div class="workspace workspace-180"></div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Teaching Resource 1: Teacher Script</div>
+      <div class="teacher-box">
+        <h2>Purpose</h2>
+        <p>This investigation helps students discover that a relationship can be represented with a context, table, graph, and equation. The main conceptual goal is not formal function notation yet. Students should notice that each representation shows the same connection between changing quantities.</p>
+      </div>
+      <div class="teacher-box">
+        <h2>Launch: 2 minutes</h2>
+        <p><strong>Say:</strong> “Today you are solving a matching mystery. Each relationship can wear four different outfits: a story, a table, a graph, and an equation. Your job is to prove which ones belong together.”</p>
+        <p><strong>Display:</strong> Show the table with $x$ values 0, 1, 2 and $y$ values 8, 10, 12. Ask: “What is changing? What stays consistent? What story could this describe?”</p>
+      </div>
+      <div class="teacher-box">
+        <h2>Investigation: 10-12 minutes</h2>
+        <ol>
+          <li><strong>Part 1:</strong> Let students match the complete relationships first. Ask, “What evidence proves these belong together?”</li>
+          <li><strong>Part 2:</strong> Move one challenge page at a time. Students should not need to see all missing representation tasks at once.</li>
+          <li><strong>Challenge D:</strong> Listen for “starts at 5” and “goes up by 2.”</li>
+          <li><strong>Challenge E:</strong> Push students to include a starting value of 10 and a change of 5 per input.</li>
+          <li><strong>Challenge F:</strong> Ask students to connect the $y$-intercept to the plant’s starting height.</li>
+          <li><strong>Challenge G:</strong> Allow different contexts as long as they match the graph’s starting value and repeated change.</li>
+        </ol>
+      </div>
+      <div class="teacher-box">
+        <h2>Expected Student Observations</h2>
+        <ul>
+          <li>The value when $x=0$ appears in the table, graph, equation, and context.</li>
+          <li>The repeated change can be seen in table differences, graph steepness, and the number multiplying $x$.</li>
+          <li>A graph, table, equation, and context can look different but still describe the same relationship.</li>
+        </ul>
+      </div>
+      <div class="teacher-box">
+        <h2>Common Misconceptions to Watch For</h2>
+        <ul>
+          <li>Students may match cards by similar numbers instead of checking the whole relationship.</li>
+          <li>Students may confuse the starting value with the repeated change.</li>
+          <li>Students may write a context that includes the right numbers but does not describe the equation correctly.</li>
+          <li>Students may think the graph is only the drawn points instead of the relationship those points represent.</li>
+        </ul>
+      </div>
+      <div class="teacher-box">
+        <h2>Synthesis: 5 minutes</h2>
+        <div class="teacher-note"><p>Final summary: A relationship can be represented by a context, table, graph, and equation. The representations match when they describe the same changing quantities and the same rule connecting those quantities.</p></div>
+        <p><strong>Closure prompt:</strong> “Choose one relationship from today and explain how all four representations show the same idea.”</p>
+      </div>
+    </section>
+    <div class="page-break"></div>
+
+    <section>
+      <div class="header-strip">Teaching Resource 2: Answer Key</div>
+      <div class="problem">
+        <div class="problem-number">Part 1: Match-Up Challenge</div>
+        <p><strong>Original question:</strong> Cut apart the cards. Each relationship has 4 cards that belong together: one context, one table, one graph, and one equation. Sort the cards into 3 complete sets and explain how you know.</p>
+        <table>
+          <tr><th>Set</th><th>Context</th><th>Table Pattern</th><th>Graph</th><th>Equation</th></tr>
+          <tr><td>Phone Plan</td><td class="left">A phone plan costs \$8 plus \$2 for each gigabyte used.</td><td>$0,8$; $1,10$; $2,12$; $3,14$</td><td>phone_plan_graph.png</td><td>$y=2x+8$</td></tr>
+          <tr><td>Walkathon</td><td class="left">A student raises \$3 for each mile walked in a fundraiser.</td><td>$0,0$; $1,3$; $2,6$; $3,9$</td><td>walkathon_graph.png</td><td>$y=3x$</td></tr>
+          <tr><td>Fair Tickets</td><td class="left">Admission to the fair is \$12, plus \$4 for each ride ticket.</td><td>$0,12$; $1,16$; $2,20$; $3,24$</td><td>ticket_graph.png</td><td>$y=4x+12$</td></tr>
+        </table>
+      </div>
+      <div class="problem">
+        <div class="problem-number">Challenge D</div>
+        <p><strong>Original question:</strong> A water tank starts with 5 gallons. It fills at 2 gallons per minute. The table shows 0 minutes gives 5 gallons, 1 gives 7, 2 gives 9, and 3 gives 11. Write an equation and explain how you know.</p>
+        <p><strong>Answer:</strong> $y=2x+5$. The starting amount is 5 when $x=0$, and the amount increases by 2 gallons each minute.</p>
+      </div>
+      <div class="problem">
+        <div class="problem-number">Challenge E</div>
+        <p><strong>Original question:</strong> Create a real-world context that matches $y=5x+10$ and the table $0,10$; $1,15$; $2,20$; $3,25$.</p>
+        <p><strong>Sample answer:</strong> A club charges a \$10 sign-up fee plus \$5 for each class attended. Let $x$ be the number of classes and $y$ be the total cost.</p>
+      </div>
+      <div class="problem">
+        <div class="problem-number">Challenge F</div>
+        <p><strong>Original question:</strong> A plant is 6 cm tall and grows 4 cm each week. Use the graph to create a table and equation.</p>
+        <table><tr><th>Weeks ($x$)</th><th>Height ($y$)</th></tr><tr><td>0</td><td>6</td></tr><tr><td>1</td><td>10</td></tr><tr><td>2</td><td>14</td></tr><tr><td>3</td><td>18</td></tr></table>
+        <p><strong>Answer:</strong> $y=4x+6$.</p>
+      </div>
+      <div class="problem">
+        <div class="problem-number">Challenge G</div>
+        <p><strong>Original question:</strong> Use the graph to create a context, a table, and an equation.</p>
+        <p><strong>Sample context:</strong> A bike rental costs \$3 to start plus \$5 for each hour.</p>
+        <table><tr><th>Hours ($x$)</th><th>Total ($y$)</th></tr><tr><td>0</td><td>3</td></tr><tr><td>1</td><td>8</td></tr><tr><td>2</td><td>13</td></tr><tr><td>3</td><td>18</td></tr></table>
+        <p><strong>Answer:</strong> $y=5x+3$.</p>
+      </div>
+      <div class="problem">
+        <div class="problem-number">Part 3: Build the Rule</div>
+        <ol>
+          <li>The table shows the relationship by listing <strong>input-output pairs</strong>.</li>
+          <li>The graph shows the relationship by plotting <strong>input-output pairs on a coordinate plane</strong>.</li>
+          <li>The equation shows the relationship by giving <strong>a rule that connects the quantities</strong>.</li>
+          <li>The context shows the relationship by explaining <strong>what the quantities mean in a situation</strong>.</li>
+          <li>Two representations match when they have the same <strong>relationship or rule</strong> between the quantities.</li>
+        </ol>
+      </div>
+      <div class="problem">
+        <div class="problem-number">Discussion Questions</div>
+        <ol>
+          <li>The starting value is often clearest in the context, table at $x=0$, graph intercept, or constant term.</li>
+          <li>The repeated change is often clearest in table differences, graph steepness, or coefficient of $x$.</li>
+          <li>Substitute table values into the equation or check the starting value and repeated change.</li>
+          <li>Check whether the graph’s starting value and direction/rate match the story.</li>
+          <li>The other representations must change so they still describe the same relationship.</li>
+        </ol>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
