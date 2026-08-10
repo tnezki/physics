@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="150" viewBox="0 0 560 150">
+<rect width="560" height="150" fill="white"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#111"/></marker></defs>
+<g font-family="Arial" font-size="14" stroke="#111" fill="none">
+<text x="30" y="25" fill="#111">Before collision</text>
+<rect x="55" y="70" width="70" height="35"/><circle cx="70" cy="110" r="5"/><circle cx="110" cy="110" r="5"/>
+<path d="M130 87 H220" stroke-width="3" marker-end="url(#arrow)"/><text x="60" y="62" fill="#111">Cart A</text>
+<rect x="300" y="70" width="70" height="35"/><circle cx="315" cy="110" r="5"/><circle cx="355" cy="110" r="5"/>
+<path d="M295 87 H235" stroke-width="3" marker-end="url(#arrow)"/><text x="305" y="62" fill="#111">Cart B</text>
+<line x1="420" y1="25" x2="420" y2="130" stroke="#777"/>
+<text x="440" y="25" fill="#111">After</text>
+<rect x="455" y="70" width="85" height="35"/><circle cx="475" cy="110" r="5"/><circle cx="520" cy="110" r="5"/>
+<text x="450" y="62" fill="#111">stuck together</text>
+</g></svg>

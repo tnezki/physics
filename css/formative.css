@@ -1,0 +1,106 @@
+/* ============================================================
+   formative.css — Algebra 1
+   tnezki.github.io/algebra/css/formative.css
+   Path from file: ../../../../css/formative.css
+
+   Depends on: base.css
+   Print-first: each .page = one sheet of paper.
+   ============================================================ */
+
+/* ── PAGE LAYOUT ────────────────────────────────────────────── */
+@page { size: letter; margin: 0.5in; }
+
+body { font-size: 11pt; line-height: 1.38; }
+
+.page {
+    min-height: 10in;
+    page-break-after: always;
+    break-after: page;
+    display: flex;
+    flex-direction: column;
+}
+.page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+}
+
+/* ── HEADER ROW ─────────────────────────────────────────────── */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid var(--navy);
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    flex-shrink: 0;
+    gap: 12px;
+}
+.assessment-title {
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 800;
+}
+.name-line { font-weight: 700; font-size: 13px; white-space: nowrap; }
+.name-line span {
+    display: inline-block;
+    border-bottom: 1px solid var(--text-dark);
+    height: 12px;
+    margin-left: 6px;
+    width: 2.2in;
+    vertical-align: bottom;
+}
+
+/* ── DIRECTIONS / TASK ──────────────────────────────────────── */
+.directions {
+    color: #444;
+    font-size: 10.5pt;
+    margin: 0 0 10px 0;
+    flex-shrink: 0;
+}
+.task {
+    flex: 1;
+    padding: 6px 2px 0 2px;
+}
+.qnum {
+    color: var(--navy);
+    font-size: 14pt;
+    font-weight: 800;
+    margin: 4px 0 6px 0;
+}
+
+/* ── CONTENT COMPONENTS ─────────────────────────────────────── */
+.scenario {
+    background: var(--blue-bg);
+    border-left: 5px solid var(--navy);
+    padding: 8px 10px;
+    margin: 8px 0 12px 0;
+}
+.word-bank {
+    border: 1px solid #aaa;
+    background: #f7f7f7;
+    padding: 8px 10px;
+    margin: 8px 0 12px 0;
+}
+.note  { font-style: italic; color: #333; }
+.tight li { margin-bottom: 4px; }
+
+/* ── DATA TABLE (formative-specific sizing) ─────────────────── */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 10px 0 12px 0;
+}
+.data-table th,
+.data-table td {
+    border: 1px solid var(--border);
+    padding: 7px 8px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11pt;
+}
+.data-table th { font-weight: 800; background: #f4f4f4; }
+.left td, .left th { text-align: left; }
+.data-table-auto { width: auto; margin: 10px auto 12px auto; }
+.data-table-auto th,
+.data-table-auto td { min-width: 0.55in; }

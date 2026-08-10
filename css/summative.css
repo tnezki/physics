@@ -1,0 +1,140 @@
+/* ============================================================
+   summative.css — Algebra 1
+   tnezki.github.io/algebra/css/summative.css
+   Path from file: ../../../../css/summative.css
+
+   Depends on: base.css
+   Print-first: strict 10in pages , 1-2 problems per page.
+   ============================================================ */
+
+/* ── PAGE ───────────────────────────────────────────────────── */
+@page { size: letter; margin: 0.5in; }
+
+:root {
+    --pad:         0.13in;
+    --img-col-max: 3.45in;
+}
+
+body { font-size: 11.5pt; line-height: 1.34; color: var(--text-dark); }
+
+.page {
+    height: 10in;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+    break-after: page;
+}
+.page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+}
+
+/* ── PAGE HEADER ────────────────────────────────────────────── */
+.page-header {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 var(--pad) 4px var(--pad);
+    border-bottom: 2px solid var(--text-dark);
+}
+.page-title   { font-weight: 900; font-size: 13.5pt; color: #000; white-space: nowrap; }
+.name-line    { font-size: 11.5pt; font-weight: 800; white-space: nowrap; }
+.name-line span {
+    display: inline-block;
+    width: 2.6in;
+    height: 13px;
+    border-bottom: 1.5px solid var(--text-dark);
+    margin-left: 6px;
+    vertical-align: bottom;
+}
+
+/* ── PROBLEM LAYOUT ─────────────────────────────────────────── */
+.problem-row {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: row;
+}
+.problem {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 8px var(--pad) var(--pad) var(--pad);
+    align-self: stretch;
+}
+.problem.half        { flex: 1 1 0; min-width: 0; }
+.problem.half + .problem.half { border-left: 1px solid var(--border); }
+.problem.full        { flex: 0 0 100%; width: 100%; }
+
+.problem-number {
+    flex: 0 0 auto;
+    font-weight: 900;
+    color: #000;
+    font-size: 12.5pt;
+    margin-bottom: 5px;
+}
+.section-tag { color: var(--muted); font-size: 10.5pt; font-weight: 800; margin-left: 8px; }
+
+p       { margin-bottom: 6px; }
+ol, ul  { margin-left: 0.24in; margin-bottom: 5px; }
+li      { margin-bottom: 3px; }
+
+/* ── WORKSPACE / ANSWER ─────────────────────────────────────── */
+.ws-area {
+    flex: 1 1 auto;
+    min-height: 0.35in;
+    margin-top: 6px;
+}
+.ans-block {
+    flex: 0 0 auto;
+    margin-top: auto;
+    border-top: 2px solid var(--text-dark);
+    padding-top: 4px;
+}
+.ans-line {
+    min-height: 0.24in;
+    padding: 3px 0 2px 0;
+    border-bottom: 1px solid #ddd;
+}
+.ans-line:last-child { border-bottom: none; }
+.ans-label { font-weight: 900; font-size: 10.5pt; }
+
+/* ── GRAPH / IMAGE (summative-specific) ─────────────────────── */
+.graph-block {
+    flex: 0 0 auto;
+    margin: 6px 0 5px 0;
+    text-align: left;
+}
+.question-graph,
+.answer-plane {
+    display: block;
+    width: 100%;
+    max-width: var(--img-col-max);
+    max-height: 4.0in;
+    height: auto;
+    margin: 0;
+    border: 0;
+    background: var(--bg);
+}
+
+/* ── DATA TABLE ─────────────────────────────────────────────── */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 6px 0 7px 0;
+    flex-shrink: 0;
+}
+.data-table th,
+.data-table td {
+    border: 1px solid var(--border);
+    padding: 4px 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10.5pt;
+}
+.data-table th:first-child,
+.data-table td:first-child { font-weight: 900; width: 0.72in; }
+
+@media print { body { font-size: 11.5pt; } }

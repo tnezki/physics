@@ -1,0 +1,153 @@
+/* ============================================================
+   activity_stations.css — Algebra 1
+   tnezki.github.io/algebra/css/activity_stations.css
+   Path from file: ../../css/activity_stations.css
+
+   Depends on: base.css
+   Font: Arial. Landscape orientation. 2×2 station grid.
+   ============================================================ */
+
+/* ── PAGE / BODY ────────────────────────────────────────────── */
+@page { size: letter landscape; margin: 0; }
+
+:root {
+    --page-w: 11in;
+    --page-h: 8.5in;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #e8e8e8;
+    line-height: 1.18;
+}
+
+/* ── PRINT PAGE ─────────────────────────────────────────────── */
+.page {
+    width: var(--page-w);
+    height: var(--page-h);
+    margin: 0 auto .25in;
+    background: white;
+    padding: .32in .42in .24in;
+    box-shadow: 0 2px 12px rgba(0,0,0,.18);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    position: relative;
+}
+
+/* ── COVER HEADER ───────────────────────────────────────────── */
+.course-header {
+    display: grid;
+    grid-template-columns: 1fr 2.45in;
+    gap: .20in;
+    align-items: end;
+    margin-bottom: .08in;
+}
+.kicker   { font-size: 13pt; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: #4a5568; margin-bottom: .03in; }
+h1        { font-size: 24pt; line-height: 1.0; color: var(--navy); font-weight: 900; margin: 0; }
+.subtitle { font-size: 15pt; font-weight: 800; margin-top: .04in; }
+.meta     { text-align: right; font-size: 12.3pt; line-height: 1.18; }
+.meta b   { font-weight: 900; }
+.rule     { height: 4px; background: var(--navy); margin: .07in 0 .18in; width: 100%; }
+
+.directions-img {
+    border: 1px solid #b6c2d2;
+    border-radius: 7px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.directions-img img { width: 100%; height: auto; max-height: 100%; object-fit: contain; display: block; }
+
+/* ── STATION PAGES ──────────────────────────────────────────── */
+.header {
+    background: var(--navy);
+    color: white;
+    font-size: 21pt;
+    font-weight: 800;
+    padding: .11in .20in;
+    margin-bottom: .12in;
+    border-radius: 4px;
+    line-height: 1.05;
+}
+.header.small { font-size: 18pt; }
+.copy-note {
+    position: absolute;
+    right: .42in;
+    top: .39in;
+    font-size: 9.5pt;
+    font-weight: 800;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+/* ── 2×2 STATION GRID ───────────────────────────────────────── */
+.station-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .10in .13in;
+    flex: 1;
+}
+.station-problem {
+    border: 1.2px solid #222;
+    border-radius: 5px;
+    padding: .08in;
+    font-size: 10.2pt;
+    line-height: 1.23;
+    break-inside: avoid;
+    overflow: hidden;
+    background: white;
+}
+.station-problem h3 { font-size: 11.5pt; color: var(--navy); margin-bottom: .04in; }
+.station-problem p  { margin: 0 0 .045in 0; }
+
+.label { font-size: 8.4pt; letter-spacing: .05em; text-transform: uppercase; color: #555; font-weight: 800; margin-bottom: .035in; }
+
+/* ── FIGURE / IMAGE ─────────────────────────────────────────── */
+.figure       { text-align: center; margin: .04in auto; width: 100%; }
+.figure img   { display: block; max-width: 100%; max-height: 2.65in; object-fit: contain; margin: 0 auto; border: 0; }
+.figure.wide img { max-height: 2.35in; }
+
+/* ── VALUE TABLE ────────────────────────────────────────────── */
+.values             { border-collapse: collapse; margin: .07in auto; font-size: 9.3pt; }
+.values th,
+.values td          { border: 1px solid #555; padding: .035in .065in; text-align: center; }
+.values th          { font-weight: 800; background: white; }
+
+/* ── SOLUTION LIST PAGE ─────────────────────────────────────── */
+.solution-list  { font-size: 11.2pt; line-height: 1.30; flex: 1; overflow: hidden; }
+.solution-item  { border-bottom: 1px solid #bbb; padding: .07in 0; break-inside: avoid; }
+.solution-item h3       { font-size: 12.2pt; color: var(--navy); margin-bottom: .025in; }
+.solution-item .question { font-size: 10.5pt; color: #333; margin-bottom: .035in; }
+
+/* ── EXIT TICKET ────────────────────────────────────────────── */
+.exit-page    { padding: .18in .38in .14in; display: block; }
+.exit-title   { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #111; padding-bottom: .04in; margin-bottom: .07in; }
+.exit-title .left { font-size: 11pt; font-weight: 800; color: #333; }
+.exit-title h1    { font-size: 22pt; }
+.exit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+}
+.exit-item { border: 1px solid #888; padding: .07in .09in; font-size: 14pt; line-height: 1.25; background: white; }
+.exit-item .label { font-size: 7.5pt; color: #555; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; margin-bottom: .02in; }
+.exit-key         { font-size: 13pt; border-top: 2px solid #111; padding-top: .05in; margin-top: .07in; }
+.exit-key ol      { margin-left: .22in; columns: 2; column-gap: .35in; }
+.exit-key li      { margin-bottom: .02in; }
+.page-footer      { padding-top: .08in; display: flex; justify-content: space-between; font-size: 7.5pt; color: #111; }
+
+/* ── PRINT ──────────────────────────────────────────────────── */
+@media print {
+    body  { background: white; }
+    .page { margin: 0; box-shadow: none; }
+    .page:last-child { page-break-after: auto; break-after: auto; }
+}

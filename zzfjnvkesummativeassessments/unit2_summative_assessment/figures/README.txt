@@ -1,0 +1,1 @@
+No external figures required for this version. Folder included to match standard structure.

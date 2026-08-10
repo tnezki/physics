@@ -1,0 +1,87 @@
+/* ============================================================
+   bank.css — Algebra 1
+   tnezki.github.io/algebra/css/bank.css
+   Path from file: ../../../../css/bank.css
+
+   Depends on: base.css
+   ============================================================ */
+
+/* ── BANK INTRO ─────────────────────────────────────────────── */
+.bank-intro {
+    border: 2px solid var(--navy);
+    padding: 12px 14px;
+    margin: 12px 0 16px 0;
+    background: var(--blue-bg);
+}
+
+/* ── DOK SECTIONS (shared pattern with assessment_plan) ─────── */
+.dok-bar {
+    background: #000;
+    color: #fff;
+    font-weight: 900;
+    font-size: 15pt;
+    padding: 9px 12px;
+    margin: 18px 0 10px 0;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+.dok-method-card {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    margin: 10px 0 16px 0;
+    background: var(--bg);
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* ── ASSESSMENT CARDS ───────────────────────────────────────── */
+.assessment-card {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    margin: 12px 0;
+    background: var(--bg);
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.assessment-card p  { margin-bottom: 7px; }
+.assessment-card ol,
+.assessment-card ul { margin-left: 26px; }
+
+.problem-number {
+    font-weight: 900;
+    color: var(--navy);
+    font-size: 13pt;
+    margin-bottom: 8px;
+}
+.problem-meta {
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 10.5pt;
+    margin-left: 8px;
+}
+.performance-notes {
+    border-left: 5px solid #444;
+    background: #f7f7f7;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 10pt;
+}
+.lower-alpha { list-style-type: lower-alpha; }
+
+/* ── SECTION HEAD ───────────────────────────────────────────── */
+.section-head {
+    border: 2px solid var(--navy);
+    background: var(--blue-bg);
+    padding: 12px 14px;
+    margin: 18px 0 12px 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* ── WORKSPACE NOTE ─────────────────────────────────────────── */
+.workspace-note {
+    font-size: 9.5pt;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 6px;
+}

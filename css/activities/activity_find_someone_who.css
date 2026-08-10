@@ -1,0 +1,133 @@
+/* ============================================================
+   activity_find_someone_who.css — Algebra 1
+   tnezki.github.io/algebra/css/activity_find_someone_who.css
+   Path from file: ../../css/activity_find_someone_who.css
+
+   Depends on: base.css
+   Font: Arial. Portrait orientation.
+   Signature lines, worksheet problems, exit ticket.
+   ============================================================ */
+
+/* ── PAGE / BODY ────────────────────────────────────────────── */
+@page { size: letter; margin: .35in; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #e8e8e8;
+    line-height: 1.22;
+}
+
+/* ── PRINT PAGE ─────────────────────────────────────────────── */
+.page {
+    width: 8.5in;
+    min-height: 10.3in;
+    margin: 0 auto .25in;
+    background: white;
+    padding: .32in .42in .30in;
+    box-shadow: 0 2px 12px rgba(0,0,0,.18);
+    page-break-after: always;
+    break-after: page;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── COVER HEADER ───────────────────────────────────────────── */
+.course-header {
+    display: grid;
+    grid-template-columns: 1fr 2.35in;
+    gap: .20in;
+    align-items: end;
+    margin-bottom: .08in;
+}
+.kicker   { font-size: 12.5pt; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: #4a5568; margin-bottom: .03in; }
+h1        { font-size: 24pt; line-height: 1.0; color: var(--navy); font-weight: 900; margin: 0; }
+.subtitle { font-size: 15pt; font-weight: 800; margin-top: .04in; }
+.meta     { text-align: right; font-size: 11.6pt; line-height: 1.18; }
+.meta b   { font-weight: 900; }
+.rule     { height: 4px; background: var(--navy); margin: .07in 0 .14in; width: 100%; }
+
+.directions-img { border: 1px solid #b6c2d2; border-radius: 7px; overflow: hidden; display: flex; align-items: flex-start; justify-content: center; }
+.directions-img img { width: 100%; height: auto; max-height: 8.9in; object-fit: contain; display: block; }
+.page-footer { position: absolute; left: .42in; right: .42in; bottom: .14in; display: flex; justify-content: space-between; font-size: 7.5pt; color: #111; }
+
+/* ── WORKSHEET PAGES ────────────────────────────────────────── */
+.worksheet       { overflow: visible; min-height: auto; }
+.worksheet-title { font-size: 24pt; color: var(--navy); font-weight: 900; margin-bottom: .04in; }
+.intro           { font-size: 10.8pt; color: #444; margin-bottom: .10in; }
+
+/* ── SECTION LABEL ──────────────────────────────────────────── */
+.section-label {
+    background: var(--navy);
+    color: white;
+    font-weight: 900;
+    font-size: 13.5pt;
+    padding: .09in .14in;
+    margin: .18in 0 .12in;
+    border-radius: 4px;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+/* ── PROBLEM CARD ───────────────────────────────────────────── */
+.problem {
+    border: 1.4px solid #222;
+    border-left: 8px solid var(--navy);
+    padding: .12in .16in .10in;
+    margin-bottom: .15in;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: white;
+}
+.problem-number { font-weight: 900; font-size: 15pt; color: var(--navy); margin-bottom: .025in; }
+
+/* ── SIGNATURE LINE ─────────────────────────────────────────── */
+.signature-line {
+    font-size: 10.3pt;
+    font-weight: 800;
+    color: #333;
+    margin: 0 0 .08in 0;
+    padding-bottom: .05in;
+    border-bottom: 1px solid #bbb;
+}
+.signature-line span {
+    display: inline-block;
+    width: 3.2in;
+    border-bottom: 1px solid #111;
+    height: .12in;
+}
+
+/* ── PROBLEM CONTENT ────────────────────────────────────────── */
+.tag            { font-size: 8.5pt; letter-spacing: .05em; text-transform: uppercase; color: #555; font-weight: 900; margin-bottom: .035in; }
+.problem p      { font-size: 12.2pt; margin: 0 0 .075in 0; }
+
+/* ── GRAPH BLOCK ────────────────────────────────────────────── */
+.graph-block      { margin: .06in auto; text-align: center; }
+.graph-block img  { display: block; margin: 0 auto; max-width: 4.4in; max-height: 3.0in; width: auto; height: auto; border: 1px solid #ccc; background: white; }
+.workspace-label  { font-size: 9.5pt; font-weight: 800; color: #444; margin-top: .07in; }
+.workspace        { height: 1.35in; border: 1px dashed #999; }
+
+/* ── EXIT TICKET ────────────────────────────────────────────── */
+.exit-page { padding: .22in .38in .18in; min-height: 10.3in; }
+.exit-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid #111;
+    padding-bottom: .05in;
+    margin-bottom: .08in;
+}
+.exit-title .left { font-size: 11pt; font-weight: 800; color: #333; }
+.exit-title h1    { font-size: 24pt; }
+.exit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 7.6in; }
+.exit-item { border: 1px solid #888; padding: .08in .10in; font-size: 13.5pt; line-height: 1.22; background: white; min-height: .95in; }
+.exit-item:nth-child(odd)  { border-right: 0; }
+.exit-item:nth-child(n+3)  { border-top: 0; }
+.exit-item .label { font-size: 7.5pt; color: #555; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; margin-bottom: .025in; }
+
+/* ── PRINT ──────────────────────────────────────────────────── */
+@media print {
+    body  { background: white; }
+    .page { margin: 0; box-shadow: none; min-height: auto; }
+    .page:last-child { page-break-after: auto; break-after: auto; }
+}

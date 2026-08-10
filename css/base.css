@@ -1,0 +1,183 @@
+/* ============================================================
+   base.css — Algebra 1 Shared Foundation
+   tnezki.github.io/algebra/css/base.css
+
+   DO NOT edit structure or variables without updating all
+   per-type CSS files that depend on these values.
+
+   Included by: assessment_plan.css, bank.css, formative.css,
+   summative.css, practice_set.css, notes.css, progress_tracker.css,
+   activity_projector.css, activity_stations.css,
+   activity_find_someone_who.css, warmup.css, investigation.css
+   ============================================================ */
+
+/* ── DESIGN TOKENS ─────────────────────────────────────────── */
+:root {
+    --navy:       #00003d;
+    --navy-mid:   #004d99;
+    --blue-light: #eaf1fb;
+    --blue-bg:    #f8fbff;
+    --border:     #777;
+    --border-light: #ccc;
+    --text:       #222;
+    --text-dark:  #111;
+    --muted:      #555;
+    --bg:         #fff;
+}
+
+/* ── RESET ──────────────────────────────────────────────────── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ── PAGE / PRINT ───────────────────────────────────────────── */
+@page { size: letter; margin: 0.45in; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.45;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.container  { max-width: 980px; margin: 0 auto; }
+.page-break { page-break-before: always; break-before: page; }
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────────── */
+h1 {
+    color: var(--navy);
+    font-size: 26pt;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+h2 {
+    color: var(--navy);
+    font-size: 17pt;
+    margin: 18px 0 10px 0;
+    border-left: 6px solid var(--navy);
+    padding-left: 10px;
+}
+h3 { color: var(--navy-mid); font-size: 13pt; margin: 12px 0 6px 0; }
+h4 { color: var(--navy); font-size: 11pt; margin-bottom: 6px; }
+
+p          { margin: 6px 0; }
+ol, ul     { margin: 6px 0 8px 28px; }
+li         { margin-bottom: 4px; }
+blockquote {
+    border-left: 5px solid var(--border);
+    margin: 8px 0 10px 10px;
+    padding: 6px 10px;
+    background: #f7f7f7;
+    font-style: italic;
+}
+.small-note { font-size: 9.5pt; color: var(--muted); font-style: italic; }
+
+/* ── TABLES ─────────────────────────────────────────────────── */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0 14px 0;
+}
+th, td {
+    border: 1px solid var(--border);
+    padding: 7px 8px;
+    vertical-align: top;
+}
+th {
+    background: var(--blue-light);
+    color: var(--navy);
+    font-weight: 800;
+    text-align: left;
+}
+
+/* centered data table — values, patterns, sequences */
+table.values,
+.table-block {
+    width: auto;
+    margin: 10px auto 12px auto;
+}
+table.values td, table.values th,
+.table-block td, .table-block th {
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+table.values th,
+.table-block th {
+    background: var(--blue-light);
+    color: var(--navy);
+    font-weight: 800;
+}
+
+/* ── IMAGES ─────────────────────────────────────────────────── */
+.graph-block,
+.figure-block {
+    margin: 10px 0 8px 0;
+    text-align: center;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.graph-block img,
+.figure-block img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border-light);
+    background: var(--bg);
+    display: block;
+    margin: 0 auto;
+}
+
+/* image size modifiers — xxxs through xxxl */
+.graph-xxxs img { max-width: 1.2in; }
+.graph-xxs  img { max-width: 1.8in; }
+.graph-sm   img { max-width: 2.3in; }
+.graph-md   img { max-width: 3.0in; }
+.graph-lg   img { max-width: 3.8in; }
+.graph-xl   img { max-width: 4.5in; }
+.graph-xxl  img { max-width: 5.2in; }
+.graph-xxxl img { max-width: 6.5in; }
+
+/* ── WORKSPACES ─────────────────────────────────────────────── */
+.workspace,
+.workspace-80,
+.workspace-100,
+.workspace-120,
+.workspace-140,
+.workspace-160,
+.workspace-180,
+.workspace-200,
+.workspace-220,
+.workspace-240,
+.workspace-260,
+.workspace-300,
+.workspace-350,
+.workspace-400 {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px dashed #aaa;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.workspace     { height: 300px; }
+.workspace-80  { height: 80px;  }
+.workspace-100 { height: 100px; }
+.workspace-120 { height: 120px; }
+.workspace-140 { height: 140px; }
+.workspace-160 { height: 160px; }
+.workspace-180 { height: 180px; }
+.workspace-200 { height: 200px; }
+.workspace-220 { height: 220px; }
+.workspace-240 { height: 240px; }
+.workspace-260 { height: 260px; }
+.workspace-300 { height: 300px; }
+.workspace-350 { height: 350px; }
+.workspace-400 { height: 400px; }
+
+/* ── PRINT OVERRIDES ────────────────────────────────────────── */
+@media print {
+    body  { font-size: 10.5pt; }
+    h1    { font-size: 24pt;   }
+    h2    { font-size: 16pt;   }
+}
