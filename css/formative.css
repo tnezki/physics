@@ -132,3 +132,14 @@ body.unit-2 .figure-wide img, body.unit-3 .figure-wide img { max-width: 5.15in; 
     body.unit-2 .figure-row img, body.unit-3 .figure-row img { max-width: 3.5in; }
     body.unit-2 .figure-wide img, body.unit-3 .figure-wide img { max-width: 4.8in; }
 }
+
+/* ── UNIT 4 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 4's original inline CSS used a size step up again from
+   Units 2–3 (not the same tier, so it gets its own selector
+   rather than joining theirs). */
+body.unit-4 .figure-row img { max-width: 3.85in; }
+body.unit-4 .figure-wide img { max-width: 5.2in; }
+@media print {
+    body.unit-4 .figure-row img { max-width: 3.55in; }
+    body.unit-4 .figure-wide img { max-width: 4.9in; }
+}
