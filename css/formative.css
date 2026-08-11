@@ -143,3 +143,48 @@ body.unit-4 .figure-wide img { max-width: 5.2in; }
     body.unit-4 .figure-row img { max-width: 3.55in; }
     body.unit-4 .figure-wide img { max-width: 4.9in; }
 }
+
+/* ── UNIT 5 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 5's original template (converted from a differently-named
+   but functionally equivalent markup — see conversion notes) used
+   a much larger figure width than any prior unit, and — new for
+   Unit 5 — also constrains max-height (its images are wider/
+   flatter than earlier units' figures). Unit 5 has no figure-wide
+   equivalent; instead it uses .smallfig on a second figure-row to
+   shrink it when two figures appear together in one task. */
+body.unit-5 .figure-row img { max-width: 5.9in; max-height: 2.7in; }
+body.unit-5 .figure-row.smallfig img { max-height: 2.2in; }
+@media print {
+    body.unit-5 .figure-row img { max-width: 6.3in; max-height: 2.6in; }
+}
+
+/* ── UNIT 6 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 6 used the same design family as Unit 5's original template
+   (before conversion) but with its own sizing. Every image in
+   Unit 6's 16 files used its smaller "mini" size (mapped here to
+   .figure-row); its larger "figure" size was defined in the
+   original inline CSS but never actually applied to any image, so
+   it's omitted rather than guessed at. */
+body.unit-6 .figure-row img { max-width: 5.6in; max-height: 2.7in; }
+@media print {
+    body.unit-6 .figure-row img { max-width: 5.4in; max-height: 2.5in; }
+}
+
+/* ── UNIT 7 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 7 used the same design family as Units 5–6's originals
+   (before conversion) with its own sizing — every image in its
+   16 files used this single figure size (no mini/smallfig
+   variant). */
+body.unit-7 .figure-row img { max-width: 6.2in; max-height: 2.7in; }
+@media print {
+    body.unit-7 .figure-row img { max-width: 6.4in; max-height: 2.9in; }
+}
+
+/* ── UNIT 8 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 8 used the same design family as Units 5–7's originals
+   (before conversion) with its own sizing — every image in its
+   16 files used this single figure size. */
+body.unit-8 .figure-row img { max-width: 5.9in; max-height: 3.1in; }
+@media print {
+    body.unit-8 .figure-row img { max-width: 5.7in; max-height: 3in; }
+}
