@@ -107,6 +107,11 @@ table.values th { font-weight: 900; background: #f2f2f2; }
    Used to place two figure-row blocks side by side within a task. */
 .grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
 
+/* ── SMALL-CAPS LABEL (introduced in Unit 3, unused so far) ────
+   Defined in Unit 3's original inline CSS but not applied in any
+   of its 16 files; kept here in case a later unit uses it. */
+.smallcaps { font-weight: 800; text-transform: uppercase; font-size: 9pt; }
+
 /* ── PRINT OVERRIDES ────────────────────────────────────────── */
 @media print {
     body { font-size: 10.8pt; }
@@ -115,13 +120,15 @@ table.values th { font-weight: 900; background: #f2f2f2; }
     .figure-wide img { max-width: 4.65in; }
 }
 
-/* ── UNIT 2 FIGURE-SIZE OVERRIDE ───────────────────────────────
-   Unit 2's original inline CSS used larger figure dimensions
-   than Unit 1. Applied via a body class so the shared default
-   above stays Unit 1's sizing. */
-body.unit-2 .figure-row img { max-width: 3.75in; }
-body.unit-2 .figure-wide img { max-width: 5.15in; }
+/* ── LARGE FIGURE-SIZE OVERRIDE (Units 2–3 so far) ─────────────
+   Units 2 and 3's original inline CSS both used this same larger
+   figure sizing than Unit 1. Applied via a body class so the
+   shared default above stays Unit 1's sizing. Add further
+   body.unit-N selectors here for any later unit that matches
+   this same sizing instead of Unit 1's. */
+body.unit-2 .figure-row img, body.unit-3 .figure-row img { max-width: 3.75in; }
+body.unit-2 .figure-wide img, body.unit-3 .figure-wide img { max-width: 5.15in; }
 @media print {
-    body.unit-2 .figure-row img { max-width: 3.5in; }
-    body.unit-2 .figure-wide img { max-width: 4.8in; }
+    body.unit-2 .figure-row img, body.unit-3 .figure-row img { max-width: 3.5in; }
+    body.unit-2 .figure-wide img, body.unit-3 .figure-wide img { max-width: 4.8in; }
 }
