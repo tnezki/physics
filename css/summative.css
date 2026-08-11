@@ -12,7 +12,17 @@
    units 1–8 (both are supported so this one file works for all):
      - legacy 2x2 grid:      .frgrid / .frbox / .num
      - current sheet table:  .fr-sheet-page / .fr-sheet-table / .fr-num
+
+   @page margin is set to .5in (not 0): margin at this level is
+   applied by the print engine to every physical sheet, including
+   pages created when content naturally overflows mid-section
+   (e.g. a 16-question test version that runs onto a 2nd or 3rd
+   sheet). Padding on .page only applies once, at the top of that
+   one element — it does NOT repeat on overflow continuation
+   pages, so the page margin has to live here instead.
    ============================================================ */
+
+@page { size: letter; margin: .5in; }
 
 * { box-sizing: border-box; }
 
@@ -27,7 +37,6 @@ body {
 
 /* ── PAGE CONTAINER ─────────────────────────────────────────── */
 .page {
-    padding: .38in .45in;
     page-break-after: always;
     min-height: 10.6in;
 }
@@ -96,13 +105,14 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 .bubbles { letter-spacing: 7px; white-space: nowrap; }
 
 /* ── FR WORK PAGE — legacy 2x2 grid (Units 1–3) ──
-     No gap, no all-sides border on .frbox — selective borders on
-     child cells create the cross divider instead. ── */
+     Own full page, back side of the answer sheet. No gap, no
+     all-sides border on .frbox — selective borders on child cells
+     create the cross divider instead. ── */
 .frgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 9.4in;
+    height: 9.1in;
     margin-top: .1in;
 }
 .frbox { padding: 8px; font-size: 14pt; }
@@ -112,33 +122,27 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 /* frbox:nth-child(4) — no border; outer page edge serves as boundary */
 .frbox .num { font-weight: bold; font-size: 16pt; }
 .fr-work-header { font-size: 9.5pt; margin: 0; }
-.fr-work-page { padding: .22in .43in; min-height: auto; }
-.fr-work-page .fr-work-header { font-size: 9pt; margin: 0 0 4px 0; padding: 0; }
-.fr-work-page .frgrid { height: 9.7in; margin-top: 0; }
 
-/* ── FR ANSWER SHEET — current table layout (Units 4–8) ─────── */
+/* ── FR ANSWER SHEET — current table layout (Units 4–8) ──
+     Own full page, back side of the answer sheet. Sizing comes
+     from @page margin (above) plus document flow — no fixed
+     width/height/padding here, so it behaves like a normal .page
+     and gets the same per-sheet margin on every printed page. */
 .fr-sheet-page {
-    width: 8.5in;
-    height: 11in;
-    padding: .10in;
-    box-sizing: border-box;
     page-break-before: always;
     page-break-after: always;
 }
 .fr-sheet-header { font-size: 8pt; margin: 0 0 3px 2px; }
-.fr-sheet-table { width: 100%; height: 10.65in; border-collapse: collapse; table-layout: fixed; }
+.fr-sheet-table { width: 100%; height: 9.5in; border-collapse: collapse; table-layout: fixed; }
 .fr-sheet-table td { border: 1px solid #111; vertical-align: top; padding: 6px; width: 50%; height: 50%; }
 .fr-num { font-size: 10pt; font-weight: 700; }
 
 /* ── PRINT OVERRIDES ────────────────────────────────────────── */
 @media print {
-    .page { padding: .35in .43in; min-height: auto; }
+    .page { min-height: auto; }
     body { font-size: 10.2pt; }
     .q { margin-bottom: 5px; }
     h1 { font-size: 17pt; }
     .directions { font-size: 9pt; }
     .no-print { display: none; }
-    .fr-work-page { padding: .22in .43in; }
-    .fr-sheet-page { width: 8.5in; height: 11in; padding: .10in; }
-    .fr-sheet-table { height: 10.65in; }
 }
