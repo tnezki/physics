@@ -188,3 +188,40 @@ body.unit-8 .figure-row img { max-width: 5.9in; max-height: 3.1in; }
 @media print {
     body.unit-8 .figure-row img { max-width: 5.7in; max-height: 3in; }
 }
+
+
+/* ============================================================
+   PHYSICS FORMATIVE PILOT ADDITIONS — 2026-08-12
+   Supports inline SVG diagrams so labeling/classification figures
+   can remain answer-neutral while figures/ stays empty.
+   ============================================================ */
+.figure-row svg {
+    width: 100%;
+    max-width: 3.55in;
+    height: auto;
+    max-height: 3.2in;
+    border: 1px solid #bbb;
+    background: #fff;
+}
+.figure-wide svg { max-width: 4.85in; }
+.word-bank {
+    border: 1px solid #aaa;
+    background: #f7f7f7;
+    padding: 7px 10px;
+    margin: 8px 0 10px 0;
+    font-weight: 650;
+}
+.scenario {
+    background: #f8fbff;
+    border-left: 4px solid #333;
+    padding: 7px 10px;
+    margin: 7px 0 10px 0;
+}
+.answer-table td:first-child, .answer-table th:first-child { text-align: left; }
+body.unit-5 .figure-row svg { max-width: 6.1in; max-height: 3.0in; }
+body.unit-5 .figure-row.smallfig svg { max-height: 2.2in; }
+@media print {
+    .figure-row svg { max-width: 3.35in; }
+    .figure-wide svg { max-width: 4.65in; }
+    body.unit-5 .figure-row svg { max-width: 6.25in; max-height: 2.85in; }
+}

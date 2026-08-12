@@ -69,6 +69,13 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 /* ── SVG / IMAGE FIGURES ────────────────────────────────────── */
 .figure { max-width: 3.2in; max-height: 1.05in; display: block; margin: 3px auto; }
 
+
+/* ── TALLER ASSESSMENT FIGURE ──────────────────────────────────
+   Used for compact data graphs that need readable axes/labels.
+   The normal .figure class remains intentionally short for simple
+   schematics and wave diagrams. */
+.figure.figure-tall { max-width: 3.35in; max-height: 1.75in; }
+
 /* ── FREE RESPONSE PROMPT SECTION (on test copy) ────────────── */
 .fr-section {
     break-inside: avoid;
