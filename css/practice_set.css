@@ -1,10 +1,18 @@
 /* ============================================================
    practice_set.css — PHYSICS DOK PRACTICE SETS
    Requires base.css loaded FIRST.
-   Physics architecture: four explicit DOK sections per practice set.
-   Main practice set counts: DOK1=12, DOK2=12, DOK3=4, DOK4=2.
-   CYU counts: DOK1=2, DOK2=2, DOK3=1, DOK4=1.
-   No Current / Mastery / Last spiral structure. No exit tickets.
+   Applies to all practice-set-style pages (main practice sets and
+   the CYU check) — single-column layout, problems sit directly
+   inside each .dok-section, no wrapper grid div. No DOK header
+   boxes, no problem numbering/meta labels — problem number is
+   inlined as the first character of the question text. No borders
+   on problem cards.
+   Workspace height is set per-problem with a .ws-N utility class
+   (N = pixels tall; ws-10 through ws-960 in steps of 10, plus
+   ws-25 as the starting default — 960px (~10in) is basically a
+   full printable page).
+   Everything currently ships at ws-25; bump individual problems up
+   by hand when a question needs more room.
    ============================================================ */
 @page { size: 8.5in 11in; margin: .45in; }
 
@@ -19,79 +27,22 @@ h1 {
   border: 0;
 }
 
-.unit-intro {
-  border: 1.5px solid var(--navy);
-  border-left-width: 6px;
-  padding: 9px 12px;
-  margin: 0 0 14px 0;
-  background: var(--blue-bg);
-  font-size: 10.5pt;
-}
-.unit-intro p { margin: 0; }
-
-.dok-section { margin: 18px 0 26px 0; }
-.dok-header {
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  gap: 10px;
-  align-items: center;
-  border: 1.5px solid var(--navy);
-  border-left-width: 7px;
-  padding: 8px 10px;
-  margin: 0 0 9px 0;
-  break-after: avoid;
-  page-break-after: avoid;
-  background: var(--blue-light);
-}
-.dok-title { font-weight: 900; font-size: 13pt; color: var(--navy); }
-.dok-count { font-weight: 800; font-size: 9.5pt; color: var(--navy); white-space: nowrap; }
-.dok-description { font-size: 9.5pt; color: #33465e; }
-.dok-3 .dok-header, .dok-4 .dok-header { background: #e8edf4; }
-
-.question-grid {
-  display: grid;
-  gap: 8px;
-  align-items: start;
-}
-.question-grid.two-col { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
-.question-grid.one-col { grid-template-columns: 1fr; }
+.dok-section { margin: 0 0 14px 0; }
 
 .problem {
-  border: 1.25px solid var(--border);
-  border-left: 5px solid var(--navy);
-  border-radius: 4px;
-  padding: 8px 10px;
-  margin: 0;
+  padding: 8px 0;
+  margin: 0 0 10px 0;
   background: var(--bg);
   break-inside: avoid;
   page-break-inside: avoid;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .problem .problem-body { display: flex; flex-direction: column; flex: 1; }
 .problem .workspace:last-child { margin-top: auto; }
-.problem[data-dok="1"] { border-left-color: #6f8ead; }
-.problem[data-dok="2"] { border-left-color: #496c91; }
-.problem[data-dok="3"] { border-left-color: #2f4f72; }
-.problem[data-dok="4"] { border-left-color: var(--navy); border-width: 1.5px 1.5px 1.5px 6px; }
 
-.problem-title {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 4px;
-  font-weight: 900;
-  color: var(--navy);
-  font-size: 10pt;
-  margin-bottom: 5px;
-}
-.problem-meta {
-  color: var(--muted);
-  font-weight: 700;
-  font-size: 8.5pt;
-  margin-left: 4px;
-}
+.qnum { font-weight: 900; color: var(--navy); }
+
 .problem-body { min-width: 0; }
 .problem-body p { margin: 0 0 5px 0; line-height: 1.28; }
 .problem-body ol, .problem-body ul { margin: 4px 0 5px 1.25em; padding: 0; }
@@ -130,32 +81,105 @@ h1 {
 .wu-img-550 img { max-width: 5.5in; }
 .wu-img-600 img { max-width: 6in; }
 
+/* ---- Workspace height utility classes (px) ---- */
 .workspace { background: #fff; margin-top: 3px; border: 0; }
-.wu-ws-000 { min-height: 0; }
-.wu-ws-025 { min-height: .25in; }
-.wu-ws-050 { min-height: .50in; }
-.wu-ws-075 { min-height: .75in; }
-.wu-ws-100 { min-height: 1.00in; }
-.wu-ws-125 { min-height: 1.25in; }
-.wu-ws-150 { min-height: 1.50in; }
-.wu-ws-175 { min-height: 1.75in; }
-.wu-ws-200 { min-height: 2.00in; }
-.wu-ws-225 { min-height: 2.25in; }
-.wu-ws-250 { min-height: 2.50in; }
-.wu-ws-275 { min-height: 2.75in; }
-.wu-ws-300 { min-height: 3.00in; }
-.wu-ws-350 { min-height: 3.50in; }
-.wu-ws-400 { min-height: 4.00in; }
-.wu-ws-500 { min-height: 5.00in; }
-.wu-ws-600 { min-height: 6.00in; }
-
-.cyu-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 9px;
-  align-items: stretch;
-}
-.cyu-grid .problem.full { grid-column: 1 / -1; }
+.ws-10 { height: 10px; }
+.ws-20 { height: 20px; }
+.ws-30 { height: 30px; }
+.ws-40 { height: 40px; }
+.ws-50 { height: 50px; }
+.ws-60 { height: 60px; }
+.ws-70 { height: 70px; }
+.ws-80 { height: 80px; }
+.ws-90 { height: 90px; }
+.ws-100 { height: 100px; }
+.ws-110 { height: 110px; }
+.ws-120 { height: 120px; }
+.ws-130 { height: 130px; }
+.ws-140 { height: 140px; }
+.ws-150 { height: 150px; }
+.ws-160 { height: 160px; }
+.ws-170 { height: 170px; }
+.ws-180 { height: 180px; }
+.ws-190 { height: 190px; }
+.ws-200 { height: 200px; }
+.ws-210 { height: 210px; }
+.ws-220 { height: 220px; }
+.ws-230 { height: 230px; }
+.ws-240 { height: 240px; }
+.ws-250 { height: 250px; }
+.ws-260 { height: 260px; }
+.ws-270 { height: 270px; }
+.ws-280 { height: 280px; }
+.ws-290 { height: 290px; }
+.ws-300 { height: 300px; }
+.ws-310 { height: 310px; }
+.ws-320 { height: 320px; }
+.ws-330 { height: 330px; }
+.ws-340 { height: 340px; }
+.ws-350 { height: 350px; }
+.ws-360 { height: 360px; }
+.ws-370 { height: 370px; }
+.ws-380 { height: 380px; }
+.ws-390 { height: 390px; }
+.ws-400 { height: 400px; }
+.ws-410 { height: 410px; }
+.ws-420 { height: 420px; }
+.ws-430 { height: 430px; }
+.ws-440 { height: 440px; }
+.ws-450 { height: 450px; }
+.ws-460 { height: 460px; }
+.ws-470 { height: 470px; }
+.ws-480 { height: 480px; }
+.ws-490 { height: 490px; }
+.ws-500 { height: 500px; }
+.ws-510 { height: 510px; }
+.ws-520 { height: 520px; }
+.ws-530 { height: 530px; }
+.ws-540 { height: 540px; }
+.ws-550 { height: 550px; }
+.ws-560 { height: 560px; }
+.ws-570 { height: 570px; }
+.ws-580 { height: 580px; }
+.ws-590 { height: 590px; }
+.ws-600 { height: 600px; }
+.ws-610 { height: 610px; }
+.ws-620 { height: 620px; }
+.ws-630 { height: 630px; }
+.ws-640 { height: 640px; }
+.ws-650 { height: 650px; }
+.ws-660 { height: 660px; }
+.ws-670 { height: 670px; }
+.ws-680 { height: 680px; }
+.ws-690 { height: 690px; }
+.ws-700 { height: 700px; }
+.ws-710 { height: 710px; }
+.ws-720 { height: 720px; }
+.ws-730 { height: 730px; }
+.ws-740 { height: 740px; }
+.ws-750 { height: 750px; }
+.ws-760 { height: 760px; }
+.ws-770 { height: 770px; }
+.ws-780 { height: 780px; }
+.ws-790 { height: 790px; }
+.ws-800 { height: 800px; }
+.ws-810 { height: 810px; }
+.ws-820 { height: 820px; }
+.ws-830 { height: 830px; }
+.ws-840 { height: 840px; }
+.ws-850 { height: 850px; }
+.ws-860 { height: 860px; }
+.ws-870 { height: 870px; }
+.ws-880 { height: 880px; }
+.ws-890 { height: 890px; }
+.ws-900 { height: 900px; }
+.ws-910 { height: 910px; }
+.ws-920 { height: 920px; }
+.ws-930 { height: 930px; }
+.ws-940 { height: 940px; }
+.ws-950 { height: 950px; }
+.ws-960 { height: 960px; }
+.ws-25 { height: 25px; }
 
 /* Backward-compatible helpers for older Physics files while they are being rebuilt. */
 .section-label {
@@ -172,15 +196,6 @@ h1 {
 table.values { width:100%; }
 .lower-alpha { list-style-type: lower-alpha; }
 
-@media (max-width: 760px) {
-  .question-grid.two-col, .cyu-grid { grid-template-columns: 1fr; }
-  .cyu-grid .problem.full { grid-column: auto; }
-  .dok-header { grid-template-columns: 1fr; gap: 2px; }
-}
-
 @media print {
-  .question-grid.two-col { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .problem { padding: 7px 9px; }
-  .dok-section { break-before: auto; }
-  .dok-header { break-after: avoid; page-break-after: avoid; }
+  .problem { padding: 7px 0; }
 }
