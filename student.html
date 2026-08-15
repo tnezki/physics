@@ -2,31 +2,30 @@
 <html lang="en">
 
 <!-- ============================================================
-     PHYSICS — TEACHER DASHBOARD
-     File: dashboard.html
-     Lives at the ROOT of the physics repo — same level as index.html.
-     Rename this file to anything to obscure it from students.
+     PHYSICS — STUDENT DASHBOARD
+     File: student.html
+     Lives at the ROOT of the physics repo, alongside the teacher
+     dashboard file. This is the student-facing view: only
+     non-teacher meta chips (Progress, Warm Ups, Review) render,
+     and each section shows studentResources only — no teacher
+     banner, no teacherResources row.
+
+     This file is a derived copy of the teacher dashboard's data.
+     DO NOT hand-edit the `units` array here — edit the teacher
+     dashboard file instead and regenerate this file from it, or
+     the two will drift out of sync.
 
      All links are RELATIVE — no leading slash, no domain, no repo
      name. The file works identically:
        • locally  (python3 -m http.server from the physics folder)
        • GitHub Pages  (tnezki.github.io/physics/...)
        • any other host or folder rename
-
-     ── HOW TO EDIT ──────────────────────────────────────────────
-     1. UNIT names/titles   →  edit the `units` array in <script>
-     2. SECTION titles      →  edit each section's `title` field
-     3. RESOURCE links      →  update `href` values in
-                                studentResources / teacherResources
-     4. TOP BAR chips       →  edit the HTML "TOP RESOURCES BAR" block
-     5. ASSESSMENT chips    →  edit the HTML "ASSESSMENT PLANS" block
-     6. COLORS              →  edit :root variables in <style>
      ============================================================ -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics — Teacher Dashboard</title>
+    <title>Physics — Student Dashboard</title>
 
     <!-- Tabler Icons -->
     <link rel="stylesheet"
@@ -46,9 +45,6 @@
             --border:        #dddddd;
             --bg:            #ffffff;
             --bg-subtle:     #f7f7f5;
-            --teacher-dark:  #2d6a2d;   /* green for teacher-only items */
-            --teacher-mid:   #b8d8b8;
-            --teacher-light: #eaf3ea;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -65,21 +61,6 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem 1.5rem 4rem;
-        }
-
-        /* ── Teacher banner ── */
-        .teacher-banner {
-            background: var(--teacher-dark);
-            color: white;
-            font-size: 11px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-align: center;
-            padding: 6px;
-            border-radius: 4px;
-            margin-bottom: 1rem;
         }
 
         /* ── Page header ── */
@@ -191,12 +172,6 @@
             border: 1px solid #b8c5d8;
         }
         .unit-meta-chip:hover { background: #dce6f5; }
-        .unit-meta-chip.teacher {
-            color: var(--teacher-dark);
-            border-color: var(--teacher-mid);
-            background: var(--teacher-light);
-        }
-        .unit-meta-chip.teacher:hover { background: #c8e6c8; }
 
         .unit-body {
             border: 1px solid #c5cfe0;
@@ -290,12 +265,6 @@
             font-weight: bold;
         }
         .r-btn.primary:hover { background: #dce6f5; }
-        .r-btn.teacher {
-            border-color: var(--teacher-mid);
-            color: var(--teacher-dark);
-            background: var(--teacher-light);
-        }
-        .r-btn.teacher:hover { background: #c8e6c8; }
         .r-btn i { font-size: 13px; }
     </style>
 </head>
@@ -303,15 +272,10 @@
 <body>
 <div class="page-wrap">
 
-    <!-- Teacher banner -->
-    <div class="teacher-banner">
-        <i class="ti ti-lock" aria-hidden="true"></i>&nbsp; Teacher View
-    </div>
-
     <!-- Page header -->
     <div class="page-header">
         <div class="page-title">Physics</div>
-        <div class="page-subtitle">Manistee High School &nbsp;&middot;&nbsp; Teacher Dashboard</div>
+        <div class="page-subtitle">Manistee High School &nbsp;&middot;&nbsp; Student Dashboard</div>
     </div>
 
     <!-- ============================================================
@@ -339,21 +303,6 @@
             <a href="https://www.desmos.com/calculator" class="res-chip" target="_blank">Desmos</a>
             <a href="https://mariners.instructure.com/" class="res-chip" target="_blank">Canvas</a>
             <a href="https://drive.google.com/drive/folders/1gXmSaTRFSs21XIfhV-ouaGa7BxMAd3Yt?usp=sharing" class="res-chip" target="_blank">Student Upload Spot</a>
-        </div>
-
-        <!-- ── Assessment plan chips — one per unit ── -->
-        <div class="resources-bar-label" style="margin-top:10px;">Teacher Resources</div>
-        <div class="resources-bar-links">
-             <a href="zjghtvassessmentplans/unit1_assessment_plan/unit1_assessment_plan.html"  class="res-chip" target="_blank">Activity Structures</a>
-            <a href="zjghtvassessmentplans/unit2_assessment_plan/unit2_assessment_plan.html"  class="res-chip" target="_blank">Year at a Glance</a>
-            <a href="zjghtvassessmentplans/unit1_assessment_plan/unit1_assessment_plan.html"  class="res-chip" target="_blank">Unit 1</a>
-            <a href="zjghtvassessmentplans/unit2_assessment_plan/unit2_assessment_plan.html"  class="res-chip" target="_blank">Unit 2</a>
-            <a href="zjghtvassessmentplans/unit3_assessment_plan/unit3_assessment_plan.html"  class="res-chip" target="_blank">Unit 3</a>
-            <a href="zjghtvassessmentplans/unit4_assessment_plan/unit4_assessment_plan.html"  class="res-chip" target="_blank">Unit 4</a>
-            <a href="zjghtvassessmentplans/unit5_assessment_plan/unit5_assessment_plan.html"  class="res-chip" target="_blank">Unit 5</a>
-            <a href="zjghtvassessmentplans/unit6_assessment_plan/unit6_assessment_plan.html"  class="res-chip" target="_blank">Unit 6</a>
-            <a href="zjghtvassessmentplans/unit7_assessment_plan/unit7_assessment_plan.html"  class="res-chip" target="_blank">Unit 7</a>
-            <a href="zjghtvassessmentplans/unit8_assessment_plan/unit8_assessment_plan.html"  class="res-chip" target="_blank">Unit 8</a>
         </div>
 
     </div><!-- end .resources-bar -->
@@ -1302,9 +1251,10 @@ const units = [
 // ============================================================
 
 function buildUnit(u) {
-    const metaHTML = u.meta.map(function(m) {
-        const cls = m.teacher ? 'unit-meta-chip teacher' : 'unit-meta-chip';
-        return '<a href="' + m.href + '" class="' + cls + '" target="_blank">' + m.label + '</a>';
+    const metaHTML = u.meta.filter(function(m) {
+        return !m.teacher;
+    }).map(function(m) {
+        return '<a href="' + m.href + '" class="unit-meta-chip" target="_blank">' + m.label + '</a>';
     }).join(' ');
 
     const sectionsHTML = u.sections.map(function(sec, i) {
@@ -1334,11 +1284,6 @@ function buildSection(unitId, index, sec) {
                '<i class="ti ' + r.icon + '"></i>' + r.label + '</a>';
     }).join(' ');
 
-    const teacherBtns = sec.teacherResources.map(function(r) {
-        return '<a href="' + r.href + '" class="r-btn teacher" target="_blank">' +
-               '<i class="ti ' + r.icon + '"></i>' + r.label + '</a>';
-    }).join(' ');
-
     return '<div class="section-row">' +
                '<div class="section-head" onclick="toggleSection(this)">' +
                    '<span class="section-num">' + num + '</span>' +
@@ -1347,7 +1292,6 @@ function buildSection(unitId, index, sec) {
                '</div>' +
                '<div class="section-body">' +
                    '<div class="btn-row"><div class="btn-row-label">Student resources</div>' + studentBtns + '</div>' +
-                   '<div class="btn-row"><div class="btn-row-label">Teacher resources</div>' + teacherBtns + '</div>' +
                '</div>' +
            '</div>';
 }

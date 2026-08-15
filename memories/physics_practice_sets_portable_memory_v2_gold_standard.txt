@@ -1,0 +1,835 @@
+PHYSICS PRACTICE SETS BUILD — PORTABLE MEMORY v2 — GOLD STANDARD
+================================================================
+
+PURPOSE
+-------
+THIS FILE IS THE CURRENT SINGLE SOURCE OF TRUTH FOR PHYSICS PRACTICE-SET BUILDS.
+
+It replaces the older Physics practice-set portable memory wherever the two conflict.
+In particular, the OLD 31-family / 16-main-question / Current-Mastery-Last / exit-ticket
+architecture is OBSOLETE and must NOT be revived.
+
+The approved revised Unit 1 practice-set workflow is the gold-standard interpretation:
+  • four distinct practice forms per section
+  • 20 questions per practice form
+  • Practice Sets 1, 2, and Extra Practice use 5 DOK 1 + 5 DOK 2 + 2 DOK 3 +
+    8 five-choice multiple-choice review questions
+  • Practice Set 3 contains 20 four-choice multiple-choice questions and is built for
+    later Blooket use
+  • Practice Set 3 is figure-free
+  • a Blooket CSV mirroring Practice Set 3 is included in every section ZIP
+  • non-MC questions default to ws-80
+  • assessment-plan timing controls when formative/summative question families are eligible
+  • when too few eligible assessment questions exist, write original questions grounded
+    in the CURRENT section's I-can statements and notes rather than reaching ahead
+  • figures/diagrams are purposeful, not quotas, but make a deliberate effort to include
+    some in Practice Sets 1, 2, and Extra Practice when the section supports them
+  • graph_tool.py is used for true supported quantitative/data graphs; Physics diagrams
+    are not forced through graph functions
+  • current practice_set.css is the layout authority; do not embed replacement styling
+
+"BUILD," "CREATE," "MAKE," "GENERATE," OR "REBUILD" MEANS COMPLETE THE FULL PACKAGE.
+A plan, outline, question list, partial HTML, or preview is not a completed build.
+
+================================================================
+SOURCE PRIORITY
+================================================================
+
+When sources conflict, follow this order:
+
+1. User's explicit instructions in the current conversation.
+2. THIS portable memory.
+3. Current unit assessment plan — especially section timing, I-can statements,
+   assessment descriptions, formula/symbol limits, and DOK intent.
+4. Current unit student notes / teacher notes.
+5. Current approved/rebuilt formative assessments.
+6. Current summative assessment.
+7. Current approved Physics practice-set gold-standard package, when supplied.
+8. Current practice_set.css and base.css for HTML/layout behavior.
+9. Current authoritative graph_tool.py for graph-generation capabilities and signatures.
+10. Older Physics or Algebra practice-set memories only for historical reference.
+
+Do not silently combine conflicting old and new systems.
+
+================================================================
+REQUIRED INPUTS / READ ORDER
+================================================================
+
+For a normal production build, read before writing student questions:
+
+1. THIS portable memory completely.
+2. The entire current unit assessment plan.
+3. The current unit notes far enough to identify every section title, Learning Target,
+   I-can statement, vocabulary, formulas, diagrams, and instructional sequence.
+4. All current formative assessments for the unit.
+5. The current summative assessment.
+6. practice_set.css.
+7. graph_tool.py completely.
+8. A current approved practice-set sample/package if one is supplied.
+9. A Teacher Dashboard/naming map if one is supplied; otherwise use the naming standard
+   in this PM.
+
+Do not require an Algebra mapping workbook unless the user explicitly adds it to the
+Physics workflow.
+
+================================================================
+ASSESSMENT PLAN = TIMING CONTRACT
+================================================================
+
+The assessment plan decides WHEN a formative or summative question family may be used.
+
+Before planning a section:
+  1. Identify the current section and ALL of its I-can statements.
+  2. Determine which formative families have become eligible by this point in the unit.
+  3. Identify summative items that use only already-taught content.
+  4. Build the practice pool from those eligible sources.
+  5. If there are not enough eligible questions at a required DOK, create ORIGINAL
+     questions from the current section's I-can statements and notes.
+
+HARD RULE:
+Never pull in later-section Physics content merely to fill a DOK quota.
+
+Example:
+If a Section 1.1 practice set needs DOK 2 questions before later force families are
+eligible, write original DOK 2 questions about Section 1.1 evidence/model/testability
+ideas rather than asking students to calculate net force early.
+
+Original questions are not a failure or a last-resort compromise. They are the correct
+response when the instructional sequence does not yet provide enough eligible assessment
+items.
+
+================================================================
+SOURCE ADAPTATION / REWRITE STANDARD
+================================================================
+
+Practice questions should be adaptations, not assessment copies.
+
+Allowed adaptations include:
+  • rewording
+  • rearranging the information order
+  • swapping numbers
+  • changing the real-world context
+  • changing objects/agents while preserving the Physics
+  • changing representation: prose ↔ table ↔ graph ↔ diagram when valid
+  • changing prompt direction
+  • converting open response to multiple choice or vice versa when DOK is preserved
+  • combining familiar information in a new but equivalent way
+
+Always preserve:
+  • intended concept
+  • learning target / I-can alignment
+  • intended DOK
+  • misconception being tested
+  • formula/symbol limits
+  • representation skill
+  • scientific correctness
+
+Do NOT create fake parallelism by changing only names or one number.
+
+PARALLEL-FORM RULE
+------------------
+Practice Set 1, Practice Set 2, Practice Set 3, and Extra Practice must be genuinely
+parallel but distinct.
+
+Across forms, vary several of:
+  • wording structure
+  • context
+  • values
+  • prompt direction
+  • representation
+  • question order
+  • distractor set
+  • evidence presented
+
+A student should not be able to use one form as a near-identical answer key for another.
+
+================================================================
+QUESTION-WRITING STANDARDS
+================================================================
+
+NATURAL WORDING
+---------------
+Avoid Mad-Lib question writing.
+
+For quantitative/problem-solving banks, use a healthy mix of:
+  • standard / givens-first wording
+  • inverted / action-or-question-first wording
+  • context-rich real-world wording
+
+Roughly one-third of each style is a useful target where the content supports it.
+Do not mechanically force the ratio on tiny banks.
+
+VOCABULARY VARIETY
+------------------
+Rotate vocabulary prompts among:
+  • term → definition
+  • definition → term
+  • concept → term
+  • term → concept
+
+Do not make every vocabulary question "Which term means...?"
+
+MULTI-STEP RULE
+---------------
+A genuine multi-step problem normally requires finding an INTERMEDIATE quantity that is
+needed to obtain ONE final requested answer.
+
+Two separate formulas producing two unrelated answers is not automatically multi-step.
+
+Do not unnecessarily state a computed quantity as a given when students should determine
+or substitute it themselves.
+
+DOK AUTHENTICITY
+----------------
+DOK 1:
+  recall, identify, classify, label, recognize, simple one-step use.
+
+DOK 2:
+  apply a familiar relationship, interpret a representation, compare evidence,
+  use a table/graph, perform routine multi-step execution, explain a familiar relationship.
+
+DOK 3:
+  strategic reasoning, critique, defend a choice with evidence, compare competing models,
+  diagnose a misconception, connect representations in a non-routine way.
+
+Do not inflate DOK by simply adding "explain why."
+Do not reduce a strategic task to recall just because it is multiple choice.
+
+================================================================
+FOUR PRACTICE FORMS — LOCKED DEFAULT
+================================================================
+
+Each section has FOUR main practice files:
+
+1. Practice Set 1
+2. Practice Set 2
+3. Practice Set 3 — Blooket-ready form
+4. Extra Practice
+
+Each contains EXACTLY 20 questions unless the user explicitly changes the standard.
+
+----------------------------------------------------------------
+PRACTICE SET 1
+PRACTICE SET 2
+EXTRA PRACTICE
+----------------------------------------------------------------
+
+Questions 1–5:
+  5 DOK 1 questions
+
+Questions 6–10:
+  5 DOK 2 questions
+
+Questions 11–12:
+  2 DOK 3 questions
+
+Questions 13–20:
+  8 multiple-choice questions
+  EXACTLY 5 answer choices each
+  default distribution: 2 questions for each of the section's four I-can statements
+
+The last 8 MC questions are a broad I-can review block, not a fake new DOK category.
+Tag/plan their underlying DOK honestly.
+
+If a future section does not have exactly four I-can statements, do not silently invent
+or delete learning targets. Follow the current assessment plan and explicit user direction;
+retain 8 MC by distributing them as evenly and instructionally as possible unless told
+otherwise.
+
+----------------------------------------------------------------
+PRACTICE SET 3 — BLOOKET FORM
+----------------------------------------------------------------
+
+Practice Set 3 contains EXACTLY 20 multiple-choice questions.
+Every question has EXACTLY 4 answer choices.
+No figures, diagrams, images, or graph-dependent prompts.
+
+Keep the same conceptual/DOK coverage:
+  Q1–Q5   = DOK 1 multiple choice
+  Q6–Q10  = DOK 2 multiple choice
+  Q11–Q12 = DOK 3 multiple choice
+  Q13–Q20 = I-can review multiple choice, paralleling the review purpose of other forms
+
+Practice Set 3 is NOT a simplified recall-only set.
+DOK 2 and DOK 3 reasoning must remain authentic inside the selected-response format.
+
+Balance correct-answer positions across A–D.
+Avoid long runs or obvious answer patterns.
+
+================================================================
+MULTIPLE-CHOICE QUALITY
+================================================================
+
+For all MC items:
+  • one clearly best answer
+  • distractors should be plausible and tied to real misconceptions/errors
+  • avoid joke/absurd distractors
+  • keep choices grammatically parallel when possible
+  • avoid giving the answer away through length, specificity, units, or wording
+  • do not use figures that reveal the requested classification/label
+
+Practice Sets 1, 2, Extra:
+  Q13–Q20 = 5 choices each.
+
+Practice Set 3:
+  Q1–Q20 = 4 choices each.
+
+Correct-answer positions should be distributed intentionally.
+
+================================================================
+WORKSPACE STANDARD
+================================================================
+
+DEFAULT:
+  every NON-MULTIPLE-CHOICE question → <div class="workspace ws-80"></div>
+  multiple-choice question            → <div class="workspace ws-10"></div>
+
+ws-80 is the default even for DOK 3 unless the particular task clearly needs more room.
+
+Increase workspace only when genuinely necessary, such as:
+  • large calculation setup
+  • student-drawn graph
+  • diagram/model construction
+  • multi-part strategic response
+  • unusually long evidence-based explanation
+
+Do not mechanically use larger workspace merely because the DOK number is higher.
+
+================================================================
+CYU — CHECK YOUR UNDERSTANDING
+================================================================
+
+Each section package includes:
+  cyu_[UNIT]_[SECTION].html
+
+Default CYU structure:
+  6 non-MC questions total
+  Q1–Q2 = DOK 1
+  Q3–Q4 = DOK 2
+  Q5    = DOK 3
+  Q6    = DOK 4 / extended evidence-design or highest appropriate section reasoning
+
+All CYU questions default to ws-80.
+
+CYU questions must be self-contained and grounded in content taught by the end of the
+section. If DOK 4 is not honestly supported by the section/plan, use the highest authentic
+reasoning task supported rather than inventing future content.
+
+================================================================
+HTML / CSS — CURRENT GOLD STANDARD
+================================================================
+
+The supplied/current practice_set.css is the layout authority.
+Do NOT redesign the worksheet inside the HTML.
+Do NOT embed a <style> block.
+
+Use exactly these external CSS links, in this order:
+
+<link rel="stylesheet" href="../../css/base.css"/>
+<link rel="stylesheet" href="../../css/practice_set.css"/>
+
+MathJax configuration comes before the CDN script:
+
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$']],
+    displayMath: [['$$','$$']],
+    processEscapes: true
+  }
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+The current practice CSS expects a CLEAN SINGLE-COLUMN FLOW.
+Problems sit directly inside .dok-section.
+
+Core classes:
+  h1
+  dok-section
+  problem
+  problem-body
+  qnum
+  workspace
+  ws-80
+  ws-10
+  ps-figure
+  ps-diagram
+  wu-img-250 / 300 / 350 / 400 / 450 / 500 / 550 / 600
+  lower-alpha
+  values
+
+Do not bring back obsolete DOK header boxes, problem-meta labels, bordered cards,
+Current/Mastery/Last wrappers, or old two-column practice grids unless the user explicitly
+changes the current CSS/system.
+
+----------------------------------------------------------------
+COMMENTED GOLD-STANDARD NON-MC SKELETON
+----------------------------------------------------------------
+
+<!-- DOK 1 block -->
+<section class="dok-section dok-1">
+  <section class="problem" data-dok="1" id="q01">
+    <div class="problem-body">
+      <p><span class="qnum">1.</span> [Question text]</p>
+      <div class="workspace ws-80"></div>
+    </div>
+  </section>
+</section>
+
+----------------------------------------------------------------
+COMMENTED GOLD-STANDARD FIGURE SKELETON
+----------------------------------------------------------------
+
+<section class="problem" data-dok="2" id="q06">
+  <div class="problem-body">
+    <p><span class="qnum">6.</span> Use the figure to [valid student task].</p>
+    <figure class="ps-figure wu-img-350">
+      <img src="figures/[filename].png" alt="[neutral description that does not reveal answer]"/>
+    </figure>
+    <div class="workspace ws-80"></div>
+  </div>
+</section>
+
+----------------------------------------------------------------
+COMMENTED GOLD-STANDARD 5-CHOICE MC SKELETON
+----------------------------------------------------------------
+
+<section class="problem" data-dok="2" id="q13">
+  <div class="problem-body">
+    <p><span class="qnum">13.</span> [Question text]</p>
+    <ol class="lower-alpha">
+      <li>[Choice A]</li>
+      <li>[Choice B]</li>
+      <li>[Choice C]</li>
+      <li>[Choice D]</li>
+      <li>[Choice E]</li>
+    </ol>
+    <div class="workspace ws-10"></div>
+  </div>
+</section>
+
+----------------------------------------------------------------
+COMMENTED GOLD-STANDARD PRACTICE 3 MC SKELETON
+----------------------------------------------------------------
+
+<section class="problem" data-dok="3" id="q11">
+  <div class="problem-body">
+    <p><span class="qnum">11.</span> [Strategic reasoning MC question]</p>
+    <ol class="lower-alpha">
+      <li>[Choice A]</li>
+      <li>[Choice B]</li>
+      <li>[Choice C]</li>
+      <li>[Choice D]</li>
+    </ol>
+    <div class="workspace ws-10"></div>
+  </div>
+</section>
+
+================================================================
+FIGURES / DIAGRAMS / GRAPH TOOL
+================================================================
+
+VISUAL PHILOSOPHY
+-----------------
+Graphs and diagrams are instructional tools, not quotas.
+
+However, do NOT avoid visuals simply because text-only questions are faster to write.
+For Practice Sets 1, 2, and Extra Practice, make a deliberate figure pass and try to include
+some purposeful visuals when the section supports them.
+
+Practice Set 3 is ALWAYS figure-free under the current Blooket standard.
+
+Good visual uses include:
+  • data tables or bar/scatter/context graphs students must interpret
+  • force/vector diagrams when already taught
+  • source-grounded textbook diagrams or images
+  • comparison figures
+  • unlabeled or partially labeled models for identification/critique
+  • measurement/evidence displays
+
+A visual must add useful representation practice, not decoration.
+
+VISUAL ANSWER-SAFETY — HARD RULE
+--------------------------------
+Never include an answer-revealing title, caption, legend, label, alt text, or annotation
+when the student is supposed to identify, classify, label, critique, or infer that feature.
+
+Before accepting a figure, ask:
+  1. What is directly observable?
+  2. What must be calculated or inferred?
+  3. Does the prompt ask for something the representation actually supports?
+  4. Does any text on the figure reveal the answer?
+  5. Do the expected answer and the visual agree?
+
+GRAPH TOOL — USE FOR TRUE SUPPORTED GRAPHS
+------------------------------------------
+The uploaded graph_tool.py is authoritative.
+
+Workflow:
+  1. Read graph_tool.py completely.
+  2. Decide whether an existing graph type genuinely fits the needed representation.
+  3. If yes, copy graph_tool.py IN FULL as generate_graphs.py.
+  4. Do not modify, refactor, delete, restyle, or insert into the authoritative source.
+  5. Append graph-generation calls only after the final permitted append marker.
+  6. Run generate_graphs.py during QA.
+  7. Inspect every generated graph used by the HTML.
+  8. Package every referenced PNG in figures/.
+  9. Package generate_graphs.py as well.
+
+Do not use raw ad-hoc matplotlib styling to imitate a supported graph type.
+
+PHYSICS DIAGRAMS ARE NOT AUTOMATICALLY GRAPHS
+----------------------------------------------
+Do NOT force these through a coordinate-graph function:
+  • force diagrams
+  • motion-dot diagrams
+  • hanging/support-force sketches
+  • circuits
+  • wave schematics
+  • rays
+  • field lines
+  • generic object/arrow models
+
+For these, use an appropriate source image from the notes when available or a clean,
+answer-neutral Physics diagram workflow. Keep the style classroom-readable and simple.
+
+SOURCE IMAGES
+-------------
+Reusing a strong source-grounded image from the notes is often better than regenerating it.
+Copy it into the section's figures/ folder and reference the local copy.
+
+Do not use a later-section figure if understanding it requires unreleased Physics.
+It may only be used early as a generic representation when the question itself requires no
+future content.
+
+================================================================
+BLOOKET CSV — REQUIRED WITH PRACTICE SET 3
+================================================================
+
+Every practice-set ZIP includes:
+  blooket_[UNIT]_[SECTION]_practice_3.csv
+
+This CSV is an EXACT CONTENT MIRROR of Practice Set 3:
+  • same 20 question texts
+  • same four answers in the same order
+  • same correct answer
+  • no separate/drifting Blooket question bank
+
+Practice Set 3 must therefore use no image-dependent questions.
+
+CSV FORMAT
+----------
+Match the uploaded Blooket CSV template exactly.
+
+Row 1:
+  "Blooket\nImport Template" in the first cell; remaining cells blank.
+
+Row 2 columns:
+  Question #
+  Question Text
+  Answer 1
+  Answer 2
+  Answer 3 (Optional)
+  Answer 4 (Optional)
+  Time Limit (sec) (Max: 300 seconds)
+  Correct Answer(s) (Only include Answer #)
+
+Rows 3–22:
+  Practice Set 3 questions 1–20.
+
+Preserve the template's blank rows through Question #100 when using the supplied template.
+
+TIME LIMIT DEFAULTS
+-------------------
+  DOK 1 → 30 seconds
+  DOK 2 → 45 seconds
+  DOK 3 → 60 seconds
+
+For the Q13–Q20 review block, use the item's honest underlying DOK to choose 30/45/60.
+
+CORRECT ANSWER FIELD
+--------------------
+Use only the answer number:
+  1, 2, 3, or 4
+
+Do not write A/B/C/D in the Correct Answer(s) field.
+
+CSV QA:
+  • UTF-8 compatible
+  • commas/quotes/newlines escaped correctly
+  • exactly four populated answers for Q1–Q20
+  • correct answer number matches the HTML answer position
+  • no xlsx file is included unless the user explicitly asks for one
+
+================================================================
+PACKAGE / NAMING STANDARD
+================================================================
+
+For Section [UNIT].[SECTION]:
+
+ZIP:
+  u[UNIT]_[SECTION]_practice_sets.zip
+
+Top-level folder inside ZIP:
+  u[UNIT]_[SECTION]_practice_sets/
+
+Files:
+  practice_set_[UNIT]_[SECTION].html
+  practice_set_[UNIT]_[SECTION]_2.html
+  practice_set_[UNIT]_[SECTION]_3.html
+  extra_practice_[UNIT]_[SECTION].html
+  cyu_[UNIT]_[SECTION].html
+  blooket_[UNIT]_[SECTION]_practice_3.csv
+  generate_graphs.py
+  figures/
+
+Example:
+  u1_1_practice_sets.zip
+    u1_1_practice_sets/
+      practice_set_1_1.html
+      practice_set_1_1_2.html
+      practice_set_1_1_3.html
+      extra_practice_1_1.html
+      cyu_1_1.html
+      blooket_1_1_practice_3.csv
+      generate_graphs.py
+      figures/
+        [referenced source/static/generated images]
+
+Always include generate_graphs.py as the full current graph tool copy, even if the current
+section ultimately does not need appended graph calls, unless the user explicitly changes
+this packaging standard.
+
+The ZIP should unzip to exactly one useful top-level section folder.
+Do not scatter loose HTML files beside it.
+
+================================================================
+PRIVATE BUILD PLAN — REQUIRED BEFORE HTML
+================================================================
+
+For each section, privately plan:
+
+SECTION:
+  number/title
+  Learning Target
+  all I-can statements
+  allowed formulas/symbols
+  prerequisite knowledge already taught
+  future content that must NOT appear yet
+
+ELIGIBLE BANK:
+  eligible formative families + why/when eligible
+  eligible summative families
+  DOK 1 count available
+  DOK 2 count available
+  DOK 3 count available
+  original questions needed? yes/no and which I-can/DOK gaps they fill
+
+FOUR-FORM PLAN:
+  PS1: contexts/representations
+  PS2: alternate contexts/representations
+  PS3: 20 figure-free 4-choice MC items + correct-answer-position plan
+  Extra: alternate contexts/representations
+
+VISUAL PLAN:
+  PS1 figure(s): purpose/source/tool
+  PS2 figure(s): purpose/source/tool
+  PS3: NONE
+  Extra figure(s): purpose/source/tool
+  graph_tool types used, if any
+
+BLOOKET PLAN:
+  verify PS3 can be copied exactly without images
+  time limits by DOK
+  answer-position balance
+
+================================================================
+QA — REQUIRED BEFORE DELIVERY
+================================================================
+
+CONTENT / ELIGIBILITY
+---------------------
+[ ] Entire assessment plan was read.
+[ ] Current section I-cans were copied correctly.
+[ ] No required knowledge comes from a later unreleased section.
+[ ] Every assessment-derived question family is eligible at this point in the unit.
+[ ] Original questions fill genuine eligibility gaps and are grounded in current notes/I-cans.
+[ ] DOK labels match actual cognitive demand.
+[ ] Formulas/symbols stay inside current unit/section limits.
+[ ] Quantitative answers and units are independently checked.
+
+PRACTICE 1 / 2 / EXTRA
+----------------------
+[ ] Exactly 20 questions each.
+[ ] Q1–Q5 = 5 DOK 1.
+[ ] Q6–Q10 = 5 DOK 2.
+[ ] Q11–Q12 = 2 DOK 3.
+[ ] Q13–Q20 = 8 MC.
+[ ] Every Q13–Q20 item has exactly 5 choices.
+[ ] Review block covers the section I-cans intentionally.
+[ ] Non-MC defaults to ws-80.
+[ ] MC defaults to ws-10.
+
+PRACTICE 3
+----------
+[ ] Exactly 20 questions.
+[ ] Every question is multiple choice.
+[ ] Every question has exactly 4 choices.
+[ ] Q1–Q5 maintain DOK 1.
+[ ] Q6–Q10 maintain DOK 2.
+[ ] Q11–Q12 maintain DOK 3.
+[ ] Q13–Q20 review the I-cans.
+[ ] Correct-answer positions are balanced across A–D.
+[ ] NO figures/images/diagram dependencies.
+
+PARALLEL-FORM QUALITY
+---------------------
+[ ] PS1, PS2, PS3, and Extra are genuinely different parallel forms.
+[ ] No exact duplicated prompt sequence across forms.
+[ ] Number/context changes are not the only differences.
+[ ] Vocabulary direction and sentence structure are varied.
+[ ] Distractors reflect plausible misconceptions.
+
+CYU
+---
+[ ] 6 questions.
+[ ] Default 2 DOK1 + 2 DOK2 + 1 DOK3 + 1 highest authentic/usually DOK4.
+[ ] All non-MC use ws-80 unless a specific task clearly needs otherwise.
+[ ] No future content.
+
+FIGURES
+-------
+[ ] A deliberate visual pass was made for PS1, PS2, and Extra.
+[ ] Visuals are purposeful rather than decorative.
+[ ] PS3 has no figures.
+[ ] Every referenced figure exists in figures/.
+[ ] Source images were copied locally rather than hot-linked.
+[ ] True quantitative/data graphs use graph_tool.py when supported.
+[ ] Physics diagrams were not forced through inappropriate graph functions.
+[ ] No title/caption/label/alt text reveals the answer.
+[ ] Generated graphs were run and visually inspected.
+[ ] Every referenced generated PNG is packaged.
+
+GRAPH TOOL
+----------
+[ ] generate_graphs.py begins with a byte-for-byte full copy of current graph_tool.py.
+[ ] No authoritative line was modified.
+[ ] Appended graph calls occur only after the final allowed append marker.
+[ ] Appended calls use valid function names/parameters.
+[ ] Script runs without syntax/runtime errors for required graphs.
+
+HTML / CSS
+----------
+[ ] base.css link first; practice_set.css second.
+[ ] No embedded <style> block.
+[ ] MathJax config precedes CDN and has processEscapes:true.
+[ ] Single-column .problem flow matches current practice CSS.
+[ ] qnum is inline with question text.
+[ ] No obsolete problem-meta / Current-Mastery-Last / exit-ticket architecture returned.
+[ ] Every HTML image path resolves locally.
+[ ] Currency dollar signs and MathJax delimiters are safe.
+
+BLOOKET CSV
+-----------
+[ ] CSV file exists inside section folder.
+[ ] No xlsx substitute remains unless explicitly requested.
+[ ] CSV matches the uploaded Blooket template structure.
+[ ] Questions 1–20 exactly match Practice Set 3 text.
+[ ] Answers 1–4 exactly match Practice Set 3 order.
+[ ] Correct answer numbers match Practice Set 3.
+[ ] DOK timing defaults are 30 / 45 / 60 sec.
+[ ] Blank template rows through #100 are preserved when using the standard template.
+
+ZIP
+---
+[ ] ZIP name = u[U]_[S]_practice_sets.zip.
+[ ] One top-level folder = u[U]_[S]_practice_sets/.
+[ ] Five HTML files are present.
+[ ] Blooket CSV is present.
+[ ] generate_graphs.py is present.
+[ ] figures/ is present.
+[ ] No temporary QA files, old xlsx Blooket file, or duplicate nested folder is included.
+
+================================================================
+COMMON FAILURE MODES — DO NOT REPEAT
+================================================================
+
+1. Reverting to the obsolete 31-family / 16-question / Current-Mastery-Last system.
+2. Adding exit-ticket architecture from the old practice-set PM.
+3. Pulling later-section assessment questions just to satisfy DOK counts.
+4. Refusing to write originals when the eligible assessment bank is too small.
+5. Copying formative/summative wording nearly verbatim.
+6. Making the four practice forms number-swap clones.
+7. Turning Practice Set 3 into 20 easy recall questions instead of preserving DOK coverage.
+8. Giving Practice Set 3 five choices instead of four.
+9. Putting figures in Practice Set 3, which then breaks clean Blooket conversion.
+10. Forgetting the Blooket CSV or delivering xlsx instead of CSV.
+11. Letting Blooket questions drift from Practice Set 3.
+12. Using larger workspaces automatically for higher DOK instead of default ws-80.
+13. Avoiding useful figures simply because text-only is easier.
+14. Forcing Physics diagrams through graph_tool.py.
+15. Ignoring graph_tool.py when a supported quantitative/data graph would be useful.
+16. Modifying the authoritative graph-tool source.
+17. Omitting referenced generated PNGs from figures/.
+18. Answer-revealing labels/titles/alt text.
+19. Embedded practice-set CSS inside HTML.
+20. Using the wrong CSS path/order.
+21. Wrong question or choice count.
+22. Obvious A-B-C-D correct-answer pattern in Practice Set 3.
+23. Mechanical Mad-Lib wording across a bank.
+24. Calling two independent calculations "multi-step."
+25. Packaging loose files instead of one correct top-level section folder.
+
+================================================================
+FINAL DELIVERY STANDARD
+================================================================
+
+For a single requested section:
+  deliver the completed u[U]_[S]_practice_sets.zip.
+
+For multiple requested sections:
+  deliver each section as its own ZIP unless the user explicitly asks for one combined ZIP.
+
+A concise final note may mention:
+  • sections built
+  • any deliberate source/eligibility gap handled with original questions
+  • any unusual figure decision
+  • QA status
+
+Do not deliver only loose HTML, only a question bank, or only a Blooket CSV when the user
+asked for the practice-set build.
+
+================================================================
+CURRENT GOLD-STANDARD INTERPRETATION — UNIT 1 LESSONS
+================================================================
+
+1. Assessment-plan timing is real. Early sections may not have enough eligible formative
+   families; original note/I-can-grounded questions are expected in that case.
+
+2. Practice Set 3 is the Blooket form: 20 questions, all MC, exactly four choices,
+   figure-free, and mirrored exactly into CSV.
+
+3. The Blooket deliverable is CSV, not XLSX.
+
+4. Non-MC workspace defaults to ws-80. DOK alone does not justify a larger box.
+
+5. Visuals should be used intentionally in PS1, PS2, and Extra. A section may need only a
+   few, but the builder should actively look for opportunities rather than avoiding them.
+
+6. Existing source-grounded note images are valid and often preferable when they directly
+   support the question.
+
+7. graph_tool.py should be considered whenever a true quantitative/data graph would add
+   representation practice. Do not use it merely to satisfy a graph quota.
+
+8. Physics diagrams and mathematical/data graphs are different visual categories.
+
+9. Four practice forms must feel like parallel practice, not copies.
+
+10. The whole package is designed for clean student use, Notability/print readability,
+    and easy conversion of Practice Set 3 into Blooket.
+
+================================================================
+END PHYSICS PRACTICE SETS BUILD — PORTABLE MEMORY v2 — GOLD STANDARD
+================================================================
