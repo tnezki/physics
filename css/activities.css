@@ -157,18 +157,69 @@
     margin-bottom: 5px;
 }
 
+
+/* ── QUESTIONS-BEGIN DIVIDER ─────────────────────────────────── */
+.question-divider {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.question-divider-inner {
+    width: 82%;
+    border: 4px solid var(--navy);
+    border-radius: 12px;
+    padding: .7in .55in;
+    background: white;
+}
+.question-divider-kicker {
+    font-size: 14pt;
+    font-weight: 900;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: .18in;
+}
+.question-divider-title {
+    font-size: 34pt;
+    line-height: 1.05;
+    font-weight: 900;
+    color: var(--navy);
+}
+.question-divider-rule {
+    width: 48%;
+    height: 8px;
+    margin: .24in auto;
+    border-radius: 999px;
+    background: #f0fdf4;
+    border: 1.5px solid #86efac;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+.question-divider-subtitle {
+    max-width: 6.8in;
+    margin: 0 auto;
+    font-size: 16pt;
+    line-height: 1.4;
+    color: #333;
+}
+
 /* ── PROBLEM AND SOLUTION PAGES ──────────────────────────────── */
 /* Large fonts — designed for classroom projection.              */
 .prob-head {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    border-bottom: 2px solid var(--text-dark);
-    padding-bottom: 6px;
+    align-items: center;
+    border: 1.5px solid #86efac;
+    border-bottom: 2px solid #15803d;
+    border-radius: 5px;
+    padding: 8px 10px;
     margin-bottom: 12px;
     font-size: 12pt;
     font-weight: 800;
     color: #333;
+    background: #f0fdf4;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 .prob-num {
     font-size: 18pt;
@@ -208,6 +259,17 @@
     line-height: 1.35;
 }
 .solution b { color: var(--navy); }
+
+
+/* ── QUESTION / SOLUTION HEADER IDENTIFICATION ───────────────── */
+/* Question pages use a pale green header strip; solution pages use pale red. */
+.solution-page .prob-head {
+    background: #fff1f2;
+    border-color: #fca5a5;
+    border-bottom-color: #b91c1c;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
 
 /* ── EXIT TICKET (standard activities) ───────────────────────── */
 /* 2×2 grid — 4 projected questions, matching PS ET format.      */
