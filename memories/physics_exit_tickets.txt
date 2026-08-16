@@ -1,0 +1,1037 @@
+PHYSICS EXIT TICKETS BUILD — PORTABLE MEMORY / GOLD STANDARD
+================================================================
+
+PURPOSE
+-------
+THIS FILE IS THE CURRENT SINGLE SOURCE OF TRUTH FOR PHYSICS EXIT-TICKET BUILDS.
+
+The finalized Unit 1 exit-ticket package is the gold-standard interpretation for:
+  • source grounding
+  • three exit tickets per section
+  • four questions per ticket
+  • coverage of the section I-can statements
+  • DOK balance
+  • projector-first layout
+  • 2x2 question-table architecture
+  • first-screen navigation menu
+  • anchor/link naming
+  • Physics diagrams
+  • CSS usage
+  • print behavior
+  • ZIP/deployment structure
+  • QA
+
+The approved Unit 1 build established this core model:
+  • Unit 1 has 5 sections.
+  • Each section has Ticket A, Ticket B, and Ticket C.
+  • Therefore Unit 1 contains 15 exit tickets total.
+  • Each ticket has exactly 4 questions.
+  • The four questions collectively cover the section's I-can statements.
+  • Questions are primarily DOK 1 and DOK 2.
+  • A ticket MAY include one DOK 3 question when the section target naturally supports strategic reasoning.
+  • No ticket may contain more than one DOK 3 question, and DOK 3 should NOT appear on every ticket.
+  • There is NO student workspace because students answer on a separate generic form.
+  • Questions are displayed in a literal 2x2 table to minimize space.
+  • Every ticket is designed to fit inside one projector viewport without scrolling.
+  • A full-screen landing/menu page appears first and links to every ticket.
+  • Physics diagrams may be embedded directly as inline SVG.
+  • The approved Unit 1 package uses 13 embedded force diagrams; this is NOT a quota.
+  • The current shared external exit.css is the layout authority and is not bundled in unit ZIPs.
+
+"BUILD," "CREATE," "MAKE," "GENERATE," OR "REBUILD" MEANS COMPLETE THE FULL PACKAGE.
+A plan, outline, question list, partial HTML, or preview is not a completed build.
+
+================================================================
+SOURCE PRIORITY
+================================================================
+
+When sources conflict, follow this order:
+
+1. User's explicit instructions in the current conversation.
+2. THIS Physics Exit Tickets portable memory.
+3. Current unit assessment plan — especially section titles, Learning Targets,
+   I-can statements, timing, intended DOK, formulas/symbols, and representation limits.
+4. Current unit student/teacher notes.
+5. Current approved/rebuilt formative assessments.
+6. Current approved summative assessment.
+7. Current approved Physics practice sets, when useful for additional source-grounded
+   wording/context ideas.
+8. Current approved Physics exit-ticket gold-standard package, when supplied, as the
+   structural/layout benchmark.
+9. Current shared css/exit.css, when supplied/accessible; never bundle it into the unit ZIP.
+10. Current authoritative graph_tool.py when a true quantitative/data graph is needed.
+11. Older Physics/Algebra exit-ticket conventions only for historical reference.
+12. Saved memory / prior habits.
+
+Do not silently blend incompatible older systems into this one.
+
+================================================================
+REQUIRED INPUTS / READ ORDER
+================================================================
+
+For a normal production build, read before writing student questions:
+
+1. THIS portable memory completely.
+2. The entire current unit assessment plan.
+3. The current unit notes far enough to identify for EVERY section:
+     • section title
+     • Learning Target
+     • all I-can statements
+     • vocabulary
+     • formulas/symbols
+     • diagrams/representations already taught
+     • instructional sequence / what is available by that point
+4. All current formative assessments for the unit.
+5. The current summative assessment.
+6. Current approved practice sets when supplied.
+7. Current approved exit-ticket package when supplied.
+8. Current shared css/exit.css when supplied/accessible; otherwise follow this PM's locked layout contract.
+9. graph_tool.py completely if a true graph might be needed.
+
+Do not require unrelated Algebra files, dashboards, or mapping workbooks unless the user
+explicitly adds them to the workflow.
+
+================================================================
+ASSESSMENT PLAN = CONTENT / TIMING CONTRACT
+================================================================
+
+The assessment plan controls what students should know by each section and what each
+I-can statement actually means.
+
+Before planning the three tickets for one section:
+
+1. List ALL I-can statements for the section.
+2. Identify the exact concepts, vocabulary, formulas, and representations that support
+   each I-can statement.
+3. Identify which formative/summative question families are already eligible by this
+   point in the unit.
+4. Use notes to verify that a proposed question does not require later-section content.
+5. Build three genuinely parallel ticket forms that sample the section's full target set.
+
+HARD RULE:
+Never pull later-section Physics content into an earlier section just to make a question
+more interesting or to satisfy a DOK target.
+
+If the existing assessment bank does not provide enough suitable exit-ticket prompts,
+create original questions grounded in the CURRENT section's I-can statements and notes.
+That is the correct response; do not reach ahead.
+
+================================================================
+CORE EXIT-TICKET ARCHITECTURE — LOCKED DEFAULT
+================================================================
+
+PER SECTION:
+  Ticket A
+  Ticket B
+  Ticket C
+
+PER TICKET:
+  exactly 4 questions
+  arranged as a literal 2x2 table
+  no workspace
+  no answer lines
+  no name/date fields
+  no student response boxes
+
+PER UNIT:
+  total ticket count = 3 x number of sections in the current assessment plan.
+
+For a five-section unit:
+  15 tickets total.
+
+Do not silently invent or delete sections to force 15 if a future assessment plan uses a
+different section count.
+
+================================================================
+I-CAN COVERAGE
+================================================================
+
+The PURPOSE of each four-question ticket is to give a compact read on the section's
+learning targets.
+
+APPROVED UNIT 1 INTERPRETATION:
+Unit 1 sections have four I-can statements, so Questions 1–4 map in order to I-can 1–4.
+
+For a future section with exactly four I-can statements:
+  Q1 -> I-can 1
+  Q2 -> I-can 2
+  Q3 -> I-can 3
+  Q4 -> I-can 4
+
+Across Ticket A/B/C, preserve that broad four-target coverage while changing the actual
+student-facing task.
+
+If a future section has a different number of I-can statements:
+  • keep exactly 4 questions unless the user explicitly changes the standard
+  • distribute the four questions as evenly and instructionally as possible
+  • make sure every I-can appears somewhere across the three forms
+  • do not invent a learning target merely to create a 1:1 mapping
+
+A ticket should not accidentally become four versions of one narrow skill.
+
+================================================================
+DOK STANDARD — HARD RULE
+================================================================
+
+Default exit-ticket cognitive demand:
+  • Most questions should be DOK 1 and DOK 2.
+  • A four-question ticket MAY contain one DOK 3 question.
+  • A four-question ticket may NOT contain more than one DOK 3 question.
+  • DOK 3 should be used selectively; do NOT include a DOK 3 question on every ticket.
+  • No DOK 4 unless the user explicitly changes the standard.
+
+APPROVED UNIT 1 COUNTS:
+  60 total questions
+  12 DOK 1
+  47 DOK 2
+   1 DOK 3
+
+Those exact 12/47/1 counts are a Unit 1 RESULT, not a required quota for future units.
+Unit 1 happened to use only one DOK 3 question. Future units may use more than one DOK 3
+question across the unit, provided each individual four-question ticket contains at most one
+DOK 3 item and DOK 3 is not forced into every ticket.
+
+DOK 1:
+  • recall
+  • identify
+  • recognize
+  • classify
+  • name a force/term
+  • simple one-step interpretation
+
+DOK 2:
+  • apply a familiar concept
+  • compare evidence
+  • interpret a familiar diagram/model
+  • calculate/interpret net force in a routine situation
+  • explain a familiar relationship briefly
+  • connect motion language to a familiar force condition
+
+DOK 3 — SELECTIVE, MAXIMUM ONE PER TICKET:
+  • strategic reasoning
+  • diagnose a conflict or misconception
+  • revise a model using evidence
+  • compare/critique competing representations
+
+Use DOK 3 only when it genuinely fits the I-can statement and available instruction.
+Do not add complexity merely to satisfy a quota. Some sections or forms may have no DOK 3
+question at all.
+
+Do not inflate a question to DOK 3 merely by adding "explain."
+Do not hide a DOK 3 question in multiple choice and then tag it as DOK 2 merely because it
+has answer choices.
+
+In the approved Unit 1 package, the only DOK 3 item happened to be the final question of
+Ticket C in Section 1.5. It asks students to identify a conflict between a constant-speed
+description and an unbalanced force model and then revise the model. This is a historical
+Unit 1 design choice, NOT a one-per-unit rule.
+
+================================================================
+PARALLEL-FORM STANDARD — TICKETS A/B/C
+================================================================
+
+Ticket A, Ticket B, and Ticket C for the same section are PARALLEL FORMS.
+They should assess the same section targets at approximately the same overall difficulty,
+but they must not be near-duplicates.
+
+Across A/B/C, vary several of:
+  • context
+  • wording structure
+  • prompt direction
+  • representation
+  • answer format
+  • numerical values when meaningful
+  • misconception targeted
+  • diagram type or object
+  • evidence presented
+
+BAD PARALLELISM:
+  "A 20 N force acts right..."
+  "A 25 N force acts right..."
+  "A 30 N force acts right..."
+
+BETTER PARALLELISM:
+  • one form uses a short scenario
+  • one form uses a force diagram
+  • one form uses a claim/error correction
+while preserving the same I-can target and approximate DOK.
+
+A student should not be able to use Ticket A as a near-identical answer key for Ticket B
+or Ticket C.
+
+================================================================
+QUESTION-WRITING STANDARD
+================================================================
+
+EXIT TICKETS ARE PROJECTED, NOT PRINTED WORKSHEETS.
+Questions must be concise enough to read from across the room.
+
+Prefer:
+  • one compact prompt
+  • one clear task
+  • short scenarios
+  • familiar quantities
+  • brief explanation demands
+  • visually readable diagrams
+
+Avoid:
+  • paragraph-length setups
+  • unnecessary data
+  • giant answer-choice blocks
+  • tiny text to rescue an overlong question
+  • long multi-part calculations
+  • wording that requires students to copy large amounts of information before solving
+
+NATURAL WORDING
+---------------
+Avoid a Mad-Lib bank.
+Rotate among:
+  • direct / standard wording
+  • action- or question-first wording
+  • short real-world contexts
+  • diagram/model interpretation
+  • claim/evidence reasoning
+
+VOCABULARY VARIETY
+------------------
+Rotate among:
+  • term -> definition/concept
+  • definition/concept -> term
+  • example -> concept
+  • concept -> example
+
+Do not make every vocabulary item "Which term means...?"
+
+MULTIPLE CHOICE
+---------------
+Multiple choice is allowed but not required.
+If used:
+  • use uppercase A, B, C, D labels
+  • one clearly best answer
+  • plausible distractors tied to misconceptions
+  • avoid joke/absurd choices
+  • keep the choice block compact enough for projection
+  • use fewer than four choices only when a true binary decision is instructionally better
+    and the approved source supports that structure
+
+The approved Unit 1 exit tickets mix open response and selected response.
+
+================================================================
+NO WORKSPACE — HARD RULE
+================================================================
+
+Students answer on a separate generic response form.
+
+Therefore the projected exit-ticket HTML contains:
+  • NO .workspace divs
+  • NO blank answer lines
+  • NO textareas
+  • NO response boxes
+  • NO large empty regions reserved for writing
+
+Screen space is for the four questions and any necessary representation.
+
+================================================================
+VISUALS / DIAGRAMS / GRAPHS
+================================================================
+
+VISUAL PHILOSOPHY
+-----------------
+Use a visual when it improves the question or assesses representation/modeling skill.
+Do not add visuals as decoration and do not impose a fixed visual quota.
+
+The approved Unit 1 package contains 13 embedded force diagrams because the force sections
+benefit from them. The number 13 is NOT a future requirement.
+
+Good exit-ticket visual uses:
+  • unlabeled/neutral force diagrams
+  • object + interaction arrows
+  • motion arrow compared with force arrows
+  • compact data table
+  • short model comparison
+  • true quantitative graph when the section actually teaches graph interpretation
+
+VISUAL ANSWER-SAFETY — HARD RULE
+--------------------------------
+A figure may provide evidence but must never reveal the response students are supposed to
+identify, label, classify, critique, or infer.
+
+Before accepting a visual, ask:
+  1. What is directly observable from the representation?
+  2. What must the student calculate or infer?
+  3. Does any label/title/caption/alt text give away the answer?
+  4. Does the representation contain all information required by the prompt?
+  5. Does the expected answer actually agree with the diagram?
+
+Do not label a force "normal force" if the task is to identify the upward force.
+Do not label a diagram "balanced forces" if the task is to decide whether forces balance.
+
+PHYSICS DIAGRAMS
+----------------
+Force diagrams, motion arrows, generic object models, and other simple Physics schematics
+are NOT coordinate graphs.
+
+For these, use clean inline SVG when practical.
+Advantages for this exit-ticket system:
+  • self-contained HTML
+  • no extra figure files
+  • crisp at projector scale
+  • easy to keep labels answer-neutral
+  • exact sizing inside a 2x2 ticket cell
+
+Approved Unit 1 force-SVG conventions:
+  • viewBox approximately 720 x 230
+  • class="force-svg"
+  • object: rounded rectangle with class="obj"
+  • support surface: class="surface"
+  • force arrows: class="arr"
+  • secondary/light arrows: class="arr-lite"
+  • motion indicator: class="motion"
+  • neutral unknown labels such as "?" are allowed
+  • do not use arrow labels that reveal the target response
+
+TRUE GRAPHS / graph_tool.py
+---------------------------
+Use the authoritative graph_tool.py only for genuine quantitative/data/axis graphs that
+match one of its supported graph types.
+
+If a true graph is required:
+  1. Read graph_tool.py completely.
+  2. Confirm an existing graph type fits the representation.
+  3. Do NOT recreate a supported graph with ad-hoc matplotlib styling.
+  4. Copy graph_tool.py byte-for-byte as generate_graphs.py if the current build workflow
+     requires generation source.
+  5. Append graph-generation blocks only below the final permitted append marker.
+  6. Run it during QA.
+  7. Inspect the actual output visually.
+  8. Make sure the graph does not reveal the answer.
+  9. Keep the projected ticket readable at full-screen scale.
+
+Do NOT force a Physics diagram through graph_tool.py just because the tool is present.
+If no true graph is instructionally needed, the exit-ticket package may contain no
+figure PNGs and no generate_graphs.py. That is exactly what happened in the approved
+Unit 1 build.
+
+================================================================
+PACKAGE / DEPLOYMENT STRUCTURE — LOCKED CURRENT STANDARD
+================================================================
+
+The shared stylesheet is ALREADY DEPLOYED in the common top-level css/ folder.
+DO NOT include exit.css in future exit-ticket ZIP files.
+
+DEPLOYED FILESYSTEM PATTERN
+---------------------------
+After the user unzips the package in the existing exit/ deployment location, Unit N is:
+
+  css/
+    exit.css                  <-- already exists; external shared dependency
+  exit/
+    exitN/
+      exit_N.html
+      generate_graphs.py      <-- include only when true graph assets are used
+      figures/                <-- include only when external figure assets are used
+        [used figure files]
+
+The HTML link remains EXACTLY:
+
+  <link rel="stylesheet" href="../../css/exit.css">
+
+Do not change that path merely because exit.css is not inside the ZIP. The ZIP is designed
+to be extracted into the existing exit/ deployment location, making ../../css/exit.css
+resolve to the shared stylesheet.
+
+FINAL ZIP SHAPE
+---------------
+The ZIP itself contains ONE top-level unit folder and no css/ folder.
+
+Unit 2 gold-standard packaging example:
+
+  exit2/
+    exit_2.html
+    generate_graphs.py
+    figures/
+      u2_3_a_vt_rising.png
+      u2_3_b_dt_curve.png
+      ...only figures actually used...
+
+For Unit N:
+
+  exitN/
+    exit_N.html
+    [generate_graphs.py only if needed]
+    [figures/ only if needed]
+
+The ZIP filename may be descriptive, such as:
+  exit2.zip
+  exit3.zip
+
+The user-provided exit2.zip is the current packaging benchmark. It confirms:
+  • one top-level exit2/ folder
+  • no bundled css/ folder
+  • exit_2.html links to ../../css/exit.css
+  • generate_graphs.py and figures/ live inside exit2/ when graphs are used
+
+MACOS METADATA RULE
+-------------------
+The user-provided reference ZIP contains __MACOSX metadata because it originated on macOS.
+DO NOT reproduce __MACOSX/, .DS_Store, AppleDouble files (._filename), or other metadata in
+assistant-generated ZIPs. Match the meaningful package structure, not the metadata debris.
+
+ONE CONSOLIDATED HTML — HARD RULE
+---------------------------------
+Unless the user explicitly changes the deployment system, each unit uses ONE consolidated
+exit-ticket HTML file rather than separate HTML files for each ticket.
+
+Do not add screenshots, PDFs, QA logs, temporary scripts, copied CSS, or unused figures to
+the final ZIP unless the user explicitly asks for them.
+
+================================================================
+FIRST PAGE / EXIT TICKET MENU — LOCKED
+================================================================
+
+The FIRST screen is a projector navigation menu.
+
+It must:
+  • fill one viewport
+  • show every section
+  • show Ticket A / Ticket B / Ticket C links for each section
+  • fit without scrolling on the normal projector/desktop layout
+  • use anchors that jump directly to each ticket
+
+For a five-section unit, the menu shows five section rows and 15 ticket links.
+
+Anchor naming standard:
+  #exit-[unit]-[section]-a
+  #exit-[unit]-[section]-b
+  #exit-[unit]-[section]-c
+
+Unit 1 examples:
+  #exit-1-1-a
+  #exit-1-1-b
+  #exit-1-1-c
+  ...
+  #exit-1-5-c
+
+Menu page id:
+  id="exit-menu"
+
+Menu link example:
+  <a class="index-link" href="#exit-1-3-b">Ticket B</a>
+
+The menu is for projection/navigation. In the approved CSS it is hidden when printing.
+
+================================================================
+PROJECTOR-FIRST SCREEN FIT — NOT ACCIDENTAL
+================================================================
+
+Every ticket is deliberately constrained to one projector viewport.
+The gold-standard fit comes from ALL of these decisions working together:
+
+  • .exit-ticket uses width: 100vw
+  • .exit-ticket uses height: 100vh
+  • overflow: hidden
+  • flex column layout
+  • compact fixed header
+  • question table consumes the remaining height
+  • exactly two rows x two columns
+  • table-layout: fixed
+  • each table row is 50% height
+  • each table cell is 50% width
+  • responsive clamp() font sizing
+  • diagram max-height cap
+  • compact choice layout
+  • no workspace
+  • question wording kept concise
+
+HARD RULE:
+Do not "solve" an overfull ticket by allowing scrolling on the normal projector layout.
+Fix the question wording, choice length, figure size, or layout density instead.
+
+The approved desktop/projector ticket uses:
+  min-height: 620px
+
+The approved narrow-screen fallback may become auto-height for usability, but the normal
+classroom projector/desktop experience remains one screen per ticket.
+
+================================================================
+SCROLL / NAVIGATION BEHAVIOR
+================================================================
+
+The approved page uses vertical scroll snapping:
+
+  html { scroll-snap-type: y mandatory; }
+  .exit-index  { scroll-snap-align: start; }
+  .exit-ticket { scroll-snap-align: start; }
+
+This makes each menu/ticket page settle cleanly into the viewport when scrolling.
+
+Do not remove scroll snapping unless the user explicitly changes the projection workflow.
+
+================================================================
+HTML — COMMENTED GOLD-STANDARD STRUCTURE
+================================================================
+
+Do not embed a local <style> block.
+Use the external exit.css.
+
+----------------------------------------------------------------
+DOCUMENT HEAD
+----------------------------------------------------------------
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit [N] Exit Tickets</title>
+  <link rel="stylesheet" href="../../css/exit.css">
+</head>
+<body>
+-->
+
+----------------------------------------------------------------
+LANDING / MENU PAGE
+----------------------------------------------------------------
+
+<!--
+<section class="exit-index" id="exit-menu" aria-label="Unit [N] exit ticket menu">
+  <header class="index-head">
+    <div class="index-kicker">Conceptual Physics - Unit [N]</div>
+    <h1>Exit Ticket Menu</h1>
+    <p>Select a section and version to project.</p>
+  </header>
+
+  <div class="index-grid">
+    <div class="index-row">
+      <div class="index-section">
+        <span class="index-number">Section [N].[S]</span>
+        <span class="index-title">[Section Title]</span>
+      </div>
+      <div class="index-links">
+        <a class="index-link" href="#exit-[N]-[S]-a">Ticket A</a>
+        <a class="index-link" href="#exit-[N]-[S]-b">Ticket B</a>
+        <a class="index-link" href="#exit-[N]-[S]-c">Ticket C</a>
+      </div>
+    </div>
+
+    [REPEAT ONE ROW PER SECTION]
+  </div>
+</section>
+-->
+
+----------------------------------------------------------------
+FOUR-QUESTION TICKET — EXACT 2x2 SHAPE
+----------------------------------------------------------------
+
+<!--
+<section class="exit-ticket"
+         data-section="[N].[S]"
+         data-version="A"
+         id="exit-[N]-[S]-a">
+
+  <header class="ticket-head">
+    <div>
+      <div class="ticket-kicker">Conceptual Physics - Unit [N] - Section [N].[S]</div>
+      <h1 class="ticket-title">[Section Title]</h1>
+    </div>
+    <div class="ticket-meta">Exit Ticket A of 3</div>
+  </header>
+
+  <table class="question-grid" aria-label="Section [N].[S] exit ticket A">
+    <tr>
+      <td data-dok="1">
+        <span class="qnum">1</span>
+        <span class="qtext">[Question aligned to I-can 1]</span>
+      </td>
+
+      <td data-dok="2">
+        <span class="qnum">2</span>
+        <span class="qtext">[Question aligned to I-can 2]</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td data-dok="2">
+        <span class="qnum">3</span>
+        <span class="qtext">[Question aligned to I-can 3]</span>
+      </td>
+
+      <td data-dok="2">
+        <span class="qnum">4</span>
+        <span class="qtext">[Question aligned to I-can 4]</span>
+      </td>
+    </tr>
+  </table>
+</section>
+-->
+
+Do not mechanically force the DOK pattern 1/2/2/2 on every ticket. It is only an example.
+Keep most questions at DOK 1–2. A ticket may include one DOK 3 item when appropriate,
+but never more than one DOK 3 question in the same four-question ticket and not on every ticket.
+
+----------------------------------------------------------------
+MULTIPLE-CHOICE BLOCK
+----------------------------------------------------------------
+
+<!--
+<td data-dok="2">
+  <span class="qnum">3</span>
+  <span class="qtext">[Question]</span>
+  <div class="choices one-col">
+    <div class="choice">A. [Choice]</div>
+    <div class="choice">B. [Choice]</div>
+    <div class="choice">C. [Choice]</div>
+    <div class="choice">D. [Choice]</div>
+  </div>
+</td>
+-->
+
+Use class="choices" for a compact two-column choice layout when choices are short.
+Use class="choices one-col" when the choices need more width.
+
+----------------------------------------------------------------
+INLINE FORCE-DIAGRAM SKELETON
+----------------------------------------------------------------
+
+<!--
+<td class="has-figure" data-dok="2">
+  <span class="qnum">4</span>
+  <span class="qtext">Name the upward and downward forces acting on the book.</span>
+
+  <svg class="force-svg" viewBox="0 0 720 230"
+       role="img" aria-label="Force diagram">
+
+    <line x1="80" y1="175" x2="640" y2="175" class="surface"/>
+
+    <rect x="300" y="100" width="120" height="65" rx="8" class="obj"/>
+    <text x="360" y="140" text-anchor="middle" class="small">book</text>
+
+    <line x1="360" y1="100" x2="360" y2="30" class="arr"/>
+    <polygon points="360,30 353.5,43 366.5,43" fill="#111"/>
+    <text x="385" y="48" class="small">?</text>
+
+    <line x1="360" y1="165" x2="360" y2="220" class="arr"/>
+    <polygon points="360,220 353.5,207 366.5,207" fill="#111"/>
+    <text x="385" y="212" class="small">?</text>
+  </svg>
+</td>
+-->
+
+The neutral "?" labels are intentional because they do not reveal the force names.
+
+----------------------------------------------------------------
+COMPACT DATA TABLE SKELETON
+----------------------------------------------------------------
+
+<!--
+<table class="data-mini">
+  <tr><th>[Heading]</th><th>[Heading]</th></tr>
+  <tr><td>[Value]</td><td>[Value]</td></tr>
+  <tr><td>[Value]</td><td>[Value]</td></tr>
+</table>
+-->
+
+================================================================
+SHARED exit.css — EXTERNAL DEPENDENCY / CURRENT LAYOUT AUTHORITY
+================================================================
+
+The shared stylesheet now lives permanently with the user's other common CSS files.
+Future exit-ticket ZIPs MUST NOT contain a copy of exit.css.
+
+HTML still links exactly to:
+
+  <link rel="stylesheet" href="../../css/exit.css">
+
+The current deployed exit.css is the layout authority. Do not embed a local <style> block,
+do not create a per-unit replacement stylesheet, and do not bundle exit.css into the ZIP.
+
+The current shared stylesheet includes the approved Unit 1 projector architecture PLUS the
+Unit 2 compact-table/graph support. Important class contracts include:
+
+  .exit-ticket       -> 100vw x 100vh desktop projector screen, overflow hidden
+  .exit-index        -> full-screen landing/menu page
+  .question-grid     -> literal fixed 2x2 question table
+  .force-svg         -> compact inline Physics diagram sizing
+  .graph-img         -> external graph image sizing that follows the same projector cap
+  .data-mini         -> compact data table that explicitly resets inherited question-cell
+                        width/font/border/overflow behavior
+  .choices           -> compact two-column choices
+  .choices.one-col   -> single-column choices when needed
+
+CURRENT COMPACT DATA-TABLE BEHAVIOR
+-----------------------------------
+The Unit 2 update fixed nested data tables so their <td> elements do not inherit the large
+.question-grid td formatting. The shared stylesheet therefore explicitly resets .data-mini
+th/td width, vertical alignment, border radius, font sizing, padding, and overflow.
+
+Do not revert to the older Unit 1 nested-table rules.
+
+CURRENT GRAPH-IMAGE BEHAVIOR
+----------------------------
+External graph images use class="graph-img" and share the same desktop/mobile/print height
+caps as force diagrams so genuine graph questions remain readable without causing viewport
+overflow.
+
+If the shared CSS changes again in a future approved build, that newer deployed stylesheet
+supersedes any historical values described in this PM. Preserve the class architecture and
+external-link contract unless explicitly instructed otherwise.
+
+================================================================
+IMPORTANT CSS GENERALIZATION NOTE
+================================================================
+
+The shared exit.css is now maintained externally and is NOT part of the generated unit ZIP.
+Do not silently edit or regenerate it during a normal unit build.
+
+The approved menu layout was designed around five section rows. If a future unit genuinely
+has a different section count and the existing shared CSS cannot keep the menu on one screen:
+  • first try concise section-title/menu content within the existing stylesheet
+  • if the CSS itself truly must change, flag that as a shared-system change
+  • only update the shared stylesheet when the user explicitly approves or requests it
+  • once approved, update this portable memory so future units use the new shared CSS
+
+Never solve a per-unit menu issue by embedding inline CSS or bundling a private exit.css.
+
+================================================================
+PRINT BEHAVIOR
+================================================================
+
+Projection is the primary use, but the approved CSS also supports landscape printing.
+
+Approved print rules:
+  • menu page is hidden
+  • each ticket prints as one landscape page
+  • @page size: landscape
+  • .exit-ticket size: 10.5in x 7.75in
+  • page break after every ticket
+
+Do not redesign the ticket around print at the expense of projector readability.
+Projection remains the primary use case.
+
+================================================================
+UNIT 1 GOLD-STANDARD INTERPRETATION
+================================================================
+
+The approved Unit 1 package contains these five sections:
+
+1.1 — Thinking Like a Physicist
+1.2 — Forces and Newton's First Law
+1.3 — Combining Forces and Net Force
+1.4 — Equilibrium and Balanced Motion
+1.5 — Modeling Forces in the Real World
+
+Menu:
+  • 5 rows
+  • 3 links per row
+  • 15 working anchor links
+
+Tickets:
+  • 15 total
+  • 60 total questions
+  • 4 questions per ticket
+  • 3 tickets per section
+
+DOK:
+  • 12 DOK 1
+  • 47 DOK 2
+  • 1 DOK 3
+  • 0 DOK 4
+
+Visuals:
+  • 13 embedded force SVGs
+  • no external figures folder
+  • no generate_graphs.py in the delivered package
+
+Deployed files:
+  css/exit.css                 (shared external stylesheet)
+  exit/exit1/exit_1.html
+
+Current ZIP standard for future units:
+  exit1/
+    exit_1.html
+  (no css/ folder inside the ZIP)
+
+The approved build demonstrated that all 15 tickets can fit on one projector screen each
+when the question bank respects the layout constraints. This fit was intentional, not luck.
+
+================================================================
+QA — REQUIRED BEFORE DELIVERY
+================================================================
+
+SOURCE / CONTENT
+[ ] Read the full unit assessment plan.
+[ ] Read the unit notes and identify every section's I-can statements.
+[ ] Read current formative assessments.
+[ ] Read current summative assessment.
+[ ] Read practice sets if supplied/needed for source-grounded adaptation.
+[ ] No later-section content appears before it is taught.
+[ ] Questions are scientifically correct and source-supported.
+
+COUNTS / STRUCTURE
+[ ] Exactly 3 tickets per section.
+[ ] Exactly 4 questions per ticket.
+[ ] Total ticket count = 3 x actual section count.
+[ ] Every ticket uses a literal 2x2 question table.
+[ ] No workspace appears anywhere.
+[ ] One consolidated HTML file for the unit.
+[ ] First screen is the exit-ticket menu.
+
+I-CAN ALIGNMENT
+[ ] Each ticket samples the section's target set.
+[ ] For four-I-can sections, Q1–Q4 map cleanly across I-can 1–4.
+[ ] Across A/B/C, all I-cans remain represented.
+[ ] No ticket becomes four questions about the same narrow skill.
+
+DOK
+[ ] Every question is tagged data-dok.
+[ ] Most questions are DOK 1–2.
+[ ] No individual four-question ticket contains more than one DOK 3 item.
+[ ] DOK 3 is used selectively and does not appear on every ticket.
+[ ] A ticket with no DOK 3 question is completely acceptable.
+[ ] No DOK 4 exists unless explicitly requested.
+[ ] DOK tags match the actual cognitive demand.
+
+PARALLEL FORMS
+[ ] Ticket A/B/C are comparable in target and difficulty.
+[ ] A/B/C are not number/name swaps of one shell.
+[ ] Context, wording, prompt direction, representation, or misconception varies meaningfully.
+
+PROJECTION
+[ ] Menu fits one normal projector viewport.
+[ ] Every ticket fits one normal projector viewport.
+[ ] No ticket requires normal desktop/projector scrolling.
+[ ] No cell clips question text or answer choices.
+[ ] No SVG is clipped.
+[ ] Font remains readable from across a classroom.
+[ ] No question was rescued with unreasonably tiny text.
+
+MENU / LINKS
+[ ] Every section appears on the menu.
+[ ] Each section has Ticket A/B/C links.
+[ ] All href targets exist.
+[ ] Every ticket id is unique.
+[ ] Anchor naming is consistent.
+[ ] Menu is the first page/screen.
+
+VISUALS
+[ ] Visuals are used where useful, not by quota.
+[ ] Inline Physics diagrams are answer-neutral.
+[ ] No visual label/title/alt text gives away the requested response.
+[ ] Motion arrows are not mislabeled as forces.
+[ ] Force arrows correspond to actual interactions.
+[ ] True graphs, if any, were built with the authoritative graph tool when supported.
+[ ] Every used graph was visually inspected.
+
+HTML / CSS
+[ ] HTML links exactly to ../../css/exit.css for the approved folder depth.
+[ ] No embedded style block.
+[ ] Shared external exit.css is used as the layout authority and is not copied into the ZIP.
+[ ] scroll-snap behavior remains intact.
+[ ] Desktop ticket height remains 100vh.
+[ ] Desktop overflow remains hidden.
+[ ] Print menu remains hidden.
+
+PACKAGE
+[ ] ZIP contains one top-level exitN/ folder.
+[ ] exitN/exit_N.html exists.
+[ ] exit.css is NOT bundled in the ZIP.
+[ ] HTML still links exactly to ../../css/exit.css.
+[ ] generate_graphs.py is included inside exitN/ only when graph assets are used.
+[ ] figures/ is included inside exitN/ only when external figures are used.
+[ ] No __MACOSX/, .DS_Store, ._ files, screenshots, QA debris, or unnecessary temporary files.
+[ ] ZIP opens and matches the approved extraction structure.
+
+AUTOMATED SANITY CHECKS — RECOMMENDED
+-------------------------------------
+Before delivery, programmatically verify at minimum:
+
+  • number of <section class="exit-ticket"> elements
+  • number of data-dok question cells
+  • DOK count distribution
+  • no individual ticket contains more than one data-dok="3" cell
+  • not every ticket contains a data-dok="3" cell
+  • zero data-dok="4" unless explicitly requested
+  • number of menu links
+  • every href="#..." target exists
+  • every ticket id is unique
+  • exactly 4 question cells inside each ticket
+  • CSS path exists
+
+For Unit 1, the approved sanity-check result was:
+  tickets: 15
+  question cells: 60
+  DOK 1: 12
+  DOK 2: 47
+  DOK 3: 1
+  force SVGs: 13
+  menu links: 15
+
+================================================================
+BUILD WORKFLOW — END TO END
+================================================================
+
+1. Read this PM completely.
+2. Read the entire unit assessment plan.
+3. Build a section/I-can map.
+4. Read notes and assessment sources.
+5. Make a private 3-ticket plan for each section:
+     Ticket A: four targets
+     Ticket B: four targets, varied representations/contexts
+     Ticket C: four targets, varied again
+6. Decide which tickets, if any, naturally merit a DOK 3 item. Never place more than one
+   DOK 3 question on a ticket, and do not place DOK 3 on every ticket.
+7. Draft concise questions.
+8. Check DOK honestly.
+9. Perform a visual pass:
+     • add diagrams where representation matters
+     • use inline SVG for simple Physics diagrams
+     • use graph_tool.py only for true supported graphs
+10. Build the menu page first in the HTML body.
+11. Build all ticket sections with stable ids/anchors.
+12. Link external ../../css/exit.css.
+13. Open/render the HTML at a normal projector/desktop viewport.
+14. Check EVERY ticket for one-screen fit.
+15. Shorten/restructure any overflow; do not permit desktop scrolling.
+16. Click-test all menu links.
+17. Run structural/DOK/link sanity checks.
+18. Assemble the ZIP with one top-level exitN/ folder; do NOT include css/exit.css.
+19. Include generate_graphs.py and figures/ inside exitN/ only when they are actually used.
+20. Re-open the ZIP listing; remove __MACOSX, .DS_Store, ._ files, QA debris, and unused assets.
+21. Verify exit_N.html still links exactly to ../../css/exit.css.
+22. Deliver the ZIP.
+
+For a portable-memory request, deliver THIS workflow as a downloadable .txt file.
+
+================================================================
+DO NOT REVIVE / COMMON FAILURE MODES
+================================================================
+
+Do NOT:
+  • make one separate HTML file per ticket
+  • put answer workspace on the projector slide
+  • turn the four questions into a vertical list
+  • omit the first-page menu
+  • use 15 menu pages
+  • make A/B/C near-identical number swaps
+  • use later-section concepts early
+  • turn every prompt into multiple choice
+  • force every ticket to contain a diagram
+  • force every ticket to contain a graph
+  • force force diagrams through coordinate-graph functions
+  • label a diagram with the answer students must identify
+  • put more than one DOK 3 item in the same four-question ticket
+  • force a DOK 3 item into every ticket
+  • add DOK 4 without explicit direction
+  • shrink text until it is unreadable just to preserve one-screen fit
+  • allow normal projector scrolling to rescue an overfull ticket
+  • embed local replacement CSS in the HTML
+  • bundle exit.css inside a unit ZIP now that the stylesheet is shared externally
+  • include __MACOSX, .DS_Store, or AppleDouble ._ metadata in generated ZIPs
+  • remove scroll snapping without instruction
+  • remove or "simplify" the menu anchors
+  • include unnecessary build debris in the final ZIP
+
+================================================================
+END PHYSICS EXIT TICKETS PORTABLE MEMORY / GOLD STANDARD
+================================================================
