@@ -1,0 +1,1032 @@
+PHYSICS UNIT REVIEW BUILD — PORTABLE MEMORY / GOLD STANDARD
+================================================================
+
+PURPOSE
+-------
+THIS FILE IS THE CURRENT SINGLE SOURCE OF TRUTH FOR PHYSICS UNIT REVIEW BUILDS.
+
+The approved Unit 1 review package is the gold-standard interpretation for:
+  • one consolidated review guide per unit
+  • one linked student practice document per unit
+  • section-first organization with DOK information layered into the review
+  • unit-wide vocabulary and formulas/relationships
+  • concise bulleted summaries
+  • Learning Targets and I-can statements
+  • source-grounded figures/models
+  • misconception warnings
+  • final unit-wide DOK map
+  • final readiness checklist
+  • shared external review.css
+  • shared external base.css + practice_set.css for the practice document
+  • a floating Back-to-Top button on the main review
+  • a pill-style Practice Problems link in the main top navigation
+  • Notability-friendly open-response practice with 50 px workspaces
+  • one top-level reviewN/ folder in the final ZIP
+  • QA and packaging rules
+
+"BUILD," "CREATE," "MAKE," "GENERATE," OR "REBUILD" MEANS COMPLETE THE FULL PACKAGE.
+A plan, outline, partial HTML, or list of review topics is not a completed build.
+
+================================================================
+SOURCE PRIORITY
+================================================================
+
+When sources conflict, follow this order:
+
+1. User's explicit instructions in the current conversation.
+2. THIS Physics Review portable memory.
+3. Current unit assessment plan — especially section titles, Learning Targets,
+   I-can statements, DOK expectations, formulas/symbols, and assessment timing.
+4. Current unit student/teacher notes.
+5. Current approved formative assessments.
+6. Current approved summative assessment.
+7. Current approved Physics practice sets.
+8. Current approved review package when supplied, as the layout/content benchmark.
+9. Current shared css/review.css.
+10. Current shared css/base.css and css/practice_set.css for the student practice page.
+11. Current authoritative graph_tool.py when a true quantitative/data graph is needed.
+12. Saved memory / older conventions.
+
+Do not silently blend incompatible older systems into this one.
+
+================================================================
+REQUIRED INPUTS / READ ORDER
+================================================================
+
+For a normal production build, read before writing the review:
+
+1. THIS portable memory completely.
+2. The entire current unit assessment plan.
+3. The current unit notes far enough to identify for EVERY section:
+     • section number/title
+     • Learning Target
+     • all I-can statements
+     • vocabulary
+     • formulas/symbols/relationships
+     • diagrams/representations already taught
+     • common misconceptions emphasized in instruction
+     • instructional sequence
+4. All current formative assessments.
+5. The current summative assessment.
+6. Current approved practice sets.
+7. Current shared review.css when supplied/accessible.
+8. Current shared base.css + practice_set.css when supplied/accessible.
+9. graph_tool.py completely if a true graph might be needed.
+
+The review is a STUDY GUIDE, not a new source of curriculum content.
+Do not add unsupported formulas, vocabulary, concepts, or reasoning expectations simply
+because they are common in a generic Physics course.
+
+================================================================
+CORE REVIEW PHILOSOPHY — LOCKED DEFAULT
+================================================================
+
+The MAIN REVIEW is SECTION-FIRST.
+
+Students normally remember content by where it was learned (for example, equilibrium or
+net force), so the main organizational spine is the unit's section sequence.
+
+DOK is SECONDARY / DIAGNOSTIC.
+
+DOK information belongs INSIDE the review as a way to communicate increasing depth of
+thinking, but students should not have to navigate the whole review as separate DOK 1,
+DOK 2, DOK 3, and DOK 4 chapters.
+
+The approved hybrid architecture is:
+
+  1. Hero / title / top navigation
+  2. Unit at a Glance
+  3. Unit-wide Vocabulary
+  4. Unit-wide Formulas / Relationships
+  5. Section-by-section Review
+  6. Unit-wide DOK Map
+  7. Final Check / Before the Summative
+
+This is the locked default unless the user explicitly changes it.
+
+================================================================
+MAIN REVIEW PAGE — REQUIRED STRUCTURE
+================================================================
+
+FILE:
+  review_N.html
+
+HEAD:
+  • HTML5 document
+  • responsive viewport meta tag
+  • title "Unit N Review — [Unit Title]"
+  • link EXACTLY to:
+
+      ../../css/review.css
+
+Do NOT bundle review.css in the unit ZIP.
+Do NOT embed a replacement <style> block in normal builds.
+
+----------------------------------------------------------------
+HERO / TOP NAVIGATION
+----------------------------------------------------------------
+
+The main review begins with a prominent hero containing:
+  • eyebrow: "Conceptual Physics · Unit N Review"
+  • large unit title
+  • concise description of what the review contains
+  • one pill-style jump-navigation row
+
+Approved top-navigation order:
+  1. Unit at a Glance
+  2. Vocabulary
+  3. Formulas
+  4. Sections
+  5. DOK Map
+  6. Final Check
+  7. Practice Problems ↗
+
+HARD RULE:
+"Practice Problems ↗" is NOT a separate plain text link above or below the navigation.
+It must be the SAME pill/button style as the other top navigation links and appear
+IMMEDIATELY AFTER "Final Check."
+
+The practice link opens the practice HTML in a NEW TAB:
+
+  href="review_N_practice.html"
+  target="_blank"
+  rel="noopener"
+
+Commented gold-standard skeleton:
+
+<!--
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Conceptual Physics · Unit [N] Review</p>
+    <h1>[Unit Title]</h1>
+    <p class="hero-copy">[Concise source-grounded description]</p>
+
+    <nav class="jump-nav" aria-label="Review navigation">
+      <a href="#unit-glance">Unit at a Glance</a>
+      <a href="#vocabulary">Vocabulary</a>
+      <a href="#formulas">Formulas</a>
+      <a href="#sections">Sections</a>
+      <a href="#dok-map">DOK Map</a>
+      <a href="#final-check">Final Check</a>
+      <a href="review_[N]_practice.html" target="_blank" rel="noopener">Practice Problems ↗</a>
+    </nav>
+  </div>
+</header>
+-->
+
+----------------------------------------------------------------
+UNIT AT A GLANCE
+----------------------------------------------------------------
+
+Purpose:
+  • give students the conceptual story of the unit before details
+  • show how major concepts connect
+  • communicate the big-picture learning goal
+
+Good content:
+  • concise introductory paragraph
+  • concept chain / flow
+  • one unit-level standard/target card when useful
+
+Do not turn this into a long chapter summary.
+
+----------------------------------------------------------------
+UNIT-WIDE VOCABULARY
+----------------------------------------------------------------
+
+Include the important vocabulary students are expected to recognize/use across the unit.
+
+Preferred design:
+  • grouped vocabulary cards/chips
+  • groups may follow sections or conceptual families
+  • list terms, not paragraphs of definitions, unless the user asks for definitions
+
+Section-specific vocabulary may be repeated later in a smaller "Key terms" strip.
+The full bank should appear once near the top so students can scan the unit quickly.
+
+Only include terms supported by the assessment plan/notes/current assessments.
+
+----------------------------------------------------------------
+UNIT-WIDE FORMULAS / RELATIONSHIPS
+----------------------------------------------------------------
+
+Include every formula or symbolic relationship students are expected to use in the unit.
+
+For each relationship, prefer:
+  • short name/label
+  • formula
+  • one concise explanation of what it means / when it applies
+
+HARD RULE:
+State CONDITIONS / LIMITATIONS when a relationship is only valid in a specific situation.
+For example, a support-force relationship should not be presented as universally true if it
+only holds for equilibrium on a level surface.
+
+Do not add formulas merely because they are common Physics formulas.
+Use the current unit sources as the contract.
+
+----------------------------------------------------------------
+SECTION-BY-SECTION REVIEW — MAIN BACKBONE
+----------------------------------------------------------------
+
+Each instructional section gets its own review panel.
+
+Required section components:
+  • section number and title
+  • Learning Target
+  • all current I-can statements
+  • concise bulleted summary
+  • useful source-grounded figure/model when it improves understanding
+  • section-specific key vocabulary strip
+  • compact DOK ladder / what students should be able to do
+  • common misconceptions / traps when supported by the unit sources
+
+The section heading should preserve the assessment-plan section title exactly or nearly
+exactly. Do not casually rename sections.
+
+Recommended internal flow:
+
+  Section head
+  → Learning Target
+  → I-can checklist
+  → Bulleted Summary
+  → Figure/model
+  → Key vocabulary
+  → DOK strip
+  → Common misconceptions
+
+Commented structural skeleton:
+
+<!--
+<section class="review-panel section-review" id="section-[N]-[S]">
+  <header class="section-head">
+    <div>
+      <div class="section-number">Section [N].[S]</div>
+      <h2>[Section Title]</h2>
+    </div>
+  </header>
+
+  <div class="learning-target">
+    <strong>Learning Target</strong>
+    <p>[Target from assessment plan]</p>
+  </div>
+
+  <div class="section-layout">
+    <div>
+      <h3>I can...</h3>
+      <ul class="check-list">
+        <li>[I-can statement]</li>
+        ...
+      </ul>
+
+      <h3>Summary</h3>
+      <ul class="summary-list">
+        <li>[Concise source-grounded point]</li>
+        ...
+      </ul>
+    </div>
+
+    <figure class="section-figure">
+      <img src="figures/[figure].png" alt="[Useful description]">
+      <figcaption>[Short instructional caption]</figcaption>
+    </figure>
+  </div>
+
+  <div class="mini-vocab">
+    <strong>Key terms:</strong>
+    <span>[term]</span>
+    ...
+  </div>
+
+  <div class="dok-strip">
+    [DOK cards appropriate to this section]
+  </div>
+
+  <div class="mistakes">
+    [Source-grounded misconceptions/traps]
+  </div>
+</section>
+-->
+
+----------------------------------------------------------------
+BULLETED SUMMARY STANDARD
+----------------------------------------------------------------
+
+Summaries should be:
+  • bulleted
+  • concise
+  • source-grounded
+  • written for student review, not teacher commentary
+  • focused on relationships, distinctions, and reasoning students must remember
+
+Avoid giant prose blocks.
+Avoid simply copying the notes word-for-word.
+Avoid adding motivational filler.
+
+----------------------------------------------------------------
+DOK INSIDE THE REVIEW
+----------------------------------------------------------------
+
+The review page may show compact DOK cards inside each section and a larger unit-wide DOK
+map near the end.
+
+Purpose:
+  • tell students what increasing depth of thinking looks like
+  • help them distinguish recall from application and strategic reasoning
+  • NOT to reorganize the entire unit away from its section sequence
+
+Typical progression:
+  • DOK 1 — Recognize / recall / identify
+  • DOK 2 — Apply / calculate / interpret / compare
+  • DOK 3 — Reason / diagnose / critique / connect representations
+  • DOK 4 — Synthesize / design / defend / extended modeling WHEN the unit sources support it
+
+HARD RULE:
+Do not invent unsupported DOK expectations merely to fill four boxes.
+If the assessment plan does not meaningfully support a DOK level, omit it or clearly treat
+it as an extension rather than pretending it is a normal assessed expectation.
+
+DOK descriptions should name concrete unit-specific tasks, not generic definitions.
+
+----------------------------------------------------------------
+COMMON MISCONCEPTIONS / TRAPS
+----------------------------------------------------------------
+
+Include concise misconception cards when they are supported by notes/assessments.
+
+Good examples:
+  • confusing a property with a force
+  • confusing an individual force with net force
+  • assuming motion requires a continuing force
+  • applying a formula outside its valid condition
+  • reading an arrow/model incorrectly
+
+These are STUDY-GUIDE warnings, so they may explicitly state the correct idea.
+They are not assessment questions.
+
+----------------------------------------------------------------
+UNIT-WIDE DOK MAP
+----------------------------------------------------------------
+
+Near the end, include a unit-wide DOK map that reorganizes the entire unit by depth of
+thinking while preserving the main section-first organization elsewhere.
+
+This is a secondary lens, not the primary navigation.
+
+Use concrete unit content in each DOK card.
+
+----------------------------------------------------------------
+FINAL CHECK / BEFORE THE SUMMATIVE
+----------------------------------------------------------------
+
+End with a compact readiness checklist.
+
+Recommended categories:
+  • Vocabulary & Concepts
+  • Representations & Calculations
+  • Reasoning
+
+Checklist items should be short, action-oriented, and source-grounded.
+
+Do NOT turn Final Check into another full assessment.
+
+================================================================
+FLOATING BACK-TO-TOP BUTTON — HARD RULE
+================================================================
+
+The main review page includes a clearly visible floating button on the right/bottom:
+
+  <a class="floating-top" href="#top" aria-label="Back to top" title="Back to top">↑ Top</a>
+
+Requirements:
+  • fixed to lower-right on normal screen layout
+  • visually distinct from body text
+  • links to hero id="top"
+  • does not cover important content unnecessarily
+  • hidden in print
+
+The shared review.css MUST provide the styling.
+A suitable shared contract is:
+
+  .floating-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--navy);
+    color: #fff;
+    border: 2px solid rgba(255,255,255,.85);
+    box-shadow: 0 6px 18px rgba(20,40,65,.28);
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+  .floating-top:hover { background: var(--navy-2); }
+
+  @media print {
+    .floating-top { display: none; }
+  }
+
+If the shared review.css already contains an approved newer implementation, use that newer
+shared rule instead of creating a per-unit override.
+
+================================================================
+SHARED review.css — EXTERNAL DEPENDENCY
+================================================================
+
+The review stylesheet lives with the user's shared CSS files.
+DO NOT bundle review.css inside reviewN.zip.
+
+Main review HTML links EXACTLY to:
+
+  ../../css/review.css
+
+Important class architecture from the Unit 1 gold standard:
+  .hero
+  .hero-inner
+  .eyebrow
+  .hero-copy
+  .jump-nav
+  .review-shell
+  .review-panel
+  .concept-chain
+  .standard-card
+  .vocab-groups / .vocab-group / .vocab-chip
+  .formula-grid / .formula-card / .formula
+  .section-head / .section-number
+  .learning-target
+  .section-layout
+  .check-list / .summary-list
+  .section-figure
+  .mini-vocab
+  .dok-strip / .dok-card / .dok-big / .dok-1 ... .dok-4
+  .mistakes / .mistake-grid
+  .dok-map-grid
+  .final-grid
+  .finish-note
+  .floating-top
+
+Do not silently create per-unit embedded CSS because one section is difficult to fit.
+If the shared design truly needs to change, treat that as a shared-system change and update
+this portable memory after user approval.
+
+================================================================
+REVIEW VISUALS / IMAGES / GRAPHS
+================================================================
+
+REVIEW VISUAL PHILOSOPHY
+------------------------
+The main review is instructional, not an assessment.
+
+Therefore review visuals MAY be labeled and explanatory when that helps students study.
+They do NOT need the same answer-neutral restrictions as an exit ticket.
+
+Preferred source order for visuals:
+  1. useful figures already present in the approved unit notes
+  2. useful figures already present in approved assessment/practice resources
+  3. locally generated graph-tool figures for true quantitative/data graphs
+  4. clean locally generated Physics diagrams/images when genuinely useful
+
+Do not add a visual merely to fill space.
+Do not impose a fixed figure quota.
+
+When using existing source images:
+  • copy only the images actually used into reviewN/figures/
+  • give them stable descriptive names when practical
+  • use useful alt text
+  • do not include unused images from the source ZIPs
+
+TRUE QUANTITATIVE GRAPHS / graph_tool.py
+----------------------------------------
+Use the authoritative graph_tool.py for true quantitative/data/axis graphs when supported.
+
+If a graph is needed:
+  1. Read graph_tool.py completely.
+  2. Confirm an existing graph type fits.
+  3. Copy the authoritative file byte-for-byte as:
+
+       reviewN/generate_graphs.py
+
+  4. Append generation blocks only below the final permitted append marker.
+  5. Never edit the authoritative source above that marker.
+  6. Run the generator during QA.
+  7. Inspect the generated graph visually.
+  8. Put only used output files in reviewN/figures/.
+
+If no true graph is needed, do NOT force generate_graphs.py into the ZIP.
+
+PRACTICE-PAGE VISUAL SAFETY
+---------------------------
+Unlike the main review, a figure used as part of a student practice QUESTION must not reveal
+the response students are supposed to identify, calculate, classify, or infer.
+
+================================================================
+STUDENT PRACTICE PAGE — LOCKED DEFAULT
+================================================================
+
+FILE:
+  review_N_practice.html
+
+PURPOSE:
+A simple, downloadable, Notability-friendly practice document.
+It is NOT another review guide.
+
+The practice page should feel like the user's regular Physics practice sets.
+
+HARD RULES:
+  • open-response only
+  • NO multiple choice
+  • NO DOK labels shown to students
+  • NO I-can tags shown to students
+  • NO focus statements
+  • NO hints
+  • NO commentary
+  • NO diagnostic advice
+  • NO "best study move" text
+  • NO extra navigation buttons/menus
+  • NO separate "Section 1.1" line above the section title
+  • exactly one simple section heading line such as:
+
+      1.1 Thinking Like a Physicist
+
+  • blank workspace after EVERY question
+  • default workspace = exactly 50 px
+
+The practice page is organized by SECTION, not by DOK.
+
+----------------------------------------------------------------
+PRACTICE CSS — SHARED EXTERNAL DEPENDENCIES
+----------------------------------------------------------------
+
+The practice HTML links EXACTLY to:
+
+  ../../css/base.css
+  ../../css/practice_set.css
+
+with base.css loaded FIRST.
+
+Do NOT bundle either CSS file inside reviewN.zip.
+Do NOT create a separate review-practice stylesheet when practice_set.css already provides
+what is needed.
+
+The approved workspace structure is:
+
+  <div class="workspace ws-50"></div>
+
+The shared practice_set.css provides ws-N utility classes.
+At the current approved version, workspace heights include:
+  • ws-10 through ws-960 in 10 px increments
+  • plus ws-25
+
+This means the user can manually increase an individual practice workspace by changing only
+the class, for example:
+
+  ws-50  ->  ws-80
+  ws-50  ->  ws-120
+  ws-50  ->  ws-200
+
+Do not change shared CSS just to enlarge one question's workspace.
+
+----------------------------------------------------------------
+PRACTICE SECTION HEADING STANDARD
+----------------------------------------------------------------
+
+Use one line only:
+
+  1.1 Thinking Like a Physicist
+  1.2 Forces and Newton's First Law
+  etc.
+
+Do NOT render:
+
+  Section 1.1
+  Thinking Like a Physicist
+
+as two separate lines/blocks.
+
+The approved implementation uses the practice-set .section-label styling:
+
+  <div class="section-label">1.1 Thinking Like a Physicist</div>
+
+----------------------------------------------------------------
+PRACTICE QUESTION HTML SKELETON
+----------------------------------------------------------------
+
+<!--
+<section class="dok-section">
+  <div class="section-label">[N].[S] [Section Title]</div>
+
+  <div class="problem">
+    <div class="problem-body">
+      <p>1. [Open-response practice question]</p>
+      <div class="workspace ws-50"></div>
+    </div>
+  </div>
+
+  [REPEAT]
+</section>
+-->
+
+Question numbers are written directly in the question text.
+Number continuously across the full unit unless the user explicitly requests section resets.
+
+================================================================
+PRACTICE QUESTION COUNT / BALANCE
+================================================================
+
+DEFAULT FOR A NORMAL FIVE-SECTION UNIT:
+  approximately 20–25 open-response questions total.
+
+Default section allocation:
+  • usually 4 questions per section
+  • use 5 when the section has more distinct/substantial targets and an extra question is
+    genuinely useful
+
+The goal is not to hit a rigid number.
+The goal is to give enough practice for the section target set without rebuilding the entire
+practice-set bank.
+
+Unit 1 gold-standard result:
+  • 5 sections
+  • 4 questions per section
+  • 20 questions total
+  • 20 workspaces total
+  • every workspace ws-50
+
+PRIVATE DOK DESIGN (NOT DISPLAYED ON PRACTICE PAGE)
+--------------------------------------------------
+The practice bank should still have sensible cognitive balance even though students do not
+see DOK labels.
+
+A good default is:
+  • a small amount of DOK 1
+  • mostly DOK 2
+  • a few genuine DOK 3 items
+  • no routine DOK 4 unless the user explicitly wants extended synthesis/challenge practice
+
+A rough planning range may be:
+  • 15–20% DOK 1
+  • 60–70% DOK 2
+  • 15–20% DOK 3
+
+These are planning ranges, NOT hard quotas.
+Question quality and alignment matter more than exact percentages.
+
+PRACTICE COVERAGE
+-----------------
+Use the assessment plan/I-cans as the content contract.
+For sections with many I-cans, combine related targets intelligently rather than forcing one
+question per I-can and bloating the practice document.
+
+Practice questions may be adapted from approved formative/summative/practice questions or
+written originally from the I-can statements and notes when needed.
+
+Do not use later-section concepts in an earlier-section practice block.
+
+================================================================
+PACKAGE / DEPLOYMENT STRUCTURE — LOCKED CURRENT STANDARD
+================================================================
+
+The user keeps shared CSS in the common top-level css/ folder.
+The unit review ZIP contains NO css/ folder.
+
+DEPLOYED FILESYSTEM PATTERN
+---------------------------
+After extracting the ZIP into the user's review/ deployment location:
+
+  css/
+    review.css
+    base.css
+    practice_set.css
+
+  review/
+    reviewN/
+      review_N.html
+      review_N_practice.html
+      generate_graphs.py      <-- only if true graph assets are used
+      figures/                <-- only if images/figures are used
+        [used images only]
+
+The main review's CSS path remains:
+
+  ../../css/review.css
+
+The student practice page's CSS paths remain:
+
+  ../../css/base.css
+  ../../css/practice_set.css
+
+FINAL ZIP SHAPE
+---------------
+The ZIP itself contains ONE top-level folder:
+
+  reviewN/
+    review_N.html
+    review_N_practice.html
+    [generate_graphs.py only when needed]
+    [figures/ only when needed]
+
+Unit 1 gold-standard package:
+
+  review1/
+    review_1.html
+    review_1_practice.html
+    figures/
+      [5 source-grounded Unit 1 review images]
+
+Do not include shared CSS inside the ZIP.
+Do not include source assessment ZIPs inside the final package.
+Do not include answer keys unless the user explicitly requests them.
+Do not include screenshots, QA logs, temp files, or unused images.
+
+MACOS METADATA RULE
+-------------------
+Never include:
+  • __MACOSX/
+  • .DS_Store
+  • AppleDouble ._ files
+  • other source-machine metadata
+
+================================================================
+PRINT / NOTABILITY BEHAVIOR
+================================================================
+
+MAIN REVIEW
+-----------
+The main review is primarily a web study guide but should print cleanly.
+The shared review.css handles print behavior.
+
+Expected print behavior:
+  • hero becomes print-friendly
+  • jump navigation hidden
+  • floating Top button hidden
+  • section review panels stay readable
+  • figures remain appropriately sized
+
+STUDENT PRACTICE
+----------------
+The practice page is explicitly designed to be downloaded/printed into Notability.
+
+The shared practice_set.css uses letter portrait printing and workspace utilities.
+
+Keep practice layout simple:
+  • single column
+  • no decorative sidebars
+  • no web-only commentary
+  • no hidden answer content
+  • blank white workspaces
+
+================================================================
+QA — REQUIRED BEFORE DELIVERY
+================================================================
+
+SOURCE / CONTENT
+[ ] Read full assessment plan.
+[ ] Read notes and identify every section's Learning Target/I-cans.
+[ ] Read current formative assessments.
+[ ] Read current summative assessment.
+[ ] Read current practice sets.
+[ ] Vocabulary is supported by current sources.
+[ ] Formulas/relationships are supported and conditions are accurate.
+[ ] Summaries are scientifically correct and concise.
+[ ] No later-section content is introduced early in a section review/practice block.
+
+MAIN REVIEW STRUCTURE
+[ ] One consolidated review_N.html.
+[ ] Hero has id="top".
+[ ] Unit at a Glance exists.
+[ ] Vocabulary section exists.
+[ ] Formula/relationship section exists when formulas are part of the unit.
+[ ] Every instructional section appears.
+[ ] Each section includes Learning Target and all I-cans.
+[ ] Each section has a bulleted summary.
+[ ] Section-specific key vocabulary appears when useful.
+[ ] DOK layer is concrete and source-grounded.
+[ ] Common misconceptions appear when supported.
+[ ] Unit-wide DOK map exists.
+[ ] Final Check exists.
+
+TOP NAVIGATION
+[ ] Pill links appear in approved order.
+[ ] Practice Problems is immediately after Final Check.
+[ ] Practice Problems uses same pill styling as other nav links.
+[ ] Practice Problems opens review_N_practice.html in a new tab.
+[ ] All internal jump links resolve to existing ids.
+
+FLOATING TOP BUTTON
+[ ] A clearly visible floating ↑ Top button exists.
+[ ] It is on the lower-right of normal screen layout.
+[ ] It links to #top.
+[ ] Shared review.css styles .floating-top.
+[ ] It is hidden in print.
+
+MAIN REVIEW VISUALS
+[ ] Visuals are source-grounded/instructionally useful.
+[ ] Only used figure files are packaged.
+[ ] Alt text is useful.
+[ ] True graphs use authoritative graph_tool.py when supported.
+[ ] Generated graphs are visually inspected.
+
+PRACTICE PAGE
+[ ] One review_N_practice.html.
+[ ] Organized by section, not DOK.
+[ ] Section heading is one line: "N.S Section Title".
+[ ] No separate "Section N.S" line.
+[ ] Open-response only.
+[ ] No multiple choice.
+[ ] No DOK labels shown.
+[ ] No I-can tags shown.
+[ ] No hints.
+[ ] No commentary.
+[ ] No diagnostic advice.
+[ ] No extra navigation.
+[ ] Question numbering is clear and continuous unless intentionally changed.
+[ ] Every question is followed by a workspace.
+[ ] Default workspace is ws-50.
+[ ] Number of workspaces equals number of questions.
+[ ] base.css is linked before practice_set.css.
+[ ] CSS links are exactly ../../css/base.css and ../../css/practice_set.css.
+[ ] Practice page is clean for Notability/printing.
+
+PACKAGE
+[ ] ZIP contains exactly one top-level reviewN/ folder.
+[ ] reviewN/review_N.html exists.
+[ ] reviewN/review_N_practice.html exists.
+[ ] review.css is NOT bundled.
+[ ] base.css is NOT bundled.
+[ ] practice_set.css is NOT bundled.
+[ ] generate_graphs.py is included only when graph assets are generated.
+[ ] figures/ is included only when figures are used.
+[ ] No unused figures.
+[ ] No __MACOSX, .DS_Store, ._ files, screenshots, QA debris, or temp files.
+[ ] ZIP opens and matches the approved extraction structure.
+
+AUTOMATED SANITY CHECKS — RECOMMENDED
+-------------------------------------
+Before delivery, programmatically verify at minimum:
+
+MAIN REVIEW:
+  • exactly one review_N.html
+  • href ../../css/review.css exists in head
+  • hero id="top" exists
+  • Practice Problems link target is review_N_practice.html
+  • target="_blank" and rel="noopener" present
+  • floating-top link exists and href="#top"
+  • all jump-nav #href targets exist
+  • section count matches assessment plan
+
+PRACTICE:
+  • exactly one review_N_practice.html
+  • base.css linked before practice_set.css
+  • number of .problem blocks
+  • number of .workspace blocks
+  • problem count == workspace count
+  • all default workspaces use ws-50 unless intentionally changed
+  • zero multiple-choice blocks
+  • zero DOK labels/tags
+  • zero I-can tags
+  • zero hint/commentary/navigation blocks
+  • section-label text follows "N.S Section Title" pattern
+
+PACKAGE:
+  • exactly one top-level reviewN/ folder
+  • no bundled CSS
+  • no metadata/debris
+
+Unit 1 approved practice sanity result:
+  questions: 20
+  workspaces: 20
+  default workspace: ws-50
+  sections: 5
+  questions per section: 4
+
+================================================================
+BUILD WORKFLOW — END TO END
+================================================================
+
+1. Read this PM completely.
+2. Read the full unit assessment plan.
+3. Build a section map with Learning Targets, I-cans, DOK, formulas, vocabulary.
+4. Read notes and assessment sources.
+5. Build a unit-wide vocabulary list.
+6. Build a unit-wide formulas/relationships list with conditions.
+7. Write the Unit at a Glance conceptual story.
+8. For each section, write:
+     • Learning Target
+     • I-can checklist
+     • bulleted summary
+     • key vocabulary
+     • DOK depth cards
+     • source-grounded misconceptions
+9. Select useful review visuals from approved sources.
+10. Generate true quantitative graphs with graph_tool.py only when needed.
+11. Build review_N.html using ../../css/review.css.
+12. Build the pill navigation in approved order, with Practice Problems last.
+13. Add floating ↑ Top button linked to #top.
+14. Build the unit-wide DOK map and Final Check.
+15. Draft 4–5 open-response practice questions per section as appropriate.
+16. Keep practice section-first and privately balance DOK.
+17. Build review_N_practice.html with:
+      • ../../css/base.css
+      • ../../css/practice_set.css
+      • one-line section headings
+      • question text
+      • ws-50 after every question
+18. Render/open the main review and inspect readability/navigation.
+19. Open the practice page and inspect Notability/print friendliness.
+20. Verify Practice Problems opens in a new tab.
+21. Verify floating Top button works.
+22. Run structural/coverage/workspace/package sanity checks.
+23. Assemble ZIP with one top-level reviewN/ folder.
+24. Include only used figures and graph-generation source when needed.
+25. Remove metadata/debris/unused assets.
+26. Deliver the ZIP.
+
+================================================================
+UNIT 1 GOLD-STANDARD INTERPRETATION
+================================================================
+
+Unit 1 approved main review structure:
+  • title: Forces, Motion, and Equilibrium
+  • Unit at a Glance
+  • unit-wide vocabulary
+  • six approved Unit 1 symbolic relationships/formulas
+  • Sections 1.1–1.5
+  • Learning Target + all I-cans per section
+  • bulleted summaries
+  • one useful source-grounded image/model per section in the approved build
+  • section vocabulary strips
+  • DOK depth cards
+  • misconception cards
+  • unit-wide DOK map
+  • Final Check
+  • Practice Problems pill after Final Check
+  • floating ↑ Top button
+
+Unit 1 approved student practice:
+  • 20 questions
+  • 4 questions per section
+  • open-response only
+  • continuous numbering 1–20
+  • one-line section headings
+  • 20 ws-50 workspaces
+  • no DOK/I-can tags
+  • no hints/commentary/navigation
+
+Unit 1 approved ZIP structure:
+
+  review1/
+    review_1.html
+    review_1_practice.html
+    figures/
+      u1_1_measurement_model.png
+      u1_2_inertia_tablecloth.png
+      u1_3_net_force_vectors.png
+      u1_4_equilibrium_scaffold.png
+      u1_5_scale_force_model.png
+
+No generate_graphs.py was needed for Unit 1 because no new true quantitative graph was
+required; the build reused approved source-grounded note images.
+
+================================================================
+DO NOT REVIVE / COMMON FAILURE MODES
+================================================================
+
+Do NOT:
+  • organize the entire main review only by DOK
+  • omit the section sequence
+  • make Practice Problems a plain low-contrast link outside the pill navigation
+  • put Practice Problems anywhere other than immediately after Final Check by default
+  • open Practice Problems in the same tab
+  • omit the floating Top button
+  • leave .floating-top unstyled in shared review.css
+  • turn the main review into a giant wall of prose
+  • omit unit-wide vocabulary
+  • omit formulas/relationships that are actually assessed
+  • add unsupported formulas or terms
+  • write summaries as paragraphs when bullets are clearer
+  • treat DOK as generic definitions disconnected from unit content
+  • force a DOK level that the unit does not support
+  • force a figure into every panel as a quota
+  • force graph_tool.py into a build with no true graph need
+  • bundle review.css, base.css, or practice_set.css inside the ZIP
+  • make the practice page look like the review page
+  • put DOK labels on the student practice page
+  • put I-can tags on the student practice page
+  • add hints, commentary, focus statements, or diagnostic advice to the practice page
+  • use multiple choice on the review practice page
+  • split practice headings into "Section N.S" plus a separate title line
+  • forget a workspace after a practice question
+  • default to a workspace other than ws-50 without a reason
+  • edit shared CSS just to enlarge one workspace; change ws-50 to another ws-N instead
+  • include answer keys unless explicitly requested
+  • include __MACOSX, .DS_Store, ._ files, QA screenshots, or temp files
+
+================================================================
+END PHYSICS UNIT REVIEW PORTABLE MEMORY / GOLD STANDARD
+================================================================
