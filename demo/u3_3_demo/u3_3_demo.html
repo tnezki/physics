@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>U3.3 Demo - Same Paper, Different Fall</title><link rel="stylesheet" href="../../css/demo.css"/></head>
+<body class="demo-screen"><main class="demo-deck" id="deck">
+  <section class="demo-slide active"><div class="slide-card"><div class="kicker">Unit 3 - Section 3.3 - Free Fall and Nonfree Fall</div><h1>Same Paper, Different Fall</h1><div class="prompt">One sheet of paper stays flat. An identical sheet is crumpled tightly. If released together, which reaches the floor first?</div><p class="small">Same material. Nearly the same mass. Very different shape.</p></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Make the prediction</div><h2>Choose before the drop.</h2><div class="two-col"><div class="box"><h3>Flat paper first?</h3><p>Why?</p></div><div class="box"><h3>Crumpled paper first?</h3><p>Why?</p></div></div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Observe</div><h2>Release both from the same height.</h2><div class="challenge">What did the air seem to change about the motion?</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Second comparison</div><h2>Now crumple both sheets similarly.</h2><div class="prompt">If the shapes are now similar, should the fall become more similar too?</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Question to carry into the notes</div><h2>When is falling close to "gravity only"?</h2><div class="prompt">What must be small enough to ignore for two very different objects to share the same free-fall acceleration?</div></div></section>
+</main><div class="controls"><button id="prev">&larr; Back</button><div class="counter" id="counter">1 / 5</div><button class="primary" id="next">Next &rarr;</button></div><script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1);
+document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script></body></html>

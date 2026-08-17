@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>U3.5 Demo - Drop or Launch: Which Lands First?</title><link rel="stylesheet" href="../../css/demo.css"/></head>
+<body class="demo-screen"><main class="demo-deck" id="deck">
+  <section class="demo-slide active"><div class="slide-card"><div class="kicker">Unit 3 - Section 3.5 - Projectile Motion</div><h1>Drop or Launch: Which Lands First?</h1><div class="prompt">Two identical balls start from the same height. One is dropped straight down while the other leaves horizontally. Which reaches the floor first?</div><p class="small">Ignore air resistance for the prediction.</p></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Commit to a model</div><h2>Does horizontal motion buy extra air time?</h2><div class="two-col"><div class="box"><h3>Prediction A</h3><p>The dropped ball lands first.</p></div><div class="box"><h3>Prediction B</h3><p>They land at about the same time.</p></div></div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Observe</div><h2>Release them as nearly simultaneously as possible.</h2><div class="challenge">Listen for the impacts. Slow-motion replay is optional.</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Separate the directions</div><h2>One ball moved farther sideways.</h2><div class="prompt">What part of its motion was the same as the dropped ball?</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Question to carry into the notes</div><h2>Can horizontal and vertical motion be analyzed independently?</h2><div class="prompt">What does gravity change, and what does it leave unchanged in the ideal model?</div></div></section>
+</main><div class="controls"><button id="prev">&larr; Back</button><div class="counter" id="counter">1 / 5</div><button class="primary" id="next">Next &rarr;</button></div><script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1);
+document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script></body></html>

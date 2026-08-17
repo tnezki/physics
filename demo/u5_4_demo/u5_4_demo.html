@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>U5.4 Demo - Can One Fork Wake Up Another?</title><link rel="stylesheet" href="../../css/demo.css"/></head><body class="demo-screen"><main class="demo-deck" id="deck"><section class="demo-slide active"><div class="slide-card"><div class="kicker">Unit 5 · Section 5.4 · Reflection, Refraction, and Resonance</div><h1>Can One Fork Wake Up Another?</h1><div class="prompt">I will strike only Fork A. Fork B will not be touched.</div><p class="small">Predict what Fork B will do.</p></div></section>
+<section class="demo-slide"><div class="slide-card"><div class="kicker">Prediction</div><h2>After a few seconds I will stop Fork A with my hand. What will you hear?</h2><div class="two-col"><div class="box"><h3>A</h3><p>Silence immediately.</p></div><div class="box"><h3>B</h3><p>Fork B will still be vibrating.</p></div></div><div class="challenge">Choose before the test.</div></div></section>
+<section class="demo-slide"><div class="slide-card"><div class="kicker">Observe</div><h2>Strike A → wait → damp A.</h2><div class="challenge">Listen closely to Fork B after A is stopped.</div></div></section>
+<section class="demo-slide"><div class="slide-card"><div class="kicker">Change One Thing</div><h2>What if Fork B has a different preferred vibration rate?</h2><div class="challenge">Predict whether the response will be stronger, weaker, or the same.</div></div></section>
+<section class="demo-slide"><div class="slide-card"><div class="kicker">Question to carry into the notes</div><h2>Why does matching timing matter so much?</h2><div class="challenge">How can repeated driving build a large response in one system but not another?</div></div></section></main><div class="controls"><button id="prev">&larr; Back</button><div class="counter" id="counter">1 / 5</div><button class="primary" id="next">Next &rarr;</button></div>
+<script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1);
+document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script></body></html>

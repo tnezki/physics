@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>U3.1 Demo - Same Push, Different Result?</title><link rel="stylesheet" href="../../css/demo.css"/></head>
+<body class="demo-screen"><main class="demo-deck" id="deck">
+  <section class="demo-slide active"><div class="slide-card"><div class="kicker">Unit 3 - Section 3.1 - Force and Acceleration</div><h1>Same Push, Different Result?</h1><div class="prompt">A cart is at rest. Which change should make its motion change more: a stronger push, or adding more mass?</div><p class="small">Do not calculate yet. Commit to a prediction and a reason.</p></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Round 1 - Change the push</div><h2>Same cart. Two pushes.</h2><div class="two-col"><div class="box"><h3>Trial A</h3><p>Give the cart a gentle, brief push.</p></div><div class="box"><h3>Trial B</h3><p>Give the same cart a clearly stronger, brief push.</p></div></div><div class="challenge">What changed more: the cart's motion, or just the force you used?</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Round 2 - Change the mass</div><h2>Same kind of push. More mass.</h2><div class="two-col"><div class="box"><h3>Light cart</h3><p>Push the empty cart.</p></div><div class="box"><h3>Loaded cart</h3><p>Add mass, then repeat as similarly as possible.</p></div></div><div class="challenge">Which cart changes its motion more?</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Competing models</div><h2>Which idea fits both rounds?</h2><div class="two-col"><div class="box"><h3>Model A</h3><p>More push always means more motion, no matter the mass.</p></div><div class="box"><h3>Model B</h3><p>The change in motion depends on both the push and how much mass must respond.</p></div></div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Question to carry into the notes</div><h2>Can one rule connect force, mass, and acceleration?</h2><div class="prompt">What should happen to acceleration when force increases? What should happen when mass increases?</div></div></section>
+</main><div class="controls"><button id="prev">&larr; Back</button><div class="counter" id="counter">1 / 5</div><button class="primary" id="next">Next &rarr;</button></div><script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1);
+document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script></body></html>

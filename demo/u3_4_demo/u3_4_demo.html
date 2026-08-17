@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>U3.4 Demo - The Balloon Pushes What?</title><link rel="stylesheet" href="../../css/demo.css"/></head>
+<body class="demo-screen"><main class="demo-deck" id="deck">
+  <section class="demo-slide active"><div class="slide-card"><div class="kicker">Unit 3 - Section 3.4 - Newton's Third Law and Interactions</div><h1>The Balloon Pushes What?</h1><div class="prompt">A balloon is taped to a straw on a string. When the balloon is released, what does it push on to move forward?</div><p class="small">Pick an explanation before the release.</p></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Choose a model</div><h2>What makes the balloon move?</h2><div class="two-col"><div class="box"><h3>Model A</h3><p>The balloon pushes on the room air behind it.</p></div><div class="box"><h3>Model B</h3><p>The balloon pushes expelled air backward, and the air pushes the balloon forward.</p></div></div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Observe</div><h2>Release the balloon rocket.</h2><div class="challenge">Name two objects that are interacting during the launch.</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Reverse the wording</div><h2>If the balloon pushes the air backward...</h2><div class="prompt">What force does the air exert on the balloon, and when does it happen?</div></div></section>
+  <section class="demo-slide"><div class="slide-card"><div class="kicker">Question to carry into the notes</div><h2>Can equal and opposite forces both be real without cancelling?</h2><div class="prompt">The answer depends on which object each force acts on.</div></div></section>
+</main><div class="controls"><button id="prev">&larr; Back</button><div class="counter" id="counter">1 / 5</div><button class="primary" id="next">Next &rarr;</button></div><script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1);
+document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script></body></html>
