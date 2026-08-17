@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U1.4 Demo - The Tension Trap</title>
+<link rel="stylesheet" href="../../css/demo.css"/>
+</head>
+<body class="demo-screen">
+<main class="demo-deck" id="deck">
+  <section class="demo-slide active">
+    <div class="slide-card">
+      <div class="kicker">Unit 1 · Section 1.4 · Equilibrium and Balanced Motion</div>
+      <h1>The Tension Trap</h1>
+      <div class="prompt">One mass hangs at rest from two spring scales. Nothing about the mass changes.</div>
+      <p>Should each scale always read the same amount?</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Setup A · Steep supports</div>
+      <h2>Hold the scales high and fairly close together.</h2>
+      <div class="prompt">The mass is at rest. Record or remember both scale readings.</div>
+      <p class="small">What must be true about the net force while the mass remains still?</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Setup B · Wider supports</div>
+      <h2>Spread the scales farther apart.</h2>
+      <div class="challenge">The same mass is still at rest. Predict what happens to the scale readings before looking.</div>
+      <p>Smaller? Same? Larger?</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">The surprise</div>
+      <h2>Zero net force does not mean every force is small.</h2>
+      <div class="two-col">
+        <div class="box"><h3>Motion</h3><p>The mass remains at rest.</p></div>
+        <div class="box"><h3>Forces</h3><p>The tensions can change as their directions change.</p></div>
+      </div>
+      <div class="challenge">How can the force values change while the net force remains zero?</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Question to carry into the notes</div>
+      <h2>What does equilibrium actually require?</h2>
+      <div class="prompt">Balanced motion is about the vector sum of the forces, not about every individual force being identical.</div>
+      <p class="small">Next: static equilibrium, dynamic equilibrium, support, tension, and the equilibrium rule.</p>
+    </div>
+  </section>
+</main>
+<div class="controls">
+  <button id="prev">← Back</button>
+  <div class="counter" id="counter">1 / 5</div>
+  <button class="primary" id="next">Next →</button>
+</div>
+<script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1); document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script>
+</body>
+</html>

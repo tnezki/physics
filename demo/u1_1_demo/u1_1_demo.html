@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U1.1 Demo - The Hidden Bounce</title>
+<link rel="stylesheet" href="../../css/demo.css"/>
+</head>
+<body class="demo-screen">
+<main class="demo-deck" id="deck">
+  <section class="demo-slide active">
+    <div class="slide-card">
+      <div class="kicker">Unit 1 · Section 1.1 · Thinking Like a Physicist</div>
+      <h1>The Hidden Bounce</h1>
+      <div class="prompt">Your rule: report only what you directly observe. Do not explain it yet.</div>
+      <p class="small">Your teacher will create an event where you cannot see the object.</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Round 1 · Observe</div>
+      <h2>What did you actually observe?</h2>
+      <div class="two-col">
+        <div class="box"><h3>Direct observation</h3><p>Something a person, camera, microphone, timer, or measuring tool could record.</p></div>
+        <div class="box"><h3>Inference</h3><p>An explanation you build from the observations.</p></div>
+      </div>
+      <div class="challenge">Be ready to defend why your statement belongs in one column and not the other.</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Round 2 · Model</div>
+      <h2>What could have caused the pattern?</h2>
+      <p>Generate at least <strong>two different explanations</strong> that fit what you observed.</p>
+      <div class="prompt">A good model explains the observations. A scientific model must also face a test.</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Round 3 · Test</div>
+      <h2>What new evidence would separate the models?</h2>
+      <div class="two-col">
+        <div class="box"><h3>Propose a test</h3><p>What could we change, measure, reveal, or repeat?</p></div>
+        <div class="box"><h3>Make a prediction</h3><p>If your model is right, what should the new observation look or sound like?</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">The physics habit</div>
+      <h2>Observation → Inference → Test → Revision</h2>
+      <div class="prompt">Physics is not about guessing the hidden answer. It is about building explanations that survive contact with evidence.</div>
+      <p class="small">Next: guided notes on measurement, evidence, models, and testable claims.</p>
+    </div>
+  </section>
+</main>
+<div class="controls">
+  <button id="prev">← Back</button>
+  <div class="counter" id="counter">1 / 5</div>
+  <button class="primary" id="next">Next →</button>
+</div>
+<script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1); document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script>
+</body>
+</html>

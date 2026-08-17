@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U1.2 Demo - The Coin That Refuses to Follow</title>
+<link rel="stylesheet" href="../../css/demo.css"/>
+</head>
+<body class="demo-screen">
+<main class="demo-deck" id="deck">
+  <section class="demo-slide active">
+    <div class="slide-card">
+      <div class="kicker">Unit 1 · Section 1.2 · Forces and Newton’s First Law</div>
+      <h1>The Coin That Refuses to Follow</h1>
+      <div class="prompt">A coin rests on a card over a cup. The card is about to move sideways very quickly.</div>
+      <p>Predict the coin’s path before we try it.</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Commit to a prediction</div>
+      <h2>When the card is snapped sideways, what will the coin do?</h2>
+      <div class="two-col">
+        <div class="box"><h3>Follow the card?</h3><p>Move sideways with it?</p></div>
+        <div class="box"><h3>Do something else?</h3><p>Describe the path you expect.</p></div>
+      </div>
+      <div class="challenge">Be ready to name the interaction that would cause any sideways change in the coin’s motion.</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Run the demo</div>
+      <h2>Watch the coin, not the card.</h2>
+      <div class="prompt">What changed the card’s motion? What changed the coin’s motion?</div>
+      <p class="small">Describe what you observed before explaining why it happened.</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">The puzzle</div>
+      <h2>Does motion itself require a force?</h2>
+      <div class="two-col">
+        <div class="box"><h3>Card</h3><p>A hand gives it a large sideways change in motion.</p></div>
+        <div class="box"><h3>Coin</h3><p>What real interaction gives it a large sideways force?</p></div>
+      </div>
+      <div class="challenge">Do not invent an “inertia force.” Ask what actually interacts with the object.</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Question to carry into the notes</div>
+      <h2>What should happen when the net force is zero?</h2>
+      <div class="prompt">Newton’s First Law is going to change the question from “What keeps it moving?” to “What causes its motion to change?”</div>
+      <p class="small">Next: inertia, Newton’s First Law, and the difference between no force and no net force.</p>
+    </div>
+  </section>
+</main>
+<div class="controls">
+  <button id="prev">← Back</button>
+  <div class="counter" id="counter">1 / 5</div>
+  <button class="primary" id="next">Next →</button>
+</div>
+<script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1); document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script>
+</body>
+</html>

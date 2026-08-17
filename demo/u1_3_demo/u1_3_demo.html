@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U1.3 Demo - Two Blows, One Motion</title>
+<link rel="stylesheet" href="../../css/demo.css"/>
+</head>
+<body class="demo-screen">
+<main class="demo-deck" id="deck">
+  <section class="demo-slide active">
+    <div class="slide-card">
+      <div class="kicker">Unit 1 · Section 1.3 · Net Force and Vectors</div>
+      <h1>Two Blows, One Motion</h1>
+      <div class="prompt">Can an object move in a direction that nobody pushes?</div>
+      <p class="small">Two air forces are about to act on one ping-pong ball.</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Round 1 · Opposite directions</div>
+      <h2>Two equal blows. Opposite directions.</h2>
+      <div class="two-col">
+        <div class="box"><h3>Blower 1</h3><p>Pushes the ball one way.</p></div>
+        <div class="box"><h3>Blower 2</h3><p>Pushes the ball the opposite way.</p></div>
+      </div>
+      <div class="challenge">Predict the ball’s motion if the two forces are nearly equal. Then predict what changes if one person blows harder.</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Round 2 · Right angle</div>
+      <h2>Now the two forces are 90° apart.</h2>
+      <div class="prompt">Both students blow at the same time. Where should the ball go?</div>
+      <p>Point to the direction you predict before we try it.</p>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">What did the ball reveal?</div>
+      <h2>The combined effect can point somewhere new.</h2>
+      <div class="two-col">
+        <div class="box"><h3>Each force</h3><p>Has a size and a direction.</p></div>
+        <div class="box"><h3>Net force</h3><p>Describes their combined vector effect on the ball.</p></div>
+      </div>
+      <div class="challenge">If one blower becomes stronger, how should the resultant direction change?</div>
+    </div>
+  </section>
+
+  <section class="demo-slide">
+    <div class="slide-card">
+      <div class="kicker">Question to carry into the notes</div>
+      <h2>How do we combine forces without losing direction?</h2>
+      <div class="prompt">Forces are vectors. Arrow direction and arrow length both matter when we determine the net force.</div>
+      <p class="small">Next: vector arrows, resultants, and net force.</p>
+    </div>
+  </section>
+</main>
+<div class="controls">
+  <button id="prev">← Back</button>
+  <div class="counter" id="counter">1 / 5</div>
+  <button class="primary" id="next">Next →</button>
+</div>
+<script>
+const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;
+function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }
+document.getElementById('prev').onclick=()=>show(i-1); document.getElementById('next').onclick=()=>show(i+1);
+document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });
+</script>
+</body>
+</html>
