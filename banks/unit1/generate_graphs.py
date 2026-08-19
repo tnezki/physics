@@ -2043,3 +2043,11 @@ def make_algebra_tiles(expression, filename='algebra_tiles.png'):
 # PASTE YOUR GRAPH CODE BELOW THIS LINE
 # ─────────────────────────────────────────────────────────────────────────────
 
+
+
+# APPENDED BANK GENERATION BLOCK — Unit 1 (do not alter authoritative code above)
+if __name__ == '__main__':
+    fig, ax = plt.subplots(figsize=(4.3,3.2))
+    make_scatter_plot(ax, [10,20,30,40,50,60], [1.2,2.0,2.9,3.8,4.9,5.7], 0,70,0,7, line_of_best_fit=False, xlabel='Pendulum length (cm)', ylabel='Time for 5 swings (s)', title='Measurement Set')
+    save_graph(fig, 'u1_s1_measurement_scatter.png')
+    plt.close(fig)
