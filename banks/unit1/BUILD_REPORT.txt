@@ -1,0 +1,157 @@
+QA LOG — Unit 1 Bank / AP/SCI / Build date: 2026-08-19
+
+SOURCE / SCOPE
+Framework fully read: YES
+Assessment Plan fully read: YES
+Section Targets/I-cans extracted: YES
+Mastery Goal IDs extracted: YES
+Evidence Opportunity Plan extracted: YES
+Learning Ladder extracted: YES
+Summative Assessment Plan extracted: YES
+Recurring Practice Map extracted: YES
+Legacy formative-by-DOK inventory ignored: YES
+graph_tool.py fully read: YES
+Optional sources: none required beyond supplied inputs
+
+Total canonical Bank items: 762
+Counts by destination:
+  Whats To Come: 5
+  Notes Example: 20
+  Notes You Try It: 20
+  Practice Set 1: 90
+  Practice Set 2: 90
+  Practice Set 3: 90
+  Extra Practice: 90
+  CYU: 30
+  Tarsia: 90
+  Blooket: 100
+  Warm-Up 1: 10
+  Warm-Up 2: 10
+  Warm-Up 3: 10
+  Exit Ticket A: 5
+  Exit Ticket B: 5
+  Exit Ticket C: 5
+  Unit Review: 20
+  Extended Reasoning: 10
+  Performance Task: 2
+  Summative: 60
+Counts by scope: current-section=625, prior-knowledge=10, secure-evidence=87, unit-synthesis=20, unit-to-date=20
+Counts by natural DOK metadata: 1=60, 1-2=228, 1-3=20, 2=339, 2-3=15, 3=93, 3-4=7
+
+Practice counts by section:
+  1.1: PS1=18, PS2=18, PS3=18, Extra=18
+  1.2: PS1=18, PS2=18, PS3=18, Extra=18
+  1.3: PS1=18, PS2=18, PS3=18, Extra=18
+  1.4: PS1=18, PS2=18, PS3=18, Extra=18
+  1.5: PS1=18, PS2=18, PS3=18, Extra=18
+Notes EX/YTI pairs by section: 1.1=4, 1.2=4, 1.3=4, 1.4=4, 1.5=4
+Warm-Up item counts: each section WU1=2, WU2=2, WU3=2
+Exit Ticket item counts: each section ET-A=1, ET-B=1, ET-C=1
+Review count: 20
+Extended Reasoning count: 10
+Performance Task count: 2
+Summative: 6 forms x 10 items = 60
+
+Practice family-level duplication audit:
+  18 shared coverage families per section; routine procedural families use controlled numeric/structure variants where appropriate.
+  exact conceptual/reasoning duplicates across four forms: 0
+  near-duplicate conceptual items were authored with representation/reasoning/context shifts rather than boilerplate wrappers.
+Banned-boilerplate occurrences: independent example=0, separate situation=0, requested conclusion=0, provide evidence of mastery=0, give evidence that=0
+Student-facing clarity scan: PASS
+
+Tarsia QA:
+  1.1: 18 pairs; 18 unique answers; proxy family counts {'terminology/definition': 8, 'quantity/result': 1, 'concept/classification': 2, 'model/error/representation': 7}; comma-delimiter safety PASS
+  1.2: 18 pairs; 18 unique answers; proxy family counts {'terminology/definition': 7, 'quantity/result': 3, 'concept/classification': 8, 'model/error/representation': 1}; comma-delimiter safety PASS
+  1.3: 18 pairs; 18 unique answers; proxy family counts {'terminology/definition': 6, 'quantity/result': 9, 'concept/classification': 3, 'model/error/representation': 5}; comma-delimiter safety PASS
+  1.4: 18 pairs; 18 unique answers; proxy family counts {'terminology/definition': 9, 'quantity/result': 8, 'concept/classification': 10, 'model/error/representation': 4}; comma-delimiter safety PASS
+  1.5: 18 pairs; 18 unique answers; proxy family counts {'terminology/definition': 5, 'quantity/result': 5, 'concept/classification': 6, 'model/error/representation': 10}; comma-delimiter safety PASS
+Tarsia limitations: NONE
+Blooket QA: each section 20 dedicated questions; answer positions A/B/C/D = 5/5/5/5; rows preserved through Q100; limitations NONE
+
+Selected-response answer-position counts by destination/form:
+  S1|Blooket|-: A/B/C/D=[5, 5, 5, 5]
+  S1|CYU|-: A/B/C/D=[0, 1, 0, 1]
+  S1|Extra Practice|-: A/B/C/D=[2, 1, 1, 2]
+  S1|Practice Set 1|-: A/B/C/D=[2, 2, 1, 1]
+  S1|Practice Set 2|-: A/B/C/D=[1, 1, 2, 2]
+  S1|Practice Set 3|-: A/B/C/D=[1, 2, 2, 1]
+  S2|Blooket|-: A/B/C/D=[5, 5, 5, 5]
+  S2|CYU|-: A/B/C/D=[0, 1, 0, 1]
+  S2|Extra Practice|-: A/B/C/D=[2, 1, 1, 2]
+  S2|Practice Set 1|-: A/B/C/D=[2, 2, 1, 1]
+  S2|Practice Set 2|-: A/B/C/D=[1, 1, 2, 2]
+  S2|Practice Set 3|-: A/B/C/D=[1, 2, 2, 1]
+  S3|Blooket|-: A/B/C/D=[5, 5, 5, 5]
+  S3|CYU|-: A/B/C/D=[0, 1, 0, 1]
+  S3|Extra Practice|-: A/B/C/D=[2, 1, 1, 2]
+  S3|Practice Set 1|-: A/B/C/D=[2, 2, 1, 1]
+  S3|Practice Set 2|-: A/B/C/D=[1, 1, 2, 2]
+  S3|Practice Set 3|-: A/B/C/D=[1, 2, 2, 1]
+  S4|Blooket|-: A/B/C/D=[5, 5, 5, 5]
+  S4|CYU|-: A/B/C/D=[0, 1, 0, 1]
+  S4|Extra Practice|-: A/B/C/D=[2, 1, 1, 2]
+  S4|Practice Set 1|-: A/B/C/D=[2, 2, 1, 1]
+  S4|Practice Set 2|-: A/B/C/D=[1, 1, 2, 2]
+  S4|Practice Set 3|-: A/B/C/D=[1, 2, 2, 1]
+  S5|Blooket|-: A/B/C/D=[5, 5, 5, 5]
+  S5|CYU|-: A/B/C/D=[0, 1, 0, 1]
+  S5|Extra Practice|-: A/B/C/D=[2, 1, 1, 2]
+  S5|Practice Set 1|-: A/B/C/D=[2, 2, 1, 1]
+  S5|Practice Set 2|-: A/B/C/D=[1, 1, 2, 2]
+  S5|Practice Set 3|-: A/B/C/D=[1, 2, 2, 1]
+  Sunit|Summative|V1: A/B/C/D=[1, 1, 1, 1]
+  Sunit|Summative|V2: A/B/C/D=[1, 1, 1, 1]
+  Sunit|Summative|V3: A/B/C/D=[1, 1, 1, 1]
+  Sunit|Summative|V4: A/B/C/D=[1, 1, 1, 1]
+  Sunit|Summative|V5: A/B/C/D=[1, 1, 1, 1]
+  Sunit|Summative|V6: A/B/C/D=[1, 1, 1, 1]
+Selected-response items checked: 254
+Duplicate/equivalent-text selected-response choice issues after normalization: 0
+All stored selected-response keys independently matched against the final shuffled choice arrays: YES
+
+Coefficient-render artifacts: 0 unresolved
+Sign artifacts: 0 unresolved
+Currency/MathJax conflicts: 0 unresolved
+Unresolved template placeholders: 0 unresolved
+Dependent-question references: 0 unresolved outside explicit multipart items
+Independent final-stem direct-force arithmetic reparses/recomputations completed: 30; failures=0
+All 762 final items inspected for nonblank answer/solution; selected-response keys and direct-force numeric families received independent post-build checks.
+Performance Task complete-solution QA: 2/2 complete student tasks include complete teacher solutions/exemplars and scoring notes.
+
+Evidence coverage by Mastery Goal: U1-MG01=18, U1-MG02=27, U1-MG03=24, U1-MG04=20
+Evidence map rows: 89; unique evidence point IDs: 89
+Secure/formative-secure exact-prompt duplication into instructional destinations: 0
+V1-V4 test-day blueprint equivalence: PASS — all 10 slots on all four forms; shared test-day families by slot; comparable item types/weights.
+V5-V6 makeup independence: PASS — distinct family IDs, distinct task architectures, and nonidentical final prompts in every blueprint slot.
+
+Figure count: 14 original non-graph physics diagrams
+graph_tool-supported Bank figures required: NO — supplied graph_tool has no force/free-body-diagram generator appropriate to these figures.
+generate_graphs.py: exact SHA-256 copy of authoritative graph_tool.py; no modifications or styling overrides.
+Figure-path check: all referenced figures exist; no answer-revealing filenames/titles used in student prompts.
+
+OUTPUT / DEPLOYMENT
+ZIP target: unit1_bank.zip
+ZIP root: unit1/
+Deployed HTML path: COURSE_ROOT/banks/unit1/unit1.html
+CSS links: ../../css/base.css and ../../css/bank.css
+Mapping CSV present: YES
+Evidence map present: YES
+Summative source map present: YES
+Figures present: YES
+Exports present: YES
+Tarsia/Blooket export filenames use canonical _practice_3 convention: YES
+No legacy unit1_bank/ folder inside ZIP: YES
+No junk files: YES
+
+PASS 1 — Source / scope: PASS
+PASS 2 — Notes / WTC: PASS
+PASS 3 — Practice / CYU: PASS
+PASS 4 — Tarsia / Blooket: PASS
+PASS 5 — Warm-Ups / Exit Tickets: PASS
+PASS 6 — Review / Extended / Assessments: PASS
+PASS 7 — Evidence / security: PASS
+PASS 8 — Figures: PASS
+PASS 9 — Mapping / corruption: PASS
+PASS 10 — ZIP / course structure: PASS
+OVERALL: PASS — ready for ZIP assembly
+POST-ZIP integrity: PASS — 30 packaged files; CRC clean; root unit1/ only.
