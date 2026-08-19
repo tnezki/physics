@@ -1,11 +1,12 @@
 from pathlib import Path
 import re
 import sys
+import csv
 
 # ── CONFIGURE ───────────────────────────────────────────────────────────────
 # Default: folder this script lives in.
 # Optional command-line override:
-#   python fix_mathjax_v2.py /absolute/path/to/folder
+#   python fix_mathjax_v4.py /absolute/path/to/folder
 TARGET_FOLDER = Path(sys.argv[1]).expanduser() if len(sys.argv) > 1 else Path(__file__).parent
 # ────────────────────────────────────────────────────────────────────────────
 
@@ -68,7 +69,7 @@ REGEX_FIXES = [
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECTION 3 — MATH-BLOCK-SCOPED AUTO-FIXES
+# SECTION 3 — MATH-STRUCTURE + MATH-BLOCK AUTO-FIXES
 # These repairs ONLY run inside $...$ and $$...$$ blocks.
 # This is intentionally safer than globally changing backslashes or < / >.
 # ══════════════════════════════════════════════════════════════════════════════
@@ -103,6 +104,91 @@ def _clean_serialized_attrs(attrs):
     return cleaned
 
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# V4 — MALFORMED DOLLAR / ESCAPED-HTML REPAIRS
+#
+# Two production failures are handled here:
+#
+#   $f(x)=$1/(x-2)$$
+#       -> $f(x)=1/(x-2)$
+#
+# and HTML tags that were previously swallowed by a malformed math span and
+# converted to literal MathJax relations:
+#
+#   \lt article class="bank-item"\gt
+#       -> <article class="bank-item">
+#
+# Known HTML-tag restoration is deliberately limited to actual structural /
+# formatting tag names. Legitimate mathematical \lt and \gt remain untouched.
+# ─────────────────────────────────────────────────────────────────────────────
+
+NESTED_INLINE_ASSIGNMENT_RE = re.compile(
+    r'\$([^$\n<>]{1,80}?)=\$([^$\n<>]{1,180}?)\$\$'
+)
+
+KNOWN_HTML_TAGS = (
+    r'article|ol|ul|li|div|p|section|details|summary|header|figure|figcaption|'
+    r'table|thead|tbody|tfoot|tr|td|th|span|strong|em|b|i|h[1-6]|dl|dt|dd|img'
+)
+
+ESCAPED_HTML_TAG_RE = re.compile(
+    rf'\\lt\s*(/?)\s*({KNOWN_HTML_TAGS})\b([^\n]*?)\\gt',
+    re.IGNORECASE,
+)
+
+INLINE_PRESENTATION_TAG_RE = re.compile(
+    r'</?(?:strong|b|em|i|span)(?:\s+[^>]*)?>',
+    re.IGNORECASE,
+)
+
+BARE_RAC_RE = re.compile(r'(?<![A-Za-z\\])rac\{')
+
+
+def repair_malformed_math_assignments(text):
+    """
+    Repair the production typo:
+        $f(x)=$1/(x-2)$$
+    to:
+        $f(x)=1/(x-2)$
+
+    This is intentionally narrow: one inline math assignment accidentally
+    contains a second opening $ and ends with $$.
+    """
+    hits = 0
+
+    def repl(match):
+        nonlocal hits
+        hits += 1
+        return f"${match.group(1)}={match.group(2)}$"
+
+    return NESTED_INLINE_ASSIGNMENT_RE.sub(repl, text), hits
+
+
+def repair_escaped_html_tags(text):
+    """
+    Restore known HTML tags that a prior malformed-math cleanup converted to
+    literal '\\lt tag ... \\gt' text.
+
+    Only known HTML tags are restored; mathematical \\lt / \\gt expressions
+    are not changed.
+    """
+    hits = 0
+
+    def repl(match):
+        nonlocal hits
+        hits += 1
+        slash = match.group(1)
+        tag = match.group(2)
+        attrs = match.group(3)
+
+        if slash:
+            return f"</{tag}>"
+        return f"<{tag}{attrs}>"
+
+    return ESCAPED_HTML_TAG_RE.sub(repl, text), hits
+
+
 def repair_serialized_comparisons(text):
     hits = 0
 
@@ -122,7 +208,7 @@ def repair_serialized_comparisons(text):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECTION 4 — SAFE ALGEBRA-NOTATION CLEANUP  (NEW IN V3)
+# SECTION 4 — SAFE ALGEBRA-NOTATION CLEANUP
 # These repairs target common generated-expression artifacts.
 #
 # They run on student-facing text, but skip <script> and <style> blocks in HTML.
@@ -255,6 +341,8 @@ def repair_math_blocks(text):
         'raw_lt': 0,
         'raw_gt': 0,
         'tabs': 0,
+        'inline_html_tags': 0,
+        'bare_rac': 0,
     }
 
     def repl(match):
@@ -293,7 +381,21 @@ def repair_math_blocks(text):
                               .replace('&#x3E;', r'\gt'))
             counts['gt_entity'] += n
 
-        # 4) Raw < and > are unsafe in HTML source inside math. Convert them.
+        # 4) Strip harmless presentation tags accidentally placed INSIDE math.
+        #    Example: $f(2)=<strong>7</strong>$ -> $f(2)=7$
+        n = len(INLINE_PRESENTATION_TAG_RE.findall(content))
+        if n:
+            content = INLINE_PRESENTATION_TAG_RE.sub('', content)
+            counts['inline_html_tags'] += n
+
+        # 5) Repair a dropped \\frac command seen in production:
+        #       $- rac{3}{4}$ -> $- \frac{3}{4}$
+        n = len(BARE_RAC_RE.findall(content))
+        if n:
+            content = BARE_RAC_RE.sub(r'\\frac{', content)
+            counts['bare_rac'] += n
+
+        # 6) Raw < and > are unsafe in HTML source inside math. Convert them.
         n = content.count('<')
         if n:
             content = content.replace('<', r'\lt ')
@@ -321,6 +423,14 @@ def repair_math_blocks(text):
         hits.append(f"         {counts['raw_lt']}× raw < in math normalized to \\lt")
     if counts['raw_gt']:
         hits.append(f"         {counts['raw_gt']}× raw > in math normalized to \\gt")
+    if counts['inline_html_tags']:
+        hits.append(
+            f"         {counts['inline_html_tags']}× presentation HTML tag removed from inside math"
+        )
+    if counts['bare_rac']:
+        hits.append(
+            f"         {counts['bare_rac']}× dropped \\frac command repaired from bare rac{{"
+        )
 
     return new_text, hits
 
@@ -454,6 +564,38 @@ def audit_file(path, text):
                 "    UNBALANCED $ DELIMITERS: odd unescaped-$ count in HTML file"
             )
 
+    # Malformed nested-dollar assignment should be gone after V4 auto-fix.
+    nested_math = len(NESTED_INLINE_ASSIGNMENT_RE.findall(text))
+    if nested_math:
+        warnings.append(
+            f"    MALFORMED NESTED MATH: {nested_math} instance(s) like $f(x)=$...$$ remain"
+        )
+
+    # HTML structure must never remain serialized as literal \lt tag \gt text.
+    escaped_tags = len(ESCAPED_HTML_TAG_RE.findall(text))
+    if escaped_tags:
+        warnings.append(
+            f"    ESCAPED HTML STRUCTURE: {escaped_tags} known HTML tag(s) remain as \\\\lt ... \\\\gt"
+        )
+
+    # Presentation HTML inside math should have been stripped.
+    inline_tag_math = 0
+    for block in math_blocks:
+        inline_tag_math += len(INLINE_PRESENTATION_TAG_RE.findall(block))
+    if inline_tag_math:
+        warnings.append(
+            f"    HTML INSIDE MATH: {inline_tag_math} presentation tag(s) remain inside MathJax blocks"
+        )
+
+    # Bare dropped fraction command should be gone after V4 repair.
+    bare_rac = 0
+    for block in math_blocks:
+        bare_rac += len(BARE_RAC_RE.findall(block))
+    if bare_rac:
+        warnings.append(
+            f"    DROPPED FRAC COMMAND: {bare_rac} bare rac{{...}} instance(s) remain inside math"
+        )
+
     # Wrong CDN
     if 'mathjax' in text.lower():
         if 'cdnjs' in text or 'unpkg' in text:
@@ -515,7 +657,23 @@ for path in text_files:
     # Decode once for scoped V2 repairs.
     text = new_raw.decode('utf-8', errors='replace')
 
-    # Section 3a — repair parser-serialized raw-comparison corruption in HTML.
+    # Section 3a — repair malformed nested inline-math assignments first.
+    text, nested_math_hits = repair_malformed_math_assignments(text)
+    if nested_math_hits:
+        hits.append(
+            f"         {nested_math_hits}× malformed nested-dollar assignment repaired"
+        )
+
+    # Section 3b — restore known HTML tags that a prior malformed-math pass
+    # converted into literal \\lt tag ... \\gt text.
+    if path.suffix.lower() == '.html':
+        text, escaped_html_hits = repair_escaped_html_tags(text)
+        if escaped_html_hits:
+            hits.append(
+                f"         {escaped_html_hits}× escaped HTML tag restored from \\lt ... \\gt"
+            )
+
+    # Section 3c — repair parser-serialized raw-comparison corruption in HTML.
     if path.suffix.lower() == '.html':
         text, serialized_hits = repair_serialized_comparisons(text)
         if serialized_hits:
@@ -523,7 +681,7 @@ for path in text_files:
                 f"         {serialized_hits}× serialized comparison artifact reconstructed"
             )
 
-    # Section 3b — repair MathJax content in any supported text file.
+    # Section 3d — repair MathJax content in any supported text file.
     text, math_hits = repair_math_blocks(text)
     hits.extend(math_hits)
 
@@ -560,5 +718,40 @@ for path in text_files:
         audit_count += 1
     elif not hits:
         print(f"  ok     {path}")
+
+
+# ── V4 folder-level Bank structure audit ─────────────────────────────────────
+# If a canonical Bank HTML and mapping CSV sit together, compare the number of
+# real <article class="bank-item"> elements with mapping rows. This catches the
+# exact production failure where malformed math swallowed dozens of HTML cards.
+
+for html_path in [p for p in text_files if p.suffix.lower() == '.html']:
+    mapping_candidates = list(html_path.parent.glob('*_mapping.csv'))
+    if not mapping_candidates:
+        continue
+
+    html_text = html_path.read_text(encoding='utf-8', errors='replace')
+    article_count = len(re.findall(
+        r'<article\b[^>]*class=["\'][^"\']*\bbank-item\b[^>]*>',
+        html_text,
+        flags=re.IGNORECASE,
+    ))
+
+    for mapping_path in mapping_candidates:
+        try:
+            with mapping_path.open('r', encoding='utf-8-sig', newline='') as f:
+                rows = list(csv.reader(f))
+            mapping_count = max(0, len(rows) - 1)
+
+            if article_count != mapping_count:
+                print(
+                    f"  AUDIT  BANK STRUCTURE MISMATCH: {html_path.name} has "
+                    f"{article_count} real bank-item article(s), but "
+                    f"{mapping_path.name} has {mapping_count} mapping row(s)."
+                )
+                audit_count += 1
+        except Exception as exc:
+            print(f"  AUDIT  Could not compare {mapping_path.name}: {exc}")
+            audit_count += 1
 
 print(f"\nDone. {fixed_count} file(s) auto-fixed. {audit_count} file(s) have audit warnings.")
