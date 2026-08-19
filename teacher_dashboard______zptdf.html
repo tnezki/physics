@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ============================================================
+     PHYSICS — TEACHER DASHBOARD
+     File: dashboard.html
+     Lives at the ROOT of the algebra repo — same level as index.html.
+     Rename this file to anything to obscure it from students.
+
+     All links are RELATIVE — no leading slash, no domain, no repo
+     name. The file works identically:
+       • locally  (python3 -m http.server from the algebra folder)
+       • GitHub Pages  (tnezki.github.io/algebra/...)
+       • any other host or folder rename
+
+     ── HOW TO EDIT ──────────────────────────────────────────────
+     1. UNIT names/titles   →  edit the `units` array in <script>
+     2. SECTION titles      →  edit each section's `title` field
+     3. RESOURCE links      →  update `href` values in
+                                studentResources / teacherResources
+     4. TOP BAR chips       →  edit the HTML "TOP RESOURCES BAR" block
+     5. ASSESSMENT chips    →  edit the HTML "ASSESSMENT PLANS" block
+     6. COLORS              →  edit :root variables in <style>
+     ============================================================ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics — Teacher Dashboard</title>
+
+    <!-- Tabler Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <style>
+        /* --------------------------------------------------------
+           CUSTOM PROPERTIES — edit colors here, changes cascade
+           -------------------------------------------------------- */
+        :root {
+            --navy:          #1F3864;
+            --gold:          #C9A84C;
+            --gold-light:    #F5EDD5;
+            --gold-mid:      #e8d49a;
+            --text:          #1a1a1a;
+            --text-muted:    #555555;
+            --border:        #dddddd;
+            --bg:            #ffffff;
+            --bg-subtle:     #f7f7f5;
+            --teacher-dark:  #2d6a2d;   /* green for teacher-only items */
+            --teacher-mid:   #b8d8b8;
+            --teacher-light: #eaf3ea;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: var(--bg-subtle);
+            color: var(--text);
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .page-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* ── Teacher banner ── */
+        .teacher-banner {
+            background: var(--teacher-dark);
+            color: white;
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 6px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        /* ── Page header ── */
+        .page-header {
+            border-bottom: 3px solid var(--navy);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .page-title {
+            font-size: 26px;
+            font-weight: normal;
+            color: var(--navy);
+            letter-spacing: -0.3px;
+        }
+        .page-subtitle {
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* ── Resources bar ── */
+        .resources-bar {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 2rem;
+        }
+        .resources-bar-label {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #7a6020;
+            margin-bottom: 8px;
+        }
+        .resources-bar-links { display: flex; flex-wrap: wrap; gap: 7px; }
+        .res-chip {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: var(--navy);
+            text-decoration: none;
+            background: white;
+            padding: 4px 11px;
+            border-radius: 20px;
+            border: 1px solid var(--gold-mid);
+        }
+        .res-chip:hover { background: var(--gold-mid); }
+
+        /* ── Unit block ── */
+        .unit-block { margin-bottom: 2.5rem; }
+
+        .unit-header {
+            background: var(--navy);
+            border-radius: 6px 6px 0 0;
+            padding: 0.65rem 1rem;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .unit-header:hover { background: #26447a; }
+        .unit-label {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--gold);
+            white-space: nowrap;
+        }
+        .unit-name {
+            font-size: 16px;
+            font-family: Georgia, serif;
+            color: white;
+            font-weight: normal;
+            flex: 1;
+        }
+        .unit-chevron {
+            font-size: 15px;
+            color: var(--gold);
+            transition: transform 0.18s;
+            flex-shrink: 0;
+        }
+        .unit-chevron.open { transform: rotate(180deg); }
+        .unit-collapsible { display: none; }
+        .unit-collapsible.open { display: block; }
+
+        .unit-meta {
+            background: #f0f3f8;
+            border-left: 1px solid #c5cfe0;
+            border-right: 1px solid #c5cfe0;
+            padding: 0.6rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+        .unit-meta-chip {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            color: var(--navy);
+            text-decoration: none;
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: white;
+            border: 1px solid #b8c5d8;
+        }
+        .unit-meta-chip:hover { background: #dce6f5; }
+        .unit-meta-chip.teacher {
+            color: var(--teacher-dark);
+            border-color: var(--teacher-mid);
+            background: var(--teacher-light);
+        }
+        .unit-meta-chip.teacher:hover { background: #c8e6c8; }
+
+        .unit-body {
+            border: 1px solid #c5cfe0;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            overflow: hidden;
+        }
+
+        /* ── Section rows ── */
+        .section-row { border-top: 1px solid var(--border); }
+        .section-row:first-child { border-top: none; }
+
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.55rem 1rem;
+            background: var(--bg-subtle);
+            cursor: pointer;
+            user-select: none;
+        }
+        .section-head:hover { background: #eef1f7; }
+        .section-num {
+            font-size: 11px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: var(--gold);
+            background: var(--navy);
+            padding: 2px 8px;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+        .section-title {
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            color: var(--text);
+            flex: 1;
+        }
+        .section-chevron {
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: transform 0.18s;
+            flex-shrink: 0;
+        }
+        .section-chevron.open { transform: rotate(180deg); }
+
+        .section-body {
+            display: none;
+            padding: 0.6rem 1rem 0.75rem;
+            background: white;
+            border-top: 1px solid var(--border);
+        }
+        .section-body.open { display: block; }
+
+        .btn-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .btn-row:last-child { margin-bottom: 0; }
+        .btn-row-label {
+            font-size: 10px;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: var(--text-muted);
+            width: 100%;
+            margin-bottom: 3px;
+        }
+
+        /* ── Resource buttons ── */
+        .r-btn {
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            background: var(--bg-subtle);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .r-btn:hover { border-color: var(--navy); color: var(--navy); }
+        .r-btn.primary {
+            border-color: #b8c5d8;
+            color: var(--navy);
+            background: #f0f3f8;
+            font-weight: bold;
+        }
+        .r-btn.primary:hover { background: #dce6f5; }
+        .r-btn.teacher {
+            border-color: var(--teacher-mid);
+            color: var(--teacher-dark);
+            background: var(--teacher-light);
+        }
+        .r-btn.teacher:hover { background: #c8e6c8; }
+        .r-btn i { font-size: 13px; }
+    </style>
+</head>
+
+<body>
+<div class="page-wrap">
+
+    <!-- Teacher banner -->
+    <div class="teacher-banner">
+        <i class="ti ti-lock" aria-hidden="true"></i>&nbsp; Teacher View
+    </div>
+
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-title">Physics</div>
+        <div class="page-subtitle">Manistee High School &nbsp;&middot;&nbsp; Teacher Dashboard</div>
+    </div>
+
+    <!-- ============================================================
+         TOP RESOURCES BAR
+         Edit hrefs below. All paths are relative to this file's
+         location (root of the algebra folder).
+         ============================================================ -->
+    <div class="resources-bar">
+
+        <div class="resources-bar-label">Resources</div>
+        <div class="resources-bar-links">
+            <!-- ── Edit or add chips here ── -->
+            <a href="https://docs.google.com/document/d/1rrToxZ84-VGe-75JeIofcH6FXqdCFiE-MNlwDZNvMs4/edit?usp=sharing" class="res-chip" target="_blank">Overview</a>
+            <a href="https://docs.google.com/document/d/19XLkAOoUBrwUTj5tqwq9P-hUQLw9HbjM1SZ3dyh5WLo/edit?usp=sharing" class="res-chip" target="_blank">Philosophy</a>
+            <a href="https://drive.google.com/drive/folders/1P--I08sYOrbIL_JtoX0DDcQ3KmNbyaIF?usp=sharing" class="res-chip" target="_blank">Images</a>
+            <a href="misc/parent_fuctions.pdf" class="res-chip" target="_blank">Parent Functions</a>
+            <a href="https://drive.google.com/file/d/1xmiV_IxGOdml2it9MTNOrAfQtNCEnVZw/view?usp=sharing" class="res-chip" target="_blank">Graph Paper</a>
+            <a href="https://www.desmos.com/calculator" class="res-chip" target="_blank">Desmos</a>
+            <a href="https://www.geogebra.org/graphing" class="res-chip" target="_blank">GeoGebra</a>
+            <a href="https://mariners.instructure.com/" class="res-chip" target="_blank">Canvas</a>
+            <a href="https://technology.cpm.org/general/tiles/" class="res-chip" target="_blank">Virtual Tools</a>
+            <a href="https://www.geogebra.org/m/EzCuXRvT" class="res-chip" target="_blank">Line Graphing Practice</a>
+            <a href="https://docs.google.com/document/d/18imPwnYQjblasMS8x97DjKeNDjWNKTnOa3iBoTwCYVA/edit?usp=sharing" class="res-chip" target="_blank">Activity Structures</a>
+            <a href="https://docs.google.com/document/d/17PuBt-DCwhp3ERFwu5D84u6a4i-DpcsqNIE5npHrG-Y/edit?usp=sharing" class="res-chip" target="_blank">Year at a Glance</a>
+        </div>
+
+    </div><!-- end .resources-bar -->
+
+
+    <!-- Units container — filled by script below -->
+    <div id="units"></div>
+
+</div><!-- end .page-wrap -->
+
+
+<!-- ============================================================
+     UNIT DATA
+     ============================================================
+
+     HOW IT WORKS
+     ------------
+     `units` is an array. Each unit has:
+       id        string   used for section numbering ("0A", "1", etc.)
+       label     string   small tag shown in the header
+       name      string   full unit title
+       meta      array    chips in the blue strip below the header
+                          teacher:true  →  renders chip in green
+       sections  array    each section has:
+                            title             string
+                            studentResources  array  (navy buttons)
+                            teacherResources  array  (green buttons)
+
+     Each resource item has:
+       label   string   button text
+       cls     string   "primary" for bold emphasis, "" for normal
+       icon    string   Tabler icon name  e.g. "ti-notes"
+       href    string   RELATIVE path from algebra root
+
+     teacherResources skip `cls` — they always render green.
+
+     TO ADD A SECTION LINK: find the section by title, update href.
+     TO ADD A UNIT: copy a unit block, paste before the closing ],
+                    add a comma after the unit above it.
+     ============================================================ -->
+<script>
+
+const units = [
+
+    
+
+
+    // ============================================================
+    // UNIT 1 — Foundations of Functions and Algebra
+    // ============================================================
+    {
+        id: "1", label: "Unit 1", name: "Forces, Motion, and Equilibrium",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_1_progress/unit_1_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_1_warmups/unit_1_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review1/review_1.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit1/exit_1.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit1_assessment_plan/unit1_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit1/unit1.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit1_summative/unit1_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1Zk5af5DbaVh_L58AmbYzvGF5a3_H1N94LWUOMpA7sfk/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Thinking Like a Physicist",
+              studentResources: [
+                { label: "Notes",          cls: "primary", icon: "ti-notes",    href: "notes/u1_1_notes/u1_1_notes.html" },
+                { label: "Practice Set",   cls: "primary", icon: "ti-pencil",   href: "practice_sets/practice_sets_1_1/practice_set_1_1.html" },
+                { label: "Demo", cls: "", icon: "ti-search", href: "demo/u1_1_demo/u1_1_demo.html" }, { label: "Investigation",  cls: "",         icon: "ti-search",   href: "investigations/u1_1_investigation/u1_1_investigation.html" },
+                { label: "Activities",     cls: "",         icon: "ti-puzzle",   href: "activities/u1_1_act1/u1_1_act1.html" },
+                { label: "Tarsia",      cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_1/tarsia_1_1_practice_3.txt" },
+                { label: "Blooket",     cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_1/blooket_1_1_practice_3.csv" },
+                { label: "Extra Practice", cls: "",         icon: "ti-plus",     href: "practice_sets/practice_sets_1_1/extra_practice_1_1.html" },
+                { label: "C.Y.U.",         cls: "",         icon: "ti-checkbox", href: "practice_sets/practice_sets_1_1/cyu_1_1.html" },
+                
+              ],
+              teacherResources: [
+                { label: "Notes Teacher",     icon: "ti-chalkboard", href: "notes/u1_1_notes/u1_1_notes_teacher.html" },
+                { label: "Demo Teacher", icon: "ti-search", href: "demo/u1_1_demo/u1_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u1_1_investigation/u1_1_investigation_teacher_guide.html" },
+                { label: "Future Resource 1", icon: "ti-bulb",       href: "ideas/unit1_section_1_idea1/unit1_section_1_idea1.html" },
+                { label: "Future Resource 2", icon: "ti-bulb",       href: "ideas/unit1_section_1_idea2/unit1_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_1_1/practice_set_1_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_1_1/practice_set_1_1_3.html" },
+              ]
+            },
+            { title: "Forces and Newton’s First Law",
+              studentResources: [
+                { label: "Notes",          cls: "primary", icon: "ti-notes",    href: "notes/u1_2_notes/u1_2_notes.html" },
+                { label: "Practice Set",   cls: "primary", icon: "ti-pencil",   href: "practice_sets/practice_sets_1_2/practice_set_1_2.html" },
+                { label: "Demo", cls: "", icon: "ti-search", href: "demo/u1_2_demo/u1_2_demo.html" }, { label: "Investigation",  cls: "",         icon: "ti-search",   href: "investigations/u1_2_investigation/u1_2_investigation.html" },
+                { label: "Activities",     cls: "",         icon: "ti-puzzle",   href: "activities/u1_2_act1/u1_2_act1.html" },
+                { label: "Tarsia",      cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_2/tarsia_1_2_practice_3.txt" },
+                { label: "Blooket",     cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_2/blooket_1_2_practice_3.csv" },
+                { label: "Extra Practice", cls: "",         icon: "ti-plus",     href: "practice_sets/practice_sets_1_2/extra_practice_1_2.html" },
+                { label: "C.Y.U.",         cls: "",         icon: "ti-checkbox", href: "practice_sets/practice_sets_1_2/cyu_1_2.html" },
+               
+              ],
+              teacherResources: [
+                { label: "Notes Teacher",     icon: "ti-chalkboard", href: "notes/u1_2_notes/u1_2_notes_teacher.html" },
+                { label: "Demo Teacher", icon: "ti-search", href: "demo/u1_2_demo/u1_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u1_2_investigation/u1_2_investigation_teacher_guide.html" },
+                { label: "Future Resource 1", icon: "ti-bulb",       href: "ideas/unit1_section_2_idea1/unit1_section_2_idea1.html" },
+                { label: "Future Resource 2", icon: "ti-bulb",       href: "ideas/unit1_section_2_idea2/unit1_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_1_2/practice_set_1_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_1_2/practice_set_1_2_3.html" },
+              ]
+            },
+            { title: "Net Force and Vectors",
+              studentResources: [
+                { label: "Notes",          cls: "primary", icon: "ti-notes",    href: "notes/u1_3_notes/u1_3_notes.html" },
+                { label: "Practice Set",   cls: "primary", icon: "ti-pencil",   href: "practice_sets/practice_sets_1_3/practice_set_1_3.html" },
+                { label: "Demo", cls: "", icon: "ti-search", href: "demo/u1_3_demo/u1_3_demo.html" }, { label: "Investigation",  cls: "",         icon: "ti-search",   href: "investigations/u1_3_investigation/u1_3_investigation.html" },
+                { label: "Activities",     cls: "",         icon: "ti-puzzle",   href: "activities/u1_3_act1/u1_3_act1.html" },
+                { label: "Tarsia",      cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_3/tarsia_1_3_practice_3.txt" },
+                { label: "Blooket",     cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_3/blooket_1_3_practice_3.csv" },
+                { label: "Extra Practice", cls: "",         icon: "ti-plus",     href: "practice_sets/practice_sets_1_3/extra_practice_1_3.html" },
+                { label: "C.Y.U.",         cls: "",         icon: "ti-checkbox", href: "practice_sets/practice_sets_1_3/cyu_1_3.html" },
+              ],
+              teacherResources: [
+                { label: "Notes Teacher",     icon: "ti-chalkboard", href: "notes/u1_3_notes/u1_3_notes_teacher.html" },
+                { label: "Demo Teacher", icon: "ti-search", href: "demo/u1_3_demo/u1_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u1_3_investigation/u1_3_investigation_teacher_guide.html" },
+                { label: "Future Resource 1", icon: "ti-bulb",       href: "ideas/unit1_section_3_idea1/unit1_section_3_idea1.html" },
+                { label: "Future Resource 2", icon: "ti-bulb",       href: "ideas/unit1_section_3_idea2/unit1_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_1_3/practice_set_1_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_1_3/practice_set_1_3_3.html" },
+              ]
+            },
+            { title: "Equilibrium and Balanced Motion",
+              studentResources: [
+                { label: "Notes",          cls: "primary", icon: "ti-notes",    href: "notes/u1_4_notes/u1_4_notes.html" },
+                { label: "Practice Set",   cls: "primary", icon: "ti-pencil",   href: "practice_sets/practice_sets_1_4/practice_set_1_4.html" },
+                { label: "Demo", cls: "", icon: "ti-search", href: "demo/u1_4_demo/u1_4_demo.html" }, { label: "Investigation",  cls: "",         icon: "ti-search",   href: "investigations/u1_4_investigation/u1_4_investigation.html" },
+                { label: "Activities",     cls: "",         icon: "ti-puzzle",   href: "activities/u1_4_act1/u1_4_act1.html" },
+                { label: "Tarsia",      cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_4/tarsia_1_4_practice_3.txt" },
+                { label: "Blooket",     cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_4/blooket_1_4_practice_3.csv" },
+                { label: "Extra Practice", cls: "",         icon: "ti-plus",     href: "practice_sets/practice_sets_1_4/extra_practice_1_4.html" },
+                { label: "C.Y.U.",         cls: "",         icon: "ti-checkbox", href: "practice_sets/practice_sets_1_4/cyu_1_4.html" },
+              ],
+              teacherResources: [
+                { label: "Notes Teacher",     icon: "ti-chalkboard", href: "notes/u1_4_notes/u1_4_notes_teacher.html" },
+                { label: "Demo Teacher", icon: "ti-search", href: "demo/u1_4_demo/u1_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u1_4_investigation/u1_4_investigation_teacher_guide.html" },
+                { label: "Future Resource 1", icon: "ti-bulb",       href: "ideas/unit1_section_4_idea1/unit1_section_4_idea1.html" },
+                { label: "Future Resource 2", icon: "ti-bulb",       href: "ideas/unit1_section_4_idea2/unit1_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_1_4/practice_set_1_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_1_4/practice_set_1_4_3.html" },
+              ]
+            },
+            { title: "Modeling Forces in the Real World",
+              studentResources: [
+                { label: "Notes",          cls: "primary", icon: "ti-notes",    href: "notes/u1_5_notes/u1_5_notes.html" },
+                { label: "Practice Set",   cls: "primary", icon: "ti-pencil",   href: "practice_sets/practice_sets_1_5/practice_set_1_5.html" },
+                { label: "Demo", cls: "", icon: "ti-search", href: "demo/u1_5_demo/u1_5_demo.html" }, { label: "Investigation",  cls: "",         icon: "ti-search",   href: "investigations/u1_5_investigation/u1_5_investigation.html" },
+                { label: "Activities",     cls: "",         icon: "ti-puzzle",   href: "activities/u1_5_act1/u1_5_act1.html" },
+                { label: "Tarsia",      cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_5/tarsia_1_5_practice_3.txt" },
+                { label: "Blooket",     cls: "",         icon: "ti-puzzle",   href: "practice_sets/practice_sets_1_5/blooket_1_5_practice_3.csv" },
+                { label: "Extra Practice", cls: "",         icon: "ti-plus",     href: "practice_sets/practice_sets_1_5/extra_practice_1_5.html" },
+                { label: "C.Y.U.",         cls: "",         icon: "ti-checkbox", href: "practice_sets/practice_sets_1_5/cyu_1_5.html" },
+                
+              ],
+              teacherResources: [
+                { label: "Notes Teacher",     icon: "ti-chalkboard", href: "notes/u1_5_notes/u1_5_notes_teacher.html" },
+                { label: "Demo Teacher", icon: "ti-search", href: "demo/u1_5_demo/u1_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u1_5_investigation/u1_5_investigation_teacher_guide.html" },
+                { label: "Future Resource 1", icon: "ti-bulb",       href: "ideas/unit1_section_5_idea1/unit1_section_5_idea1.html" },
+                { label: "Future Resource 2", icon: "ti-bulb",       href: "ideas/unit1_section_5_idea2/unit1_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_1_5/practice_set_1_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_1_5/practice_set_1_5_3.html" },
+              ]
+            },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 2 — Linear Functions and Modeling
+    // ============================================================
+    {
+        id: "2", label: "Unit 2", name: "Motion and Kinematics",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_2_progress/unit_2_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_2_warmups/unit_2_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review2/review_2.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit2/exit_2.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit2_assessment_plan/unit2_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit2/unit2.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit2_summative/unit2_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1P9tby39KQjlgMx90yCzyFHZkKLe-x9Qv5lgIRtKKYi4/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Motion and Reference Frames",                studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u2_1_notes/u2_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_2_1/practice_set_2_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u2_1_demo/u2_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u2_1_investigation/u2_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u2_1_act1/u2_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_1/tarsia_2_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_1/blooket_2_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_2_1/extra_practice_2_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_2_1/cyu_2_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u2_1_notes/u2_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u2_1_demo/u2_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u2_1_investigation/u2_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit2_section_1_idea1/unit2_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit2_section_1_idea2/unit2_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_2_1/practice_set_2_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_2_1/practice_set_2_1_3.html" }, ] },
+            { title: "Speed and Velocity",               studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u2_2_notes/u2_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_2_2/practice_set_2_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u2_2_demo/u2_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u2_2_investigation/u2_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u2_2_act1/u2_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_2/tarsia_2_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_2/blooket_2_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_2_2/extra_practice_2_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_2_2/cyu_2_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u2_2_notes/u2_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u2_2_demo/u2_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u2_2_investigation/u2_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit2_section_2_idea1/unit2_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit2_section_2_idea2/unit2_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_2_2/practice_set_2_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_2_2/practice_set_2_2_3.html" }, ] },
+            { title: "Acceleration",                studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u2_3_notes/u2_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_2_3/practice_set_2_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u2_3_demo/u2_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u2_3_investigation/u2_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u2_3_act1/u2_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_3/tarsia_2_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_3/blooket_2_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_2_3/extra_practice_2_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_2_3/cyu_2_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u2_3_notes/u2_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u2_3_demo/u2_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u2_3_investigation/u2_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit2_section_3_idea1/unit2_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit2_section_3_idea2/unit2_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_2_3/practice_set_2_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_2_3/practice_set_2_3_3.html" }, ] },
+            { title: "Free Fall Motion",        studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u2_4_notes/u2_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_2_4/practice_set_2_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u2_4_demo/u2_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u2_4_investigation/u2_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u2_4_act1/u2_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_4/tarsia_2_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_4/blooket_2_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_2_4/extra_practice_2_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_2_4/cyu_2_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u2_4_notes/u2_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u2_4_demo/u2_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u2_4_investigation/u2_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit2_section_4_idea1/unit2_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit2_section_4_idea2/unit2_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_2_4/practice_set_2_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_2_4/practice_set_2_4_3.html" }, ] },
+            { title: "Velocity Vectors and Motion Modeling",               studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u2_5_notes/u2_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_2_5/practice_set_2_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u2_5_demo/u2_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u2_5_investigation/u2_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u2_5_act1/u2_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_5/tarsia_2_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_2_5/blooket_2_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_2_5/extra_practice_2_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_2_5/cyu_2_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u2_5_notes/u2_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u2_5_demo/u2_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u2_5_investigation/u2_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit2_section_5_idea1/unit2_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit2_section_5_idea2/unit2_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_2_5/practice_set_2_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_2_5/practice_set_2_5_3.html" }, ] },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 3 — Systems and Constraints
+    // ============================================================
+    {
+        id: "3", label: "Unit 3", name: "Forces and Motion",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_3_progress/unit_3_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_3_warmups/unit_3_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review3/review_3.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit3/exit_3.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit3_assessment_plan/unit3_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit3/unit3.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit3_summative/unit3_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/10YYbd9RZ19I8QMEghgFP1Ka1znB6uYyrBH91KZA6-zM/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Force and Acceleration", studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u3_1_notes/u3_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_3_1/practice_set_3_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u3_1_demo/u3_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u3_1_investigation/u3_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u3_1_act1/u3_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_1/tarsia_3_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_1/blooket_3_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_3_1/extra_practice_3_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_3_1/cyu_3_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u3_1_notes/u3_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u3_1_demo/u3_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u3_1_investigation/u3_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit3_section_1_idea1/unit3_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit3_section_1_idea2/unit3_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_3_1/practice_set_3_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_3_1/practice_set_3_1_3.html" }, ] },
+            { title: "Friction and Real-World Forces",                studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u3_2_notes/u3_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_3_2/practice_set_3_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u3_2_demo/u3_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u3_2_investigation/u3_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u3_2_act1/u3_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_2/tarsia_3_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_2/blooket_3_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_3_2/extra_practice_3_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_3_2/cyu_3_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u3_2_notes/u3_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u3_2_demo/u3_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u3_2_investigation/u3_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit3_section_2_idea1/unit3_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit3_section_2_idea2/unit3_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_3_2/practice_set_3_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_3_2/practice_set_3_2_3.html" }, ] },
+            { title: "Free Fall and Nonfree Fall",    studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u3_3_notes/u3_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_3_3/practice_set_3_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u3_3_demo/u3_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u3_3_investigation/u3_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u3_3_act1/u3_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_3/tarsia_3_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_3/blooket_3_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_3_3/extra_practice_3_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_3_3/cyu_3_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u3_3_notes/u3_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u3_3_demo/u3_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u3_3_investigation/u3_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit3_section_3_idea1/unit3_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit3_section_3_idea2/unit3_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_3_3/practice_set_3_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_3_3/practice_set_3_3_3.html" }, ] },
+            { title: "Newton’s Third Law and Interactions",                   studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u3_4_notes/u3_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_3_4/practice_set_3_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u3_4_demo/u3_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u3_4_investigation/u3_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u3_4_act1/u3_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_4/tarsia_3_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_4/blooket_3_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_3_4/extra_practice_3_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_3_4/cyu_3_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u3_4_notes/u3_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u3_4_demo/u3_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u3_4_investigation/u3_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit3_section_4_idea1/unit3_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit3_section_4_idea2/unit3_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_3_4/practice_set_3_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_3_4/practice_set_3_4_3.html" }, ] },
+            { title: "Projectile Motion",                 studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u3_5_notes/u3_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_3_5/practice_set_3_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u3_5_demo/u3_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u3_5_investigation/u3_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u3_5_act1/u3_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_5/tarsia_3_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_3_5/blooket_3_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_3_5/extra_practice_3_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_3_5/cyu_3_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u3_5_notes/u3_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u3_5_demo/u3_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u3_5_investigation/u3_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit3_section_5_idea1/unit3_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit3_section_5_idea2/unit3_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_3_5/practice_set_3_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_3_5/practice_set_3_5_3.html" }, ] },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 4 — Function Families and Transformations
+    // ============================================================
+    {
+        id: "4", label: "Unit 4", name: "Momentum and Energy",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_4_progress/unit_4_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_4_warmups/unit_4_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review4/review_4.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit4/exit_4.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit4_assessment_plan/unit4_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit4/unit4.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit4_summative/unit4_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1BLPOOh2ComBnf6mP_LL_a-x_7bB0QrrYfJ90m79kFx0/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Momentum and Impulse",                       studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u4_1_notes/u4_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_4_1/practice_set_4_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u4_1_demo/u4_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u4_1_investigation/u4_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u4_1_act1/u4_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_1/tarsia_4_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_1/blooket_4_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_4_1/extra_practice_4_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_4_1/cyu_4_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u4_1_notes/u4_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u4_1_demo/u4_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u4_1_investigation/u4_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit4_section_1_idea1/unit4_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit4_section_1_idea2/unit4_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_4_1/practice_set_4_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_4_1/practice_set_4_1_3.html" }, ] },
+            { title: "Conservation of Momentum",                               studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u4_2_notes/u4_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_4_2/practice_set_4_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u4_2_demo/u4_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u4_2_investigation/u4_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u4_2_act1/u4_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_2/tarsia_4_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_2/blooket_4_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_4_2/extra_practice_4_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_4_2/cyu_4_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u4_2_notes/u4_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u4_2_demo/u4_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u4_2_investigation/u4_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit4_section_2_idea1/unit4_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit4_section_2_idea2/unit4_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_4_2/practice_set_4_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_4_2/practice_set_4_2_3.html" }, ] },
+            { title: "Work and Energy",                              studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u4_3_notes/u4_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_4_3/practice_set_4_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u4_3_demo/u4_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u4_3_investigation/u4_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u4_3_act1/u4_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_3/tarsia_4_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_3/blooket_4_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_4_3/extra_practice_4_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_4_3/cyu_4_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u4_3_notes/u4_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u4_3_demo/u4_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u4_3_investigation/u4_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit4_section_3_idea1/unit4_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit4_section_3_idea2/unit4_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_4_3/practice_set_4_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_4_3/practice_set_4_3_3.html" }, ] },
+            { title: "Conservation of Energy",                               studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u4_4_notes/u4_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_4_4/practice_set_4_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u4_4_demo/u4_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u4_4_investigation/u4_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u4_4_act1/u4_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_4/tarsia_4_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_4/blooket_4_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_4_4/extra_practice_4_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_4_4/cyu_4_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u4_4_notes/u4_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u4_4_demo/u4_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u4_4_investigation/u4_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit4_section_4_idea1/unit4_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit4_section_4_idea2/unit4_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_4_4/practice_set_4_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_4_4/practice_set_4_4_3.html" }, ] },
+            { title: "Energy in Society", studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u4_5_notes/u4_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_4_5/practice_set_4_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u4_5_demo/u4_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u4_5_investigation/u4_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u4_5_act1/u4_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_5/tarsia_4_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_4_5/blooket_4_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_4_5/extra_practice_4_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_4_5/cyu_4_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u4_5_notes/u4_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u4_5_demo/u4_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u4_5_investigation/u4_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit4_section_5_idea1/unit4_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit4_section_5_idea2/unit4_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_4_5/practice_set_4_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_4_5/practice_set_4_5_3.html" }, ] },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 5 — Factoring and Quadratic Functions
+    // ============================================================
+    {
+        id: "5", label: "Unit 5", name: "Waves and Sound",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_5_progress/unit_5_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_5_warmups/unit_5_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review5/review_5.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit5/exit_5.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit5_assessment_plan/unit5_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit5/unit5.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit5_summative/unit5_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1INOQmbYisVUrh3AHje5YRPOP4o2O018RSW4bTNTt84s/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Vibrations and Wave Properties", studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u5_1_notes/u5_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_5_1/practice_set_5_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u5_1_demo/u5_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u5_1_investigation/u5_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u5_1_act1/u5_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_1/tarsia_5_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_1/blooket_5_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_5_1/extra_practice_5_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_5_1/cyu_5_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u5_1_notes/u5_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u5_1_demo/u5_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u5_1_investigation/u5_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit5_section_1_idea1/unit5_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit5_section_1_idea2/unit5_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_5_1/practice_set_5_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_5_1/practice_set_5_1_3.html" }, ] },
+            { title: "Wave Interactions",                          studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u5_2_notes/u5_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_5_2/practice_set_5_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u5_2_demo/u5_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u5_2_investigation/u5_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u5_2_act1/u5_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_2/tarsia_5_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_2/blooket_5_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_5_2/extra_practice_5_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_5_2/cyu_5_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u5_2_notes/u5_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u5_2_demo/u5_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u5_2_investigation/u5_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit5_section_2_idea1/unit5_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit5_section_2_idea2/unit5_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_5_2/practice_set_5_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_5_2/practice_set_5_2_3.html" }, ] },
+            { title: "Nature of Sound",                               studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u5_3_notes/u5_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_5_3/practice_set_5_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u5_3_demo/u5_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u5_3_investigation/u5_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u5_3_act1/u5_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_3/tarsia_5_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_3/blooket_5_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_5_3/extra_practice_5_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_5_3/cyu_5_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u5_3_notes/u5_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u5_3_demo/u5_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u5_3_investigation/u5_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit5_section_3_idea1/unit5_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit5_section_3_idea2/unit5_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_5_3/practice_set_5_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_5_3/practice_set_5_3_3.html" }, ] },
+            { title: "Reflection, Refraction, and Resonance",                                  studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u5_4_notes/u5_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_5_4/practice_set_5_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u5_4_demo/u5_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u5_4_investigation/u5_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u5_4_act1/u5_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_4/tarsia_5_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_4/blooket_5_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_5_4/extra_practice_5_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_5_4/cyu_5_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u5_4_notes/u5_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u5_4_demo/u5_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u5_4_investigation/u5_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit5_section_4_idea1/unit5_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit5_section_4_idea2/unit5_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_5_4/practice_set_5_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_5_4/practice_set_5_4_3.html" }, ] },
+            { title: "Sound Interference and Beats",                                studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u5_5_notes/u5_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_5_5/practice_set_5_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u5_5_demo/u5_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u5_5_investigation/u5_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u5_5_act1/u5_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_5/tarsia_5_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_5_5/blooket_5_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_5_5/extra_practice_5_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_5_5/cyu_5_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u5_5_notes/u5_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u5_5_demo/u5_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u5_5_investigation/u5_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit5_section_5_idea1/unit5_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit5_section_5_idea2/unit5_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_5_5/practice_set_5_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_5_5/practice_set_5_5_3.html" }, ] },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 6 — Solving and Modeling with Quadratics
+    // ============================================================
+    {
+        id: "6", label: "Unit 6", name: "Light and Optics",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_6_progress/unit_6_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_6_warmups/unit_6_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review6/review_6.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit6/exit_6.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit6_assessment_plan/unit6_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit6/unit6.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit6_summative/unit6_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1OTtWX_7uXoLgbujTxiZhFZo3PUATdxTAedcNZJzfR9c/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Nature of Light",            studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u6_1_notes/u6_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_6_1/practice_set_6_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u6_1_demo/u6_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u6_1_investigation/u6_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u6_1_act1/u6_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_1/tarsia_6_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_1/blooket_6_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_6_1/extra_practice_6_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_6_1/cyu_6_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u6_1_notes/u6_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u6_1_demo/u6_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u6_1_investigation/u6_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit6_section_1_idea1/unit6_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit6_section_1_idea2/unit6_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_6_1/practice_set_6_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_6_1/practice_set_6_1_3.html" }, ] },
+            { title: "Reflection and Mirrors", studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u6_2_notes/u6_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_6_2/practice_set_6_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u6_2_demo/u6_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u6_2_investigation/u6_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u6_2_act1/u6_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_2/tarsia_6_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_2/blooket_6_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_6_2/extra_practice_6_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_6_2/cyu_6_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u6_2_notes/u6_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u6_2_demo/u6_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u6_2_investigation/u6_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit6_section_2_idea1/unit6_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit6_section_2_idea2/unit6_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_6_2/practice_set_6_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_6_2/practice_set_6_2_3.html" }, ] },
+            { title: "Refraction and Total Internal Reflection",         studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u6_3_notes/u6_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_6_3/practice_set_6_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u6_3_demo/u6_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u6_3_investigation/u6_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u6_3_act1/u6_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_3/tarsia_6_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_3/blooket_6_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_6_3/extra_practice_6_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_6_3/cyu_6_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u6_3_notes/u6_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u6_3_demo/u6_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u6_3_investigation/u6_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit6_section_3_idea1/unit6_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit6_section_3_idea2/unit6_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_6_3/practice_set_6_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_6_3/practice_set_6_3_3.html" }, ] },
+            { title: "Lenses and Optical Systems",    studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u6_4_notes/u6_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_6_4/practice_set_6_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u6_4_demo/u6_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u6_4_investigation/u6_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u6_4_act1/u6_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_4/tarsia_6_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_4/blooket_6_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_6_4/extra_practice_6_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_6_4/cyu_6_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u6_4_notes/u6_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u6_4_demo/u6_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u6_4_investigation/u6_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit6_section_4_idea1/unit6_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit6_section_4_idea2/unit6_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_6_4/practice_set_6_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_6_4/practice_set_6_4_3.html" }, ] },
+            { title: "Optical Applications",        studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u6_5_notes/u6_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_6_5/practice_set_6_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u6_5_demo/u6_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u6_5_investigation/u6_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u6_5_act1/u6_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_5/tarsia_6_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_6_5/blooket_6_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_6_5/extra_practice_6_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_6_5/cyu_6_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u6_5_notes/u6_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u6_5_demo/u6_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u6_5_investigation/u6_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit6_section_5_idea1/unit6_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit6_section_5_idea2/unit6_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_6_5/practice_set_6_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_6_5/practice_set_6_5_3.html" }, ] },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 7 — Exponential Functions and Modeling
+    // ============================================================
+    {
+        id: "7", label: "Unit 7", name: "Electricity and Circuits",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_7_progress/unit_7_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_7_warmups/unit_7_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review7/review_7.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit7/exit_7.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit7_assessment_plan/unit7_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit7/unit7.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit7_summative/unit7_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1OixWhz8OpoABNetnAAyLKDpqpK__XlhEqygcFtk0JnU/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Electric Charge and Forces",     studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u7_1_notes/u7_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_7_1/practice_set_7_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u7_1_demo/u7_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u7_1_investigation/u7_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u7_1_act1/u7_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_1/tarsia_7_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_1/blooket_7_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_7_1/extra_practice_7_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_7_1/cyu_7_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u7_1_notes/u7_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u7_1_demo/u7_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u7_1_investigation/u7_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit7_section_1_idea1/unit7_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit7_section_1_idea2/unit7_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_7_1/practice_set_7_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_7_1/practice_set_7_1_3.html" }, ] },
+            { title: "Electric Potential and Current",                studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u7_2_notes/u7_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_7_2/practice_set_7_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u7_2_demo/u7_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u7_2_investigation/u7_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u7_2_act1/u7_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_2/tarsia_7_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_2/blooket_7_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_7_2/extra_practice_7_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_7_2/cyu_7_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u7_2_notes/u7_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u7_2_demo/u7_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u7_2_investigation/u7_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit7_section_2_idea1/unit7_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit7_section_2_idea2/unit7_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_7_2/practice_set_7_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_7_2/practice_set_7_2_3.html" }, ] },
+            { title: "Resistance and Ohm’s Law", studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u7_3_notes/u7_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_7_3/practice_set_7_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u7_3_demo/u7_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u7_3_investigation/u7_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u7_3_act1/u7_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_3/tarsia_7_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_3/blooket_7_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_7_3/extra_practice_7_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_7_3/cyu_7_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u7_3_notes/u7_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u7_3_demo/u7_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u7_3_investigation/u7_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit7_section_3_idea1/unit7_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit7_section_3_idea2/unit7_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_7_3/practice_set_7_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_7_3/practice_set_7_3_3.html" }, ] },
+            { title: "Power and Electrical Energy",                  studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u7_4_notes/u7_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_7_4/practice_set_7_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u7_4_demo/u7_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u7_4_investigation/u7_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u7_4_act1/u7_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_4/tarsia_7_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_4/blooket_7_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_7_4/extra_practice_7_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_7_4/cyu_7_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u7_4_notes/u7_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u7_4_demo/u7_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u7_4_investigation/u7_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit7_section_4_idea1/unit7_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit7_section_4_idea2/unit7_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_7_4/practice_set_7_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_7_4/practice_set_7_4_3.html" }, ] },
+            { title: "Complex Electric Circuits",               studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u7_5_notes/u7_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_7_5/practice_set_7_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u7_5_demo/u7_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u7_5_investigation/u7_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u7_5_act1/u7_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_5/tarsia_7_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_7_5/blooket_7_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_7_5/extra_practice_7_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_7_5/cyu_7_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u7_5_notes/u7_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u7_5_demo/u7_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u7_5_investigation/u7_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit7_section_5_idea1/unit7_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit7_section_5_idea2/unit7_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_7_5/practice_set_7_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_7_5/practice_set_7_5_3.html" }, ] },
+        ]
+    },
+
+    // ============================================================
+    // UNIT 8 — Function Analysis, Modeling, and Synthesis
+    // ============================================================
+    {
+        id: "8", label: "Unit 8", name: "Magnetism and Electromagnetism",
+        meta: [
+            
+            { label: "Progress",     teacher: false, href: "progress/unit_8_progress/unit_8_progress.html" },
+            { label: "Warm Ups",     teacher: false, href: "warmups/unit_8_warmups/unit_8_warmups.html" },
+            { label: "Review",        teacher: false, href: "reviews/review8/review_8.html" },
+            { label: "Exit Tickets",  teacher: true,  href: "exit/exit8/exit_8.html" },
+            { label: "Assess. Plan", teacher: true,  href: "assessments_zxrtjp/unit8_assessment_plan/unit8_assessment_plan.html" },
+            { label: "Banks", teacher: true,  href: "banks/unit8/unit8.html" },
+            { label: "Summative", teacher: true,  href: "assessments_zxrtjp/unit8_summative/unit8_summative_assessment.html" },
+            { label: "Discourse &amp; Reflection", teacher: true,  href: "https://docs.google.com/document/d/1Up0-RxUGS43Wa0OeCNFTTpMlLMs7yQY9cTEF46S-tDg/edit?usp=sharing" },
+        ],
+        sections: [
+            { title: "Magnetism and Magnetic Fields",                      studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u8_1_notes/u8_1_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_8_1/practice_set_8_1.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u8_1_demo/u8_1_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u8_1_investigation/u8_1_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u8_1_act1/u8_1_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_1/tarsia_8_1_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_1/blooket_8_1_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_8_1/extra_practice_8_1.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_8_1/cyu_8_1.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u8_1_notes/u8_1_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u8_1_demo/u8_1_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u8_1_investigation/u8_1_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit8_section_1_idea1/unit8_section_1_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit8_section_1_idea2/unit8_section_1_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_8_1/practice_set_8_1_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_8_1/practice_set_8_1_3.html" }, ] },
+            { title: "Electricity and Magnetism",          studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u8_2_notes/u8_2_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_8_2/practice_set_8_2.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u8_2_demo/u8_2_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u8_2_investigation/u8_2_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u8_2_act1/u8_2_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_2/tarsia_8_2_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_2/blooket_8_2_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_8_2/extra_practice_8_2.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_8_2/cyu_8_2.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u8_2_notes/u8_2_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u8_2_demo/u8_2_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u8_2_investigation/u8_2_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit8_section_2_idea1/unit8_section_2_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit8_section_2_idea2/unit8_section_2_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_8_2/practice_set_8_2_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_8_2/practice_set_8_2_3.html" }, ] },
+            { title: "Electromagnets and Magnetic Forces",  studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u8_3_notes/u8_3_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_8_3/practice_set_8_3.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u8_3_demo/u8_3_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u8_3_investigation/u8_3_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u8_3_act1/u8_3_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_3/tarsia_8_3_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_3/blooket_8_3_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_8_3/extra_practice_8_3.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_8_3/cyu_8_3.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u8_3_notes/u8_3_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u8_3_demo/u8_3_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u8_3_investigation/u8_3_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit8_section_3_idea1/unit8_section_3_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit8_section_3_idea2/unit8_section_3_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_8_3/practice_set_8_3_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_8_3/practice_set_8_3_3.html" }, ] },
+            { title: "Generators and Alternating Current",                           studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u8_4_notes/u8_4_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_8_4/practice_set_8_4.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u8_4_demo/u8_4_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u8_4_investigation/u8_4_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u8_4_act1/u8_4_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_4/tarsia_8_4_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_4/blooket_8_4_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_8_4/extra_practice_8_4.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_8_4/cyu_8_4.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u8_4_notes/u8_4_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u8_4_demo/u8_4_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u8_4_investigation/u8_4_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit8_section_4_idea1/unit8_section_4_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit8_section_4_idea2/unit8_section_4_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_8_4/practice_set_8_4_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_8_4/practice_set_8_4_3.html" }, ] },
+            { title: "Modern Electromagnetic Systems",         studentResources: [ { label: "Notes", cls: "primary", icon: "ti-notes", href: "notes/u8_5_notes/u8_5_notes.html" }, { label: "Practice Set", cls: "primary", icon: "ti-pencil", href: "practice_sets/practice_sets_8_5/practice_set_8_5.html" }, { label: "Demo", cls: "", icon: "ti-search", href: "demo/u8_5_demo/u8_5_demo.html" }, { label: "Investigation", cls: "", icon: "ti-search", href: "investigations/u8_5_investigation/u8_5_investigation.html" }, { label: "Activities", cls: "", icon: "ti-puzzle", href: "activities/u8_5_act1/u8_5_act1.html" }, { label: "Tarsia", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_5/tarsia_8_5_practice_3.txt" }, { label: "Blooket", cls: "", icon: "ti-puzzle", href: "practice_sets/practice_sets_8_5/blooket_8_5_practice_3.csv" }, { label: "Extra Practice", cls: "", icon: "ti-plus", href: "practice_sets/practice_sets_8_5/extra_practice_8_5.html" }, { label: "C.Y.U.", cls: "", icon: "ti-checkbox", href: "practice_sets/practice_sets_8_5/cyu_8_5.html" } ], teacherResources: [ { label: "Notes Teacher", icon: "ti-chalkboard", href: "notes/u8_5_notes/u8_5_notes_teacher.html" }, { label: "Demo Teacher", icon: "ti-search", href: "demo/u8_5_demo/u8_5_demo_teacher_guide.html" }, { label: "Invest Teacher", icon: "ti-search", href: "investigations/u8_5_investigation/u8_5_investigation_teacher_guide.html" }, { label: "Future Resource 1", icon: "ti-bulb", href: "ideas/unit8_section_5_idea1/unit8_section_5_idea1.html" }, { label: "Future Resource 2", icon: "ti-bulb", href: "ideas/unit8_section_5_idea2/unit8_section_5_idea2.html" }, { label: "Practice Set 2", icon: "ti-pencil", href: "practice_sets/practice_sets_8_5/practice_set_8_5_2.html" }, { label: "Practice Set 3", icon: "ti-pencil", href: "practice_sets/practice_sets_8_5/practice_set_8_5_3.html" }, ] },
+        ]
+    },
+
+]; // end units array
+
+
+// ============================================================
+// RENDERING — no need to edit below here
+// ============================================================
+
+function buildUnit(u) {
+    const metaHTML = u.meta.map(function(m) {
+        const cls = m.teacher ? 'unit-meta-chip teacher' : 'unit-meta-chip';
+        return '<a href="' + m.href + '" class="' + cls + '" target="_blank">' + m.label + '</a>';
+    }).join(' ');
+
+    const sectionsHTML = u.sections.map(function(sec, i) {
+        return buildSection(u.id, i + 1, sec);
+    }).join('');
+
+    const block = document.createElement('div');
+    block.className = 'unit-block';
+    block.innerHTML =
+        '<div class="unit-header" onclick="toggleUnit(this)">' +
+            '<span class="unit-label">' + u.label + '</span>' +
+            '<span class="unit-name">' + u.name + '</span>' +
+            '<i class="ti ti-chevron-down unit-chevron"></i>' +
+        '</div>' +
+        '<div class="unit-collapsible">' +
+            '<div class="unit-meta">' + metaHTML + '</div>' +
+            '<div class="unit-body">' + sectionsHTML + '</div>' +
+        '</div>';
+    return block;
+}
+
+function buildSection(unitId, index, sec) {
+    const num = unitId + '.' + index;
+
+    const studentBtns = sec.studentResources.map(function(r) {
+        return '<a href="' + r.href + '" class="r-btn ' + r.cls + '" target="_blank">' +
+               '<i class="ti ' + r.icon + '"></i>' + r.label + '</a>';
+    }).join(' ');
+
+    const teacherBtns = sec.teacherResources.map(function(r) {
+        return '<a href="' + r.href + '" class="r-btn teacher" target="_blank">' +
+               '<i class="ti ' + r.icon + '"></i>' + r.label + '</a>';
+    }).join(' ');
+
+    return '<div class="section-row">' +
+               '<div class="section-head" onclick="toggleSection(this)">' +
+                   '<span class="section-num">' + num + '</span>' +
+                   '<span class="section-title">' + sec.title + '</span>' +
+                   '<i class="ti ti-chevron-down section-chevron"></i>' +
+               '</div>' +
+               '<div class="section-body">' +
+                   '<div class="btn-row"><div class="btn-row-label">Student resources</div>' + studentBtns + '</div>' +
+                   '<div class="btn-row"><div class="btn-row-label">Teacher resources</div>' + teacherBtns + '</div>' +
+               '</div>' +
+           '</div>';
+}
+
+function toggleUnit(header) {
+    const c = header.nextElementSibling;
+    const v = c.classList.toggle('open');
+    header.querySelector('.unit-chevron').classList.toggle('open', v);
+}
+
+function toggleSection(header) {
+    const b = header.nextElementSibling;
+    const v = b.classList.toggle('open');
+    header.querySelector('.section-chevron').classList.toggle('open', v);
+}
+
+const container = document.getElementById('units');
+units.forEach(function(u) { container.appendChild(buildUnit(u)); });
+
+</script>
+</body>
+</html>

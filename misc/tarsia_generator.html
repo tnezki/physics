@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tarsia Generator</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] },
+  startup: {
+    ready() {
+      MathJax.startup.defaultReady();
+      MathJax.startup.promise.then(() => {
+        const el = document.getElementById('mjstatus');
+        if (el) { el.textContent = 'Math ready'; el.style.color = '#15803d'; }
+      });
+    }
+  }
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #e5e7eb; }
+
+/* ── SCREEN LAYOUT ── */
+@media screen {
+  #app { display: flex; height: 100vh; overflow: hidden; }
+
+  #sidebar {
+    width: 380px; min-width: 340px; flex-shrink: 0;
+    background: #fff; border-right: 2px solid #1e3a8a;
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  #sidebar-head {
+    background: #1e3a8a; color: #fff; padding: 11px 14px; flex-shrink: 0;
+  }
+  #sidebar-head h1 { font-size: 14px; font-weight: 700; }
+  #sidebar-head p  { font-size: 10px; color: #bfdbfe; margin-top: 3px; }
+
+  #controls {
+    padding: 8px 10px; background: #eff6ff;
+    border-bottom: 1px solid #dbeafe; flex-shrink: 0;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  #title-input {
+    width: 100%; padding: 5px 8px; font-size: 12px;
+    border: 1px solid #93c5fd; border-radius: 4px;
+  }
+  #btn-row { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  .btn {
+    padding: 5px 12px; font-size: 11px; font-weight: 700;
+    border: none; border-radius: 4px; cursor: pointer; white-space: nowrap;
+  }
+  .btn-blue  { background: #1e3a8a; color: #fff; }
+  .btn-blue:hover  { background: #1e40af; }
+  .btn-green { background: #15803d; color: #fff; }
+  .btn-green:hover { background: #166534; }
+  .btn-gold  { background: #92400e; color: #fff; }
+  .btn-gold:hover  { background: #78350f; }
+  .btn-red   { background: #b91c1c; color: #fff; }
+  .btn-red:hover   { background: #991b1b; }
+
+  #csv-area {
+    flex: 1; display: flex; flex-direction: column;
+    padding: 8px; gap: 6px; overflow: hidden;
+  }
+  #csv-hint {
+    font-size: 10.5px; color: #374151; background: #fffbeb;
+    border: 1px solid #fde68a; border-radius: 4px;
+    padding: 5px 8px; line-height: 1.6; flex-shrink: 0;
+  }
+  #csv-hint code {
+    background: #fee2e2; color: #991b1b;
+    padding: 1px 3px; border-radius: 2px; font-size: 10px;
+  }
+  #csv-input {
+    flex: 1; width: 100%; padding: 7px 8px; resize: none;
+    font-family: "Courier New", monospace; font-size: 11.5px;
+    border: 1px solid #93c5fd; border-radius: 4px;
+    line-height: 1.7; color: #111; background: #fafeff;
+  }
+  #csv-input:focus { outline: none; border-color: #3b82f6; }
+
+  #statusbar {
+    flex-shrink: 0; padding: 4px 10px;
+    font-size: 10px; color: #6b7280;
+    border-top: 1px solid #e5e7eb; background: #f9fafb;
+    display: flex; gap: 8px; align-items: center;
+  }
+
+  #main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  #main-head {
+    background: #1e3a8a; color: #fff;
+    padding: 7px 14px; font-size: 12px; font-weight: 700;
+    flex-shrink: 0; display: flex; align-items: center;
+  }
+  #main-head .note {
+    font-size: 10px; color: #bfdbfe; font-weight: 400; margin-left: auto;
+  }
+  #preview-scroll {
+    flex: 1; overflow: auto; background: #c7c7c7;
+    display: flex; flex-direction: column;
+    align-items: center; padding: 20px; gap: 16px;
+  }
+  #empty-msg {
+    color: #888; font-size: 13px; margin-top: 60px;
+  }
+}
+
+/* ── PRINT PAGE ── */
+.print-page {
+  width: 8in;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.18);
+  padding: 0.25in;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 0.15in;
+}
+
+.page-header {
+  grid-column: 1 / -1;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid #000;
+  display: flex; align-items: baseline; gap: 10px;
+}
+.page-header h2 { font-size: 13px; font-weight: 700; }
+.page-header span { font-size: 10px; color: #555; }
+
+.tri-cell {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 200 / 174;
+}
+.tri-cell svg { display: block; width: 100%; height: 100%; }
+
+.lbl {
+  position: absolute;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.25;
+  overflow: visible;
+}
+
+/* ── PRINT MEDIA ── */
+@media print {
+  body { background: white; margin: 0; }
+  #sidebar, #main-head { display: none !important; }
+  #preview-scroll {
+    background: white; padding: 0; overflow: visible; display: block;
+  }
+  #app  { height: auto; display: block; }
+  #main { height: auto; overflow: visible; display: block; }
+  .print-page {
+    width: 8in; height: 10.5in; padding: 0.25in;
+    box-shadow: none; border-radius: 0;
+    page-break-after: always; break-after: page; margin: 0;
+  }
+  .print-page:last-child { page-break-after: avoid; break-after: avoid; }
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <div id="sidebar-head">
+    <h1>&#129513; Tarsia Puzzle Generator</h1>
+    <p>16 triangles · 6 per page · B&amp;W · use | for line break · ~25 chars/line</p>
+  </div>
+  <div id="controls">
+    <input id="title-input" type="text" placeholder="Puzzle title..."
+           value="10.A — Properties of Logarithms">
+    <div id="btn-row">
+      <button class="btn btn-blue"  onclick="generate()">&#9654; Generate</button>
+      <button class="btn btn-green" onclick="window.print()">&#128424; Print</button>
+      <button class="btn btn-gold"  onclick="shufflePairs()">&#8644; Shuffle</button>
+      <button class="btn btn-red"   onclick="clearAll()">&#10005; Clear</button>
+    </div>
+  </div>
+  <div id="csv-area">
+    <div id="csv-hint">
+      One pair per line: <code>question, answer</code><br>
+      <code>$...$</code> for math &nbsp;·&nbsp;
+      <code>|</code> to force a line break &nbsp;·&nbsp;
+      ~25 chars per line max
+    </div>
+    <textarea id="csv-input" spellcheck="false" oninput="updateCount()"></textarea>
+  </div>
+  <div id="statusbar">
+    <span id="mjstatus" style="color:#b45309">Loading math...</span>
+    <span>|</span>
+    <span id="pair-count">0 / 18 pairs</span>
+    <span>|</span>
+    <span id="parse-err" style="color:#b91c1c; font-weight:700;"></span>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+  <div id="main-head">
+    <span>Cut-Out Preview — 3 sheets (6 · 6 · 4 triangles)</span>
+    <span class="note">Outer edges are blank &nbsp;·&nbsp; Students cut and assemble</span>
+  </div>
+  <div id="preview-scroll">
+    <div id="empty-msg">Click &#9654; Generate to build cut-out sheets</div>
+  </div>
+</div>
+
+</div><!-- #app -->
+
+<script>
+// =====================================================
+//  GEOMETRY
+// =====================================================
+
+// 18 interior shared edges: [triA, triB, sideA, sideB]
+// Triangles 0-15, rows: [0], [1,2,3], [4,5,6,7,8], [9..15]
+// Even col = UP triangle, Odd col = DOWN triangle
+// Sides: UP  -> bottom, left, right
+//        DOWN -> top, left, right
+const INTERIOR = [
+  [0,  2,  'bottom', 'top'  ],
+  [1,  2,  'right',  'left' ],
+  [2,  3,  'right',  'left' ],
+  [1,  5,  'bottom', 'top'  ],
+  [3,  7,  'bottom', 'top'  ],
+  [4,  5,  'right',  'left' ],
+  [5,  6,  'right',  'left' ],
+  [6,  7,  'right',  'left' ],
+  [7,  8,  'right',  'left' ],
+  [4,  10, 'bottom', 'top'  ],
+  [6,  12, 'bottom', 'top'  ],
+  [8,  14, 'bottom', 'top'  ],
+  [9,  10, 'right',  'left' ],
+  [10, 11, 'right',  'left' ],
+  [11, 12, 'right',  'left' ],
+  [12, 13, 'right',  'left' ],
+  [13, 14, 'right',  'left' ],
+  [14, 15, 'right',  'left' ],
+];
+
+function idxToRC(idx) {
+  let count = 0;
+  for (let r = 0; r <= 3; r++) {
+    const n = 2 * r + 1;
+    if (idx < count + n) return { r, c: idx - count };
+    count += n;
+  }
+}
+
+// Build map: triIndex -> { bottom/top/left/right: {text, type} }
+function buildTriangleSides(pairs) {
+  const tris = Array.from({ length: 16 }, () => ({
+    bottom: { text: '', type: 'blank' },
+    top:    { text: '', type: 'blank' },
+    left:   { text: '', type: 'blank' },
+    right:  { text: '', type: 'blank' },
+  }));
+  INTERIOR.forEach(([a, b, sa, sb], idx) => {
+    const pair = pairs[idx] || { q: '', a: '' };
+    tris[a][sa] = { text: pair.q, type: 'q' };
+    tris[b][sb] = { text: pair.a, type: 'a' };
+  });
+  return tris;
+}
+
+// For display: all triangles printed pointing UP.
+// DOWN triangles: their 'top' edge becomes the visual bottom of the upright piece.
+function getDisplaySides(triIdx, sides) {
+  const { c } = idxToRC(triIdx);
+  const isDown = (c % 2 === 1);
+  if (isDown) {
+    // DOWN triangle printed upright (flipped 180°):
+    // top edge    -> displayed as bottom
+    // left edge   -> displayed as RIGHT (mirrored)
+    // right edge  -> displayed as LEFT  (mirrored)
+    return {
+      displayBottom: sides.top,
+      displayLeft:   sides.right,
+      displayRight:  sides.left,
+    };
+  }
+  return {
+    displayBottom: sides.bottom,
+    displayLeft:   sides.left,
+    displayRight:  sides.right,
+  };
+}
+
+// =====================================================
+//  SVG + LABEL GEOMETRY
+//  ViewBox: 0 0 200 174
+//  Apex=(100,5)  BL=(3,171)  BR=(197,171)
+//  Centroid ~(100, 115)
+// =====================================================
+const VB_W = 200, VB_H = 174;
+const APEX = { x: 100, y: 5   };
+const BL   = { x: 3,   y: 171 };
+const BR   = { x: 197, y: 171 };
+const CENT = {
+  x: (APEX.x + BL.x + BR.x) / 3,
+  y: (APEX.y + BL.y + BR.y) / 3
+};  // ~(100, 117)
+
+// Each label sits close to its edge.
+// PUSH = distance from edge midpoint toward centroid (small = hug edge).
+// Angle: bottom of letters faces the edge.
+//   Bottom edge (horizontal):     rotate 180deg
+//   Left  edge  (down-left  60°): rotate 120deg
+//   Right edge  (down-right 60°): rotate -120deg (= 240deg)
+function edgeLabelInfo(side) {
+  const PUSH = 13;
+  function pushToward(mx, my) {
+    const dx = CENT.x - mx, dy = CENT.y - my;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    return { cx: mx + dx / len * PUSH, cy: my + dy / len * PUSH };
+  }
+
+  if (side === 'displayBottom') {
+    const mx = (BL.x + BR.x) / 2;
+    const my = BL.y;
+    const { cx, cy } = pushToward(mx, my);
+    return { cx, cy, angle: 0, w: 140, h: 44 };
+  }
+  if (side === 'displayLeft') {
+    const mx = (APEX.x + BL.x) / 2;
+    const my = (APEX.y + BL.y) / 2;
+    const { cx, cy } = pushToward(mx, my);
+    return { cx, cy, angle: 120, w: 110, h: 44 };
+  }
+  // displayRight
+  const mx = (APEX.x + BR.x) / 2;
+  const my = (APEX.y + BR.y) / 2;
+  const { cx, cy } = pushToward(mx, my);
+  return { cx, cy, angle: -120, w: 110, h: 44 };
+}
+
+// =====================================================
+//  DEFAULT CSV
+// =====================================================
+const DEFAULT_CSV = [
+  'Expand:|$\log(xy)$, $\log x + \log y$',
+  'Expand:|$\log(x/y)$, $\log x - \log y$',
+  'Expand:|$\log(x^4)$, $4\log x$',
+  'Expand:|$\log(3x)$, $\log 3 + \log x$',
+  'Condense:|$\log x + \log y$, $\log(xy)$',
+  'Condense:|$\log x - \log y$, $\log(x/y)$',
+  'Condense:|$2\log x$, $\log(x^2)$',
+  'Expand:|$\log(2x^3)$, $\log 2 + 3\log x$',
+  'Expand:|$\log(3x^2/y)$, $\log 3 + 2\log x - \log y$',
+  'Condense:|$\log x + 3\log y$, $\log(xy^3)$',
+  'Condense:|$\log a - 2\log b$, $\log(a/b^2)$',
+  'Condense:|$2\log x + \log y$, $\log(x^2 y)$',
+  'Expand:|$\log(x^2 y^4)$, $2\log x + 4\log y$',
+  'Condense:|$\log x+\log y-\log z$, $\log(xy/z)$',
+  'Expand:|$\log(4x^2 y/z)$, $\log 4+2\log x$|$+\log y-\log z$',
+  'Expand:|$\log(\sqrt{x})$, $\tfrac{1}{2}\log x$',
+  'Expand:|$\log(x^{2/3})$, $\tfrac{2}{3}\log x$',
+  'Condense:|$2\log x+3\log y-\log z$, $\log(x^2 y^3/z)$',
+].join('\n');
+
+// =====================================================
+//  CSV PARSING
+// =====================================================
+function parseCSV() {
+  const raw = document.getElementById('csv-input').value;
+  const errEl = document.getElementById('parse-err');
+  if (!errEl) return [];
+
+  const lines = raw.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  const pairs = [];
+  const errors = [];
+
+  lines.forEach((line, idx) => {
+    // Find first comma outside $...$
+    let inMath = false, splitAt = -1;
+    for (let i = 0; i < line.length; i++) {
+      if (line[i] === '$') { inMath = !inMath; continue; }
+      if (line[i] === ',' && !inMath) { splitAt = i; break; }
+    }
+    if (splitAt === -1) {
+      errors.push('Line ' + (idx + 1) + ': no comma found');
+      return;
+    }
+    const q = line.slice(0, splitAt).trim();
+    const a = line.slice(splitAt + 1).trim();
+    if (!q || !a) {
+      errors.push('Line ' + (idx + 1) + ': empty question or answer');
+      return;
+    }
+    pairs.push({ q, a });
+  });
+
+  errEl.textContent = errors.length ? errors[0] : '';
+  return pairs;
+}
+
+function updateCount() {
+  const pairs = parseCSV();
+  const n = pairs.length;
+  const el = document.getElementById('pair-count');
+  if (el) el.textContent = n + ' / 18 pairs';
+  const errEl = document.getElementById('parse-err');
+  if (errEl && n > 18 && !errEl.textContent) {
+    errEl.textContent = 'Warning: only first 18 used (' + n + ' found)';
+  }
+}
+
+function getPairs() {
+  return parseCSV().slice(0, 18);
+}
+
+function clearAll() {
+  document.getElementById('csv-input').value = '';
+  document.getElementById('parse-err').textContent = '';
+  updateCount();
+  const wrap = document.getElementById('preview-scroll');
+  wrap.innerHTML = '<div id="empty-msg">Click Generate to build cut-out sheets</div>';
+}
+
+function shufflePairs() {
+  const p = getPairs();
+  for (let i = p.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = p[i]; p[i] = p[j]; p[j] = tmp;
+  }
+  document.getElementById('csv-input').value = p.map(pair => pair.q + ', ' + pair.a).join('\n');
+  updateCount();
+}
+
+// =====================================================
+//  GENERATE
+// =====================================================
+function generate() {
+  const title = document.getElementById('title-input').value.trim() || 'Tarsia Puzzle';
+  const pairs = getPairs();
+  const triSides = buildTriangleSides(pairs);
+  renderPages(title, triSides);
+}
+
+function renderPages(title, triSides) {
+  const wrap = document.getElementById('preview-scroll');
+  wrap.innerHTML = '';
+
+  const groups = [
+    { tris: [0,1,2,3,4,5],   label: 'Sheet 1 of 3' },
+    { tris: [6,7,8,9,10,11], label: 'Sheet 2 of 3' },
+    { tris: [12,13,14,15],   label: 'Sheet 3 of 3' },
+  ];
+
+  groups.forEach(function(group) {
+    const page = document.createElement('div');
+    page.className = 'print-page';
+
+    const hdr = document.createElement('div');
+    hdr.className = 'page-header';
+    hdr.innerHTML = '<h2>' + escHtml(title) + '</h2>' +
+      '<span>Cut out each triangle &nbsp;&middot;&nbsp; ' +
+      group.label + ' &nbsp;&middot;&nbsp; Outer edges blank</span>';
+    page.appendChild(hdr);
+
+    group.tris.forEach(function(triIdx) {
+      const sides   = triSides[triIdx];
+      const display = getDisplaySides(triIdx, sides);
+      page.appendChild(makeTriCell(triIdx, display));
+    });
+
+    // Pad to 6 cells
+    for (let e = group.tris.length; e < 6; e++) {
+      const ph = document.createElement('div');
+      ph.className = 'tri-cell';
+      page.appendChild(ph);
+    }
+
+    wrap.appendChild(page);
+  });
+
+  // ── Solution page ──
+  wrap.appendChild(makeSolutionPage(title, triSides));
+
+  // Typeset with MathJax
+  setTimeout(function() {
+    if (window.MathJax && MathJax.typesetPromise) {
+      MathJax.typesetPromise(wrap.querySelectorAll('.lbl')).catch(function(e) {
+        console.warn('MathJax error:', e);
+      });
+    }
+  }, 50);
+}
+
+// =====================================================
+//  TRIANGLE CELL
+// =====================================================
+function makeTriCell(triIdx, display) {
+  const cell = document.createElement('div');
+  cell.className = 'tri-cell';
+
+  // SVG triangle
+  const NS  = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 ' + VB_W + ' ' + VB_H);
+  svg.style.cssText = 'width:100%;height:100%;display:block;';
+
+  const poly = document.createElementNS(NS, 'polygon');
+  poly.setAttribute('points',
+    APEX.x + ',' + APEX.y + ' ' +
+    BL.x   + ',' + BL.y   + ' ' +
+    BR.x   + ',' + BR.y);
+  poly.setAttribute('fill', 'white');
+  poly.setAttribute('stroke', 'black');
+  poly.setAttribute('stroke-width', '2.5');
+  svg.appendChild(poly);
+
+
+
+  cell.appendChild(svg);
+
+  // Overlay for labels
+  const overlay = document.createElement('div');
+  overlay.style.cssText =
+    'position:absolute;top:0;left:0;width:100%;height:100%;' +
+    'pointer-events:none;overflow:visible;';
+
+  ['displayBottom', 'displayLeft', 'displayRight'].forEach(function(side) {
+    const sd = display[side];
+    if (!sd || sd.type === 'blank' || !sd.text) return;
+
+    const info = edgeLabelInfo(side);
+    const pctX = info.cx / VB_W * 100;
+    const pctY = info.cy / VB_H * 100;
+    const pctW = info.w  / VB_W * 100;
+    const pctH = info.h  / VB_H * 100;
+
+    const lbl = document.createElement('div');
+    lbl.className = 'lbl';
+    lbl.style.cssText =
+      'left:'   + (pctX - pctW / 2).toFixed(2) + '%;' +
+      'top:'    + (pctY - pctH / 2).toFixed(2) + '%;' +
+      'width:'  + pctW.toFixed(2) + '%;' +
+      'height:' + pctH.toFixed(2) + '%;' +
+      'transform:rotate(' + info.angle + 'deg);' +
+      'transform-origin:center center;' +
+      'font-weight:' + (sd.type === 'q' ? '700' : '600') + ';';
+
+    // Support | line break
+    sd.text.split('|').forEach(function(part) {
+      const span = document.createElement('span');
+      span.style.display = 'block';
+      span.textContent = part.trim();
+      lbl.appendChild(span);
+    });
+
+    overlay.appendChild(lbl);
+  });
+
+  cell.appendChild(overlay);
+  return cell;
+}
+
+// =====================================================
+//  SOLUTION PAGE
+//  Draws the assembled 16-triangle puzzle as one SVG
+//  with all Q/A labels placed on interior edges
+// =====================================================
+function makeSolutionPage(title, triSides) {
+  const page = document.createElement('div');
+  page.className = 'print-page';
+  page.style.cssText = 'display:block; position:relative;';
+
+  // Header
+  const hdr = document.createElement('div');
+  hdr.className = 'page-header';
+  hdr.style.marginBottom = '12px';
+  hdr.innerHTML = '<h2>' + escHtml(title) + ' — Solution</h2>' +
+    '<span>Sheet 4 of 4 &nbsp;&middot;&nbsp; Answer key</span>';
+  page.appendChild(hdr);
+
+  // We draw the assembled triangle as SVG.
+  // Big triangle: 4 rows of small equilateral triangles.
+  // Small triangle side S, placed within a viewBox.
+  const S  = 110;                        // small tri side (px)
+  const TH = S * Math.sqrt(3) / 2;      // small tri height
+  const AX = 2 * S;                      // apex x in local coords
+  const PAD = 20;
+  const SVG_W = 4 * S + 2 * PAD;
+  const SVG_H = 4 * TH + 2 * PAD + 28;  // +28 for top offset
+  const OX = PAD, OY = PAD;             // draw offset
+
+  // Get vertices of small triangle idx in local coords
+  function getVerts(r, c) {
+    if (c % 2 === 0) {
+      const ax = AX - r*(S/2) + (c/2)*S;
+      return { type:'up',
+        pts:[{x:ax,y:r*TH},{x:ax-S/2,y:(r+1)*TH},{x:ax+S/2,y:(r+1)*TH}] };
+    } else {
+      const cx2 = AX - r*(S/2) + ((c-1)/2)*S + S/2;
+      return { type:'down',
+        pts:[{x:cx2-S/2,y:r*TH},{x:cx2+S/2,y:r*TH},{x:cx2,y:(r+1)*TH}] };
+    }
+  }
+
+  function localIdxToRC(idx) {
+    let count = 0;
+    for (let row = 0; row <= 3; row++) {
+      const n = 2*row+1;
+      if (idx < count+n) return {r:row, c:idx-count};
+      count += n;
+    }
+  }
+
+  function midpt(a,b){ return {x:(a.x+b.x)/2, y:(a.y+b.y)/2}; }
+  function approxEq(a,b){ return Math.abs(a.x-b.x)<0.5 && Math.abs(a.y-b.y)<0.5; }
+
+  function edgeMids(pts) {
+    return [midpt(pts[0],pts[1]), midpt(pts[1],pts[2]), midpt(pts[2],pts[0])];
+  }
+
+  function centroid(pts) {
+    return { x:(pts[0].x+pts[1].x+pts[2].x)/3,
+             y:(pts[0].y+pts[1].y+pts[2].y)/3 };
+  }
+
+  // Build SVG
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('viewBox', '0 0 ' + SVG_W + ' ' + SVG_H);
+  svg.style.cssText = 'width:100%;height:auto;display:block;margin-top:4px;';
+
+  // Draw all 16 small triangles
+  for (let idx = 0; idx < 16; idx++) {
+    const {r,c} = localIdxToRC(idx);
+    const v = getVerts(r,c);
+    const pts = v.pts.map(function(p){ return (p.x+OX)+','+(p.y+OY); }).join(' ');
+    const poly2 = document.createElementNS(NS, 'polygon');
+    poly2.setAttribute('points', pts);
+    poly2.setAttribute('fill', c%2===0 ? '#f8f8f8' : '#ffffff');
+    poly2.setAttribute('stroke', '#000');
+    poly2.setAttribute('stroke-width', '1');
+    svg.appendChild(poly2);
+  }
+
+  page.appendChild(svg);
+
+  // Overlay for labels — absolutely positioned over the SVG
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:relative; width:100%; overflow:visible;';
+
+  // For each interior edge, find midpoint and place Q (in triA) and A (in triB)
+  const PUSH = 9;   // px toward centroid in SVG coords
+  const LBL_FONT = '7px';
+
+  // We need the rendered SVG size — use a ratio approach
+  // SVG viewBox W/H ratio applied to the rendered width
+  // Place labels using % positioning relative to the svg element
+  // We'll append labels to a div that overlays the svg
+
+  const svgContainer = document.createElement('div');
+  svgContainer.style.cssText = 'position:relative; width:100%;';
+
+  const svg2 = svg.cloneNode(true); // already appended above, use measurements
+  svgContainer.appendChild(svg);
+
+  // Labels as absolutely positioned divs using % of SVG viewBox
+  INTERIOR.forEach(function(edge, edgeIdx) {
+    const iA = edge[0], iB = edge[1];
+    const {r:rA,c:cA} = localIdxToRC(iA);
+    const {r:rB,c:cB} = localIdxToRC(iB);
+    const vA = getVerts(rA,cA);
+    const vB = getVerts(rB,cB);
+    const cA2 = centroid(vA.pts);
+    const cB2 = centroid(vB.pts);
+    const midsA = edgeMids(vA.pts);
+    const midsB = edgeMids(vB.pts);
+
+    // Find shared midpoint
+    var shared = null;
+    for (var i=0; i<midsA.length; i++) {
+      for (var j=0; j<midsB.length; j++) {
+        if (approxEq(midsA[i], midsB[j])) { shared = midsA[i]; }
+      }
+    }
+    if (!shared) return;
+
+    function pushPt(from, toward) {
+      var dx = toward.x-from.x, dy = toward.y-from.y;
+      var len = Math.sqrt(dx*dx+dy*dy)||1;
+      return {x: from.x + dx/len*PUSH, y: from.y + dy/len*PUSH};
+    }
+
+    const qPt = pushPt(shared, cA2);
+    const aPt = pushPt(shared, cB2);
+
+    // Find edge angle
+    var ep1=null, ep2=null;
+    var pp = vA.pts;
+    for (var a=0;a<3;a++) for (var b=a+1;b<3;b++) {
+      var m = midpt(pp[a],pp[b]);
+      if (approxEq(m,shared)){ ep1=pp[a]; ep2=pp[b]; }
+    }
+    var angle = 0;
+    if (ep1&&ep2) {
+      angle = Math.atan2(ep2.y-ep1.y, ep2.x-ep1.x)*180/Math.PI;
+      if (angle>90) angle-=180;
+      if (angle<-90) angle+=180;
+    }
+
+    var sideData = triSides[iA];
+    // Find which side of triA this is
+    var qText='', aText='';
+    ['bottom','top','left','right'].forEach(function(s){
+      if (sideData[s] && sideData[s].type==='q') {
+        // check if this side's midpoint matches
+        var {r:rr,c:cc} = localIdxToRC(iA);
+        // just use edge index to get correct text
+      }
+    });
+    // Simpler: use INTERIOR edge index directly
+    qText = (triSides[iA][edge[2]] && triSides[iA][edge[2]].text) || '';
+    aText = (triSides[iB][edge[3]] && triSides[iB][edge[3]].text) || '';
+
+    [
+      {pt: qPt, text: qText, bold: true},
+      {pt: aPt, text: aText, bold: false}
+    ].forEach(function(item) {
+      if (!item.text) return;
+      var pctX = (item.pt.x + OX) / SVG_W * 100;
+      var pctY = (item.pt.y + OY) / SVG_H * 100;
+      var lbl = document.createElement('div');
+      lbl.className = 'lbl';
+      lbl.style.cssText =
+        'left:'+(pctX-4.5).toFixed(2)+'%;' +
+        'top:'+(pctY-1.8).toFixed(2)+'%;' +
+        'width:9%;height:3.6%;' +
+        'transform:rotate('+angle+'deg);' +
+        'transform-origin:center center;' +
+        'font-size:6.5px;' +
+        'font-weight:'+(item.bold?'700':'500')+';' +
+        'color:'+(item.bold?'#1e3a8a':'#7c2d12')+';';
+      item.text.split('|').forEach(function(part){
+        var span = document.createElement('span');
+        span.style.display='block';
+        span.textContent=part.trim();
+        lbl.appendChild(span);
+      });
+      svgContainer.appendChild(lbl);
+    });
+  });
+
+  page.appendChild(svgContainer);
+  return page;
+}
+
+function escHtml(s) {
+  return (s || '').replace(/&/g, '&amp;')
+                  .replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;');
+}
+
+// =====================================================
+//  INIT
+// =====================================================
+document.getElementById('csv-input').value = DEFAULT_CSV;
+updateCount();
+setTimeout(generate, 900);
+</script>
+</body>
+</html>

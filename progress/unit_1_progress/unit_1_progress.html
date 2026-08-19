@@ -8,62 +8,359 @@
 window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] } };
 </script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<link rel="stylesheet" href="../../css/base.css">
-<link rel="stylesheet" href="../../css/progress_tracker.css">
+<style>
+@page { size: letter; margin: 0.45in; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.42; color: #111; background: #fff; padding: 20px; font-size: 11pt; }
+.container { max-width: 900px; margin: 0 auto; }
+h1 { font-size: 1.8rem; color: #111; margin-bottom: 8px; line-height: 1.1; }
+h2 { font-size: 1.32rem; color: #111; border-left: 6px solid #111; padding-left: 10px; margin: 18px 0 10px; }
+h3 { font-size: 1.05rem; margin: 0 0 8px; color: #111; }
+p { margin-bottom: 8px; }
+ol, ul { margin-left: 24px; margin-bottom: 8px; }
+li { margin-bottom: 6px; }
+.essential-standard { border: 2px solid #111; padding: 12px 14px; margin: 10px 0 14px; break-inside: avoid; page-break-inside: avoid; }
+.essential-standard-title { font-weight: 900; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 5px; }
+.key { border: 1px solid #222; padding: 10px 12px; margin: 10px 0 14px; break-inside: avoid; page-break-inside: avoid; }
+.key-title { font-weight: 900; margin-bottom: 4px; text-transform: uppercase; }
+.key-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.key-grid div { border-left: 3px solid #111; padding-left: 8px; }
+.black-box, .black-dok { background: #111; color: white; padding: 11px 13px; break-inside: avoid; page-break-inside: avoid; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.black-box strong, .black-dok strong { display: block; font-size: 1.03rem; margin-bottom: 4px; }
+.black-box span, .black-dok .dok-small { display: block; font-size: .9rem; font-weight: 500; font-style: italic; color: #fff; }
+.tracking-card { border: 1px solid #222; margin: 0 0 14px; break-inside: avoid; page-break-inside: avoid; }
+.tracking-grid { display: grid; grid-template-columns: .9fr 1.4fr; border-top: 1px solid #222; }
+.tracking-cell { padding: 11px 12px; border-right: 1px solid #222; min-height: 220px; }
+.tracking-cell2 { padding: 11px 12px; border-right: 1px solid #222; min-height: 360px; }
+.tracking-cell:last-child, .tracking-cell2:last-child { border-right: 0; }
+.check-list div { margin: 5px 0; }
+.page-break { page-break-before: always; break-before: page; }
+.ladder-table { width: 100%; border-collapse: collapse; margin: 10px 0 14px; }
+.ladder-table th, .ladder-table td { border: 1px solid #111; padding: 8px 9px; vertical-align: top; }
+.ladder-table th { background: #111; color: #fff; text-align: left; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.ladder-table tr:nth-child(even) td { background: #f3f3f3; }
+.rung-col, .dok-col, .level-col { width: 72px; }
+.rung-num { text-align: center; font-size: 1.25rem; font-weight: 900; }
+.goal-box { border: 2px solid #111; padding: 12px 14px; margin-top: 16px; break-inside: avoid; page-break-inside: avoid; }
+.goal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 10px; }
+.goal-line { border-bottom: 1px solid #111; min-height: 32px; padding-top: 6px; }
+.practice-title { color: #111; font-size: 1.45rem; margin: 20px 0 14px; border-left: 6px solid #111; padding-left: 10px; }
+.black-dok { margin: 18px 0 12px; }
+.dok-method-card { border: 1px solid #111; padding: 12px 14px; margin: 10px 0 16px; break-inside: avoid; page-break-inside: avoid; background: #fff; }
+.assessment-ideas { margin-left: 24px; }
+.timing-label { display: inline-block; border: 1px solid #111; padding: 1px 5px; font-weight: 800; color: #111; margin-left: 6px; background: #fff; }
+.what-tells { border-left: 5px solid #111; padding-left: 10px; margin-top: 10px; color: #111; }
+.problem { border: 1px solid #555; padding: 14px 14px 12px; margin: 0 0 16px; break-inside: avoid; page-break-inside: avoid; }
+.problem-number { font-weight: 900; font-size: 1.05rem; margin-bottom: 8px; color: #111; }
+.problem ol, .problem ul { margin-left: 24px; margin-bottom: 8px; }
+.table-block, table.values { width: auto; border-collapse: collapse; margin: 10px auto 12px; }
+.table-block th, .table-block td, table.values th, table.values td { border: 1px solid #333; padding: 6px 12px; text-align: center; vertical-align: middle; }
+.graph-block { margin: 10px 0 12px; text-align: center; break-inside: avoid; page-break-inside: avoid; }
+.graph-block img { max-width: 100%; height: auto; border: 1px solid #bbb; background: #fff; }
+.graph-md img { max-width: 3.25in; }
+.graph-lg img { max-width: 4.0in; }
+.workspace-label { font-size: .82rem; font-weight: 700; color: #111; margin-top: 8px; }
+.workspace { width: 100%; height: 150px; border-top: 1px solid #777; margin-top: 8px; break-inside: avoid; page-break-inside: avoid; }
+.workspace-80{height:80px;} .workspace-100{height:100px;} .workspace-120{height:120px;} .workspace-140{height:140px;} .workspace-150{height:150px;} .workspace-160{height:160px;} .workspace-180{height:180px;} .workspace-200{height:200px;} .workspace-220{height:220px;} .workspace-240{height:240px;} .workspace-260{height:260px;} .workspace-300{height:300px;} .workspace-350{height:350px;} .workspace-400{height:400px;}
+.lower-alpha { list-style-type: lower-alpha; } .lower-roman { list-style-type: lower-roman; }
+blockquote { border-left: 5px solid #111; margin: 8px 0 10px 10px; padding: 6px 10px; background: #f7f7f7; font-style: italic; }
+@media print { body { padding: 0; font-size: 10.5pt; } .container { max-width: 100%; } .problem, .black-box, .black-dok, .tracking-card, .dok-method-card, .goal-box, .graph-block { break-inside: avoid; page-break-inside: avoid; } }
+</style>
 </head>
 <body>
 <div class="container">
-<h1>Unit 1 Progress Tracker</h1>
-<section class="essential-standard"><div class="essential-standard-title">Essential Standard</div><p>Students will analyze forces, motion, and equilibrium conceptually by identifying forces, representing force situations with diagrams and vectors, explaining Newton’s First Law, distinguishing balanced from unbalanced forces, and using evidence from real-world situations to determine whether an object’s motion should remain unchanged or change.</p></section>
-<section class="key"><div class="key-title">Progress Tracking Key</div><div class="key-grid">
-<div><strong>Not Yet:</strong><br/>I need more instruction and practice.</div>
-<div><strong>Getting There:</strong><br/>I understand most of it but need more practice.</div>
-<div><strong>Got It!:</strong><br/>I can do this independently.</div>
-<div><strong>Teach It!:</strong><br/>I can teach it.</div>
-</div></section>
-<h2>Progress Tracking</h2>
-<section class="tracking-card" data-dok="1">
-<div class="black-box"><strong>DOK 1 &mdash; Rungs 1&ndash;2</strong><span>Check whether students can recognize basic force and motion vocabulary, identify simple motion states, and match conceptual terms to definitions or examples.</span></div>
-<div class="tracking-grid"><div class="tracking-cell"><h3>Progress Tracking</h3><div class="check-list"><div>&#9744; Teach It!</div><div>&#9744; Got It!</div><div>&#9744; Getting There</div><div>&#9744; Not Yet</div></div></div><div class="tracking-cell evidence-cell"><h3>Evidence</h3></div></div>
-</section><section class="tracking-card" data-dok="2">
-<div class="black-box"><strong>DOK 2 &mdash; Rungs 3&ndash;4</strong><span>Check whether students can apply basic concepts to force diagrams, simple net force situations, and equilibrium reasoning.</span></div>
-<div class="tracking-grid"><div class="tracking-cell"><h3>Progress Tracking</h3><div class="check-list"><div>&#9744; Teach It!</div><div>&#9744; Got It!</div><div>&#9744; Getting There</div><div>&#9744; Not Yet</div></div></div><div class="tracking-cell evidence-cell"><h3>Evidence</h3></div></div>
-</section><!-- PRINT FRONT SPLIT -->
-<div class="page-break"></div>
-<section class="tracking-card" data-dok="3">
-<div class="black-box"><strong>DOK 3 &mdash; Rungs 5&ndash;6</strong><span>Check whether students can reason strategically, explain cause and effect, connect diagrams to motion, and correct common misconceptions.</span></div>
-<div class="tracking-grid"><div class="tracking-cell2"><h3>Progress Tracking</h3><div class="check-list"><div>&#9744; Teach It!</div><div>&#9744; Got It!</div><div>&#9744; Getting There</div><div>&#9744; Not Yet</div></div></div><div class="tracking-cell2 evidence-cell"><h3>Evidence</h3></div></div>
-</section><section class="tracking-card" data-dok="4">
-<div class="black-box"><strong>DOK 4 &mdash; Rungs 7&ndash;8</strong><span>Check whether students can synthesize force diagrams, evidence, motion descriptions, and conceptual explanations in unfamiliar real-world situations.</span></div>
-<div class="tracking-grid"><div class="tracking-cell2"><h3>Progress Tracking</h3><div class="check-list"><div>&#9744; Teach It!</div><div>&#9744; Got It!</div><div>&#9744; Getting There</div><div>&#9744; Not Yet</div></div></div><div class="tracking-cell2 evidence-cell"><h3>Evidence</h3></div></div>
-</section>
-<div class="page-break"></div>
-<h2>Learning Ladder</h2>
-<table class="ladder-table"><thead><tr><th class="rung-col">Rung</th><th>I Can Statement</th><th class="dok-col">DOK</th><th class="level-col">Level</th></tr></thead><tbody><tr><td class="rung-num">8</td><td>I can design, defend, or critique a force model for an unfamiliar real-world situation, using evidence to explain whether the object is in equilibrium or changing motion.</td><td>DOK 4</td><td>Above</td></tr><tr><td class="rung-num">7</td><td>I can compare two competing explanations of the same force situation and justify which explanation better fits Newton’s First Law and the evidence.</td><td>DOK 4</td><td>Above</td></tr><tr><td class="rung-num">6</td><td>I can connect a force diagram, written scenario, and motion description to explain how net force determines whether motion changes.</td><td>DOK 3</td><td>Essential</td></tr><tr><td class="rung-num">5</td><td>I can identify and correct a misconception about inertia, support force, net force, or equilibrium using a clear physics explanation.</td><td>DOK 3</td><td>Essential</td></tr><tr><td class="rung-num">4</td><td>I can determine net force in simple force situations and explain whether the forces are balanced or unbalanced.</td><td>DOK 2</td><td>Essential</td></tr><tr><td class="rung-num">3</td><td>I can draw and interpret simple force-vector diagrams using direction, arrow length, and labels.</td><td>DOK 2</td><td>Essential</td></tr><tr><td class="rung-num">2</td><td>I can define and recognize key terms such as force, inertia, net force, vector, support force, weight, and equilibrium.</td><td>DOK 1</td><td>Essential</td></tr><tr><td class="rung-num">1</td><td>I can recognize whether a situation involves rest, constant motion, or changing motion.</td><td>DOK 1</td><td>Essential</td></tr></tbody></table>
-<section class="goal-box"><h3>Student Goal Setting</h3><div class="goal-grid"><div><strong>Current Rung</strong><div class="goal-line"></div></div><div><strong>Goal Rung</strong><div class="goal-line"></div></div></div></section>
-<div class="page-break"></div>
-<h2 class="practice-title">Unit 1 Practice by Depth of Knowledge</h2>
-<div class="black-dok"><strong>DOK 1 &mdash; Rungs 1&ndash;2</strong><span class="dok-small">Check whether students can recognize basic force and motion vocabulary, identify simple motion states, and match conceptual terms to definitions or examples.</span></div><section class="dok-method-card">
-<p><strong>Format: 3–5 minute warm-up, quick check, vocabulary check, card sort, or exit ticket</strong></p>
-<p>Purpose: Check whether students can recognize basic force and motion vocabulary, identify simple motion states, and match conceptual terms to definitions or examples.</p>
-<h3>Assessment Ideas</h3><ol class="assessment-ideas"><li>Vocabulary Match: Force, Inertia, and Equilibrium <span class="timing-label">Can Be Assessed After Unit 1, Section 1.2</span> — Students match terms to definitions, definitions to terms, and short concept examples to the correct term.</li><li>Motion State Quick Sort <span class="timing-label">Can Be Assessed After Unit 1, Section 1.2</span> — Students sort examples into “at rest,” “constant straight-line motion,” or “changing motion.”</li><li>Balanced or Unbalanced Recognition Check <span class="timing-label">Can Be Assessed After Unit 1, Section 1.4</span> — Students identify whether simple force pairs are balanced or unbalanced.</li><li>Force Vocabulary in Context <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students read short everyday scenarios and choose the best term: inertia, net force, support force, weight, vector, or equilibrium.</li></ol>
-<div class="what-tells"><strong>What this tells the teacher:</strong><br/>Students who struggle here need more direct support with vocabulary, motion language, and the distinction between force, net force, and motion.</div>
-</section><section class="problem"><div class="problem-number">1.</div><p>Which statement best describes <strong>inertia</strong>?</p><ol class="lower-alpha"><li>A force that keeps an object moving</li><li>An object’s resistance to a change in motion</li><li>The sum of all forces on an object</li><li>The upward force from a surface</li></ol><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">2.</div><p>Label each quantity as a scalar or vector: 7 kg; 12 N east; 5 m/s west; 30 cm.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">3.</div><p>A mug rests on a desk. Classify its motion as rest, constant motion, or changing motion.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">4.</div><p>Name the upward force a table exerts on a book resting on it.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">5.</div><p>In one sentence, state what it means for an object to be in mechanical equilibrium.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">6.</div><p>A cart moves straight ahead at constant speed. Is the cart in static equilibrium, dynamic equilibrium, or not in equilibrium?</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">7.</div><p>Write one testable physics claim about how changing a push might affect a cart.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><section class="problem"><div class="problem-number">8.</div><p>Complete the statement: The vector sum of all forces acting on one object is called the __________ force.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-100"></div></section><div class="page-break"></div><div class="black-dok"><strong>DOK 2 &mdash; Rungs 3&ndash;4</strong><span class="dok-small">Check whether students can apply basic concepts to force diagrams, simple net force situations, and equilibrium reasoning.</span></div><section class="dok-method-card">
-<p><strong>Format: Exit ticket, partner check, whiteboard response, diagram task, or short calculation</strong></p>
-<p>Purpose: Check whether students can apply basic concepts to force diagrams, simple net force situations, and equilibrium reasoning.</p>
-<h3>Assessment Ideas</h3><ol class="assessment-ideas"><li>Net Force Direction Task <span class="timing-label">Can Be Assessed After Unit 1, Section 1.3</span> — Students determine the size and direction of the net force from simple one-dimensional force diagrams.</li><li>Force Diagram Labeling Task <span class="timing-label">Can Be Assessed After Unit 1, Section 1.3</span> — Students draw and label force vectors for a book on a table, a hanging sign, or a person standing on a scale.</li><li>Support Force and Weight Task <span class="timing-label">Can Be Assessed After Unit 1, Section 1.4</span> — Students decide how the support force compares to weight in common equilibrium situations.</li><li>Constant Motion Reasoning Check <span class="timing-label">Can Be Assessed After Unit 1, Section 1.4</span> — Students explain why an object moving at constant speed in a straight line can have zero net force even though forces act on it.</li></ol>
-<div class="what-tells"><strong>What this tells the teacher:</strong><br/>Students at this level can usually identify forces and apply the equilibrium rule in familiar situations. Errors reveal whether students are confusing individual forces with net force.</div>
-</section><section class="problem"><div class="problem-number">1.</div><p>Two students pull a sled to the right with forces of 18 N and 27 N. Calculate the net force and explain what its direction predicts about the sled’s change in motion.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><section class="problem"><div class="problem-number">2.</div><p>A box has 42 N to the right and 17 N to the left. Determine $F_{net}$ and state whether the forces are balanced.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><section class="problem"><div class="problem-number">3.</div><p>A 6 kg backpack rests on a level floor. Use $W=mg$ with $g=10\text{ N/kg}$ to find its weight, then determine the support force and explain why the two values are related.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><section class="problem"><div class="problem-number">4.</div><p>Sketch and label the force vectors on a picture frame hanging motionless from one vertical cord. Then explain how your sketch shows equilibrium.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><section class="problem"><div class="problem-number">5.</div><p>A crate slides at constant speed while a worker pushes right with 55 N. Determine the friction force and explain how constant speed constrains the net force.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><section class="problem"><div class="problem-number">6.</div><p>Compare these two force sets: A: 12 N left and 12 N right. B: 12 N left and 20 N right. Find each net force and explain which object should change motion.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-160"></div></section><section class="problem"><div class="problem-number">7.</div><p>A student draws a 30 N rightward force arrow twice as long as a 15 N leftward arrow. Find the net force and explain how arrow length represents force size.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><section class="problem"><div class="problem-number">8.</div><p>A lamp hangs motionless. Its weight is 24 N downward. Determine the upward supporting force and explain why “forces act” does not mean “net force is nonzero.”</p><div class="workspace-label">Workspace</div><div class="workspace workspace-140"></div></section><div class="page-break"></div><div class="black-dok"><strong>DOK 3 &mdash; Rungs 5&ndash;6</strong><span class="dok-small">Check whether students can reason strategically, explain cause and effect, connect diagrams to motion, and correct common misconceptions.</span></div><section class="dok-method-card">
-<p><strong>Format: Constructed response, misconception analysis, CER, ranking task, gallery walk, or group whiteboard defense</strong></p>
-<p>Purpose: Check whether students can reason strategically, explain cause and effect, connect diagrams to motion, and correct common misconceptions.</p>
-<h3>Assessment Ideas</h3><ol class="assessment-ideas"><li>Inertia Misconception Response <span class="timing-label">Can Be Assessed After Unit 1, Section 1.2</span> — Students respond to a claim such as, “Inertia is the force that keeps things moving,” and revise it.</li><li>Multiple Representation Force Analysis <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students analyze a scenario, a force diagram, and a motion description, then explain whether they all agree.</li><li>Bathroom Scale Explanation Task <span class="timing-label">Can Be Assessed After Unit 1, Section 1.4</span> — Students explain why a scale reading is not the same thing as net force and how support force relates to weight.</li><li>Error Analysis: Balanced Forces <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students critique a student explanation that says, “If an object is moving, the forward force must be greater than the backward force.”</li></ol>
-<div class="what-tells"><strong>What this tells the teacher:</strong><br/>This level shows whether students understand the physics behind the vocabulary and calculations. These tasks are useful for deciding who is ready for modeling and who needs reteaching on net force, equilibrium, or Newton’s First Law.</div>
-</section><section class="problem"><div class="problem-number">1.</div><p>A student says, “A moving soccer ball must have a forward net force because it is moving forward.” Critique the claim and rewrite it using Newton’s First Law.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-200"></div></section><section class="problem"><div class="problem-number">2.</div><p>A scale reads 520 N for a person standing still. Explain why the scale reading can be 520 N while the person’s net force is 0 N.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-180"></div></section><section class="problem"><div class="problem-number">3.</div><p>A cart moves at constant speed while a hand pushes forward and friction acts backward. Explain what must be true about those two horizontal forces and why.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-180"></div></section><section class="problem"><div class="problem-number">4.</div><p>Two identical signs are motionless: one hangs from one vertical cable; the other hangs from two angled cables. Compare the net force on the signs and explain what can differ about the individual cable forces.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-200"></div></section><section class="problem"><div class="problem-number">5.</div><p>A force model lists 14 N right, 14 N left, and 9 N downward with no upward force. Analyze the model and explain why it cannot represent an object in equilibrium on a floor.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-180"></div></section><section class="problem"><div class="problem-number">6.</div><p>A student says, “A faster object has more inertia.” Identify the error and explain what property actually determines inertia.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-180"></div></section><section class="problem"><div class="problem-number">7.</div><p>A box has equal left/right forces but unequal up/down forces. Explain why canceling forces in one direction is not enough for equilibrium.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-180"></div></section><section class="problem"><div class="problem-number">8.</div><p>Two carts experience the same net force, but one has much more mass. Use inertia to explain why changing the motion of the heavier cart is more difficult.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-180"></div></section><div class="page-break"></div><div class="black-dok"><strong>DOK 4 &mdash; Rungs 7&ndash;8</strong><span class="dok-small">Check whether students can synthesize force diagrams, evidence, motion descriptions, and conceptual explanations in unfamiliar real-world situations.</span></div><section class="dok-method-card">
-<p><strong>Format: Performance task, extended response, modeling task, investigation reflection, or strategy defense</strong></p>
-<p>Purpose: Check whether students can synthesize force diagrams, evidence, motion descriptions, and conceptual explanations in unfamiliar real-world situations.</p>
-<h3>Assessment Ideas</h3><ol class="assessment-ideas"><li>Design a Force Model for a Real Situation <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students choose a real object, describe its motion, draw a force model, and defend whether the forces are balanced or unbalanced.</li><li>Competing Explanations Task <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students compare two explanations of the same scenario and defend which one better fits Newton’s First Law.</li><li>Investigation-Based Claim-Evidence-Reasoning Task <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students use data or observations from a low-friction cart, tablecloth, hanging mass, or spring-scale investigation to explain inertia or equilibrium.</li><li>Critique and Redesign a Force Diagram <span class="timing-label">Can Be Assessed After Unit 1, Section 1.5</span> — Students evaluate a flawed force diagram, identify missing or incorrect forces, revise the diagram, and explain why the new model is better.</li></ol>
-<div class="what-tells"><strong>What this tells the teacher:</strong><br/>DOK 4 tasks show whether students can transfer conceptual understanding to unfamiliar situations and defend their reasoning using models and evidence.</div>
-</section><section class="problem"><div class="problem-number">1.</div><p>A rolling equipment cart moves at constant speed after a push. A force model shows only a forward arrow. Critique the model, describe a corrected model, and defend it with Newton’s First Law.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-260"></div></section><section class="problem"><div class="problem-number">2.</div><p>Two explanations are offered for a quick tablecloth pull: A says inertia is a force holding dishes in place; B says the dishes resist a change in motion. Decide which is better and justify your choice with evidence.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-260"></div></section><section class="problem"><div class="problem-number">3.</div><p>Design a short classroom investigation that distinguishes balanced from unbalanced forces. Include what you would change, what you would observe, and what result would count as evidence.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-260"></div></section><section class="problem"><div class="problem-number">4.</div><p>Create a force model for a hanging planter supported by two angled chains. Explain why the planter can be at rest even though neither chain pulls straight upward.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-260"></div></section><section class="problem"><div class="problem-number">5.</div><p>Model three carts: one at rest, one moving straight at constant speed, and one speeding up. Describe the net-force condition for each and explain the difference.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-240"></div></section><section class="problem"><div class="problem-number">6.</div><p>A group claims, “Heavier objects always require a larger net force to keep moving.” Critique the claim and replace it with a statement consistent with Newton’s First Law.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-260"></div></section><section class="problem"><div class="problem-number">7.</div><p>Choose a real situation involving a support force. Describe the object, list the forces on it, decide whether it is in equilibrium, and defend your decision.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-240"></div></section><section class="problem"><div class="problem-number">8.</div><p>Compare two possible force models for a book resting on a table: Model A has only weight; Model B has equal weight and support-force arrows. Recommend the better model and explain what evidence supports it.</p><div class="workspace-label">Workspace</div><div class="workspace workspace-260"></div></section>
+
+  <h1>Unit 1 Progress Tracker</h1>
+  <section class="essential-standard">
+    <div class="essential-standard-title">Essential Standard</div>
+    <p>Students will represent and interpret relationships by connecting tables, graphs, equations, and contexts that model the same situation.</p>
+  </section>
+
+  <section class="key">
+    <div class="key-title">Progress Tracking Key</div>
+    <div class="key-grid">
+      <div><strong>Not Yet:</strong><br/>I need more instruction and practice.</div>
+      <div><strong>Getting There:</strong><br/>I understand most of it but need more practice.</div>
+      <div><strong>Got It!:</strong><br/>I can do this independently.</div>
+      <div><strong>Teach It!:</strong><br/>I can teach it.</div>
+    </div>
+  </section>
+
+  <h2>Progress Tracking</h2>
+
+  <section class="tracking-card">
+    <div class="black-box"><strong>DOK 1 &mdash; Rungs 1&ndash;2</strong>
+    <span>DOK 1 tasks reveal whether students can use foundational notation, vocabulary, and simple input-output procedures before moving into connected representations.</span></div>
+    <div class="tracking-grid">
+      <div class="tracking-cell"><h3>Progress Tracking</h3>
+        <div class="check-list">
+          <div>&#9744; Teach It!</div><div>&#9744; Got It!</div>
+          <div>&#9744; Getting There</div><div>&#9744; Not Yet</div>
+        </div>
+      </div>
+      <div class="tracking-cell evidence-cell"><h3>Evidence</h3></div>
+    </div>
+  </section>
+
+  <section class="tracking-card">
+    <div class="black-box"><strong>DOK 2 &mdash; Rungs 3&ndash;4</strong>
+    <span>DOK 2 tasks reveal whether students can transfer a relationship from one form to another and use rules, structure, and solution steps in familiar situations.</span></div>
+    <div class="tracking-grid">
+      <div class="tracking-cell"><h3>Progress Tracking</h3>
+        <div class="check-list">
+          <div>&#9744; Teach It!</div><div>&#9744; Got It!</div>
+          <div>&#9744; Getting There</div><div>&#9744; Not Yet</div>
+        </div>
+      </div>
+      <div class="tracking-cell evidence-cell"><h3>Evidence</h3></div>
+    </div>
+  </section>
+
+  <section class="tracking-card">
+    <div class="black-box"><strong>DOK 3 &mdash; Rungs 5&ndash;6</strong>
+    <span>DOK 3 tasks reveal whether students can use evidence to assess connections, reasonableness, and structure rather than relying on surface features.</span></div>
+    <div class="tracking-grid">
+      <div class="tracking-cell2"><h3>Progress Tracking</h3>
+        <div class="check-list">
+          <div>&#9744; Teach It!</div><div>&#9744; Got It!</div>
+          <div>&#9744; Getting There</div><div>&#9744; Not Yet</div>
+        </div>
+      </div>
+      <div class="tracking-cell2 evidence-cell"><h3>Evidence</h3></div>
+    </div>
+  </section>
+
+  <section class="tracking-card">
+    <div class="black-box"><strong>DOK 4 &mdash; Rungs 7&ndash;8</strong>
+    <span>DOK 4 tasks reveal whether students can synthesize the unit by designing, revising, and coordinating multiple representations within short performance tasks.</span></div>
+    <div class="tracking-grid">
+      <div class="tracking-cell2"><h3>Progress Tracking</h3>
+        <div class="check-list">
+          <div>&#9744; Teach It!</div><div>&#9744; Got It!</div>
+          <div>&#9744; Getting There</div><div>&#9744; Not Yet</div>
+        </div>
+      </div>
+      <div class="tracking-cell2 evidence-cell"><h3>Evidence</h3></div>
+    </div>
+  </section>
+
+  <div class="page-break"></div>
+  <h2>Learning Ladder</h2>
+  <table class="ladder-table">
+    <thead>
+      <tr><th class="rung-col">Rung</th><th>I Can Statement</th><th class="dok-col">DOK</th><th class="level-col">Level</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="rung-num">8</td><td>I can construct a connected model that uses a table, graph, equation, and context to represent one relationship and connect each part to the others.</td><td>DOK 4</td><td>Above</td></tr>
+<tr><td class="rung-num">7</td><td>I can design and revise a short situation so its table, graph, equation, and function-family features all align.</td><td>DOK 4</td><td>Above</td></tr>
+<tr><td class="rung-num">6</td><td>I can critique a representation choice by using evidence from values, structure, and context meaning.</td><td>DOK 3</td><td>Essential</td></tr>
+<tr><td class="rung-num">5</td><td>I can assess whether an equation, expression, or function family fits a situation and revise the model when evidence does not agree.</td><td>DOK 3</td><td>Essential</td></tr>
+<tr><td class="rung-num">4</td><td>I can construct missing representations from a given table, graph, equation, or context.</td><td>DOK 2</td><td>Essential</td></tr>
+<tr><td class="rung-num">3</td><td>I can apply input-output rules, expression rewrites, and equation-solving steps to solve routine relationship problems.</td><td>DOK 2</td><td>Essential</td></tr>
+<tr><td class="rung-num">2</td><td>I can use vocabulary and notation for inputs, outputs, variables, expressions, equations, and common function families.</td><td>DOK 1</td><td>Essential</td></tr>
+<tr><td class="rung-num">1</td><td>I can apply a given rule to produce output values, ordered pairs, and simple solution checks.</td><td>DOK 1</td><td>Essential</td></tr>
+    </tbody>
+  </table>
+
+  <section class="goal-box">
+    <h3>Student Goal Setting</h3>
+    <div class="goal-grid">
+      <div><strong>Current Rung</strong><div class="goal-line"></div></div>
+      <div><strong>Goal Rung</strong><div class="goal-line"></div></div>
+    </div>
+  </section>
+
+  <div class="page-break"></div>
+  <h2 class="practice-title">Unit 1 Practice by Depth of Knowledge</h2>
+
+  <div class="black-dok"><strong>DOK 1 &mdash; Rungs 1&ndash;2</strong>
+  <span class="dok-small">DOK 1 tasks reveal whether students can use foundational notation, vocabulary, and simple input-output procedures before moving into connected representations.</span></div>
+  <section class="dok-method-card">
+    <p><strong>Format: 3-5 minute warm-up, vocabulary check, representation recognition, or exit ticket</strong></p>
+    <p>Purpose: DOK 1 tasks reveal whether students can use foundational notation, vocabulary, and simple input-output procedures before moving into connected representations.</p>
+    <h3>Assessment Ideas</h3>
+    <ol class="assessment-ideas">
+<li>Coordinate Pairs and Axes <span class="timing-label">Can Be Assessed After Section 1.2</span> - Represent coordinate pairs by naming x- and y-coordinates and quadrants; locate points on axes; distinguish reversed ordered pairs as input-output pairs.</li>
+<li>Intercepts and Starting Values <span class="timing-label">Can Be Assessed After Section 1.1</span> - Interpret x- and y-intercepts on graphs and tables; connect vertical intercepts to starting amounts; name points that lie on an axis.</li>
+<li>Input-Output Rules <span class="timing-label">Can Be Assessed After Section 1.2</span> - Use table patterns and given rules to complete outputs; substitute inputs into verbal and symbolic rules; choose tables that satisfy a rule.</li>
+<li>Rates and Linear Features <span class="timing-label">Can Be Assessed After Section 1.3</span> - Calculate repeated changes in table outputs; identify slope, starting value, fixed amount, and amount per item; compare repeated changes between tables.</li>
+</ol>
+    <div class="what-tells"><strong>What this tells the teacher:</strong><br/>DOK 1 performance shows whether students can read coordinate notation, intercepts, input-output rules, and repeated changes before being asked to connect representations. Error patterns separate axis/quadrant confusion from rule-substitution or slope/starting-value readiness.</div>
+  </section>
+  <section class="problem"><div class="problem-number">1.</div>
+  <p>A music app charges a monthly fee and then a charge for each downloaded song. In this context, identify the input quantity and the output quantity.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">2.</div>
+  <p>For the rule $y=2x+7$, find the output when the input is $4$.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">3.</div>
+  <p>The table shows a relationship. Write the ordered pair for the column where $x=-1$.</p><table class="table-block"><tr><th>$x$</th><td>-2</td><td>-1</td><td>0</td><td>1</td></tr><tr><th>$y$</th><td>1</td><td>4</td><td>7</td><td>10</td></tr></table>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">4.</div>
+  <p>Which representation uses points on a coordinate plane?</p><ol class="lower-alpha"><li>table</li><li>graph</li><li>equation</li><li>verbal context</li></ol>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">5.</div>
+  <p>A table has outputs $5,10,20,40$ as inputs increase by $1$. Which family is most likely?</p><ol class="lower-alpha"><li>linear</li><li>quadratic</li><li>exponential</li><li>absolute value</li></ol>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">6.</div>
+  <p>In the expression $6x+11$, identify the coefficient of $x$.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">7.</div>
+  <p>Check whether $n=5$ is a solution to $3n+4=19$.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-100"></div></section>
+  <section class="problem"><div class="problem-number">8.</div>
+  <p>Use the graph to estimate the output when the input is $4$.</p><div class="graph-block graph-md"><img src="figures/u1_pt_read_context_01.png" alt="Context graph for reading an output."></div>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-120"></div></section>
+  <div class="page-break"></div>
+  <div class="black-dok"><strong>DOK 2 &mdash; Rungs 3&ndash;4</strong>
+  <span class="dok-small">DOK 2 tasks reveal whether students can transfer a relationship from one form to another and use rules, structure, and solution steps in familiar situations.</span></div>
+  <section class="dok-method-card">
+    <p><strong>Format: Mini-quiz, graph/table task, matching task, partner check, or short written task</strong></p>
+    <p>Purpose: DOK 2 tasks reveal whether students can transfer a relationship from one form to another and use rules, structure, and solution steps in familiar situations.</p>
+    <h3>Assessment Ideas</h3>
+    <ol class="assessment-ideas">
+<li>Graph Tables and Intercepts <span class="timing-label">Can Be Assessed After Section 1.1</span> - Construct coordinate graphs from tables and scaled contexts; state vertical and horizontal intercepts; describe trends and axis scales.</li>
+<li>Write and Check Rules <span class="timing-label">Can Be Assessed After Section 1.2</span> - Formulate verbal and symbolic rules from tables; generate tables from linear rules; verify ordered pairs by substitution.</li>
+<li>Constant Rate Procedures <span class="timing-label">Can Be Assessed After Section 1.3</span> - Determine constant rates from tables and graphs; complete patterns from starting values and changes; predict outputs using rates of change.</li>
+<li>Linear Models and Comparisons <span class="timing-label">Can Be Assessed After Section 1.5</span> - Use tables and equations to write linear models; compare starting values and rates; solve for when one plan first exceeds another.</li>
+</ol>
+    <div class="what-tells"><strong>What this tells the teacher:</strong><br/>DOK 2 performance shows whether students can move from tables to graphs and rules, calculate constant rates, and use linear models to make comparisons in familiar settings. The results reveal whether breakdowns are graph scaling/intercept reading, rule writing, rate calculation, or plan comparison.</div>
+  </section>
+  <section class="problem"><div class="problem-number">1.</div>
+  <p>A parking garage charges &dollar;8 to enter and &dollar;3 per hour. Complete the table and write an equation for total cost $C$ after $h$ hours.</p><table class="table-block"><tr><th>$h$</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>$C$</th><td></td><td></td><td></td><td></td></tr></table>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-160"></div></section>
+  <section class="problem"><div class="problem-number">2.</div>
+  <p>Graph the relationship shown in the table on the blank coordinate plane. Label the axes with the quantities $x$ and $y$.</p><table class="table-block"><tr><th>$x$</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>$y$</th><td>2</td><td>5</td><td>8</td><td>11</td></tr></table><div class="graph-block graph-md"><img src="figures/u1_pt_blank_grid_01.png" alt="Blank coordinate plane for graphing a table."></div>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-160"></div></section>
+  <section class="problem"><div class="problem-number">3.</div>
+  <p>The plotted points show an input-output relation. Decide whether the relation gives exactly one output for each input, and justify your decision using the points.</p><div class="graph-block graph-md"><img src="figures/u1_pt_relation_points_01.png" alt="Scatter plot of input-output points for a relation."></div>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-140"></div></section>
+  <section class="problem"><div class="problem-number">4.</div>
+  <p>Rewrite $3(x+4)+2x$ in an equivalent simplified form. Show the distribution and combining steps.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-140"></div></section>
+  <section class="problem"><div class="problem-number">5.</div>
+  <p>A club rents a meeting room for &dollar;12 plus &dollar;4 per guest. Write and solve an equation to find how many guests can attend if the total cost is &dollar;36. Then write one sentence interpreting the solution.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-140"></div></section>
+  <section class="problem"><div class="problem-number">6.</div>
+  <p>Use the table to identify the likely function family. Support your choice with a pattern in the outputs.</p><table class="table-block"><tr><th>$x$</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><th>$y$</th><td>1</td><td>4</td><td>9</td><td>16</td><td>25</td></tr></table>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-140"></div></section>
+  <section class="problem"><div class="problem-number">7.</div>
+  <p>Decide whether the table and equation represent the same relationship. Use at least two values as evidence. Equation: $y=5x+1$.</p><table class="table-block"><tr><th>$x$</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>$y$</th><td>1</td><td>6</td><td>11</td><td>16</td></tr></table>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-160"></div></section>
+  <section class="problem"><div class="problem-number">8.</div>
+  <p>A rule says, "double the input, then subtract $5$." Generate four ordered pairs using inputs $0,1,2,3$.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-140"></div></section>
+  <div class="page-break"></div>
+  <div class="black-dok"><strong>DOK 3 &mdash; Rungs 5&ndash;6</strong>
+  <span class="dok-small">DOK 3 tasks reveal whether students can use evidence to assess connections, reasonableness, and structure rather than relying on surface features.</span></div>
+  <section class="dok-method-card">
+    <p><strong>Format: Constructed response, model critique, strategy comparison, representation analysis, or discourse prompt</strong></p>
+    <p>Purpose: DOK 3 tasks reveal whether students can use evidence to assess connections, reasonableness, and structure rather than relying on surface features.</p>
+    <h3>Assessment Ideas</h3>
+    <ol class="assessment-ideas">
+<li>Critique Graph Interpretations <span class="timing-label">Can Be Assessed After Section 1.1</span> - Critique intercept claims in context; determine starting amounts from vertical intercepts; construct scaling strategies for readable graphs.</li>
+<li>Justify Rule and Pattern Consistency <span class="timing-label">Can Be Assessed After Section 1.3</span> - Validate whether rules, tables, and repeated differences agree; revise mismatched values; compare difference and rule methods for predictions.</li>
+<li>Compare Representations with Evidence <span class="timing-label">Can Be Assessed After Section 1.3</span> - Construct evidence-based tests across graphs, tables, equations, and contexts; locate and revise mismatches; justify whether one equation can represent multiple forms.</li>
+<li>Compare Claims and Methods <span class="timing-label">Can Be Assessed After Section 1.5</span> - Assess claims about competing linear plans; compare table and rate-based solution methods; reason from equation structure to decide whether outputs can match.</li>
+</ol>
+    <div class="what-tells"><strong>What this tells the teacher:</strong><br/>DOK 3 performance shows whether students can use intercepts, repeated differences, equations, tables, and contexts as evidence rather than relying on a single surface feature. It also reveals how well students revise mismatches and compare methods or claims with precise support.</div>
+  </section>
+  <section class="problem"><div class="problem-number">1.</div>
+  <p>A student says the context "Start with $15$ and add $4$ each week" matches $y=15x+4$. Critique the claim using the roles of starting value and repeated change, and revise the equation if needed.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-180"></div></section>
+  <section class="problem"><div class="problem-number">2.</div>
+  <p>The equation $y=2x+5$ and the table are meant to represent the same relationship. Find the first mismatch, explain how you know, and revise the incorrect value.</p><table class="table-block"><tr><th>$x$</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>$y$</th><td>5</td><td>7</td><td>10</td><td>11</td></tr></table>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-200"></div></section>
+  <section class="problem"><div class="problem-number">3.</div>
+  <p>Two students classify the table. Student A checks repeated differences; Student B checks repeated ratios. Use both methods to decide the family and explain which method gives clearer evidence here.</p><table class="table-block"><tr><th>$x$</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>$y$</th><td>3</td><td>6</td><td>12</td><td>24</td></tr></table>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-180"></div></section>
+  <section class="problem"><div class="problem-number">4.</div>
+  <p>A student simplified $4(2x-3)+5x$ as $8x-12+5=8x-7$. Critique the error and revise the simplification.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-180"></div></section>
+  <section class="problem"><div class="problem-number">5.</div>
+  <p>Two students solve $5(x+2)=35$. One divides by $5$ first; the other distributes first. Use both methods, then explain which method is more efficient and why.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-180"></div></section>
+  <section class="problem"><div class="problem-number">6.</div>
+  <p>Compare the graph and context. Context: A total starts at $3$ and increases by $2$ each step. Decide whether the graph could model the context and justify your conclusion using the intercept and rate.</p><div class="graph-block graph-md"><img src="figures/u1_pt_mismatch_line_01.png" alt="Line graph for comparing a context to a graph."></div>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-200"></div></section>
+  <section class="problem"><div class="problem-number">7.</div>
+  <p>A student says every relation with four plotted points is a function because every point has one output. Critique the reasoning and give a counterexample or correction.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-180"></div></section>
+  <section class="problem"><div class="problem-number">8.</div>
+  <p>A context says a team pays a &dollar;6 one-time fee and &dollar;10 per participant. A student writes $6n+10$. Assess whether the expression fits the context, and revise the model if evidence does not agree.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-200"></div></section>
+  <div class="page-break"></div>
+  <div class="black-dok"><strong>DOK 4 &mdash; Rungs 7&ndash;8</strong>
+  <span class="dok-small">DOK 4 tasks reveal whether students can synthesize the unit by designing, revising, and coordinating multiple representations within short performance tasks.</span></div>
+  <section class="dok-method-card">
+    <p><strong>Format: Brief performance task, modeling task, critique-and-revise task, design task, or capstone synthesis task</strong></p>
+    <p>Purpose: DOK 4 tasks reveal whether students can synthesize the unit by designing, revising, and coordinating multiple representations within short performance tasks.</p>
+    <h3>Assessment Ideas</h3>
+    <ol class="assessment-ideas">
+<li>Create Coordinate Models <span class="timing-label">Can Be Assessed After Section 1.3</span> - Design coordinate-plane models with constraints; include axis labels, ordered pairs, graphs, and intercept explanations; justify alignment across representations.</li>
+<li>Revise and Synthesize Rules <span class="timing-label">Can Be Assessed After Section 1.3</span> - Create and revise linear input-output models; correct table errors to make constant rates; build rules, tables, graphs, and ordered pairs that satisfy constraints.</li>
+<li>Design Linear Models <span class="timing-label">Can Be Assessed After Section 1.3</span> - Develop realistic linear models with equations, tables, graphs, intercepts, and domains; choose stronger models or representations; connect each representation to the context.</li>
+<li>Compare and Recommend Plans <span class="timing-label">Can Be Assessed After Section 1.5</span> - Evaluate competing reward plans for short- and long-term contexts; revise flawed one-week comparisons; generate equations and recommendations with evidence.</li>
+</ol>
+    <div class="what-tells"><strong>What this tells the teacher:</strong><br/>DOK 4 performance shows whether students can create, revise, and coordinate linear models across contexts, tables, graphs, equations, constraints, and recommendations. It reveals whether students can make coherent modeling choices and defend them without turning the task into a large project.</div>
+  </section>
+  <section class="problem"><div class="problem-number">1.</div>
+  <p>Design a connected model for a short situation where a total begins at $4$ and increases by $3$ each step. Include a context, equation, four-row table, and graph on the blank coordinate plane. Explain how the four representations agree.</p><div class="graph-block graph-md"><img src="figures/u1_pt_blank_grid_01.png" alt="Blank coordinate plane for connected model design."></div>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-260"></div></section>
+  <section class="problem"><div class="problem-number">2.</div>
+  <p>A fundraiser model is supposed to start at &dollar;20 and add &dollar;5 per item. The table shows $(0,20),(1,25),(2,35),(3,35)$. Revise the table so it matches the model, then write an equation and one-sentence context that agree with your revision.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-240"></div></section>
+  <section class="problem"><div class="problem-number">3.</div>
+  <p>Create two different family examples that both have output $10$ when the input is $0$: one linear and one exponential. For each example, provide an equation, a three-row table, and a context where the family choice makes sense.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-260"></div></section>
+  <section class="problem"><div class="problem-number">4.</div>
+  <p>The graph shows two short-term cost models. Write an equation for each plan from the graph, find approximately where the plans are equal, and recommend one plan for $12$ items with evidence.</p><div class="graph-block graph-md"><img src="figures/u1_pt_plan_compare_01.png" alt="Graph of two linear cost models for comparing plans."></div>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-260"></div></section>
+  <section class="problem"><div class="problem-number">5.</div>
+  <p>Create a realistic context that can be represented by both $7x+14$ and $7(x+2)$. Explain what each form reveals about the situation and give one input-output check that confirms equivalence.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-240"></div></section>
+  <section class="problem"><div class="problem-number">6.</div>
+  <p>Design a one-variable equation model for a school or club situation where the solution is $6$. Define the variable, write the equation, solve it, and interpret why $6$ makes sense in the context.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-240"></div></section>
+  <section class="problem"><div class="problem-number">7.</div>
+  <p>A model is described as "start at $4$ and add $2$ each step," but the equation given is $y=4x+2$. Critique the mismatch, revise one part of the model, and explain how your revision aligns the context, equation, and table pattern.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-260"></div></section>
+  <section class="problem"><div class="problem-number">8.</div>
+  <p>A student wants to model social media followers for the first four weeks after a club launch. Create either a linear or exponential model with a table and equation, justify why your family choice fits the short-term situation, and explain one limitation of your model.</p>
+  <div class="workspace-label">Workspace</div>
+  <div class="workspace workspace-260"></div></section>
+
 </div>
 </body>
 </html>

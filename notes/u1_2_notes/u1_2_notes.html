@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Section 1.2 Notes — Forces and Newton’s First Law</title>
+<title>Section 1.2 Notes — Inputs, Outputs, and Functions</title>
 <script>
 window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], processEscapes: true } };
 </script>
@@ -13,82 +13,301 @@ window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], p
 </head>
 <body>
 <div class="container">
+
+
 <!-- TITLE -->
 <div class="notes-title">
-  <div class="title-kicker">Conceptual Physics · Unit 1: Forces, Motion, and Equilibrium</div>
-  <div class="title-main">Section 1.2<br/>Forces and Newton’s First Law</div>
-  <div class="title-sub">Ask what changes an object’s motion—not what keeps ordinary motion going.</div>
-  <div class="title-quote"><p><strong>Mathematical idea:</strong> Newton’s First Law is a relationship between motion and net force: unchanged motion corresponds to zero net force.</p></div>
-  <p class="title-note">The inertia images in this section are demonstrations of the same principle in different situations. Use them to separate motion from force and to distinguish “no force” from “no net force.”</p>
+  <div class="title-kicker">Algebra 1 · Unit 1</div>
+  <div class="title-main">Section 1.2<br>Inputs, Outputs, and Functions</div>
+  <div class="title-sub">Use function rules to connect each input to exactly one output.</div>
+  <div class="title-quote"><p><strong>Mathematical idea:</strong> A function rule answers the question, "What output belongs with this input?"</p></div>
+  <p style="margin-top:18px;color:#555;">Today you will evaluate function notation, complete input-output tables, and decide whether a rule gives one output for each input. You will also revise models when the rule does not match the situation.</p>
 </div>
+
 <!-- LEARNING TARGET -->
 <h2 class="h-target">Learning Target</h2>
 <div class="objectives">
-  <p><strong>Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.</strong></p>
+  <p><strong>Learning Target: Students will interpret functions as rules that connect inputs and outputs without relying on formal domain and range language.</strong></p>
   <p><strong>I can statements</strong></p>
-  <ul><li>I can state Newton’s First Law in everyday language.</li><li>I can explain that inertia is a property of matter, not a force.</li><li>I can distinguish between “no forces acting” and “no net force acting.”</li><li>I can identify support force, weight, and other common forces in simple situations.</li></ul>
+  <ul>
+    <li>I can formulate a rule that connects inputs to outputs in a table, graph, equation, or context.</li>
+    <li>I can apply an input-output rule to generate missing values and ordered pairs.</li>
+    <li>I can assess whether a rule gives one output for each input in a situation.</li>
+  </ul>
 </div>
-<!-- VOCABULARY -->
-<h2 class="h-vocab">Vocabulary</h2>
-<div class="vocab-box">
-  <p>These are words you will see in this section. Do not define them yet.</p>
-  <ul class="vocab-list"><li>force</li><li>inertia</li><li>Newton’s First Law</li><li>net force</li><li>weight</li><li>support force</li><li>tension</li><li>friction</li></ul>
-  <p class="vocab-note">Use the preview activity to decide which words you already know, recognize, or do not know yet. Watch for these words in <strong>bold</strong> as you read.</p>
-</div>
-<!-- PREVIEW -->
-<h2 class="h-preview">Preview: Skim Before You Read</h2>
-<div class="strategy-box">
-  <p><strong>Directions</strong></p>
-  <p>Before reading closely, skim the vocabulary list and the section. Look at titles, headings, bold words, pictures, captions, diagrams, tables, and formulas. Do not try to understand everything yet. Your job is to notice what already looks familiar and make predictions about what this section may explain.</p>
-</div>
+
+<!-- WHAT'S TO COME -->
+<h2 class="h-preview">What's To Come</h2>
+<p>This is a long-range preview for future lessons. Do not solve it today. Instead, annotate it individually. Circle anything familiar, underline symbols or directions that seem important, and write notes about what information you think will be needed later.</p>
+<p>As you annotate, ask yourself: What parts (words, symbols, graphs) do you KNOW? What parts look FAMILIAR? What parts look like jibberish?</p>
 <div class="annotation-box">
-  <p><strong>Step 1 — Sort the vocabulary.</strong> Write each vocabulary word in the column that best matches what you know right now. You may move a word later.</p>
-  <table class="values vocab-sort"><tr><th>Know for sure</th><th>Recognize</th><th>Don’t know yet</th></tr><tr class="vocab-sort-space"><td></td><td></td><td></td></tr></table>
-  <p><strong>Step 2 — Skim the section.</strong> Record what catches your attention before you read closely.</p>
-  <table class="preview-notes-table"><tr><th>What I noticed</th><td></td></tr><tr><th>What I predict</th><td></td></tr><tr><th>What I wonder</th><td></td></tr></table>
+  <p>A table for an input-output rule is flawed: $(0,3),(1,6),(2,9),(2,12),(3,12)$. Revise the relation in two different ways: one revision that makes it a function with a constant increase, and one revision that makes it a function but not a constant-increase rule. Explain both choices.</p>
 </div>
-<!-- CONTENT -->
-<h2 class="h-intro">Content: Read, Look, Annotate, Apply</h2>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- INTRO -->
+<h2 class="h-intro">Intro</h2>
 <div class="strategy-box">
   <p><strong>Directions</strong></p>
-  <p>Read in short chunks. Annotate the prose and the figures together: underline evidence, circle or highlight bold vocabulary, label arrows or measured features, connect a sentence to an image, and write short questions or connections in the margins.</p>
-</div><!-- CONTENT READING 1 --><div class="reading-box"><h3>Reading 1: Newton’s First Law changes the question we ask about motion</h3><p>Older explanations of motion often assumed that a steady <strong>force</strong> was required to keep an object moving. Galileo turned that idea around by emphasizing what happens when interfering forces such as <strong>friction</strong> become very small. Newton refined the idea into his First Law: every object continues at rest or continues moving at uniform speed in a straight line unless a nonzero <strong>net force</strong> acts on it.</p><p>The word continues is the key. An object does not need a new forward force every moment simply because it is moving. If it is at rest, it tends to remain at rest. If it is already moving, it tends to keep the same speed and direction. A change—speeding up, slowing down, or turning—is what signals that the net force is not zero.</p><p>The tablecloth demonstration makes the “rest stays rest” part visible. A quick pull gives the cloth a large change in motion, while the dishes receive only a brief horizontal interaction and remain nearly where they started. The dishes are not being held in place by an <strong>inertia</strong> force. Instead, inertia is the name for their tendency to resist the sudden change in motion.</p><figure class="notes-figure wu-img-500"><img src="figures/u1_2_from_ch_2_4a_inertia_tablecloth_pull.png" alt="Tablecloth pulled quickly from under dishes as an inertia demonstration"/></figure><p>Image read: Follow one dish. Mark the object whose motion changes dramatically and the object that remains close to its initial state of rest.</p><p>The coin-and-card demonstration shows the same idea with a different arrangement. A quick sideways force changes the card’s motion. The coin tends to remain at rest horizontally, so after the card moves away the coin can fall into the glass under the influence of gravity. The useful question is not “What force keeps the coin still?” but “What interaction gives the coin enough horizontal net force to change its motion?”</p><figure class="notes-figure wu-img-400"><img src="figures/u1_2_from_ch_2_4b_inertia_coin_card_glass.png" alt="Coin card and glass inertia demonstration"/></figure><p>Image read: Trace the card’s horizontal motion and the coin’s later vertical motion. Do not draw an “inertia force”; instead label which interaction actually changes each motion.</p><p>A hockey puck that eventually stops provides a useful test of the law. <strong>Newton’s First Law</strong> does not say the puck must move forever on real ice no matter what. It says continued straight-line motion is expected when the net force is zero. Friction supplies a backward force, so the puck’s motion changes. On a lower-friction surface, the same puck would travel farther before stopping.</p></div><!-- STOP AND DISCUSS READING 1 -->
-<div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>Why is the word continues so important in Newton’s First Law?</li><li>Use one of the two images to explain why inertia should not be drawn as an additional force arrow.</li></ol></div><div class="notes-ws ws-ruled"></div><!-- EXAMPLE 1 -->
-<h3 class="h-example">Example 1: The tablecloth trick</h3>
-<p>A tablecloth is pulled quickly from under dishes. Explain why the dishes can remain nearly in their original positions even though the cloth moves. Use Newton’s First Law and do not describe inertia as a force.</p><div class="notes-ws ws-ruled"></div><!-- YTI 1 -->
-<h3 class="h-yti">You Try It 1: Coin and card</h3>
-<p>A coin rests on a card above a glass. The card is snapped sideways. Predict the coin’s motion and explain what causes the horizontal card motion and why the coin does not immediately follow it.</p><div class="notes-ws ws-ruled"></div><!-- CONTENT READING 2 --><div class="reading-box"><h3>Reading 2: Inertia is a property of matter, not a hidden force</h3><p>Inertia is the tendency of things to resist changes in motion. It is useful to think of inertia as resistance to change, but that phrase should not be turned into a new force. Forces come from interactions—gravity, contact with a surface, a rope, a hand, and so on. Inertia describes how matter responds when an interaction tries to change its motion.</p><p>Objects with more matter have more inertia. In everyday terms, a loaded cart is harder to get moving, stop, or redirect than an empty cart when similar pushes are used. In this unit, the important point is qualitative: more matter means greater resistance to a change in motion. Inertia is not caused by moving fast, and an object does not “use up” inertia as it moves.</p><p>The ball-between-strings demonstration makes the difference between gradual and sudden change noticeable. With a slow pull, the forces have time to build through the system. With a sharp pull, the massive ball strongly resists the sudden change in motion, so the pattern of <strong>tension</strong> in the strings is different. The picture is useful because it reminds us that the same object can respond differently depending on how rapidly the interaction changes.</p><figure class="notes-figure wu-img-350"><img src="figures/u1_2_from_ch_2_4c_inertia_ball_between_strings.png" alt="Massive ball suspended between strings used to compare gradual and sudden pulls"/></figure><p>Image read: Compare a slow change with a sudden change. Annotate which object has the large inertia and where tension forces actually act.</p><p>The hammer illustration uses a sudden stop instead of a sudden start. When the handle is moving downward and stops abruptly, the hammerhead tends to continue its previous motion. That continued motion can tighten the head on the handle. Again, inertia is not a downward force acting on the head; it is the tendency of the head to continue its state of motion while an interaction changes the handle’s motion.</p><figure class="notes-figure wu-img-350"><img src="figures/u1_2_from_ch_2_4d_inertia_hammer_on_nail.png" alt="Hammer inertia demonstration in which sudden stopping tightens the hammerhead"/></figure><p>Image read: Mark the motion of the handle just before it stops and the motion the hammerhead tends to continue. Separate that tendency from the actual contact forces.</p></div><!-- STOP AND DISCUSS READING 2 -->
-<div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>What is the difference between saying “the ball has inertia” and saying “a force acts on the ball”?</li><li>How do the ball-and-strings and hammer demonstrations both show resistance to a change in motion?</li></ol></div><div class="notes-ws ws-ruled"></div><!-- EXAMPLE 2 -->
-<h3 class="h-example">Example 2: Loaded cart versus empty cart</h3>
-<p>Two carts are identical except one carries a large load. Compare their inertia. If you try to start both moving with similar pushes, which cart is harder to change from rest? Explain without calling inertia a force.</p><div class="notes-ws ws-ruled"></div><!-- YTI 2 -->
-<h3 class="h-yti">You Try It 2: Correct the misconception</h3>
-<p>A student says, “The faster ball has more inertia because inertia is the force of motion.” Correct the statement. Explain what inertia is and what property of the object matters more directly than its speed.</p><div class="notes-ws ws-ruled"></div><!-- CONTENT READING 3 --><div class="reading-box"><h3>Reading 3: Forces can be present even when motion does not change</h3><p>Newton’s First Law refers to net force, not to the absence of every force. A book lying at rest on a table is a simple example. Earth pulls downward on the book with its <strong>weight</strong>. The table pushes upward on the book with a <strong>support force</strong>. Because the book’s motion remains unchanged, those vertical forces balance and the net force is zero.</p><p>The support-force image compares a tabletop with a compressed spring. A spring clearly pushes back when it is compressed. The table can be understood in a similar way: the book compresses atoms in the table by a tiny amount, and the table pushes upward on the book. The support force is a real contact interaction even though the deformation is too small to see.</p><figure class="notes-figure wu-img-475"><img src="figures/u1_2_from_ch_2_15_support_force_book_and_spring.png" alt="Book on a table compared with a hand compressing a spring to illustrate support force"/></figure><p>Image read: Draw a downward weight arrow on the book and an upward support-force arrow. Connect the spring picture to the idea that a surface can push back when compressed.</p><p>A bathroom scale uses this support interaction in a measurable way. When a person stands still, gravity pulls downward while the scale pushes upward. The scale mechanism is compressed and calibrated to show the magnitude of the support force. A large scale reading therefore does not mean there is a large net force; the downward and upward forces can be equally large and still add to zero.</p><figure class="notes-figure wu-img-425"><img src="figures/u1_2_from_ch_2_16_man_on_scale_support_force.png" alt="Person standing on a bathroom scale showing support force and weight"/></figure><p>Image read: Label the two main forces on the person. Then write why a nonzero scale reading can occur at the same time as zero net force.</p><p>This gives an important language check for the rest of the unit. “No forces act” means there are literally no relevant interactions producing forces on the object. “No net force acts” means forces may be present but their vector sum is zero. Most everyday objects at rest on Earth are examples of the second statement, not the first.</p></div><!-- STOP AND DISCUSS READING 3 -->
-<div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>Why does a book resting on a table provide evidence for “no net force” rather than “no forces”?</li><li>What does a bathroom scale measure in this equilibrium situation, and why is that not the same as net force?</li></ol></div><div class="notes-ws ws-ruled"></div><!-- EXAMPLE 3 -->
-<h3 class="h-example">Example 3: Book on a table</h3>
-<p>A book rests on a level table. Identify the two main vertical forces on the book, state their directions, and explain why the book’s motion does not change.</p><div class="notes-ws ws-ruled"></div><!-- YTI 3 -->
-<h3 class="h-yti">You Try It 3: Standing on a scale</h3>
-<p>A person stands still on a bathroom scale. Explain why the scale can show a large force even though the person is not accelerating. Use the phrases support force, weight, and net force.</p><div class="notes-ws ws-ruled"></div>
-<!-- VOCABULARY DEFINITIONS -->
-<h2 class="h-vocab">Vocabulary: Define the Terms</h2>
-<div class="vocab-box">
-  <p>You have now seen these words in the reading, images, and practice. Use this table to consolidate the physics meaning of each term.</p>
-  <table class="roomy-table"><tr><th>Vocabulary term</th><th>Definition</th></tr><tr><td><strong>force</strong></td><td>A push or pull caused by an interaction.</td></tr><tr><td><strong>inertia</strong></td><td>The tendency of an object to resist a change in its state of motion.</td></tr><tr><td><strong>Newton’s First Law</strong></td><td>An object continues at rest or at constant speed in a straight line unless a nonzero net force acts on it.</td></tr><tr><td><strong>net force</strong></td><td>The vector sum of all forces acting on one object.</td></tr><tr><td><strong>weight</strong></td><td>The gravitational force acting on an object.</td></tr><tr><td><strong>support force</strong></td><td>A force from a supporting surface that pushes on an object, usually perpendicular to the surface.</td></tr><tr><td><strong>tension</strong></td><td>A pulling force transmitted through a stretched rope, string, cable, or similar connector.</td></tr><tr><td><strong>friction</strong></td><td>A contact force that opposes relative motion or the tendency for surfaces to slide past one another.</td></tr></table>
+  <p>Read the introduction aloud with a partner or in a small group. As you read, annotate the text by highlighting important ideas, circling key vocabulary, and writing short notes about connections, questions, or predictions in the margins.</p>
 </div>
+<div class="reading-box">
+  <p>Function notation is a compact way to ask for an output. When you see $f(3)$, the input is 3 and the task is to find the output produced by the rule named $f$. The answer is a value, not a multiplication problem between $f$ and 3.</p>
+  <p>A relation can be represented by a table, graph, equation, mapping diagram, or context. To act like a function, each input must have only one output. Different inputs may share the same output, but one input cannot split into two different outputs.</p>
+  <p>Imagine entering the same student ID into a system and getting two different names. That would make the rule unreliable because one input would not lead to a single result. A table with a repeated input must be checked carefully before deciding it represents a function.</p>
+  <p>Input-output rules help you generate ordered pairs and missing table values. Substitution is one way to use a rule: replace the input variable, then simplify the expression to find the output.</p>
+  <p>In contexts, inputs and outputs need units and meaning. If $n$ is the number of tickets and $C$ is cost, the rule should match the words on the flyer and the values in the table.</p>
+</div>
+<div class="notes-ws ws-ruled"><span class="ws-label">Your notes</span></div>
+
+<div class="strategy-box stop-discuss">
+  <p><strong>Stop and Discuss</strong></p>
+  <ol>
+    <li>What question does function notation like $f(3)$ ask?</li>
+    <li>What must be true for a relation to act like a function?</li>
+    <li>Why can a repeated input with two different outputs create a problem?</li>
+  </ol>
+</div>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- MATH NOTES 1 -->
+<div class="math-notes">
+  <div class="math-notes-header">
+    <span class="math-notes-label">Math Notes</span>
+    <span class="math-notes-title">Evaluating function notation in four representations</span>
+  </div>
+  <div class="math-notes-body">
+<p>To evaluate $f(3)$, find the output when the input is 3.</p>
+$$f(3)=2(3)+1=7$$
+<table class="values">
+<tr><th>Input</th><th>0</th><th>1</th><th>2</th><th>3</th></tr>
+<tr><td>Output</td><td>1</td><td>3</td><td>5</td><td>7</td></tr>
+</table>
+<figure class="notes-figure wu-img-500">
+<img src="figures/u1_s2_mn1_eval_f3.png" alt="Graph marking the point used to evaluate f of three."/>
+</figure>
+<p><strong>Context:</strong> If $x$ is the number of practice rounds, $f(3)=7$ means the output is 7 points after 3 rounds.</p>
+  </div>
+</div>
+
+<!-- EXAMPLE 1 -->
+<h3 class="h-example">Example 1: Evaluate a Function</h3>
+<p>The function $f(x)=4x-1$ gives the number of points after $x$ completed challenges.</p>
+<ol>
+  <li>Find $f(4)$.</li>
+  <li>Write the ordered pair connected to your answer.</li>
+  <li>Explain what the ordered pair means in the context.</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- YTI 1 -->
+<h3 class="h-yti">You Try It 1: Evaluate Another Function</h3>
+<p>The function $h(x)=3x+5$ gives the total badges earned after $x$ weeks.</p>
+<ol>
+  <li>Find $h(6)$.</li>
+  <li>Write the ordered pair.</li>
+  <li>Explain the meaning of the ordered pair.</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- STOP AND DISCUSS A -->
+<div class="strategy-box stop-discuss">
+  <p><strong>Stop and Discuss</strong></p>
+  <ol>
+    <li>How did the notation tell you which input to use?</li>
+    <li>Why is $f(4)$ an output, not an ordered pair by itself?</li>
+  </ol>
+</div>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- MATH NOTES 2 -->
+<div class="math-notes">
+  <div class="math-notes-header">
+    <span class="math-notes-label">Math Notes</span>
+    <span class="math-notes-title">Finding an input from a target output</span>
+  </div>
+  <div class="math-notes-body">
+<p>Sometimes the output is known and the input is unknown, so set the rule equal to the target output and solve.</p>
+<p>For $A=2+3r$, the question "when is the output 17?" becomes $$2+3r=17.$$</p>
+<table class="values">
+<tr><th>Rounds $r$</th><th>0</th><th>3</th><th>5</th><th>6</th></tr>
+<tr><td>Output $A$</td><td>2</td><td>11</td><td>17</td><td>20</td></tr>
+</table>
+<figure class="notes-figure wu-img-500">
+<img src="figures/u1_s2_mn2_rule_solve.png" alt="Graph showing a rule meeting the target output seventeen."/>
+</figure>
+<p><strong>Context:</strong> The point $(5,17)$ means 5 rounds produce the target output of 17.</p>
+  </div>
+</div>
+
+<!-- EXAMPLE 2 -->
+<h3 class="h-example">Example 2: Use a Rule in More Than One Way</h3>
+<p>For $p(x)=\frac{10}{x+1}$, use the rule to evaluate outputs and solve for a target output.</p>
+<ol>
+  <li>Find $p(1)$.</li>
+  <li>Find $p(4)$.</li>
+  <li>What value of $x$ makes $p(x)=2$?</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- YTI 2 -->
+<h3 class="h-yti">You Try It 2: Evaluate and Solve</h3>
+<p>For $q(x)=\frac{12}{x+2}$, use the rule to answer each question.</p>
+<ol>
+  <li>Find $q(1)$.</li>
+  <li>Find $q(4)$.</li>
+  <li>What value of $x$ makes $q(x)=3$?</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- STOP AND DISCUSS B -->
+<div class="strategy-box stop-discuss">
+  <p><strong>Stop and Discuss</strong></p>
+  <ol>
+    <li>What changed when the question gave you an output instead of an input?</li>
+    <li>How did the table or graph confirm the input you solved for?</li>
+  </ol>
+</div>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- MATH NOTES 3 -->
+<div class="math-notes">
+  <div class="math-notes-header">
+    <span class="math-notes-label">Math Notes</span>
+    <span class="math-notes-title">Completing a function table</span>
+  </div>
+  <div class="math-notes-body">
+<p>To complete a table from a rule, substitute each input separately and keep each ordered pair together.</p>
+<p>For $g(x)=\sqrt{x+4}$, the input $x=5$ gives $$g(5)=\sqrt{5+4}=\sqrt{9}=3.$$</p>
+<table class="values">
+<tr><th>$x$</th><th>-4</th><th>0</th><th>5</th><th>12</th></tr>
+<tr><td>$g(x)$</td><td>0</td><td>2</td><td>3</td><td>4</td></tr>
+</table>
+<figure class="notes-figure wu-img-500">
+<img src="figures/u1_s2_mn3_sqrt_table.png" alt="Graph of a square root rule with table points visible."/>
+</figure>
+<p><strong>Context:</strong> Each input has one output, so each completed column becomes one ordered pair.</p>
+  </div>
+</div>
+
+<!-- EXAMPLE 3 -->
+<h3 class="h-example">Example 3: Complete a Table</h3>
+<p>Complete the table for $g(x)=\sqrt{x+9}$.</p>
+<table class="values"><tr><th>$x$</th><th>-9</th><th>-5</th><th>7</th><th>16</th></tr><tr><td>$g(x)$</td><td></td><td></td><td></td><td></td></tr></table>
+<ol>
+  <li>Find each missing output.</li>
+  <li>Write the ordered pair for $x=7$.</li>
+  <li>Explain why each input has exactly one output in this table.</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- YTI 3 -->
+<h3 class="h-yti">You Try It 3: Table from a Rule</h3>
+<p>Complete the table for $r(x)=\sqrt{x+1}$.</p>
+<table class="values"><tr><th>$x$</th><th>-1</th><th>3</th><th>8</th><th>15</th></tr><tr><td>$r(x)$</td><td></td><td></td><td></td><td></td></tr></table>
+<ol>
+  <li>Find each output.</li>
+  <li>Write the ordered pair for $x=8$.</li>
+  <li>Why does this table pass the one-output test?</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- STOP AND DISCUSS C -->
+<div class="strategy-box stop-discuss">
+  <p><strong>Stop and Discuss</strong></p>
+  <ol>
+    <li>Why is it important to keep each input paired with its own output?</li>
+    <li>What error would happen if you mixed values from two columns?</li>
+  </ol>
+</div>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- EXAMPLE 4 -->
+<h3 class="h-example">Example 4: Check a Proposed Rule</h3>
+<p>A school club says total cost is $C=18m$, where $m$ is the number of members. The sign-up sheet also says there is a one-time 12 dollar materials fee.</p>
+<div class="claim-card"><p><strong>Student claim:</strong> "The rule $C=18m$ models the total cost."</p></div>
+<ol>
+  <li>What cost does the proposed rule include?</li>
+  <li>What cost is missing from the proposed rule?</li>
+  <li>Is the rule reasonable? Revise it if needed.</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- YTI 4 -->
+<h3 class="h-yti">You Try It 4: Revise a Rule</h3>
+<p>A fundraiser rule is written as $T=30n$, where $n$ is the number of teams. The flyer also lists a one-time 20 dollar room fee.</p>
+<div class="claim-card"><p><strong>Student claim:</strong> "The rule already includes all costs."</p></div>
+<ol>
+  <li>What does $30n$ represent?</li>
+  <li>What part of the context is missing?</li>
+  <li>Revise the rule and explain your choice.</li>
+</ol>
+<div class="notes-ws ws-ruled"></div>
+
+<!-- STOP AND DISCUSS D -->
+<div class="strategy-box stop-discuss">
+  <p><strong>Stop and Discuss</strong></p>
+  <ol>
+    <li>What evidence showed that the proposed rule was incomplete?</li>
+    <li>How can a context reveal a missing term in an equation?</li>
+  </ol>
+</div>
+<div class="notes-ws ws-ruled"></div>
+
 <!-- SUMMARY -->
 <h2 class="h-summary">Summary</h2>
-<div class="key-point"><ul class="summary-list"><li>Newton’s First Law says an object continues at rest or at constant speed in a straight line unless a nonzero net force acts on it.</li><li>Inertia is a property of matter that describes resistance to a change in motion; inertia is not a force.</li><li>A change in speed or direction requires a nonzero net force, but continued motion does not require a continuing forward net force.</li><li>Weight is a downward gravitational force near Earth, while a supporting surface can exert an upward support or normal force.</li><li>“No forces acting” and “no net force acting” are different: balanced forces can be present while the net force is zero.</li></ul></div>
-<div class="workspace-220"><span class="ws-label">Summary notes / questions / connections</span></div>
+<div class="key-point">
+  <p>A function rule connects an input to an output. Function notation such as $f(3)$ asks for the output when the input is 3.</p>
+  <p>You can use a rule by substituting an input, completing a table, writing an ordered pair, or setting the rule equal to a target output.</p>
+  <p>A common error is treating a repeated input with two different outputs as acceptable.</p>
+  <p>Strong understanding means you can explain the role of each quantity and check whether the rule gives one output for each input in a table, graph, equation, or context.</p>
+</div>
+
 <!-- COMMON MISTAKES -->
 <h2 class="h-mistakes">Common Mistakes</h2>
-<div class="mistake-box"><table class="mistake-table"><tr><th>Mistake</th><th>Why it is tempting</th><th>Check instead</th></tr><tr><td>Drawing an “inertia force”</td><td>Inertia sounds like something that actively keeps an object moving.</td><td>Only draw forces that come from identifiable interactions. Describe inertia as a property of matter.</td></tr><tr><td>Saying a moving object needs a forward net force</td><td>Everyday motion usually involves friction, so we often keep pushing.</td><td>Ask whether the motion is changing. Constant straight-line motion can occur with zero net force.</td></tr><tr><td>Equating “at rest” with “no forces”</td><td>Nothing appears to be happening.</td><td>Look for gravity and contact/support forces that may cancel.</td></tr><tr><td>Treating a scale reading as net force</td><td>The scale displays a force value.</td><td>Identify the support force and weight separately, then combine them to find net force.</td></tr><tr><td>Saying faster objects automatically have more inertia</td><td>Speed and difficulty stopping feel connected in everyday experience.</td><td>In this unit, connect inertia to the amount of matter/mass, not to speed alone.</td></tr></table></div>
+<div class="mistake-box">
+  <ul>
+    <li><strong>Reading $f(3)$ as multiplication.</strong> Why it is tempting: the parentheses look like multiplication notation. What to check instead: that $3$ is the input to the rule.</li>
+    <li><strong>Mixing table columns.</strong> Why it is tempting: all values are close together. What to check instead: each input-output pair one column at a time.</li>
+    <li><strong>Forgetting a target-output equation.</strong> Why it is tempting: students keep substituting inputs. What to check instead: whether the output or the input is unknown.</li>
+    <li><strong>Allowing repeated-input conflicts.</strong> Why it is tempting: repeated outputs are allowed. What to check instead: whether one input has two different outputs.</li>
+    <li><strong>Dropping context fees.</strong> Why it is tempting: the variable term feels like the whole rule. What to check instead: fixed amounts stated in the context.</li>
+  </ul>
+</div>
+
+<!-- OPTIONAL REFLECTION -->
+<h2 class="h-reflection">Optional Future Task Reflection</h2>
+<div class="annotation-box">
+  <p>Look back at the future task. Do not solve it yet. Highlight one part that makes more sense now than it did at the beginning. Circle one part that still feels unfamiliar. Write one sentence about what representation you would look at first.</p>
+</div>
+
 <!-- EXIT TICKET -->
 <div class="exit-ticket-label">Exit Ticket</div>
 <div class="exit-ticket-grid">
-  <div class="et-cell"><div class="et-cell-title">1 — First Law vocabulary · DOK 1</div><p>A cart moves in a straight line at constant speed. Which phrase best describes the required net force: zero net force or a forward net force? State the phrase and name the law that supports your choice.</p></div>
-  <div class="et-cell"><div class="et-cell-title">2 — Forces at rest · DOK 2</div><p>A backpack rests on the floor. Describe the two main vertical forces acting on it and explain why this situation is an example of “no net force” rather than “no forces.”</p></div>
-  <div class="et-cell"><div class="et-cell-title">3 — What Did You Learn?</div><p>What is one thing you learned in this section? Explain it in at least one complete sentence.</p></div>
-  <div class="et-cell"><div class="et-cell-title">4 — What Do You Need to Know More About?</div><p>What is one thing from this section you still need to understand or practice more? Be specific.</p></div>
+
+  <div class="et-cell">
+    <div class="et-cell-title">1 — Foundations · DoK 1</div>
+    <p>For $f(x)=2x+7$, find $f(3)$.</p>
+  </div>
+
+  <div class="et-cell">
+    <div class="et-cell-title">2 — Build or Apply · DoK 2</div>
+    <p>For $f(x)=\frac{6}{2x-3}$, find $f(1)$, $f(0)$, and the value of $x$ that makes $f(x)=4$.</p>
+  </div>
+
+  <div class="et-cell">
+    <div class="et-cell-title">3 — What Did You Learn?</div>
+    <p>What is one idea about inputs, outputs, and functions you understand better now than at the start of class? Write at least one complete sentence.</p>
+  </div>
+
+  <div class="et-cell">
+    <div class="et-cell-title">4 — What Do You Need Help With?</div>
+    <p>What is one thing about inputs, outputs, and functions you still want to understand or practice? Be specific — name the idea, not just "everything."</p>
+  </div>
+
 </div>
+
+
 </div>
 </body>
 </html>
