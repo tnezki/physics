@@ -2046,19 +2046,21 @@ def make_algebra_tiles(expression, filename='algebra_tiles.png'):
 
 
 # =============================================================================
-# UNIT 1 SECTION 2 NOTES GRAPH-GENERATION BLOCKS - APPENDED BELOW AUTHORITATIVE TOOL
+# UNIT 1 BANK GRAPH-GENERATION BLOCKS - APPENDED BELOW AUTHORITATIVE TOOL
 # =============================================================================
 if __name__ == '__main__':
-    fig, ax = plt.subplots(figsize=(4.5, 3.2))
-    make_context_graph(
+    fig, ax = plt.subplots(figsize=(3.5, 3.5))
+    make_scatter_plot(
         ax,
-        functions=[{'expr': lambda t: 2 + 3*t, 'deriv': lambda t: np.full_like(t, 3.0), 'color': 'steelblue'}],
+        x_data=[1, 2, 3, 4, 5],
+        y_data=[1.8, 3.6, 5.5, 7.1, 9.0],
         xmin=0, xmax=5,
-        ymin=0, ymax=20,
-        xlabel='Time (s)',
-        ylabel='Position (m)',
-        title='Steady Straight-Line Motion'
+        ymin=0, ymax=10,
+        color='steelblue',
+        line_of_best_fit=False,
+        xlabel='Number of Washers',
+        ylabel='Spring Extension (cm)',
+        title='Spring Extension Measurements'
     )
-    save_graph(fig, 'u1_s2_notes_steady_motion.png')
+    save_graph(fig, 'u1_s1_wtc01_measurements.png')
     plt.close(fig)
-

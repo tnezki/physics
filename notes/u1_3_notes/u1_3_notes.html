@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Section 1.3 Notes — Function Families</title>
+<title>Section 1.3 Notes — Net Force and Vectors</title>
 <script>
 window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], processEscapes: true } };
 </script>
@@ -13,289 +13,26 @@ window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], p
 </head>
 <body>
 <div class="container">
-
-
-<!-- TITLE -->
 <div class="notes-title">
-  <div class="title-kicker">Algebra 1 · Unit 1</div>
-  <div class="title-main">Section 1.3<br>Function Families</div>
-  <div class="title-sub">Use patterns and features to identify common function families.</div>
-  <div class="title-quote"><p><strong>Mathematical idea:</strong> Function families can be recognized by evidence from rates, ratios, shape, symmetry, and equation structure.</p></div>
-  <p style="margin-top:18px;color:#555;">Today you will distinguish linear, quadratic, exponential, and absolute value relationships using tables, graphs, equations, and contexts. You will practice giving evidence instead of naming a family from appearance alone.</p>
+<div class="title-kicker">Conceptual Physics · Unit 1: Forces, Motion, and Equilibrium</div>
+<div class="title-main">Section 1.3<br/>Net Force and Vectors</div>
+<div class="title-sub">Direction comes before arithmetic</div>
+<div class="title-quote"><p><strong>Core idea:</strong> Force is a vector: both magnitude and direction matter, and the net force is the resultant of all force vectors on the object.</p></div>
+<p class="title-note">You will combine same-direction and opposite-direction forces, use vector scales, and find simple perpendicular resultants.</p>
 </div>
-
-<!-- LEARNING TARGET -->
 <h2 class="h-target">Learning Target</h2>
-<div class="objectives">
-  <p><strong>Learning Target: Students will recognize common function families from graphs, tables, equations, and contexts.</strong></p>
-  <p><strong>I can statements</strong></p>
-  <ul>
-    <li>I can design examples of linear, quadratic, exponential, and absolute value relationships using more than one representation.</li>
-    <li>I can extend patterns in tables, graphs, equations, and contexts to work with common function families.</li>
-    <li>I can critique a proposed function family choice using evidence from rate of change, shape, or equation structure.</li>
-  </ul>
+<div class="objectives"><p><strong>Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.</strong></p><p><strong>I can statements</strong></p><ul><li>I can explain why force is a vector quantity.</li><li>I can combine forces acting in the same direction or opposite directions.</li><li>I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.</li></ul></div>
+<h2 class="h-vocab">Vocabulary Preview</h2>
+<div class="vocab-box">
+<p class="vocab-note">Skim the terms first. In the blank space, jot a word, example, picture, or question you already connect to each term. Definitions come later.</p>
+<table class="vocab-sort"><tr><th>Term</th><th>Before the reading: my connection / question</th></tr><tr><td><strong>vector</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>magnitude</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>direction</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>resultant</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>net force</strong></td><td class="vocab-sort-space"></td></tr></table>
 </div>
-
-<!-- WHAT'S TO COME -->
 <h2 class="h-preview">What's To Come</h2>
-<p>This is a long-range preview for future lessons. Do not solve it today. Instead, annotate it individually. Circle anything familiar, underline symbols or directions that seem important, and write notes about what information you think will be needed later.</p>
-<p>As you annotate, ask yourself: What parts (words, symbols, graphs) do you KNOW? What parts look FAMILIAR? What parts look like jibberish?</p>
-<div class="annotation-box">
-  <p>A school wants to predict club membership for the next four meetings. Approach A uses a constant increase of $6$ students each meeting from $18$. Approach B multiplies by $1.25$ each meeting from $18$. Recommend one approach for meetings $1$ through $4$ if room capacity is $60$. Support your recommendation with a table and family evidence.</p>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- INTRO -->
-<h2 class="h-intro">Intro</h2>
-<div class="strategy-box">
-  <p><strong>Directions</strong></p>
-  <p>Read the introduction aloud with a partner or in a small group. As you read, annotate the text by highlighting important ideas, circling key vocabulary, and writing short notes about connections, questions, or predictions in the margins.</p>
-</div>
-<div class="reading-box">
-  <p>Function families are groups of relationships that share features. An exponential pattern often has outputs that multiply by the same factor when inputs increase by 1. For example, 3, 6, 12, 24 shows repeated multiplication by 2.</p>
-  <p>Tables can show different kinds of change. Linear tables have constant first differences, while quadratic tables often have constant second differences. Checking changes across several rows gives stronger evidence than looking at one pair of values.</p>
-  <p>A graph can give a fast first impression, but a first impression is not proof. A curve might look like another family if the viewing window is small or if only a few points are shown. Good reasoning connects the shape to table patterns, equation structure, or context meaning.</p>
-  <p>The common families in this section are linear, quadratic, exponential, and absolute value. Their features appear across representations: straight-line change, U-shaped second differences, repeated multiplication, and V-shaped distance from a center.</p>
-  <p>When you critique a family choice, name the evidence you used. You might cite repeated differences, repeated ratios, symmetry, a vertex, or the structure of an equation.</p>
-</div>
-<div class="notes-ws ws-ruled"><span class="ws-label">Your notes</span></div>
-
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>Which family often has outputs that multiply by the same factor?</li>
-    <li>What evidence helps distinguish linear and quadratic tables?</li>
-    <li>Why is shape alone not enough to justify a function family?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 1 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Family evidence across representations</span>
-  </div>
-  <div class="math-notes-body">
-<p>To classify a function family, use evidence from at least one representation instead of relying only on a name or a quick shape match.</p>
-<table class="values">
-<tr><th>Family</th><th>Table evidence</th><th>Equation clue</th></tr>
-<tr><td>Linear</td><td>constant first differences</td><td>$y=mx+b$</td></tr>
-<tr><td>Quadratic</td><td>constant second differences</td><td>$x^2$ term</td></tr>
-<tr><td>Exponential</td><td>constant ratios</td><td>variable in exponent</td></tr>
-<tr><td>Absolute value</td><td>outputs mirror around a center</td><td>$|x-h|$ structure</td></tr>
-</table>
-<figure class="notes-figure wu-img-500">
-<img src="figures/u1_s3_mn1_family_grid.png" alt="Grid showing four common function family shapes."/>
-</figure>
-<p><strong>Context:</strong> In a situation, the family should also match the story, such as constant increase for linear or repeated percent growth for exponential.</p>
-  </div>
-</div>
-
-<!-- EXAMPLE 1 -->
-<h3 class="h-example">Example 1: Identify a Family from Outputs</h3>
-<p>A table has outputs $5,10,20,40$ as inputs increase by 1.</p>
-<ol>
-  <li>Which family is most likely?</li>
-  <li>What pattern in the outputs supports your choice?</li>
-  <li>Write one sentence explaining why this is not linear.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 1 -->
-<h3 class="h-yti">You Try It 1: Identify Another Family</h3>
-<p>A table has outputs $2,6,18,54$ as inputs increase by 1.</p>
-<ol>
-  <li>Which family is most likely?</li>
-  <li>What pattern supports your choice?</li>
-  <li>Why is it not linear?</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS A -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>What evidence made exponential more convincing than linear?</li>
-    <li>How many outputs would you want before feeling confident?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- EXAMPLE 2 -->
-<h3 class="h-example">Example 2: Use Table Evidence</h3>
-<p>Use the table to identify the likely family and justify your answer.</p>
-<table class="values"><tr><th>$x$</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><td>$y$</td><td>1</td><td>4</td><td>9</td><td>16</td><td>25</td></tr></table>
-<ol>
-  <li>Find the first differences.</li>
-  <li>Find the second differences.</li>
-  <li>Name the likely family and cite evidence.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 2 -->
-<h3 class="h-yti">You Try It 2: Table Evidence Again</h3>
-<p>Use the table to identify the likely family.</p>
-<table class="values"><tr><th>$x$</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><td>$y$</td><td>4</td><td>7</td><td>14</td><td>25</td><td>40</td></tr></table>
-<ol>
-  <li>Find the first differences.</li>
-  <li>Find the second differences.</li>
-  <li>Name the likely family and cite evidence.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS B -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>Why are second differences useful for quadratic patterns?</li>
-    <li>What would constant first differences have suggested instead?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- EXAMPLE 3 -->
-<h3 class="h-example">Example 3: Use Graph Evidence</h3>
-<p>Use the grid to build evidence from graph features, not just labels.</p>
-<figure class="notes-figure wu-img-500"><img src="figures/u1_s3_ex3_family_grid.png" alt="Grid of four unlabeled function-family graphs for evidence building."/></figure>
-<ol>
-  <li>For Panel B, describe one feature you can see from the graph.</li>
-  <li>For Panel C, describe whether the output changes by equal differences or grows faster and faster.</li>
-  <li>Choose one panel and name the likely family with evidence.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 3 -->
-<h3 class="h-yti">You Try It 3: Equation Structure Evidence</h3>
-<p>Consider the equations $A:y=2x+6$, $B:y=(x-2)^2+1$, $C:y=3(2)^x$, and $D:y=|x+1|-4$.</p>
-<ol>
-  <li>Which equation is exponential?</li>
-  <li>Which equation is absolute value?</li>
-  <li>Choose one equation and explain the structure clue that identifies its family.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS C -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>How did the graph or equation structure provide evidence beyond a name?</li>
-    <li>Which family would be easiest to confuse from a small graph window?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 4 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Finding a mismatch while preserving family evidence</span>
-  </div>
-  <div class="math-notes-body">
-<p>A table can look like the right family but still fail to match a specific equation.</p>
-<p>For $y=2x+1$, the expected outputs are:</p>
-<table class="values">
-<tr><th>$x$</th><th>0</th><th>1</th><th>2</th><th>3</th></tr>
-<tr><td>$2x+1$</td><td>1</td><td>3</td><td>5</td><td>7</td></tr>
-<tr><td>Given table</td><td>1</td><td>3</td><td>6</td><td>7</td></tr>
-</table>
-<p>The value at $x=2$ is the mismatch. The table might still look almost linear, but it does not represent the exact equation.</p>
-<figure class="notes-figure wu-img-500">
-<img src="figures/u1_s3_mn4_mismatch.png" alt="Graph marking a point that does not match a linear rule."/>
-</figure>
-  </div>
-</div>
-
-<!-- EXAMPLE 4 -->
-<h3 class="h-example">Example 4: Locate a Family Mismatch</h3>
-<p>The equation $y=3x+2$ and the table are supposed to represent the same relationship.</p>
-<table class="values"><tr><th>$x$</th><th>0</th><th>1</th><th>2</th><th>3</th></tr><tr><td>$y$</td><td>2</td><td>5</td><td>9</td><td>11</td></tr></table>
-<ol>
-  <li>What output should the equation give when $x=2$?</li>
-  <li>Locate the mismatch in the table.</li>
-  <li>Does the table still look mostly linear? Explain.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 4 -->
-<h3 class="h-yti">You Try It 4: Find the Mismatch</h3>
-<p>The equation $y=4x+1$ and the table are supposed to match.</p>
-<table class="values"><tr><th>$x$</th><th>0</th><th>1</th><th>2</th><th>3</th></tr><tr><td>$y$</td><td>1</td><td>5</td><td>8</td><td>13</td></tr></table>
-<ol>
-  <li>What output should the equation give when $x=2$?</li>
-  <li>Which table value is mismatched?</li>
-  <li>Does the table still look linear overall? Explain.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS D -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>How can a relationship have a likely family but still fail to match a specific equation?</li>
-    <li>What evidence should you cite first in a critique?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- SUMMARY -->
-<h2 class="h-summary">Summary</h2>
-<div class="key-point">
-  <p>Function families can be recognized by patterns that appear in tables, graphs, equations, and contexts. The goal is to use evidence, not just guess from appearance.</p>
-  <p>Linear relationships have constant first differences, quadratic relationships often have constant second differences, exponential relationships have repeated ratios, and absolute value relationships have V-shaped distance patterns.</p>
-  <p>A common error is choosing a family from the graph shape without checking values or equation structure.</p>
-  <p>Strong understanding means you can identify a likely family, explain the evidence, and critique a mismatch when one representation does not agree with another.</p>
-</div>
-
-<!-- COMMON MISTAKES -->
-<h2 class="h-mistakes">Common Mistakes</h2>
-<div class="mistake-box">
-  <ul>
-    <li><strong>Shape-only matching.</strong> Why it is tempting: graphs are fast to scan. What to check instead: a table pattern or equation clue.</li>
-    <li><strong>Calling any curve exponential.</strong> Why it is tempting: curves can look similar. What to check instead: repeated ratios or variable-in-exponent structure.</li>
-    <li><strong>Missing second differences.</strong> Why it is tempting: first differences are easier to compute. What to check instead: whether the changes in the changes are constant.</li>
-    <li><strong>Ignoring a single mismatch.</strong> Why it is tempting: most values may fit. What to check instead: each listed input-output pair against the rule.</li>
-    <li><strong>Confusing family and exact relationship.</strong> Why it is tempting: same family feels like same rule. What to check instead: whether the actual values agree.</li>
-  </ul>
-</div>
-
-<!-- OPTIONAL REFLECTION -->
-<h2 class="h-reflection">Optional Future Task Reflection</h2>
-<div class="annotation-box">
-  <p>Look back at the future task. Do not solve it yet. Highlight one part that makes more sense now than it did at the beginning. Circle one part that still feels unfamiliar. Write one sentence about what representation you would look at first.</p>
-</div>
-
-<!-- EXIT TICKET -->
-<div class="exit-ticket-label">Exit Ticket</div>
-<div class="exit-ticket-grid">
-
-  <div class="et-cell">
-    <div class="et-cell-title">1 — Foundations · DoK 1</div>
-    <p>A table has outputs $3,6,12,24$ as inputs increase by $1$. Which family is most likely: linear, quadratic, exponential, or absolute value?</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">2 — Build or Apply · DoK 2</div>
-    <p>Use the table to identify the likely family. Support your choice with a pattern in the outputs.</p>
-<table class="values">
-<tr><th>$x$</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
-<tr><td>$y$</td><td>2</td><td>5</td><td>10</td><td>17</td><td>26</td></tr>
-</table>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">3 — What Did You Learn?</div>
-    <p>What is one idea about function families you understand better now than at the start of class? Write at least one complete sentence.</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">4 — What Do You Need Help With?</div>
-    <p>What is one thing about function families you still want to understand or practice? Be specific — name the idea, not just "everything."</p>
-  </div>
-
-</div>
-
-
-</div>
+<p>This is a long-range preview for this section. Do not solve it yet. Circle anything familiar, underline symbols, labels, conditions, data, or features that seem important, and write short notes about what you think may matter later.</p>
+<div class="annotation-box"><p>Three students draw force arrows for the same box. One uses a 2 cm arrow for a 10 N push, another uses a 4 cm arrow for a 20 N push, and a third uses a 4 cm arrow for a 10 N push.</p><p>Without choosing a winner yet, list the questions you would ask about the scale and direction of the arrows so the drawings can be compared fairly.</p></div>
+<div class="notes-ws ws-ruled" data-teacher-key="wtc"></div>
+<h2 class="h-intro">Content: Read, Represent, Annotate, Apply</h2>
+<div class="strategy-box"><p><strong>Directions</strong></p><p>Read in short chunks. Annotate the prose and representations together. Mark evidence, conditions, important quantities, labels, patterns, and questions.</p></div>
+<div class="reading-box"><h3>Reading 1: Force Arrows Carry Magnitude and Direction</h3><p>A <strong>vector</strong> is a quantity that requires both <strong>magnitude</strong> and <strong>direction</strong> for a complete description. For a force vector, magnitude tells how strong the force is and direction tells where the force points. Arrow length is meaningful only when a scale is defined.</p><p>The <strong>net force</strong> is the vector sum of all forces acting on an object. Forces pointing in the same direction add. Forces along the same line but pointing in opposite directions subtract, and the net-force direction follows the larger side.</p><figure class="notes-figure wu-img-650"><img src="figures/u1_2_from_ch_2_6_net_force_applied_forces_table.png" alt="Examples showing two same-direction forces, two equal opposite forces, and unequal opposite forces."/><figcaption>Direction decides whether force magnitudes add or subtract.</figcaption></figure><p>The single vector that has the same combined effect as the original vectors is the <strong>resultant</strong>. Net force is therefore a resultant force, not an extra interaction arrow to draw in addition to the actual forces.</p></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>Before doing arithmetic, what direction information should you read from a force diagram?</li><li>Why is net force a result of combining forces rather than another force interaction?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd1"></div><h3 class="h-example">Example 1: Combine Forces in the Same Direction</h3><p>Two students push a cart in the same direction with forces of 18 N and 27 N. Find the net force.</p><div class="notes-ws ws-ruled" data-teacher-key="ex1"></div><h3 class="h-yti">You Try It 1: Add Same-Direction Pushes</h3><p>Two pushes of 22 N and 31 N act in the same direction. Find the resultant.</p><div class="notes-ws ws-ruled" data-teacher-key="yti1"></div><h3 class="h-example">Example 2: Combine Opposing Forces</h3><p>A 42 N pull acts right and a 17 N pull acts left. Find the net force and direction.</p><div class="notes-ws ws-ruled" data-teacher-key="ex2"></div><h3 class="h-yti">You Try It 2: Find Direction from Opposing Forces</h3><p>A 36 N force acts left while a 14 N force acts right. Determine $F_{net}$.</p><div class="notes-ws ws-ruled" data-teacher-key="yti2"></div><div class="reading-box"><h3>Reading 2: Vector Scale Makes Arrow Length Meaningful</h3><p>A scaled vector diagram turns arrow length into quantitative evidence. If the scale is 1 cm for every 5 N, doubling the arrow length doubles the represented force. The same scale must be used across the diagram if the arrows are going to be compared fairly.</p><figure class="notes-figure wu-img-500"><img src="figures/u1_s3_notes_vector_scale.png" alt="Graph showing a proportional relationship between arrow length in centimeters and force magnitude in newtons."/><figcaption>A vector scale is a proportional relationship: equal changes in arrow length correspond to equal changes in force magnitude.</figcaption></figure><p>A useful check is to write the scale as a ratio before converting: $5\,\text{N}/1\,\text{cm}$. Then multiply by a measured arrow length or divide a force by the scale to determine the required length.</p></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>How can you tell from a graph or ratio that a vector scale is proportional?</li><li>What would go wrong if two students used different arrow scales and compared lengths without noticing?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd2"></div><h3 class="h-example">Example 3: Use a Vector Scale</h3><p>A vector diagram uses 1 cm of arrow length for every 5 N. How long should the arrow be for a 30 N force?</p><div class="notes-ws ws-ruled" data-teacher-key="ex3"></div><h3 class="h-yti">You Try It 3: Convert Arrow Length to Force</h3><p>On the same scale, an arrow is 3.5 cm long. What force magnitude does it represent?</p><div class="notes-ws ws-ruled" data-teacher-key="yti3"></div><div class="reading-box"><h3>Reading 3: Perpendicular Forces Combine Geometrically</h3><p>When force vectors are not along the same line, simple addition or subtraction of magnitudes is not enough. The source text uses the parallelogram rule: place the two vectors as adjacent sides and the diagonal gives the resultant.</p><figure class="notes-figure wu-img-650"><img src="figures/u1_3_from_ch_2_8_vector_addition_right_angle_components.png" alt="Right-angle vector diagrams showing a diagonal resultant across the rectangle formed by two perpendicular vectors."/><figcaption>For perpendicular vectors, the resultant is the diagonal of a right triangle or rectangle.</figcaption></figure><p>For perpendicular forces, the two force magnitudes act like the legs of a right triangle. The resultant magnitude follows the Pythagorean relationship. The diagonal also shows the resultant direction: it points between the two component directions.</p><figure class="notes-figure wu-img-500"><img src="figures/u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png" alt="A 30 N and 40 N perpendicular force pair with a 50 N diagonal resultant."/><figcaption>The familiar 30-40-50 example shows how perpendicular components form a right triangle.</figcaption></figure></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>Why can you not simply add 6 N east and 8 N north to get a 14 N resultant?</li><li>What does the diagonal of the force triangle tell you besides the magnitude?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd3"></div><div class="math-notes"><div class="math-notes-header"><span class="math-notes-label">Model Notes</span><span class="math-notes-title">Perpendicular resultant</span></div><div class="math-notes-body"><p>For perpendicular components, $$F_{net}=\sqrt{F_x^2+F_y^2}.$$</p><p>Use this only when the component forces are at right angles. The direction of the resultant lies between the component directions.</p></div></div><h3 class="h-example">Example 4: Find a Perpendicular Resultant</h3><p>Perpendicular forces of 6 N east and 8 N north act on an object. Find the magnitude of the resultant and describe its direction.</p><div class="notes-ws ws-ruled" data-teacher-key="ex4"></div><h3 class="h-yti">You Try It 4: Use a Right-Triangle Resultant</h3><p>Perpendicular forces of 5 N east and 12 N north act together. Find the resultant magnitude.</p><div class="notes-ws ws-ruled" data-teacher-key="yti4"></div><h2 class="h-vocab">Vocabulary Definitions</h2><div class="vocab-box"><table class="roomy-table"><tr><th>Term</th><th>Meaning in this section</th></tr><tr><td><strong>vector</strong></td><td>A quantity described by both magnitude and direction.</td></tr><tr><td><strong>magnitude</strong></td><td>The size or numerical strength of a vector quantity.</td></tr><tr><td><strong>direction</strong></td><td>The orientation in which a vector points.</td></tr><tr><td><strong>resultant</strong></td><td>A single vector equal to the vector sum of two or more vectors.</td></tr><tr><td><strong>net force</strong></td><td>The resultant of all force vectors acting on the chosen object.</td></tr></table></div><h2 class="h-summary">Summary</h2><div class="key-point"><ul class="summary-list"><li>Read vector direction before choosing an arithmetic operation.</li><li>Same-direction forces add; opposite collinear forces subtract and point toward the larger force.</li><li>Arrow length represents magnitude only when a consistent scale is defined.</li><li>Net force is the resultant of the real interaction forces, not an additional force.</li><li>Perpendicular force resultants form a right-triangle relationship.</li></ul></div><div class="workspace-220" data-teacher-key="summary"><span class="ws-label">Summary notes / questions / connections</span></div><h2 class="h-mistakes">Common Mistakes</h2><div class="mistake-box"><table class="mistake-table"><tr><th>Mistake</th><th>Why it is tempting</th><th>Check instead</th></tr><tr><td>Adding all force magnitudes as positive numbers.</td><td>The arrows may look like a list of values.</td><td>Read direction first; opposite directions must be treated oppositely.</td></tr><tr><td>Ignoring the arrow scale.</td><td>The arrow shape may look merely decorative.</td><td>Write the N-per-cm scale before comparing lengths.</td></tr><tr><td>Drawing net force as an extra interaction force.</td><td>The resultant is often shown as an arrow.</td><td>Separate actual forces from the calculated resultant.</td></tr><tr><td>Using the Pythagorean theorem for non-perpendicular forces.</td><td>It is a familiar vector formula.</td><td>Confirm the components are at right angles before using it.</td></tr></table></div></div>
 </body>
 </html>

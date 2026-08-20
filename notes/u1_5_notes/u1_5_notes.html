@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Section 1.5 Notes — Equations as Models</title>
+<title>Section 1.5 Notes — Modeling Forces in the Real World</title>
 <script>
 window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], processEscapes: true } };
 </script>
@@ -13,296 +13,26 @@ window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], p
 </head>
 <body>
 <div class="container">
-
-
-<!-- TITLE -->
 <div class="notes-title">
-  <div class="title-kicker">Algebra 1 · Unit 1</div>
-  <div class="title-main">Section 1.5<br>Equations as Models</div>
-  <div class="title-sub">Write, solve, and interpret equations that represent situations.</div>
-  <div class="title-quote"><p><strong>Mathematical idea:</strong> Solving an equation finds the value that makes two quantities equal, and the solution must make sense in context.</p></div>
-  <p style="margin-top:18px;color:#555;">Today you will check solutions, write equations from situations, solve multi-step equations, and compare solution methods. You will also interpret the answer in the original context.</p>
+<div class="title-kicker">Conceptual Physics · Unit 1: Forces, Motion, and Equilibrium</div>
+<div class="title-main">Section 1.5<br/>Modeling Forces in the Real World</div>
+<div class="title-sub">Build force models that agree with real interactions and motion evidence</div>
+<div class="title-quote"><p><strong>Core idea:</strong> A useful force model starts with one chosen system, includes only real interactions acting on it, and must agree with the object’s observed motion.</p></div>
+<p class="title-note">You will inventory forces, reject motion-as-force errors, calculate net force, and defend the model that best fits the evidence.</p>
 </div>
-
-<!-- LEARNING TARGET -->
 <h2 class="h-target">Learning Target</h2>
-<div class="objectives">
-  <p><strong>Learning Target: Students will write, solve, and interpret equations that model situations.</strong></p>
-  <p><strong>I can statements</strong></p>
-  <ul>
-    <li>I can construct an equation that models a situation using meaningful quantities and operations.</li>
-    <li>I can use solution steps to solve an equation and connect the result to the situation.</li>
-    <li>I can predict whether a solution is reasonable by interpreting it in the original context.</li>
-  </ul>
+<div class="objectives"><p><strong>Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.</strong></p><p><strong>I can statements</strong></p><ul><li>I can draw a force diagram for an object in a real-world situation.</li><li>I can decide whether the forces are balanced or unbalanced.</li><li>I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.</li></ul></div>
+<h2 class="h-vocab">Vocabulary Preview</h2>
+<div class="vocab-box">
+<p class="vocab-note">Skim the terms first. In the blank space, jot a word, example, picture, or question you already connect to each term. Definitions come later.</p>
+<table class="vocab-sort"><tr><th>Term</th><th>Before the reading: my connection / question</th></tr><tr><td><strong>force model</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>system</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>interaction</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>net force</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>equilibrium</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>evidence</strong></td><td class="vocab-sort-space"></td></tr></table>
 </div>
-
-<!-- WHAT'S TO COME -->
 <h2 class="h-preview">What's To Come</h2>
-<p>This is a long-range preview for future lessons. Do not solve it today. Instead, annotate it individually. Circle anything familiar, underline symbols or directions that seem important, and write notes about what information you think will be needed later.</p>
-<p>As you annotate, ask yourself: What parts (words, symbols, graphs) do you KNOW? What parts look FAMILIAR? What parts look like jibberish?</p>
-<div class="annotation-box">
-  <p>Design a one-variable equation model for a realistic school or club situation where the solution is $8$. Include the context, define the variable, write the equation, solve it, and interpret why $8$ makes sense.</p>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- INTRO -->
-<h2 class="h-intro">Intro</h2>
-<div class="strategy-box">
-  <p><strong>Directions</strong></p>
-  <p>Read the introduction aloud with a partner or in a small group. As you read, annotate the text by highlighting important ideas, circling key vocabulary, and writing short notes about connections, questions, or predictions in the margins.</p>
-</div>
-<div class="reading-box">
-  <p>An equation states that two expressions are equal. A number is a solution when substituting it for the variable makes both sides have the same value. Checking a solution means replacing the variable and simplifying both sides.</p>
-  <p>Many equations model real situations such as cost, distance, or totals. After solving, the number should answer the original question and use the correct unit. A value can be algebraically correct but unreasonable if it does not fit the context.</p>
-  <p>There is often more than one valid way to solve an equation. One student might divide first, while another distributes first. If each step keeps the equation balanced, both methods can lead to the same solution.</p>
-  <p>Key representations in this section include context-based equations, solution steps, variables as quantities, balanced relationships, and interpreted solutions. Each representation helps connect the algebra to the situation.</p>
-  <p>Before solving, predict a reasonable value from the context. After solving, substitute the answer back into the equation and explain what the variable represents.</p>
-</div>
-<div class="notes-ws ws-ruled"><span class="ws-label">Your notes</span></div>
-
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>What does it mean for a number to be a solution to an equation?</li>
-    <li>Why should a solution be interpreted in the context after solving?</li>
-    <li>How can two correct solution methods look different?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 1 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Checking a possible solution</span>
-  </div>
-  <div class="math-notes-body">
-<p>To check whether a value is a solution, substitute it for the variable and see whether both sides are equal.</p>
-<p>For $3x+2=14$ and $x=4$: $$3(4)+2=12+2=14.$$</p>
-<table class="values">
-<tr><th>Side</th><th>Value when $x=4$</th></tr>
-<tr><td>Left side $3x+2$</td><td>14</td></tr>
-<tr><td>Right side</td><td>14</td></tr>
-</table>
-<p><strong>Context:</strong> If $x$ counts items, the solution tells which number of items makes the two totals balance.</p>
-  </div>
-</div>
-
-<!-- EXAMPLE 1 -->
-<h3 class="h-example">Example 1: Check a Solution</h3>
-<p>Decide whether $x=5$ is a solution to $2x+7=17$.</p>
-<ol>
-  <li>Substitute $5$ for $x$ on the left side.</li>
-  <li>Compare the left side to the right side.</li>
-  <li>State whether $x=5$ is a solution and explain why.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 1 -->
-<h3 class="h-yti">You Try It 1: Check Another Solution</h3>
-<p>Decide whether $x=3$ is a solution to $4x+1=13$.</p>
-<ol>
-  <li>Substitute $3$ for $x$.</li>
-  <li>Compare both sides.</li>
-  <li>State whether $x=3$ is a solution.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS A -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>What made the checked value a solution in both problems?</li>
-    <li>What would have shown it was not a solution?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 2 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Writing and solving a context equation</span>
-  </div>
-  <div class="math-notes-body">
-<p>To model a situation, define the variable, translate the fixed and repeated amounts, then solve the equation that matches the target total.</p>
-<p>A club pays 8 dollars to start and 4 dollars per poster. To spend 28 dollars, solve $$8+4p=28.$$</p>
-<table class="values">
-<tr><th>Posters $p$</th><th>0</th><th>3</th><th>5</th><th>6</th></tr>
-<tr><td>Cost</td><td>8</td><td>20</td><td>28</td><td>32</td></tr>
-</table>
-<figure class="notes-figure wu-img-500">
-<img src="figures/u1_s5_mn2_context_equation.png" alt="Graph showing a cost model meeting a target total."/>
-</figure>
-<p><strong>Context:</strong> The solution $p=5$ means 5 posters make the cost exactly 28 dollars.</p>
-  </div>
-</div>
-
-<!-- EXAMPLE 2 -->
-<h3 class="h-example">Example 2: Write and Solve a Context Equation</h3>
-<p>A game booth charges 5 dollars to enter and 4 dollars per play. Mia spends 29 dollars total. Let $p$ be the number of plays.</p>
-<ol>
-  <li>Write an equation for the situation.</li>
-  <li>Solve the equation.</li>
-  <li>Interpret the solution in the context.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 2 -->
-<h3 class="h-yti">You Try It 2: Model and Solve</h3>
-<p>A club orders shirts. There is a 7 dollar setup cost and 6 dollars per shirt. The total is 43 dollars. Let $s$ be shirts.</p>
-<ol>
-  <li>Write an equation.</li>
-  <li>Solve the equation.</li>
-  <li>Interpret the solution.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS B -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>Where did the fixed cost appear in each equation?</li>
-    <li>Why did the answer need a context sentence?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 3 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Solving with inverse operations</span>
-  </div>
-  <div class="math-notes-body">
-<p>Each solution step should keep the two sides balanced. Undo operations in an order that makes the equation simpler.</p>
-<p>For $4(x-2)+6=30$:</p>
-$$4(x-2)+6=30$$
-$$4(x-2)=24$$
-$$x-2=6$$
-$$x=8$$
-<table class="values">
-<tr><th>Check</th><th>Computation</th><th>Result</th></tr>
-<tr><td>Left side</td><td>$4(8-2)+6$</td><td>30</td></tr>
-<tr><td>Right side</td><td>$30$</td><td>30</td></tr>
-</table>
-  </div>
-</div>
-
-<!-- EXAMPLE 3 -->
-<h3 class="h-example">Example 3: Solve a Multi-Step Equation</h3>
-<p>Solve the equation and show each step.</p>
-<ol>
-  <li>Solve $3(x-4)+9=24$.</li>
-  <li>Check your solution by substitution.</li>
-  <li>Name one step that kept the equation balanced.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 3 -->
-<h3 class="h-yti">You Try It 3: Solve and Check</h3>
-<p>Solve $5(x-3)+4=39$ and show your steps.</p>
-<ol>
-  <li>Solve the equation.</li>
-  <li>Check by substitution.</li>
-  <li>Identify one inverse operation you used.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS C -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>Which inverse operations appeared in both solutions?</li>
-    <li>How did the check confirm the solution?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- EXAMPLE 4 -->
-<h3 class="h-example">Example 4: Compare Two Methods</h3>
-<p>Two students solve $2(x+6)=28$. Student A divides by 2 first. Student B distributes first.</p>
-<ol>
-  <li>Use Student A's method to solve.</li>
-  <li>Use Student B's method to solve.</li>
-  <li>Which method is more efficient here and why?</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 4 -->
-<h3 class="h-yti">You Try It 4: Compare Methods Again</h3>
-<p>Two students solve $4(x+2)=36$. One divides by 4 first; the other distributes first.</p>
-<ol>
-  <li>Solve by dividing first.</li>
-  <li>Solve by distributing first.</li>
-  <li>Which method do you prefer and why?</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS D -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>Why can two methods both be correct?</li>
-    <li>What made one method more efficient for these equations?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- SUMMARY -->
-<h2 class="h-summary">Summary</h2>
-<div class="key-point">
-  <p>Equations model situations by showing two quantities that are equal. Solving finds the value of the variable that makes the equality true.</p>
-  <p>A good equation defines the variable, represents fixed and repeated amounts, and uses balanced steps to solve. Checking substitutes the solution back into the equation.</p>
-  <p>A common error is solving correctly but forgetting to interpret the answer in the context.</p>
-  <p>Strong understanding means you can write the equation, solve it, check it, and explain why the solution is reasonable for the original situation.</p>
-</div>
-
-<!-- COMMON MISTAKES -->
-<h2 class="h-mistakes">Common Mistakes</h2>
-<div class="mistake-box">
-  <ul>
-    <li><strong>Skipping substitution checks.</strong> Why it is tempting: the answer feels finished after solving. What to check instead: the solution in the original equation.</li>
-    <li><strong>Forgetting the fixed amount.</strong> Why it is tempting: the per-unit part is easier to see. What to check instead: one-time costs or starting quantities.</li>
-    <li><strong>Unbalanced steps.</strong> Why it is tempting: students change only one side. What to check instead: that every operation is applied to both sides.</li>
-    <li><strong>Answer without units.</strong> Why it is tempting: the number is algebraically correct. What to check instead: what the variable represents.</li>
-    <li><strong>Choosing an inefficient method.</strong> Why it is tempting: one familiar method always gets used. What to check instead: the structure before solving.</li>
-  </ul>
-</div>
-
-<!-- OPTIONAL REFLECTION -->
-<h2 class="h-reflection">Optional Future Task Reflection</h2>
-<div class="annotation-box">
-  <p>Look back at the future task. Do not solve it yet. Highlight one part that makes more sense now than it did at the beginning. Circle one part that still feels unfamiliar. Write one sentence about what representation you would look at first.</p>
-</div>
-
-<!-- EXIT TICKET -->
-<div class="exit-ticket-label">Exit Ticket</div>
-<div class="exit-ticket-grid">
-
-  <div class="et-cell">
-    <div class="et-cell-title">1 — Foundations · DoK 1</div>
-    <p>Is $x=4$ a solution to $3x+2=14$?</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">2 — Build or Apply · DoK 2</div>
-    <p>A movie rental service charges \$6 plus \$3 per movie. Write and solve an equation to find how many movies can be rented for \$27.</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">3 — What Did You Learn?</div>
-    <p>What is one idea about equations as models you understand better now than at the start of class? Write at least one complete sentence.</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">4 — What Do You Need Help With?</div>
-    <p>What is one thing about equations as models you still want to understand or practice? Be specific — name the idea, not just "everything."</p>
-  </div>
-
-</div>
-
-
-</div>
+<p>This is a long-range preview for this section. Do not solve it yet. Circle anything familiar, underline symbols, labels, conditions, data, or features that seem important, and write short notes about what you think may matter later.</p>
+<div class="annotation-box"><p>A student sketches a force model for a crate sliding straight across a level floor and adds a forward arrow labeled "inertia force." The student says the arrow is needed because the crate is moving.</p><figure><img alt="A crate on a level surface with support and weight arrows and a rightward arrow labeled inertia force." src="figures/u1_flawed_inertia_force.png"/></figure><p>Write two questions you would ask before accepting the model. Do not correct the model yet.</p></div>
+<div class="notes-ws ws-ruled" data-teacher-key="wtc"></div>
+<h2 class="h-intro">Content: Read, Represent, Annotate, Apply</h2>
+<div class="strategy-box"><p><strong>Directions</strong></p><p>Read in short chunks. Annotate the prose and representations together. Mark evidence, conditions, important quantities, labels, patterns, and questions.</p></div>
+<div class="reading-box"><h3>Reading 1: Choose One System Before Drawing Force Arrows</h3><p>A <strong>force model</strong> is a representation of the forces acting on a chosen <strong>system</strong>. In many problems the system is one object: the book, cart, phone, sign, or bag you are analyzing. Naming the system first prevents a common error — mixing forces that act on different objects in the same diagram.</p><p>Next, inventory each <strong>interaction</strong>. Ask what other objects touch, pull, support, or gravitationally attract the system. Each force arrow should correspond to one of those interactions.</p><figure class="notes-figure wu-img-500"><img src="figures/u1_2_from_ch_2_15_support_force_book_and_spring.png" alt="Book on a supporting surface and a spring example of contact support forces."/><figcaption>For the book as the system, Earth provides the downward weight interaction and the table provides the upward support interaction.</figcaption></figure></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>If the grocery bag is the system, which forces belong on the bag’s diagram and which forces would belong on another object’s diagram?</li><li>Why does naming the system before drawing arrows reduce modeling mistakes?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd1"></div><h3 class="h-example">Example 1: Choose the System and Inventory Forces</h3><p>Choose the system to be a grocery bag resting on a counter. List the forces that act on the bag itself.</p><div class="notes-ws ws-ruled" data-teacher-key="ex1"></div><h3 class="h-yti">You Try It 1: List Only Forces on the Chosen Object</h3><p>For a phone resting on a shelf, list only forces that act on the phone.</p><div class="notes-ws ws-ruled" data-teacher-key="yti1"></div><div class="reading-box"><h3>Reading 2: Every Force Arrow Must Come from an Interaction</h3><p>A force arrow is not a label for what the object is doing. Motion, speed, inertia, and “wanting to keep going” are not interaction forces. Before accepting an arrow, ask: <em>What object exerts this force on the system?</em></p><figure class="notes-figure wu-img-650"><img src="figures/unit1-representation-mismatch.png" alt="Scenario stating constant-speed motion while the force model shows a larger rightward force than leftward force."/><figcaption>A model should be checked against the motion evidence, not judged only by how complete the diagram looks.</figcaption></figure><p>If a model includes a forward force only because an object is moving, the model has confused motion with force. If a real forward interaction exists — such as a push, tension, or thrust — name it. If no interaction can be identified, do not invent an arrow.</p></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>What question can you ask to test whether a proposed force arrow represents a real interaction?</li><li>If a cart moves at constant velocity, what should you compare before deciding whether a forward force arrow belongs?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd2"></div><h3 class="h-example">Example 2: Reject Motion as a Force</h3><p>A student draws weight, support force, and "motion force" on a cart rolling at constant velocity. Critique the extra arrow.</p><div class="notes-ws ws-ruled" data-teacher-key="ex2"></div><h3 class="h-yti">You Try It 2: Demand an Interaction for Every Force Arrow</h3><p>A skateboard rolls straight at steady velocity after a rider steps off. What question should you ask before drawing a forward force arrow?</p><div class="notes-ws ws-ruled" data-teacher-key="yti2"></div><div class="reading-box"><h3>Reading 3: Make the Force Model Agree with the Motion Evidence</h3><p>After listing the forces, calculate or reason about the <strong>net force</strong>. Then compare that result with the motion. Zero net force is consistent with <strong>equilibrium</strong>: rest or constant straight-line velocity. A nonzero net force means the velocity changes in the net-force direction.</p><figure class="notes-figure wu-img-650"><img src="figures/unit1-box-constant-speed.png" alt="Box moving right at constant speed with a 60 N rightward push and an unknown leftward friction force."/><figcaption>The motion description constrains the force model: steady straight-line motion requires the horizontal forces to balance.</figcaption></figure><p>The final step is to use <strong>evidence</strong> to critique the model. A model that predicts changing velocity cannot match an observation of constant straight-line velocity. Revise the arrows, labels, or magnitudes until the interactions, vector sum, and motion description tell one consistent story.</p></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>Use the constant-speed box figure: what must be true about the leftward friction force if the velocity is truly constant?</li><li>What three checks should you make before defending a force model as physically consistent?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd3"></div><h3 class="h-example">Example 3: Connect Net Force to Changing Motion</h3><p>A crate has 55 N right and 25 N left horizontally, with balanced vertical forces. Find the horizontal net force and predict how the motion changes.</p><div class="notes-ws ws-ruled" data-teacher-key="ex3"></div><h3 class="h-yti">You Try It 3: Predict Motion from an Unbalanced Model</h3><p>A cart has 18 N left and 43 N right. Its vertical forces balance. Determine the net force and state what the model predicts.</p><div class="notes-ws ws-ruled" data-teacher-key="yti3"></div><h3 class="h-example">Example 4: Compare Force Models Against Motion Evidence</h3><p>Two force models are proposed for a book at rest: Model A shows equal support and weight; Model B shows only weight. Which is better supported by the motion evidence?</p><div class="notes-ws ws-ruled" data-teacher-key="ex4"></div><h3 class="h-yti">You Try It 4: Defend a Balanced Force Model</h3><p>A hanging sign is motionless. One model shows only downward weight; another adds upward tension of equal magnitude. Defend the better model.</p><div class="notes-ws ws-ruled" data-teacher-key="yti4"></div><h2 class="h-vocab">Vocabulary Definitions</h2><div class="vocab-box"><table class="roomy-table"><tr><th>Term</th><th>Meaning in this section</th></tr><tr><td><strong>force model</strong></td><td>A representation showing the forces that act on a chosen system.</td></tr><tr><td><strong>system</strong></td><td>The object or set of objects selected for analysis.</td></tr><tr><td><strong>interaction</strong></td><td>A physical relationship between objects that can produce a force on the system.</td></tr><tr><td><strong>net force</strong></td><td>The vector sum of all forces acting on the chosen system.</td></tr><tr><td><strong>equilibrium</strong></td><td>The zero-net-force condition associated with unchanged velocity.</td></tr><tr><td><strong>evidence</strong></td><td>Observations, measurements, or representation features used to evaluate a model or claim.</td></tr></table></div><h2 class="h-summary">Summary</h2><div class="key-point"><ul class="summary-list"><li>Choose the system before drawing forces.</li><li>Every force arrow must represent a real interaction acting on that system.</li><li>Motion and inertia are not force arrows.</li><li>Calculate or reason about net force, then compare it with the observed motion.</li><li>A strong force model makes the interactions, vector sum, and motion evidence agree.</li></ul></div><div class="workspace-220" data-teacher-key="summary"><span class="ws-label">Summary notes / questions / connections</span></div><h2 class="h-mistakes">Common Mistakes</h2><div class="mistake-box"><table class="mistake-table"><tr><th>Mistake</th><th>Why it is tempting</th><th>Check instead</th></tr><tr><td>Including a force that acts on a different object.</td><td>The interaction is real, but the diagram’s system has been forgotten.</td><td>State “system = ___” before listing forces.</td></tr><tr><td>Drawing a “motion force.”</td><td>The object is moving, so a forward arrow feels natural.</td><td>Name the object exerting each force; motion itself is not an interaction.</td></tr><tr><td>Ignoring a support or tension force.</td><td>Gravity is often easier to notice.</td><td>Inventory every contact and long-range interaction acting on the system.</td></tr><tr><td>Accepting a diagram that conflicts with the motion.</td><td>The arrows may look neat and complete.</td><td>Compare the net force prediction with whether velocity is actually changing.</td></tr></table></div></div>
 </body>
 </html>

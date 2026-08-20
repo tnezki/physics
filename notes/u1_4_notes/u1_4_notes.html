@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Section 1.4 Notes — Expressions and Structure</title>
+<title>Section 1.4 Notes — Equilibrium and Balanced Motion</title>
 <script>
 window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], processEscapes: true } };
 </script>
@@ -13,307 +13,26 @@ window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], p
 </head>
 <body>
 <div class="container">
-
-
-<!-- TITLE -->
 <div class="notes-title">
-  <div class="title-kicker">Algebra 1 · Unit 1</div>
-  <div class="title-main">Section 1.4<br>Expressions and Structure</div>
-  <div class="title-sub">Rewrite expressions by noticing terms, factors, groups, and equivalent forms.</div>
-  <div class="title-quote"><p><strong>Mathematical idea:</strong> Equivalent expressions can look different while representing the same quantity for every input.</p></div>
-  <p style="margin-top:18px;color:#555;">Today you will identify parts of expressions, combine like terms, distribute, and rewrite expressions to reveal useful structure. You will also compare equivalent forms and explain what each form shows.</p>
+<div class="title-kicker">Conceptual Physics · Unit 1: Forces, Motion, and Equilibrium</div>
+<div class="title-main">Section 1.4<br/>Equilibrium and Balanced Motion</div>
+<div class="title-sub">Balanced forces can describe rest or steady straight-line motion</div>
+<div class="title-quote"><p><strong>Core idea:</strong> Mechanical equilibrium means the vector sum of all forces is zero; the object’s velocity therefore remains unchanged.</p></div>
+<p class="title-note">You will distinguish static and dynamic equilibrium, use $\Sigma F=0$, and check whether a motion description is actually consistent with zero net force.</p>
 </div>
-
-<!-- LEARNING TARGET -->
 <h2 class="h-target">Learning Target</h2>
-<div class="objectives">
-  <p><strong>Learning Target: Students will interpret and rewrite algebraic expressions by identifying structure, meaning, and equivalent forms.</strong></p>
-  <p><strong>I can statements</strong></p>
-  <ul>
-    <li>I can build equivalent expressions by using structure, grouping, and properties of operations.</li>
-    <li>I can apply rewriting strategies to make the meaning of an expression easier to work with.</li>
-    <li>I can determine whether two expressions are equivalent by using structure, substitution, or properties.</li>
-  </ul>
+<div class="objectives"><p><strong>Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.</strong></p><p><strong>I can statements</strong></p><ul><li>I can recognize static equilibrium and dynamic equilibrium.</li><li>I can explain why an object at rest can still have forces acting on it.</li><li>I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.</li></ul></div>
+<h2 class="h-vocab">Vocabulary Preview</h2>
+<div class="vocab-box">
+<p class="vocab-note">Skim the terms first. In the blank space, jot a word, example, picture, or question you already connect to each term. Definitions come later.</p>
+<table class="vocab-sort"><tr><th>Term</th><th>Before the reading: my connection / question</th></tr><tr><td><strong>mechanical equilibrium</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>static equilibrium</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>dynamic equilibrium</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>balanced forces</strong></td><td class="vocab-sort-space"></td></tr><tr><td><strong>constant velocity</strong></td><td class="vocab-sort-space"></td></tr></table>
 </div>
-
-<!-- WHAT'S TO COME -->
 <h2 class="h-preview">What's To Come</h2>
-<p>This is a long-range preview for future lessons. Do not solve it today. Instead, annotate it individually. Circle anything familiar, underline symbols or directions that seem important, and write notes about what information you think will be needed later.</p>
-<p>As you annotate, ask yourself: What parts (words, symbols, graphs) do you KNOW? What parts look FAMILIAR? What parts look like jibberish?</p>
-<div class="annotation-box">
-  <p>Create a real context that can be represented by both $8x+20$ and $4(2x+5)$. Then explain what each form reveals about the situation and give one input-output check that confirms equivalence.</p>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- INTRO -->
-<h2 class="h-intro">Intro</h2>
-<div class="strategy-box">
-  <p><strong>Directions</strong></p>
-  <p>Read the introduction aloud with a partner or in a small group. As you read, annotate the text by highlighting important ideas, circling key vocabulary, and writing short notes about connections, questions, or predictions in the margins.</p>
-</div>
-<div class="reading-box">
-  <p>Algebraic expressions use numbers, variables, operations, and grouping. In an expression like $5x+12$, the coefficient of $x$ is 5 because it tells how many groups of $x$ are being counted. The constant 12 is a fixed amount that does not change with $x$.</p>
-  <p>Two expressions can look different but still give the same output for every input. That happens when properties of operations, such as distribution or combining like terms, preserve the value. Substitution can check equivalence for a specific input, but structure explains why the equivalence always works.</p>
-  <p>Grouping shows repeated structure that might be hidden in a longer expression. If two terms both contain $(x+3)$, you can treat that group as a shared factor. This makes rewriting faster and can reveal meaning in a context.</p>
-  <p>Key representations in this section include algebraic expressions, equivalent forms, grouped terms and factors, context meanings for terms, and substitution checks. Each representation helps you see a different part of the same algebraic structure.</p>
-  <p>When a context describes cost, perimeter, or repeated quantities, the expression should match the story. Rewriting can reveal total groups, parts of a whole, or a simplified form that is easier to calculate.</p>
-</div>
-<div class="notes-ws ws-ruled"><span class="ws-label">Your notes</span></div>
-
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>What does a coefficient tell you in an expression like $5x+12$?</li>
-    <li>Why can two different-looking expressions be equivalent?</li>
-    <li>How can grouping help you rewrite an expression more efficiently?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 1 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Terms, coefficients, and constants</span>
-  </div>
-  <div class="math-notes-body">
-<p>Expression structure begins by naming the parts that are being added or subtracted.</p>
-<div class="rep-grid">
-<div class="rep-card"><h4>Term</h4><p>A piece of an expression separated by addition or subtraction.</p></div>
-<div class="rep-card"><h4>Coefficient</h4><p>The number multiplying a variable, such as 5 in $5x$.</p></div>
-<div class="rep-card"><h4>Constant</h4><p>A number with no variable, such as 12 in $5x+12$.</p></div>
-<div class="rep-card"><h4>Like terms</h4><p>Terms with the same variable part, such as $2x$ and $7x$.</p></div>
-</div>
-<p><strong>Example:</strong> In $4x^2+6x+3x+9$, the like terms $6x$ and $3x$ can combine to $9x$.</p>
-  </div>
-</div>
-
-<!-- EXAMPLE 1 -->
-<h3 class="h-example">Example 1: Identify a Coefficient</h3>
-<p>Consider the expression $7x+18$.</p>
-<ol>
-  <li>Identify the coefficient of $x$.</li>
-  <li>Identify the constant term.</li>
-  <li>Explain what the coefficient could mean in a context.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 1 -->
-<h3 class="h-yti">You Try It 1: Parts of an Expression</h3>
-<p>Consider the expression $9x+4$.</p>
-<ol>
-  <li>Identify the coefficient of $x$.</li>
-  <li>Identify the constant term.</li>
-  <li>Write a context where the coefficient has meaning.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS A -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>How is a coefficient different from a constant?</li>
-    <li>What context could make each part meaningful?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 2 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Combining like terms</span>
-  </div>
-  <div class="math-notes-body">
-<p>Combine only terms with the same variable part. Coefficients can add, but exponents and variables do not change.</p>
-<table class="values">
-<tr><th>Expression</th><th>Like-term groups</th><th>Simplified form</th></tr>
-<tr><td>$2x+5x+4+9$</td><td>$2x+5x$ and $4+9$</td><td>$7x+13$</td></tr>
-<tr><td>$3a^2+2a+a^2+7a$</td><td>$3a^2+a^2$ and $2a+7a$</td><td>$4a^2+9a$</td></tr>
-</table>
-<p><strong>Context:</strong> Like terms count the same kind of quantity, such as combining two groups of notebooks but not notebooks with fixed fees.</p>
-  </div>
-</div>
-
-<!-- EXAMPLE 2 -->
-<h3 class="h-example">Example 2: Combine Like Terms</h3>
-<p>Simplify the expression by grouping like terms.</p>
-<ol>
-  <li>Simplify $3x+4x+8+2x+5$.</li>
-  <li>Name the like-term groups you combined.</li>
-  <li>Explain why the constants cannot combine with the $x$-terms.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 2 -->
-<h3 class="h-yti">You Try It 2: Simplify Like Terms</h3>
-<p>Simplify by combining like terms.</p>
-<ol>
-  <li>Simplify $6x+2+5x+9+x$.</li>
-  <li>Name the groups you combined.</li>
-  <li>Why does the variable part stay $x$?</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS B -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>What made the terms "like" in the Example and YTI?</li>
-    <li>What mistake would happen if constants were combined with $x$-terms?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 3 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Distribution with an area model</span>
-  </div>
-  <div class="math-notes-body">
-<p>Distribution multiplies each part inside a group by the factor outside the group.</p>
-<p>For $3(2x+5)$, multiply $3$ by both terms: $$3(2x+5)=3(2x)+3(5)=6x+15.$$</p>
-<figure class="notes-figure wu-img-500">
-<img src="figures/u1_s4_mn3_area_model.png" alt="Area model for distributing three across two x plus five."/>
-</figure>
-<p><strong>Context:</strong> If 3 teams each buy $2x+5$ items, the equivalent form $6x+15$ shows the total variable items and total fixed items.</p>
-  </div>
-</div>
-
-<!-- EXAMPLE 3 -->
-<h3 class="h-example">Example 3: Distribute and Simplify</h3>
-<p>Rewrite $5(3x+2)+4x$ in an equivalent simplified form.</p>
-<ol>
-  <li>Show the distribution step.</li>
-  <li>Combine like terms.</li>
-  <li>Use $x=2$ to check that the original and simplified forms match.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 3 -->
-<h3 class="h-yti">You Try It 3: Distribute and Check</h3>
-<p>Rewrite $4(2x+6)+3x$ in an equivalent simplified form.</p>
-<ol>
-  <li>Show distribution.</li>
-  <li>Combine like terms.</li>
-  <li>Check with $x=1$.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS C -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>How did the substitution check support equivalence?</li>
-    <li>Why does one matching input not replace showing the rewrite steps?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- MATH NOTES 4 -->
-<div class="math-notes">
-  <div class="math-notes-header">
-    <span class="math-notes-label">Math Notes</span>
-    <span class="math-notes-title">Repeated groups and equivalent forms</span>
-  </div>
-  <div class="math-notes-body">
-<p>When the same group appears in more than one term, you can combine the outside factors or distribute first.</p>
-<p>For $4(x+3)+2(x+3)$, the shared group is $(x+3)$:</p>
-$$4(x+3)+2(x+3)=(4+2)(x+3)=6(x+3)=6x+18.$$
-<table class="values">
-<tr><th>Form</th><th>What the form reveals</th></tr>
-<tr><td>$4(x+3)+2(x+3)$</td><td>two separate groups</td></tr>
-<tr><td>$6(x+3)$</td><td>six total copies of the same group</td></tr>
-<tr><td>$6x+18$</td><td>combined variable and constant parts</td></tr>
-</table>
-  </div>
-</div>
-
-<!-- EXAMPLE 4 -->
-<h3 class="h-example">Example 4: Analyze Repeated Structure</h3>
-<p>Analyze the expression $3(x+5)+7(x+5)$.</p>
-<ol>
-  <li>Rewrite it by combining the repeated group first.</li>
-  <li>Rewrite it by distributing first.</li>
-  <li>Which form makes the repeated group easiest to see? Explain.</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- YTI 4 -->
-<h3 class="h-yti">You Try It 4: Use Repeated Structure</h3>
-<p>Analyze $5(x+2)+4(x+2)$.</p>
-<ol>
-  <li>Rewrite by combining the repeated group first.</li>
-  <li>Rewrite by distributing first.</li>
-  <li>Which form makes the total number of groups clearest?</li>
-</ol>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- STOP AND DISCUSS D -->
-<div class="strategy-box stop-discuss">
-  <p><strong>Stop and Discuss</strong></p>
-  <ol>
-    <li>Which equivalent form made the structure easiest to explain?</li>
-    <li>When might the simplified form be more useful than the factored form?</li>
-  </ol>
-</div>
-<div class="notes-ws ws-ruled"></div>
-
-<!-- SUMMARY -->
-<h2 class="h-summary">Summary</h2>
-<div class="key-point">
-  <p>Expressions have structure: terms, coefficients, constants, factors, and groups all communicate meaning. Rewriting an expression should preserve the same value.</p>
-  <p>Combining like terms, distributing, factoring a repeated group, and substitution checks are tools for working with equivalent forms. Each form can reveal a different feature.</p>
-  <p>A common error is combining terms that are not like terms or distributing to only one term inside parentheses.</p>
-  <p>Strong understanding means you can rewrite accurately, explain why the forms are equivalent, and connect parts of an expression to a context.</p>
-</div>
-
-<!-- COMMON MISTAKES -->
-<h2 class="h-mistakes">Common Mistakes</h2>
-<div class="mistake-box">
-  <ul>
-    <li><strong>Combining unlike terms.</strong> Why it is tempting: all terms are in one expression. What to check instead: the variable part and exponent before combining.</li>
-    <li><strong>Partial distribution.</strong> Why it is tempting: students multiply the first term and stop. What to check instead: every term inside parentheses.</li>
-    <li><strong>Losing a constant.</strong> Why it is tempting: constants look small. What to check instead: fixed amounts after each rewrite step.</li>
-    <li><strong>Checking only by appearance.</strong> Why it is tempting: forms can look different. What to check instead: a structural reason or substitution check.</li>
-    <li><strong>Missing repeated groups.</strong> Why it is tempting: expanded form feels finished. What to check instead: shared factors such as $(x+3)$.</li>
-  </ul>
-</div>
-
-<!-- OPTIONAL REFLECTION -->
-<h2 class="h-reflection">Optional Future Task Reflection</h2>
-<div class="annotation-box">
-  <p>Look back at the future task. Do not solve it yet. Highlight one part that makes more sense now than it did at the beginning. Circle one part that still feels unfamiliar. Write one sentence about what representation you would look at first.</p>
-</div>
-
-<!-- EXIT TICKET -->
-<div class="exit-ticket-label">Exit Ticket</div>
-<div class="exit-ticket-grid">
-
-  <div class="et-cell">
-    <div class="et-cell-title">1 — Foundations · DoK 1</div>
-    <p>In $5x+12$, identify the coefficient of $x$.</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">2 — Build or Apply · DoK 2</div>
-    <p>Simplify by combining like terms: $2x+3x+3+4x^2+10+x$.</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">3 — What Did You Learn?</div>
-    <p>What is one idea about expressions and structure you understand better now than at the start of class? Write at least one complete sentence.</p>
-  </div>
-
-  <div class="et-cell">
-    <div class="et-cell-title">4 — What Do You Need Help With?</div>
-    <p>What is one thing about expressions and structure you still want to understand or practice? Be specific — name the idea, not just "everything."</p>
-  </div>
-
-</div>
-
-
-</div>
+<p>This is a long-range preview for this section. Do not solve it yet. Circle anything familiar, underline symbols, labels, conditions, data, or features that seem important, and write short notes about what you think may matter later.</p>
+<div class="annotation-box"><p>Consider four objects: a mug resting on a desk, a puck gliding straight at steady speed on nearly frictionless ice, a car moving around a circular track at steady speed, and a hanging lamp at rest.</p><p>Which cases might share the same net-force condition? Record a prediction and the evidence you would need to defend it later.</p></div>
+<div class="notes-ws ws-ruled" data-teacher-key="wtc"></div>
+<h2 class="h-intro">Content: Read, Represent, Annotate, Apply</h2>
+<div class="strategy-box"><p><strong>Directions</strong></p><p>Read in short chunks. Annotate the prose and representations together. Mark evidence, conditions, important quantities, labels, patterns, and questions.</p></div>
+<div class="reading-box"><h3>Reading 1: Mechanical Equilibrium Means Zero Net Force</h3><p><strong>Mechanical equilibrium</strong> occurs when the vector sum of the forces on an object is zero. The forces do not have to disappear. Instead, the upward/downward and left/right contributions balance so that the overall result is zero.</p><p>For a hanging or supported object at rest, the equilibrium rule can be seen directly in the force arrows. The source scaffold diagram shows upward support tensions balancing the combined downward weights.</p><figure class="notes-figure wu-img-650"><img src="figures/u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png" alt="Scaffold force diagram with upward tensions balancing downward weights."/><figcaption>Individual forces can be nonzero while their vector sum is zero.</figcaption></figure></div><div class="math-notes"><div class="math-notes-header"><span class="math-notes-label">Model Notes</span><span class="math-notes-title">The equilibrium rule</span></div><div class="math-notes-body"><p>Mechanical equilibrium requires $$\Sigma F=0.$$</p><p>In one dimension, choose a positive direction and add signed force components. In two dimensions, the forces must balance independently in the horizontal and vertical directions.</p></div></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>What does $\Sigma F=0$ tell you about the net force? What does it <em>not</em> tell you about each individual force?</li><li>For a lamp hanging motionless, how must upward tension compare with downward weight?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd1"></div><h3 class="h-example">Example 1: Balance Tension and Weight</h3><p>A lamp hangs at rest. The cable tension is 64 N upward. What must the lamp weight be for equilibrium?</p><div class="notes-ws ws-ruled" data-teacher-key="ex1"></div><h3 class="h-yti">You Try It 1: Find a Supporting Tension</h3><p>A 90 N sign hangs at rest from a vertical cable. What tension is required?</p><div class="notes-ws ws-ruled" data-teacher-key="yti1"></div><div class="reading-box"><h3>Reading 2: Static and Dynamic Equilibrium</h3><p><strong>Static equilibrium</strong> describes an object at rest with zero net force. <strong>Dynamic equilibrium</strong> describes an object moving with <strong>constant velocity</strong> while the net force remains zero. These motion states look different, but both satisfy Newton's First Law because the velocity does not change.</p><figure class="notes-figure wu-img-500"><img src="figures/u1_s4_notes_constant_velocity.png" alt="Velocity-versus-time graph showing the same positive velocity throughout the interval."/><figcaption>A horizontal velocity-time graph shows unchanged velocity, the motion condition associated with dynamic equilibrium.</figcaption></figure><p>The word <em>velocity</em> includes direction. Constant speed in a straight line is constant velocity; constant speed while turning is not, because the direction changes.</p></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>What force condition is shared by a mug at rest and a cart moving straight at constant velocity?</li><li>Why is “constant speed” not enough by itself to prove dynamic equilibrium?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd2"></div><h3 class="h-example">Example 2: Recognize Dynamic Equilibrium</h3><p>A train travels east in a straight line at constant velocity. What net force is consistent with this motion?</p><div class="notes-ws ws-ruled" data-teacher-key="ex2"></div><h3 class="h-yti">You Try It 2: Explain Equilibrium While Moving</h3><p>A cart moves west at constant speed in a straight line. Explain why this can be equilibrium even though the cart is moving.</p><div class="notes-ws ws-ruled" data-teacher-key="yti2"></div><div class="reading-box"><h3>Reading 3: Balance Must Hold in Every Direction</h3><p><strong>Balanced forces</strong> mean the vector sum is zero. In a force diagram, you can test this one direction at a time. Horizontal forces must cancel one another, and vertical forces must cancel one another, for the full two-dimensional net force to be zero.</p><figure class="notes-figure wu-img-500"><img src="figures/u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png" alt="Gymnast supported by two ropes in positions that distribute her weight differently between the supports."/><figcaption>Equilibrium does not require equal individual support forces; it requires their combined effect to balance the weight.</figcaption></figure><p>Motion evidence is the final consistency check. A car moving around a circular track may keep the same speed, but its direction changes continuously. Since its velocity changes, its force model cannot have a zero net force. By contrast, straight-line constant-speed motion can be consistent with equilibrium.</p></div><div class="strategy-box stop-discuss"><p><strong>Stop and Discuss</strong></p><ol><li>Can two support forces be unequal and still produce equilibrium? What must their combined effect do?</li><li>Which part of velocity changes when an object turns at constant speed? What does that imply about net force?</li></ol></div><div class="notes-ws ws-ruled" data-teacher-key="sd3"></div><h3 class="h-example">Example 3: Verify Balanced Horizontal Forces</h3><p>A box is pushed 35 N right while friction is 35 N left. Classify the horizontal forces and state the net horizontal force.</p><div class="notes-ws ws-ruled" data-teacher-key="ex3"></div><h3 class="h-yti">You Try It 3: State the Equilibrium Rule</h3><p>A 48 N rightward force and a 48 N leftward force act on an object. If its vertical forces also balance, what equilibrium condition is satisfied?</p><div class="notes-ws ws-ruled" data-teacher-key="yti3"></div><h3 class="h-example">Example 4: Distinguish Constant Speed from Constant Velocity</h3><p>A car moves around a circular track at constant speed. Is constant speed alone enough to prove equilibrium? Explain.</p><div class="notes-ws ws-ruled" data-teacher-key="ex4"></div><h3 class="h-yti">You Try It 4: Check the Direction Condition</h3><p>A bicycle moves straight ahead with constant speed. What additional condition must hold for mechanical equilibrium?</p><div class="notes-ws ws-ruled" data-teacher-key="yti4"></div><h2 class="h-vocab">Vocabulary Definitions</h2><div class="vocab-box"><table class="roomy-table"><tr><th>Term</th><th>Meaning in this section</th></tr><tr><td><strong>mechanical equilibrium</strong></td><td>A force condition in which the vector sum of all forces on the object is zero.</td></tr><tr><td><strong>static equilibrium</strong></td><td>Mechanical equilibrium while the object remains at rest.</td></tr><tr><td><strong>dynamic equilibrium</strong></td><td>Mechanical equilibrium while the object moves with constant velocity.</td></tr><tr><td><strong>balanced forces</strong></td><td>Forces whose vector sum is zero.</td></tr><tr><td><strong>constant velocity</strong></td><td>Motion with unchanged speed and unchanged direction.</td></tr></table></div><h2 class="h-summary">Summary</h2><div class="key-point"><ul class="summary-list"><li>Mechanical equilibrium means $\Sigma F=0$, not that no forces act.</li><li>Static equilibrium is rest with zero net force; dynamic equilibrium is constant velocity with zero net force.</li><li>Force balance must hold in each direction, not just in the diagram as a whole.</li><li>Individual forces can be unequal and still combine to a zero resultant.</li><li>Constant speed while turning is not equilibrium because the velocity direction changes.</li></ul></div><div class="workspace-220" data-teacher-key="summary"><span class="ws-label">Summary notes / questions / connections</span></div><h2 class="h-mistakes">Common Mistakes</h2><div class="mistake-box"><table class="mistake-table"><tr><th>Mistake</th><th>Why it is tempting</th><th>Check instead</th></tr><tr><td>“Equilibrium means no forces.”</td><td>The object may look inactive.</td><td>Look for nonzero forces that cancel in the vector sum.</td></tr><tr><td>“Equilibrium means the object is at rest.”</td><td>Static equilibrium is the first example students meet.</td><td>Remember dynamic equilibrium: constant straight-line velocity also has zero net force.</td></tr><tr><td>Assuming every support force must be equal.</td><td>Symmetric examples often have equal supports.</td><td>Check the vector sum; unequal forces can still combine to the required balance.</td></tr><tr><td>Using constant speed as proof of equilibrium.</td><td>Speed is easy to observe.</td><td>Check direction too; constant velocity requires both speed and direction to stay unchanged.</td></tr></table></div></div>
 </body>
 </html>
