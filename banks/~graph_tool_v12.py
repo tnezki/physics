@@ -2043,22 +2043,3 @@ def make_algebra_tiles(expression, filename='algebra_tiles.png'):
 # PASTE YOUR GRAPH CODE BELOW THIS LINE
 # ─────────────────────────────────────────────────────────────────────────────
 
-
-
-# =============================================================================
-# UNIT 1 SECTION 2 NOTES GRAPH-GENERATION BLOCKS - APPENDED BELOW AUTHORITATIVE TOOL
-# =============================================================================
-if __name__ == '__main__':
-    fig, ax = plt.subplots(figsize=(4.5, 3.2))
-    make_context_graph(
-        ax,
-        functions=[{'expr': lambda t: 2 + 3*t, 'deriv': lambda t: np.full_like(t, 3.0), 'color': 'steelblue'}],
-        xmin=0, xmax=5,
-        ymin=0, ymax=20,
-        xlabel='Time (s)',
-        ylabel='Position (m)',
-        title='Steady Straight-Line Motion'
-    )
-    save_graph(fig, 'u1_s2_notes_steady_motion.png')
-    plt.close(fig)
-

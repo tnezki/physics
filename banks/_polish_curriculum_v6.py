@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-polish_curriculum_v2.py
+~polish_curriculum_v6.py
 
 Deterministic first-pass curriculum polisher.
 
@@ -20,21 +20,21 @@ EASIEST / VS CODE MODE:
     Put this script in the folder you want to polish and press Run.
     With no command-line arguments it polishes THAT FOLDER IN PLACE.
 
-    If fix_mathjax_v5.py is in the same folder, it is detected and run first.
+    If ~fix_mathjax_v7.py is in the same folder, it is detected and run first.
 
 Command-line modes still work:
 
 Folder:
-    python polish_curriculum_v2.py /path/to/folder
+    python ~polish_curriculum_v6.py /path/to/folder
 
 ZIP:
-    python polish_curriculum_v2.py /path/to/package.zip
+    python ~polish_curriculum_v6.py /path/to/package.zip
 
 Single file:
-    python polish_curriculum_v2.py /path/to/file.html
+    python ~polish_curriculum_v6.py /path/to/file.html
 
 Optional MathJax fixer:
-    python polish_curriculum_v2.py package.zip --mathjax-fixer fix_mathjax_v5.py
+    python ~polish_curriculum_v6.py package.zip --mathjax-fixer ~fix_mathjax_v7.py
 
 By default, explicit command-line targets preserve originals:
 - ZIP -> <name>_polished.zip
@@ -160,6 +160,157 @@ META_LANGUAGE_PATTERNS = [
     re.compile(r"\bRepresentation provided for the item\.?", re.IGNORECASE),
 ]
 
+# V6 — severity + Notes-specific structural audits.
+HARD_FAILURE_MARKERS = (
+    "HARD: ",
+    "BANK STRUCTURE:",
+    "BANK ID RESOLUTION:",
+    "broken local reference:",
+)
+
+NOTES_FILENAME_RE = re.compile(
+    r'^u\d+_\d+_notes(?:_teacher)?\.html$',
+    re.IGNORECASE,
+)
+
+EXAMPLE_HEADING_RE = re.compile(
+    r'<h3\b[^>]*class=["\'][^"\']*\bh-example\b[^"\']*["\'][^>]*>(.*?)</h3>',
+    re.IGNORECASE | re.DOTALL,
+)
+YTI_HEADING_RE = re.compile(
+    r'<h3\b[^>]*class=["\'][^"\']*\bh-yti\b[^"\']*["\'][^>]*>(.*?)</h3>',
+    re.IGNORECASE | re.DOTALL,
+)
+FIGURE_BLOCK_RE = re.compile(
+    r'<figure\b[^>]*>(.*?)</figure>',
+    re.IGNORECASE | re.DOTALL,
+)
+IMG_TAG_RE = re.compile(r'<img\b[^>]*>', re.IGNORECASE | re.DOTALL)
+ALT_ATTR_RE = re.compile(r'\balt=["\']([^"\']*)["\']', re.IGNORECASE | re.DOTALL)
+SRC_ATTR_RE = re.compile(r'\bsrc=["\']([^"\']*)["\']', re.IGNORECASE | re.DOTALL)
+GENERIC_ALT_RE = re.compile(
+    r'^(?:figure|graph|diagram|image|chart|plot|visual|illustration|'
+    r'instructional figure(?: for this notes item)?)[\s.:-]*$',
+    re.IGNORECASE,
+)
+
+ANSWER_SOLUTION_PAIR_RE = re.compile(
+    r'<p\b(?P<aattrs>[^>]*)>\s*<strong>\s*Answer:\s*</strong>(?P<answer>.*?)</p>'
+    r'\s*<p\b(?P<sattrs>[^>]*)>\s*<strong>\s*Solution:\s*</strong>(?P<solution>.*?)</p>',
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def is_hard_failure(finding: str) -> bool:
+    return any(marker in finding for marker in HARD_FAILURE_MARKERS)
+
+
+def _heading_numbers(matches: list[str], label: str) -> list[int]:
+    nums = []
+    pattern = re.compile(rf'\b{re.escape(label)}\s+(\d+)\b', re.IGNORECASE)
+    for body in matches:
+        visible = strip_tags(body)
+        m = pattern.search(visible)
+        if m:
+            nums.append(int(m.group(1)))
+    return nums
+
+
+def audit_notes_html(path: Path, text: str) -> list[str]:
+    """Conservative structural/accessibility checks for canonical Notes HTML."""
+    findings: list[str] = []
+    if not NOTES_FILENAME_RE.match(path.name):
+        return findings
+
+    examples = EXAMPLE_HEADING_RE.findall(text)
+    ytis = YTI_HEADING_RE.findall(text)
+    ex_nums = _heading_numbers(examples, "Example")
+    yti_nums = _heading_numbers(ytis, "You Try It")
+
+    if not examples or not ytis:
+        findings.append(
+            f"HARD: NOTES STRUCTURE: found {len(examples)} real Example heading(s) and "
+            f"{len(ytis)} real YTI heading(s)"
+        )
+    elif len(examples) != len(ytis):
+        findings.append(
+            f"HARD: NOTES STRUCTURE: {len(examples)} real Example heading(s) vs "
+            f"{len(ytis)} real YTI heading(s)"
+        )
+
+    if ex_nums and ex_nums != list(range(1, len(ex_nums) + 1)):
+        findings.append(
+            f"HARD: NOTES STRUCTURE: Example numbering is not contiguous from 1: {ex_nums}"
+        )
+    if yti_nums and yti_nums != list(range(1, len(yti_nums) + 1)):
+        findings.append(
+            f"HARD: NOTES STRUCTURE: YTI numbering is not contiguous from 1: {yti_nums}"
+        )
+
+    # Student and teacher Notes use the same figures, so report alt-text issues
+    # once on the student file rather than duplicating the same review note.
+    if "_teacher" not in path.stem.lower():
+        generic_alts = []
+        for fig in FIGURE_BLOCK_RE.findall(text):
+            for img in IMG_TAG_RE.findall(fig):
+                alt_m = ALT_ATTR_RE.search(img)
+                src_m = SRC_ATTR_RE.search(img)
+                alt = html_lib.unescape(alt_m.group(1)).strip() if alt_m else ""
+                src = src_m.group(1).strip() if src_m else "[unknown src]"
+                if not alt or GENERIC_ALT_RE.match(alt):
+                    generic_alts.append(src)
+        if generic_alts:
+            preview = ", ".join(generic_alts[:5])
+            if len(generic_alts) > 5:
+                preview += ", ..."
+            findings.append(
+                f"GENERIC/EMPTY FIGURE ALT TEXT: {len(generic_alts)} instructional figure(s). "
+                f"Sample: {preview}"
+            )
+
+    if "_teacher" in path.stem.lower():
+        duplicate_pairs = 0
+        for m in ANSWER_SOLUTION_PAIR_RE.finditer(text):
+            attrs = (m.group('aattrs') + ' ' + m.group('sattrs')).lower()
+            if 'color:red' not in attrs or 'font-weight:bold' not in attrs:
+                continue
+            answer = strip_tags(m.group('answer')).strip().casefold()
+            solution = strip_tags(m.group('solution')).strip().casefold()
+            if answer and answer == solution:
+                duplicate_pairs += 1
+        if duplicate_pairs:
+            findings.append(
+                f"REDUNDANT TEACHER ANSWER/SOLUTION: {duplicate_pairs} adjacent pair(s) are identical"
+            )
+
+    return findings
+
+
+def audit_notes_student_teacher_pairs(root: Path) -> list[str]:
+    findings: list[str] = []
+    students = [
+        p for p in root.rglob('u*_notes.html')
+        if p.is_file() and NOTES_FILENAME_RE.match(p.name) and '_teacher' not in p.stem.lower()
+    ]
+    for student in students:
+        teacher = student.with_name(student.stem + '_teacher.html')
+        if not teacher.exists():
+            findings.append(
+                f"{student.relative_to(root)} -> HARD: NOTES PAIR MISMATCH: teacher file is missing"
+            )
+            continue
+        st = read_text(student) or ''
+        tt = read_text(teacher) or ''
+        s_counts = (len(EXAMPLE_HEADING_RE.findall(st)), len(YTI_HEADING_RE.findall(st)))
+        t_counts = (len(EXAMPLE_HEADING_RE.findall(tt)), len(YTI_HEADING_RE.findall(tt)))
+        if s_counts != t_counts:
+            findings.append(
+                f"{student.relative_to(root)} -> HARD: NOTES PAIR MISMATCH: "
+                f"student EX/YTI={s_counts[0]}/{s_counts[1]} vs "
+                f"teacher EX/YTI={t_counts[0]}/{t_counts[1]}"
+            )
+    return findings
+
 # Simple targeted semantic audit for a known production failure.
 # It reports only; it does NOT auto-fix.
 GCF_LINEAR_RE = re.compile(
@@ -183,6 +334,21 @@ def is_junk_path(path: Path) -> bool:
     return False
 
 
+def is_polish_helper_script(path: Path) -> bool:
+    """
+    Exclude the polishing tools themselves from curriculum-content audits.
+
+    Downloaded copies are sometimes prefixed with "~", so normalize that away.
+    """
+    name = path.name.lstrip("~_").lower()
+    return (
+        name.startswith("fix_mathjax_v")
+        or name.startswith("polish_curriculum_v")
+        or name == "run_polish.py"
+        or name == "run_all.py"
+    )
+
+
 def read_text(path: Path) -> str | None:
     try:
         return path.read_text(encoding="utf-8")
@@ -199,6 +365,71 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+
+NOTES_FIGURE_OPEN_RE = re.compile(
+    r'(?P<open><figure\b(?P<fattrs>[^>]*)>)'
+    r'(?P<ws>\s*)'
+    r'(?P<imgopen><img\b(?P<iattrs>[^>]*)>)',
+    re.IGNORECASE,
+)
+CLASS_ATTR_RE = re.compile(
+    r'\sclass=(?P<q>["\'])(?P<classes>[^"\']*)(?P=q)',
+    re.IGNORECASE,
+)
+NOTES_FIGURE_CLASS_RE = re.compile(r'^(?:notes-figure|wu-img-\d{3})$')
+
+
+def move_notes_figure_classes(text: str) -> tuple[str, int]:
+    """
+    Repair the common Notes HTML mistake:
+      <figure><img class="notes-figure wu-img-500" ...></figure>
+
+    Canonical notes.css expects:
+      <figure class="notes-figure wu-img-500"><img ...></figure>
+
+    Only notes-figure / wu-img-NNN tokens move. Any unrelated img classes stay.
+    """
+    moved_blocks = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal moved_blocks
+        fattrs = m.group("fattrs")
+        iattrs = m.group("iattrs")
+
+        icm = CLASS_ATTR_RE.search(iattrs)
+        if not icm:
+            return m.group(0)
+
+        img_classes = icm.group("classes").split()
+        move = [c for c in img_classes if NOTES_FIGURE_CLASS_RE.match(c)]
+        if not move:
+            return m.group(0)
+
+        remain = [c for c in img_classes if c not in move]
+
+        # Remove/rebuild class on the img.
+        if remain:
+            new_img_class = f' class={icm.group("q")}{" ".join(remain)}{icm.group("q")}'
+        else:
+            new_img_class = ""
+        iattrs = iattrs[:icm.start()] + new_img_class + iattrs[icm.end():]
+
+        # Merge moved tokens into any existing figure class.
+        fcm = CLASS_ATTR_RE.search(fattrs)
+        if fcm:
+            existing = fcm.group("classes").split()
+            merged = existing + [c for c in move if c not in existing]
+            new_fclass = f' class={fcm.group("q")}{" ".join(merged)}{fcm.group("q")}'
+            fattrs = fattrs[:fcm.start()] + new_fclass + fattrs[fcm.end():]
+        else:
+            fattrs = fattrs + f' class="{" ".join(move)}"'
+
+        moved_blocks += 1
+        return f"<figure{fattrs}>{m.group('ws')}<img{iattrs}>"
+
+    return NOTES_FIGURE_OPEN_RE.sub(repl, text), moved_blocks
+
+
 def safe_polish_text(path: Path, text: str) -> tuple[str, list[str]]:
     fixes: list[str] = []
 
@@ -208,6 +439,12 @@ def safe_polish_text(path: Path, text: str) -> tuple[str, list[str]]:
         if n:
             text = GENERIC_FIGCAPTION_RE.sub("", text)
             fixes.append(f"{n}x removed generic figure caption")
+
+        text, n = move_notes_figure_classes(text)
+        if n:
+            fixes.append(
+                f"{n}x moved notes-figure / wu-img class(es) from img to parent figure"
+            )
 
     # Avoid rewriting Python/JS/CSS prose patterns.
     if path.suffix.lower() in {".html", ".htm", ".txt", ".csv", ".md"}:
@@ -264,41 +501,46 @@ def normalize_prompt(text: str) -> str:
 def audit_bank_html(html_path: Path, text: str) -> list[str]:
     warnings: list[str] = []
 
-    article_matches = list(
-        re.finditer(
-            r"<article\b[^>]*class=[\"'][^\"']*\bbank-item\b[^\"']*[\"'][^>]*"
-            r"id=[\"']([^\"']+)[\"'][^>]*>(.*?)</article>",
-            text,
-            flags=re.IGNORECASE | re.DOTALL,
-        )
-    )
-
-    # Some generators place id before class. Fall back to article extraction.
-    if not article_matches:
-        article_matches = []
-        for m in re.finditer(
-            r"<article\b([^>]*)>(.*?)</article>",
-            text,
-            flags=re.IGNORECASE | re.DOTALL,
-        ):
-            attrs, body = m.group(1), m.group(2)
-            if not re.search(r"class=[\"'][^\"']*\bbank-item\b", attrs, re.I):
-                continue
-            idm = re.search(r"\bid=[\"']([^\"']+)[\"']", attrs, re.I)
-            if idm:
-                # synthesize a tuple-like small object by storing directly below
-                article_matches.append((idm.group(1), body))
-
+    # Parse each complete Bank article. Do not search for a loose "id=" token
+    # because attributes such as data-mastery-goal-id= also contain that text.
     article_ids: list[str] = []
     article_bodies: list[tuple[str, str]] = []
-    if article_matches and hasattr(article_matches[0], "group"):
-        for m in article_matches:
-            article_ids.append(m.group(1))
-            article_bodies.append((m.group(1), m.group(2)))
-    else:
-        for item_id, body in article_matches:
-            article_ids.append(item_id)
-            article_bodies.append((item_id, body))
+
+    for m in re.finditer(
+        r"<article\b(?P<attrs>[^>]*)>(?P<body>.*?)</article>",
+        text,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        attrs = m.group("attrs")
+        body = m.group("body")
+
+        if not re.search(
+            r'class=["\'][^"\']*\bbank-item\b[^"\']*["\']',
+            attrs,
+            re.IGNORECASE,
+        ):
+            continue
+
+        # Prefer canonical data-bank-id; fall back to the REAL id attribute.
+        bank_id_match = re.search(
+            r'\bdata-bank-id=["\']([^"\']+)["\']',
+            attrs,
+            re.IGNORECASE,
+        )
+        if bank_id_match:
+            item_id = bank_id_match.group(1)
+        else:
+            id_match = re.search(
+                r'(?:^|\s)id=["\']([^"\']+)["\']',
+                attrs,
+                re.IGNORECASE,
+            )
+            if not id_match:
+                continue
+            item_id = id_match.group(1)
+
+        article_ids.append(item_id)
+        article_bodies.append((item_id, body))
 
     # Mapping CSV in same directory.
     mappings = list(html_path.parent.glob("*_mapping.csv"))
@@ -316,52 +558,75 @@ def audit_bank_html(html_path: Path, text: str) -> list[str]:
                 f"{len(rows)} mapping rows in {mapping.name}"
             )
 
-        # Resolve likely ID column.
         if rows:
             keys = list(rows[0].keys())
             id_key = next(
-                (k for k in keys if (k or "").strip().lower() in {"bank_id", "bank item id", "item_id", "id"}),
+                (
+                    k for k in keys
+                    if (k or "").strip().lower()
+                    in {"bank_id", "bank item id", "item_id", "id"}
+                ),
                 None,
             )
             if id_key:
-                mapped_ids = [r.get(id_key, "").strip() for r in rows if r.get(id_key)]
+                mapped_ids = [
+                    r.get(id_key, "").strip()
+                    for r in rows
+                    if r.get(id_key)
+                ]
                 html_counts = Counter(article_ids)
                 unresolved = [x for x in mapped_ids if html_counts[x] != 1]
                 if unresolved:
+                    preview = ", ".join(unresolved[:5])
+                    if len(unresolved) > 5:
+                        preview += ", ..."
                     warnings.append(
-                        f"BANK ID RESOLUTION: {len(unresolved)} mapped ID(s) do not resolve exactly once"
+                        f"BANK ID RESOLUTION: {len(unresolved)} mapped ID(s) "
+                        f"do not resolve exactly once. Sample: {preview}"
                     )
 
-    # Rough cross-destination exact prompt duplicate audit.
+    # Cross-destination exact-prompt candidate audit.
+    # Only inspect the student-facing portion of each article. Teacher answers
+    # are intentionally excluded from the duplicate comparison.
     normalized_to_ids: dict[str, list[str]] = defaultdict(list)
     for item_id, body in article_bodies:
-        visible = strip_tags(body)
+        student_body = body.split(
+            '<details class="teacher-answer"',
+            1,
+        )[0]
+        visible = strip_tags(student_body)
         norm = normalize_prompt(visible)
         if len(norm) >= 20:
             normalized_to_ids[norm].append(item_id)
 
-    duplicate_groups = [ids for ids in normalized_to_ids.values() if len(ids) > 1]
+    duplicate_groups = [
+        ids for ids in normalized_to_ids.values()
+        if len(ids) > 1
+    ]
     if duplicate_groups:
         total_extra = sum(len(ids) - 1 for ids in duplicate_groups)
-        sample = "; ".join(", ".join(ids[:4]) for ids in duplicate_groups[:5])
+        sample = "; ".join(
+            ", ".join(ids[:4])
+            for ids in duplicate_groups[:5]
+        )
         warnings.append(
-            f"EXACT/NEAR PROMPT DUPLICATION CANDIDATES: {len(duplicate_groups)} group(s), "
-            f"{total_extra} extra copy/copies. Sample: {sample}"
+            f"EXACT/NEAR PROMPT DUPLICATION CANDIDATES: "
+            f"{len(duplicate_groups)} group(s), {total_extra} extra copy/copies. "
+            f"Sample: {sample}"
         )
 
     return warnings
-
 
 def audit_text_file(path: Path, text: str) -> list[str]:
     warnings: list[str] = []
 
     if path.suffix.lower() in {".html", ".htm", ".txt", ".csv"}:
         if unescaped_dollar_count(text) % 2:
-            warnings.append("odd number of unescaped $ delimiters")
+            warnings.append("HARD: odd number of unescaped $ delimiters")
 
     n = len(ESCAPED_STRUCTURAL_HTML_RE.findall(text))
     if n:
-        warnings.append(f"{n} escaped structural HTML tag pattern(s) remain")
+        warnings.append(f"HARD: {n} escaped structural HTML tag pattern(s) remain")
 
     n = len(MERGED_RELATION_RE.findall(text))
     if n:
@@ -378,7 +643,7 @@ def audit_text_file(path: Path, text: str) -> list[str]:
         for pat in UNRESOLVED_TEMPLATE_PATTERNS:
             n = len(pat.findall(text))
             if n:
-                warnings.append(f"{n} unresolved template/TODO pattern(s): {pat.pattern}")
+                warnings.append(f"HARD: {n} unresolved template/TODO pattern(s): {pat.pattern}")
 
     for pat in META_LANGUAGE_PATTERNS:
         n = len(pat.findall(text))
@@ -398,10 +663,77 @@ def audit_text_file(path: Path, text: str) -> list[str]:
             )
 
     if path.suffix.lower() in {".html", ".htm"}:
+        bad_notes_fig = len(re.findall(
+            r'<figure\b[^>]*>\s*<img\b[^>]*class=["\'][^"\']*\bnotes-figure\b',
+            text,
+            flags=re.IGNORECASE,
+        ))
+        if bad_notes_fig:
+            warnings.append(
+                f"{bad_notes_fig} Notes figure(s) still place notes-figure on <img> instead of <figure>"
+            )
+
+        warnings.extend(audit_notes_html(path, text))
         warnings.extend(audit_bank_html(path, text))
 
     return warnings
 
+
+
+def audit_summative_source_maps(root: Path) -> list[str]:
+    """
+    Check internal metadata consistency in *_summative_source_map.csv files.
+
+    Current important check:
+      calculator_rule should not contradict an explicit notes value of
+      "calculator-permitted" or "non-calculator".
+
+    This is audit-only. It does not guess which field is authoritative.
+    """
+    warnings: list[str] = []
+
+    for path in root.rglob("*_summative_source_map.csv"):
+        if is_junk_path(path):
+            continue
+        try:
+            with path.open("r", encoding="utf-8-sig", newline="") as f:
+                rows = list(csv.DictReader(f))
+        except Exception as exc:
+            warnings.append(
+                f"{path.relative_to(root)} -> could not read source map: {exc}"
+            )
+            continue
+
+        mismatches = []
+        for row in rows:
+            rule = (row.get("calculator_rule") or "").strip().lower()
+            note = (row.get("notes") or "").strip().lower()
+            if note in {"calculator-permitted", "non-calculator"} and rule:
+                if rule != note:
+                    mismatches.append(
+                        (
+                            row.get("version", ""),
+                            row.get("displayed_item_number", ""),
+                            row.get("bank_id", ""),
+                            rule,
+                            note,
+                        )
+                    )
+
+        if mismatches:
+            sample = "; ".join(
+                f"{v} Q{q} {bid}: calculator_rule={rule}, notes={note}"
+                for v, q, bid, rule, note in mismatches[:5]
+            )
+            if len(mismatches) > 5:
+                sample += "; ..."
+            warnings.append(
+                f"{path.relative_to(root)} -> SUMMATIVE CALCULATOR METADATA: "
+                f"{len(mismatches)} row(s) have contradictory calculator_rule "
+                f"and notes values. Sample: {sample}"
+            )
+
+    return warnings
 
 def audit_local_links(root: Path) -> list[str]:
     warnings: list[str] = []
@@ -503,6 +835,8 @@ def polish_tree(root: Path, fixer: Path | None) -> tuple[list[str], list[str]]:
     for path in sorted(root.rglob("*")):
         if not path.is_file() or is_junk_path(path):
             continue
+        if is_polish_helper_script(path):
+            continue
         if path.suffix.lower() not in TEXT_SUFFIXES:
             continue
         text = read_text(path)
@@ -520,11 +854,22 @@ def polish_tree(root: Path, fixer: Path | None) -> tuple[list[str], list[str]]:
             warnings.append(f"{path.relative_to(root)}: {warning}")
 
     warnings.extend(audit_local_links(root))
+    warnings.extend(audit_summative_source_maps(root))
+    warnings.extend(audit_notes_student_teacher_pairs(root))
     return fixes, warnings
 
 
 def report_text(target_label: str, fixes: list[str], warnings: list[str]) -> str:
-    status = "PASS" if not warnings else "PASS WITH REVIEW NOTES"
+    hard = [w for w in warnings if is_hard_failure(w)]
+    review = [w for w in warnings if not is_hard_failure(w)]
+
+    if hard:
+        status = "FAIL — DO NOT DEPLOY"
+    elif review:
+        status = "PASS WITH REVIEW NOTES"
+    else:
+        status = "PASS"
+
     lines = [
         "DETERMINISTIC POLISH REPORT",
         "=" * 72,
@@ -537,9 +882,15 @@ def report_text(target_label: str, fixes: list[str], warnings: list[str]) -> str
     else:
         lines.append("  - NONE")
 
-    lines.extend(["", "AUDIT / REVIEW NOTES"])
-    if warnings:
-        lines.extend(f"  - {x}" for x in warnings)
+    lines.extend(["", "HARD FAILURES"])
+    if hard:
+        lines.extend(f"  - {x}" for x in hard)
+    else:
+        lines.append("  - NONE")
+
+    lines.extend(["", "REVIEW NOTES"])
+    if review:
+        lines.extend(f"  - {x}" for x in review)
     else:
         lines.append("  - NONE")
 
@@ -668,7 +1019,7 @@ def main() -> int:
         "--mathjax-fixer",
         type=Path,
         default=None,
-        help="Optional fix_mathjax_v5.py (or newer) path",
+        help="Optional ~fix_mathjax_v7.py (or newer) path",
     )
     parser.add_argument(
         "--in-place",
@@ -694,14 +1045,16 @@ def main() -> int:
         print(f"Target not found: {target}", file=sys.stderr)
         return 2
 
-    # If no fixer was explicitly supplied, automatically use fix_mathjax_v5.py
-    # (or the highest-numbered fix_mathjax_v*.py) next to this script.
+    # If no fixer was explicitly supplied, automatically use the highest-numbered fix_mathjax_v*.py next to this script.
     if args.mathjax_fixer:
         fixer = args.mathjax_fixer.expanduser().resolve()
     else:
         script_dir = Path(__file__).resolve().parent
         fixer_candidates = sorted(
-            script_dir.glob("fix_mathjax_v*.py"),
+            [
+                p for p in script_dir.glob("*fix_mathjax_v*.py")
+                if p.is_file() and p.name.lstrip("~_").startswith("fix_mathjax_v")
+            ],
             key=lambda p: (
                 int(re.search(r"_v(\d+)", p.stem).group(1))
                 if re.search(r"_v(\d+)", p.stem)
