@@ -1,0 +1,103 @@
+UNIT 2 BANK REPAIR
+Source Bank: unit2_bank(3).zip
+Current Framework: Conceptual_Physics_Framework_v3
+Governing Bank Build PM: AP/SCI Bank Build PM v12
+Repair PM: Universal Unit Bank Repair PM v3
+Overall result: PASS
+
+PHASE 1 — WTC
+  items audited: 5
+  kept: 4
+  polished/repaired: 1
+  replaced: 0
+  final: PASS
+
+PHASE 2 — NOTES EX/YTI
+  pairs audited by section: 2.1=4; 2.2=5; 2.3=5; 2.4=5; 2.5=5
+  canonical Notes items audited: 48
+  repaired: 2
+  correctness/clarity issues fixed: fixed-marker distance/slope interpretation in 2.2
+  architecture duplicates fixed: 0 required
+  representation upgrades: neutralized/regenerated 2.4 free-fall model-comparison figure
+  final: PASS
+
+PHASE 3 — PRACTICE / CYU
+  Practice family audit completed across all four forms.
+  raw list/array data repaired into real tables: 20 Practice items, plus Section 2.2 table-family cleanup
+  generated context grammar repaired: family/item defects removed
+  physically incoherent relative-velocity contexts repaired family-wide
+  structural-scaffold overuse repaired; final v3 trigger violations: 0
+  exact prompt duplicates: 0
+  final: PASS
+
+PHASE 4 — SHORT INSTRUCTIONAL
+  CYU, Warm-Ups, Tarsia, and Blooket audited.
+  Tarsia: 18 pairs per section; unique-answer checks PASS
+  Blooket: 20 questions per section; one-best-answer and position checks PASS
+  changed exports: 0
+  final: PASS
+
+PHASE 5 — EXIT TICKETS
+  formative-secure items audited against instructional content.
+  changed Exit Ticket items: 0
+  strict instructional-to-formative similarity candidates after repair: 0
+  final: PASS
+
+PHASE 6 — REVIEW / EXTENDED / PERFORMANCE
+  Unit Review, Extended Reasoning, and Performance Tasks audited for fit, completeness, and security.
+  changed items: 0
+  final: PASS
+
+PHASE 7 — SUMMATIVE
+  six forms and source map audited.
+  selected-response answer-position patterns repaired across V1–V6.
+  U2-SUM-V5-Q08 re-architected from direct components→resultant to resultant+component→missing component to restore secure independence.
+  V1–V4 blueprint parallelism preserved; V5/V6 makeup-family independence preserved.
+  final: PASS
+
+PHASE 8 — PACKAGE / MACHINE HANDOFF
+  HTML / mapping / bank_data counts: 838 / 838 / 838
+  HTML <-> bank_data canonical student mismatch: 0
+  downstream unresolved Bank IDs: 0
+  evidence map rows: 107
+  summative source-map rows: 72
+  packaged figures / referenced / unused: 19 / 19 / 0
+  QA ledger rebuilt from final canonical student_html hashes: 838 entries
+  clean candidate package manifest comparison: PASS
+  clean candidate Framework audit: PASS
+  clean candidate independent QA: PASS
+
+SYSTEMIC PATTERNS FOUND
+  Pattern 1: raw Python/list-like data used in student-facing Practice records.
+    affected item count: 20 primary raw-array Practice items plus related Section 2.2 table-family cleanup
+    repair: converted to semantic HTML tables and synchronized structured table metadata.
+    Framework/Build follow-up: continue v12 rendered-data guard.
+  Pattern 2: generated context-slot grammar / physical-fit defects.
+    repair: phrase-level grammar correction and coherent water/current or air/wind vector contexts.
+    Framework/Build follow-up: preserve phrase-level context generation rule.
+  Pattern 3: repeated reference-frame critique scaffold.
+    repair: redesigned U2-S1-PF09 around frame choice/validity rather than renaming the critique shell.
+    Framework/Build follow-up: preserve v3 structural-scaffold audit.
+  Pattern 4: secure direct-vector architecture too close to instruction.
+    affected item: U2-SUM-V5-Q08
+    repair: changed reasoning direction while preserving U2-MG04 / blueprint intent.
+
+Changed Bank ID count: 59
+Unchanged Bank item count: 779
+Added IDs: 0
+Removed IDs: 0
+Changed figures: 1 — figures/unit2-flawed-freefall-graph.png
+Changed exports: 0
+Changed evidence points: U2-EP030, U2-EP033, U2-EP043, U2-EP046, U2-EP056, U2-EP057, U2-EP069, U2-EP073, U2-EP082, U2-EP083, U2-EP089, U2-EP095, U2-EP101
+Changed summative slots: U2-SUM-SLOT01, U2-SUM-SLOT03, U2-SUM-SLOT04, U2-SUM-SLOT07, U2-SUM-SLOT08, U2-SUM-SLOT10
+Affected downstream destinations: Practice Set 1, Practice Set 2, Practice Set 3, Extra Practice, Notes Example, What's To Come, Summative
+
+Final article/mapping/bank_data counts: 838 / 838 / 838
+Final audit tool actually run: YES — ~fix_mathjax_v8.py, ~audit_bank_package_v3.py, and independent final_qa.py; clean candidate extracted ZIP passed all checks and the final immutable ZIP is rechecked after this report freeze
+Final package manifest: unit2_final_package_manifest.json
+Final HTML SHA-256: 559cd377beca7e449cc981341c9d79dd2ebe9e74bc6ceab877f0930f1c48d1d6
+Final bank_data SHA-256: edb146e58b4330a3e02f1853113f8e5c5450558418a8a227ba01b03a2215aa9f
+Final mapping SHA-256: dd5b4fe6f4e1a485bd9d94b9f410fc57667e517d225cd3989f99177f15fca3d1
+Extracted delivered-ZIP manifest comparison: PASS
+Extracted delivered-ZIP final audit: PASS
+Unresolved issues: 0

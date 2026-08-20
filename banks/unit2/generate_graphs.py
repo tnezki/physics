@@ -2043,3 +2043,47 @@ def make_algebra_tiles(expression, filename='algebra_tiles.png'):
 # PASTE YOUR GRAPH CODE BELOW THIS LINE
 # ─────────────────────────────────────────────────────────────────────────────
 
+
+
+# Unit 2 canonical Bank graphs (Framework-integrated build)
+if __name__ == '__main__':
+    import matplotlib.pyplot as plt
+    import os
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    graph_specs = [
+        ('u2_s2_dt_ps1.png', 2.0, 'Distance (m)'),
+        ('u2_s2_dt_ps2.png', 3.0, 'Distance (m)'),
+        ('u2_s2_dt_ps3.png', 4.0, 'Distance (m)'),
+        ('u2_s2_dt_xp.png', 2.5, 'Distance (m)'),
+    ]
+    for filename, slope, ylabel in graph_specs:
+        fig, ax = plt.subplots(figsize=(5.2,3.8))
+        make_context_graph(ax,[{'expr':lambda x,m=slope:m*x,'deriv':lambda x,m=slope:0*x+m,'color':'steelblue','label':None}],0,6,0,30,xlabel='Time (s)',ylabel=ylabel,title='Distance vs. Time')
+        save_graph(fig, filename); plt.close(fig)
+    accel_specs=[
+        ('u2_s3_vt_ps1.png',2.0,1.5),('u2_s3_vt_ps2.png',10.0,-1.5),('u2_s3_vt_ps3.png',-6.0,2.0),('u2_s3_vt_xp.png',8.0,-2.0)
+    ]
+    for filename,b,m in accel_specs:
+        fig, ax = plt.subplots(figsize=(5.2,3.8))
+        make_context_graph(ax,[{'expr':lambda x,b=b,m=m:b+m*x,'deriv':lambda x,m=m:0*x+m,'color':'steelblue','label':None}],0,5,-8,12,xlabel='Time (s)',ylabel='Velocity (m/s)',title='Velocity vs. Time')
+        save_graph(fig, filename); plt.close(fig)
+    s5_specs=[
+        ('u2_s5_pos_ps1.png',1.5,1.0),('u2_s5_pos_ps2.png',9.0,-1.2),('u2_s5_pos_ps3.png',2.0,1.8),('u2_s5_pos_xp.png',8.0,-0.8)
+    ]
+    for filename,b,m in s5_specs:
+        fig, ax = plt.subplots(figsize=(5.2,3.8))
+        make_context_graph(ax,[{'expr':lambda x,b=b,m=m:b+m*x,'deriv':lambda x,m=m:0*x+m,'color':'steelblue','label':None}],0,6,0,12,xlabel='Time (s)',ylabel='Position (m)',title='Position vs. Time')
+        save_graph(fig, filename); plt.close(fig)
+    # Neutral model-comparison graph for U2-S4-NOTE-EX03.
+    # Labels intentionally do not identify which model is the ideal free-fall model.
+    fig, ax = plt.subplots(figsize=(5.6,4.0))
+    make_context_graph(
+        ax,
+        [
+            {'expr': lambda x: 10*x, 'deriv': lambda x: 0*x+10, 'color': 'steelblue', 'label': 'Model A'},
+            {'expr': lambda x: 5*x*x, 'deriv': lambda x: 10*x, 'color': 'firebrick', 'label': 'Model B'},
+        ],
+        0, 4, 0, 80,
+        xlabel='Time (s)', ylabel='Distance fallen (m)', title='Two Distance-Fallen Models'
+    )
+    save_graph(fig, 'unit2-flawed-freefall-graph.png'); plt.close(fig)

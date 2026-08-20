@@ -1,0 +1,1963 @@
+{
+  "schema_version": "3.0",
+  "bank_data_file": "unit2_bank_data.json",
+  "framework_course_file_structure_contract": "contracts/course_file_structure.json",
+  "course": "Conceptual Physics",
+  "unit": 2,
+  "unit_title": "Motion and Kinematics",
+  "assessment_plan": "assessment_plans/unit2_assessment_plan/unit2_assessment_plan.html",
+  "resources_by_section": {
+    "2.1": {
+      "section_number": "2.1",
+      "section_title": "Motion and Reference Frames",
+      "learning_target": "Students will explain that motion is relative and describe an object’s motion using an appropriate frame of reference.",
+      "i_cans": [
+        "I can explain why an object can be moving relative to one reference frame but not another.",
+        "I can identify the reference frame used in a motion description.",
+        "I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface."
+      ],
+      "vocabulary": [
+        "motion",
+        "reference frame",
+        "relative motion",
+        "position"
+      ],
+      "key_representations": [
+        "reference-frame sketches",
+        "position descriptions",
+        "paired-observer narratives"
+      ],
+      "misconceptions_text": "Treating motion as absolute | Switching reference frames mid-explanation | Omitting what the motion is measured relative to",
+      "recurring_practices": "modeling; perspective/representation reasoning; explanation",
+      "mastery_goal_ids_text": "U2-MG01 | U2-MG04",
+      "framework_section_packet_paths": [
+        "reference_library/question_structures/section_enrichment.json#U2-S1",
+        "reference_library/source_excerpts/section_reference_packets.json#U2-S1"
+      ],
+      "wtc": [
+        "U2-S1-WTC01"
+      ],
+      "notes_pairs": [
+        {
+          "notes_bundle_id": "U2-S1-NOTE-B01",
+          "example_id": "U2-S1-NOTE-EX01",
+          "yti_id": "U2-S1-NOTE-YTI01"
+        },
+        {
+          "notes_bundle_id": "U2-S1-NOTE-B02",
+          "example_id": "U2-S1-NOTE-EX02",
+          "yti_id": "U2-S1-NOTE-YTI02"
+        },
+        {
+          "notes_bundle_id": "U2-S1-NOTE-B03",
+          "example_id": "U2-S1-NOTE-EX03",
+          "yti_id": "U2-S1-NOTE-YTI03"
+        },
+        {
+          "notes_bundle_id": "U2-S1-NOTE-B04",
+          "example_id": "U2-S1-NOTE-EX04",
+          "yti_id": "U2-S1-NOTE-YTI04"
+        }
+      ],
+      "practice_set_1": [
+        "U2-S1-PS1-Q01",
+        "U2-S1-PS1-Q02",
+        "U2-S1-PS1-Q03",
+        "U2-S1-PS1-Q04",
+        "U2-S1-PS1-Q05",
+        "U2-S1-PS1-Q06",
+        "U2-S1-PS1-Q07",
+        "U2-S1-PS1-Q08",
+        "U2-S1-PS1-Q09",
+        "U2-S1-PS1-Q10",
+        "U2-S1-PS1-Q11",
+        "U2-S1-PS1-Q12",
+        "U2-S1-PS1-Q13",
+        "U2-S1-PS1-Q14",
+        "U2-S1-PS1-Q15",
+        "U2-S1-PS1-Q16",
+        "U2-S1-PS1-Q17",
+        "U2-S1-PS1-Q18"
+      ],
+      "practice_set_2": [
+        "U2-S1-PS2-Q01",
+        "U2-S1-PS2-Q02",
+        "U2-S1-PS2-Q03",
+        "U2-S1-PS2-Q04",
+        "U2-S1-PS2-Q05",
+        "U2-S1-PS2-Q06",
+        "U2-S1-PS2-Q07",
+        "U2-S1-PS2-Q08",
+        "U2-S1-PS2-Q09",
+        "U2-S1-PS2-Q10",
+        "U2-S1-PS2-Q11",
+        "U2-S1-PS2-Q12",
+        "U2-S1-PS2-Q13",
+        "U2-S1-PS2-Q14",
+        "U2-S1-PS2-Q15",
+        "U2-S1-PS2-Q16",
+        "U2-S1-PS2-Q17",
+        "U2-S1-PS2-Q18"
+      ],
+      "practice_set_3": [
+        "U2-S1-PS3-Q01",
+        "U2-S1-PS3-Q02",
+        "U2-S1-PS3-Q03",
+        "U2-S1-PS3-Q04",
+        "U2-S1-PS3-Q05",
+        "U2-S1-PS3-Q06",
+        "U2-S1-PS3-Q07",
+        "U2-S1-PS3-Q08",
+        "U2-S1-PS3-Q09",
+        "U2-S1-PS3-Q10",
+        "U2-S1-PS3-Q11",
+        "U2-S1-PS3-Q12",
+        "U2-S1-PS3-Q13",
+        "U2-S1-PS3-Q14",
+        "U2-S1-PS3-Q15",
+        "U2-S1-PS3-Q16",
+        "U2-S1-PS3-Q17",
+        "U2-S1-PS3-Q18"
+      ],
+      "extra_practice": [
+        "U2-S1-XP-Q01",
+        "U2-S1-XP-Q02",
+        "U2-S1-XP-Q03",
+        "U2-S1-XP-Q04",
+        "U2-S1-XP-Q05",
+        "U2-S1-XP-Q06",
+        "U2-S1-XP-Q07",
+        "U2-S1-XP-Q08",
+        "U2-S1-XP-Q09",
+        "U2-S1-XP-Q10",
+        "U2-S1-XP-Q11",
+        "U2-S1-XP-Q12",
+        "U2-S1-XP-Q13",
+        "U2-S1-XP-Q14",
+        "U2-S1-XP-Q15",
+        "U2-S1-XP-Q16",
+        "U2-S1-XP-Q17",
+        "U2-S1-XP-Q18"
+      ],
+      "cyu": [
+        "U2-S1-CYU-Q01",
+        "U2-S1-CYU-Q02",
+        "U2-S1-CYU-Q03",
+        "U2-S1-CYU-Q04",
+        "U2-S1-CYU-Q05",
+        "U2-S1-CYU-Q06"
+      ],
+      "warm_up_1": [
+        "U2-S1-WU1-Q01",
+        "U2-S1-WU1-Q02"
+      ],
+      "warm_up_2": [
+        "U2-S1-WU2-Q01",
+        "U2-S1-WU2-Q02"
+      ],
+      "warm_up_3": [
+        "U2-S1-WU3-Q01",
+        "U2-S1-WU3-Q02"
+      ],
+      "exit_ticket_a": [
+        "U2-S1-ET-A-Q01"
+      ],
+      "exit_ticket_b": [
+        "U2-S1-ET-B-Q01"
+      ],
+      "exit_ticket_c": [
+        "U2-S1-ET-C-Q01"
+      ],
+      "tarsia_ids": [
+        "U2-S1-TAR-Q01",
+        "U2-S1-TAR-Q02",
+        "U2-S1-TAR-Q03",
+        "U2-S1-TAR-Q04",
+        "U2-S1-TAR-Q05",
+        "U2-S1-TAR-Q06",
+        "U2-S1-TAR-Q07",
+        "U2-S1-TAR-Q08",
+        "U2-S1-TAR-Q09",
+        "U2-S1-TAR-Q10",
+        "U2-S1-TAR-Q11",
+        "U2-S1-TAR-Q12",
+        "U2-S1-TAR-Q13",
+        "U2-S1-TAR-Q14",
+        "U2-S1-TAR-Q15",
+        "U2-S1-TAR-Q16",
+        "U2-S1-TAR-Q17",
+        "U2-S1-TAR-Q18"
+      ],
+      "blooket_ids": [
+        "U2-S1-BLO-Q01",
+        "U2-S1-BLO-Q02",
+        "U2-S1-BLO-Q03",
+        "U2-S1-BLO-Q04",
+        "U2-S1-BLO-Q05",
+        "U2-S1-BLO-Q06",
+        "U2-S1-BLO-Q07",
+        "U2-S1-BLO-Q08",
+        "U2-S1-BLO-Q09",
+        "U2-S1-BLO-Q10",
+        "U2-S1-BLO-Q11",
+        "U2-S1-BLO-Q12",
+        "U2-S1-BLO-Q13",
+        "U2-S1-BLO-Q14",
+        "U2-S1-BLO-Q15",
+        "U2-S1-BLO-Q16",
+        "U2-S1-BLO-Q17",
+        "U2-S1-BLO-Q18",
+        "U2-S1-BLO-Q19",
+        "U2-S1-BLO-Q20"
+      ],
+      "tarsia_export": "exports/tarsia_2_1_practice_3.txt",
+      "blooket_export": "exports/blooket_2_1_practice_3.csv"
+    },
+    "2.2": {
+      "section_number": "2.2",
+      "section_title": "Speed and Velocity",
+      "learning_target": "Students will distinguish between speed and velocity and use distance, time, and direction to describe motion.",
+      "i_cans": [
+        "I can calculate average speed from distance and time.",
+        "I can distinguish instantaneous speed from average speed.",
+        "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity."
+      ],
+      "vocabulary": [
+        "distance",
+        "time",
+        "average speed",
+        "instantaneous speed",
+        "velocity",
+        "direction"
+      ],
+      "key_representations": [
+        "$v=d/t$",
+        "distance-time data",
+        "motion descriptions",
+        "velocity arrows"
+      ],
+      "misconceptions_text": "Using speed and velocity as synonyms | Reporting velocity without direction | Confusing instantaneous and average speed",
+      "recurring_practices": "quantitative reasoning; data interpretation; communication with units",
+      "mastery_goal_ids_text": "U2-MG02",
+      "framework_section_packet_paths": [
+        "reference_library/question_structures/section_enrichment.json#U2-S2",
+        "reference_library/source_excerpts/section_reference_packets.json#U2-S2"
+      ],
+      "wtc": [
+        "U2-S2-WTC01"
+      ],
+      "notes_pairs": [
+        {
+          "notes_bundle_id": "U2-S2-NOTE-B01",
+          "example_id": "U2-S2-NOTE-EX01",
+          "yti_id": "U2-S2-NOTE-YTI01"
+        },
+        {
+          "notes_bundle_id": "U2-S2-NOTE-B02",
+          "example_id": "U2-S2-NOTE-EX02",
+          "yti_id": "U2-S2-NOTE-YTI02"
+        },
+        {
+          "notes_bundle_id": "U2-S2-NOTE-B03",
+          "example_id": "U2-S2-NOTE-EX03",
+          "yti_id": "U2-S2-NOTE-YTI03"
+        },
+        {
+          "notes_bundle_id": "U2-S2-NOTE-B04",
+          "example_id": "U2-S2-NOTE-EX04",
+          "yti_id": "U2-S2-NOTE-YTI04"
+        },
+        {
+          "notes_bundle_id": "U2-S2-NOTE-B05",
+          "example_id": "U2-S2-NOTE-EX05",
+          "yti_id": "U2-S2-NOTE-YTI05"
+        }
+      ],
+      "practice_set_1": [
+        "U2-S2-PS1-Q01",
+        "U2-S2-PS1-Q02",
+        "U2-S2-PS1-Q03",
+        "U2-S2-PS1-Q04",
+        "U2-S2-PS1-Q05",
+        "U2-S2-PS1-Q06",
+        "U2-S2-PS1-Q07",
+        "U2-S2-PS1-Q08",
+        "U2-S2-PS1-Q09",
+        "U2-S2-PS1-Q10",
+        "U2-S2-PS1-Q11",
+        "U2-S2-PS1-Q12",
+        "U2-S2-PS1-Q13",
+        "U2-S2-PS1-Q14",
+        "U2-S2-PS1-Q15",
+        "U2-S2-PS1-Q16",
+        "U2-S2-PS1-Q17",
+        "U2-S2-PS1-Q18",
+        "U2-S2-PS1-Q19",
+        "U2-S2-PS1-Q20"
+      ],
+      "practice_set_2": [
+        "U2-S2-PS2-Q01",
+        "U2-S2-PS2-Q02",
+        "U2-S2-PS2-Q03",
+        "U2-S2-PS2-Q04",
+        "U2-S2-PS2-Q05",
+        "U2-S2-PS2-Q06",
+        "U2-S2-PS2-Q07",
+        "U2-S2-PS2-Q08",
+        "U2-S2-PS2-Q09",
+        "U2-S2-PS2-Q10",
+        "U2-S2-PS2-Q11",
+        "U2-S2-PS2-Q12",
+        "U2-S2-PS2-Q13",
+        "U2-S2-PS2-Q14",
+        "U2-S2-PS2-Q15",
+        "U2-S2-PS2-Q16",
+        "U2-S2-PS2-Q17",
+        "U2-S2-PS2-Q18",
+        "U2-S2-PS2-Q19",
+        "U2-S2-PS2-Q20"
+      ],
+      "practice_set_3": [
+        "U2-S2-PS3-Q01",
+        "U2-S2-PS3-Q02",
+        "U2-S2-PS3-Q03",
+        "U2-S2-PS3-Q04",
+        "U2-S2-PS3-Q05",
+        "U2-S2-PS3-Q06",
+        "U2-S2-PS3-Q07",
+        "U2-S2-PS3-Q08",
+        "U2-S2-PS3-Q09",
+        "U2-S2-PS3-Q10",
+        "U2-S2-PS3-Q11",
+        "U2-S2-PS3-Q12",
+        "U2-S2-PS3-Q13",
+        "U2-S2-PS3-Q14",
+        "U2-S2-PS3-Q15",
+        "U2-S2-PS3-Q16",
+        "U2-S2-PS3-Q17",
+        "U2-S2-PS3-Q18",
+        "U2-S2-PS3-Q19",
+        "U2-S2-PS3-Q20"
+      ],
+      "extra_practice": [
+        "U2-S2-XP-Q01",
+        "U2-S2-XP-Q02",
+        "U2-S2-XP-Q03",
+        "U2-S2-XP-Q04",
+        "U2-S2-XP-Q05",
+        "U2-S2-XP-Q06",
+        "U2-S2-XP-Q07",
+        "U2-S2-XP-Q08",
+        "U2-S2-XP-Q09",
+        "U2-S2-XP-Q10",
+        "U2-S2-XP-Q11",
+        "U2-S2-XP-Q12",
+        "U2-S2-XP-Q13",
+        "U2-S2-XP-Q14",
+        "U2-S2-XP-Q15",
+        "U2-S2-XP-Q16",
+        "U2-S2-XP-Q17",
+        "U2-S2-XP-Q18",
+        "U2-S2-XP-Q19",
+        "U2-S2-XP-Q20"
+      ],
+      "cyu": [
+        "U2-S2-CYU-Q01",
+        "U2-S2-CYU-Q02",
+        "U2-S2-CYU-Q03",
+        "U2-S2-CYU-Q04",
+        "U2-S2-CYU-Q05",
+        "U2-S2-CYU-Q06"
+      ],
+      "warm_up_1": [
+        "U2-S2-WU1-Q01",
+        "U2-S2-WU1-Q02"
+      ],
+      "warm_up_2": [
+        "U2-S2-WU2-Q01",
+        "U2-S2-WU2-Q02"
+      ],
+      "warm_up_3": [
+        "U2-S2-WU3-Q01",
+        "U2-S2-WU3-Q02"
+      ],
+      "exit_ticket_a": [
+        "U2-S2-ET-A-Q01"
+      ],
+      "exit_ticket_b": [
+        "U2-S2-ET-B-Q01"
+      ],
+      "exit_ticket_c": [
+        "U2-S2-ET-C-Q01"
+      ],
+      "tarsia_ids": [
+        "U2-S2-TAR-Q01",
+        "U2-S2-TAR-Q02",
+        "U2-S2-TAR-Q03",
+        "U2-S2-TAR-Q04",
+        "U2-S2-TAR-Q05",
+        "U2-S2-TAR-Q06",
+        "U2-S2-TAR-Q07",
+        "U2-S2-TAR-Q08",
+        "U2-S2-TAR-Q09",
+        "U2-S2-TAR-Q10",
+        "U2-S2-TAR-Q11",
+        "U2-S2-TAR-Q12",
+        "U2-S2-TAR-Q13",
+        "U2-S2-TAR-Q14",
+        "U2-S2-TAR-Q15",
+        "U2-S2-TAR-Q16",
+        "U2-S2-TAR-Q17",
+        "U2-S2-TAR-Q18"
+      ],
+      "blooket_ids": [
+        "U2-S2-BLO-Q01",
+        "U2-S2-BLO-Q02",
+        "U2-S2-BLO-Q03",
+        "U2-S2-BLO-Q04",
+        "U2-S2-BLO-Q05",
+        "U2-S2-BLO-Q06",
+        "U2-S2-BLO-Q07",
+        "U2-S2-BLO-Q08",
+        "U2-S2-BLO-Q09",
+        "U2-S2-BLO-Q10",
+        "U2-S2-BLO-Q11",
+        "U2-S2-BLO-Q12",
+        "U2-S2-BLO-Q13",
+        "U2-S2-BLO-Q14",
+        "U2-S2-BLO-Q15",
+        "U2-S2-BLO-Q16",
+        "U2-S2-BLO-Q17",
+        "U2-S2-BLO-Q18",
+        "U2-S2-BLO-Q19",
+        "U2-S2-BLO-Q20"
+      ],
+      "tarsia_export": "exports/tarsia_2_2_practice_3.txt",
+      "blooket_export": "exports/blooket_2_2_practice_3.csv"
+    },
+    "2.3": {
+      "section_number": "2.3",
+      "section_title": "Acceleration",
+      "learning_target": "Students will explain acceleration as the rate at which velocity changes and identify acceleration from motion descriptions, data, and graphs.",
+      "i_cans": [
+        "I can calculate acceleration from change in velocity and time.",
+        "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+        "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration."
+      ],
+      "vocabulary": [
+        "acceleration",
+        "velocity",
+        "change in velocity",
+        "positive acceleration",
+        "negative acceleration",
+        "zero acceleration"
+      ],
+      "key_representations": [
+        "$a=\\Delta v/t$",
+        "velocity-time data",
+        "motion graphs",
+        "motion diagrams"
+      ],
+      "misconceptions_text": "Defining acceleration only as speeding up | Using sign alone to decide speeding up or slowing down | Confusing velocity with acceleration",
+      "recurring_practices": "graph/data interpretation; quantitative reasoning; model translation",
+      "mastery_goal_ids_text": "U2-MG03",
+      "framework_section_packet_paths": [
+        "reference_library/question_structures/section_enrichment.json#U2-S3",
+        "reference_library/source_excerpts/section_reference_packets.json#U2-S3"
+      ],
+      "wtc": [
+        "U2-S3-WTC01"
+      ],
+      "notes_pairs": [
+        {
+          "notes_bundle_id": "U2-S3-NOTE-B01",
+          "example_id": "U2-S3-NOTE-EX01",
+          "yti_id": "U2-S3-NOTE-YTI01"
+        },
+        {
+          "notes_bundle_id": "U2-S3-NOTE-B02",
+          "example_id": "U2-S3-NOTE-EX02",
+          "yti_id": "U2-S3-NOTE-YTI02"
+        },
+        {
+          "notes_bundle_id": "U2-S3-NOTE-B03",
+          "example_id": "U2-S3-NOTE-EX03",
+          "yti_id": "U2-S3-NOTE-YTI03"
+        },
+        {
+          "notes_bundle_id": "U2-S3-NOTE-B04",
+          "example_id": "U2-S3-NOTE-EX04",
+          "yti_id": "U2-S3-NOTE-YTI04"
+        },
+        {
+          "notes_bundle_id": "U2-S3-NOTE-B05",
+          "example_id": "U2-S3-NOTE-EX05",
+          "yti_id": "U2-S3-NOTE-YTI05"
+        }
+      ],
+      "practice_set_1": [
+        "U2-S3-PS1-Q01",
+        "U2-S3-PS1-Q02",
+        "U2-S3-PS1-Q03",
+        "U2-S3-PS1-Q04",
+        "U2-S3-PS1-Q05",
+        "U2-S3-PS1-Q06",
+        "U2-S3-PS1-Q07",
+        "U2-S3-PS1-Q08",
+        "U2-S3-PS1-Q09",
+        "U2-S3-PS1-Q10",
+        "U2-S3-PS1-Q11",
+        "U2-S3-PS1-Q12",
+        "U2-S3-PS1-Q13",
+        "U2-S3-PS1-Q14",
+        "U2-S3-PS1-Q15",
+        "U2-S3-PS1-Q16",
+        "U2-S3-PS1-Q17",
+        "U2-S3-PS1-Q18",
+        "U2-S3-PS1-Q19",
+        "U2-S3-PS1-Q20",
+        "U2-S3-PS1-Q21"
+      ],
+      "practice_set_2": [
+        "U2-S3-PS2-Q01",
+        "U2-S3-PS2-Q02",
+        "U2-S3-PS2-Q03",
+        "U2-S3-PS2-Q04",
+        "U2-S3-PS2-Q05",
+        "U2-S3-PS2-Q06",
+        "U2-S3-PS2-Q07",
+        "U2-S3-PS2-Q08",
+        "U2-S3-PS2-Q09",
+        "U2-S3-PS2-Q10",
+        "U2-S3-PS2-Q11",
+        "U2-S3-PS2-Q12",
+        "U2-S3-PS2-Q13",
+        "U2-S3-PS2-Q14",
+        "U2-S3-PS2-Q15",
+        "U2-S3-PS2-Q16",
+        "U2-S3-PS2-Q17",
+        "U2-S3-PS2-Q18",
+        "U2-S3-PS2-Q19",
+        "U2-S3-PS2-Q20",
+        "U2-S3-PS2-Q21"
+      ],
+      "practice_set_3": [
+        "U2-S3-PS3-Q01",
+        "U2-S3-PS3-Q02",
+        "U2-S3-PS3-Q03",
+        "U2-S3-PS3-Q04",
+        "U2-S3-PS3-Q05",
+        "U2-S3-PS3-Q06",
+        "U2-S3-PS3-Q07",
+        "U2-S3-PS3-Q08",
+        "U2-S3-PS3-Q09",
+        "U2-S3-PS3-Q10",
+        "U2-S3-PS3-Q11",
+        "U2-S3-PS3-Q12",
+        "U2-S3-PS3-Q13",
+        "U2-S3-PS3-Q14",
+        "U2-S3-PS3-Q15",
+        "U2-S3-PS3-Q16",
+        "U2-S3-PS3-Q17",
+        "U2-S3-PS3-Q18",
+        "U2-S3-PS3-Q19",
+        "U2-S3-PS3-Q20",
+        "U2-S3-PS3-Q21"
+      ],
+      "extra_practice": [
+        "U2-S3-XP-Q01",
+        "U2-S3-XP-Q02",
+        "U2-S3-XP-Q03",
+        "U2-S3-XP-Q04",
+        "U2-S3-XP-Q05",
+        "U2-S3-XP-Q06",
+        "U2-S3-XP-Q07",
+        "U2-S3-XP-Q08",
+        "U2-S3-XP-Q09",
+        "U2-S3-XP-Q10",
+        "U2-S3-XP-Q11",
+        "U2-S3-XP-Q12",
+        "U2-S3-XP-Q13",
+        "U2-S3-XP-Q14",
+        "U2-S3-XP-Q15",
+        "U2-S3-XP-Q16",
+        "U2-S3-XP-Q17",
+        "U2-S3-XP-Q18",
+        "U2-S3-XP-Q19",
+        "U2-S3-XP-Q20",
+        "U2-S3-XP-Q21"
+      ],
+      "cyu": [
+        "U2-S3-CYU-Q01",
+        "U2-S3-CYU-Q02",
+        "U2-S3-CYU-Q03",
+        "U2-S3-CYU-Q04",
+        "U2-S3-CYU-Q05",
+        "U2-S3-CYU-Q06"
+      ],
+      "warm_up_1": [
+        "U2-S3-WU1-Q01",
+        "U2-S3-WU1-Q02"
+      ],
+      "warm_up_2": [
+        "U2-S3-WU2-Q01",
+        "U2-S3-WU2-Q02"
+      ],
+      "warm_up_3": [
+        "U2-S3-WU3-Q01",
+        "U2-S3-WU3-Q02"
+      ],
+      "exit_ticket_a": [
+        "U2-S3-ET-A-Q01"
+      ],
+      "exit_ticket_b": [
+        "U2-S3-ET-B-Q01"
+      ],
+      "exit_ticket_c": [
+        "U2-S3-ET-C-Q01"
+      ],
+      "tarsia_ids": [
+        "U2-S3-TAR-Q01",
+        "U2-S3-TAR-Q02",
+        "U2-S3-TAR-Q03",
+        "U2-S3-TAR-Q04",
+        "U2-S3-TAR-Q05",
+        "U2-S3-TAR-Q06",
+        "U2-S3-TAR-Q07",
+        "U2-S3-TAR-Q08",
+        "U2-S3-TAR-Q09",
+        "U2-S3-TAR-Q10",
+        "U2-S3-TAR-Q11",
+        "U2-S3-TAR-Q12",
+        "U2-S3-TAR-Q13",
+        "U2-S3-TAR-Q14",
+        "U2-S3-TAR-Q15",
+        "U2-S3-TAR-Q16",
+        "U2-S3-TAR-Q17",
+        "U2-S3-TAR-Q18"
+      ],
+      "blooket_ids": [
+        "U2-S3-BLO-Q01",
+        "U2-S3-BLO-Q02",
+        "U2-S3-BLO-Q03",
+        "U2-S3-BLO-Q04",
+        "U2-S3-BLO-Q05",
+        "U2-S3-BLO-Q06",
+        "U2-S3-BLO-Q07",
+        "U2-S3-BLO-Q08",
+        "U2-S3-BLO-Q09",
+        "U2-S3-BLO-Q10",
+        "U2-S3-BLO-Q11",
+        "U2-S3-BLO-Q12",
+        "U2-S3-BLO-Q13",
+        "U2-S3-BLO-Q14",
+        "U2-S3-BLO-Q15",
+        "U2-S3-BLO-Q16",
+        "U2-S3-BLO-Q17",
+        "U2-S3-BLO-Q18",
+        "U2-S3-BLO-Q19",
+        "U2-S3-BLO-Q20"
+      ],
+      "tarsia_export": "exports/tarsia_2_3_practice_3.txt",
+      "blooket_export": "exports/blooket_2_3_practice_3.csv"
+    },
+    "2.4": {
+      "section_number": "2.4",
+      "section_title": "Free Fall Motion",
+      "learning_target": "Students will describe free fall as motion under the influence of gravity alone and use simple free-fall relationships to determine speed or distance fallen.",
+      "i_cans": [
+        "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+        "I can use $g \\approx 10\\text{ m/s}^2$ to determine speed gained during free fall.",
+        "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance."
+      ],
+      "vocabulary": [
+        "free fall",
+        "gravity",
+        "$g$",
+        "air resistance",
+        "acceleration"
+      ],
+      "key_representations": [
+        "$v=gt$",
+        "$d=\\frac{1}{2}gt^2$",
+        "falling-motion diagrams",
+        "time/speed/distance tables"
+      ],
+      "misconceptions_text": "Believing heavier objects fall faster in ideal free fall | Treating any falling object as free fall | Confusing $g$ with speed",
+      "recurring_practices": "mathematical reasoning; model evaluation; explanation of phenomena",
+      "mastery_goal_ids_text": "U2-MG03",
+      "framework_section_packet_paths": [
+        "reference_library/question_structures/section_enrichment.json#U2-S4",
+        "reference_library/source_excerpts/section_reference_packets.json#U2-S4"
+      ],
+      "wtc": [
+        "U2-S4-WTC01"
+      ],
+      "notes_pairs": [
+        {
+          "notes_bundle_id": "U2-S4-NOTE-B01",
+          "example_id": "U2-S4-NOTE-EX01",
+          "yti_id": "U2-S4-NOTE-YTI01"
+        },
+        {
+          "notes_bundle_id": "U2-S4-NOTE-B02",
+          "example_id": "U2-S4-NOTE-EX02",
+          "yti_id": "U2-S4-NOTE-YTI02"
+        },
+        {
+          "notes_bundle_id": "U2-S4-NOTE-B03",
+          "example_id": "U2-S4-NOTE-EX03",
+          "yti_id": "U2-S4-NOTE-YTI03"
+        },
+        {
+          "notes_bundle_id": "U2-S4-NOTE-B04",
+          "example_id": "U2-S4-NOTE-EX04",
+          "yti_id": "U2-S4-NOTE-YTI04"
+        },
+        {
+          "notes_bundle_id": "U2-S4-NOTE-B05",
+          "example_id": "U2-S4-NOTE-EX05",
+          "yti_id": "U2-S4-NOTE-YTI05"
+        }
+      ],
+      "practice_set_1": [
+        "U2-S4-PS1-Q01",
+        "U2-S4-PS1-Q02",
+        "U2-S4-PS1-Q03",
+        "U2-S4-PS1-Q04",
+        "U2-S4-PS1-Q05",
+        "U2-S4-PS1-Q06",
+        "U2-S4-PS1-Q07",
+        "U2-S4-PS1-Q08",
+        "U2-S4-PS1-Q09",
+        "U2-S4-PS1-Q10",
+        "U2-S4-PS1-Q11",
+        "U2-S4-PS1-Q12",
+        "U2-S4-PS1-Q13",
+        "U2-S4-PS1-Q14",
+        "U2-S4-PS1-Q15",
+        "U2-S4-PS1-Q16",
+        "U2-S4-PS1-Q17",
+        "U2-S4-PS1-Q18",
+        "U2-S4-PS1-Q19",
+        "U2-S4-PS1-Q20",
+        "U2-S4-PS1-Q21",
+        "U2-S4-PS1-Q22"
+      ],
+      "practice_set_2": [
+        "U2-S4-PS2-Q01",
+        "U2-S4-PS2-Q02",
+        "U2-S4-PS2-Q03",
+        "U2-S4-PS2-Q04",
+        "U2-S4-PS2-Q05",
+        "U2-S4-PS2-Q06",
+        "U2-S4-PS2-Q07",
+        "U2-S4-PS2-Q08",
+        "U2-S4-PS2-Q09",
+        "U2-S4-PS2-Q10",
+        "U2-S4-PS2-Q11",
+        "U2-S4-PS2-Q12",
+        "U2-S4-PS2-Q13",
+        "U2-S4-PS2-Q14",
+        "U2-S4-PS2-Q15",
+        "U2-S4-PS2-Q16",
+        "U2-S4-PS2-Q17",
+        "U2-S4-PS2-Q18",
+        "U2-S4-PS2-Q19",
+        "U2-S4-PS2-Q20",
+        "U2-S4-PS2-Q21",
+        "U2-S4-PS2-Q22"
+      ],
+      "practice_set_3": [
+        "U2-S4-PS3-Q01",
+        "U2-S4-PS3-Q02",
+        "U2-S4-PS3-Q03",
+        "U2-S4-PS3-Q04",
+        "U2-S4-PS3-Q05",
+        "U2-S4-PS3-Q06",
+        "U2-S4-PS3-Q07",
+        "U2-S4-PS3-Q08",
+        "U2-S4-PS3-Q09",
+        "U2-S4-PS3-Q10",
+        "U2-S4-PS3-Q11",
+        "U2-S4-PS3-Q12",
+        "U2-S4-PS3-Q13",
+        "U2-S4-PS3-Q14",
+        "U2-S4-PS3-Q15",
+        "U2-S4-PS3-Q16",
+        "U2-S4-PS3-Q17",
+        "U2-S4-PS3-Q18",
+        "U2-S4-PS3-Q19",
+        "U2-S4-PS3-Q20",
+        "U2-S4-PS3-Q21",
+        "U2-S4-PS3-Q22"
+      ],
+      "extra_practice": [
+        "U2-S4-XP-Q01",
+        "U2-S4-XP-Q02",
+        "U2-S4-XP-Q03",
+        "U2-S4-XP-Q04",
+        "U2-S4-XP-Q05",
+        "U2-S4-XP-Q06",
+        "U2-S4-XP-Q07",
+        "U2-S4-XP-Q08",
+        "U2-S4-XP-Q09",
+        "U2-S4-XP-Q10",
+        "U2-S4-XP-Q11",
+        "U2-S4-XP-Q12",
+        "U2-S4-XP-Q13",
+        "U2-S4-XP-Q14",
+        "U2-S4-XP-Q15",
+        "U2-S4-XP-Q16",
+        "U2-S4-XP-Q17",
+        "U2-S4-XP-Q18",
+        "U2-S4-XP-Q19",
+        "U2-S4-XP-Q20",
+        "U2-S4-XP-Q21",
+        "U2-S4-XP-Q22"
+      ],
+      "cyu": [
+        "U2-S4-CYU-Q01",
+        "U2-S4-CYU-Q02",
+        "U2-S4-CYU-Q03",
+        "U2-S4-CYU-Q04",
+        "U2-S4-CYU-Q05",
+        "U2-S4-CYU-Q06"
+      ],
+      "warm_up_1": [
+        "U2-S4-WU1-Q01",
+        "U2-S4-WU1-Q02"
+      ],
+      "warm_up_2": [
+        "U2-S4-WU2-Q01",
+        "U2-S4-WU2-Q02"
+      ],
+      "warm_up_3": [
+        "U2-S4-WU3-Q01",
+        "U2-S4-WU3-Q02"
+      ],
+      "exit_ticket_a": [
+        "U2-S4-ET-A-Q01"
+      ],
+      "exit_ticket_b": [
+        "U2-S4-ET-B-Q01"
+      ],
+      "exit_ticket_c": [
+        "U2-S4-ET-C-Q01"
+      ],
+      "tarsia_ids": [
+        "U2-S4-TAR-Q01",
+        "U2-S4-TAR-Q02",
+        "U2-S4-TAR-Q03",
+        "U2-S4-TAR-Q04",
+        "U2-S4-TAR-Q05",
+        "U2-S4-TAR-Q06",
+        "U2-S4-TAR-Q07",
+        "U2-S4-TAR-Q08",
+        "U2-S4-TAR-Q09",
+        "U2-S4-TAR-Q10",
+        "U2-S4-TAR-Q11",
+        "U2-S4-TAR-Q12",
+        "U2-S4-TAR-Q13",
+        "U2-S4-TAR-Q14",
+        "U2-S4-TAR-Q15",
+        "U2-S4-TAR-Q16",
+        "U2-S4-TAR-Q17",
+        "U2-S4-TAR-Q18"
+      ],
+      "blooket_ids": [
+        "U2-S4-BLO-Q01",
+        "U2-S4-BLO-Q02",
+        "U2-S4-BLO-Q03",
+        "U2-S4-BLO-Q04",
+        "U2-S4-BLO-Q05",
+        "U2-S4-BLO-Q06",
+        "U2-S4-BLO-Q07",
+        "U2-S4-BLO-Q08",
+        "U2-S4-BLO-Q09",
+        "U2-S4-BLO-Q10",
+        "U2-S4-BLO-Q11",
+        "U2-S4-BLO-Q12",
+        "U2-S4-BLO-Q13",
+        "U2-S4-BLO-Q14",
+        "U2-S4-BLO-Q15",
+        "U2-S4-BLO-Q16",
+        "U2-S4-BLO-Q17",
+        "U2-S4-BLO-Q18",
+        "U2-S4-BLO-Q19",
+        "U2-S4-BLO-Q20"
+      ],
+      "tarsia_export": "exports/tarsia_2_4_practice_3.txt",
+      "blooket_export": "exports/blooket_2_4_practice_3.csv"
+    },
+    "2.5": {
+      "section_number": "2.5",
+      "section_title": "Velocity Vectors and Motion Modeling",
+      "learning_target": "Students will use velocity vectors, motion diagrams, and simple graphs to model and explain the motion of objects.",
+      "i_cans": [
+        "I can represent velocity with arrows that show both speed and direction.",
+        "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+        "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence."
+      ],
+      "vocabulary": [
+        "velocity vector",
+        "motion diagram",
+        "position",
+        "velocity",
+        "acceleration"
+      ],
+      "key_representations": [
+        "velocity arrows",
+        "dot diagrams",
+        "tables",
+        "simple position/velocity graphs",
+        "written motion descriptions"
+      ],
+      "misconceptions_text": "Treating vector direction as optional | Matching graph height to physical height | Failing to distinguish position velocity and acceleration representations",
+      "recurring_practices": "develop/evaluate models; representation translation; argument from evidence",
+      "mastery_goal_ids_text": "U2-MG04 | U2-MG02 | U2-MG03 | U2-MG01",
+      "framework_section_packet_paths": [
+        "reference_library/question_structures/section_enrichment.json#U2-S5",
+        "reference_library/source_excerpts/section_reference_packets.json#U2-S5"
+      ],
+      "wtc": [
+        "U2-S5-WTC01"
+      ],
+      "notes_pairs": [
+        {
+          "notes_bundle_id": "U2-S5-NOTE-B01",
+          "example_id": "U2-S5-NOTE-EX01",
+          "yti_id": "U2-S5-NOTE-YTI01"
+        },
+        {
+          "notes_bundle_id": "U2-S5-NOTE-B02",
+          "example_id": "U2-S5-NOTE-EX02",
+          "yti_id": "U2-S5-NOTE-YTI02"
+        },
+        {
+          "notes_bundle_id": "U2-S5-NOTE-B03",
+          "example_id": "U2-S5-NOTE-EX03",
+          "yti_id": "U2-S5-NOTE-YTI03"
+        },
+        {
+          "notes_bundle_id": "U2-S5-NOTE-B04",
+          "example_id": "U2-S5-NOTE-EX04",
+          "yti_id": "U2-S5-NOTE-YTI04"
+        },
+        {
+          "notes_bundle_id": "U2-S5-NOTE-B05",
+          "example_id": "U2-S5-NOTE-EX05",
+          "yti_id": "U2-S5-NOTE-YTI05"
+        }
+      ],
+      "practice_set_1": [
+        "U2-S5-PS1-Q01",
+        "U2-S5-PS1-Q02",
+        "U2-S5-PS1-Q03",
+        "U2-S5-PS1-Q04",
+        "U2-S5-PS1-Q05",
+        "U2-S5-PS1-Q06",
+        "U2-S5-PS1-Q07",
+        "U2-S5-PS1-Q08",
+        "U2-S5-PS1-Q09",
+        "U2-S5-PS1-Q10",
+        "U2-S5-PS1-Q11",
+        "U2-S5-PS1-Q12",
+        "U2-S5-PS1-Q13",
+        "U2-S5-PS1-Q14",
+        "U2-S5-PS1-Q15",
+        "U2-S5-PS1-Q16",
+        "U2-S5-PS1-Q17",
+        "U2-S5-PS1-Q18",
+        "U2-S5-PS1-Q19",
+        "U2-S5-PS1-Q20",
+        "U2-S5-PS1-Q21",
+        "U2-S5-PS1-Q22",
+        "U2-S5-PS1-Q23"
+      ],
+      "practice_set_2": [
+        "U2-S5-PS2-Q01",
+        "U2-S5-PS2-Q02",
+        "U2-S5-PS2-Q03",
+        "U2-S5-PS2-Q04",
+        "U2-S5-PS2-Q05",
+        "U2-S5-PS2-Q06",
+        "U2-S5-PS2-Q07",
+        "U2-S5-PS2-Q08",
+        "U2-S5-PS2-Q09",
+        "U2-S5-PS2-Q10",
+        "U2-S5-PS2-Q11",
+        "U2-S5-PS2-Q12",
+        "U2-S5-PS2-Q13",
+        "U2-S5-PS2-Q14",
+        "U2-S5-PS2-Q15",
+        "U2-S5-PS2-Q16",
+        "U2-S5-PS2-Q17",
+        "U2-S5-PS2-Q18",
+        "U2-S5-PS2-Q19",
+        "U2-S5-PS2-Q20",
+        "U2-S5-PS2-Q21",
+        "U2-S5-PS2-Q22",
+        "U2-S5-PS2-Q23"
+      ],
+      "practice_set_3": [
+        "U2-S5-PS3-Q01",
+        "U2-S5-PS3-Q02",
+        "U2-S5-PS3-Q03",
+        "U2-S5-PS3-Q04",
+        "U2-S5-PS3-Q05",
+        "U2-S5-PS3-Q06",
+        "U2-S5-PS3-Q07",
+        "U2-S5-PS3-Q08",
+        "U2-S5-PS3-Q09",
+        "U2-S5-PS3-Q10",
+        "U2-S5-PS3-Q11",
+        "U2-S5-PS3-Q12",
+        "U2-S5-PS3-Q13",
+        "U2-S5-PS3-Q14",
+        "U2-S5-PS3-Q15",
+        "U2-S5-PS3-Q16",
+        "U2-S5-PS3-Q17",
+        "U2-S5-PS3-Q18",
+        "U2-S5-PS3-Q19",
+        "U2-S5-PS3-Q20",
+        "U2-S5-PS3-Q21",
+        "U2-S5-PS3-Q22",
+        "U2-S5-PS3-Q23"
+      ],
+      "extra_practice": [
+        "U2-S5-XP-Q01",
+        "U2-S5-XP-Q02",
+        "U2-S5-XP-Q03",
+        "U2-S5-XP-Q04",
+        "U2-S5-XP-Q05",
+        "U2-S5-XP-Q06",
+        "U2-S5-XP-Q07",
+        "U2-S5-XP-Q08",
+        "U2-S5-XP-Q09",
+        "U2-S5-XP-Q10",
+        "U2-S5-XP-Q11",
+        "U2-S5-XP-Q12",
+        "U2-S5-XP-Q13",
+        "U2-S5-XP-Q14",
+        "U2-S5-XP-Q15",
+        "U2-S5-XP-Q16",
+        "U2-S5-XP-Q17",
+        "U2-S5-XP-Q18",
+        "U2-S5-XP-Q19",
+        "U2-S5-XP-Q20",
+        "U2-S5-XP-Q21",
+        "U2-S5-XP-Q22",
+        "U2-S5-XP-Q23"
+      ],
+      "cyu": [
+        "U2-S5-CYU-Q01",
+        "U2-S5-CYU-Q02",
+        "U2-S5-CYU-Q03",
+        "U2-S5-CYU-Q04",
+        "U2-S5-CYU-Q05",
+        "U2-S5-CYU-Q06"
+      ],
+      "warm_up_1": [
+        "U2-S5-WU1-Q01",
+        "U2-S5-WU1-Q02"
+      ],
+      "warm_up_2": [
+        "U2-S5-WU2-Q01",
+        "U2-S5-WU2-Q02"
+      ],
+      "warm_up_3": [
+        "U2-S5-WU3-Q01",
+        "U2-S5-WU3-Q02"
+      ],
+      "exit_ticket_a": [
+        "U2-S5-ET-A-Q01"
+      ],
+      "exit_ticket_b": [
+        "U2-S5-ET-B-Q01"
+      ],
+      "exit_ticket_c": [
+        "U2-S5-ET-C-Q01"
+      ],
+      "tarsia_ids": [
+        "U2-S5-TAR-Q01",
+        "U2-S5-TAR-Q02",
+        "U2-S5-TAR-Q03",
+        "U2-S5-TAR-Q04",
+        "U2-S5-TAR-Q05",
+        "U2-S5-TAR-Q06",
+        "U2-S5-TAR-Q07",
+        "U2-S5-TAR-Q08",
+        "U2-S5-TAR-Q09",
+        "U2-S5-TAR-Q10",
+        "U2-S5-TAR-Q11",
+        "U2-S5-TAR-Q12",
+        "U2-S5-TAR-Q13",
+        "U2-S5-TAR-Q14",
+        "U2-S5-TAR-Q15",
+        "U2-S5-TAR-Q16",
+        "U2-S5-TAR-Q17",
+        "U2-S5-TAR-Q18"
+      ],
+      "blooket_ids": [
+        "U2-S5-BLO-Q01",
+        "U2-S5-BLO-Q02",
+        "U2-S5-BLO-Q03",
+        "U2-S5-BLO-Q04",
+        "U2-S5-BLO-Q05",
+        "U2-S5-BLO-Q06",
+        "U2-S5-BLO-Q07",
+        "U2-S5-BLO-Q08",
+        "U2-S5-BLO-Q09",
+        "U2-S5-BLO-Q10",
+        "U2-S5-BLO-Q11",
+        "U2-S5-BLO-Q12",
+        "U2-S5-BLO-Q13",
+        "U2-S5-BLO-Q14",
+        "U2-S5-BLO-Q15",
+        "U2-S5-BLO-Q16",
+        "U2-S5-BLO-Q17",
+        "U2-S5-BLO-Q18",
+        "U2-S5-BLO-Q19",
+        "U2-S5-BLO-Q20"
+      ],
+      "tarsia_export": "exports/tarsia_2_5_practice_3.txt",
+      "blooket_export": "exports/blooket_2_5_practice_3.csv"
+    }
+  },
+  "unit_resources": {
+    "unit_review": [
+      "U2-REV-Q01",
+      "U2-REV-Q02",
+      "U2-REV-Q03",
+      "U2-REV-Q04",
+      "U2-REV-Q05",
+      "U2-REV-Q06",
+      "U2-REV-Q07",
+      "U2-REV-Q08",
+      "U2-REV-Q09",
+      "U2-REV-Q10",
+      "U2-REV-Q11",
+      "U2-REV-Q12",
+      "U2-REV-Q13",
+      "U2-REV-Q14",
+      "U2-REV-Q15",
+      "U2-REV-Q16",
+      "U2-REV-Q17",
+      "U2-REV-Q18",
+      "U2-REV-Q19",
+      "U2-REV-Q20"
+    ],
+    "extended_reasoning": [
+      "U2-EXT01",
+      "U2-EXT02",
+      "U2-EXT03",
+      "U2-EXT04",
+      "U2-EXT05",
+      "U2-EXT06",
+      "U2-EXT07",
+      "U2-EXT08",
+      "U2-EXT09",
+      "U2-EXT10"
+    ],
+    "performance_tasks": [
+      "U2-PERF01",
+      "U2-PERF02"
+    ],
+    "summative": {
+      "V1": [
+        "U2-SUM-V1-Q01",
+        "U2-SUM-V1-Q02",
+        "U2-SUM-V1-Q03",
+        "U2-SUM-V1-Q04",
+        "U2-SUM-V1-Q05",
+        "U2-SUM-V1-Q06",
+        "U2-SUM-V1-Q07",
+        "U2-SUM-V1-Q08",
+        "U2-SUM-V1-Q09",
+        "U2-SUM-V1-Q10",
+        "U2-SUM-V1-Q11",
+        "U2-SUM-V1-Q12"
+      ],
+      "V2": [
+        "U2-SUM-V2-Q01",
+        "U2-SUM-V2-Q02",
+        "U2-SUM-V2-Q03",
+        "U2-SUM-V2-Q04",
+        "U2-SUM-V2-Q05",
+        "U2-SUM-V2-Q06",
+        "U2-SUM-V2-Q07",
+        "U2-SUM-V2-Q08",
+        "U2-SUM-V2-Q09",
+        "U2-SUM-V2-Q10",
+        "U2-SUM-V2-Q11",
+        "U2-SUM-V2-Q12"
+      ],
+      "V3": [
+        "U2-SUM-V3-Q01",
+        "U2-SUM-V3-Q02",
+        "U2-SUM-V3-Q03",
+        "U2-SUM-V3-Q04",
+        "U2-SUM-V3-Q05",
+        "U2-SUM-V3-Q06",
+        "U2-SUM-V3-Q07",
+        "U2-SUM-V3-Q08",
+        "U2-SUM-V3-Q09",
+        "U2-SUM-V3-Q10",
+        "U2-SUM-V3-Q11",
+        "U2-SUM-V3-Q12"
+      ],
+      "V4": [
+        "U2-SUM-V4-Q01",
+        "U2-SUM-V4-Q02",
+        "U2-SUM-V4-Q03",
+        "U2-SUM-V4-Q04",
+        "U2-SUM-V4-Q05",
+        "U2-SUM-V4-Q06",
+        "U2-SUM-V4-Q07",
+        "U2-SUM-V4-Q08",
+        "U2-SUM-V4-Q09",
+        "U2-SUM-V4-Q10",
+        "U2-SUM-V4-Q11",
+        "U2-SUM-V4-Q12"
+      ],
+      "V5": [
+        "U2-SUM-V5-Q01",
+        "U2-SUM-V5-Q02",
+        "U2-SUM-V5-Q03",
+        "U2-SUM-V5-Q04",
+        "U2-SUM-V5-Q05",
+        "U2-SUM-V5-Q06",
+        "U2-SUM-V5-Q07",
+        "U2-SUM-V5-Q08",
+        "U2-SUM-V5-Q09",
+        "U2-SUM-V5-Q10",
+        "U2-SUM-V5-Q11",
+        "U2-SUM-V5-Q12"
+      ],
+      "V6": [
+        "U2-SUM-V6-Q01",
+        "U2-SUM-V6-Q02",
+        "U2-SUM-V6-Q03",
+        "U2-SUM-V6-Q04",
+        "U2-SUM-V6-Q05",
+        "U2-SUM-V6-Q06",
+        "U2-SUM-V6-Q07",
+        "U2-SUM-V6-Q08",
+        "U2-SUM-V6-Q09",
+        "U2-SUM-V6-Q10",
+        "U2-SUM-V6-Q11",
+        "U2-SUM-V6-Q12"
+      ]
+    },
+    "summative_by_blueprint_slot": {
+      "U2-SUM-SLOT01": [
+        "U2-SUM-V1-Q01",
+        "U2-SUM-V2-Q10",
+        "U2-SUM-V3-Q07",
+        "U2-SUM-V4-Q04",
+        "U2-SUM-V5-Q11",
+        "U2-SUM-V6-Q06"
+      ],
+      "U2-SUM-SLOT02": [
+        "U2-SUM-V1-Q02",
+        "U2-SUM-V2-Q11",
+        "U2-SUM-V3-Q08",
+        "U2-SUM-V4-Q05",
+        "U2-SUM-V5-Q12",
+        "U2-SUM-V6-Q07"
+      ],
+      "U2-SUM-SLOT03": [
+        "U2-SUM-V1-Q03",
+        "U2-SUM-V2-Q12",
+        "U2-SUM-V3-Q09",
+        "U2-SUM-V4-Q06",
+        "U2-SUM-V5-Q01",
+        "U2-SUM-V6-Q08"
+      ],
+      "U2-SUM-SLOT04": [
+        "U2-SUM-V1-Q04",
+        "U2-SUM-V2-Q01",
+        "U2-SUM-V3-Q10",
+        "U2-SUM-V4-Q07",
+        "U2-SUM-V5-Q02",
+        "U2-SUM-V6-Q09"
+      ],
+      "U2-SUM-SLOT05": [
+        "U2-SUM-V1-Q05",
+        "U2-SUM-V2-Q02",
+        "U2-SUM-V3-Q11",
+        "U2-SUM-V4-Q08",
+        "U2-SUM-V5-Q03",
+        "U2-SUM-V6-Q10"
+      ],
+      "U2-SUM-SLOT06": [
+        "U2-SUM-V1-Q06",
+        "U2-SUM-V2-Q03",
+        "U2-SUM-V3-Q12",
+        "U2-SUM-V4-Q09",
+        "U2-SUM-V5-Q04",
+        "U2-SUM-V6-Q11"
+      ],
+      "U2-SUM-SLOT07": [
+        "U2-SUM-V1-Q07",
+        "U2-SUM-V2-Q04",
+        "U2-SUM-V3-Q01",
+        "U2-SUM-V4-Q10",
+        "U2-SUM-V5-Q05",
+        "U2-SUM-V6-Q12"
+      ],
+      "U2-SUM-SLOT08": [
+        "U2-SUM-V1-Q08",
+        "U2-SUM-V2-Q05",
+        "U2-SUM-V3-Q02",
+        "U2-SUM-V4-Q11",
+        "U2-SUM-V5-Q06",
+        "U2-SUM-V6-Q01"
+      ],
+      "U2-SUM-SLOT09": [
+        "U2-SUM-V1-Q09",
+        "U2-SUM-V2-Q06",
+        "U2-SUM-V3-Q03",
+        "U2-SUM-V4-Q12",
+        "U2-SUM-V5-Q07",
+        "U2-SUM-V6-Q02"
+      ],
+      "U2-SUM-SLOT10": [
+        "U2-SUM-V1-Q10",
+        "U2-SUM-V2-Q07",
+        "U2-SUM-V3-Q04",
+        "U2-SUM-V4-Q01",
+        "U2-SUM-V5-Q08",
+        "U2-SUM-V6-Q03"
+      ],
+      "U2-SUM-SLOT11": [
+        "U2-SUM-V1-Q11",
+        "U2-SUM-V2-Q08",
+        "U2-SUM-V3-Q05",
+        "U2-SUM-V4-Q02",
+        "U2-SUM-V5-Q09",
+        "U2-SUM-V6-Q04"
+      ],
+      "U2-SUM-SLOT12": [
+        "U2-SUM-V1-Q12",
+        "U2-SUM-V2-Q09",
+        "U2-SUM-V3-Q06",
+        "U2-SUM-V4-Q03",
+        "U2-SUM-V5-Q10",
+        "U2-SUM-V6-Q05"
+      ]
+    }
+  },
+  "activity_seeds": {
+    "2.1": {
+      "practice_set_2": [
+        "U2-S1-PS2-Q01",
+        "U2-S1-PS2-Q02",
+        "U2-S1-PS2-Q03",
+        "U2-S1-PS2-Q04",
+        "U2-S1-PS2-Q05",
+        "U2-S1-PS2-Q06",
+        "U2-S1-PS2-Q07",
+        "U2-S1-PS2-Q08",
+        "U2-S1-PS2-Q09",
+        "U2-S1-PS2-Q10",
+        "U2-S1-PS2-Q11",
+        "U2-S1-PS2-Q12",
+        "U2-S1-PS2-Q13",
+        "U2-S1-PS2-Q14",
+        "U2-S1-PS2-Q15",
+        "U2-S1-PS2-Q16",
+        "U2-S1-PS2-Q17",
+        "U2-S1-PS2-Q18"
+      ],
+      "practice_set_3": [
+        "U2-S1-PS3-Q01",
+        "U2-S1-PS3-Q02",
+        "U2-S1-PS3-Q03",
+        "U2-S1-PS3-Q04",
+        "U2-S1-PS3-Q05",
+        "U2-S1-PS3-Q06",
+        "U2-S1-PS3-Q07",
+        "U2-S1-PS3-Q08",
+        "U2-S1-PS3-Q09",
+        "U2-S1-PS3-Q10",
+        "U2-S1-PS3-Q11",
+        "U2-S1-PS3-Q12",
+        "U2-S1-PS3-Q13",
+        "U2-S1-PS3-Q14",
+        "U2-S1-PS3-Q15",
+        "U2-S1-PS3-Q16",
+        "U2-S1-PS3-Q17",
+        "U2-S1-PS3-Q18"
+      ]
+    },
+    "2.2": {
+      "practice_set_2": [
+        "U2-S2-PS2-Q01",
+        "U2-S2-PS2-Q02",
+        "U2-S2-PS2-Q03",
+        "U2-S2-PS2-Q04",
+        "U2-S2-PS2-Q05",
+        "U2-S2-PS2-Q06",
+        "U2-S2-PS2-Q07",
+        "U2-S2-PS2-Q08",
+        "U2-S2-PS2-Q09",
+        "U2-S2-PS2-Q10",
+        "U2-S2-PS2-Q11",
+        "U2-S2-PS2-Q12",
+        "U2-S2-PS2-Q13",
+        "U2-S2-PS2-Q14",
+        "U2-S2-PS2-Q15",
+        "U2-S2-PS2-Q16",
+        "U2-S2-PS2-Q17",
+        "U2-S2-PS2-Q18",
+        "U2-S2-PS2-Q19",
+        "U2-S2-PS2-Q20"
+      ],
+      "practice_set_3": [
+        "U2-S2-PS3-Q01",
+        "U2-S2-PS3-Q02",
+        "U2-S2-PS3-Q03",
+        "U2-S2-PS3-Q04",
+        "U2-S2-PS3-Q05",
+        "U2-S2-PS3-Q06",
+        "U2-S2-PS3-Q07",
+        "U2-S2-PS3-Q08",
+        "U2-S2-PS3-Q09",
+        "U2-S2-PS3-Q10",
+        "U2-S2-PS3-Q11",
+        "U2-S2-PS3-Q12",
+        "U2-S2-PS3-Q13",
+        "U2-S2-PS3-Q14",
+        "U2-S2-PS3-Q15",
+        "U2-S2-PS3-Q16",
+        "U2-S2-PS3-Q17",
+        "U2-S2-PS3-Q18",
+        "U2-S2-PS3-Q19",
+        "U2-S2-PS3-Q20"
+      ]
+    },
+    "2.3": {
+      "practice_set_2": [
+        "U2-S3-PS2-Q01",
+        "U2-S3-PS2-Q02",
+        "U2-S3-PS2-Q03",
+        "U2-S3-PS2-Q04",
+        "U2-S3-PS2-Q05",
+        "U2-S3-PS2-Q06",
+        "U2-S3-PS2-Q07",
+        "U2-S3-PS2-Q08",
+        "U2-S3-PS2-Q09",
+        "U2-S3-PS2-Q10",
+        "U2-S3-PS2-Q11",
+        "U2-S3-PS2-Q12",
+        "U2-S3-PS2-Q13",
+        "U2-S3-PS2-Q14",
+        "U2-S3-PS2-Q15",
+        "U2-S3-PS2-Q16",
+        "U2-S3-PS2-Q17",
+        "U2-S3-PS2-Q18",
+        "U2-S3-PS2-Q19",
+        "U2-S3-PS2-Q20",
+        "U2-S3-PS2-Q21"
+      ],
+      "practice_set_3": [
+        "U2-S3-PS3-Q01",
+        "U2-S3-PS3-Q02",
+        "U2-S3-PS3-Q03",
+        "U2-S3-PS3-Q04",
+        "U2-S3-PS3-Q05",
+        "U2-S3-PS3-Q06",
+        "U2-S3-PS3-Q07",
+        "U2-S3-PS3-Q08",
+        "U2-S3-PS3-Q09",
+        "U2-S3-PS3-Q10",
+        "U2-S3-PS3-Q11",
+        "U2-S3-PS3-Q12",
+        "U2-S3-PS3-Q13",
+        "U2-S3-PS3-Q14",
+        "U2-S3-PS3-Q15",
+        "U2-S3-PS3-Q16",
+        "U2-S3-PS3-Q17",
+        "U2-S3-PS3-Q18",
+        "U2-S3-PS3-Q19",
+        "U2-S3-PS3-Q20",
+        "U2-S3-PS3-Q21"
+      ]
+    },
+    "2.4": {
+      "practice_set_2": [
+        "U2-S4-PS2-Q01",
+        "U2-S4-PS2-Q02",
+        "U2-S4-PS2-Q03",
+        "U2-S4-PS2-Q04",
+        "U2-S4-PS2-Q05",
+        "U2-S4-PS2-Q06",
+        "U2-S4-PS2-Q07",
+        "U2-S4-PS2-Q08",
+        "U2-S4-PS2-Q09",
+        "U2-S4-PS2-Q10",
+        "U2-S4-PS2-Q11",
+        "U2-S4-PS2-Q12",
+        "U2-S4-PS2-Q13",
+        "U2-S4-PS2-Q14",
+        "U2-S4-PS2-Q15",
+        "U2-S4-PS2-Q16",
+        "U2-S4-PS2-Q17",
+        "U2-S4-PS2-Q18",
+        "U2-S4-PS2-Q19",
+        "U2-S4-PS2-Q20",
+        "U2-S4-PS2-Q21",
+        "U2-S4-PS2-Q22"
+      ],
+      "practice_set_3": [
+        "U2-S4-PS3-Q01",
+        "U2-S4-PS3-Q02",
+        "U2-S4-PS3-Q03",
+        "U2-S4-PS3-Q04",
+        "U2-S4-PS3-Q05",
+        "U2-S4-PS3-Q06",
+        "U2-S4-PS3-Q07",
+        "U2-S4-PS3-Q08",
+        "U2-S4-PS3-Q09",
+        "U2-S4-PS3-Q10",
+        "U2-S4-PS3-Q11",
+        "U2-S4-PS3-Q12",
+        "U2-S4-PS3-Q13",
+        "U2-S4-PS3-Q14",
+        "U2-S4-PS3-Q15",
+        "U2-S4-PS3-Q16",
+        "U2-S4-PS3-Q17",
+        "U2-S4-PS3-Q18",
+        "U2-S4-PS3-Q19",
+        "U2-S4-PS3-Q20",
+        "U2-S4-PS3-Q21",
+        "U2-S4-PS3-Q22"
+      ]
+    },
+    "2.5": {
+      "practice_set_2": [
+        "U2-S5-PS2-Q01",
+        "U2-S5-PS2-Q02",
+        "U2-S5-PS2-Q03",
+        "U2-S5-PS2-Q04",
+        "U2-S5-PS2-Q05",
+        "U2-S5-PS2-Q06",
+        "U2-S5-PS2-Q07",
+        "U2-S5-PS2-Q08",
+        "U2-S5-PS2-Q09",
+        "U2-S5-PS2-Q10",
+        "U2-S5-PS2-Q11",
+        "U2-S5-PS2-Q12",
+        "U2-S5-PS2-Q13",
+        "U2-S5-PS2-Q14",
+        "U2-S5-PS2-Q15",
+        "U2-S5-PS2-Q16",
+        "U2-S5-PS2-Q17",
+        "U2-S5-PS2-Q18",
+        "U2-S5-PS2-Q19",
+        "U2-S5-PS2-Q20",
+        "U2-S5-PS2-Q21",
+        "U2-S5-PS2-Q22",
+        "U2-S5-PS2-Q23"
+      ],
+      "practice_set_3": [
+        "U2-S5-PS3-Q01",
+        "U2-S5-PS3-Q02",
+        "U2-S5-PS3-Q03",
+        "U2-S5-PS3-Q04",
+        "U2-S5-PS3-Q05",
+        "U2-S5-PS3-Q06",
+        "U2-S5-PS3-Q07",
+        "U2-S5-PS3-Q08",
+        "U2-S5-PS3-Q09",
+        "U2-S5-PS3-Q10",
+        "U2-S5-PS3-Q11",
+        "U2-S5-PS3-Q12",
+        "U2-S5-PS3-Q13",
+        "U2-S5-PS3-Q14",
+        "U2-S5-PS3-Q15",
+        "U2-S5-PS3-Q16",
+        "U2-S5-PS3-Q17",
+        "U2-S5-PS3-Q18",
+        "U2-S5-PS3-Q19",
+        "U2-S5-PS3-Q20",
+        "U2-S5-PS3-Q21",
+        "U2-S5-PS3-Q22",
+        "U2-S5-PS3-Q23"
+      ]
+    }
+  },
+  "quick_check_seeds": {
+    "U2-MG01": {
+      "exit_ticket_seed_ids": [
+        "U2-S1-ET-A-Q01",
+        "U2-S1-ET-B-Q01",
+        "U2-S1-ET-C-Q01"
+      ],
+      "representation_notes": "Create independent parallel evidence; do not copy formative-secure prompts.",
+      "security_caution": "Quick Checks must remain independent of already exposed instructional content."
+    },
+    "U2-MG02": {
+      "exit_ticket_seed_ids": [
+        "U2-S2-ET-A-Q01",
+        "U2-S2-ET-B-Q01",
+        "U2-S2-ET-C-Q01"
+      ],
+      "representation_notes": "Create independent parallel evidence; do not copy formative-secure prompts.",
+      "security_caution": "Quick Checks must remain independent of already exposed instructional content."
+    },
+    "U2-MG03": {
+      "exit_ticket_seed_ids": [
+        "U2-S3-ET-A-Q01",
+        "U2-S3-ET-B-Q01",
+        "U2-S3-ET-C-Q01",
+        "U2-S4-ET-A-Q01",
+        "U2-S4-ET-B-Q01",
+        "U2-S4-ET-C-Q01"
+      ],
+      "representation_notes": "Create independent parallel evidence; do not copy formative-secure prompts.",
+      "security_caution": "Quick Checks must remain independent of already exposed instructional content."
+    },
+    "U2-MG04": {
+      "exit_ticket_seed_ids": [
+        "U2-S5-ET-A-Q01",
+        "U2-S5-ET-B-Q01",
+        "U2-S5-ET-C-Q01"
+      ],
+      "representation_notes": "Create independent parallel evidence; do not copy formative-secure prompts.",
+      "security_caution": "Quick Checks must remain independent of already exposed instructional content."
+    }
+  },
+  "progress_support": {
+    "U2-MG01": [
+      "U2-S1-PS1-Q01",
+      "U2-S1-PS2-Q01",
+      "U2-S1-PS3-Q01",
+      "U2-S1-XP-Q01",
+      "U2-S1-PS1-Q02",
+      "U2-S1-PS2-Q02",
+      "U2-S1-PS3-Q02",
+      "U2-S1-XP-Q02",
+      "U2-S1-PS1-Q03",
+      "U2-S1-PS2-Q03",
+      "U2-S1-PS3-Q03",
+      "U2-S1-XP-Q03",
+      "U2-S1-PS1-Q04",
+      "U2-S1-PS2-Q04",
+      "U2-S1-PS3-Q04",
+      "U2-S1-XP-Q04",
+      "U2-S1-PS1-Q05",
+      "U2-S1-PS2-Q05",
+      "U2-S1-PS3-Q05",
+      "U2-S1-XP-Q05",
+      "U2-S1-PS1-Q06",
+      "U2-S1-PS2-Q06",
+      "U2-S1-PS3-Q06",
+      "U2-S1-XP-Q06",
+      "U2-S1-PS1-Q07",
+      "U2-S1-PS2-Q07",
+      "U2-S1-PS3-Q07",
+      "U2-S1-XP-Q07",
+      "U2-S1-PS1-Q08",
+      "U2-S1-PS2-Q08",
+      "U2-S1-PS3-Q08",
+      "U2-S1-XP-Q08",
+      "U2-S1-PS1-Q09",
+      "U2-S1-PS2-Q09",
+      "U2-S1-PS3-Q09",
+      "U2-S1-XP-Q09",
+      "U2-S1-PS1-Q10",
+      "U2-S1-PS2-Q10",
+      "U2-S1-PS3-Q10",
+      "U2-S1-XP-Q10"
+    ],
+    "U2-MG02": [
+      "U2-S2-PS1-Q01",
+      "U2-S2-PS2-Q01",
+      "U2-S2-PS3-Q01",
+      "U2-S2-XP-Q01",
+      "U2-S2-PS1-Q02",
+      "U2-S2-PS2-Q02",
+      "U2-S2-PS3-Q02",
+      "U2-S2-XP-Q02",
+      "U2-S2-PS1-Q03",
+      "U2-S2-PS2-Q03",
+      "U2-S2-PS3-Q03",
+      "U2-S2-XP-Q03",
+      "U2-S2-PS1-Q04",
+      "U2-S2-PS2-Q04",
+      "U2-S2-PS3-Q04",
+      "U2-S2-XP-Q04",
+      "U2-S2-PS1-Q05",
+      "U2-S2-PS2-Q05",
+      "U2-S2-PS3-Q05",
+      "U2-S2-XP-Q05",
+      "U2-S2-PS1-Q06",
+      "U2-S2-PS2-Q06",
+      "U2-S2-PS3-Q06",
+      "U2-S2-XP-Q06",
+      "U2-S2-PS1-Q07",
+      "U2-S2-PS2-Q07",
+      "U2-S2-PS3-Q07",
+      "U2-S2-XP-Q07",
+      "U2-S2-PS1-Q08",
+      "U2-S2-PS2-Q08",
+      "U2-S2-PS3-Q08",
+      "U2-S2-XP-Q08",
+      "U2-S2-PS1-Q09",
+      "U2-S2-PS2-Q09",
+      "U2-S2-PS3-Q09",
+      "U2-S2-XP-Q09",
+      "U2-S2-PS1-Q10",
+      "U2-S2-PS2-Q10",
+      "U2-S2-PS3-Q10",
+      "U2-S2-XP-Q10"
+    ],
+    "U2-MG03": [
+      "U2-S3-PS1-Q01",
+      "U2-S3-PS2-Q01",
+      "U2-S3-PS3-Q01",
+      "U2-S3-XP-Q01",
+      "U2-S3-PS1-Q02",
+      "U2-S3-PS2-Q02",
+      "U2-S3-PS3-Q02",
+      "U2-S3-XP-Q02",
+      "U2-S3-PS1-Q03",
+      "U2-S3-PS2-Q03",
+      "U2-S3-PS3-Q03",
+      "U2-S3-XP-Q03",
+      "U2-S3-PS1-Q04",
+      "U2-S3-PS2-Q04",
+      "U2-S3-PS3-Q04",
+      "U2-S3-XP-Q04",
+      "U2-S3-PS1-Q05",
+      "U2-S3-PS2-Q05",
+      "U2-S3-PS3-Q05",
+      "U2-S3-XP-Q05",
+      "U2-S3-PS1-Q06",
+      "U2-S3-PS2-Q06",
+      "U2-S3-PS3-Q06",
+      "U2-S3-XP-Q06",
+      "U2-S3-PS1-Q07",
+      "U2-S3-PS2-Q07",
+      "U2-S3-PS3-Q07",
+      "U2-S3-XP-Q07",
+      "U2-S3-PS1-Q08",
+      "U2-S3-PS2-Q08",
+      "U2-S3-PS3-Q08",
+      "U2-S3-XP-Q08",
+      "U2-S3-PS1-Q09",
+      "U2-S3-PS2-Q09",
+      "U2-S3-PS3-Q09",
+      "U2-S3-XP-Q09",
+      "U2-S3-PS1-Q10",
+      "U2-S3-PS2-Q10",
+      "U2-S3-PS3-Q10",
+      "U2-S3-XP-Q10"
+    ],
+    "U2-MG04": [
+      "U2-S5-PS1-Q01",
+      "U2-S5-PS2-Q01",
+      "U2-S5-PS3-Q01",
+      "U2-S5-XP-Q01",
+      "U2-S5-PS1-Q02",
+      "U2-S5-PS2-Q02",
+      "U2-S5-PS3-Q02",
+      "U2-S5-XP-Q02",
+      "U2-S5-PS1-Q03",
+      "U2-S5-PS2-Q03",
+      "U2-S5-PS3-Q03",
+      "U2-S5-XP-Q03",
+      "U2-S5-PS1-Q04",
+      "U2-S5-PS2-Q04",
+      "U2-S5-PS3-Q04",
+      "U2-S5-XP-Q04",
+      "U2-S5-PS1-Q05",
+      "U2-S5-PS2-Q05",
+      "U2-S5-PS3-Q05",
+      "U2-S5-XP-Q05",
+      "U2-S5-PS1-Q06",
+      "U2-S5-PS2-Q06",
+      "U2-S5-PS3-Q06",
+      "U2-S5-XP-Q06",
+      "U2-S5-PS1-Q07",
+      "U2-S5-PS2-Q07",
+      "U2-S5-PS3-Q07",
+      "U2-S5-XP-Q07",
+      "U2-S5-PS1-Q08",
+      "U2-S5-PS2-Q08",
+      "U2-S5-PS3-Q08",
+      "U2-S5-XP-Q08",
+      "U2-S5-PS1-Q09",
+      "U2-S5-PS2-Q09",
+      "U2-S5-PS3-Q09",
+      "U2-S5-XP-Q09",
+      "U2-S5-PS1-Q10",
+      "U2-S5-PS2-Q10",
+      "U2-S5-PS3-Q10",
+      "U2-S5-XP-Q10"
+    ]
+  },
+  "performance_task_routing": [
+    {
+      "bank_id": "U2-PERF01",
+      "recommended_section": "2.5",
+      "fits_sections": [
+        "2.2",
+        "2.5"
+      ],
+      "mastery_goal_ids": [
+        "U2-MG02",
+        "U2-MG04"
+      ],
+      "evidence_point_ids": [
+        "U2-EP026",
+        "U2-EP027"
+      ]
+    },
+    {
+      "bank_id": "U2-PERF02",
+      "recommended_section": "2.4",
+      "fits_sections": [
+        "2.3",
+        "2.4",
+        "2.5"
+      ],
+      "mastery_goal_ids": [
+        "U2-MG03",
+        "U2-MG04"
+      ],
+      "evidence_point_ids": [
+        "U2-EP028",
+        "U2-EP029"
+      ]
+    }
+  ],
+  "figure_dependencies": [
+    {
+      "file": "figures/unit2-reference-frame-bus.png",
+      "alt": "A bus moving east with a student inside and an observer beside the road.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/unit2-distance-time-graphs.png",
+      "alt": "Five distance-time graphs labeled A through E.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/unit2-velocity-time-pattern.png",
+      "alt": "A velocity-time graph with velocity increasing evenly from 0 to 8 meters per second over 4 seconds.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/unit2-motion-diagram-spacing.png",
+      "alt": "Three instructional motion diagrams with equal-time dot spacing patterns for constant speed speeding up and slowing down.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/unit2-free-fall-speed-pattern.png",
+      "alt": "A bar chart showing speed values 10 20 30 and 40 meters per second after 1 2 3 and 4 seconds of falling.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/unit2-flawed-freefall-graph.png",
+      "alt": "A graph comparing a student straight-line distance-fallen model with a curved ideal free-fall pattern.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/unit2-velocity-vector-turn.png",
+      "alt": "Two equal-length velocity arrows showing motion east followed by motion north.",
+      "source": "Framework approved course figure",
+      "graph_tool_type": ""
+    },
+    {
+      "file": "figures/u2_s2_dt_ps1.png",
+      "alt": "A straight distance-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s2_dt_ps2.png",
+      "alt": "A straight distance-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s2_dt_ps3.png",
+      "alt": "A straight distance-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s2_dt_xp.png",
+      "alt": "A straight distance-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s3_vt_ps1.png",
+      "alt": "A straight velocity-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s3_vt_ps2.png",
+      "alt": "A straight velocity-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s3_vt_ps3.png",
+      "alt": "A straight velocity-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s3_vt_xp.png",
+      "alt": "A straight velocity-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s5_pos_ps1.png",
+      "alt": "A straight position-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s5_pos_ps2.png",
+      "alt": "A straight position-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s5_pos_ps3.png",
+      "alt": "A straight position-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    },
+    {
+      "file": "figures/u2_s5_pos_xp.png",
+      "alt": "A straight position-time graph.",
+      "source": "Generated by Framework graph_tool v12",
+      "graph_tool_type": "context_graph"
+    }
+  ],
+  "generation_script_dependencies": [
+    "generate_graphs.py"
+  ],
+  "deployed_bank_path": "banks/unit2/unit2.html",
+  "shared_css": [
+    "../../css/base.css",
+    "../../css/bank.css"
+  ],
+  "downstream_summative_path": "assessments_zxrtjp/unit2_summative/unit2_summative_assessment.html"
+}

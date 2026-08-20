@@ -1,0 +1,136 @@
+AP/SCI BANK BUILD REPORT — UNIT 1 — REPAIRED CURRENT STATE
+Course: Conceptual Physics
+Unit: 1 — Forces, Motion, and Equilibrium
+PM family: AP/SCI Bank Build v12 — Completion-Reserved Progressive-Authoring + Final-Audit Gold Standard
+Framework: Conceptual Physics Framework v3
+Repair workflow: Universal Unit Bank Repair PM v3 — Structural-Variety + Verified-Delivery Gold Standard
+Repair date: 2026-08-20
+Overall result: PASS — candidate ZIP verified; final freeze/manifest/ZIP sequence will be rerun from these report bytes.
+
+AUTHORITY / SOURCE
+- Current uploaded Repair PM v3 governs repair workflow.
+- Current uploaded AP/SCI Bank PM v12 governs Physics Bank content, progressive QA, structural variety, render hygiene, and delivery reserve.
+- Original current Unit 1 Assessment Plan inside Framework v3 is content/evidence authority.
+- Framework contracts/course_file_structure.json controls deployment paths.
+- Framework section_enrichment.json + section_reference_packets.json + reusable figures/tables were reviewed for Unit 1.
+- Framework ~fix_mathjax_v8.py and ~audit_bank_package_v3.py are the final format/folder audit tools.
+
+INVENTORY
+Total canonical items: 823
+- Blooket: 106
+- CYU: 30
+- Exit Ticket A: 10
+- Exit Ticket B: 10
+- Exit Ticket C: 10
+- Extended Reasoning: 10
+- Extra Practice: 100
+- Notes Example: 20
+- Notes YTI: 20
+- Performance Task: 2
+- Practice Set 1: 100
+- Practice Set 2: 100
+- Practice Set 3: 100
+- Summative: 60
+- Tarsia: 90
+- Unit Review: 20
+- Warm-Up 1: 10
+- Warm-Up 2: 10
+- Warm-Up 3: 10
+- What's To Come: 5
+
+Practice counts: 1.1=18, 1.2=19, 1.3=21, 1.4=20, 1.5=22 per parallel form; counts are section-specific rather than uniform/minimum-biased.
+Notes pairs: 4 per section. Warm-Ups: 3 sets/section, 2 items/set. Exit Tickets: 3/section, 2 items/ticket.
+Review=20; Extended=10; Performance=2; Summative=6 forms x 10 items.
+DOK metadata: 1:162, 2:607, 3:54.
+
+WTC / NOTES CORE GATE
+- All 5 WTC items audited against the Assessment Plan and section packets: PASS.
+- All 20 Example/YTI pairs audited as pairs and across each section: PASS.
+- Section 1.1 keeps real HTML measurement tables with structured table data.
+- Section 1.3 explicitly teaches same/opposite 1D combinations plus a simple perpendicular 2D resultant; answer-neutral vector figure retained.
+- Section 1.5 Notes Pair 3 remains distinct from the WTC and targets fictitious/motion-force model critique.
+- Secure collision check after instructional changes: PASS.
+
+SYSTEMIC REPAIRS / STRUCTURAL VARIETY
+- Original generic cross-family reasoning machinery repaired across 193 Practice items / 49 families.
+- Source Student A/B comparison overuse (41 items / 11 families) reduced to 6 items / 2 related Section 1.5 model-comparison families where comparing models is genuinely the target.
+- Supplied-correct-analysis / generic conclusion-validation shells: 0 remaining.
+- Generic “identify the specific given…” and “evaluate that conclusion…” wrappers: 0 remaining.
+- “A student proposes” shell: 4 items / 1 Section 1.5 model-critique family; below v3 review threshold and content-appropriate.
+- Broad student-claim/error shell: 6 items / 2 families; below v3 review threshold.
+- Transient exact prompt collisions exposed by scaffold removal were repaired family-by-family before commit; final exact duplicate groups=0.
+- Generated duplicated modifier “one one-dimensional” fixed wherever present; final grammar artifact scan=0.
+- Raw serialized array/list data standing in for student tables: 0.
+- Answer-revealing selected-response scaffold cases: 0.
+
+REPRESENTATION UTILIZATION
+- 1.1: figure-dependent item uses=0; structured tables=2; Notes visual/table items=1; Practice visual/table items=0.
+- 1.2: figure-dependent item uses=3; structured tables=0; Notes visual/table items=1; Practice visual/table items=1.
+- 1.3: figure-dependent item uses=5; structured tables=0; Notes visual/table items=2; Practice visual/table items=2.
+- 1.4: figure-dependent item uses=5; structured tables=0; Notes visual/table items=1; Practice visual/table items=3.
+- 1.5: figure-dependent item uses=4; structured tables=2; Notes visual/table items=1; Practice visual/table items=2.
+Packaged figures=10; referenced figures=10; unused packaged figures=0.
+Graph tool applicability: no Unit 1 quantitative graph requires a graph_tool type; force/vector schematics appropriately use approved/original diagrams.
+
+SELECTED RESPONSE / EXPORT QA
+Canonical selected-response items checked: 300.
+Duplicate/equivalent choice structural scan: PASS. One marked correct choice per item: PASS.
+Repeated wrong-choice text across 8+ unrelated families: 0.
+Correct-answer positions by destination/form:
+- 1.1 Extra Practice: 1=2, 2=1, 3=1, 4=1
+- 1.1 Practice Set 1: 1=1, 2=1, 3=1, 4=1
+- 1.1 Practice Set 2: 1=2, 2=2, 4=1
+- 1.1 Practice Set 3: 1=5, 2=4, 3=4, 4=5
+- 1.2 Practice Set 2: 4=1
+- 1.2 Practice Set 3: 1=5, 2=5, 3=4, 4=5
+- 1.3 Extra Practice: 1=1, 2=2, 4=3
+- 1.3 Practice Set 1: 1=2, 2=1, 3=1, 4=1
+- 1.3 Practice Set 2: 1=1, 2=2, 3=1, 4=3
+- 1.3 Practice Set 3: 1=5, 2=5, 3=5, 4=6
+- 1.4 Extra Practice: 1=2, 2=1, 3=1, 4=1
+- 1.4 Practice Set 1: 1=2, 2=1, 3=1, 4=1
+- 1.4 Practice Set 2: 1=2, 2=1, 3=1, 4=1
+- 1.4 Practice Set 3: 1=5, 2=5, 3=5, 4=5
+- 1.5 Extra Practice: 1=2, 2=1, 3=1, 4=1
+- 1.5 Practice Set 1: 1=2, 2=2, 3=1, 4=1
+- 1.5 Practice Set 2: 1=2, 2=2, 4=1
+- 1.5 Practice Set 3: 1=6, 2=5, 3=5, 4=6
+- Blooket 1.1: 1=6, 2=4, 3=6, 4=4
+- Blooket 1.2: 1=5, 2=5, 3=6, 4=5
+- Blooket 1.3: 1=5, 2=6, 3=5, 4=6
+- Blooket 1.4: 1=5, 2=6, 3=4, 4=5
+- Blooket 1.5: 1=5, 2=6, 3=6, 4=6
+- Summative V1: 1=1, 2=1, 3=1, 4=1
+- Summative V2: 1=1, 2=1, 3=1, 4=1
+- Summative V3: 1=1, 2=1, 3=1, 4=1
+- Summative V4: 1=1, 2=1, 3=1, 4=1
+- Summative V5: 2=1, 3=1, 4=1
+- Summative V6: 3=2, 4=1
+- Unit Review: 1=2, 2=2, 3=2, 4=2
+
+Tarsia: 5 exports, 18 nonblank unique-answer pairs each — PASS.
+Blooket: 5 exports, 20–25 questions each, all four answer positions, <=40% maximum, no same-set duplicates — PASS.
+
+EVIDENCE / SECURITY
+Evidence-bearing coverage: U1-MG01=22, U1-MG02=26, U1-MG03=32, U1-MG04=25.
+Formative-secure/secure task_architecture populated: PASS.
+Instructional-to-secure strict near-copy candidates at 0.60 token-Jaccard screen: 0.
+No secure answer leakage in student_html: PASS.
+V1–V4 blueprint equivalence and V5/V6 makeup independence preserved: PASS.
+
+MACHINE / FORMAT QA
+HTML bank-item articles=823; mapping rows=823; bank_data items=823.
+Every mapped/routed Bank ID resolves exactly once: PASS.
+Figure/table/export dependencies: PASS.
+Malformed MathJax / escaped structural HTML / unresolved templates: 0.
+Final student-facing table/grammar/scaffold hygiene scan: PASS.
+Progressive QA ledger: unit1_qa_ledger.json.
+Late changes after full-unit content gate: blockers only (exact-duplicate and scaffold hard/review-threshold repairs); no optional polish was started after the gate.
+Deferred Repair-PM candidates: NONE.
+Final-folder deterministic audit actually run: YES (Framework tools/~audit_bank_package_v3.py, PASS before report finalization; rerun after reports).
+Actual delivered-ZIP audit actually run: YES — candidate delivered-ZIP cycle passed; final exact-ZIP cycle rerun after these report bytes are frozen.
+
+REPAIR DELTA
+Changed canonical IDs=239; unchanged=584; added=0; removed=0.
+Repair log: unit1_repair_log.csv. Change manifest: unit1_change_manifest.json.
+Final package manifest: unit1_final_package_manifest.json (created after frozen final report bytes).

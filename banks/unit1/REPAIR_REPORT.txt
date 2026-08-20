@@ -1,0 +1,78 @@
+UNIT 1 BANK REPAIR
+Source Bank: unit1(1).zip
+Current Framework: Conceptual Physics Framework v3
+Governing Bank Build PM: AP/SCI Bank Build PM v12
+Repair PM: Universal Unit Bank Repair PM v3
+Overall result: PASS — candidate ZIP verified; final freeze/manifest/ZIP sequence will be rerun from these report bytes.
+
+PHASE 1 — WTC
+items audited: 5
+kept: 4
+repaired: 1 (Section 1.1 evidence inference/key)
+replaced: 0
+final: PASS
+
+PHASE 2 — NOTES EX/YTI
+pairs audited: 20 (4 per section)
+kept: 17 pairs substantially intact
+repaired/replaced: Section 1.3 vector coverage sequence and Section 1.5 Pair 3 architecture as recorded in repair log
+correctness/representation/security gate: PASS
+final: PASS
+
+PHASE 3 — PRACTICE / CYU
+Practice items audited by family: 400 across 51 family IDs
+CYU items audited: 30
+Original stock reasoning generator repaired across 193 items / 49 families.
+Repair-PM-v3 structural-scaffold audit then reduced Student A/B comparison from source-level overuse to 6 items / 2 related families; generic supplied-conclusion scaffolds to 0; answer-revealing selected scaffolds to 0.
+Exact prompt duplicates after final family commits: 0.
+Raw-array/table leakage: 0. Generated grammar artifacts: 0.
+final: PASS
+
+PHASE 4 — SHORT INSTRUCTIONAL
+Warm-Ups, 90 Tarsia items/exports, and 106 Blooket items/exports audited.
+Four same-set Blooket duplicate items from the source repair history were replaced and exports synchronized.
+final: PASS
+
+PHASE 5 — EXIT TICKETS
+30 formative-secure items audited; evidence routing and semantic independence preserved.
+changed canonical Exit Ticket IDs: 0
+final: PASS
+
+PHASE 6 — REVIEW / EXTENDED / PERFORMANCE
+Review=20, Extended=10, Performance=2 audited.
+Unit Review selected-response position repairs retained from source repair; secure tasks remain independent.
+final: PASS
+
+PHASE 7 — SUMMATIVE
+6 forms x 10 blueprint slots audited.
+V1–V4 controlled parallelism preserved; V5/V6 independent makeup architectures preserved.
+Selected-response position repairs retained without changing intended evidence.
+final: PASS
+
+PHASE 8 — PACKAGE / MACHINE HANDOFF
+HTML/mapping/bank_data counts: 823 / 823 / 823
+changed Bank ID count: 239
+unchanged Bank item count: 584
+added/removed IDs: 0 / 0
+changed figures: figures/unit1-perpendicular-forces.png added as an answer-neutral original vector schematic
+changed exports: exports/blooket_1_2_practice_3.csv; exports/blooket_1_5_practice_3.csv
+final audit tool actually run: YES — Framework tools/~audit_bank_package_v3.py
+progressive QA ledger: unit1_qa_ledger.json
+final package manifest: unit1_final_package_manifest.json
+final HTML SHA-256: e8b724c5cb4f8b6c997d76c3a59c3cff524aa54a0edd44b84df3664978fb9db8
+final bank_data SHA-256: fedeab0b1437d5521d0a5f1e023e492dab5cbe895f67b8ee842c51477734dfdf
+final mapping SHA-256: fdcb07354b68fd77a77a789de3f822a2e0cee998683e601e78f03465b65d9cad
+extracted delivered-ZIP manifest comparison: PASS
+extracted delivered-ZIP final audit: PASS
+unresolved issues: 0
+
+SYSTEMIC PATTERNS FOUND
+1. Generic cross-family reasoning wrappers obscured Physics-specific task structure. Repair: family-level direct tasks and representations.
+2. Student A/B comparison survived as a second-generation scaffold across unrelated families. Repair: retain only where model comparison is the actual learning goal; redesign other families as direct interpretation/calculation/prediction/model tasks.
+3. Supplied-conclusion validation and selected-response answer-reveal risk. Repair: remove supplied correct conclusions; final answer-revealing selected-response count=0.
+4. Exact prompt collisions surfaced after scaffold removal. Repair: family-specific reasoning/representation changes; final exact normalized duplicates=0.
+5. Generated duplicated modifier “one one-dimensional.” Repair: corrected to natural Physics language; final grammar artifact count=0.
+
+AFFECTED DOWNSTREAM DESTINATIONS
+Notes (Sections 1.1, 1.3, 1.5); Practice/activity seed routes across Sections 1.1–1.5; Blooket Sections 1.2/1.5; Unit Review; Summative.
+Teacher-live investigations, performance tasks, quick checks, ideas, and teacher revisions are not regenerated here.
