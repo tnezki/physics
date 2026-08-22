@@ -1,233 +1,176 @@
 /* ============================================================
-   progress_tracker.css — Shared Progress Tracker
-   Physics/Algebra print-first student progress tracking
-   Depends on: base.css
+   progress_tracker.css — Student Portfolio Progress Tracker v2
+   PRINT-FIRST | TWO-PAGE TARGET | NO DOK / LADDER ORGANIZATION
+   Canonical content source: current Unit Assessment Plan in Framework.
    ============================================================ */
 
-@page { size: letter; margin: 0.45in; }
+:root {
+  --navy: #17365d;
+  --ink: #17202a;
+  --muted: #5f6b76;
+  --line: #aeb8c5;
+  --line-light: #dce2e8;
+  --panel: #f6f8fb;
+  --blue-soft: #eaf2fb;
+  --white: #ffffff;
+}
 
-/* PAGE / BODY */
-body {
-    color: #111;
-    padding: 20px;
-    line-height: 1.42;
-}
-.container { max-width: 900px; }
+@page { size: letter portrait; margin: .38in .42in; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #eef1f4; color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+body { line-height: 1.24; }
 
-/* TYPOGRAPHY */
-h1 { font-size: 1.8rem; color: #111; margin-bottom: 8px; line-height: 1.1; }
-h2 { font-size: 1.32rem; color: #111; border-left: 6px solid #111; padding-left: 10px; margin: 18px 0 10px; }
-h3 { font-size: 1.05rem; margin: 0 0 8px; color: #111; }
-p { margin-bottom: 8px; }
-ol, ul { margin-left: 24px; margin-bottom: 8px; }
-li { margin-bottom: 6px; }
+.tracker-page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto 24px;
+  padding: .38in .42in;
+  background: var(--white);
+  break-after: page;
+  page-break-after: always;
+}
+.tracker-page:last-child { break-after: auto; page-break-after: auto; }
 
-/* STANDARD CARDS */
-.essential-standard {
-    border: 2px solid #111;
-    padding: 12px 14px;
-    margin: 10px 0 14px;
-    break-inside: avoid;
-    page-break-inside: avoid;
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 2.45in;
+  gap: 18px;
+  align-items: end;
+  border-bottom: 4px solid var(--navy);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
-.essential-standard-title {
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    margin-bottom: 5px;
-}
-.key {
-    border: 1px solid #222;
-    padding: 10px 12px;
-    margin: 10px 0 14px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-}
-.key-title { font-weight: 900; margin-bottom: 4px; text-transform: uppercase; }
-.key-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
-.key-grid div { border-left: 3px solid #111; padding-left: 8px; }
+.kicker { color: var(--muted); font-size: 8.5pt; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+h1 { margin: 2px 0 2px; color: var(--navy); font-size: 22pt; line-height: 1; }
+.unit-name { font-size: 9.2pt; font-weight: 700; color: #39434d; }
+.identity { display: grid; gap: 8px; font-size: 9pt; }
+.line-field { display: grid; grid-template-columns: auto 1fr; gap: 7px; align-items: end; }
+.line { border-bottom: 1px solid #444; min-height: 15px; }
 
-/* BLACK BOXES */
-.black-box,
-.black-dok {
-    background: #111;
-    color: #fff;
-    padding: 11px 13px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+.essential {
+  border: 1.5px solid var(--navy);
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin: 0 0 8px;
+  background: var(--blue-soft);
+  font-size: 9pt;
 }
-.black-box strong,
-.black-dok strong { display: block; font-size: 1.03rem; margin-bottom: 4px; }
-.black-box span,
-.black-dok .dok-small { display: block; font-size: .9rem; font-weight: 500; font-style: italic; color: #fff; }
-.black-dok { margin: 18px 0 12px; }
+.essential strong { color: var(--navy); }
 
-/* TRACKING CARDS */
-.tracking-card {
-    border: 1px solid #222;
-    margin: 0 0 14px;
-    break-inside: avoid;
-    page-break-inside: avoid;
+.status-key {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 8px;
 }
-.tracking-grid {
-    display: grid;
-    grid-template-columns: .9fr 1.4fr;
-    border-top: 1px solid #222;
+.status-box {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 5px 6px;
+  background: #fff;
+  min-height: .56in;
 }
-.tracking-cell,
-.tracking-cell2 {
-    padding: 11px 12px;
-    border-right: 1px solid #222;
-}
-.tracking-cell { min-height: 220px; }
-.tracking-cell2 { min-height: 360px; }
-.tracking-cell:last-child,
-.tracking-cell2:last-child { border-right: 0; }
-.check-list div { margin: 5px 0; }
+.status-box strong { display: block; color: var(--navy); font-size: 8.4pt; margin-bottom: 2px; }
+.status-box span { display: block; font-size: 6.85pt; line-height: 1.13; color: #3d4751; }
 
-/* PAGE BREAK */
-.page-break { page-break-before: always; break-before: page; }
-
-/* LADDER */
-.ladder-table { width: 100%; border-collapse: collapse; margin: 10px 0 14px; }
-.ladder-table th,
-.ladder-table td { border: 1px solid #111; padding: 8px 9px; vertical-align: top; }
-.ladder-table th {
-    background: #111;
-    color: #fff;
-    text-align: left;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+.owner-note {
+  margin: -1px 0 8px;
+  font-size: 7.6pt;
+  color: var(--muted);
+  font-style: italic;
 }
-.ladder-table tr:nth-child(even) td { background: #f3f3f3; }
-.rung-col, .dok-col, .level-col { width: 72px; }
-.rung-num { text-align: center; font-size: 1.25rem; font-weight: 900; }
 
-/* GOAL BOX */
-.goal-box {
-    border: 2px solid #111;
-    padding: 12px 14px;
-    margin-top: 16px;
-    break-inside: avoid;
-    page-break-inside: avoid;
+.goal-card {
+  border: 1.5px solid var(--line);
+  border-top: 5px solid var(--navy);
+  border-radius: 9px;
+  margin: 0 0 9px;
+  padding: 8px 10px 9px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
-.goal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 10px; }
-.goal-line { border-bottom: 1px solid #111; min-height: 32px; padding-top: 6px; }
+.goal-card:last-child { margin-bottom: 0; }
+.goal-head { display: grid; grid-template-columns: .78in 1fr; gap: 9px; align-items: start; margin-bottom: 5px; }
+.goal-id {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 900;
+  font-size: 9pt;
+  text-align: center;
+  border-radius: 999px;
+  padding: 5px 4px;
+  margin-top: 1px;
+}
+.goal-title { font-size: 10.25pt; line-height: 1.18; font-weight: 800; }
+.goal-title .label { color: var(--navy); }
 
-/* DOK METHOD CARDS */
-.practice-title {
-    color: #111;
-    font-size: 1.45rem;
-    margin: 20px 0 14px;
-    border-left: 6px solid #111;
-    padding-left: 10px;
+.goal-grid {
+  display: grid;
+  grid-template-columns: 1.18fr .92fr;
+  gap: 10px;
 }
-.dok-method-card {
-    border: 1px solid #111;
-    padding: 12px 14px;
-    margin: 10px 0 16px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    background: #fff;
+.section-label { color: var(--navy); font-size: 7.8pt; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+.ican-list { display: grid; gap: 3px; }
+.ican {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  gap: 5px;
+  align-items: start;
+  font-size: 7.75pt;
+  line-height: 1.16;
 }
-.assessment-ideas { margin-left: 24px; }
-.timing-label {
-    display: inline-block;
-    border: 1px solid #111;
-    padding: 1px 5px;
-    font-weight: 800;
-    color: #111;
-    margin-left: 6px;
-    background: #fff;
-}
-.what-tells { border-left: 5px solid #111; padding-left: 10px; margin-top: 10px; color: #111; }
+.check { width: 12px; height: 12px; border: 1.3px solid #555; border-radius: 2px; margin-top: 1px; }
 
-/* PROBLEM CARDS */
-.problem {
-    border: 1px solid #555;
-    padding: 14px 14px 12px;
-    margin: 0 0 16px;
-    break-inside: avoid;
-    page-break-inside: avoid;
+.status-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  margin-bottom: 5px;
 }
-.problem-number { font-weight: 900; font-size: 1.05rem; margin-bottom: 8px; color: #111; }
-.problem ol, .problem ul { margin-left: 24px; margin-bottom: 8px; }
+.status-choice { border: 1px solid var(--line); border-radius: 5px; text-align: center; padding: 4px 2px; font-size: 6.8pt; font-weight: 800; }
+.status-choice::before { content: "□ "; font-size: 8pt; }
 
-/* TABLES / GRAPHS */
-.table-block, table.values { width: auto; border-collapse: collapse; margin: 10px auto 12px; }
-.table-block th, .table-block td,
-table.values th, table.values td {
-    border: 1px solid #333;
-    padding: 6px 12px;
-    text-align: center;
-    vertical-align: middle;
+.evidence-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 2px; }
+.evidence-table th, .evidence-table td { border: 1px solid var(--line); padding: 3px 4px; vertical-align: top; }
+.evidence-table th { background: var(--panel); color: var(--navy); font-size: 6.8pt; text-align: left; }
+.evidence-table td { height: .32in; font-size: 7pt; }
+.evidence-table .date { width: .62in; }
+.evidence-table .source { width: 1.05in; }
+
+.next-move { margin-top: 5px; display: grid; grid-template-columns: auto 1fr; gap: 6px; align-items: end; font-size: 7.5pt; font-weight: 800; }
+.next-line { border-bottom: 1px solid #555; min-height: 14px; }
+
+.reflection-box {
+  border: 1.5px solid var(--navy);
+  border-radius: 9px;
+  padding: 8px 10px;
+  margin-top: 9px;
 }
-.graph-block { margin: 10px 0 12px; text-align: center; break-inside: avoid; page-break-inside: avoid; }
-.graph-block img { max-width: 100%; height: auto; border: 1px solid #bbb; background: #fff; }
-.graph-md img { max-width: 3.25in; }
-.graph-lg img { max-width: 4in; }
+.reflection-title { color: var(--navy); font-size: 9pt; font-weight: 900; margin-bottom: 6px; }
+.reflection-columns { display: flex; gap: 16px; }
+.reflection-columns > div { flex: 1 1 0; min-width: 0; }
+.reflection-prompt { font-size: 7.8pt; font-weight: 800; }
+.reflection-line { border-bottom: 1px solid #555; min-height: 23px; margin-top: 4px; }
 
-/* WORKSPACE */
-.workspace-label { font-size: .82rem; font-weight: 700; color: #111; margin-top: 8px; }
-.workspace { width: 100%; height: 150px; border-top: 1px solid #777; margin-top: 8px; break-inside: avoid; page-break-inside: avoid; }
-.workspace-80{height:80px;} .workspace-100{height:100px;} .workspace-120{height:120px;}
-.workspace-140{height:140px;} .workspace-150{height:150px;} .workspace-160{height:160px;}
-.workspace-180{height:180px;} .workspace-200{height:200px;} .workspace-220{height:220px;}
-.workspace-240{height:240px;} .workspace-260{height:260px;} .workspace-300{height:300px;}
-.workspace-350{height:350px;} .workspace-400{height:400px;}
-.lower-alpha { list-style-type: lower-alpha; }
-.lower-roman { list-style-type: lower-roman; }
-blockquote { border-left: 5px solid #111; margin: 8px 0 10px 10px; padding: 6px 10px; background: #f7f7f7; font-style: italic; }
+/* Page 1 has the longest goal (MG01), so use slightly tighter evidence rows. */
+.page-one .goal-card:first-of-type .evidence-table td { height: .27in; }
+.page-one .goal-card:first-of-type .ican { font-size: 7.45pt; }
 
-/* PRINT LAYOUT
-   Page 1: header + key + DOK 1-2
-   Page 2: DOK 3-4
-   Page 3: learning ladder begins
-*/
+@media screen {
+  .tracker-page { box-shadow: 0 4px 18px rgba(0,0,0,.12); }
+}
+
 @media print {
-    body { padding: 0; font-size: 9.5pt; line-height: 1.23; }
-    .container { max-width: 100%; }
-    h1 { font-size: 1.55rem; margin-bottom: 4px; }
-    h2 { font-size: 1.16rem; border-left-width: 5px; padding-left: 8px; margin: 9px 0 6px; }
-    h3 { font-size: .95rem; margin-bottom: 4px; }
-    p { margin-bottom: 5px; }
-    ol, ul { margin-bottom: 5px; }
-    li { margin-bottom: 4px; }
-
-    .essential-standard { padding: 7px 9px; margin: 5px 0 7px; }
-    .essential-standard-title { margin-bottom: 2px; }
-    .key { padding: 6px 8px; margin: 5px 0 7px; }
-    .key-title { margin-bottom: 2px; }
-    .key-grid { gap: 5px; }
-    .key-grid div { padding-left: 6px; }
-
-    .black-box { padding: 6px 8px; }
-    .black-box strong { font-size: .94rem; margin-bottom: 2px; }
-    .black-box span { font-size: .78rem; line-height: 1.15; }
-
-    .tracking-card { margin-bottom: 7px; }
-    .tracking-grid { grid-template-columns: .78fr 1.42fr; }
-    .tracking-cell,
-    .tracking-cell2 { padding: 7px 9px; }
-    .check-list div { margin: 3px 0; }
-
-    /* Use the printable page instead of leaving a large white footer. */
-    .tracking-card[data-dok="1"] .tracking-cell,
-    .tracking-card[data-dok="2"] .tracking-cell {
-        height: 2.94in;
-        min-height: 2.94in;
-    }
-    .tracking-card[data-dok="3"] .tracking-cell2,
-    .tracking-card[data-dok="4"] .tracking-cell2 {
-        height: 4.32in;
-        min-height: 4.32in;
-    }
-
-    .problem, .black-box, .black-dok,
-    .tracking-card, .dok-method-card, .goal-box, .graph-block {
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
+  html, body { background: #fff; }
+  .tracker-page {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  .status-box, .essential, .evidence-table th {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }

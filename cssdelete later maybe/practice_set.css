@@ -1,11 +1,12 @@
 /* ============================================================
-   practice_set.css — UNIVERSAL PRACTICE SETS
+   practice_set.css — PHYSICS DOK PRACTICE SETS
    Requires base.css loaded FIRST.
    Applies to all practice-set-style pages (main practice sets and
    the CYU check) — single-column layout, problems sit directly
    inside each .dok-section, no wrapper grid div. No DOK header
    boxes, no problem numbering/meta labels — problem number is
-   inlined as the first character of the question text. Ordinary Practice problems use rounded full borders; CYU keeps its grid contract.
+   inlined as the first character of the question text. No borders
+   on problem cards.
    Workspace height is set per-problem with a .ws-N utility class
    (N = pixels tall; ws-10 through ws-960 in steps of 10, plus
    ws-25 as the starting default — 960px (~10in) is basically a
@@ -16,29 +17,26 @@
 @page { size: 8.5in 11in; margin: .45in; }
 
 h1 {
-  background: transparent;
-  color: var(--navy);
+  background: var(--navy);
+  color: #fff;
   font-weight: 900;
   font-size: 15pt;
   line-height: 1.2;
-  padding: 0 0 7px 0;
-  margin: 0 0 12px 0;
+  padding: 10px 12px;
+  margin: 0 0 10px 0;
   border: 0;
-  border-bottom: 4px solid var(--navy);
 }
 
 .dok-section { margin: 0 0 14px 0; }
 
 .problem {
-  padding: 10px 12px;
-  margin: 0 0 12px 0;
+  padding: 8px 0;
+  margin: 0 0 10px 0;
   background: var(--bg);
   break-inside: avoid;
   page-break-inside: avoid;
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--navy);
-  border-radius: 10px;
 }
 .problem .problem-body { display: flex; flex-direction: column; flex: 1; }
 .problem .workspace:last-child { margin-top: auto; }
@@ -183,7 +181,7 @@ h1 {
 .ws-960 { height: 960px; }
 .ws-25 { height: 25px; }
 
-/* Backward-compatible helpers for older course files while they are being rebuilt. */
+/* Backward-compatible helpers for older Physics files while they are being rebuilt. */
 .section-label {
   background: var(--blue-light); border: 1px solid #a9b9cf; color: #22354d;
   font-weight: 800; font-size: 11pt; padding: 8px 12px; margin: 16px 0 10px 0;
@@ -195,73 +193,8 @@ h1 {
 .exit-ticket-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
 .match-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:8px 0; }
 .match-card { border:1px solid #aaa; padding:8px; min-height:56px; }
-/* Notes-style compact two-column data tables. */
-table.values.compact-table {
-  width: max-content !important;
-  min-width: 2.35in;
-  max-width: 100% !important;
-  table-layout: fixed !important;
-  margin: 8px auto 10px auto !important;
-}
-table.values.compact-table col.half-col { width: 50%; }
-table.values.compact-table th,
-table.values.compact-table td {
-  width: 50%;
-  padding: 7px 12px !important;
-  white-space: nowrap;
-  text-align: center;
-}
-
-/* Captions are not student-facing Practice labels. Keep mathematical labels in the figure itself. */
-.ps-figure figcaption,
-.ps-diagram figcaption { display: none; }
-
-/* Non-compact values tables keep their natural course/base table behavior. */
+table.values { width:100%; }
 .lower-alpha { list-style-type: lower-alpha; }
-
-
-/* ---- CHECK YOUR UNDERSTANDING ---------------------------------
-   Six CYU questions render as a 3-row x 2-column table/grid.
-   There is no per-question workspace. A full blank workspace page
-   follows the grid for student work. */
-.cyu-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid #7f8791;
-  border-left: 1px solid #7f8791;
-  margin: 8px 0 0 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.cyu-grid .problem {
-  margin: 0;
-  padding: 10px 12px;
-  border: 0;
-  border-right: 1px solid #7f8791;
-  border-bottom: 1px solid #7f8791;
-  border-radius: 0;
-  background: #fff;
-  min-width: 0;
-}
-.cyu-grid .problem-body { display: block; }
-.cyu-grid .workspace { display: none !important; }
-.cyu-grid table.compact-table {
-  min-width: 0;
-  width: min(2.35in, 100%) !important;
-  margin: 5px auto 7px auto !important;
-}
-.cyu-grid .ps-figure img { max-width: 2.35in; }
-.cyu-grid .ps-diagram svg { max-width: 2.6in; }
-.cyu-workspace-page {
-  height: 9.25in;
-  min-height: 9.25in;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: #fff;
-  break-before: page;
-  page-break-before: always;
-}
 
 @media print {
   .problem { padding: 7px 0; }

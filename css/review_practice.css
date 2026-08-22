@@ -1,0 +1,51 @@
+/* ============================================================
+   review_practice.css — Review Practice Problems
+   Notability / print-friendly open-response review document.
+   Independent of practice_set.css so Practice changes cannot
+   silently alter Review rendering.
+   ============================================================ */
+:root{
+  --navy:#17365d;
+  --ink:#18212b;
+  --muted:#5a6572;
+  --line:#cfd7e2;
+  --paper:#ffffff;
+  --page:#eef2f6;
+  --accent:#e8eef7;
+}
+@page{size:letter portrait;margin:.48in .52in}
+*{box-sizing:border-box}
+html{background:var(--page)}
+body{margin:0;padding:28px 18px 40px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--page);line-height:1.42}
+.container{max-width:900px;margin:0 auto;background:var(--paper);padding:28px 34px 38px;border-radius:12px}
+h1{margin:0;color:var(--navy);font-size:1.75rem;line-height:1.12}
+h2{margin:5px 0 20px;color:var(--ink);font-size:1.2rem;font-weight:700}
+.dok-section{margin:0 0 28px;padding-top:4px}
+.dok-section+.dok-section{border-top:3px solid var(--navy);padding-top:18px}
+.section-label{margin:0 0 12px;color:var(--navy);font-size:1.05rem;font-weight:900;letter-spacing:.01em}
+.problem{border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:8px;padding:12px 14px 13px;margin:0 0 13px;background:#fff;break-inside:avoid;page-break-inside:avoid}
+.problem-body{font-size:10.5pt}
+.problem-body>p:first-child{margin-top:0}
+.problem-body p{margin:0 0 8px}
+.workspace{height:.50in;margin-top:8px;border-bottom:1px solid #b7c1cd;background:repeating-linear-gradient(to bottom,transparent 0,transparent 23px,rgba(90,101,114,.13) 24px)}
+.workspace.wu-ws-050{height:.50in}
+table{border-collapse:collapse;width:auto;max-width:100%;margin:9px auto;font-size:9.5pt}
+th,td{border:1px solid #778493;padding:5px 10px;text-align:center;vertical-align:middle}
+th{background:var(--accent);color:var(--navy);font-weight:800}
+.ps-figure,figure{margin:9px auto;text-align:center;break-inside:avoid;page-break-inside:avoid}
+.ps-figure img,figure img{display:block;max-width:4.5in;max-height:2.6in;width:auto;height:auto;margin:0 auto;border:1px solid var(--line);background:#fff}
+figcaption{display:none}
+@media screen and (max-width:650px){body{padding:0}.container{border-radius:0;padding:20px 16px}.problem-body{font-size:1rem}}
+@media print{
+  html,body{background:#fff}
+  body{padding:0;font-size:10pt}
+  .container{max-width:none;padding:0;border-radius:0}
+  h1{font-size:18pt}
+  h2{font-size:12pt;margin-bottom:12px}
+  .dok-section{margin-bottom:.20in}
+  .dok-section+.dok-section{padding-top:.13in}
+  .problem{padding:.10in .12in;margin-bottom:.11in;border-radius:4px}
+  .problem-body{font-size:9.8pt;line-height:1.32}
+  .workspace,.workspace.wu-ws-050{height:.45in}
+  .ps-figure img,figure img{max-height:2.2in}
+}

@@ -1,0 +1,116 @@
+/* ============================================================
+   assessment_plan.css — Algebra 1
+   tnezki.github.io/algebra/css/assessment_plan.css
+   Path from file: ../../../../css/assessment_plan.css
+
+   Depends on: base.css (copy base rules above this comment
+   when delivering as a standalone file to an AI workflow)
+   ============================================================ */
+
+/* ── LAYOUT ─────────────────────────────────────────────────── */
+.unbreakable,
+.outline-card,
+.rubric-card,
+.ladder-table,
+.progress-tracker {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* ── OUTLINE CARDS ──────────────────────────────────────────── */
+.outline-card {
+    border: 1px solid #9aa9bd;
+    border-left: 7px solid var(--navy);
+    padding: 12px 14px;
+    margin: 12px 0;
+    background: var(--bg);
+}
+.outline-card-title {
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 13.5pt;
+    margin-bottom: 4px;
+}
+.essential-standard {
+    font-size: 12pt;
+    border: 2px solid var(--navy);
+    padding: 12px 14px;
+    margin: 12px 0 16px 0;
+    background: var(--blue-bg);
+}
+
+/* ── DOK SECTIONS ───────────────────────────────────────────── */
+.dok-bar {
+    background: #000;
+    color: #fff;
+    font-weight: 900;
+    font-size: 15pt;
+    padding: 9px 12px;
+    margin: 22px 0 12px 0;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+.dok-method-card {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    margin: 10px 0 16px 0;
+    background: var(--bg);
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.assessment-ideas { margin-left: 24px; }
+.assessment-ideas a { color: #005aa0; font-weight: 800; text-decoration: underline; }
+.timing-label {
+    display: inline-block;
+    background: #fff7cf;
+    border: 1px solid #d1c27a;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-weight: 800;
+    color: #4a3f17;
+    margin-left: 6px;
+}
+.what-tells {
+    border-left: 5px solid var(--border);
+    padding-left: 10px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* ── SUMMATIVE / RUBRIC ─────────────────────────────────────── */
+.summative-card {
+    border: 2px solid var(--navy);
+    padding: 12px 14px;
+    margin: 14px 0;
+    background: var(--blue-bg);
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.summative-card a { color: #005aa0; font-weight: 800; }
+.rubric-card {
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    margin: 10px 0;
+}
+.rubric-level { color: var(--navy); font-weight: 900; font-size: 12.5pt; }
+
+/* ── LADDER TABLE ───────────────────────────────────────────── */
+.ladder-table th { background: var(--navy); color: #fff; }
+.ladder-table .dok4 { background: #eef4ff; }
+.ladder-table .dok3 { background: #f6fbff; }
+.ladder-table .dok2 { background: #fffdf2; }
+.ladder-table .dok1 { background: #ffffff; }
+
+/* ── PROGRESS TRACKING ──────────────────────────────────────── */
+.progress-tracker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 12px 0 18px 0;
+}
+.progress-box {
+    border: 1px solid var(--border);
+    padding: 12px;
+    min-height: 0.8in;
+}
+.progress-box strong { color: var(--navy); }

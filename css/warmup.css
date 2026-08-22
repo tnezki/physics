@@ -1,254 +1,422 @@
 /* ============================================================
-   warmup.css — Algebra 1
-   tnezki.github.io/algebra/css/warmup.css
-   Path from warmup HTML: ../../css/warmup.css
+   warmup_v2_pretty_flexible.css — Flexible Warm-Up Layout
+   Designed for Algebra / Calculus / Physics warm-ups.
+
+   PURPOSE
+   - predictable 5–8 minute opening routine
+   - 1–8 questions without assuming a fixed count
+   - generous Notability / handwriting workspace
+   - clean print + polished screen appearance
+   - compatible with existing warm-up HTML class names
 
    Requires: base.css loaded FIRST.
-   base.css provides: --navy, --border, --border-light,
-   --blue-light, --bg, --muted tokens and body/reset styles.
    ============================================================ */
 
-/* ── PAGE SETUP ─────────────────────────────────────────────── */
-@page { size: 8.5in 11in; margin: .5in; }
+:root {
+    --wu-navy: var(--navy, #17365d);
+    --wu-blue: var(--blue-light, #eaf2fb);
+    --wu-border: var(--border, #9aa7b5);
+    --wu-border-light: var(--border-light, #d8e0e8);
+    --wu-bg: var(--bg, #ffffff);
+    --wu-muted: var(--muted, #5f6b76);
+    --wu-ink: #1f2933;
+}
 
-/* ── WARMUP CONTAINER ───────────────────────────────────────── */
+@page { size: 8.5in 11in; margin: .48in .52in; }
+
+* { box-sizing: border-box; }
+
 .warmups-container {
     max-width: 980px;
     margin: 0 auto;
+    color: var(--wu-ink);
 }
 
-/* ── PAGE WRAPPER ───────────────────────────────────────────── */
-/* Groups one warmup day's content. Flows naturally — no forced */
-/* page breaks. Browser/print engine handles pagination.        */
+/* One physical Notability/print page.
+   Do NOT force a full-page container height: Notability/PDF print margins
+   can interpret that as overflow and create an extra blank page. The
+   two-problem layout below uses fixed card heights with about 0.25in of
+   extra safety removed from EACH card. */
 .warmup-page {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    height: auto;
+    min-height: 0;
+    break-before: page;
+    page-break-before: always;
 }
 
-/* ── WARMUP HEADER ──────────────────────────────────────────── */
-/* Only appears on the first .warmup-page of each day.          */
+/* Two-problem Notability layout.
+   NOTE: Notability's HTML importer does NOT respect @page size/margins or
+   break-before rules — it flattens the doc into a continuous flow and cuts
+   pages on its own, at a measured usable height of ~9.0in (confirmed via
+   ruler test), not the 11in - margins (~10.04in) the old @page math assumed.
+   These values are sized to that measured 9.0in ceiling, with a safety
+   margin, rather than to the CSS @page box.
+   Continuation pages (no header): 4.30in per card.
+   Header pages: 4.10in per card because the day header also occupies space. */
+.warmup-page.wu-count-2 > .problem.half {
+    flex: 0 0 4.30in;
+    height: 4.30in;
+    min-height: 4.30in;
+}
+
+.warmup-page.wu-count-2 > .warmup-header ~ .problem.half {
+    flex-basis: 4.10in;
+    height: 4.10in;
+    min-height: 4.10in;
+}
+
+.warmup-page:first-child {
+    break-before: auto;
+    page-break-before: auto;
+}
+
+/* HEADER */
 .warmup-header {
+    position: relative;
+    overflow: hidden;
     flex: 0 0 auto;
-    background: var(--navy);
-    padding: 6px 10px;
-    margin-bottom: 10px;
+    background: var(--wu-navy);
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 16px 11px;
+    margin: 0 0 2px;
+    box-shadow: 0 2px 8px rgba(20,40,70,.10);
+}
+
+.warmup-header::after {
+    content: "";
+    position: absolute;
+    right: -34px;
+    top: -52px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08);
+}
+
+.warmup-kicker {
+    position: relative;
+    z-index: 1;
+    font-size: 8.5pt;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    opacity: .86;
+    margin-bottom: 3px;
 }
 
 .warmup-header h1 {
-    font-size: 14pt;
-    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 16pt;
     font-weight: 900;
-    margin: 0 0 2px 0;
-    line-height: 1.1;
+    line-height: 1.08;
+    margin: 0;
 }
 
-/* ── PROBLEM CARD ───────────────────────────────────────────── */
-/* Left accent bar only — no full outer border.                 */
-/* Every problem gets its own page.                             */
+.warmup-subtitle {
+    position: relative;
+    z-index: 1;
+    margin: 4px 0 0;
+    font-size: 9.5pt;
+    line-height: 1.25;
+    color: rgba(255,255,255,.92);
+}
+
+.warmup-meta {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    margin-top: 7px;
+    font-size: 8pt;
+    color: rgba(255,255,255,.80);
+}
+
+/* PROBLEM CARD */
 .problem {
+    position: relative;
     display: flex;
     flex-direction: column;
-    border-left: 0px solid var(--navy);
-    border-top: 8px double var(--navy); 
-    border-bottom: 0px solid var(--navy);
-    border-right: 0px solid var(--navy);
-    padding: 4px 5px 4px 6px;
-    margin-bottom: 4px;
-    background: var(--bg);
-    break-after: page;
-    page-break-after: always;
-}
-/* Cancel break on the very last problem — prevents trailing blank page. */
-section.warmup-page:last-child .problem:last-child {
+    background: #fff;
+    border: 1px solid var(--wu-border-light);
+    border-top: 4px solid var(--wu-navy);
+    border-radius: 8px;
+    padding: 10px 12px 11px;
+    margin: 0;
+    box-shadow: 0 1px 4px rgba(25,45,70,.06);
+    break-inside: avoid;
+    page-break-inside: avoid;
     break-after: auto;
     page-break-after: auto;
 }
 
-/* .half — default. Two problems share a page.                  */
-/* Heights below are print-layout hints; remove if not needed.  */
-.problem.half {
-    flex: 1 0 4in;
-    min-height: 4in;
-    overflow: hidden;
-}
+.problem.first { border-top-width: 5px; }
+.problem.half { min-height: 3.15in; }
+.problem.half.first { min-height: 3.15in; }
+.problem.full { min-height: 7.6in; }
+.problem.compact { min-height: 1.45in; }
+.problem.medium { min-height: 2.25in; }
 
-/* .first — use ONLY on Problem 1 of each day.                  */
-/* Marks P1 as being on the header page. Same height as .half.  */
-/* Apply both classes: class="problem half first"               */
-.problem.half.first {
-    flex: 1 0 4in;
-    min-height: 4in;
-    /*height: 3in;*/ 
-
-
-}
-
-/* .full — one problem per page.                                */
-/* Use only when question + figure + workspace overflows 5.199in. */
-.problem.full {
-    flex: 1 1 auto;
-    min-height: 0;
-}
-
-/* ── PROBLEM TITLE ──────────────────────────────────────────── */
 .problem-title {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    min-height: 23px;
+    padding: 3px 9px;
+    margin: -1px 0 7px;
+    border-radius: 999px;
+    background: var(--wu-blue);
+    color: var(--wu-navy);
+    font-size: 8.7pt;
     font-weight: 900;
-    color: var(--navy);
-    font-size: 9pt;
-    margin-bottom: 5px;
-    flex: 0 0 auto;
+    letter-spacing: .015em;
 }
 
-/* ── PROBLEM BODY ───────────────────────────────────────────── */
 .problem-body {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    font-size: 9pt;
     min-height: 0;
-}
-.problem-body p {
-    margin-bottom: 5px;
-    flex: 0 0 auto;
+    font-size: 10.2pt;
+    line-height: 1.38;
 }
 
-/* ── WORKSPACE ──────────────────────────────────────────────── */
-/* Plain white — grows to fill remaining card height.           */
+.problem-body > :first-child { margin-top: 0; }
+.problem-body p { margin: 0 0 7px; flex: 0 0 auto; }
+.problem-body strong { color: var(--wu-navy); }
+
+/* WORKSPACE — generous by default for Notability */
 .workspace {
-    flex: 0 0 0px;
-    min-height: 0in;
-    background: #fff;
-    margin-top: 2px;
-    border: none;
+    position: relative;
+    flex: 0 0 1.35in;
+    min-height: 1.35in;
+    margin-top: 7px;
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 23px,
+            rgba(95,107,118,.16) 24px
+        );
+    border: 1px solid var(--wu-border-light);
+    border-radius: 6px;
 }
 
-/* ── TABLES ─────────────────────────────────────────────────── */
-table.values {
-    border-collapse: collapse;
-    width: auto;
-    margin: 6px auto 6px auto;
-    flex: 0 0 auto;
-}
-table.values th,
-table.values td {
-    border: 1px solid var(--border);
-    padding: 5px 14px;
-    min-width: 38px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 8.5pt;
-}
-table.values th {
-    background: var(--blue-light);
-    color: var(--navy);
-    font-weight: 800;
+.workspace::before {
+    content: "work";
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    padding: 1px 5px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.90);
+    color: var(--wu-muted);
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
 }
 
-/* ── FIGURE ─────────────────────────────────────────────────── */
-.warmup-figure {
-    margin: 6px 0 4px 0;
-    flex: 0 0 auto;
-}
-.warmup-figure img {
-    max-width: 3in;
-    height: auto;
-    display: block;
-    border: 0px solid var(--border-light);
-    background: var(--bg);
-}
+.workspace.wu-ws-000::before { content: none; }
 
-/* ── IMAGE SIZE OVERRIDES ───────────────────────────────────── */
-/* Apply to .warmup-figure to manually override image width.    */
-/* Example: <figure class="warmup-figure wu-img-300">           */
-.wu-img-025 img { max-width: 0.25in; }
-.wu-img-050 img { max-width: 0.50in; }
-.wu-img-075 img { max-width: 0.75in; }
-.wu-img-100 img { max-width: 1.00in; }
-.wu-img-125 img { max-width: 1.25in; }
-.wu-img-150 img { max-width: 1.50in; }
-.wu-img-175 img { max-width: 1.75in; }
-.wu-img-200 img { max-width: 2.00in; }
-.wu-img-225 img { max-width: 2.25in; }
-.wu-img-250 img { max-width: 2.50in; }
-.wu-img-275 img { max-width: 2.75in; }
-.wu-img-300 img { max-width: 3.00in; }
-.wu-img-325 img { max-width: 3.25in; }
-.wu-img-350 img { max-width: 3.50in; }
-.wu-img-375 img { max-width: 3.75in; }
-.wu-img-400 img { max-width: 4.00in; }
-.wu-img-425 img { max-width: 4.25in; }
-.wu-img-450 img { max-width: 4.50in; }
-.wu-img-475 img { max-width: 4.75in; }
-.wu-img-500 img { max-width: 5.00in; }
-.wu-img-525 img { max-width: 5.25in; }
-.wu-img-550 img { max-width: 5.50in; }
-.wu-img-575 img { max-width: 5.75in; }
-.wu-img-600 img { max-width: 6.00in; }
-.wu-img-625 img { max-width: 6.25in; }
-.wu-img-650 img { max-width: 6.50in; }
-.wu-img-675 img { max-width: 6.75in; }
-.wu-img-700 img { max-width: 7.00in; }
-.wu-img-725 img { max-width: 7.25in; }
-.wu-img-750 img { max-width: 7.50in; }
-
-/* ── WORKSPACE SIZE OVERRIDES ───────────────────────────────── */
-/* Apply to .workspace to set height. Default: wu-ws-000 (0in). */
-/* Example: <div class="workspace wu-ws-200"></div>             */
-/* Change 200 → e.g. 150 = 1.50in, 300 = 3.00in               */
-.wu-ws-000 { flex: 0 0 0in;    min-height: 0in;    }
-.wu-ws-025 { flex: 0 0 0.25in; min-height: 0.25in; }
-.wu-ws-050 { flex: 0 0 0.50in; min-height: 0.50in; }
-.wu-ws-075 { flex: 0 0 0.75in; min-height: 0.75in; }
-.wu-ws-100 { flex: 0 0 1.00in; min-height: 1.00in; }
-.wu-ws-125 { flex: 0 0 1.25in; min-height: 1.25in; }
-.wu-ws-150 { flex: 0 0 1.50in; min-height: 1.50in; }
-.wu-ws-175 { flex: 0 0 1.75in; min-height: 1.75in; }
-.wu-ws-200 { flex: 0 0 2.00in; min-height: 2.00in; }
-.wu-ws-225 { flex: 0 0 2.25in; min-height: 2.25in; }
-.wu-ws-250 { flex: 0 0 2.50in; min-height: 2.50in; }
-.wu-ws-275 { flex: 0 0 2.75in; min-height: 2.75in; }
-.wu-ws-300 { flex: 0 0 3.00in; min-height: 3.00in; }
-.wu-ws-325 { flex: 0 0 3.25in; min-height: 3.25in; }
-.wu-ws-350 { flex: 0 0 3.50in; min-height: 3.50in; }
-.wu-ws-375 { flex: 0 0 3.75in; min-height: 3.75in; }
-.wu-ws-400 { flex: 0 0 4.00in; min-height: 4.00in; }
-.wu-ws-425 { flex: 0 0 4.25in; min-height: 4.25in; }
-.wu-ws-450 { flex: 0 0 4.50in; min-height: 4.50in; }
-.wu-ws-475 { flex: 0 0 4.75in; min-height: 4.75in; }
-.wu-ws-500 { flex: 0 0 5.00in; min-height: 5.00in; }
-.wu-ws-525 { flex: 0 0 5.25in; min-height: 5.25in; }
-.wu-ws-550 { flex: 0 0 5.50in; min-height: 5.50in; }
-.wu-ws-575 { flex: 0 0 5.75in; min-height: 5.75in; }
-.wu-ws-600 { flex: 0 0 6.00in; min-height: 6.00in; }
-.wu-ws-625 { flex: 0 0 6.25in; min-height: 6.25in; }
-.wu-ws-650 { flex: 0 0 6.50in; min-height: 6.50in; }
-.wu-ws-675 { flex: 0 0 6.75in; min-height: 6.75in; }
-.wu-ws-700 { flex: 0 0 7.00in; min-height: 7.00in; }
-.wu-ws-725 { flex: 0 0 7.25in; min-height: 7.25in; }
-.wu-ws-750 { flex: 0 0 7.50in; min-height: 7.50in; }
-.wu-ws-775 { flex: 0 0 7.75in; min-height: 7.75in; }
-.wu-ws-800 { flex: 0 0 8.00in; min-height: 8.00in; }
-
-/* Bare <div><img></div> inside a problem — no .warmup-figure wrapper.  */
-/* Catches coordinate plane images dropped without a figure element.     */
-.problem-body div img {
-    max-width: 3in;
-    height: auto;
-    display: block;
-}
-
-/* ── MULTI-PART LIST ────────────────────────────────────────── */
+/* MULTI-PART */
 .problem-parts {
-    margin: 4px 0 4px 1.1em;
+    margin: 4px 0 5px 1.25em;
     padding: 0;
     flex: 0 0 auto;
 }
-.problem-parts li {
-    margin-bottom: 3px;
+.problem-parts li { margin-bottom: 5px; padding-left: 2px; }
+
+/* TABLES */
+table.values {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: auto;
+    max-width: 100%;
+    margin: 8px auto;
+    flex: 0 0 auto;
+    border: 1px solid var(--wu-border);
+    border-radius: 6px;
+    overflow: hidden;
 }
 
-/* ── PRINT OVERRIDES ────────────────────────────────────────── */
+table.values th,
+table.values td {
+    border-right: 1px solid var(--wu-border);
+    border-bottom: 1px solid var(--wu-border);
+    padding: 6px 14px;
+    min-width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 9pt;
+}
+
+table.values tr:last-child th,
+table.values tr:last-child td { border-bottom: 0; }
+
+table.values th:last-child,
+table.values td:last-child { border-right: 0; }
+
+table.values th {
+    background: var(--wu-blue);
+    color: var(--wu-navy);
+    font-weight: 850;
+}
+
+/* FIGURES */
+.warmup-figure {
+    margin: 7px auto;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.warmup-figure img,
+.problem-body div img {
+    max-width: 3.4in;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--wu-border-light);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.warmup-figure figcaption {
+    margin-top: 4px;
+    color: var(--wu-muted);
+    font-size: 8pt;
+    line-height: 1.25;
+}
+
+/* IMAGE SIZE OVERRIDES */
+.wu-img-025 img { max-width: .25in; }
+.wu-img-050 img { max-width: .50in; }
+.wu-img-075 img { max-width: .75in; }
+.wu-img-100 img { max-width: 1in; }
+.wu-img-125 img { max-width: 1.25in; }
+.wu-img-150 img { max-width: 1.50in; }
+.wu-img-175 img { max-width: 1.75in; }
+.wu-img-200 img { max-width: 2in; }
+.wu-img-225 img { max-width: 2.25in; }
+.wu-img-250 img { max-width: 2.50in; }
+.wu-img-275 img { max-width: 2.75in; }
+.wu-img-300 img { max-width: 3in; }
+.wu-img-325 img { max-width: 3.25in; }
+.wu-img-350 img { max-width: 3.50in; }
+.wu-img-375 img { max-width: 3.75in; }
+.wu-img-400 img { max-width: 4in; }
+.wu-img-425 img { max-width: 4.25in; }
+.wu-img-450 img { max-width: 4.50in; }
+.wu-img-475 img { max-width: 4.75in; }
+.wu-img-500 img { max-width: 5in; }
+.wu-img-525 img { max-width: 5.25in; }
+.wu-img-550 img { max-width: 5.50in; }
+.wu-img-575 img { max-width: 5.75in; }
+.wu-img-600 img { max-width: 6in; }
+.wu-img-625 img { max-width: 6.25in; }
+.wu-img-650 img { max-width: 6.50in; }
+.wu-img-675 img { max-width: 6.75in; }
+.wu-img-700 img { max-width: 7in; }
+.wu-img-725 img { max-width: 7.25in; }
+.wu-img-750 img { max-width: 7.50in; }
+
+/* WORKSPACE SIZE OVERRIDES — preserve old naming contract */
+.wu-ws-000 { flex: 0 0 0in; min-height: 0in; border: 0; background: none; }
+.wu-ws-025 { flex: 0 0 .25in; min-height: .25in; }
+.wu-ws-050 { flex: 0 0 .50in; min-height: .50in; }
+.wu-ws-075 { flex: 0 0 .75in; min-height: .75in; }
+.wu-ws-100 { flex: 0 0 1in; min-height: 1in; }
+.wu-ws-125 { flex: 0 0 1.25in; min-height: 1.25in; }
+.wu-ws-150 { flex: 0 0 1.50in; min-height: 1.50in; }
+.wu-ws-175 { flex: 0 0 1.75in; min-height: 1.75in; }
+.wu-ws-200 { flex: 0 0 2in; min-height: 2in; }
+.wu-ws-225 { flex: 0 0 2.25in; min-height: 2.25in; }
+.wu-ws-250 { flex: 0 0 2.50in; min-height: 2.50in; }
+.wu-ws-275 { flex: 0 0 2.75in; min-height: 2.75in; }
+.wu-ws-300 { flex: 0 0 3in; min-height: 3in; }
+.wu-ws-325 { flex: 0 0 3.25in; min-height: 3.25in; }
+.wu-ws-350 { flex: 0 0 3.50in; min-height: 3.50in; }
+.wu-ws-375 { flex: 0 0 3.75in; min-height: 3.75in; }
+.wu-ws-400 { flex: 0 0 4in; min-height: 4in; }
+.wu-ws-425 { flex: 0 0 4.25in; min-height: 4.25in; }
+.wu-ws-450 { flex: 0 0 4.50in; min-height: 4.50in; }
+.wu-ws-475 { flex: 0 0 4.75in; min-height: 4.75in; }
+.wu-ws-500 { flex: 0 0 5in; min-height: 5in; }
+.wu-ws-525 { flex: 0 0 5.25in; min-height: 5.25in; }
+.wu-ws-550 { flex: 0 0 5.50in; min-height: 5.50in; }
+.wu-ws-575 { flex: 0 0 5.75in; min-height: 5.75in; }
+.wu-ws-600 { flex: 0 0 6in; min-height: 6in; }
+.wu-ws-625 { flex: 0 0 6.25in; min-height: 6.25in; }
+.wu-ws-650 { flex: 0 0 6.50in; min-height: 6.50in; }
+.wu-ws-675 { flex: 0 0 6.75in; min-height: 6.75in; }
+.wu-ws-700 { flex: 0 0 7in; min-height: 7in; }
+.wu-ws-725 { flex: 0 0 7.25in; min-height: 7.25in; }
+.wu-ws-750 { flex: 0 0 7.50in; min-height: 7.50in; }
+.wu-ws-775 { flex: 0 0 7.75in; min-height: 7.75in; }
+.wu-ws-800 { flex: 0 0 8in; min-height: 8in; }
+
+/* OPTIONAL AUTO-LAYOUT HELPERS
+   Add one count class to the warmup-page if desired:
+   <section class="warmup-page wu-count-6"> */
+.wu-count-1 .problem { min-height: 7.25in; }
+.wu-count-2 .problem { min-height: 0; }
+.wu-count-3 .problem { min-height: 2.25in; }
+.wu-count-4 .problem { min-height: 1.78in; }
+.wu-count-5 .problem,
+.wu-count-6 .problem,
+.wu-count-7 .problem,
+.wu-count-8 .problem { min-height: 1.35in; }
+
+.warmup-page .problem.full { min-height: 7.6in; }
+
+@media screen {
+    body { padding-bottom: 30px; }
+    .warmup-page { margin-bottom: 24px; }
+    .problem:hover { box-shadow: 0 3px 12px rgba(25,45,70,.10); }
+}
+
 @media print {
-    .warmup-header h1 { font-size: 12pt; }
-    .problem          { padding: 6px 8px 6px 10px; }
+    .warmups-container { max-width: none; }
+    .warmup-page { gap: 8px; margin: 0; height: auto; min-height: 0; }
+
+    .warmup-header {
+        border-radius: 6px;
+        box-shadow: none;
+        padding: 9px 12px 8px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .warmup-header h1 { font-size: 14pt; }
+    .warmup-kicker { font-size: 7.5pt; }
+    .warmup-subtitle { font-size: 8.5pt; }
+
+    .problem {
+        border-radius: 5px;
+        box-shadow: none;
+        padding: 8px 10px 9px;
+    }
+
+    .problem-title {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .problem-body { font-size: 9.5pt; }
+
+    .workspace {
+        background:
+            repeating-linear-gradient(
+                to bottom,
+                transparent 0,
+                transparent 23px,
+                rgba(95,107,118,.11) 24px
+            );
+    }
 }

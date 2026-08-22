@@ -1,0 +1,528 @@
+/* ============================================================
+   notes.css — Conceptual Physics
+   Physics notes stylesheet
+   Path from notes HTML: ../../css/notes.css
+
+   Requires: base.css loaded FIRST.
+
+   No page breaks. Content flows top to bottom.
+   Export using print → endless paper → save as PDF for Notability.
+
+   .notes-ws   → fixed 4.25in writing space after each section
+   .notes-figure → image container; default 3in wide
+   .wu-img-NNN → image width overrides
+   All other sizing: base.css tokens and typography.
+   ============================================================ */
+
+/* ── PAGE SETUP ─────────────────────────────────────────────── */
+/* Kept for regular browser view. Overridden by endless paper   */
+/* in the print dialog for Notability export.                   */
+@page { size: 8.5in 200in; margin: .5in; }
+
+/* ── WRITING SPACE ──────────────────────────────────────────── */
+/* Physics default: generous iPad/Notability writing space.      */
+/* Usage: <div class="notes-ws"></div>                          */
+.notes-ws {
+    height: 4.25in;
+    margin-top: 12px;
+}
+
+/* Optional thin rule at top of writing area.                   */
+.ws-ruled { border-top: 1px solid #e4e4e4; padding-top: 4px; }
+
+/* Small all-caps label.                                        */
+.ws-label {
+    display: block;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+/* ── MATH NOTES BOX ─────────────────────────────────────────── */
+/* No outer container border — badge header is the only visual anchor. */
+.math-notes {
+    margin: 10px 0 12px 0;
+}
+.math-notes-header {
+    background: transparent;
+    color: var(--navy);
+    border: 4px solid var(--navy);
+    border-radius: 8px;
+    padding: 5px 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+.math-notes-label {
+    font-size: 14pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.math-notes-label::before {
+    content: "📐 ";
+}
+.math-notes-title {
+    font-size: 14pt;
+    font-weight: 800;
+}
+.math-notes-body {
+    padding: 8px 4px;
+}
+
+.math-notes-body p          { margin-bottom: 8px; }
+.math-notes-body ul,
+.math-notes-body ol         { margin-left: 22px; margin-bottom: 8px; }
+.math-notes-body li         { margin-bottom: 5px; }
+
+/* ── REP GRID ───────────────────────────────────────────────── */
+.rep-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.rep-card {
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 10px;
+    background: var(--bg);
+}
+
+.rep-card h4 { color: var(--navy); font-size: 10pt; margin-bottom: 4px; }
+
+/* ── SKETCH COLS ────────────────────────────────────────────── */
+.sketch-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.sketch-cell { min-height: 2.25in; }
+
+.sketch-cell-label {
+    display: block;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--navy-mid);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid #ccd;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
+}
+
+/* ── CALLOUT BOXES ──────────────────────────────────────────── */
+.reading-box {
+    padding: 12px 16px;
+    margin: 10px 0;
+}
+
+.strategy-box {
+    padding: 4px 0 12px 0;
+    margin: 10px 0;
+}
+.strategy-box > p:first-child {
+    margin: 0 0 10px 0;
+}
+/* Stop and Discuss — full badge. class="strategy-box stop-discuss" */
+.strategy-box.stop-discuss > p:first-child strong {
+    color: firebrick;
+    border: 4px solid firebrick;
+    border-radius: 8px;
+    padding: 5px 16px;
+    display: block;
+    font-size: 14pt;
+    font-weight: 800;
+    line-height: 1.4;
+}
+.strategy-box.stop-discuss > p:first-child strong::before {
+    content: "🛑 ";
+}
+/* Stop and Discuss: question/content text also red */
+.strategy-box.stop-discuss > *:not(:first-child) {
+    color: firebrick;
+}
+
+.key-point {
+    border-left: 5px solid #2e7d32;
+    padding: 12px 16px;
+    margin: 10px 0;
+    color: #2e7d32;
+}
+
+.mistake-box {
+    border-left: 5px solid #c85a00;
+    padding: 12px 16px;
+    margin: 10px 0;
+    color: #c85a00;
+}
+
+.annotation-box {
+    padding: 12px 16px;
+    margin: 10px 0;
+}
+
+/* Multi-line: left accent only. 1-liner: add .boxed for full border. */
+.claim-card {
+    border-left: 5px solid #555;
+    padding: 10px 12px;
+    margin: 10px 0;
+    background: #fafafa;
+}
+.claim-card.boxed {
+    border: 1px solid #aaa;
+    border-left: 5px solid #555;
+    border-radius: 6px;
+}
+
+.objectives {
+    background: #f0f4f8;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+/* ── FIGURE ─────────────────────────────────────────────────── */
+/* Default: 3in wide. Override with wu-img-NNN.                 */
+.notes-figure {
+    margin: 10px auto 8px auto;
+    text-align: center;
+}
+
+.notes-figure img {
+    max-width: 3in;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--border-light);
+    background: var(--bg);
+}
+
+/* ── IMAGE SIZE OVERRIDES ───────────────────────────────────── */
+.wu-img-025 img { max-width: 0.25in; }
+.wu-img-050 img { max-width: 0.50in; }
+.wu-img-075 img { max-width: 0.75in; }
+.wu-img-100 img { max-width: 1.00in; }
+.wu-img-125 img { max-width: 1.25in; }
+.wu-img-150 img { max-width: 1.50in; }
+.wu-img-175 img { max-width: 1.75in; }
+.wu-img-200 img { max-width: 2.00in; }
+.wu-img-225 img { max-width: 2.25in; }
+.wu-img-250 img { max-width: 2.50in; }
+.wu-img-275 img { max-width: 2.75in; }
+.wu-img-300 img { max-width: 3.00in; }
+.wu-img-325 img { max-width: 3.25in; }
+.wu-img-350 img { max-width: 3.50in; }
+.wu-img-375 img { max-width: 3.75in; }
+.wu-img-400 img { max-width: 4.00in; }
+.wu-img-425 img { max-width: 4.25in; }
+.wu-img-450 img { max-width: 4.50in; }
+.wu-img-475 img { max-width: 4.75in; }
+.wu-img-500 img { max-width: 5.00in; }
+.wu-img-525 img { max-width: 5.25in; }
+.wu-img-550 img { max-width: 5.50in; }
+.wu-img-575 img { max-width: 5.75in; }
+.wu-img-600 img { max-width: 6.00in; }
+.wu-img-625 img { max-width: 6.25in; }
+.wu-img-650 img { max-width: 6.50in; }
+.wu-img-675 img { max-width: 6.75in; }
+.wu-img-700 img { max-width: 7.00in; }
+.wu-img-725 img { max-width: 7.25in; }
+.wu-img-750 img { max-width: 7.50in; }
+
+/* ── TITLE PAGE ─────────────────────────────────────────────── */
+.notes-title {
+    border: 2px solid var(--navy);
+    padding: 40px 48px 32px 48px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
+    margin-bottom: 20px;
+}
+
+.title-kicker {
+    font-weight: 800;
+    color: var(--navy-mid);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    font-size: 10pt;
+}
+
+.title-main {
+    font-size: 28pt;
+    color: var(--navy);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 14px;
+}
+
+.title-sub {
+    font-size: 12pt;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.title-quote {
+    border-left: 6px solid var(--navy);
+    background: var(--blue-light);
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-top: 16px;
+    font-size: 11pt;
+}
+
+/* ── H2/H3 BADGES — all section headers use badge style ───── */
+/* Overrides base.css left-border style. No left/right/bottom  */
+/* container borders — all visual weight is in the badge.      */
+.container h2,
+.container h3 {
+    display: block;
+    background: transparent;
+    border-radius: 8px;
+    line-height: 1.4;
+}
+
+/* h2 — section headers: navy, 6px, 18pt */
+.container h2 {
+    color: var(--navy);
+    border: 6px solid var(--navy);
+    padding: 5px 18px;
+    font-size: 18pt;
+    font-weight: 900;
+    margin: 18px 0 12px 0;
+}
+
+/* h3 — example/practice headers: steelblue, 4px, 14pt */
+.container h3 {
+    color: steelblue;
+    border: 4px solid steelblue;
+    padding: 4px 16px;
+    font-size: 14pt;
+    font-weight: 800;
+    margin: 14px 0 8px 0;
+}
+
+
+/* Emoji prefixes via class */
+.h-target::before    { content: "🎯 "; }
+.h-preview::before   { content: "🔭 "; }
+.h-intro::before     { content: "📖 "; }
+.h-reflection::before{ content: "🤔 "; }
+.h-example::before   { content: "💡 "; }
+.h-yti::before       { content: "✏️ "; }
+
+/* Summary — green (higher specificity to beat .container h2 border shorthand) */
+.container h2.h-summary { color: #2e7d32; border-color: #2e7d32; }
+.h-summary::before { content: "✅ "; }
+
+/* Common Mistakes — orange */
+.container h2.h-mistakes { color: #c85a00; border-color: #c85a00; }
+.h-mistakes::before { content: "⚠️ "; }
+
+/* ── EXIT TICKET ─────────────────────────────────────────────── */
+/* Filled badge (inverted) to distinguish it as a closing activity */
+.exit-ticket-label {
+    display: block;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 18pt;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 24px 0 0 0;
+}
+
+.exit-ticket-label::before {
+    content: "🎫 ";
+}
+
+/* 2×2 grid — same layout as practice set exit ticket */
+.exit-ticket-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 0;
+}
+
+.et-cell {
+    padding: 12px 16px;
+    min-height: 3.5in;
+    border-top: 1.5px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.et-cell-title {
+    font-weight: 800;
+    color: var(--navy);
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+
+/* ── PHYSICS READING APPRENTICESHIP ADDITIONS ─────────────── */
+.h-vocab::before { content: "🧠 "; }
+
+.vocab-box {
+    border-left: 5px solid var(--navy-mid);
+    padding: 12px 16px;
+    margin: 10px 0 16px 0;
+    background: #f8faff;
+}
+
+.vocab-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 22px;
+    margin: 12px 0 10px 22px;
+    padding: 0;
+    font-size: 11.5pt;
+}
+
+.vocab-list li { padding: 4px 0; }
+
+.vocab-note {
+    margin-top: 12px;
+    color: var(--muted);
+    font-style: italic;
+}
+
+/* Preview tables are intentionally large for handwriting in Notability. */
+table.values.vocab-sort {
+    width: 100%;
+    table-layout: fixed;
+    margin: 12px 0 20px 0;
+}
+
+table.values.vocab-sort th,
+table.values.vocab-sort td {
+    width: 33.333%;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 12px;
+}
+
+table.values.vocab-sort tr.vocab-sort-space td {
+    height: 2.35in;
+}
+
+.preview-notes-table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 12px 0 20px 0;
+}
+
+.preview-notes-table th {
+    width: 1.55in;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px;
+}
+
+.preview-notes-table td {
+    height: 1.65in;
+    vertical-align: top;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 29px,
+        #eceff3 30px
+    );
+}
+
+.observation-inference-table {
+    width: 100% !important;
+    table-layout: fixed;
+    margin: 12px 0 18px 0 !important;
+}
+
+.observation-inference-table th:first-child,
+.observation-inference-table td:first-child {
+    width: 34%;
+}
+
+.observation-inference-table th,
+.observation-inference-table td {
+    text-align: left !important;
+    vertical-align: top !important;
+    padding: 10px 12px !important;
+}
+
+.summary-list {
+    margin: 4px 0 4px 22px;
+    padding: 0;
+}
+.summary-list li {
+    margin-bottom: 9px;
+    line-height: 1.45;
+}
+
+/* base.css defines workspace-220 as 220px; Physics notes need more room. */
+.container .workspace-220 {
+    height: 3.75in;
+    margin-top: 12px;
+    border-top: 1px solid #e4e4e4;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+@media print {
+    .notes-ws { height: 4.25in; }
+    .container .workspace-220 { height: 3.75in; }
+    table.values.vocab-sort tr.vocab-sort-space td { height: 2.35in; }
+    .preview-notes-table td { height: 1.65in; }
+    .et-cell { min-height: 3.5in; }
+}
+
+/* ── PORTABLE-MEMORY GENERIC ADDITIONS ────────────────────── */
+.title-note {
+    margin-top: 18px;
+    color: #555;
+}
+
+.roomy-table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 12px 0 18px 0;
+}
+.roomy-table th,
+.roomy-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 12px;
+}
+.roomy-table td {
+    min-height: 1.25in;
+}
+
+.mistake-table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 8px 0;
+}
+.mistake-table th,
+.mistake-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 9px 10px;
+}
+.mistake-table th:nth-child(1),
+.mistake-table td:nth-child(1) { width: 28%; }
+.mistake-table th:nth-child(2),
+.mistake-table td:nth-child(2) { width: 36%; }
+.mistake-table th:nth-child(3),
+.mistake-table td:nth-child(3) { width: 36%; }

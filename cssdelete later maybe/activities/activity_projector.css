@@ -1,0 +1,96 @@
+/* ============================================================
+   activity_projector.css — Algebra 1
+   tnezki.github.io/algebra/css/activity_projector.css
+   Path from file: ../../css/activity_projector.css
+
+   Depends on: base.css
+   Font: Arial. Print-page bordered layout.
+   Projected large-text questions + exit ticket grid.
+   ============================================================ */
+
+/* ── PAGE / BODY ────────────────────────────────────────────── */
+@page { size: letter; margin: .35in; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: white;
+    line-height: 1.22;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 0; }
+
+/* ── PRINT PAGE ─────────────────────────────────────────────── */
+.page {
+    min-height: 9.3in;
+    page-break-after: always;
+    border: 2px solid #111;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+/* ── COVER PAGE ─────────────────────────────────────────────── */
+.top {
+    border-bottom: 3px solid var(--navy);
+    padding: 6px 0 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-end;
+}
+.eyebrow  { font-size: 13px; font-weight: 700; letter-spacing: .05em; color: #4b5563; text-transform: uppercase; }
+.title    { font-size: 26px; font-weight: 800; color: var(--navy); }
+.sub      { font-size: 17px; font-weight: 700; }
+.meta     { font-size: 13px; text-align: right; }
+.dir-img  { width: 100%; height: auto; border: 1px solid #c8d0dc; border-radius: 8px; margin-top: 8px; }
+
+/* ── WORKSHEET PAGES ────────────────────────────────────────── */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #111;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+}
+.h1        { font-size: 36px; font-weight: 800; margin: 0 0 10px; color: var(--navy); }
+.tag       { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: #555; font-weight: 800; margin-bottom: 6px; }
+.q         { font-size: 22px; margin: 0 0 12px; }
+.solution  { font-size: 20px; margin: 10px 0 8px; padding-top: 10px; border-top: 2px solid #111; }
+.solution b { color: var(--navy); }
+.work      { flex: 1; background: white; min-height: 3.5in; margin-top: 8px; }
+
+/* ── FIGURE ─────────────────────────────────────────────────── */
+.figure           { text-align: center; margin: 10px auto; }
+.figure img       { max-width: 5.0in; max-height: 3.25in; width: auto; height: auto; border: 1px solid #777; }
+
+/* ── VALUE TABLE ────────────────────────────────────────────── */
+table.values            { border-collapse: collapse; margin: 10px auto; font-size: 20px; }
+table.values th,
+table.values td         { border: 1px solid #555; padding: 6px 14px; text-align: center; }
+table.values th         { background: white; }
+
+/* ── EXIT TICKET ────────────────────────────────────────────── */
+.exit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.exit-item {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 1.48in;
+    font-size: 20px;
+    background: white;
+}
+.exit-item .label { font-size: 11px; font-weight: 800; color: #444; text-transform: uppercase; }
+.exit-key { font-size: 18px; border-top: 2px solid #111; padding-top: 10px; margin-top: 12px; }
+.exit-key li { margin-bottom: 5px; }
+
+/* ── PRINT ──────────────────────────────────────────────────── */
+@media print {
+    .wrap { max-width: none; }
+    .page { min-height: 9.3in; }
+}

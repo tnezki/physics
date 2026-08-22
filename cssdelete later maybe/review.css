@@ -61,26 +61,3 @@ a{color:var(--navy-2)}
 @media(max-width:900px){.concept-chain{grid-template-columns:1fr}.chain-arrow{display:none}.vocab-groups,.formula-grid,.section-layout,.dok-map-grid,.final-grid{grid-template-columns:1fr}.dok-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.section-figure img{max-height:420px}}
 @media(max-width:600px){.hero{padding:30px 16px 26px}.review-shell{padding:0 10px}.review-panel{padding:18px;border-radius:12px}.dok-strip,.mistake-grid{grid-template-columns:1fr}.jump-nav a{font-size:.82rem}.section-head{align-items:center}}
 @media print{@page{size:letter portrait;margin:.45in}html,body{background:white}.hero{background:white!important;color:var(--ink);padding:0 0 14px;border-bottom:2px solid #777}.hero h1{color:var(--navy);font-size:28pt}.hero-copy{color:var(--ink)}.jump-nav,.back-top{display:none}.review-shell{max-width:none;margin:0;padding:0}.review-panel{box-shadow:none;border:1px solid #bbb;border-radius:0;margin:0 0 .22in;padding:.18in;break-inside:avoid}.section-review{break-before:page}.section-layout{grid-template-columns:1.25fr .75fr;gap:.16in}.section-figure img{max-height:2.25in}.dok-strip{grid-template-columns:repeat(4,1fr)}.vocab-groups{grid-template-columns:repeat(2,1fr)}.formula-grid{grid-template-columns:repeat(3,1fr)}.mistake-grid{grid-template-columns:repeat(2,1fr)}.dok-map-grid{grid-template-columns:repeat(2,1fr)}.final-grid{grid-template-columns:repeat(3,1fr)}.review-footer{display:none}}
-
-/* CLEAN REVIEW CONTRACT: persistent return-to-top control */
-.floating-top{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:50;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-width:58px;
-  min-height:42px;
-  padding:9px 13px;
-  border:2px solid var(--navy);
-  border-radius:999px;
-  background:#fff;
-  color:var(--navy);
-  text-decoration:none;
-  font-weight:900;
-  box-shadow:0 4px 14px rgba(25,45,70,.16);
-}
-.floating-top:hover,.floating-top:focus-visible{background:var(--navy);color:#fff;outline:none}
-@media print{.floating-top{display:none}}

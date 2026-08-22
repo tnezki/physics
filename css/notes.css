@@ -1,528 +1,550 @@
 /* ============================================================
-   notes.css — Conceptual Physics
-   Physics notes stylesheet
-   Path from notes HTML: ../../css/notes.css
+   notes_layout_v11.css — Algebra Notes typography/scale pilot
+   Load AFTER base.css and notes.css.
 
-   Requires: base.css loaded FIRST.
-
-   No page breaks. Content flows top to bottom.
-   Export using print → endless paper → save as PDF for Notability.
-
-   .notes-ws   → fixed 4.25in writing space after each section
-   .notes-figure → image container; default 3in wide
-   .wu-img-NNN → image width overrides
-   All other sizing: base.css tokens and typography.
+   QUICK MANUAL CONTROLS
    ============================================================ */
-
-/* ── PAGE SETUP ─────────────────────────────────────────────── */
-/* Kept for regular browser view. Overridden by endless paper   */
-/* in the print dialog for Notability export.                   */
-@page { size: 8.5in 200in; margin: .5in; }
-
-/* ── WRITING SPACE ──────────────────────────────────────────── */
-/* Physics default: generous iPad/Notability writing space.      */
-/* Usage: <div class="notes-ws"></div>                          */
-.notes-ws {
-    height: 4.25in;
-    margin-top: 12px;
+:root {
+  --notes-graph-max-width: 2.52in;
+  --notes-graph-max-height: 2.52in;
+  --notes-workspace-height: 2.00in;
+  --notes-misc-workspace-height: 9.0in;
+  --notes-ican-font-size: 13pt;
+  --notes-compact-table-min-width: 2.35in;
+  --notes-compact-table-cell-pad-y: 7px;
+  --notes-compact-table-cell-pad-x: 12px;
 }
 
-/* Optional thin rule at top of writing area.                   */
-.ws-ruled { border-top: 1px solid #e4e4e4; padding-top: 4px; }
 
-/* Small all-caps label.                                        */
-.ws-label {
-    display: block;
-    font-size: 8pt;
-    font-weight: 700;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
+/* ── V11 GLOBAL TYPOGRAPHY TEST ──────────────────────────────
+   Test only: reduce the normal Notes reading/question/table text
+   by about 2pt while keeping the existing hierarchy. */
+.container p,
+.container li,
+.container td,
+.container th,
+.container figcaption {
+  font-size: 9pt !important;
 }
 
-/* ── MATH NOTES BOX ─────────────────────────────────────────── */
-/* No outer container border — badge header is the only visual anchor. */
+.container .h-target,
+.container .h-vocab,
+.container .h-summary,
+.container .h-mistakes {
+  font-size: 18pt !important;
+}
+
+.container .h-example,
+.container .h-yti {
+  font-size: 13pt !important;
+}
+
+/* ── TITLE CARD ─────────────────────────────────────────────── */
+.notes-title {
+  border: 4px solid var(--navy, #0b174f) !important;
+  border-radius: 10px !important;
+  background: #f7f9fc !important;
+  padding: 14px 18px 16px 18px !important;
+  margin: 0 0 18px 0 !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.notes-title .title-kicker {
+  color: var(--navy-mid, #315b8a) !important;
+  font-size: 7.5pt !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  margin-bottom: 5px !important;
+}
+.notes-title .title-main {
+  color: var(--navy, #0b174f) !important;
+  font-size: 21pt !important;
+  line-height: 1.08 !important;
+  font-weight: 800 !important;
+  margin: 0 0 6px 0 !important;
+}
+.notes-title .title-sub {
+  color: #333 !important;
+  font-size: 10.5pt !important;
+  font-weight: 700 !important;
+  margin: 0 0 7px 0 !important;
+}
+.notes-title .title-quote {
+  color: #555 !important;
+  font-size: 9pt !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+/* ── WHAT'S TO COME ──────────────────────────────────────────
+   HTML now wraps the COMPLETE WTC: heading + directions +
+   stimulus + questions + 2in workspace. */
+.notes-wtc {
+  margin: 0;
+  padding: 0;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.notes-wtc > .h-preview {
+  break-after: avoid-page;
+  page-break-after: avoid;
+}
+.notes-wtc .annotation-box,
+.notes-wtc figure,
+.notes-wtc ol,
+.notes-wtc li {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+/* ── I-CAN START ────────────────────────────────────────────── */
+.h-intro.notes-ican-heading {
+  font-size: var(--notes-ican-font-size) !important;
+  line-height: 1.22 !important;
+  padding: 6px 12px !important;
+  margin: 18px 0 10px 0 !important;
+}
+.notes-ican-start {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+/* ── MATH NOTES ───────────────────────────────────────────────
+   Explicit here so the block does not depend on an older
+   notes.css having every newer Math Notes class. */
 .math-notes {
-    margin: 10px 0 12px 0;
+  margin: 14px 0 16px 0 !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
 }
 .math-notes-header {
-    background: transparent;
-    color: var(--navy);
-    border: 4px solid var(--navy);
-    border-radius: 8px;
-    padding: 5px 16px;
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    margin-bottom: 10px;
-    line-height: 1.4;
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 10px !important;
+  border: 3px solid var(--navy, #0b174f) !important;
+  border-radius: 8px !important;
+  background: #f5f8fc !important;
+  color: var(--navy, #0b174f) !important;
+  padding: 6px 12px !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.25 !important;
 }
 .math-notes-label {
-    font-size: 14pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    white-space: nowrap;
+  font-size: 8.5pt !important;
+  font-weight: 850 !important;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  white-space: nowrap;
 }
-.math-notes-label::before {
-    content: "📐 ";
-}
+.math-notes-label::before { content: "📐 "; }
 .math-notes-title {
-    font-size: 14pt;
-    font-weight: 800;
+  font-size: 10.5pt !important;
+  font-weight: 800 !important;
 }
 .math-notes-body {
-    padding: 8px 4px;
+  padding: 2px 2px 0 2px !important;
 }
-
-.math-notes-body p          { margin-bottom: 8px; }
-.math-notes-body ul,
-.math-notes-body ol         { margin-left: 22px; margin-bottom: 8px; }
-.math-notes-body li         { margin-bottom: 5px; }
-
-/* ── REP GRID ───────────────────────────────────────────────── */
 .rep-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin: 8px 0;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px !important;
+  margin: 8px 0 !important;
 }
-
 .rep-card {
-    border: 1px solid var(--border-light);
-    border-radius: 6px;
-    padding: 10px;
-    background: var(--bg);
+  border: 1px solid #c7d1df !important;
+  border-radius: 6px !important;
+  background: #fbfcfe !important;
+  padding: 9px 10px !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.rep-card strong {
+  color: var(--navy, #0b174f);
 }
 
-.rep-card h4 { color: var(--navy); font-size: 10pt; margin-bottom: 4px; }
-
-/* ── SKETCH COLS ────────────────────────────────────────────── */
-.sketch-cols {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 10px;
+/* ── STOP AND DISCUSS ─────────────────────────────────────────
+   Keep prompt + workspace together and make the discussion cue
+   visually unmistakable without dominating the page. */
+.notes-discuss-task {
+  margin: 14px 0 16px 0;
+  padding: 0;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.stop-discuss {
+  border: 2px solid #a73737 !important;
+  border-left: 7px solid #a73737 !important;
+  border-radius: 8px !important;
+  background: #fff7f7 !important;
+  color: #333 !important;
+  padding: 11px 14px !important;
+  margin: 0 !important;
+  font-size: 9pt !important;
+  line-height: 1.45 !important;
+}
+.stop-discuss strong {
+  display: block;
+  color: #8d2424 !important;
+  font-size: 9.5pt !important;
+  font-weight: 850 !important;
+  letter-spacing: .15px;
+  margin-bottom: 3px;
+}
+.notes-discuss-task > .notes-ws {
+  margin-top: 8px !important;
 }
 
-.sketch-cell { min-height: 2.25in; }
-
-.sketch-cell-label {
-    display: block;
-    font-size: 8pt;
-    font-weight: 700;
-    color: var(--navy-mid);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    border-bottom: 1px solid #ccd;
-    padding-bottom: 3px;
-    margin-bottom: 4px;
+/* ── GRAPH SIZE ─────────────────────────────────────────────── */
+figure.notes-graph {
+  text-align: center;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+figure.notes-graph img {
+  width: auto !important;
+  max-width: var(--notes-graph-max-width) !important;
+  max-height: var(--notes-graph-max-height) !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* ── CALLOUT BOXES ──────────────────────────────────────────── */
-.reading-box {
-    padding: 12px 16px;
-    margin: 10px 0;
+/* ── TASK PAGINATION ────────────────────────────────────────── */
+.notes-task {
+  margin: 0;
+  padding: 0;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.notes-task-content {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.notes-task-content .h-example,
+.notes-task-content .h-yti {
+  break-after: avoid-page;
+  page-break-after: avoid;
+}
+.notes-task-content table,
+.notes-task-content figure,
+.notes-task-content tr {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
 }
 
-.strategy-box {
-    padding: 4px 0 12px 0;
-    margin: 10px 0;
-}
-.strategy-box > p:first-child {
-    margin: 0 0 10px 0;
-}
-/* Stop and Discuss — full badge. class="strategy-box stop-discuss" */
-.strategy-box.stop-discuss > p:first-child strong {
-    color: firebrick;
-    border: 4px solid firebrick;
-    border-radius: 8px;
-    padding: 5px 16px;
-    display: block;
-    font-size: 14pt;
-    font-weight: 800;
-    line-height: 1.4;
-}
-.strategy-box.stop-discuss > p:first-child strong::before {
-    content: "🛑 ";
-}
-/* Stop and Discuss: question/content text also red */
-.strategy-box.stop-discuss > *:not(:first-child) {
-    color: firebrick;
+/* Default writing space: 2in. */
+.notes-ws,
+.notes-task-workspace {
+  height: var(--notes-workspace-height) !important;
+  min-height: var(--notes-workspace-height) !important;
 }
 
-.key-point {
-    border-left: 5px solid #2e7d32;
-    padding: 12px 16px;
-    margin: 10px 0;
-    color: #2e7d32;
+/* ── COMPACT TWO-COLUMN DATA TABLES ─────────────────────────── */
+table.compact-table {
+  width: max-content !important;
+  min-width: var(--notes-compact-table-min-width);
+  max-width: 100% !important;
+  table-layout: fixed !important;
+  margin: 8px auto 10px auto !important;
+}
+table.compact-table col.half-col { width: 50%; }
+table.compact-table th,
+table.compact-table td {
+  width: 50%;
+  padding: var(--notes-compact-table-cell-pad-y)
+           var(--notes-compact-table-cell-pad-x) !important;
+  white-space: nowrap;
+  text-align: center;
 }
 
-.mistake-box {
-    border-left: 5px solid #c85a00;
-    padding: 12px 16px;
-    margin: 10px 0;
-    color: #c85a00;
+/* ── SUMMARY / COMMON MISTAKES / MISC PAGE ─────────────────── */
+.h-summary + .summary-list { margin-bottom: 14px; }
+.notes-mistakes-block,
+.mistake-table,
+.mistake-table tr {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
 }
-
-.annotation-box {
-    padding: 12px 16px;
-    margin: 10px 0;
-}
-
-/* Multi-line: left accent only. 1-liner: add .boxed for full border. */
-.claim-card {
-    border-left: 5px solid #555;
-    padding: 10px 12px;
-    margin: 10px 0;
-    background: #fafafa;
-}
-.claim-card.boxed {
-    border: 1px solid #aaa;
-    border-left: 5px solid #555;
-    border-radius: 6px;
-}
-
-.objectives {
-    background: #f0f4f8;
-    padding: 16px;
-    border-radius: 6px;
-}
-
-/* ── FIGURE ─────────────────────────────────────────────────── */
-/* Default: 3in wide. Override with wu-img-NNN.                 */
-.notes-figure {
-    margin: 10px auto 8px auto;
-    text-align: center;
-}
-
-.notes-figure img {
-    max-width: 3in;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid var(--border-light);
-    background: var(--bg);
-}
-
-/* ── IMAGE SIZE OVERRIDES ───────────────────────────────────── */
-.wu-img-025 img { max-width: 0.25in; }
-.wu-img-050 img { max-width: 0.50in; }
-.wu-img-075 img { max-width: 0.75in; }
-.wu-img-100 img { max-width: 1.00in; }
-.wu-img-125 img { max-width: 1.25in; }
-.wu-img-150 img { max-width: 1.50in; }
-.wu-img-175 img { max-width: 1.75in; }
-.wu-img-200 img { max-width: 2.00in; }
-.wu-img-225 img { max-width: 2.25in; }
-.wu-img-250 img { max-width: 2.50in; }
-.wu-img-275 img { max-width: 2.75in; }
-.wu-img-300 img { max-width: 3.00in; }
-.wu-img-325 img { max-width: 3.25in; }
-.wu-img-350 img { max-width: 3.50in; }
-.wu-img-375 img { max-width: 3.75in; }
-.wu-img-400 img { max-width: 4.00in; }
-.wu-img-425 img { max-width: 4.25in; }
-.wu-img-450 img { max-width: 4.50in; }
-.wu-img-475 img { max-width: 4.75in; }
-.wu-img-500 img { max-width: 5.00in; }
-.wu-img-525 img { max-width: 5.25in; }
-.wu-img-550 img { max-width: 5.50in; }
-.wu-img-575 img { max-width: 5.75in; }
-.wu-img-600 img { max-width: 6.00in; }
-.wu-img-625 img { max-width: 6.25in; }
-.wu-img-650 img { max-width: 6.50in; }
-.wu-img-675 img { max-width: 6.75in; }
-.wu-img-700 img { max-width: 7.00in; }
-.wu-img-725 img { max-width: 7.25in; }
-.wu-img-750 img { max-width: 7.50in; }
-
-/* ── TITLE PAGE ─────────────────────────────────────────────── */
-.notes-title {
-    border: 2px solid var(--navy);
-    padding: 40px 48px 32px 48px;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #ffffff 0%, #f6f8ff 100%);
-    margin-bottom: 20px;
-}
-
-.title-kicker {
-    font-weight: 800;
-    color: var(--navy-mid);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 14px;
-    font-size: 10pt;
-}
-
-.title-main {
-    font-size: 28pt;
-    color: var(--navy);
-    font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 14px;
-}
-
-.title-sub {
-    font-size: 12pt;
-    color: var(--text);
-    margin-bottom: 20px;
-}
-
-.title-quote {
-    border-left: 6px solid var(--navy);
-    background: var(--blue-light);
-    padding: 14px 18px;
-    border-radius: 6px;
-    margin-top: 16px;
-    font-size: 11pt;
-}
-
-/* ── H2/H3 BADGES — all section headers use badge style ───── */
-/* Overrides base.css left-border style. No left/right/bottom  */
-/* container borders — all visual weight is in the badge.      */
-.container h2,
-.container h3 {
-    display: block;
-    background: transparent;
-    border-radius: 8px;
-    line-height: 1.4;
-}
-
-/* h2 — section headers: navy, 6px, 18pt */
-.container h2 {
-    color: var(--navy);
-    border: 6px solid var(--navy);
-    padding: 5px 18px;
-    font-size: 18pt;
-    font-weight: 900;
-    margin: 18px 0 12px 0;
-}
-
-/* h3 — example/practice headers: steelblue, 4px, 14pt */
-.container h3 {
-    color: steelblue;
-    border: 4px solid steelblue;
-    padding: 4px 16px;
-    font-size: 14pt;
-    font-weight: 800;
-    margin: 14px 0 8px 0;
-}
-
-
-/* Emoji prefixes via class */
-.h-target::before    { content: "🎯 "; }
-.h-preview::before   { content: "🔭 "; }
-.h-intro::before     { content: "📖 "; }
-.h-reflection::before{ content: "🤔 "; }
-.h-example::before   { content: "💡 "; }
-.h-yti::before       { content: "✏️ "; }
-
-/* Summary — green (higher specificity to beat .container h2 border shorthand) */
-.container h2.h-summary { color: #2e7d32; border-color: #2e7d32; }
-.h-summary::before { content: "✅ "; }
-
-/* Common Mistakes — orange */
-.container h2.h-mistakes { color: #c85a00; border-color: #c85a00; }
-.h-mistakes::before { content: "⚠️ "; }
-
-/* ── EXIT TICKET ─────────────────────────────────────────────── */
-/* Filled badge (inverted) to distinguish it as a closing activity */
-.exit-ticket-label {
-    display: block;
-    background: var(--navy);
-    color: #fff;
-    border-radius: 8px;
-    padding: 8px 18px;
-    font-size: 18pt;
-    font-weight: 900;
-    letter-spacing: 1px;
-    margin: 24px 0 0 0;
-}
-
-.exit-ticket-label::before {
-    content: "🎫 ";
-}
-
-/* 2×2 grid — same layout as practice set exit ticket */
-.exit-ticket-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    margin-top: 0;
-}
-
-.et-cell {
-    padding: 12px 16px;
-    min-height: 3.5in;
-    border-top: 1.5px solid var(--border);
-    display: flex;
-    flex-direction: column;
-}
-
-.et-cell-title {
-    font-weight: 800;
-    color: var(--navy);
-    font-size: 9pt;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 5px;
-    margin-bottom: 8px;
-}
-
-
-/* ── PHYSICS READING APPRENTICESHIP ADDITIONS ─────────────── */
-.h-vocab::before { content: "🧠 "; }
-
-.vocab-box {
-    border-left: 5px solid var(--navy-mid);
-    padding: 12px 16px;
-    margin: 10px 0 16px 0;
-    background: #f8faff;
-}
-
-.vocab-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px 22px;
-    margin: 12px 0 10px 22px;
-    padding: 0;
-    font-size: 11.5pt;
-}
-
-.vocab-list li { padding: 4px 0; }
-
-.vocab-note {
-    margin-top: 12px;
-    color: var(--muted);
-    font-style: italic;
-}
-
-/* Preview tables are intentionally large for handwriting in Notability. */
-table.values.vocab-sort {
-    width: 100%;
-    table-layout: fixed;
-    margin: 12px 0 20px 0;
-}
-
-table.values.vocab-sort th,
-table.values.vocab-sort td {
-    width: 33.333%;
-    text-align: left;
-    vertical-align: top;
-    padding: 10px 12px;
-}
-
-table.values.vocab-sort tr.vocab-sort-space td {
-    height: 2.35in;
-}
-
-.preview-notes-table {
-    width: 100%;
-    table-layout: fixed;
-    margin: 12px 0 20px 0;
-}
-
-.preview-notes-table th {
-    width: 1.55in;
-    text-align: left;
-    vertical-align: top;
-    padding: 12px;
-}
-
-.preview-notes-table td {
-    height: 1.65in;
-    vertical-align: top;
-    background-image: repeating-linear-gradient(
-        to bottom,
-        transparent 0,
-        transparent 29px,
-        #eceff3 30px
-    );
-}
-
-.observation-inference-table {
-    width: 100% !important;
-    table-layout: fixed;
-    margin: 12px 0 18px 0 !important;
-}
-
-.observation-inference-table th:first-child,
-.observation-inference-table td:first-child {
-    width: 34%;
-}
-
-.observation-inference-table th,
-.observation-inference-table td {
-    text-align: left !important;
-    vertical-align: top !important;
-    padding: 10px 12px !important;
-}
-
-.summary-list {
-    margin: 4px 0 4px 22px;
-    padding: 0;
-}
-.summary-list li {
-    margin-bottom: 9px;
-    line-height: 1.45;
-}
-
-/* base.css defines workspace-220 as 220px; Physics notes need more room. */
-.container .workspace-220 {
-    height: 3.75in;
-    margin-top: 12px;
-    border-top: 1px solid #e4e4e4;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+.notes-misc-workspace {
+  height: var(--notes-misc-workspace-height);
+  min-height: var(--notes-misc-workspace-height);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  break-before: page;
+  page-break-before: always;
 }
 
 @media print {
-    .notes-ws { height: 4.25in; }
-    .container .workspace-220 { height: 3.75in; }
-    table.values.vocab-sort tr.vocab-sort-space td { height: 2.35in; }
-    .preview-notes-table td { height: 1.65in; }
-    .et-cell { min-height: 3.5in; }
+  .notes-wtc,
+  .notes-ican-start,
+  .math-notes,
+  .notes-discuss-task,
+  .notes-task,
+  .notes-task-content,
+  .notes-task-content table,
+  .notes-task-content figure,
+  .notes-task-content tr,
+  .notes-mistakes-block,
+  .mistake-table,
+  .mistake-table tr {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+  .notes-ws,
+  .notes-task-workspace {
+    height: var(--notes-workspace-height) !important;
+    min-height: var(--notes-workspace-height) !important;
+  }
+  .notes-misc-workspace {
+    height: var(--notes-misc-workspace-height) !important;
+    min-height: var(--notes-misc-workspace-height) !important;
+  }
 }
 
-/* ── PORTABLE-MEMORY GENERIC ADDITIONS ────────────────────── */
-.title-note {
-    margin-top: 18px;
-    color: #555;
+
+/* ── COMPLETE VOCABULARY PREVIEW WRAPPER ─────────────────────
+   Heading + vocabulary list + sort directions + sort table are
+   one print unit whenever the complete block fits on a page. */
+.vocab-preview-section {
+  margin: 14px 0 20px 0;
+  break-inside: avoid-page !important;
+  page-break-inside: avoid !important;
+}
+.vocab-preview-section > .h-vocab {
+  break-after: avoid-page !important;
+  page-break-after: avoid !important;
+}
+.vocab-preview-section > .vocab-box {
+  break-inside: avoid-page !important;
+  page-break-inside: avoid !important;
 }
 
-.roomy-table {
-    width: 100%;
-    table-layout: fixed;
-    margin: 12px 0 18px 0;
-}
-.roomy-table th,
-.roomy-table td {
-    text-align: left;
-    vertical-align: top;
-    padding: 10px 12px;
-}
-.roomy-table td {
-    min-height: 1.25in;
+@media print {
+  .vocab-preview-section,
+  .vocab-preview-section > .h-vocab,
+  .vocab-preview-section > .vocab-box,
+  .vocab-preview-section .vocab-sort-task,
+  .vocab-preview-section .vocab-sort-table {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
 }
 
-.mistake-table {
-    width: 100%;
-    table-layout: fixed;
-    margin: 8px 0;
+/* ── VOCABULARY SORT ─────────────────────────────────────────
+   Active prior-knowledge task. Directions + 3-column sort table
+   stay together when the block fits on the next page. */
+.vocab-sort-task {
+  margin: 8px 0 18px 0;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
 }
-.mistake-table th,
-.mistake-table td {
-    text-align: left;
-    vertical-align: top;
-    padding: 9px 10px;
+.vocab-sort-directions {
+  margin: 0 0 10px 0 !important;
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
 }
-.mistake-table th:nth-child(1),
-.mistake-table td:nth-child(1) { width: 28%; }
-.mistake-table th:nth-child(2),
-.mistake-table td:nth-child(2) { width: 36%; }
-.mistake-table th:nth-child(3),
-.mistake-table td:nth-child(3) { width: 36%; }
+.vocab-sort-directions strong {
+  color: var(--navy, #0b174f);
+  font-weight: 850;
+}
+.vocab-sort-table {
+  width: 100% !important;
+  table-layout: fixed !important;
+  border-collapse: collapse !important;
+  margin: 0 !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.vocab-sort-table th,
+.vocab-sort-table td {
+  width: 33.333% !important;
+  border: 1px solid #777 !important;
+  vertical-align: top !important;
+}
+.vocab-sort-table th {
+  background: #eaf0f9 !important;
+  color: var(--navy, #0b174f) !important;
+  text-align: left !important;
+  font-size: 9pt !important;
+  font-weight: 850 !important;
+  padding: 10px 12px !important;
+}
+.vocab-sort-table tr.vocab-sort-space td {
+  height: 2.15in !important;
+  padding: 8px 10px !important;
+}
+
+/* ── WTC PREVIEW INSTRUCTIONS ────────────────────────────────
+   Visually separate preview/annotation directions from the
+   mathematical questions that follow. */
+.wtc-instructions {
+  margin: 8px 0 12px 0 !important;
+  padding: 10px 14px !important;
+  border: 2px solid #b7831f !important;
+  border-left: 7px solid #b7831f !important;
+  border-radius: 8px !important;
+  background: #fffaf0 !important;
+  color: #333 !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.wtc-instructions p {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+.wtc-instructions .wtc-do-not-solve {
+  margin: 0 0 4px 0 !important;
+  color: #7a4f00 !important;
+  font-size: 9.5pt !important;
+  font-weight: 900 !important;
+  letter-spacing: .4px !important;
+}
+
+
+/* ── STEP 2: SKIM THE SECTION ────────────────────────────────
+   Reading Apprenticeship preview before close reading begins.
+   Left prompt cells are fixed-width; right cells are generous
+   ruled writing areas for Notability annotation. */
+.skim-section-task {
+  margin: 16px 0 22px 0;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.skim-section-directions {
+  margin: 0 0 12px 0 !important;
+  font-size: 9pt !important;
+  line-height: 1.4 !important;
+}
+.skim-section-directions strong {
+  font-weight: 900 !important;
+}
+.skim-section-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.skim-section-table th,
+.skim-section-table td {
+  border: 1px solid #777 !important;
+  vertical-align: top !important;
+}
+.skim-section-table th {
+  width: 16% !important;
+  background: #eaf0f9 !important;
+  color: var(--navy, #0b174f) !important;
+  text-align: left !important;
+  font-size: 9pt !important;
+  font-weight: 900 !important;
+  padding: 12px 14px !important;
+}
+.skim-section-table td {
+  height: 1.55in !important;
+  padding: 10px 12px !important;
+  background-color: #fff !important;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 0.37in,
+    #edf0f5 0.38in,
+    #edf0f5 0.385in
+  ) !important;
+}
+
+@media print {
+  .skim-section-task,
+  .skim-section-table,
+  .skim-section-table tr {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+
+/* ── V8 VISUAL POLISH: WHAT'S TO COME HEADER ────────────────
+   Match the strong section header treatment used elsewhere:
+   navy left rule + large navy title, without turning the whole
+   section into a filled card. */
+.notes-wtc > .h-preview {
+  color: var(--navy, #0b174f) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-left: 7px solid var(--navy, #0b174f) !important;
+  border-radius: 0 !important;
+  padding: 5px 0 5px 14px !important;
+  margin: 18px 0 12px 0 !important;
+  font-size: 20pt !important;
+  line-height: 1.12 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+}
+
+/* ── V8 CLOSE-READING DIRECTIONS ─────────────────────────────
+   Lives INSIDE .notes-ican-start so directions + I Can heading +
+   opening reading travel as one instructional block in print. */
+.close-reading-instructions {
+  margin: 16px 0 10px 0 !important;
+  padding: 10px 14px !important;
+  border: 2px solid #2d6a9f !important;
+  border-left: 7px solid #2d6a9f !important;
+  border-radius: 8px !important;
+  background: #f3f8fd !important;
+  color: #263238 !important;
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+.close-reading-instructions p {
+  margin: 0 !important;
+  line-height: 1.42 !important;
+  font-size: 9pt !important;
+}
+.close-reading-instructions .close-reading-title {
+  margin: 0 0 4px 0 !important;
+  color: var(--navy, #0b174f) !important;
+  font-size: 9.5pt !important;
+  font-weight: 900 !important;
+  letter-spacing: .35px !important;
+}
+
+@media print {
+  .notes-wtc > .h-preview,
+  .close-reading-instructions,
+  .notes-ican-start > .h-intro,
+  .notes-ican-start > .reading-box {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+
+/* ── V9 LET'S GET STARTED SECTION HEADING ───────────────────
+   Section heading for the pre-reading skim activity. It lives
+   inside .skim-section-task so heading + directions + table
+   remain one print unit whenever they fit. */
+.lets-get-started-heading {
+  color: var(--navy, #0b174f) !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-left: 7px solid var(--navy, #0b174f) !important;
+  border-radius: 0 !important;
+  padding: 5px 0 5px 14px !important;
+  margin: 18px 0 12px 0 !important;
+  font-size: 20pt !important;
+  line-height: 1.12 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  break-after: avoid-page !important;
+  page-break-after: avoid !important;
+}
+
+@media print {
+  .lets-get-started-heading {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+}

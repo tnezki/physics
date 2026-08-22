@@ -1,4 +1,4 @@
-/* Base Bank - canonical clean teacher inspection style.
+/* Universal Bank - canonical clean teacher inspection style.
    Production location: css/bank.css
    Load AFTER css/base.css. */
 body {
@@ -11,41 +11,15 @@ body {
 }
 h1, h2, h3 { color: #1f3864; }
 .nav {
-  position: sticky;
-  top: 0;
-  z-index: 4;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 8px;
-  background: #fff;
-  padding: 10px;
-  margin: 12px 0 20px;
-  border-bottom: 1px solid #ccc;
+  position: sticky; top: 0; z-index: 4; display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 8px;
+  background: #fff; padding: 10px; margin: 12px 0 20px; border-bottom: 1px solid #ccc;
 }
 .nav a { display: inline-block; color: #1f3864; text-decoration: none; white-space: nowrap; }
 .nav a:hover { text-decoration: underline; }
 .bank-section { margin: 0 0 30px; }
 .resource-group { margin: 0; padding: 0; }
 .resource-group > h3 { margin-top: 24px; margin-bottom: 8px; }
-.review-target { margin: 0 0 34px; }
-.review-family { margin: 18px 0 28px; padding-top: 8px; border-top: 1px solid #d7dce5; }
-.review-family > h3 { margin-bottom: 8px; }
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 12px;
-  align-items: start;
-}
-.review-grid .bank-item { margin: 0; min-width: 0; }
-.review-view-note { font-size: 13px; color: #596579; }
-.bank-item {
-  border: 1px solid #d7dce5;
-  border-radius: 8px;
-  padding: 14px;
-  margin: 12px 0;
-  background: #fff;
-}
+.bank-item { border: 1px solid #d7dce5; border-radius: 8px; padding: 14px; margin: 12px 0; background: #fff; }
 .meta { margin-bottom: 8px; font-size: 12px; color: #596579; }
 .student-prompt { margin: 0; }
 .student-prompt > :first-child { margin-top: 0; }
@@ -53,16 +27,7 @@ h1, h2, h3 { color: #1f3864; }
 .answer { margin-top: 8px; background: #f1f6f1; border-left: 4px solid #437a43; padding: 8px; }
 .answer > summary, .evidence-map > summary { cursor: pointer; font-weight: bold; }
 .answer[open] > summary, .evidence-map[open] > summary { margin-bottom: 6px; }
-.evidence-map {
-  display: block;
-  margin: 8px 0 0;
-  padding: 7px 9px;
-  font-size: 12px;
-  line-height: 1.45;
-  color: #596579;
-  border-left: 3px solid #d7dce5;
-  background: #fafbfc;
-}
+.evidence-map { display: block; margin: 8px 0 0; padding: 7px 9px; font-size: 12px; line-height: 1.45; color: #596579; border-left: 3px solid #d7dce5; background: #fafbfc; }
 img { max-width: 560px; max-height: 380px; display: block; margin: 10px auto; }
 figure { margin: 10px 0; }
 figcaption { margin-top: 4px; text-align: center; font-size: 12px; color: #596579; }
@@ -70,8 +35,4 @@ table { border-collapse: collapse; margin: 10px 0; }
 td, th { border: 1px solid #999; padding: 5px 9px; }
 .secure, .bank-item.secure, [data-security="summative-secure"] { border-color: #8b5a2b; }
 section[id] { scroll-margin-top: 72px; }
-@media (max-width: 720px) {
-  body { padding: 14px; }
-  .nav { column-gap: 14px; }
-  img { max-width: 100%; height: auto; }
-}
+@media (max-width: 720px) { body { padding: 14px; } .nav { column-gap: 14px; } img { max-width: 100%; height: auto; } }

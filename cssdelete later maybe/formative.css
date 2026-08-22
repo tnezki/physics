@@ -1,0 +1,227 @@
+/* ============================================================
+   formative.css — Physics
+   tnezki.github.io/physics/css/formative.css
+   Path from file: ../../css/formative.css
+
+   Standalone stylesheet — does NOT depend on base.css.
+   Formative check-for-understanding pages use their own compact
+   print worksheet design (Segoe UI, plain black borders), one
+   short task per printed page (6 versions per DOK file).
+
+   Margin lives on @page (not .page padding) so it applies
+   uniformly to every physical printed page, including any page
+   where a single task's content happens to run long — see the
+   summative.css notes for why padding-based margins fail on
+   overflow pages. This file's original per-file inline CSS
+   already used the @page approach, so no rework was needed here.
+   ============================================================ */
+
+@page { size: letter; margin: 0.45in; }
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+    background: #fff;
+    font-size: 11.2pt;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* ── PAGE CONTAINER — one task version per page ─────────────── */
+.page {
+    min-height: 10.05in;
+    page-break-after: always;
+    break-after: page;
+    padding: 0;
+}
+.page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+}
+
+/* ── HEADER ROW ─────────────────────────────────────────────── */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #111;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    gap: 14px;
+}
+.assessment-title { font-size: 14pt; font-weight: 900; }
+.name-line { font-size: 11.5pt; font-weight: 800; white-space: nowrap; }
+.name-line span {
+    display: inline-block;
+    width: 2.55in;
+    border-bottom: 1.5px solid #111;
+    height: 14px;
+    margin-left: 7px;
+    vertical-align: bottom;
+}
+
+/* ── DIRECTIONS / TASK ──────────────────────────────────────── */
+.directions { font-weight: 700; margin: 4px 0 8px 0; }
+.task { margin: 0 0 8px 0; }
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────────── */
+ol { margin: 5px 0 7px 24px; padding: 0; }
+li { margin-bottom: 5px; }
+p { margin: 5px 0; }
+blockquote {
+    margin: 8px 0 8px 18px;
+    padding-left: 10px;
+    border-left: 3px solid #999;
+    font-style: italic;
+}
+
+/* ── DATA TABLE ─────────────────────────────────────────────── */
+.table-wrap { display: flex; justify-content: center; margin: 8px 0; }
+table.values { border-collapse: collapse; width: auto; }
+table.values th, table.values td {
+    border: 1px solid #777;
+    padding: 5px 12px;
+    text-align: center;
+    min-width: 42px;
+}
+table.values th { font-weight: 900; background: #f2f2f2; }
+
+/* ── FIGURES ────────────────────────────────────────────────── */
+/* Base sizing below is Unit 1's. Later units introduced larger
+   figure sizes in their inline CSS; rather than rescale their
+   images (which were presumably tuned to that size), each such
+   unit gets a body-class override block further down instead of
+   changing the shared default. New units: check the figure-row/
+   figure-wide max-width values in the incoming inline CSS against
+   this default before assuming no override is needed. */
+.figure-row { display: flex; justify-content: center; margin: 7px 0 9px 0; }
+.figure-row img { max-width: 3.55in; height: auto; border: 1px solid #bbb; }
+.figure-wide img { max-width: 4.85in; }
+
+/* ── TWO-COLUMN FIGURE LAYOUT (introduced in Unit 2) ───────────
+   Used to place two figure-row blocks side by side within a task. */
+.grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
+
+/* ── SMALL-CAPS LABEL (introduced in Unit 3, unused so far) ────
+   Defined in Unit 3's original inline CSS but not applied in any
+   of its 16 files; kept here in case a later unit uses it. */
+.smallcaps { font-weight: 800; text-transform: uppercase; font-size: 9pt; }
+
+/* ── PRINT OVERRIDES ────────────────────────────────────────── */
+@media print {
+    body { font-size: 10.8pt; }
+    .assessment-title { font-size: 13.5pt; }
+    .figure-row img { max-width: 3.35in; }
+    .figure-wide img { max-width: 4.65in; }
+}
+
+/* ── LARGE FIGURE-SIZE OVERRIDE (Units 2–3 so far) ─────────────
+   Units 2 and 3's original inline CSS both used this same larger
+   figure sizing than Unit 1. Applied via a body class so the
+   shared default above stays Unit 1's sizing. Add further
+   body.unit-N selectors here for any later unit that matches
+   this same sizing instead of Unit 1's. */
+body.unit-2 .figure-row img, body.unit-3 .figure-row img { max-width: 3.75in; }
+body.unit-2 .figure-wide img, body.unit-3 .figure-wide img { max-width: 5.15in; }
+@media print {
+    body.unit-2 .figure-row img, body.unit-3 .figure-row img { max-width: 3.5in; }
+    body.unit-2 .figure-wide img, body.unit-3 .figure-wide img { max-width: 4.8in; }
+}
+
+/* ── UNIT 4 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 4's original inline CSS used a size step up again from
+   Units 2–3 (not the same tier, so it gets its own selector
+   rather than joining theirs). */
+body.unit-4 .figure-row img { max-width: 3.85in; }
+body.unit-4 .figure-wide img { max-width: 5.2in; }
+@media print {
+    body.unit-4 .figure-row img { max-width: 3.55in; }
+    body.unit-4 .figure-wide img { max-width: 4.9in; }
+}
+
+/* ── UNIT 5 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 5's original template (converted from a differently-named
+   but functionally equivalent markup — see conversion notes) used
+   a much larger figure width than any prior unit, and — new for
+   Unit 5 — also constrains max-height (its images are wider/
+   flatter than earlier units' figures). Unit 5 has no figure-wide
+   equivalent; instead it uses .smallfig on a second figure-row to
+   shrink it when two figures appear together in one task. */
+body.unit-5 .figure-row img { max-width: 5.9in; max-height: 2.7in; }
+body.unit-5 .figure-row.smallfig img { max-height: 2.2in; }
+@media print {
+    body.unit-5 .figure-row img { max-width: 6.3in; max-height: 2.6in; }
+}
+
+/* ── UNIT 6 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 6 used the same design family as Unit 5's original template
+   (before conversion) but with its own sizing. Every image in
+   Unit 6's 16 files used its smaller "mini" size (mapped here to
+   .figure-row); its larger "figure" size was defined in the
+   original inline CSS but never actually applied to any image, so
+   it's omitted rather than guessed at. */
+body.unit-6 .figure-row img { max-width: 5.6in; max-height: 2.7in; }
+@media print {
+    body.unit-6 .figure-row img { max-width: 5.4in; max-height: 2.5in; }
+}
+
+/* ── UNIT 7 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 7 used the same design family as Units 5–6's originals
+   (before conversion) with its own sizing — every image in its
+   16 files used this single figure size (no mini/smallfig
+   variant). */
+body.unit-7 .figure-row img { max-width: 6.2in; max-height: 2.7in; }
+@media print {
+    body.unit-7 .figure-row img { max-width: 6.4in; max-height: 2.9in; }
+}
+
+/* ── UNIT 8 FIGURE-SIZE OVERRIDE ────────────────────────────────
+   Unit 8 used the same design family as Units 5–7's originals
+   (before conversion) with its own sizing — every image in its
+   16 files used this single figure size. */
+body.unit-8 .figure-row img { max-width: 5.9in; max-height: 3.1in; }
+@media print {
+    body.unit-8 .figure-row img { max-width: 5.7in; max-height: 3in; }
+}
+
+
+/* ============================================================
+   PHYSICS FORMATIVE PILOT ADDITIONS — 2026-08-12
+   Supports inline SVG diagrams so labeling/classification figures
+   can remain answer-neutral while figures/ stays empty.
+   ============================================================ */
+.figure-row svg {
+    width: 100%;
+    max-width: 3.55in;
+    height: auto;
+    max-height: 3.2in;
+    border: 1px solid #bbb;
+    background: #fff;
+}
+.figure-wide svg { max-width: 4.85in; }
+.word-bank {
+    border: 1px solid #aaa;
+    background: #f7f7f7;
+    padding: 7px 10px;
+    margin: 8px 0 10px 0;
+    font-weight: 650;
+}
+.scenario {
+    background: #f8fbff;
+    border-left: 4px solid #333;
+    padding: 7px 10px;
+    margin: 7px 0 10px 0;
+}
+.answer-table td:first-child, .answer-table th:first-child { text-align: left; }
+body.unit-5 .figure-row svg { max-width: 6.1in; max-height: 3.0in; }
+body.unit-5 .figure-row.smallfig svg { max-height: 2.2in; }
+@media print {
+    .figure-row svg { max-width: 3.35in; }
+    .figure-wide svg { max-width: 4.65in; }
+    body.unit-5 .figure-row svg { max-width: 6.25in; max-height: 2.85in; }
+}
