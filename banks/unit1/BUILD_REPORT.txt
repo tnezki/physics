@@ -1,10 +1,23 @@
-Conceptual Physics Unit 1 Bank — Authoring Build Report
-Authority order: packaged Curriculum Philosophy -> packaged Base Bank PM -> packaged Physics Framework v6.3 / Bank profile v2.2.
-Canonical question inventory: 795 total = 675 instructional + 120 secure Summative.
-Instructional inventory: 135 per section across sections 1.1-1.5.
-Summative inventory: V1-V6, 20 items each = 16 selected response + 4 constructed response; every form directly samples all 15 exact I-cans.
-Figure rule: student-facing external figures are answer-neutral; answer-sensitive tasks record answer_bearing_elements_removed=true.
-Figure generation: custom physical-scene SVGs are unlabeled stimulus scenes; generate_graphs.py is the Framework graph tool copied intact because no supported graph type is required by this Unit.
-Exports: dedicated Tarsia (18 pairs/section) and Blooket (20 items/section) files are separate from canonical inventory.
-Machine handoff: mapping, I-can plan, evidence map, Summative source map, bank data, and downstream manifest generated from the same canonical item objects.
+BUILD REPORT — CONCEPTUAL PHYSICS UNIT 1 BANK
+Course: Conceptual Physics
+Framework: v6.3
+Bank course profile: v2.2
+Unit: 1
+Sections: 1.1 Thinking Like a Physicist, 1.2 Forces and Newton’s First Law, 1.3 Net Force and Vectors, 1.4 Equilibrium and Balanced Motion, 1.5 Modeling Forces in the Real World
+Exact target map: PASS — 15/15 exact Unit 1 I-cans resolved before authoring.
+Canonical item count: 795
+Resolved Physics inventory: 135 canonical instructional items/section (4 Example/YTI pairs) × 5 = 675; secure Summative = 120; total = 795.
+Inventory by section:
+- 1.1: WTC=1, Notes Example=4, Notes You Try It=4, Practice Set 1=24, Practice Set 2=24, Practice Set 3=24, Extra Practice=24, CYU=6, Warm-Up 1=4, Warm-Up 2=4, Warm-Up 3=4, Exit Ticket A=4, Exit Ticket B=4, Exit Ticket C=4 (total=135)
+- 1.2: WTC=1, Notes Example=4, Notes You Try It=4, Practice Set 1=24, Practice Set 2=24, Practice Set 3=24, Extra Practice=24, CYU=6, Warm-Up 1=4, Warm-Up 2=4, Warm-Up 3=4, Exit Ticket A=4, Exit Ticket B=4, Exit Ticket C=4 (total=135)
+- 1.3: WTC=1, Notes Example=4, Notes You Try It=4, Practice Set 1=24, Practice Set 2=24, Practice Set 3=24, Extra Practice=24, CYU=6, Warm-Up 1=4, Warm-Up 2=4, Warm-Up 3=4, Exit Ticket A=4, Exit Ticket B=4, Exit Ticket C=4 (total=135)
+- 1.4: WTC=1, Notes Example=4, Notes You Try It=4, Practice Set 1=24, Practice Set 2=24, Practice Set 3=24, Extra Practice=24, CYU=6, Warm-Up 1=4, Warm-Up 2=4, Warm-Up 3=4, Exit Ticket A=4, Exit Ticket B=4, Exit Ticket C=4 (total=135)
+- 1.5: WTC=1, Notes Example=4, Notes You Try It=4, Practice Set 1=24, Practice Set 2=24, Practice Set 3=24, Extra Practice=24, CYU=6, Warm-Up 1=4, Warm-Up 2=4, Warm-Up 3=4, Exit Ticket A=4, Exit Ticket B=4, Exit Ticket C=4 (total=135)
+Tarsia/Blooket: not activated; exports/ retained as required package directory.
+Summative: V1–V4 same-day parallel forms; V5–V6 makeup/alternate forms; each has 20 questions = 16 selected response + 4 constructed response; estimated <= 45 minutes.
+Current Physics response profile: constructed/open response default for instruction; secure summative mixed 16 selected + 4 constructed.
+Figures: 9 approved Unit 1 course figures copied; representation-explicit I-cans use actual student-facing figures with answer-neutrality metadata.
+Independent verification: answers/keys, vector sums, force-balance reasoning, response counts, I-can routing, and figure references checked during authoring.
+Required files consistency: teaching HTML, review HTML, mapping CSV, bank_data JSON, evidence map, summative source map, downstream manifest generated from the same canonical item objects.
+Pre-delivery deterministic checks: 0 hard failures. Remaining review flags are limited to intentional instructional repetition / parallel-family review and do not indicate structural, mapping, representation, MathJax, inventory, or Summative-profile failure.
 LOCAL FINALIZER STATUS: PENDING TEACHER RUN
