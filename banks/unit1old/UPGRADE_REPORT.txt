@@ -1,0 +1,86 @@
+PHYSICS UNIT 1 BANK 3i UPGRADE REPORT
+========================================================================
+PM executed: 3i_Upgrade_Physics_Bank-Diagrams_MathJax_PM v1.0
+PM authority file: 1_Upgrade_Physics_Bank_Diagrams_MathJax_PM_v1_0.txt
+Course / unit: Conceptual Physics / Unit 1
+Source completed Bank: Conceptual_Physics_Unit1_Bank_3h_v1_3_FINAL.zip
+Repo baseline supplied by request: banks/unit1.zip
+Delivery rule: Physics Framework repository patch contract; return only new/changed repo files with repository-relative paths.
+
+SCOPE INSPECTED
+- Canonical items: 795.
+- Exact I-can resolution: 795/795 resolved; 0 mismatches.
+- Figure-bearing canonical items inspected: 130.
+- Canonical figure references inspected: 130.
+- Figure files inspected visually/mechanically: 96 SVG files.
+- Math-bearing canonical items inspected: 68.
+- Framework MathJax fixer audit: 0 files auto-fixed; 0 audit warnings.
+
+CLASSIFICATION / CHANGES
+- REPAIR VISUAL: 4 canonical items.
+- REPAIR MATH: 0.
+- REPAIR BOTH: 0.
+- INVESTIGATE: 0.
+- KEEP / unchanged canonical items: 791.
+
+ITEM IDs CHANGED
+- U1-S3-PRACTICE-SET-1-019
+- U1-S3-PRACTICE-SET-2-019
+- U1-S3-PRACTICE-SET-3-019
+- U1-S3-EXTRA-PRACTICE-019
+
+ITEM IDs LEFT UNCHANGED
+- All other 791 canonical Bank IDs are unchanged.
+
+REPAIR DETAILS
+- Four U1-S3 force-vector SVGs used the object label "equipment case" in a single 18 px line inside a fixed-width object box. The label visibly overflowed/overlapped the box and force line.
+- Reflowed only that object label to two centered lines ("equipment" / "case") at a readable size.
+- Force magnitudes, force directions, arrow lengths, arrow endpoints, numerical labels, figure paths, item prompts, answers, I-can IDs, DOK, evidence mappings, destinations, security roles, and canonical IDs were not changed.
+- The four repaired items all retain exact i_can_id U1-S3-IC3: "I can read a simple vector diagram and use arrow length and direction to compare force strength and find the resultant."
+- The repair preserves that evidence job: students still read actual arrow magnitude/direction and determine the resultant.
+
+INTENTIONAL FLAWED-MODEL FIGURES PRESERVED
+- Five U1-S5 critique figures intentionally show a 60 N arrow and a 20 N arrow at equal length because the student task is to critique that incorrect scale.
+- Those figures were NOT rescaled; doing so would reveal/remove the error students are supposed to diagnose.
+
+FIGURE / ANSWER-NEUTRALITY QA
+- Broken canonical figure refs fixed: 0 (none found).
+- Figures added: 0.
+- Figures repaired: 4.
+- Other figure files reused unchanged: 92.
+- Figure metadata defects: 0.
+- Student-visible figure alt strings are neutral ("Force-vector diagram" / "Physics scene for this question").
+- Secure/public byte-identical figure reuse: 0.
+- Answer-leak defects fixed: 0 (none found in this pass).
+
+MATHJAX QA
+- Math-bearing items inspected: 68.
+- Malformed/unbalanced delimiters: 0.
+- Raw TeX leakage detected by current Framework fixer: 0.
+- MathJax configuration already uses canonical $...$ / $$...$$ delimiters with processEscapes=true.
+- MathJax defects fixed: 0.
+
+WHAT HELD THE RUN UP
+- The request packaged both a repo-baseline Unit 1 snapshot and the completed 3h v1.3 FINAL Bank. The completed 3h artifact was resolved as the maintenance source because it contains the current completed upgrade report/final QA; the packaged unit1.zip was retained as the repository baseline for changed-file delivery.
+- The shared Physics graph tool still has no force-vector/FBD primitive, so the existing SVGs could not be regenerated through an approved shared graph type. This pass therefore made the smallest repair directly to the existing local SVG assets and did not invent a new shared tool type.
+
+CONFLICTS / AMBIGUITIES
+- No I-can, Assessment Plan, destination-count, or course-scope conflict blocked execution.
+- No item required INVESTIGATE status.
+
+MISSING CAPABILITIES
+- Reconfirmed systemic tooling gap: the current shared graph tool has no Physics force-vector/FBD generator with magnitude scaling, answer-neutral omission modes, critique-mode intentional errors, and label-aware layout.
+- See PM_IMPROVEMENT_REPORT.txt.
+
+FINAL QA STATUS
+- Canonical IDs/counts/routing preserved: PASS.
+- Exact i_can_id preservation on every changed item: PASS.
+- Same intended evidence after repair: PASS.
+- Teacher solution/UI synchronization preserved: PASS.
+- Canonical data/HTML/mapping synchronization preserved: PASS.
+- Canonical figure dependency check: PASS (0 broken figure refs).
+- MathJax fixer audit: PASS (0 fixes, 0 warnings).
+- Visual inspection of all four changed SVGs: PASS.
+- Secure/public figure-byte independence: PASS.
+- Finalizer: PASS.
+- Fresh-extraction dependency/canonical QA on the exact complete final Bank ZIP: PASS.

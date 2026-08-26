@@ -1,86 +1,138 @@
-PHYSICS UNIT 1 BANK 3i UPGRADE REPORT
+PHYSICS UNIT 1 BANK 3j UPGRADE REPORT
 ========================================================================
-PM executed: 3i_Upgrade_Physics_Bank-Diagrams_MathJax_PM v1.0
-PM authority file: 1_Upgrade_Physics_Bank_Diagrams_MathJax_PM_v1_0.txt
+PM executed: 3j_Upgrade_Physics_Bank-Approved_Question_Types_PM v1.0
+PM authority file: 1_Upgrade_Physics_Bank_Approved_Question_Types_PM_v1_0.txt
 Course / unit: Conceptual Physics / Unit 1
-Source completed Bank: Conceptual_Physics_Unit1_Bank_3h_v1_3_FINAL.zip
-Repo baseline supplied by request: banks/unit1.zip
-Delivery rule: Physics Framework repository patch contract; return only new/changed repo files with repository-relative paths.
+Source completed Bank: packaged banks/unit1 baseline after the 3i diagrams/MathJax maintenance pass
+Delivery rule: current Physics Framework repository patch contract; return only new/changed repo files with repository-relative paths.
 
 SCOPE INSPECTED
-- Canonical items: 795.
-- Exact I-can resolution: 795/795 resolved; 0 mismatches.
-- Figure-bearing canonical items inspected: 130.
-- Canonical figure references inspected: 130.
-- Figure files inspected visually/mechanically: 96 SVG files.
-- Math-bearing canonical items inspected: 68.
-- Framework MathJax fixer audit: 0 files auto-fixed; 0 audit warnings.
+- Canonical items inspected: 795.
+- Exact I-can resolution: 795/795 resolved against unit1_i_can_map.csv; 0 unresolved.
+- Constructed-response items inspected: 699.
+- Selected-response items inspected: 96.
+- Approved-type authority: current Physics Framework preferred_question_families plus the Hewitt/course-approved question-family profile.
 
-CLASSIFICATION / CHANGES
-- REPAIR VISUAL: 4 canonical items.
-- REPAIR MATH: 0.
-- REPAIR BOTH: 0.
-- INVESTIGATE: 0.
-- KEEP / unchanged canonical items: 791.
+APPROVED-TYPE AUDIT RESULT
+- Items already valid: 728.
+- Family-label mismatches corrected: 0.
+- Invalid question structures replaced: 67.
+- Items moved among approved families: 0.
+- Unresolved I-can/type conflicts: 0.
+- INVESTIGATE items: 0.
+
+REPAIR CLASSIFICATION
+- U1-S1-IC3 data/model evidence evaluation: 13 items repaired. Generic equation/formula shells were replaced with physical measurements, a simple model relationship, and a warranted evidence/model conclusion while preserving the exact I-can and DOK.
+- U1-S3-IC2 collinear calculation: 47 items repaired. Force-value-first math shells were minimally grounded in a real object/force situation; values, calculation job, DOK, destinations, security, choices, and answers were preserved except where the 1.1 evidence/model repair required answer synchronization.
+- U1-S4-IC3 equilibrium calculation: 3 items repaired by replacing generic “system” wording with a stage-cart force situation while preserving the equilibrium calculation/evidence job.
+- U1-S5-IC2 balance diagnosis: 4 items repaired by grounding force values in a rolling equipment cart while preserving balance diagnosis and motion-evidence reasoning.
 
 ITEM IDs CHANGED
-- U1-S3-PRACTICE-SET-1-019
-- U1-S3-PRACTICE-SET-2-019
-- U1-S3-PRACTICE-SET-3-019
-- U1-S3-EXTRA-PRACTICE-019
+- U1-S1-EXIT-TICKET-A-003
+- U1-S1-EXIT-TICKET-A-004
+- U1-S1-EXTRA-PRACTICE-016
+- U1-S1-EXTRA-PRACTICE-017
+- U1-S1-EXTRA-PRACTICE-018
+- U1-S1-NOTES-EXAMPLE-3-001
+- U1-S1-PRACTICE-SET-1-018
+- U1-S1-PRACTICE-SET-1-019
+- U1-S1-PRACTICE-SET-1-020
+- U1-S1-PRACTICE-SET-3-021
+- U1-S1-PRACTICE-SET-3-022
+- U1-S1-PRACTICE-SET-3-023
+- U1-S3-CYU-003
+- U1-S3-CYU-004
+- U1-S3-EXIT-TICKET-B-002
+- U1-S3-EXIT-TICKET-C-002
+- U1-S3-EXTRA-PRACTICE-009
+- U1-S3-EXTRA-PRACTICE-010
+- U1-S3-EXTRA-PRACTICE-013
+- U1-S3-EXTRA-PRACTICE-014
+- U1-S3-EXTRA-PRACTICE-015
+- U1-S3-NOTES-YTI-2-001
+- U1-S3-PRACTICE-SET-1-007
+- U1-S3-PRACTICE-SET-1-008
+- U1-S3-PRACTICE-SET-1-011
+- U1-S3-PRACTICE-SET-1-012
+- U1-S3-PRACTICE-SET-1-013
+- U1-S3-PRACTICE-SET-1-014
+- U1-S3-PRACTICE-SET-1-015
+- U1-S3-PRACTICE-SET-1-016
+- U1-S3-PRACTICE-SET-2-008
+- U1-S3-PRACTICE-SET-2-009
+- U1-S3-PRACTICE-SET-2-010
+- U1-S3-PRACTICE-SET-2-011
+- U1-S3-PRACTICE-SET-2-012
+- U1-S3-PRACTICE-SET-2-013
+- U1-S3-PRACTICE-SET-2-014
+- U1-S3-PRACTICE-SET-2-015
+- U1-S3-PRACTICE-SET-3-006
+- U1-S3-PRACTICE-SET-3-007
+- U1-S3-PRACTICE-SET-3-008
+- U1-S3-PRACTICE-SET-3-009
+- U1-S3-PRACTICE-SET-3-010
+- U1-S3-PRACTICE-SET-3-011
+- U1-S3-PRACTICE-SET-3-014
+- U1-S3-PRACTICE-SET-3-015
+- U1-S3-PRACTICE-SET-3-016
+- U1-S3-WARM-UP-1-003
+- U1-S3-WARM-UP-2-002
+- U1-S3-WARM-UP-2-003
+- U1-S3-WARM-UP-3-002
+- U1-S4-EXIT-TICKET-C-004
+- U1-S4-PRACTICE-SET-2-022
+- U1-S4-PRACTICE-SET-3-020
+- U1-S5-CYU-003
+- U1-S5-EXTRA-PRACTICE-015
+- U1-S5-NOTES-YTI-2-001
+- U1-S5-PRACTICE-SET-2-013
+- U1-SUM-V1-Q12
+- U1-SUM-V2-Q01
+- U1-SUM-V2-Q05
+- U1-SUM-V3-Q17
+- U1-SUM-V4-Q14
+- U1-SUM-V5-Q02
+- U1-SUM-V5-Q09
+- U1-SUM-V6-Q14
+- U1-SUM-V6-Q19
 
 ITEM IDs LEFT UNCHANGED
-- All other 791 canonical Bank IDs are unchanged.
+- All other 728 canonical Bank IDs are unchanged.
 
-REPAIR DETAILS
-- Four U1-S3 force-vector SVGs used the object label "equipment case" in a single 18 px line inside a fixed-width object box. The label visibly overflowed/overlapped the box and force line.
-- Reflowed only that object label to two centered lines ("equipment" / "case") at a readable size.
-- Force magnitudes, force directions, arrow lengths, arrow endpoints, numerical labels, figure paths, item prompts, answers, I-can IDs, DOK, evidence mappings, destinations, security roles, and canonical IDs were not changed.
-- The four repaired items all retain exact i_can_id U1-S3-IC3: "I can read a simple vector diagram and use arrow length and direction to compare force strength and find the resultant."
-- The repair preserves that evidence job: students still read actual arrow magnitude/direction and determine the resultant.
+FAMILY / METADATA DECISION
+- Existing question_family_id values were preserved. In this Bank they function as stable family-instance/routing identifiers (for example, practice_u1-s3-ic2_1), not as the Framework's student-task taxonomy labels.
+- The approved-family audit therefore resolved each item through its exact i_can_id and the Framework's preferred_question_families/evidence_job. Every repaired item remains in the same approved evidence family, so no family move or routing-ID rewrite was warranted.
+- No item was relabeled merely to create variety.
 
-INTENTIONAL FLAWED-MODEL FIGURES PRESERVED
-- Five U1-S5 critique figures intentionally show a 60 N arrow and a 20 N arrow at equal length because the student task is to critique that incorrect scale.
-- Those figures were NOT rescaled; doing so would reveal/remove the error students are supposed to diagnose.
-
-FIGURE / ANSWER-NEUTRALITY QA
-- Broken canonical figure refs fixed: 0 (none found).
-- Figures added: 0.
-- Figures repaired: 4.
-- Other figure files reused unchanged: 92.
-- Figure metadata defects: 0.
-- Student-visible figure alt strings are neutral ("Force-vector diagram" / "Physics scene for this question").
-- Secure/public byte-identical figure reuse: 0.
-- Answer-leak defects fixed: 0 (none found in this pass).
-
-MATHJAX QA
-- Math-bearing items inspected: 68.
-- Malformed/unbalanced delimiters: 0.
-- Raw TeX leakage detected by current Framework fixer: 0.
-- MathJax configuration already uses canonical $...$ / $$...$$ delimiters with processEscapes=true.
-- MathJax defects fixed: 0.
+SELECTED-RESPONSE QA
+- 96/96 selected-response items retain four unique choices and an answer_text that appears in the choice set.
+- No distractor rewrite was triggered by this 3j question-type audit.
+- Separate pre-existing metadata issue observed: 19 summative selected-response records have a correct_choice letter that does not match the position of answer_text in choices. This exact mismatch set existed before 3j and remains unchanged because answer-key metadata repair is outside this PM's defect class. Two 3j prompt-only summative repairs (U1-SUM-V2-Q01 and U1-SUM-V5-Q09) are in that pre-existing set; their choices, answer_text, and correct_choice fields were not changed.
 
 WHAT HELD THE RUN UP
-- The request packaged both a repo-baseline Unit 1 snapshot and the completed 3h v1.3 FINAL Bank. The completed 3h artifact was resolved as the maintenance source because it contains the current completed upgrade report/final QA; the packaged unit1.zip was retained as the repository baseline for changed-file delivery.
-- The shared Physics graph tool still has no force-vector/FBD primitive, so the existing SVGs could not be regenerated through an approved shared graph type. This pass therefore made the smallest repair directly to the existing local SVG assets and did not invent a new shared tool type.
+- The Bank stores stable question-family instance IDs rather than a literal approved-type label. The run had to distinguish those routing identifiers from the actual student-task family so it would not blanket-relabel 795 valid items.
+- The request is a live repository maintenance package. Although the 3j PM's default audit delivery is a complete Bank ZIP, the current Physics Framework live-course contract explicitly requires changed/new repository files only for live repairs; that Framework contract controls this delivery.
 
 CONFLICTS / AMBIGUITIES
-- No I-can, Assessment Plan, destination-count, or course-scope conflict blocked execution.
+- No I-can, evidence-job, DOK, Assessment Plan, destination-count, security, or course-scope conflict blocked execution.
 - No item required INVESTIGATE status.
+- The 19 pre-existing correct_choice mismatches are an out-of-scope answer-key metadata issue, not a 3j type/family ambiguity.
 
-MISSING CAPABILITIES
-- Reconfirmed systemic tooling gap: the current shared graph tool has no Physics force-vector/FBD generator with magnitude scaling, answer-neutral omission modes, critique-mode intentional errors, and label-aware layout.
+MISSING CAPABILITIES / SYSTEMIC FINDING
+- The current Bank/finalizer can detect several duplicate/semantic-shell patterns, but the pre-3j Bank still contained repeated generic quantitative Physics shells and generic evidence/formula shells that passed prior final QA.
+- A focused authoring/finalizer guardrail is recommended so future Physics quantitative items are grounded in a physical object/phenomenon when the evidence job requires application/model reasoning, while allowing intentionally direct Reading Check/vector-language tasks.
 - See PM_IMPROVEMENT_REPORT.txt.
 
 FINAL QA STATUS
-- Canonical IDs/counts/routing preserved: PASS.
-- Exact i_can_id preservation on every changed item: PASS.
-- Same intended evidence after repair: PASS.
-- Teacher solution/UI synchronization preserved: PASS.
-- Canonical data/HTML/mapping synchronization preserved: PASS.
-- Canonical figure dependency check: PASS (0 broken figure refs).
-- MathJax fixer audit: PASS (0 fixes, 0 warnings).
-- Visual inspection of all four changed SVGs: PASS.
-- Secure/public figure-byte independence: PASS.
-- Finalizer: PASS.
-- Fresh-extraction dependency/canonical QA on the exact complete final Bank ZIP: PASS.
+- 3j scope result: PASS.
+- Canonical item count/order/IDs preserved: PASS (795).
+- Exact i_can_id preserved on every changed item: PASS.
+- DOK, destinations, security roles, item/response types, question_family_id routing, and choices preserved: PASS.
+- Same intended evidence after every repair: PASS.
+- Canonical data / unit1.html / unit1_review.html synchronization: PASS.
+- unit1_mapping.csv synchronization and 795-row coverage: PASS.
+- Figure references: PASS; no figure files or dependencies changed.
+- MathJax delimiter sanity on all changed prompts/answers: PASS.
+- Framework finalizer validation: PASS; 0 hard failures, 0 review items, 0 Physics semantic-shell groups, 0 practice numeric-shell groups, 0 stock-wrapper groups.
+- Fresh-overlay QA on the exact repository patch bytes: PASS.
+- Out-of-scope pre-existing correct_choice metadata mismatches: 19, preserved and explicitly reported.
