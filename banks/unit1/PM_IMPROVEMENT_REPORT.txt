@@ -1,0 +1,24 @@
+PM IMPROVEMENT REPORT
+========================================================================
+PM executed: 3i_Upgrade_Physics_Bank-Diagrams_MathJax_PM v1.0
+
+1. Problem encountered.
+The local force-vector SVG family uses a fixed object-label box. The longer label "equipment case" overflowed the box in four canonical figures. The current Framework shared graph tool also has no approved Physics force-vector/FBD primitive, and the Bank's generate_graphs.py does not contain reproducible generation blocks for these 78 local vector SVGs.
+
+2. Evidence it is systemic/repeatable rather than artifact-specific.
+The same clipping defect appeared in four separate canonical destinations for the same representation family (Practice Set 1, Practice Set 2, Practice Set 3, and Extra Practice). The earlier 3h run also documented the absence of a Physics force-vector/FBD primitive across dozens of Unit 1 representations.
+
+3. Owning layer.
+Shared Physics graph/figure tooling coordinated through the Physics Framework, plus the Bank figure-production integration that must preserve reproducible generation source.
+
+4. Exact proposed rule/change.
+Add an approved Physics force-vector/FBD primitive that supports: horizontal/vertical orientation; object label with automatic width or safe multi-line wrapping; force direction and magnitude; magnitude-proportional arrow length; an explicit intentionally-not-to-scale critique mode; omission of a target force/vector for incomplete-model tasks; answer-neutral student mode; and deterministic local SVG output. Require Bank generation blocks/calls for canonical generated figures to be preserved in generate_graphs.py below the protected tool marker so the exact assets can be regenerated.
+
+5. Expected benefit / bottleneck removed.
+Prevents repeated label clipping/overlap, preserves quantitative vector scale consistently, supports legitimate flawed-model critique tasks without accidental correction, and removes ad hoc one-off SVG maintenance while keeping canonical figures reproducible.
+
+6. Possible collateral impact.
+A blanket magnitude-scaling rule could incorrectly "repair" intentionally flawed critique diagrams. The tool therefore needs an explicit critique/not-to-scale mode and regression tests for answer-neutrality, omitted-force tasks, long labels, print readability, and proportional arrow lengths.
+
+7. Recommendation.
+ACCEPT as a focused shared-tool upgrade after teacher review. Do not broaden this 3i artifact pass into a Framework/tool rewrite.

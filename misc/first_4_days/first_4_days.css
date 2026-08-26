@@ -1,0 +1,13 @@
+
+:root{--navy:#00003d;--blue:#004d99;--soft:#eef5fb;--green:#e8f5eb;--red:#fff0f0;--ink:#222;--line:#c8d2dc;--muted:#5e6872}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f3f6f8;line-height:1.45}a{color:var(--blue)}
+.shell{max-width:1000px;margin:28px auto;background:#fff;padding:34px 42px 56px;box-shadow:0 6px 24px rgba(0,0,0,.09)}
+.kicker{text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--blue)}h1{color:var(--navy);font-size:34px;margin:4px 0 8px}h2{color:var(--navy);border-left:6px solid var(--blue);padding-left:10px;margin-top:28px}h3{color:var(--blue)}
+.lead{font-size:17px;color:#394854;margin-bottom:22px}.pillnav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 28px}.pillnav a{display:inline-block;text-decoration:none;background:var(--navy);color:white;padding:7px 11px;border-radius:999px;font-weight:700;font-size:13px}
+.day-grid,.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff}.card h3{margin:0 0 6px}.card ul{margin:8px 0 0 22px}.tag{display:inline-block;background:var(--soft);color:var(--navy);padding:2px 7px;border-radius:999px;font-size:12px;font-weight:800}
+.target{border:2px solid var(--navy);border-radius:12px;padding:14px 16px;background:#f7f9fd}.ican{border-left:5px solid var(--blue);background:var(--soft);padding:10px 12px;margin:8px 0}
+.organizer-table{width:100%;border-collapse:collapse;margin:14px 0}.organizer-table th,.organizer-table td{border:1px solid #8695a2;padding:10px;vertical-align:top}.organizer-table th{background:var(--soft);text-align:left}.blank{height:56px}.blank-lg{height:120px}.response{border:1px dashed #999;min-height:80px;margin:8px 0 16px}.choice-row{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 14px}.choice{border:1px solid var(--line);border-radius:10px;padding:8px 12px;min-width:120px}.note{font-size:13px;color:var(--muted)}
+.good{background:var(--green);border-left:5px solid #2e6b45;padding:10px 12px}.warn{background:var(--red);border-left:5px solid #9a3636;padding:10px 12px}.page-break{break-before:page;page-break-before:always}
+@page{size:letter;margin:.5in}@media print{body{background:white}.shell{box-shadow:none;margin:0;max-width:none;padding:0}.pillnav{display:none}.card{break-inside:avoid}.response{min-height:1.0in}.blank{height:.65in}.blank-lg{height:1.35in}}@media(max-width:760px){.shell{margin:0;padding:22px}.day-grid,.resource-grid{grid-template-columns:1fr}}
+
+.teacher{border-left:5px solid #b42318;background:#fff7f5;padding:10px 12px;margin:12px 0}.teacher strong{color:#b42318}
