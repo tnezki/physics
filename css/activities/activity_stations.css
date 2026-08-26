@@ -153,3 +153,32 @@ h1        { font-size: 24pt; line-height: 1.0; color: var(--navy); font-weight: 
     .page { margin: 0; box-shadow: none; }
     .page:last-child { page-break-after: auto; break-after: auto; }
 }
+
+/* ============================================================
+   DUPLEX STATIONS LOCK — compact prompts + blank backs
+   ============================================================ */
+.station-question-page .station-grid {
+    flex: 0 0 auto;
+    grid-template-rows: auto auto;
+    align-content: start;
+}
+.station-question-page .station-problem {
+    min-height: 0;
+    overflow: visible;
+}
+.station-blank-page,
+.solution-blank-page {
+    padding: 0;
+    background: white;
+    box-shadow: none;
+}
+.station-blank-page::before,
+.solution-blank-page::before {
+    content: none;
+}
+@media print {
+    .station-blank-page,
+    .solution-blank-page {
+        visibility: hidden;
+    }
+}
