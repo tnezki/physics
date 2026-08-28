@@ -1,18 +1,16 @@
 /* ============================================================
-   exit.css - Exit Tickets: projector + printable collection mode
+   exit.css - Exit Tickets: projector + collected print mode
    File path: css/exit.css
 
    SCREEN / PROJECTOR
-   - One ticket fills the viewport.
-   - Four questions display in a 2 x 2 grid.
+   - Existing exit-ticket shell remains 4 questions in a 2 x 2 grid.
 
    PRINT / COLLECT
-   - Index is hidden.
-   - Each 4-question ticket prints on two landscape pages.
-   - Page 1: Questions 1-2.
-   - Page 2: Questions 3-4.
-   - Print-only response accessories may be added by the renderer
-     with .print-only / .response-accessory classes.
+   - HTML supplies an explicit .exit-print copy for each ticket.
+   - Each ticket prints as two portrait pages.
+   - Page 1 = questions 1-2; Page 2 = questions 3-4.
+   - Each problem gets roughly half a sheet and may include a
+     response accessory such as a blank coordinate plane.
    ============================================================ */
 
 :root {
@@ -39,6 +37,10 @@ body {
   line-height: 1.25;
 }
 
+/* ---------- Visibility modes ---------- */
+.print-only { display: none !important; }
+.project-only { display: flex; }
+
 /* ---------- Projector ticket ---------- */
 .exit-ticket {
   width: 100vw;
@@ -46,7 +48,6 @@ body {
   min-height: 620px;
   padding: 18px 22px 20px;
   background: #fff;
-  display: flex;
   flex-direction: column;
   overflow: hidden;
   scroll-snap-align: start;
@@ -88,7 +89,24 @@ body {
   color: #333;
 }
 
-/* Current shell: div.question-grid > article.qtext */
+.ticket-controls {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.ticket-print-button {
+  border: 2px solid var(--navy);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--navy);
+  padding: 7px 11px;
+  font: 800 12px Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.ticket-print-button:hover,
+.ticket-print-button:focus-visible { background: var(--accent); outline: none; }
+
 .question-grid {
   flex: 1 1 auto;
   min-height: 0;
@@ -103,35 +121,6 @@ body {
 .question-grid > .question-cell {
   min-width: 0;
   min-height: 0;
-  vertical-align: top;
-  border: 2px solid var(--line);
-  border-radius: 10px;
-  background: #fff;
-  padding: 12px 14px;
-  font-size: clamp(17px, 1.75vw, 27px);
-  font-weight: 600;
-  overflow: hidden;
-}
-
-.question-grid > .has-figure { padding-bottom: 8px; }
-
-/* Legacy table shell support */
-.question-grid.table-grid,
-table.question-grid {
-  display: table;
-  table-layout: fixed;
-  border-collapse: separate;
-  border-spacing: 10px;
-  margin: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 10px);
-}
-
-table.question-grid tr { height: 50%; }
-
-table.question-grid td {
-  width: 50%;
-  vertical-align: top;
   border: 2px solid var(--line);
   border-radius: 10px;
   background: #fff;
@@ -150,7 +139,7 @@ table.question-grid td {
   padding: 0 .28em;
   border-radius: 999px;
   background: var(--navy);
-  color: white;
+  color: #fff;
   font-size: .76em;
   font-weight: 900;
   margin-right: .38em;
@@ -175,13 +164,11 @@ table.question-grid td {
   font-size: .78em;
   font-weight: 600;
 }
-
 .choices.one-col { grid-template-columns: 1fr; }
 .choice { break-inside: avoid; }
 
 .force-svg,
-.graph-img,
-.response-accessory {
+.graph-img {
   display: block;
   width: min(100%, 520px);
   height: auto;
@@ -204,20 +191,14 @@ table.question-grid td {
   font-size: .72em;
   font-weight: 700;
 }
-
 .data-mini th,
 .data-mini td {
-  width: auto;
-  vertical-align: middle;
   border: 1px solid #666;
-  border-radius: 0;
   padding: 3px 8px;
   text-align: center;
   font-size: .72em;
   font-weight: 700;
-  overflow: visible;
 }
-
 .data-mini th { background: var(--accent); }
 
 /* ---------- Index ---------- */
@@ -240,7 +221,6 @@ table.question-grid td {
   margin-bottom: 14px;
   flex: 0 0 auto;
 }
-
 .index-kicker {
   font-size: clamp(13px, 1.3vw, 18px);
   font-weight: 800;
@@ -248,19 +228,45 @@ table.question-grid td {
   text-transform: uppercase;
   color: var(--muted);
 }
-
 .index-head h1 {
   margin: 2px 0 2px;
   font-size: clamp(28px, 3vw, 44px);
   line-height: 1.05;
   color: var(--navy);
 }
-
 .index-head p {
   margin: 0;
   font-size: clamp(15px, 1.45vw, 21px);
   font-weight: 700;
   color: #333;
+}
+
+.index-print-note {
+  margin-top: 7px;
+  color: var(--muted);
+  font: 700 12px Arial, Helvetica, sans-serif;
+}
+
+.index-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.print-button {
+  border: 2px solid var(--navy);
+  border-radius: 9px;
+  background: var(--navy);
+  color: #fff;
+  padding: 8px 14px;
+  font: 800 14px Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.print-button:hover,
+.print-button:focus-visible { background: #244b7b; outline: none; }
+.print-note {
+  color: var(--muted);
+  font: 700 12px Arial, Helvetica, sans-serif;
 }
 
 .index-grid {
@@ -270,7 +276,6 @@ table.question-grid td {
   grid-template-rows: repeat(5, 1fr);
   gap: 9px;
 }
-
 .index-row {
   min-height: 0;
   display: grid;
@@ -282,33 +287,28 @@ table.question-grid td {
   padding: 9px 12px;
   background: var(--panel);
 }
-
 .index-section {
   min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .index-number {
   font-size: clamp(14px, 1.35vw, 19px);
   font-weight: 900;
   color: var(--navy);
 }
-
 .index-title {
   font-size: clamp(17px, 1.7vw, 25px);
   line-height: 1.08;
   font-weight: 800;
   color: var(--ink);
 }
-
 .index-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
 .index-link {
   display: flex;
   align-items: center;
@@ -322,7 +322,6 @@ table.question-grid td {
   font-size: clamp(16px, 1.55vw, 23px);
   font-weight: 900;
 }
-
 .index-link:hover,
 .index-link:focus-visible {
   background: var(--navy);
@@ -333,10 +332,6 @@ table.question-grid td {
 .exit-ticket,
 .exit-index { scroll-margin-top: 0; }
 
-/* Accessories can be present in HTML without cluttering projector mode. */
-.print-only { display: none !important; }
-.project-only { display: initial; }
-
 @media (max-width: 850px) {
   .exit-ticket {
     padding: 12px;
@@ -344,164 +339,149 @@ table.question-grid td {
     height: auto;
     overflow: visible;
   }
-
   .exit-index {
     padding: 14px;
     min-height: 760px;
     height: auto;
     overflow: visible;
   }
-
-  .index-row {
-    grid-template-columns: 1fr;
-    gap: 7px;
-  }
-
+  .index-row { grid-template-columns: 1fr; gap: 7px; }
   .index-links { gap: 7px; }
-
-  .question-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-  }
-
+  .question-grid { grid-template-columns: 1fr; grid-template-rows: none; }
   .question-grid > .qtext,
   .question-grid > article,
-  .question-grid > .question-cell {
-    min-height: 220px;
-    padding: 10px;
-  }
-
+  .question-grid > .question-cell { min-height: 220px; padding: 10px; }
   .force-svg,
-  .graph-img,
-  .response-accessory { max-height: 125px; }
+  .graph-img { max-height: 125px; }
 }
 
 /* ============================================================
    PRINT / COLLECT MODE
-   Two questions per landscape page.
+   Explicit HTML pages: 2 questions per portrait sheet.
    ============================================================ */
 @page {
-  size: landscape;
-  margin: .25in;
+  size: letter portrait;
+  margin: .28in;
 }
 
 @media print {
   html,
   body {
-    background: white;
+    background: #fff;
     scroll-snap-type: none;
   }
 
-  .exit-index { display: none !important; }
+  .exit-index,
   .project-only { display: none !important; }
-  .print-only { display: block !important; }
+  .exit-print.print-only { display: none !important; }
+  .exit-print.print-only.print-active { display: block !important; }
 
-  .exit-ticket {
-    width: auto;
-    height: auto;
-    min-height: 0;
-    padding: 0;
+  .exit-print {
     margin: 0;
-    display: block;
-    overflow: visible;
+    padding: 0;
+  }
+
+  .exit-print-page {
+    width: 100%;
+    height: 10.44in;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     break-after: page;
     page-break-after: always;
   }
 
-  .ticket-head {
-    height: .72in;
-    margin: 0 0 .12in;
-    padding: 0 0 .08in;
+  .exit-print-page:last-child {
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .exit-print-page .ticket-head {
+    margin: 0 0 .08in;
+    padding: 0 0 .07in;
     border-bottom-width: 3px;
   }
+  .exit-print-page .ticket-title { font-size: 20pt; }
+  .exit-print-page .ticket-kicker,
+  .exit-print-page .ticket-meta { font-size: 9.5pt; }
+  .print-page-label { color: var(--muted); font-size: 8.5pt; }
 
-  .ticket-title { font-size: 22pt; }
-  .ticket-kicker,
-  .ticket-meta { font-size: 10.5pt; }
+  .print-student-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: .25in;
+    height: .34in;
+    margin-bottom: .10in;
+    font-size: 10.5pt;
+    font-weight: 700;
+  }
+  .student-field { flex: 1 1 auto; display: flex; align-items: end; gap: .08in; }
+  .student-line { display: inline-block; flex: 1 1 auto; border-bottom: 1px solid #333; height: .18in; }
+  .print-version { flex: 0 0 auto; color: var(--navy); }
 
-  /* Current div/article shell */
-  .question-grid {
-    display: block;
-    width: auto;
-    height: auto;
-    margin: 0;
+  .print-question-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: .14in;
   }
 
-  .question-grid > .qtext,
-  .question-grid > article,
-  .question-grid > .question-cell {
-    display: block;
-    width: 100%;
-    height: 3.32in;
-    min-height: 3.32in;
-    max-height: 3.32in;
-    margin: 0 0 .12in;
-    padding: .18in .22in;
+  .print-question-grid > .qtext,
+  .print-question-grid > article,
+  .print-question-grid > .question-cell {
+    min-height: 0;
     border: 1.5px solid #7f8996;
     border-radius: 8px;
-    font-size: 15.5pt;
+    padding: .18in .20in;
+    font-size: 14pt;
     font-weight: 600;
     overflow: hidden;
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
-  /* Force the second problem onto the bottom of page 1, then break. */
-  .question-grid > :nth-child(2) {
-    break-after: page;
-    page-break-after: always;
-  }
+  .print-question-grid .qnum { font-size: .70em; }
+  .print-question-grid .qtext p,
+  .print-question-grid article p { margin: .15em 0 .28em; }
 
-  /* Questions 3-4 get the full second page. */
-  .question-grid > :nth-child(3) {
-    margin-top: .08in;
-  }
-
-  .qnum { font-size: .72em; }
-  .qtext p { margin: .2em 0 .35em; }
-
-  .force-svg,
-  .graph-img,
-  .response-accessory,
-  .coordinate-plane,
-  .unit-circle,
-  .number-line,
-  .response-grid {
+  .print-question-grid .graph-img,
+  .print-question-grid .force-svg {
+    display: block;
     width: auto;
     max-width: 100%;
-    max-height: 2.25in;
-    margin: .10in auto 0;
+    max-height: 2.55in;
+    margin: .08in auto 0;
     object-fit: contain;
   }
 
-  .data-mini {
-    margin-top: .10in;
-    font-size: 11pt;
+  .response-accessory {
+    display: block;
+    width: min(3.25in, 78%);
+    height: auto;
+    max-height: 3.15in;
+    margin: .08in auto 0;
   }
-
-  .data-mini th,
-  .data-mini td {
-    font-size: 11pt;
-    padding: 3px 9px;
-  }
-
-  .choices {
-    font-size: 12pt;
-    gap: 4px 18px;
-  }
-
-  /* Legacy table shell: preserve reasonable print fallback. */
-  table.question-grid {
-    display: table;
+  .response-accessory svg {
+    display: block;
     width: 100%;
     height: auto;
-    margin: 0;
-    border-spacing: .12in;
   }
 
-  table.question-grid tr { height: auto; }
-  table.question-grid td {
-    height: 3.25in;
-    font-size: 15.5pt;
+  .print-question-grid .data-mini {
+    margin-top: .07in;
+    font-size: 10pt;
+  }
+  .print-question-grid .data-mini th,
+  .print-question-grid .data-mini td {
+    font-size: 10pt;
+    padding: 2px 8px;
+  }
+  .print-question-grid .choices {
+    font-size: 10.5pt;
+    gap: 3px 16px;
   }
 }
