@@ -1,1454 +1,1261 @@
 {
-  "schema": "bank-map-slice/2.0",
+  "schema": "bank-map-slice-v2",
   "course": "Physics",
   "unit": 1,
-  "destination": "notes",
-  "inventory_contract": {
-    "wtc_per_section": 1,
-    "example_yti_pairs_per_section": 4,
-    "records_per_section": 9,
-    "record_mode": "exact_content"
-  },
-  "records": [
+  "destination_group": "notes",
+  "sections": [
     {
-      "record_id": "U1-NOTES-S1-WTC-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC3",
-      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Navigate a connected physics-evidence stimulus by identifying what is observable, what is inferred, what evidence matters, and how a simple relationship/model could organize the reasoning.",
-      "question_structure_id": "WTC-FRQ-PREVIEW-01",
-      "response_mode": "multi_part_constructed",
-      "representation_mode": "table_or_model_plus_short_scenario",
-      "representation_need": "One coherent 3–5 part FRQ-decomposition stimulus with an actual evidence-bearing representation.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Use one shared evidence-bearing stimulus; connected parts should practice noticing, classifying, planning, and justification without counting as Unit I-can coverage.",
-      "notes_role": "wtc",
-      "coverage_role": "wtc_frq_practice",
-      "parts_intent": "3_to_5_connected"
+      "section_id": "1.1",
+      "title": "Thinking Like a Physicist",
+      "records": [
+        {
+          "record_id": "U1-S1-WTC-01",
+          "record_mode": "exact_content",
+          "destination": "WTC",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC1",
+          "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "FRQ decomposition/navigation practice; not current-Unit coverage.",
+          "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "semantic_table",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S1-WTC01",
+          "tool": "semantic_html_table",
+          "render_contract": "Render a real semantic HTML <table class=\"values\"> with headers/units; no pipe-delimited pseudo-table.",
+          "wording_profile": "frq_multipart",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC1"
+          ],
+          "authoring_notes": "Shared observation/measurement data set; connected parts map extraction/classification -> evidence dependency -> test/plan choice -> justification. coverage_role=wtc_frq_practice.",
+          "coverage_role": "wtc_frq_practice",
+          "connected_part_count_range": [
+            3,
+            5
+          ],
+          "required_frq_moves": [
+            "representation_interpretation_or_extraction",
+            "dependency_or_use_of_earlier_conclusion",
+            "planning_model_choice_or_justification"
+          ],
+          "accessibility_plan": "Keep required student moves structurally accessible; if any content is not yet taught, assess unpacking/annotation/planning/prediction rather than untaught mastery."
+        },
+        {
+          "record_id": "U1-S1-EX-01",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC1",
+          "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Distinguish scientific knowledge/evidence terms by what is directly observed versus inferred or explanatory.",
+          "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-EX01",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC1"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S1-PAIR-01",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S1-YTI-01",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC1",
+          "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Distinguish scientific knowledge/evidence terms by what is directly observed versus inferred or explanatory.",
+          "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-YTI01",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC1"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S1-PAIR-01",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S1-EX-02",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC2",
+          "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Judge whether a scientific claim is testable and justify what evidence/measurement could bear on it.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-EX02",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC2"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S1-PAIR-02",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S1-YTI-02",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC2",
+          "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Judge whether a scientific claim is testable and justify what evidence/measurement could bear on it.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-YTI02",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC2"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S1-PAIR-02",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S1-EX-03",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC3",
+          "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Use evidence to support/reject a physics explanation and interpret a formula/model as a physical relationship rather than an answer machine.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-EX03",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S1-PAIR-03",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S1-YTI-03",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC3",
+          "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Use evidence to support/reject a physics explanation and interpret a formula/model as a physical relationship rather than an answer machine.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-YTI03",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S1-PAIR-03",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S1-EX-04",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC3",
+          "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Use evidence to support/reject a physics explanation and interpret a formula/model as a physical relationship rather than an answer machine.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-EX04",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S1-PAIR-04",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S1-YTI-04",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.1",
+          "primary_i_can_id": "U1-S1-IC3",
+          "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Use evidence to support/reject a physics explanation and interpret a formula/model as a physical relationship rather than an answer machine.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S1-YTI04",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-1",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S1-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S1-PAIR-04",
+          "pair_role": "apply"
+        }
+      ]
     },
     {
-      "record_id": "U1-NOTES-S2-WTC-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC3",
-      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Navigate a connected force-and-motion stimulus by isolating the object, identifying forces, reading motion evidence, and planning a Newton’s First Law explanation.",
-      "question_structure_id": "WTC-FRQ-PREVIEW-01",
-      "response_mode": "multi_part_constructed",
-      "representation_mode": "force_or_motion_diagram_plus_scenario",
-      "representation_need": "One coherent 3–5 part FRQ-decomposition stimulus with an actual evidence-bearing representation.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Keep the multipart chain centered on one object/system and one shared stimulus; include a real force/motion representation.",
-      "notes_role": "wtc",
-      "coverage_role": "wtc_frq_practice",
-      "parts_intent": "3_to_5_connected"
+      "section_id": "1.2",
+      "title": "Forces and Newton’s First Law",
+      "records": [
+        {
+          "record_id": "U1-S2-WTC-01",
+          "record_mode": "exact_content",
+          "destination": "WTC",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC2",
+          "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "FRQ decomposition/navigation practice; not current-Unit coverage.",
+          "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S2-WTC01",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "frq_multipart",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC2"
+          ],
+          "authoring_notes": "Shared force/motion stimulus; connected parts map diagram interpretation -> prediction -> dependency on earlier net-force conclusion -> model-choice/justification. coverage_role=wtc_frq_practice.",
+          "coverage_role": "wtc_frq_practice",
+          "connected_part_count_range": [
+            3,
+            5
+          ],
+          "required_frq_moves": [
+            "representation_interpretation_or_extraction",
+            "dependency_or_use_of_earlier_conclusion",
+            "planning_model_choice_or_justification"
+          ],
+          "accessibility_plan": "Keep required student moves structurally accessible; if any content is not yet taught, assess unpacking/annotation/planning/prediction rather than untaught mastery."
+        },
+        {
+          "record_id": "U1-S2-EX-01",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC1",
+          "primary_i_can": "I can state Newton’s First Law in everyday language.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "State and apply Newton’s First Law in everyday language to predict unchanged versus changing motion.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "motion_description",
+          "representation_need": "supporting",
+          "design_slot_id": "D-U1-S2-EX01",
+          "tool": "none",
+          "render_contract": "Render a concise physically coherent motion description; avoid contradictory states.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC1"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S2-PAIR-01",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S2-YTI-01",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC1",
+          "primary_i_can": "I can state Newton’s First Law in everyday language.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "State and apply Newton’s First Law in everyday language to predict unchanged versus changing motion.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "motion_description",
+          "representation_need": "supporting",
+          "design_slot_id": "D-U1-S2-YTI01",
+          "tool": "none",
+          "render_contract": "Render a concise physically coherent motion description; avoid contradictory states.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC1"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S2-PAIR-01",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S2-EX-02",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC2",
+          "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain inertia as a property of matter and diagnose/revise inertia-as-force reasoning.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S2-EX02",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC2"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S2-PAIR-02",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S2-YTI-02",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC2",
+          "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain inertia as a property of matter and diagnose/revise inertia-as-force reasoning.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S2-YTI02",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC2"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S2-PAIR-02",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S2-EX-03",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC3",
+          "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Differentiate no forces from zero net force and identify common forces acting on a chosen object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S2-EX03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S2-PAIR-03",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S2-YTI-03",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC3",
+          "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Differentiate no forces from zero net force and identify common forces acting on a chosen object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S2-YTI03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S2-PAIR-03",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S2-EX-04",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC3",
+          "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Differentiate no forces from zero net force and identify common forces acting on a chosen object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S2-EX04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S2-PAIR-04",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S2-YTI-04",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.2",
+          "primary_i_can_id": "U1-S2-IC3",
+          "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Differentiate no forces from zero net force and identify common forces acting on a chosen object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S2-YTI04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-2",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S2-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S2-PAIR-04",
+          "pair_role": "apply"
+        }
+      ]
     },
     {
-      "record_id": "U1-NOTES-S3-WTC-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC3",
-      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Navigate a connected vector stimulus by reading arrow direction/relative length, identifying needed quantities, and planning how the resultant connects to motion change.",
-      "question_structure_id": "WTC-FRQ-PREVIEW-01",
-      "response_mode": "multi_part_constructed",
-      "representation_mode": "scaled_vector_diagram",
-      "representation_need": "One coherent 3–5 part FRQ-decomposition stimulus with an actual evidence-bearing representation.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Use one actual vector diagram across the parts; students should unpack the representation before any calculation or conclusion.",
-      "notes_role": "wtc",
-      "coverage_role": "wtc_frq_practice",
-      "parts_intent": "3_to_5_connected"
+      "section_id": "1.3",
+      "title": "Net Force and Vectors",
+      "records": [
+        {
+          "record_id": "U1-S3-WTC-01",
+          "record_mode": "exact_content",
+          "destination": "WTC",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "FRQ decomposition/navigation practice; not current-Unit coverage.",
+          "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-WTC01",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "frq_multipart",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC3"
+          ],
+          "authoring_notes": "Shared vector stimulus; connected parts map arrow evidence -> resultant reasoning -> use of earlier conclusion -> plan/justification. coverage_role=wtc_frq_practice.",
+          "coverage_role": "wtc_frq_practice",
+          "connected_part_count_range": [
+            3,
+            5
+          ],
+          "required_frq_moves": [
+            "representation_interpretation_or_extraction",
+            "dependency_or_use_of_earlier_conclusion",
+            "planning_model_choice_or_justification"
+          ],
+          "accessibility_plan": "Keep required student moves structurally accessible; if any content is not yet taught, assess unpacking/annotation/planning/prediction rather than untaught mastery."
+        },
+        {
+          "record_id": "U1-S3-EX-01",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC1",
+          "primary_i_can": "I can explain why force is a vector quantity.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain that force has magnitude and direction and connect vector-arrow features to physical meaning.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S3-EX01",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC1"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S3-PAIR-01",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S3-YTI-01",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC1",
+          "primary_i_can": "I can explain why force is a vector quantity.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain that force has magnitude and direction and connect vector-arrow features to physical meaning.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "direct_text",
+          "representation_need": "not_required",
+          "design_slot_id": "D-U1-S3-YTI01",
+          "tool": "none",
+          "render_contract": "Render as readable semantic HTML; no decorative/fake representation.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC1"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S3-PAIR-01",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S3-EX-02",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC2",
+          "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Combine collinear forces with direction to determine net/resultant force and reverse-solve a missing force when appropriate.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-EX02",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC2"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S3-PAIR-02",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S3-YTI-02",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC2",
+          "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Combine collinear forces with direction to determine net/resultant force and reverse-solve a missing force when appropriate.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-YTI02",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC2"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S3-PAIR-02",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S3-EX-03",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Interpret resultant force from a vector diagram using both arrow length and direction, and compare force strength/direction.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-EX03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S3-PAIR-03",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S3-YTI-03",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Interpret resultant force from a vector diagram using both arrow length and direction, and compare force strength/direction.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-YTI03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S3-PAIR-03",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S3-EX-04",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Interpret resultant force from a vector diagram using both arrow length and direction, and compare force strength/direction.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-EX04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S3-PAIR-04",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S3-YTI-04",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.3",
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Interpret resultant force from a vector diagram using both arrow length and direction, and compare force strength/direction.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_vector_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S3-YTI04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-3",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S3-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S3-PAIR-04",
+          "pair_role": "apply"
+        }
+      ]
     },
     {
-      "record_id": "U1-NOTES-S4-WTC-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC3",
-      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Navigate a connected equilibrium stimulus by connecting a motion description to a balanced-force representation and identifying which later reasoning depends on earlier conclusions.",
-      "question_structure_id": "WTC-FRQ-PREVIEW-01",
-      "response_mode": "multi_part_constructed",
-      "representation_mode": "balanced_force_diagram_plus_motion_description",
-      "representation_need": "One coherent 3–5 part FRQ-decomposition stimulus with an actual evidence-bearing representation.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Use a single coherent equilibrium situation; include dependency among parts rather than a disconnected preview list.",
-      "notes_role": "wtc",
-      "coverage_role": "wtc_frq_practice",
-      "parts_intent": "3_to_5_connected"
+      "section_id": "1.4",
+      "title": "Equilibrium and Balanced Motion",
+      "records": [
+        {
+          "record_id": "U1-S4-WTC-01",
+          "record_mode": "exact_content",
+          "destination": "WTC",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "FRQ decomposition/navigation practice; not current-Unit coverage.",
+          "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-WTC01",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "frq_multipart",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC3"
+          ],
+          "authoring_notes": "Shared equilibrium/motion stimulus; connected parts map representation extraction -> equilibrium classification -> dependent missing-force reasoning -> model-choice justification. coverage_role=wtc_frq_practice.",
+          "coverage_role": "wtc_frq_practice",
+          "connected_part_count_range": [
+            3,
+            5
+          ],
+          "required_frq_moves": [
+            "representation_interpretation_or_extraction",
+            "dependency_or_use_of_earlier_conclusion",
+            "planning_model_choice_or_justification"
+          ],
+          "accessibility_plan": "Keep required student moves structurally accessible; if any content is not yet taught, assess unpacking/annotation/planning/prediction rather than untaught mastery."
+        },
+        {
+          "record_id": "U1-S4-EX-01",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC1",
+          "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Recognize and distinguish static versus dynamic equilibrium from force balance and motion evidence.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "motion_description",
+          "representation_need": "supporting",
+          "design_slot_id": "D-U1-S4-EX01",
+          "tool": "none",
+          "render_contract": "Render a concise physically coherent motion description; avoid contradictory states.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC1"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S4-PAIR-01",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S4-YTI-01",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC1",
+          "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Recognize and distinguish static versus dynamic equilibrium from force balance and motion evidence.",
+          "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "motion_description",
+          "representation_need": "supporting",
+          "design_slot_id": "D-U1-S4-YTI01",
+          "tool": "none",
+          "render_contract": "Render a concise physically coherent motion description; avoid contradictory states.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC1"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S4-PAIR-01",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S4-EX-02",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC2",
+          "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain how an object at rest can have multiple nonzero forces that balance to zero net force.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-EX02",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC2"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S4-PAIR-02",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S4-YTI-02",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC2",
+          "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain how an object at rest can have multiple nonzero forces that balance to zero net force.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-YTI02",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC2"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S4-PAIR-02",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S4-EX-03",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Connect constant straight-line motion to equilibrium and use ΣF=0 to reason about horizontal/vertical balancing forces.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-EX03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S4-PAIR-03",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S4-YTI-03",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Connect constant straight-line motion to equilibrium and use ΣF=0 to reason about horizontal/vertical balancing forces.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-YTI03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S4-PAIR-03",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S4-EX-04",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Connect constant straight-line motion to equilibrium and use ΣF=0 to reason about horizontal/vertical balancing forces.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-EX04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S4-PAIR-04",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S4-YTI-04",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.4",
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Connect constant straight-line motion to equilibrium and use ΣF=0 to reason about horizontal/vertical balancing forces.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S4-YTI04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-4",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S4-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S4-PAIR-04",
+          "pair_role": "apply"
+        }
+      ]
     },
     {
-      "record_id": "U1-NOTES-S5-WTC-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC3",
-      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Navigate a connected real-world force-model stimulus by identifying the system, checking a proposed model against evidence, and planning a corrected explanation of motion.",
-      "question_structure_id": "WTC-FRQ-PREVIEW-01",
-      "response_mode": "multi_part_constructed",
-      "representation_mode": "real_world_force_model_plus_observations",
-      "representation_need": "One coherent 3–5 part FRQ-decomposition stimulus with an actual evidence-bearing representation.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Use one shared model/observation set; include model critique and evidence-to-motion reasoning without becoming a finished secure assessment item.",
-      "notes_role": "wtc",
-      "coverage_role": "wtc_frq_practice",
-      "parts_intent": "3_to_5_connected"
-    },
-    {
-      "record_id": "U1-NOTES-S1-EXAMPLE-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC1",
-      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Classify closely related evidence statements using the scientific-term distinctions, with a brief reason tied to the definition.",
-      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "scenario_evidence_set",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S1-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S1-YTI-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC1",
-      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Classify closely related evidence statements using the scientific-term distinctions, with a brief reason tied to the definition.",
-      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "scenario_evidence_set",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S1-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S1-EXAMPLE-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC2",
-      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Evaluate whether a proposed claim is scientifically testable and identify what observable or measurable evidence would make the test meaningful.",
-      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "claim_plus_measurement_plan",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S1-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S1-YTI-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC2",
-      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Evaluate whether a proposed claim is scientifically testable and identify what observable or measurable evidence would make the test meaningful.",
-      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "claim_plus_measurement_plan",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S1-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S1-EXAMPLE-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC3",
-      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use evidence from a compact data/model representation to decide whether an explanation is supported and interpret what the relationship says physically.",
-      "question_structure_id": "PHYS-DATA-TREND-MODEL-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "small_data_table_plus_simple_relationship",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S1-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S1-YTI-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC3",
-      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use evidence from a compact data/model representation to decide whether an explanation is supported and interpret what the relationship says physically.",
-      "question_structure_id": "PHYS-DATA-TREND-MODEL-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "small_data_table_plus_simple_relationship",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S1-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S1-EXAMPLE-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC3",
-      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Interpret a supplied physical relationship qualitatively before any arithmetic; connect variables to the phenomenon rather than treating the equation as a procedure.",
-      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "simple_relationship_plus_scenario",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S1-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S1-YTI-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.1",
-        "title": "Thinking Like a Physicist"
-      },
-      "primary_i_can_id": "U1-S1-IC3",
-      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Interpret a supplied physical relationship qualitatively before any arithmetic; connect variables to the phenomenon rather than treating the equation as a procedure.",
-      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "simple_relationship_plus_scenario",
-      "representation_need": "Use the section’s authentic representation system: observations and measurements, claim-evidence-reasoning notes, simple model or formula representations.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S1-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S2-EXAMPLE-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC1",
-      "primary_i_can": "I can state Newton’s First Law in everyday language.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Predict whether motion remains unchanged when the net-force condition is specified, then justify in everyday Newton’s First Law language.",
-      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "motion_description_plus_force_condition",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S2-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S2-YTI-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC1",
-      "primary_i_can": "I can state Newton’s First Law in everyday language.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Predict whether motion remains unchanged when the net-force condition is specified, then justify in everyday Newton’s First Law language.",
-      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "motion_description_plus_force_condition",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S2-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S2-EXAMPLE-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC2",
-      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Diagnose an inertia-as-force claim and replace it with a property-of-matter explanation grounded in the scenario.",
-      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "student_claim_plus_scenario",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S2-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S2-YTI-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC2",
-      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Diagnose an inertia-as-force claim and replace it with a property-of-matter explanation grounded in the scenario.",
-      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "student_claim_plus_scenario",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S2-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S2-EXAMPLE-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC3",
-      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Identify forces acting on one specified object and represent only those forces; distinguish multiple forces that can still sum to zero.",
-      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
-      "response_mode": "diagram_constructed",
-      "representation_mode": "physical_situation_to_fbd",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S2-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S2-YTI-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC3",
-      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Identify forces acting on one specified object and represent only those forces; distinguish multiple forces that can still sum to zero.",
-      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
-      "response_mode": "diagram_constructed",
-      "representation_mode": "physical_situation_to_fbd",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S2-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S2-EXAMPLE-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC3",
-      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Check whether a force diagram and motion description can represent the same situation, focusing on no-forces versus zero-net-force reasoning.",
-      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "fbd_plus_motion_description",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S2-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S2-YTI-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.2",
-        "title": "Forces and Newton’s First Law"
-      },
-      "primary_i_can_id": "U1-S2-IC3",
-      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Check whether a force diagram and motion description can represent the same situation, focusing on no-forces versus zero-net-force reasoning.",
-      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "fbd_plus_motion_description",
-      "representation_need": "Use the section’s authentic representation system: force diagrams, motion descriptions, ΣF reasoning, support-force and weight pairs.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S2-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S3-EXAMPLE-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC1",
-      "primary_i_can": "I can explain why force is a vector quantity.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use arrow direction and length as meaningful vector features and critique a representation that treats a force arrow as a scalar label.",
-      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "vector_arrows",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S3-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S3-YTI-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC1",
-      "primary_i_can": "I can explain why force is a vector quantity.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use arrow direction and length as meaningful vector features and critique a representation that treats a force arrow as a scalar label.",
-      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "vector_arrows",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S3-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S3-EXAMPLE-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC2",
-      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Combine same/opposite-direction forces from a physical situation and interpret the sign/direction of the net force.",
-      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "one_dimensional_force_situation",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S3-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S3-YTI-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC2",
-      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Combine same/opposite-direction forces from a physical situation and interpret the sign/direction of the net force.",
-      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "one_dimensional_force_situation",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S3-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S3-EXAMPLE-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC3",
-      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Read force magnitudes/directions from an actual vector diagram and determine the resultant while preserving direction meaning.",
-      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "scaled_vector_diagram",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S3-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S3-YTI-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC3",
-      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Read force magnitudes/directions from an actual vector diagram and determine the resultant while preserving direction meaning.",
-      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "scaled_vector_diagram",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S3-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S3-EXAMPLE-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC2",
-      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Work backward from a required net-force condition to determine a missing force in a concrete push/pull situation.",
-      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "one_dimensional_force_situation",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S3-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S3-YTI-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.3",
-        "title": "Net Force and Vectors"
-      },
-      "primary_i_can_id": "U1-S3-IC2",
-      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Work backward from a required net-force condition to determine a missing force in a concrete push/pull situation.",
-      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "one_dimensional_force_situation",
-      "representation_need": "Use the section’s authentic representation system: scaled force arrows, one-dimensional vector sums, simple two-dimensional force diagrams, F_net.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S3-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S4-EXAMPLE-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC1",
-      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Classify static or dynamic equilibrium by reconciling the motion description with the net-force representation.",
-      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "motion_description_plus_force_diagram",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S4-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S4-YTI-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC1",
-      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Classify static or dynamic equilibrium by reconciling the motion description with the net-force representation.",
-      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "motion_description_plus_force_diagram",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S4-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S4-EXAMPLE-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC2",
-      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Represent real forces on an object at rest and explain why balanced forces can be present.",
-      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
-      "response_mode": "diagram_constructed",
-      "representation_mode": "supported_object_situation",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S4-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S4-YTI-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC2",
-      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Represent real forces on an object at rest and explain why balanced forces can be present.",
-      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
-      "response_mode": "diagram_constructed",
-      "representation_mode": "supported_object_situation",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S4-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S4-EXAMPLE-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC3",
-      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use the equilibrium rule to infer a missing horizontal or vertical force from a physical situation.",
-      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "equilibrium_force_situation",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S4-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S4-YTI-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC3",
-      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use the equilibrium rule to infer a missing horizontal or vertical force from a physical situation.",
-      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
-      "response_mode": "numeric_constructed",
-      "representation_mode": "equilibrium_force_situation",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S4-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S4-EXAMPLE-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC3",
-      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Connect constant straight-line velocity to zero net force and justify what happens if the force balance changes.",
-      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "constant_velocity_situation_plus_force_model",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S4-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S4-YTI-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.4",
-        "title": "Equilibrium and Balanced Motion"
-      },
-      "primary_i_can_id": "U1-S4-IC3",
-      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Connect constant straight-line velocity to zero net force and justify what happens if the force balance changes.",
-      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "constant_velocity_situation_plus_force_model",
-      "representation_need": "Use the section’s authentic representation system: balanced force diagrams, ΣF = 0, rest and constant-velocity motion descriptions.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S4-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S5-EXAMPLE-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC1",
-      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Isolate one object in a real-world system and construct a force diagram containing only interactions that act on that object.",
-      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
-      "response_mode": "diagram_constructed",
-      "representation_mode": "real_world_object_situation",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S5-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S5-YTI-01",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC1",
-      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Isolate one object in a real-world system and construct a force diagram containing only interactions that act on that object.",
-      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
-      "response_mode": "diagram_constructed",
-      "representation_mode": "real_world_object_situation",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S5-PAIR-01",
-      "pair_number": 1
-    },
-    {
-      "record_id": "U1-NOTES-S5-EXAMPLE-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC2",
-      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use a force model to decide whether forces are balanced or unbalanced and identify the representation evidence that establishes the classification.",
-      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "force_model",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S5-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S5-YTI-02",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC2",
-      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Use a force model to decide whether forces are balanced or unbalanced and identify the representation evidence that establishes the classification.",
-      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "force_model",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S5-PAIR-02",
-      "pair_number": 2
-    },
-    {
-      "record_id": "U1-NOTES-S5-EXAMPLE-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC3",
-      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Critique a plausible incorrect force explanation and revise the reasoning using net force, motion, and precise physics vocabulary.",
-      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "incorrect_force_explanation_plus_evidence",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S5-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S5-YTI-03",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC3",
-      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Critique a plausible incorrect force explanation and revise the reasoning using net force, motion, and precise physics vocabulary.",
-      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "incorrect_force_explanation_plus_evidence",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S5-PAIR-03",
-      "pair_number": 3
-    },
-    {
-      "record_id": "U1-NOTES-S5-EXAMPLE-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC3",
-      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Reconcile a real-world force diagram with observed motion evidence and identify which element must change when the model is inconsistent.",
-      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "force_diagram_plus_motion_evidence",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Model the target explicitly and make the representation/reasoning visible; later Bank stage authors one exact canonical Example.",
-      "notes_role": "example",
-      "pair_id": "U1-S5-PAIR-04",
-      "pair_number": 4
-    },
-    {
-      "record_id": "U1-NOTES-S5-YTI-04",
-      "record_mode": "exact_content",
-      "destination": "notes",
-      "section": {
-        "id": "1.5",
-        "title": "Modeling Forces in the Real World"
-      },
-      "primary_i_can_id": "U1-S5-IC3",
-      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
-      "supporting_i_can_ids": [],
-      "evidence_job": "Reconcile a real-world force diagram with observed motion evidence and identify which element must change when the model is inconsistent.",
-      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
-      "response_mode": "short_constructed",
-      "representation_mode": "force_diagram_plus_motion_evidence",
-      "representation_need": "Use the section’s authentic representation system: real-world force diagrams, scenario descriptions, qualitative data or observations, model critiques.",
-      "wording_profile": {
-        "preferred": "standard",
-        "allowed": [
-          "standard",
-          "inverted",
-          "context_rich"
-        ],
-        "length_intent": "short_by_default"
-      },
-      "security_level": "nonsecure_instructional",
-      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
-      "authoring_notes": "Apply the same evidence architecture with meaningfully changed evidence/representation details; do not copy the Example surface shell.",
-      "notes_role": "yti",
-      "pair_id": "U1-S5-PAIR-04",
-      "pair_number": 4
+      "section_id": "1.5",
+      "title": "Modeling Forces in the Real World",
+      "records": [
+        {
+          "record_id": "U1-S5-WTC-01",
+          "record_mode": "exact_content",
+          "destination": "WTC",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC3",
+          "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "FRQ decomposition/navigation practice; not current-Unit coverage.",
+          "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-WTC01",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "frq_multipart",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC3"
+          ],
+          "authoring_notes": "Shared flawed/partial force-model stimulus; connected parts map representation extraction -> critique -> dependency on corrected model -> planning/justification. coverage_role=wtc_frq_practice.",
+          "coverage_role": "wtc_frq_practice",
+          "connected_part_count_range": [
+            3,
+            5
+          ],
+          "required_frq_moves": [
+            "representation_interpretation_or_extraction",
+            "dependency_or_use_of_earlier_conclusion",
+            "planning_model_choice_or_justification"
+          ],
+          "accessibility_plan": "Keep required student moves structurally accessible; if any content is not yet taught, assess unpacking/annotation/planning/prediction rather than untaught mastery."
+        },
+        {
+          "record_id": "U1-S5-EX-01",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC1",
+          "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Construct a force diagram for the selected object in a realistic system with only forces acting on that object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-EX01",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC1"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S5-PAIR-01",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S5-YTI-01",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC1",
+          "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Construct a force diagram for the selected object in a realistic system with only forces acting on that object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-YTI01",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC1"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S5-PAIR-01",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S5-EX-02",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC2",
+          "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Classify real-world force situations as balanced/unbalanced using force-model evidence, not motion stereotypes.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-EX02",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC2"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S5-PAIR-02",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S5-YTI-02",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC2",
+          "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Classify real-world force situations as balanced/unbalanced using force-model evidence, not motion stereotypes.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-YTI02",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC2"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S5-PAIR-02",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S5-EX-03",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC3",
+          "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain how net force affects motion, diagnose an incorrect force explanation, and revise it with precise Physics vocabulary.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-EX03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC3"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S5-PAIR-03",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S5-YTI-03",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC3",
+          "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Explain how net force affects motion, diagnose an incorrect force explanation, and revise it with precise Physics vocabulary.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "approved_force_diagram",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-YTI03",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Resolve an approved Physics Framework/course source figure through the current source-map route; embed visibly and answer-neutrally. If no suitable approved figure resolves, fail this slot rather than substitute prose.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC3"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S5-PAIR-03",
+          "pair_role": "apply"
+        },
+        {
+          "record_id": "U1-S5-EX-04",
+          "record_mode": "exact_content",
+          "destination": "Example",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC1",
+          "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Construct a force diagram for the selected object in a realistic system with only forces acting on that object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-EX04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC1"
+          ],
+          "authoring_notes": "Model the mapped evidence architecture with a complete worked teacher solution later; no final prose at 2A.",
+          "pair_id": "U1-S5-PAIR-04",
+          "pair_role": "model"
+        },
+        {
+          "record_id": "U1-S5-YTI-04",
+          "record_mode": "exact_content",
+          "destination": "YTI",
+          "section_or_scope": "1.5",
+          "primary_i_can_id": "U1-S5-IC1",
+          "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+          "supporting_i_can_ids": [],
+          "evidence_job": "Construct a force diagram for the selected object in a realistic system with only forces acting on that object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "response_mode": "constructed_response",
+          "representation_mode": "student_constructed_fbd",
+          "representation_need": "required",
+          "design_slot_id": "D-U1-S5-YTI04",
+          "tool": "framework_approved_diagram_route",
+          "render_contract": "Render a dedicated student response canvas/workspace for the required drawn representation; stimulus may be prose or an approved situation figure, but no completed answer-leaking force/vector diagram.",
+          "wording_profile": "natural_direct",
+          "security_level": "instructional",
+          "source_basis": [
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html#section-1-5",
+            "tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json#U1-S5-IC1"
+          ],
+          "authoring_notes": "Parallel application of the paired Example with meaningfully changed evidence/context/representation values; no noun-only swap.",
+          "pair_id": "U1-S5-PAIR-04",
+          "pair_role": "apply"
+        }
+      ]
     }
-  ]
+  ],
+  "record_count": 45,
+  "records_per_section": {
+    "1.1": 9,
+    "1.2": 9,
+    "1.3": 9,
+    "1.4": 9,
+    "1.5": 9
+  }
 }

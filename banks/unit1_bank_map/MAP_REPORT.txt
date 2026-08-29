@@ -1,41 +1,71 @@
-UNIT 1 BANK MAP REPORT
-======================
-Course: Physics / Conceptual Physics
-Unit: 1 — Forces, Motion, and Equilibrium
-Course Bank profile: Conceptual Physics Bank v2 Pilot Profile (course-bank-v2-profile/1.0)
+PHYSICS UNIT 1 BANK MAP REPORT
+================================
 
-RECORD COUNTS
+Course / Unit: Physics / Unit 1 — Forces, Motion, and Equilibrium
+Profile: Conceptual Physics Bank v2 Course Profile v1.1
+Pinned system: tnezki/memories@a06de3ddb09e5380c92130b3ab70a687a5ebf2b8
+Pinned course repo: tnezki/physics@a1e78c88356c097e32401384049d679b2d417330
+Question-design schema: question-design-map-v1
+
+MAP STATUS
+----------
+Question-design map: BUILT
+QA: PASS
+
+EXACT-CONTENT MAP COUNTS
+------------------------
+WTC: 5
+Examples: 20
+YTIs: 20
+CYU: 30
+Warm-Up questions: 60
+
+FAMILY-SEED COUNTS
+------------------
+Practice families: 150
+Exit families: 40
+Summative families: 40
+
+WTC RIGOR / REPRESENTATION ROUTES
+--------------------------------
+All 5 WTC slots use one shared stimulus, normally 3–5 connected parts, a representation interpretation/extraction move, a dependency/use-of-earlier-conclusion move, and a planning/model-choice/justification move. All are marked coverage_role=wtc_frq_practice and do not satisfy Unit 1 I-can coverage floors.
+
+REPRESENTATION / TOOL ROUTES
+----------------------------
+Graph slots using graph_tool: 0 (intentionally zero; Unit 1 I-cans do not require graph evidence)
+Semantic compact-table slots: 6
+Framework-approved diagram/FBD/vector route slots: 124
+Direct/no-special-tool slots: 235
+
+Representation modes: {"approved_force_diagram": 75, "approved_vector_diagram": 40, "direct_text": 128, "equation_relationship": 51, "motion_description": 56, "semantic_table": 6, "student_constructed_fbd": 9}
+Response modes: {"constructed_response": 279, "selected_response": 86}
+
+DETERMINISTIC BLUEPRINT FEASIBILITY
+-----------------------------------
+Practice: 30-family pool per section -> deterministic 24-family sets after I-can/evidence/composition/representation constraints.
+Exit: each section has 8 secure families and an exact 4-family blueprint that directly samples all 3 section I-cans; A/B/C are controlled secure instances of that blueprint.
+Summative: 40 secure families split into disjoint 20-family Blueprint A (V1–V4) and Blueprint B (V5–V6). Each blueprint directly samples all 15 exact Unit I-cans and contains exactly 16 selected-response + 4 constructed-response families.
+Stable selection key: course|unit|section-or-unit|destination|form-or-set|bank_fingerprint
+
+EXECUTABLE ROUTE NOTES
+----------------------
+Small tables require semantic <table class="values"> rendering.
+Selected-response records require 4 visible choices, single-select behavior, one keyed answer downstream, and misconception-based distractors.
+Force/vector interpretation uses approved Physics Framework/course source-figure routes. Student-constructed FBD/vector tasks use a dedicated response canvas and must not receive an answer-leaking completed diagram.
+No F=ma authoring route is mapped; Unit 1 quantitative work stays within source-supported net-force/equilibrium relationships and physical interpretation.
+
+INTEGRATED QA
 -------------
-notes_map.json: 45 exact_content (5 WTC + 40 Example/YTI records)
-practice_map.json: 150 family_seed (30/section)
-cyu_map.json: 30 exact_content (6/section)
-warmup_map.json: 60 exact_content (12/section)
-exit_map.json: 40 family_seed (8/section)
-summative_map.json: 40 family_seed (20 Blueprint A + 20 Blueprint B)
-TOTAL: 365 records = 135 exact_content + 230 family_seed
+Unique record IDs: PASS
+Unique design slots: PASS
+Exact I-can resolution: PASS
+Structure resolution: PASS
+Selected-response contract: PASS
+Representation routes executable: PASS
+WTC rigor gate: PASS
+Destination counts: PASS
+Exit blueprints cover every section I-can: PASS
+Summative blueprints cover every Unit I-can with 16/4 response balance: PASS
+No final prompt/answer/solution prose fields: PASS
 
-PRACTICE POOLS
---------------
-1.1 Thinking Like a Physicist: pool mix {'vocabulary_representation': 10, 'conceptual_application': 15, 'quantitative_modeling': 5}; 24-family selected mix {'vocabulary_representation': 8, 'conceptual_application': 12, 'quantitative_modeling': 4}; I-can pool weighting {'U1-S1-IC1': 9, 'U1-S1-IC2': 8, 'U1-S1-IC3': 13}.
-1.2 Forces and Newton’s First Law: pool mix {'vocabulary_representation': 9, 'conceptual_application': 14, 'quantitative_modeling': 7}; 24-family selected mix {'vocabulary_representation': 7, 'conceptual_application': 11, 'quantitative_modeling': 6}; I-can pool weighting {'U1-S2-IC1': 8, 'U1-S2-IC2': 8, 'U1-S2-IC3': 14}.
-1.3 Net Force and Vectors: pool mix {'vocabulary_representation': 8, 'conceptual_application': 14, 'quantitative_modeling': 8}; 24-family selected mix {'vocabulary_representation': 6, 'conceptual_application': 11, 'quantitative_modeling': 7}; I-can pool weighting {'U1-S3-IC1': 7, 'U1-S3-IC2': 12, 'U1-S3-IC3': 11}.
-1.4 Equilibrium and Balanced Motion: pool mix {'vocabulary_representation': 8, 'conceptual_application': 15, 'quantitative_modeling': 7}; 24-family selected mix {'vocabulary_representation': 6, 'conceptual_application': 12, 'quantitative_modeling': 6}; I-can pool weighting {'U1-S4-IC1': 8, 'U1-S4-IC2': 8, 'U1-S4-IC3': 14}.
-1.5 Modeling Forces in the Real World: pool mix {'vocabulary_representation': 9, 'conceptual_application': 13, 'quantitative_modeling': 8}; 24-family selected mix {'vocabulary_representation': 7, 'conceptual_application': 10, 'quantitative_modeling': 7}; I-can pool weighting {'U1-S5-IC1': 11, 'U1-S5-IC2': 8, 'U1-S5-IC3': 11}.
-
-DETERMINISTIC SELECTION / BLUEPRINTS
-------------------------------------
-Practice: hard I-can coverage + exact section-specific selected family mix first; stable hash tie-break after constraints; set keys rotate omissions where feasible.
-Exit: 8-family pool -> 4 selected families; all three section I-cans directly represented; at least one representation-bearing and one constructed-response family; A/B/C use fresh secure instances of the same selected family IDs.
-Summative: Blueprint A is fixed to 20 families for V1–V4; Blueprint B is fixed to a separate materially alternate 20 families for V5–V6. Each blueprint directly samples all 15 exact Unit I-cans and contains 16 selected-response + 4 constructed-response families.
-
-QA
---
-PASS
-- Exact Unit 1 I-can IDs and text validated against the canonical map used for this build.
-- Every family has locked elements, legitimate allowed/required variations, forbidden drift modes, difficulty intent, representation rule, and deterministic selection tags.
-- All question structure IDs are from the resolved current _question_structure authority.
-- Representation-bearing I-cans remain representation-bearing; diagrams/vectors/FBDs are not replaced with decorative or prose-only substitutes.
-- No finished student prompt, final choices, answer, solution, DOK, or Bloom fields are present in the map.
-- Secure Exit/Summative families prohibit exposed-prompt reuse and surface-only secure variation.
-
-Output: unit1_bank_map.zip
+Issues: []
