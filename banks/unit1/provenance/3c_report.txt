@@ -1,0 +1,39 @@
+Physics Unit 1 Bank — Stage 3C Report
+=====================================
+Status: PASS
+
+Pinned system: tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b
+Pinned course: tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048
+Accepted map fingerprint: bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451
+Accepted map profile: v1.2
+Current continuation profile: v1.3 (explicitly compatible for Exit/Summative)
+
+Authored:
+- Exit secure family seeds: 40 (8 per section)
+- Summative secure family seeds: 40 (20 Blueprint A, 20 Blueprint B)
+- Blueprint A: 16 selected response + 4 constructed response; all 15 Unit I-cans covered
+- Blueprint B: 16 selected response + 4 constructed response; all 15 Unit I-cans covered
+- Teacher Bank HTML: unit1.html
+
+Final canonical Bank records: 365
+Final state: COMPLETE / ready_for_downstream=true
+
+QA:
+- Accepted map identity preserved
+- Prior 3A/3B content files preserved byte-for-byte (BANK_MANIFEST and ITEM_INDEX intentionally updated for 3C)
+- Every mapped Exit/Summative family authored exactly once
+- Selected-response choices stored, visible, unique, and keyed
+- Semantic tables use <table class="values">
+- Equation relationships contain MathJax
+- Student-constructed diagrams include response surfaces
+- Canonical asset routes are retained and referenced
+- No exact exposed finished prompt reused
+- Teacher HTML uses exactly ../../css/base.css and ../../css/bank.css and renders all required groups
+
+Note: Fresh canonical items remain audit_status=NEEDS AUDIT; build QA PASS does not auto-promote teacher audit dispositions.
+
+Final integrity sweep:
+- 365/365 ITEM_INDEX locators resolve to matching record IDs
+- unit1.html contains 365 bank-item cards
+- CSS links are exactly ../../css/base.css and ../../css/bank.css
+- 11/11 required canonical Unit 1 figure paths resolve in pinned asset tree 32662f5fd3c53ce32aecb5f9d2c9b522cefabdd8

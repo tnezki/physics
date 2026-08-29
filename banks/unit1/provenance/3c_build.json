@@ -1,0 +1,34 @@
+{
+  "schema": "bank-3c-build/1.0",
+  "status": "PASS",
+  "course": "Physics",
+  "unit": 1,
+  "pinned_run": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
+    "course_repo": "tnezki/physics",
+    "course_commit": "4f66eca8afba3842d8886a0afae5f14a80697048"
+  },
+  "accepted_map": {
+    "map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451",
+    "question_design_map_sha256": "7f097e566b6043254e5125e8ce5f7d061cf800cb787d3f6778c5ff077da76f60",
+    "accepted_profile_version": "v1.2",
+    "accepted_profile_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
+  },
+  "current_profile": {
+    "profile_version": "v1.3",
+    "commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
+    "compatibility": "Practice/Exit/Summative contracts unchanged; continuation allowed."
+  },
+  "authoring": {
+    "exit_families": 40,
+    "summative_families": 40,
+    "teacher_html": "unit1.html",
+    "prior_stage_files_preserved_except_manifest_index_state_updates": true
+  },
+  "security": {
+    "exact_exposed_prompt_reuse": 0,
+    "canonical_secure_seed_rule": "fresh evidence instance; no exposed finished-prompt reuse; strong-axis variation required downstream"
+  },
+  "qa_report": "provenance/3c_qa.json"
+}

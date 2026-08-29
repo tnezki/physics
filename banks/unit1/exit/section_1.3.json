@@ -1,0 +1,1914 @@
+{
+  "schema": "bank-v2-secure-family-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.3",
+  "stage": "3C_assessment_families",
+  "destination_group": "exit",
+  "family_records": [
+    {
+      "record_id": "U1-S3-EXIT-F01",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "student_action": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S3-EXIT-F01",
+      "design_slot_id": "U1-S3-EXIT-F01",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F01"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S3-EXIT-F01",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "family_id": "U1-S3-EXIT-F01",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "exit",
+        "formative_secure"
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F01",
+      "response_class": "selected_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F01",
+        "design_slot_id": "U1-S3-EXIT-F01",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S3-EXIT-F01",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Two students each report a 12 N force, but one force is east and the other is west. Why are the reports not equivalent force vectors?",
+        "student_html": "<p>Two students each report a 12 N force, but one force is east and the other is west. Why are the reports not equivalent force vectors?</p><ol class=\"choices\" type=\"A\"><li>Force is fully described by magnitude alone.</li><li>Direction matters only for velocity, not force.</li><li>A force vector is defined by the object’s color and location.</li><li>A force requires both magnitude and direction.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Force is fully described by magnitude alone."
+          },
+          {
+            "id": "B",
+            "text": "Direction matters only for velocity, not force."
+          },
+          {
+            "id": "C",
+            "text": "A force vector is defined by the object’s color and location."
+          },
+          {
+            "id": "D",
+            "text": "A force requires both magnitude and direction."
+          }
+        ],
+        "correct_choice": "D",
+        "answer": "A force requires both magnitude and direction.",
+        "solution_text": "Force is a vector quantity because both magnitude and direction are required to describe it.",
+        "solution_html": "<p>Force is a vector quantity because both magnitude and direction are required to describe it.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC1",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F02",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "student_action": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-EXIT-F02",
+      "design_slot_id": "U1-S3-EXIT-F02",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F02"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "givens_evidence_set",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-EXIT-F02",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "asset_id": "PHYS-2EC4ABF93A6F",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "family_id": "U1-S3-EXIT-F02",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "exit",
+        "formative_secure"
+      ],
+      "allowed_representation_routes": [
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        }
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F02",
+      "response_class": "constructed_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F02",
+        "design_slot_id": "U1-S3-EXIT-F02",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-EXIT-F02",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        },
+        "allowed_representation_routes": [
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+            "asset_id": "PHYS-70800F1157C9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+            "asset_id": "PHYS-ECA638594CC9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          }
+        ]
+      },
+      "canonical_seed": {
+        "student_text": "A cart has a 34 N force to the right and a 12 N force to the left. Determine the net force and state its direction.",
+        "student_html": "<p>A cart has a 34 N force to the right and a 12 N force to the left. Determine the net force and state its direction.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Vector diagram used as a direction and resultant model.\"><p>\\(F_{net}=F_{right}-F_{left}\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The net force is 22 N right. Combine same-direction forces by adding; combine opposite directions by subtracting the smaller magnitude from the larger and keep the larger-force direction.",
+        "solution_text": "The net force is 22 N right. Combine same-direction forces by adding; combine opposite directions by subtracting the smaller magnitude from the larger and keep the larger-force direction.",
+        "solution_html": "<p>The net force is 22 N right. Combine same-direction forces by adding; combine opposite directions by subtracting the smaller magnitude from the larger and keep the larger-force direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          },
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC2",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F03",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-EXIT-F03",
+      "design_slot_id": "U1-S3-EXIT-F03",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F03"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-EXIT-F03",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "asset_id": "PHYS-15C8D0E3F482",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "family_id": "U1-S3-EXIT-F03",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "exit",
+        "formative_secure"
+      ],
+      "allowed_representation_routes": [
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        }
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F03",
+      "response_class": "selected_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F03",
+        "design_slot_id": "U1-S3-EXIT-F03",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-EXIT-F03",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        },
+        "allowed_representation_routes": [
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+            "asset_id": "PHYS-ECA638594CC9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+            "asset_id": "PHYS-70800F1157C9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          }
+        ]
+      },
+      "canonical_seed": {
+        "student_text": "In the supplied ring diagram, which vector feature should you use to compare the magnitudes of the support forces shown at different positions?",
+        "student_html": "<p>In the supplied ring diagram, which vector feature should you use to compare the magnitudes of the support forces shown at different positions?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved vector diagram used to identify, compare, or calculate a resultant force.\"><ol class=\"choices\" type=\"A\"><li>Arrow length shows time and direction shows mass.</li><li>Only the labels matter; arrow lengths and directions are decorative.</li><li>Any two equal-length arrows must point in the same direction.</li><li>A longer force arrow represents a larger force magnitude, while its orientation represents direction.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Arrow length shows time and direction shows mass."
+          },
+          {
+            "id": "B",
+            "text": "Only the labels matter; arrow lengths and directions are decorative."
+          },
+          {
+            "id": "C",
+            "text": "Any two equal-length arrows must point in the same direction."
+          },
+          {
+            "id": "D",
+            "text": "A longer force arrow represents a larger force magnitude, while its orientation represents direction."
+          }
+        ],
+        "correct_choice": "D",
+        "answer": "A longer force arrow represents a larger force magnitude, while its orientation represents direction.",
+        "solution_text": "In a vector diagram, relative arrow length communicates relative magnitude and arrow orientation communicates direction.",
+        "solution_html": "<p>In a vector diagram, relative arrow length communicates relative magnitude and arrow orientation communicates direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC3",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F04",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-EXIT-F04",
+      "design_slot_id": "U1-S3-EXIT-F04",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F04"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-EXIT-F04",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "asset_id": "PHYS-ECA638594CC9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "family_id": "U1-S3-EXIT-F04",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "exit",
+        "formative_secure"
+      ],
+      "allowed_representation_routes": [
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        }
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F04",
+      "response_class": "constructed_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F04",
+        "design_slot_id": "U1-S3-EXIT-F04",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-EXIT-F04",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        },
+        "allowed_representation_routes": [
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+            "asset_id": "PHYS-ECA638594CC9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+            "asset_id": "PHYS-70800F1157C9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          }
+        ]
+      },
+      "canonical_seed": {
+        "student_text": "Use the component/resultant construction in the supplied diagram. If one component is 5 N east and the other is 12 N north, what resultant magnitude matches that construction?",
+        "student_html": "<p>Use the component/resultant construction in the supplied diagram. If one component is 5 N east and the other is 12 N north, what resultant magnitude matches that construction?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved vector diagram used to identify, compare, or calculate a resultant force.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The perpendicular components form a right triangle, so the resultant magnitude is √(5²+12²)=13 N and points between the components.",
+        "solution_text": "The perpendicular components form a right triangle, so the resultant magnitude is √(5²+12²)=13 N and points between the components.",
+        "solution_html": "<p>The perpendicular components form a right triangle, so the resultant magnitude is √(5²+12²)=13 N and points between the components.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC3",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F05",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "student_action": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S3-EXIT-F05",
+      "design_slot_id": "U1-S3-EXIT-F05",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F05"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S3-EXIT-F05",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "family_id": "U1-S3-EXIT-F05",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "exit",
+        "formative_secure"
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F05",
+      "response_class": "selected_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F05",
+        "design_slot_id": "U1-S3-EXIT-F05",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S3-EXIT-F05",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A force sensor reports a magnitude of 18 N. What additional information is required to specify the force as a vector?",
+        "student_html": "<p>A force sensor reports a magnitude of 18 N. What additional information is required to specify the force as a vector?</p><ol class=\"choices\" type=\"A\"><li>A force vector is defined by the object’s color and location.</li><li>A force requires both magnitude and direction.</li><li>Force is fully described by magnitude alone.</li><li>Direction matters only for velocity, not force.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A force vector is defined by the object’s color and location."
+          },
+          {
+            "id": "B",
+            "text": "A force requires both magnitude and direction."
+          },
+          {
+            "id": "C",
+            "text": "Force is fully described by magnitude alone."
+          },
+          {
+            "id": "D",
+            "text": "Direction matters only for velocity, not force."
+          }
+        ],
+        "correct_choice": "B",
+        "answer": "A force requires both magnitude and direction.",
+        "solution_text": "Force is a vector quantity because both magnitude and direction are required to describe it.",
+        "solution_html": "<p>Force is a vector quantity because both magnitude and direction are required to describe it.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC1",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F06",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "student_action": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-EXIT-F06",
+      "design_slot_id": "U1-S3-EXIT-F06",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F06"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "givens_evidence_set",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-EXIT-F06",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "asset_id": "PHYS-2EC4ABF93A6F",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "family_id": "U1-S3-EXIT-F06",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "exit",
+        "formative_secure"
+      ],
+      "allowed_representation_routes": [
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        }
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F06",
+      "response_class": "selected_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F06",
+        "design_slot_id": "U1-S3-EXIT-F06",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-EXIT-F06",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        },
+        "allowed_representation_routes": [
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+            "asset_id": "PHYS-70800F1157C9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+            "asset_id": "PHYS-ECA638594CC9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          }
+        ]
+      },
+      "canonical_seed": {
+        "student_text": "A cart has a 19 N force to the left and a 27 N force to the right. Determine the net force.",
+        "student_html": "<p>A cart has a 19 N force to the left and a 27 N force to the right. Determine the net force.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Vector diagram used as a direction and resultant model.\"><p>\\(F_{net}=F_{left}-F_{right}\\)</p><ol class=\"choices\" type=\"A\"><li>8 N left</li><li>46 N with no direction</li><li>8 N right</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "8 N left"
+          },
+          {
+            "id": "B",
+            "text": "46 N with no direction"
+          },
+          {
+            "id": "C",
+            "text": "8 N right"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "8 N left",
+        "solution_text": "Combine the forces with direction. The resultant is 8 N left.",
+        "solution_html": "<p>Combine the forces with direction. The resultant is 8 N left.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          },
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC2",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F07",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-EXIT-F07",
+      "design_slot_id": "U1-S3-EXIT-F07",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F07"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-EXIT-F07",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "asset_id": "PHYS-15C8D0E3F482",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "family_id": "U1-S3-EXIT-F07",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "exit",
+        "formative_secure"
+      ],
+      "allowed_representation_routes": [
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        }
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F07",
+      "response_class": "selected_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F07",
+        "design_slot_id": "U1-S3-EXIT-F07",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-EXIT-F07",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        },
+        "allowed_representation_routes": [
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+            "asset_id": "PHYS-ECA638594CC9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+            "asset_id": "PHYS-70800F1157C9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          }
+        ]
+      },
+      "canonical_seed": {
+        "student_text": "A classmate claims the support-force arrows are interchangeable because they represent the same kind of interaction. Which diagram feature can disprove that claim?",
+        "student_html": "<p>A classmate claims the support-force arrows are interchangeable because they represent the same kind of interaction. Which diagram feature can disprove that claim?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved vector diagram used to identify, compare, or calculate a resultant force.\"><ol class=\"choices\" type=\"A\"><li>A longer force arrow represents a larger force magnitude, while its orientation represents direction.</li><li>Arrow length shows time and direction shows mass.</li><li>Only the labels matter; arrow lengths and directions are decorative.</li><li>Any two equal-length arrows must point in the same direction.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "A longer force arrow represents a larger force magnitude, while its orientation represents direction."
+          },
+          {
+            "id": "B",
+            "text": "Arrow length shows time and direction shows mass."
+          },
+          {
+            "id": "C",
+            "text": "Only the labels matter; arrow lengths and directions are decorative."
+          },
+          {
+            "id": "D",
+            "text": "Any two equal-length arrows must point in the same direction."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "A longer force arrow represents a larger force magnitude, while its orientation represents direction.",
+        "solution_text": "In a vector diagram, relative arrow length communicates relative magnitude and arrow orientation communicates direction.",
+        "solution_html": "<p>In a vector diagram, relative arrow length communicates relative magnitude and arrow orientation communicates direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC3",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    },
+    {
+      "record_id": "U1-S3-EXIT-F08",
+      "record_mode": "family_seed",
+      "destination": "EXIT_TICKET",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-EXIT-F08",
+      "design_slot_id": "U1-S3-EXIT-F08",
+      "wording_profile": "natural_direct",
+      "length_intent": "concise",
+      "security_level": "formative_secure_family",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "tnezki/memories@7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/physics@4f66eca8afba3842d8886a0afae5f14a80697048:banks/unit1_bank_map/exit_map.json#U1-S3-EXIT-F08"
+      ],
+      "authoring_notes": "Exit family seed. A/B/C are controlled secure instances of the same selected four-family blueprint; keep evidence, response demand, and approximate difficulty stable while changing strong stimulus/evidence axes.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-EXIT-F08",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "asset_id": "PHYS-ECA638594CC9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "family_id": "U1-S3-EXIT-F08",
+      "family_type": "secure_exit_family",
+      "difficulty_intent": "short formative-secure evidence; comparable across A/B/C",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "Across secure instances, vary at least one strong evidence-primary axis beyond wording/names/value-only changes."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change",
+        "reuse any exposed finished instructional prompt",
+        "choice-order-only or wording-only secure variation",
+        "version/question-number token used to manufacture uniqueness"
+      ],
+      "representation_variation_rule": "Across A/B/C use fresh secure stimuli. If a supplied diagram is required, rotate only among the exact allowed canonical routes below; do not reuse exposed instructional finished prompts.",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "exit",
+        "formative_secure"
+      ],
+      "allowed_representation_routes": [
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        }
+      ],
+      "section": "1.3",
+      "source_map_record_id": "U1-S3-EXIT-F08",
+      "response_class": "constructed_response",
+      "question_design": {
+        "slot_id": "U1-S3-EXIT-F08",
+        "design_slot_id": "U1-S3-EXIT-F08",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-EXIT-F08",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        },
+        "allowed_representation_routes": [
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+            "asset_id": "PHYS-ECA638594CC9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+            "asset_id": "PHYS-70800F1157C9",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          },
+          {
+            "route_type": "canonical_asset",
+            "repository": "tnezki/physics",
+            "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+            "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+            "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+          }
+        ]
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to rank the shown forces from greatest to least magnitude using arrow length as evidence, then state how each arrow’s orientation communicates direction. Do not use color or label placement as ranking evidence.",
+        "student_html": "<p>Use the supplied vector diagram to rank the shown forces from greatest to least magnitude using arrow length as evidence, then state how each arrow’s orientation communicates direction. Do not use color or label placement as ranking evidence.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved vector diagram used to identify, compare, or calculate a resultant force.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Rank magnitudes by relative arrow length: longer arrows represent larger force magnitudes. Identify direction from each arrow’s orientation. Color and label placement are not vector properties.",
+        "solution_text": "Rank magnitudes by relative arrow length: longer arrows represent larger force magnitudes. Identify direction from each arrow’s orientation. Color and label placement are not vector properties.",
+        "solution_html": "<p>Rank magnitudes by relative arrow length: longer arrows represent larger force magnitudes. Identify direction from each arrow’s orientation. Color and label placement are not vector properties.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "audit_status": "NEEDS AUDIT",
+      "security_freshness_rule": "Canonical secure seed uses a fresh prompt/evidence instance and may not reuse exposed finished instructional prompts, distinctive data sets, or choice-order-only variants. Downstream secure instances must change at least one strong evidence-primary axis allowed by this family.",
+      "selection_metadata": {
+        "pool": "section_exit_family_pool",
+        "pool_size": 8,
+        "ticket_size": 4,
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "selection_tags": [
+          "U1-S3-IC3",
+          "exit",
+          "formative_secure"
+        ],
+        "canonical_seed_role": "secure family seed; not a finished A/B/C ticket"
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS",
+        "security_freshness_check": "PASS",
+        "difficulty_intent_check": "PASS"
+      }
+    }
+  ]
+}

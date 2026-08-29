@@ -2,16 +2,15 @@
   "schema": "bank-v2-manifest/1.0",
   "course": "Physics",
   "unit": 1,
-  "status": "BUILDING",
-  "ready_for_downstream": false,
+  "status": "COMPLETE",
+  "ready_for_downstream": true,
   "completed": [
     "3A_instructional_core",
-    "3B_practice_families"
-  ],
-  "pending": [
+    "3B_practice_families",
     "3C_assessment_families"
   ],
-  "next_phase": "3C_assessment_families",
+  "pending": [],
+  "next_phase": null,
   "profile": {
     "name": "Conceptual Physics Bank v2 Course Profile",
     "schema": "course-bank-v2-profile/1.0",
@@ -40,8 +39,12 @@
     "cyu": 30,
     "warmups": 60,
     "practice_families": 150,
-    "current_bank_total": 285,
-    "stage_3b_total": 150
+    "current_bank_total": 365,
+    "stage_3b_total": 150,
+    "exit_families": 40,
+    "summative_families": 40,
+    "stage_3c_total": 80,
+    "final_bank_total": 365
   },
   "paths": {
     "item_index": "ITEM_INDEX.json",
@@ -53,7 +56,14 @@
     "practice": "practice/section_<section-id>.json",
     "provenance_3b_build": "provenance/3b_build.json",
     "provenance_3b_contract_qa": "provenance/3b_contract_qa.json",
-    "provenance_3b_report": "provenance/3b_report.txt"
+    "provenance_3b_report": "provenance/3b_report.txt",
+    "exit": "exit/section_<section-id>.json",
+    "summative_A": "summative/blueprint_A.json",
+    "summative_B": "summative/blueprint_B.json",
+    "teacher_bank_html": "unit1.html",
+    "provenance_3c_build": "provenance/3c_build.json",
+    "provenance_3c_qa": "provenance/3c_qa.json",
+    "provenance_3c_report": "provenance/3c_report.txt"
   },
   "figure_delivery": "Canonical mapped course assets are referenced in place by exact repository path + pinned asset commit; no duplicate binary copies are included in this 3A snapshot.",
   "qa_status": "PASS",
@@ -68,5 +78,22 @@
     "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
     "repository": "tnezki/memories",
     "pinned_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b"
+  },
+  "stage_3c_pinned_run": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
+    "course_repo": "tnezki/physics",
+    "course_commit": "4f66eca8afba3842d8886a0afae5f14a80697048"
+  },
+  "stage_3c_profiles": {
+    "accepted_map_profile": {
+      "profile_version": "v1.2",
+      "pinned_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
+    },
+    "current_profile": {
+      "profile_version": "v1.3",
+      "pinned_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b"
+    },
+    "compatibility": "PASS — v1.3 explicitly leaves Practice/Exit/Summative contracts unchanged and accepted map identity is unchanged."
   }
 }
