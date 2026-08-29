@@ -1,61 +1,25 @@
 {
-  "schema": "physics-notes-map-handoff/4A.1",
-  "stage": "4A",
-  "downstream_stage": "4B",
+  "schema": "physics-notes-map-handoff/1.1",
   "course": "Physics",
   "unit": 1,
-  "notes_map_version": "4A.1",
-  "map_json_filename": "unit1_notes_map.json",
-  "map_sha256": "b3441d85b997dfb3768f71d8bbfc26bf871a51eba9271e8b6568fade6db80df6",
-  "map_html_filename": "unit1_notes_map.html",
-  "validation_report_filename": "NOTES_MAP_4A_REPORT.txt",
-  "section_count": 5,
-  "section_ids": [
-    "1.1",
-    "1.2",
-    "1.3",
-    "1.4",
-    "1.5"
-  ],
-  "section_titles": [
-    "Thinking Like a Physicist",
-    "Forces and Newton’s First Law",
-    "Net Force and Vectors",
-    "Equilibrium and Balanced Motion",
-    "Modeling Forces in the Real World"
-  ],
-  "i_can_count": 15,
-  "example_count": 20,
-  "your_turn_count": 20,
-  "wtc_count": 5,
-  "bank": {
-    "repo": "tnezki/physics",
-    "commit": "b98a142938d5280a57896b38b87393b2bd04f33f",
-    "authoritative_bank_path": "banks/unit1",
-    "mapping_path": "banks/unit1/unit1_mapping.csv",
-    "stage_3e_handoff_path": "banks/unit1/STAGE_3E_HANDOFF.json"
-  },
-  "framework": {
-    "repo": "tnezki/memories",
-    "commit": "2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341",
-    "relative_paths": [
-      "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
-      "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/section_index.json",
-      "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json"
-    ]
-  },
-  "conditioning_dependencies": [
-    "Curriculum_Philosophy.txt",
-    "frameworks/Physics/FRAMEWORK.txt",
-    "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/notes_course_profile.json",
-    "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/language_reading_tone.json",
-    "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/contracts/notes_visual_contract.json",
-    "pms_build/notes_map/PM.txt"
-  ],
-  "image_toolkit_fingerprint": "physics-notes-image-toolkit-v1|repo=tnezki/memories@2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341|catalog_git_blob_sha1=8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d|version_manifest_git_blob_sha1=f9028f17730383366f54307157597664aed58a1d",
-  "selected_image_count": 29,
-  "generated_representation_need_count": 1,
-  "generated_representation_schema_version": "generated-representation-need/1.0",
+  "status": "PASS",
   "qa_status": "PASS",
-  "status": "PASS"
+  "map_json_filename": "unit1_notes_map.json",
+  "map_html_filename": "unit1_notes_map.html",
+  "validation_report_filename": "NOTES_MAP_REPORT.txt",
+  "source_bank_fingerprint_method": "stage3e-canonical-v1",
+  "source_bank_fingerprint": "stage3e-canonical:48b2669e74d352d4f07f313a24aa6ae0745ded56950d743e4f44e18542f4f7f9",
+  "image_toolkit_fingerprint": "git-blob-sha1:8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d|version:notes_base_2025.12.06",
+  "section_count": 5,
+  "ex_yti_pairs_placed": 20,
+  "images_selected": 8,
+  "stop_discuss_count": 0,
+  "stop_discuss_schema_validation": "PASS",
+  "generated_representation_need_count": 0,
+  "output_filenames": [
+    "unit1_notes_map.json",
+    "unit1_notes_map.html",
+    "NOTES_MAP_REPORT.txt",
+    "NOTES_MAP_HANDOFF.json"
+  ]
 }
