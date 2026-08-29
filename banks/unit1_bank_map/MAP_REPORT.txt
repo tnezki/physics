@@ -1,0 +1,41 @@
+UNIT 1 BANK MAP REPORT
+======================
+Course: Physics / Conceptual Physics
+Unit: 1 — Forces, Motion, and Equilibrium
+Course Bank profile: Conceptual Physics Bank v2 Pilot Profile (course-bank-v2-profile/1.0)
+
+RECORD COUNTS
+-------------
+notes_map.json: 45 exact_content (5 WTC + 40 Example/YTI records)
+practice_map.json: 150 family_seed (30/section)
+cyu_map.json: 30 exact_content (6/section)
+warmup_map.json: 60 exact_content (12/section)
+exit_map.json: 40 family_seed (8/section)
+summative_map.json: 40 family_seed (20 Blueprint A + 20 Blueprint B)
+TOTAL: 365 records = 135 exact_content + 230 family_seed
+
+PRACTICE POOLS
+--------------
+1.1 Thinking Like a Physicist: pool mix {'vocabulary_representation': 10, 'conceptual_application': 15, 'quantitative_modeling': 5}; 24-family selected mix {'vocabulary_representation': 8, 'conceptual_application': 12, 'quantitative_modeling': 4}; I-can pool weighting {'U1-S1-IC1': 9, 'U1-S1-IC2': 8, 'U1-S1-IC3': 13}.
+1.2 Forces and Newton’s First Law: pool mix {'vocabulary_representation': 9, 'conceptual_application': 14, 'quantitative_modeling': 7}; 24-family selected mix {'vocabulary_representation': 7, 'conceptual_application': 11, 'quantitative_modeling': 6}; I-can pool weighting {'U1-S2-IC1': 8, 'U1-S2-IC2': 8, 'U1-S2-IC3': 14}.
+1.3 Net Force and Vectors: pool mix {'vocabulary_representation': 8, 'conceptual_application': 14, 'quantitative_modeling': 8}; 24-family selected mix {'vocabulary_representation': 6, 'conceptual_application': 11, 'quantitative_modeling': 7}; I-can pool weighting {'U1-S3-IC1': 7, 'U1-S3-IC2': 12, 'U1-S3-IC3': 11}.
+1.4 Equilibrium and Balanced Motion: pool mix {'vocabulary_representation': 8, 'conceptual_application': 15, 'quantitative_modeling': 7}; 24-family selected mix {'vocabulary_representation': 6, 'conceptual_application': 12, 'quantitative_modeling': 6}; I-can pool weighting {'U1-S4-IC1': 8, 'U1-S4-IC2': 8, 'U1-S4-IC3': 14}.
+1.5 Modeling Forces in the Real World: pool mix {'vocabulary_representation': 9, 'conceptual_application': 13, 'quantitative_modeling': 8}; 24-family selected mix {'vocabulary_representation': 7, 'conceptual_application': 10, 'quantitative_modeling': 7}; I-can pool weighting {'U1-S5-IC1': 11, 'U1-S5-IC2': 8, 'U1-S5-IC3': 11}.
+
+DETERMINISTIC SELECTION / BLUEPRINTS
+------------------------------------
+Practice: hard I-can coverage + exact section-specific selected family mix first; stable hash tie-break after constraints; set keys rotate omissions where feasible.
+Exit: 8-family pool -> 4 selected families; all three section I-cans directly represented; at least one representation-bearing and one constructed-response family; A/B/C use fresh secure instances of the same selected family IDs.
+Summative: Blueprint A is fixed to 20 families for V1–V4; Blueprint B is fixed to a separate materially alternate 20 families for V5–V6. Each blueprint directly samples all 15 exact Unit I-cans and contains 16 selected-response + 4 constructed-response families.
+
+QA
+--
+PASS
+- Exact Unit 1 I-can IDs and text validated against the canonical map used for this build.
+- Every family has locked elements, legitimate allowed/required variations, forbidden drift modes, difficulty intent, representation rule, and deterministic selection tags.
+- All question structure IDs are from the resolved current _question_structure authority.
+- Representation-bearing I-cans remain representation-bearing; diagrams/vectors/FBDs are not replaced with decorative or prose-only substitutes.
+- No finished student prompt, final choices, answer, solution, DOK, or Bloom fields are present in the map.
+- Secure Exit/Summative families prohibit exposed-prompt reuse and surface-only secure variation.
+
+Output: unit1_bank_map.zip

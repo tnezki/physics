@@ -1,0 +1,3320 @@
+{
+  "schema": "bank-map-slice/2.0",
+  "course": "Physics",
+  "unit": 1,
+  "destination": "summative",
+  "record_mode": "family_seed",
+  "inventory_contract": {
+    "family_pool_per_unit": 40,
+    "form_size": 20,
+    "selected_response_per_form": 16,
+    "constructed_response_per_form": 4,
+    "forms": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ]
+  },
+  "blueprints": {
+    "A": {
+      "family_ids": [
+        "U1-SUM-A-F01",
+        "U1-SUM-A-F02",
+        "U1-SUM-A-F03",
+        "U1-SUM-A-F04",
+        "U1-SUM-A-F05",
+        "U1-SUM-A-F06",
+        "U1-SUM-A-F07",
+        "U1-SUM-A-F08",
+        "U1-SUM-A-F09",
+        "U1-SUM-A-F10",
+        "U1-SUM-A-F11",
+        "U1-SUM-A-F12",
+        "U1-SUM-A-F13",
+        "U1-SUM-A-F14",
+        "U1-SUM-A-F15",
+        "U1-SUM-A-F16",
+        "U1-SUM-A-F17",
+        "U1-SUM-A-F18",
+        "U1-SUM-A-F19",
+        "U1-SUM-A-F20"
+      ],
+      "family_count": 20,
+      "forms": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "rule": "Exact family IDs fixed at Step 2.5; V1–V4 are controlled secure instances of this same evidence blueprint."
+    },
+    "B": {
+      "family_ids": [
+        "U1-SUM-B-F01",
+        "U1-SUM-B-F02",
+        "U1-SUM-B-F03",
+        "U1-SUM-B-F04",
+        "U1-SUM-B-F05",
+        "U1-SUM-B-F06",
+        "U1-SUM-B-F07",
+        "U1-SUM-B-F08",
+        "U1-SUM-B-F09",
+        "U1-SUM-B-F10",
+        "U1-SUM-B-F11",
+        "U1-SUM-B-F12",
+        "U1-SUM-B-F13",
+        "U1-SUM-B-F14",
+        "U1-SUM-B-F15",
+        "U1-SUM-B-F16",
+        "U1-SUM-B-F17",
+        "U1-SUM-B-F18",
+        "U1-SUM-B-F19",
+        "U1-SUM-B-F20"
+      ],
+      "family_count": 20,
+      "forms": [
+        "V5",
+        "V6"
+      ],
+      "rule": "Exact family IDs fixed at Step 2.5; V5–V6 are controlled secure instances of a materially alternate/makeup blueprint."
+    }
+  },
+  "blueprint_overlap_rule": "No family-ID overlap is used in this Unit 1 map. Blueprint B is materially alternate in family architecture/stimulus route while preserving every exact Unit I-can at least once.",
+  "coverage_rule": "Each blueprint directly samples all 15 exact Unit I-cans; five high-leverage compound I-cans receive a second family in each blueprint.",
+  "security_rule": "No exposed instructional finished prompt reuse. Secure family variants preserve evidence/structure/difficulty while visibly changing a declared semantic stimulus axis.",
+  "answer_position_rule": "For selected-response instances, deterministic answer-position scrambling occurs downstream after content is fixed and independently verified.",
+  "records": [
+    {
+      "record_id": "U1-SUM-A-F01",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish scientific evidence categories in a secure evidence set.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "fresh_evidence_statement_set",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F01",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 1,
+        "primary_i_can_id": "U1-S1-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F02",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Evaluate whether a claim is testable from observable/measurable consequences.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_testability_claim",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F02",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 2,
+        "primary_i_can_id": "U1-S1-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F03",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use evidence and a simple relationship/model to judge support and explain physical meaning.",
+      "question_structure_id": "PHYS-DATA-TREND-MODEL-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_data_plus_model",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F03",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 3,
+        "primary_i_can_id": "U1-S1-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F04",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Apply Newton’s First Law to a novel zero-net-force motion situation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_motion_scenario",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F04",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 4,
+        "primary_i_can_id": "U1-S2-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F05",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish inertia as a property of matter from a force interaction.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_inertia_claim",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F05",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 5,
+        "primary_i_can_id": "U1-S2-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F06",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify the complete force model on one object and distinguish zero net force from no forces.",
+      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_candidate_fbd",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F06",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 6,
+        "primary_i_can_id": "U1-S2-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F07",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use arrow direction/length to verify that a force is represented as a vector.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_vector_representation",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F07",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 7,
+        "primary_i_can_id": "U1-S3-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F08",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine same/opposite-direction forces in a novel physical situation.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_one_dimensional_force_case",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F08",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 8,
+        "primary_i_can_id": "U1-S3-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F09",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine the resultant from a fresh vector diagram and interpret direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_scaled_vector_diagram",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F09",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 9,
+        "primary_i_can_id": "U1-S3-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F10",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify static versus dynamic equilibrium from force/motion evidence.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_equilibrium_cases",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F10",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 10,
+        "primary_i_can_id": "U1-S4-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F11",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain why a resting object can have forces acting on it.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_resting_object_claim",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F11",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 11,
+        "primary_i_can_id": "U1-S4-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F12",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the equilibrium rule to infer a missing force and connect it to constant straight-line motion.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_equilibrium_force_case",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F12",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 12,
+        "primary_i_can_id": "U1-S4-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F13",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Select or complete a correct object-focused force diagram for a novel real-world situation.",
+      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_real_world_force_model",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F13",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 13,
+        "primary_i_can_id": "U1-S5-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F14",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use vector evidence to classify balanced/unbalanced cases and compare net force.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_multiple_force_models",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F14",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 14,
+        "primary_i_can_id": "U1-S5-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F15",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Critique and revise a force explanation using net force, motion evidence, and precise vocabulary.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_incorrect_force_explanation",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F15",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 15,
+        "primary_i_can_id": "U1-S5-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F16",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a simple relationship to predict a qualitative change and interpret the physics.",
+      "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_relationship_change",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F16",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 16,
+        "primary_i_can_id": "U1-S1-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F17",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Infer a missing force under a zero-net-force condition in a novel situation.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_balanced_force_missing",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F17",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 17,
+        "primary_i_can_id": "U1-S2-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F18",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a resultant vector to predict motion change without conflating force with velocity.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_resultant_motion_change",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F18",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 18,
+        "primary_i_can_id": "U1-S3-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F19",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Predict how motion changes when a previously balanced interaction changes.",
+      "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_equilibrium_break",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F19",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 19,
+        "primary_i_can_id": "U1-S4-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-A-F20",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Predict motion change from a fresh real-world force model.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_real_world_force_prediction",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint A family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-A-F20",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "A",
+        "blueprint_position": 20,
+        "primary_i_can_id": "U1-S5-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F01",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Critique labels in a secure observation/inference/evidence representation.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_observation_table",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F01",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 1,
+        "primary_i_can_id": "U1-S1-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F02",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine which measurement/evidence plan would actually test a novel claim.",
+      "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_claim_measurement_plan",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F02",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 2,
+        "primary_i_can_id": "U1-S1-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F03",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_relationship_evidence_set",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F03",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 3,
+        "primary_i_can_id": "U1-S1-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F04",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether a motion representation is consistent with a zero-net-force condition.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_motion_plus_force_condition",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F04",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 4,
+        "primary_i_can_id": "U1-S2-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F05",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use comparative inertia reasoning without treating inertia as a force.",
+      "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_mass_inertia_comparison",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F05",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 5,
+        "primary_i_can_id": "U1-S2-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": false
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F06",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_two_force_models",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F06",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 6,
+        "primary_i_can_id": "U1-S2-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F07",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify or correct vector arrows whose length/direction do not match the force description.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_vector_arrow_set",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F07",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 7,
+        "primary_i_can_id": "U1-S3-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F08",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Work backward from a resultant to a missing force in a novel one-dimensional situation.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_missing_force_case",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F08",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 8,
+        "primary_i_can_id": "U1-S3-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F09",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Rank resultants across fresh vector diagrams and justify from arrow evidence.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_multiple_vector_diagrams",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F09",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 9,
+        "primary_i_can_id": "U1-S3-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F10",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify equilibrium type by reconciling motion and force representations.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_motion_fbd_pairs",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F10",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 10,
+        "primary_i_can_id": "U1-S4-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F11",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Choose or complete a real-force model for an object at rest.",
+      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_resting_object_fbd",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F11",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 11,
+        "primary_i_can_id": "U1-S4-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F12",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_constant_velocity_force_model",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F12",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 12,
+        "primary_i_can_id": "U1-S4-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F13",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Critique competing force models for the same isolated object.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_candidate_real_world_fbds",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F13",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 13,
+        "primary_i_can_id": "U1-S5-IC1",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F14",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine net force from a fresh force model and classify balanced/unbalanced.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_force_values_model",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F14",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 14,
+        "primary_i_can_id": "U1-S5-IC2",
+        "response_class": "selected",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F15",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "secure_fbd_motion_explanation",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F15",
+      "family_type": "direct_i_can_evidence",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 15,
+        "primary_i_can_id": "U1-S5-IC3",
+        "response_class": "constructed",
+        "high_leverage_repeat": false,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F16",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Extract evidence from a representation, use a simple relationship, and interpret the result.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_data_relationship",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F16",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 16,
+        "primary_i_can_id": "U1-S1-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F17",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Diagnose a common force-identification misconception in a new context.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_force_identification_claim",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F17",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 17,
+        "primary_i_can_id": "U1-S2-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F18",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Select or correct a resultant representation from fresh vector evidence.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_resultant_diagram",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F18",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 18,
+        "primary_i_can_id": "U1-S3-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F19",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use diagram values to verify equilibrium or identify residual net force.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_two_axis_force_diagram",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F19",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 19,
+        "primary_i_can_id": "U1-S4-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    },
+    {
+      "record_id": "U1-SUM-B-F20",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify which of two force explanations is consistent with the model and motion evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "secure_competing_force_explanations",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "secure_summative",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Blueprint B family. Later Bank stage authors one complete secure seed; downstream forms preserve this family’s evidence architecture while generating only declared secure variations.",
+      "family_id": "U1-SUM-B-F20",
+      "family_type": "high_leverage_repeat",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "intended_reasoning",
+        "approximate_difficulty",
+        "blueprint_assignment",
+        "security_level",
+        "response_class",
+        "representation_job"
+      ],
+      "allowed_variations": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values",
+        "representation_type",
+        "misconception_target",
+        "values_units",
+        "unknown_quantity",
+        "wording_profile"
+      ],
+      "required_variations": [
+        "fresh_secure_stimulus",
+        "fresh_representation_instance"
+      ],
+      "forbidden_variations": [
+        "reuse_exposed_finished_prompt",
+        "reuse_other_blueprint_finished_prompt",
+        "names_objects_only",
+        "wording_profile_only",
+        "choice_order_only",
+        "values_units_only",
+        "version_or_question_number_only",
+        "change_primary_i_can",
+        "change_evidence_job",
+        "change_question_structure",
+        "change_intended_reasoning",
+        "change_approximate_difficulty"
+      ],
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "selection_tags": {
+        "blueprint": "B",
+        "blueprint_position": 20,
+        "primary_i_can_id": "U1-S5-IC3",
+        "response_class": "selected",
+        "high_leverage_repeat": true,
+        "secure": true,
+        "representation_bearing": true
+      }
+    }
+  ]
+}

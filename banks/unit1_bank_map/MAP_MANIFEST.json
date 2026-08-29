@@ -1,0 +1,157 @@
+{
+  "schema": "unit-bank-map-manifest/2.0",
+  "map_version": "2.0",
+  "course": "Physics",
+  "course_title": "Conceptual Physics",
+  "unit": 1,
+  "unit_title": "Forces, Motion, and Equilibrium",
+  "status": "QA_PASS",
+  "pinned_sources": {
+    "system_repo": {
+      "repo": "tnezki/memories",
+      "commit": "a8ab8d33a1c9caef527749f6bf04c0aac87c794b"
+    },
+    "course_repo": {
+      "repo": "tnezki/physics",
+      "commit": "1a608217f61ebb4025e6fb8d3f3c1fbf082b168e",
+      "usage": "Pinned by request; no pre-existing course Bank/map artifact is consumed by Step 2.5 because the selected PM builds a new design map from canonical Framework authorities."
+    },
+    "system_manifest": {
+      "path": "SYSTEM_MANIFEST.json",
+      "blob_sha": "f31808c7fb911b35a26c8de697b18d34fd2bdf7d"
+    },
+    "philosophy": {
+      "path": "Curriculum_Philosophy.txt",
+      "blob_sha": "555f630850cb8f66c52c539a2fe29beecd4ace80",
+      "identity": "Curriculum Philosophy v3.14"
+    },
+    "runtime_contract": {
+      "path": "SYSTEM_RUNTIME_CONTRACT.txt",
+      "blob_sha": "9c50bbe8546e393d50a46b67167b2d064b109455"
+    },
+    "framework_manifest": {
+      "path": "frameworks/Physics/MANIFEST.json",
+      "blob_sha": "0c500f43fd6dc13edc7da5b2332702616cc26e17"
+    },
+    "framework": {
+      "path": "frameworks/Physics/FRAMEWORK.txt",
+      "blob_sha": "525370a99c8797977fd5c93fec87d6391c115103",
+      "identity": "Conceptual Physics Framework v6.8"
+    },
+    "assessment_plan": {
+      "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+      "blob_sha": "5832c58d9552ecb77d86abf15ced7a943b5b283a",
+      "identity": "Original Unit 1 Assessment Plan"
+    },
+    "i_can_index": {
+      "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json",
+      "blob_sha": "c612ce706fd5c0de99619e3316ebd809ddbed6e9",
+      "authority_note": "Derivative retrieval index; original Assessment Plan HTML wins on conflict."
+    },
+    "selected_pm": {
+      "path": "pms_build/bank_map/PM.txt",
+      "blob_sha": "f117ae076a8610879f612d53e925a9d04ce3eb9f",
+      "identity": "Build Bank Map PM v2.0"
+    }
+  },
+  "course_bank_profile": {
+    "name": "Conceptual Physics Bank v2 Pilot Profile",
+    "schema": "course-bank-v2-profile/1.0",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "blob_sha": "5447856b09a0148cacfbf5371d208392d721707c",
+    "status": "CURRENT_FOR_BANK_V2_MAP_PILOT"
+  },
+  "question_structure": {
+    "package": "_question_structure",
+    "version": "1.0",
+    "version_manifest_path": "_question_structure/version_manifest.json",
+    "version_manifest_blob_sha": "b3bb51eac3638e5a9058001860007f9dc8f76db9",
+    "core_path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+    "core_blob_sha": "58549ffc875cbd8de95e3728289d25f1e2ec7c22",
+    "core_sha256": "0b3829b411f32ee4e9e7ad83231020a6538d5444589fc30e89910cbe7eaa4383",
+    "structure_extensions_path": "_question_structure/catalogs/structure_extensions.json",
+    "structure_extensions_blob_sha": "a7f84749d7040c4dd5b1edef597c14bac5b45985",
+    "structure_extensions_sha256": "f195063eefc8c2fce0c5b62ca4dde894c02c6509cdb308832eb8232d32c2dd4b",
+    "variation_axes_path": "_question_structure/catalogs/variation_axes.json",
+    "variation_axes_blob_sha": "6dda44bc7af916dfd3c97acee2f22f3f78ca3a86",
+    "variation_axes_sha256": "e6ad4124389e98a989863443febe7c84bf2ff65b9f7ee45ed3bd0d413b91dc68",
+    "legacy_index_path": "_question_structure/catalogs/legacy_question_structure_index.json",
+    "legacy_index_sha256": "7a62cbadb4340b0bb53095110931c06dfb5f04a3c82be903bd7cd199f36ab37b"
+  },
+  "destinations": [
+    {
+      "path": "notes_map.json",
+      "record_count": 45,
+      "record_modes": {
+        "exact_content": 45
+      },
+      "sha256": "67b7b100de914050f74522f39f63c681482a3c7c2dabb9e08855ef222ba5b516"
+    },
+    {
+      "path": "practice_map.json",
+      "record_count": 150,
+      "record_modes": {
+        "family_seed": 150
+      },
+      "sha256": "ddc08efe4494e60cd5f1e1b27d798790e9c5e035a9328b91a1108a3f27cae779"
+    },
+    {
+      "path": "cyu_map.json",
+      "record_count": 30,
+      "record_modes": {
+        "exact_content": 30
+      },
+      "sha256": "8e375889391d2631c9125a9fb417be0ef85d1716f713ad2596354a766d1cc9c4"
+    },
+    {
+      "path": "warmup_map.json",
+      "record_count": 60,
+      "record_modes": {
+        "exact_content": 60
+      },
+      "sha256": "18f80510907ea8e724dff801ca6f7aebdfa70a710e89443dd9c6f33ea70a9940"
+    },
+    {
+      "path": "exit_map.json",
+      "record_count": 40,
+      "record_modes": {
+        "family_seed": 40
+      },
+      "sha256": "a007b0e40b99945f48a2f80365b384f1c8cec3ada61a883af58f126e5f3ad1f5"
+    },
+    {
+      "path": "summative_map.json",
+      "record_count": 40,
+      "record_modes": {
+        "family_seed": 40
+      },
+      "sha256": "133c24b91705b8cc4dc3c39a2099e6136173599a7f7766ffd3f0c7e496612ad6"
+    }
+  ],
+  "totals": {
+    "record_count": 365,
+    "exact_content": 135,
+    "family_seed": 230
+  },
+  "selection_architecture": {
+    "practice": "30-family section pools; deterministic constrained selection of 24 for each Practice set with section-specific composition targets and omission rotation.",
+    "exit": "8-family section pools; deterministic constrained selection of 4 family IDs; A/B/C are secure instances of the same selected blueprint.",
+    "summative": "40 unit families split into fixed Blueprint A (20; V1–V4) and Blueprint B (20; V5–V6), each with all 15 Unit I-cans and exactly 16 selected-response + 4 constructed-response families."
+  },
+  "qa": {
+    "result": "PASS",
+    "checks": [
+      "all required slices present",
+      "365 unique record IDs",
+      "230 unique family IDs",
+      "all exact I-can IDs/text validated",
+      "all question_structure_id values resolved",
+      "Practice pool/range/selection feasibility validated",
+      "CYU/Warm-Up coverage validated",
+      "Exit secure blueprint feasibility validated",
+      "Summative 20-family blueprints cover all 15 I-cans with 16+4 split",
+      "no finished prompt/choice/answer/solution or DOK/Bloom fields in map records",
+      "secure families forbid exposed finished-prompt reuse and surface-only variation"
+    ]
+  }
+}

@@ -1,0 +1,1940 @@
+{
+  "schema": "bank-map-slice/2.0",
+  "course": "Physics",
+  "unit": 1,
+  "destination": "warmup",
+  "inventory_contract": {
+    "warmups_per_section": 3,
+    "questions_per_warmup": 4,
+    "records_per_section": 12,
+    "record_mode": "exact_content",
+    "slot_pattern": {
+      "Q1": "current/recent Physics retrieval",
+      "Q2": "older/spiraled Physics retrieval",
+      "Q3": "concise conceptual/vocabulary/application retrieval",
+      "Q4": "recurring Physics math/formula skill"
+    }
+  },
+  "records": [
+    {
+      "record_id": "U1-WARMUP-S1-W1-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S1-IC1 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 1,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W1-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S1-IC1, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 1,
+      "slot": "Q2",
+      "slot_job": "unit-start scientific/Physics retrieval fallback"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W1-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S1-IC2.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 1,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W1-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 1,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W2-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S1-IC2 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 2,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W2-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S1-IC2, using a fresh compact situation/representation.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 2,
+      "slot": "Q2",
+      "slot_job": "unit-start scientific/Physics retrieval fallback"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W2-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S1-IC3.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 2,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W2-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 2,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W3-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S1-IC3 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 3,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W3-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S1-IC3, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 3,
+      "slot": "Q2",
+      "slot_job": "unit-start scientific/Physics retrieval fallback"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W3-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S1-IC1.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 3,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S1-W3-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 3,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W1-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S2-IC1 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 1,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W1-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S1-IC1, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 1,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W1-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S2-IC2.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 1,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W1-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 1,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W2-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S2-IC2 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 2,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W2-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S1-IC2, using a fresh compact situation/representation.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 2,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W2-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S2-IC3.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 2,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W2-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 2,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W3-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S2-IC3 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 3,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W3-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S1-IC3, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 3,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W3-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S2-IC1.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 3,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S2-W3-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 3,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W1-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S3-IC1 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 1,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W1-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S2-IC1, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 1,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W1-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S3-IC2.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 1,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W1-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 1,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W2-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S3-IC2 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 2,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W2-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S2-IC2, using a fresh compact situation/representation.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 2,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W2-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S3-IC3.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 2,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W2-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 2,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W3-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S3-IC3 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 3,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W3-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S2-IC3, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 3,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W3-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S3-IC1.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 3,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S3-W3-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 3,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W1-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S4-IC1 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 1,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W1-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S3-IC1, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 1,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W1-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S4-IC2.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 1,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W1-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 1,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W2-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S4-IC2 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 2,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W2-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S3-IC2, using a fresh compact situation/representation.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 2,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W2-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S4-IC3.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 2,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W2-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 2,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W3-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S4-IC3 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 3,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W3-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S3-IC3, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 3,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W3-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S4-IC1.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 3,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S4-W3-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 3,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W1-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S5-IC1 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 1,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W1-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S4-IC1, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 1,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W1-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S5-IC2.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 1,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W1-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 1,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W2-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S5-IC2 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 2,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W2-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S4-IC2, using a fresh compact situation/representation.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 2,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W2-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S5-IC3.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 2,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W2-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 2,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W3-Q1",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve current/recent learning for U1-S5-IC3 using a concise physically meaningful case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "current_section_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Keep the prompt short and immediately accessible at the start of class.",
+      "warmup_number": 3,
+      "slot": "Q1",
+      "slot_job": "current/recent Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W3-Q2",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve prior Physics understanding tied to U1-S4-IC3, using a fresh compact situation/representation.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_scenario_or_representation",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Spiral earlier learning without importing future content. Controlled repetition is acceptable; keep the retrieval target clear.",
+      "warmup_number": 3,
+      "slot": "Q2",
+      "slot_job": "older/spiraled Physics retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W3-Q3",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Retrieve the mapped concept efficiently through recognition, concise application, or misconception diagnosis for U1-S5-IC1.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_or_short_constructed",
+      "representation_mode": "concise_concept_scenario",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Keep this slot compact; it is a retrieval bridge, not a mini-Practice set.",
+      "warmup_number": 3,
+      "slot": "Q3",
+      "slot_job": "concise conceptual/vocabulary/application retrieval"
+    },
+    {
+      "record_id": "U1-WARMUP-S5-W3-Q4",
+      "record_mode": "exact_content",
+      "destination": "warmup",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use a short concrete physical situation that supplies relevant measurements or representation values; apply or interpret a source-supported relationship tied to the mapped I-can.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_or_relationship_constructed",
+      "representation_mode": "concrete_physical_situation_plus_relationship",
+      "representation_need": "Representation is required when the selected structure depends on it; Q4 must use a concrete physical situation rather than naked variables.",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "security_level": "nonsecure_instructional",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "authoring_notes": "Q4 hard rule: no naked variable assignments. Keep the physical situation concise, measurements relevant, and the relationship meaningful to the phenomenon.",
+      "warmup_number": 3,
+      "slot": "Q4",
+      "slot_job": "recurring Physics math/formula skill"
+    }
+  ]
+}
