@@ -1,0 +1,62 @@
+{
+  "schema": "bank-3a-contract-qa/1.0",
+  "tool": "qa_bank_3a_contract",
+  "tool_version": "1.0.0",
+  "status": "FAIL",
+  "course_root": "/Users/troynezki/Documents/GitHub/physics",
+  "unit": 1,
+  "checked": {
+    "mapped_exact_content_records": 135,
+    "authored_3a_records": 135,
+    "wtc": 5,
+    "example": 20,
+    "yti": 20,
+    "cyu": 30,
+    "warmup": 60
+  },
+  "scope_note": "Mechanical contract pass only. This result does not certify physics correctness, semantic evidence alignment, WTC reasoning-move truth, difficulty, or instructional quality.",
+  "findings": [
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-CYU-03",
+      "path": "cyu/section_1.3.json"
+    },
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-CYU-04",
+      "path": "cyu/section_1.3.json"
+    },
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-WU1-Q4",
+      "path": "warmups/section_1.3.json"
+    },
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-WU2-Q1",
+      "path": "warmups/section_1.3.json"
+    },
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-WU2-Q4",
+      "path": "warmups/section_1.3.json"
+    },
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-WU3-Q3",
+      "path": "warmups/section_1.3.json"
+    },
+    {
+      "code": "EQUATION_NOT_RENDERED",
+      "message": "equation_relationship item has no MathJax delimiter in student_html",
+      "item_id": "U1-S3-WU3-Q4",
+      "path": "warmups/section_1.3.json"
+    }
+  ]
+}
