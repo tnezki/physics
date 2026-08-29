@@ -41,6 +41,16 @@ body {
     min-height: 10.6in;
 }
 
+/* ── SUMMATIVE QUESTION FLOW CONTRACT ─────────────────────────
+   Assessment question content flows naturally across physical
+   sheets. Generated assessment HTML uses exactly two intentional
+   logical breaks per form: after the final selected-response item
+   and after the final constructed-response prompt. Do not use
+   .page wrappers to chunk question ranges. */
+.assessment-flow { min-height: 0; }
+.force-page-break-after { break-after: page; page-break-after: always; }
+.assessment-form { break-after: auto; page-break-after: auto; }
+
 /* ── HEADINGS ───────────────────────────────────────────────── */
 h1 { font-size: 18pt; text-align: center; margin: 0 0 6px 0; }
 h2 { font-size: 14pt; margin: 12px 0 6px; border-bottom: 1.5px solid #111; padding-bottom: 3px; }
@@ -51,6 +61,10 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 .topline { display: flex; justify-content: space-between; gap: 20px; margin: 4px 0 8px; }
 .nameblank { border-bottom: 1px solid #111; display: inline-block; width: 2.35in; }
 
+.version-picker { display: flex; align-items: center; justify-content: center; gap: .12in; margin: .12in 0 .08in; font-size: 14pt; }
+.version-label { font-weight: 700; margin-right: .04in; }
+.version-bubble { display: inline-flex; align-items: center; justify-content: center; width: .36in; height: .36in; border: 2px solid #111; border-radius: 50%; font-size: 11.5pt; font-weight: 700; line-height: 1; }
+
 /* ── DIRECTIONS BOX ─────────────────────────────────────────── */
 .directions {
     font-size: 9.2pt;
@@ -60,9 +74,10 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 }
 
 /* ── MULTIPLE CHOICE QUESTIONS ──────────────────────────────── */
-.q { break-inside: avoid; page-break-inside: avoid; margin: 0 0 6px; }
+.q { break-inside: auto; page-break-inside: auto; min-height: 0; margin: 0 0 6px; }
 .qhead { font-weight: bold; }
-.choices { margin: 2px 0 0 20px; display: grid; grid-template-columns: 1fr; gap: 0; }
+.qhead p { margin: 0 0 2px; }
+.choices { margin: 2px 0 0 20px; display: block; }
 .choices div { padding-left: 2px; }
 .small { font-size: 8.5pt; }
 
@@ -89,7 +104,7 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 .fr-section-title { font-weight: 700; text-transform: uppercase; letter-spacing: .3px; margin-bottom: 2px; }
 .fr-section p { margin: 0; }
 .fr-section strong { font-weight: 700; }
-.fr { break-inside: avoid; margin: 7px 0 9px; border-top: 1px solid #aaa; padding-top: 5px; }
+.fr { break-inside: auto; page-break-inside: auto; min-height: 0; margin: 7px 0 9px; border-top: 1px solid #aaa; padding-top: 5px; }
 
 /* ── ANSWER KEY TABLE ───────────────────────────────────────── */
 .keytable { width: 100%; border-collapse: collapse; font-size: 9.2pt; margin: 5px 0 10px; }
