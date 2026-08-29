@@ -1,0 +1,41 @@
+PHYSICS UNIT 1 NOTES BUILD REPORT — STEP 4B / BANK-V2
+====================================================
+STATUS: PASS
+Course: Physics / Conceptual Physics
+Unit: 1 — Forces, Motion, and Equilibrium
+Notes flow revision: bank-v2-textbook-chunks-v1
+
+PINNED BUILD SNAPSHOT
+- memories: tnezki/memories@bdad7ecaccd0e937a7ffaa3a5ed1f216727cf828
+- current course: tnezki/physics@aff62051b7fcf01c0bf3391ac25eae18f8a041c8
+- accepted 4A map course snapshot: tnezki/physics@88721b6cbfb26d852e6a19f67798bcf289d2c31b
+- instructional spine: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
+
+IDENTITY GATES
+- Accepted map schema/revision: PASS
+- Current Bank manifest COMPLETE / ready_for_downstream: PASS
+- All five consumed Bank Notes blob SHAs unchanged from 4A: PASS
+- Toolkit delivery: reference_in_place; no toolkit images copied: PASS
+
+BUILD COUNTS
+- Sections: 5
+- WTC: 5
+- Example/YTI pairs: 20
+- Stop & Discuss: 15
+- Reference notes: 5
+- Mapped source/toolkit images used: 9
+- Generated local representations: 0
+
+ASSEMBLY
+- Exact canonical Bank student task content preserved.
+- Reading follows 4A KEEP/LIGHT_CONDENSE route and source order.
+- Student copies remain answer-free with fixed Notability workspace.
+- Teacher copies preserve the same sequence and include red answer/reasoning support.
+- Production stylesheet order is base.css then notes.css.
+- No Notes Exit Check added.
+
+FINALIZER / STATIC QA
+- fix_notes_layout_contract.py: pending execution at report-generation time; final QA script appends result.
+- fix_notes_layout_contract.py: PASS (10 HTML checked; 5 teacher files received the declared natural-flow repair; visible escaped-whitespace audit PASS)
+- Static package/content QA: PASS
+- Accepted canonical map git blob SHA: 75c00983cc220042768d6dd91d1e9ede49376658
