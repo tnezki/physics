@@ -1,0 +1,211 @@
+{
+  "schema": "canonical-bank-section/2.0",
+  "course": "Physics",
+  "unit": 1,
+  "destination": "cyu",
+  "section": {
+    "id": "1.3",
+    "title": "Net Force and Vectors"
+  },
+  "item_count": 6,
+  "items": [
+    {
+      "item_id": "U1-CYU-S3-01",
+      "record_mode": "exact_content",
+      "destination": "cyu",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use arrow length and direction as vector information.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "short_constructed",
+      "representation_mode": "force_arrows",
+      "security_level": "nonsecure_instructional",
+      "source_map_record_id": "U1-CYU-S3-01",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "cyu_number": 1,
+      "student_text": "Diagram A shows a 4 cm arrow east; Diagram B shows a 2 cm arrow west, using the same scale. Name the two vector features that differ.",
+      "student_html": "<div class=\"bank-item-content\">Diagram A shows a 4 cm arrow east; Diagram B shows a 2 cm arrow west, using the same scale. Name the two vector features that differ.</div>",
+      "answer": "magnitude and direction",
+      "solution_text": "Arrow length represents relative magnitude and arrow orientation represents direction.",
+      "solution_html": "<div class=\"bank-item-content\">Arrow length represents relative magnitude and arrow orientation represents direction.</div>",
+      "figure_refs": []
+    },
+    {
+      "item_id": "U1-CYU-S3-02",
+      "record_mode": "exact_content",
+      "destination": "cyu",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize why force requires both magnitude and direction.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "force_descriptions",
+      "security_level": "nonsecure_instructional",
+      "source_map_record_id": "U1-CYU-S3-02",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "cyu_number": 2,
+      "student_text": "Which description is complete enough to specify a force vector?",
+      "student_html": "<div class=\"bank-item-content\">Which description is complete enough to specify a force vector?</div>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "12 N"
+        },
+        {
+          "id": "B",
+          "text": "to the left"
+        },
+        {
+          "id": "C",
+          "text": "12 N to the left"
+        },
+        {
+          "id": "D",
+          "text": "a strong push"
+        }
+      ],
+      "answer": {
+        "choice_id": "C",
+        "text": "12 N to the left"
+      },
+      "solution_text": "A vector needs both magnitude (12 N) and direction (left).",
+      "solution_html": "<div class=\"bank-item-content\">A vector needs both magnitude (12 N) and direction (left).</div>",
+      "figure_refs": []
+    },
+    {
+      "item_id": "U1-CYU-S3-03",
+      "record_mode": "exact_content",
+      "destination": "cyu",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine same/opposite-direction forces in a physical situation.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "numeric_constructed",
+      "representation_mode": "one_dimensional_forces",
+      "security_level": "nonsecure_instructional",
+      "source_map_record_id": "U1-CYU-S3-03",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "cyu_number": 3,
+      "student_text": "A crate has 36 N right and 14 N left. Find the net force and direction.",
+      "student_html": "<div class=\"bank-item-content\">A crate has 36 N right and 14 N left. Find the net force and direction.</div>",
+      "answer": "22 N right",
+      "solution_text": "36 − 14 = 22 N toward the larger rightward force.",
+      "solution_html": "<div class=\"bank-item-content\">36 − 14 = 22 N toward the larger rightward force.</div>",
+      "figure_refs": []
+    },
+    {
+      "item_id": "U1-CYU-S3-04",
+      "record_mode": "exact_content",
+      "destination": "cyu",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Infer a missing force from a desired resultant.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "numeric_constructed",
+      "representation_mode": "missing_force_case",
+      "security_level": "nonsecure_instructional",
+      "source_map_record_id": "U1-CYU-S3-04",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "cyu_number": 4,
+      "student_text": "A cart has 60 N right. What leftward force produces a net force of 18 N right?",
+      "student_html": "<div class=\"bank-item-content\">A cart has 60 N right. What leftward force produces a net force of 18 N right?</div>",
+      "answer": "42 N left",
+      "solution_text": "18 = 60 − F_left, so F_left = 42 N.",
+      "solution_html": "<div class=\"bank-item-content\">18 = 60 − F_left, so F_left = 42 N.</div>",
+      "figure_refs": []
+    },
+    {
+      "item_id": "U1-CYU-S3-05",
+      "record_mode": "exact_content",
+      "destination": "cyu",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read vectors and determine resultant magnitude/direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "numeric_constructed",
+      "representation_mode": "scaled_vector_diagram",
+      "security_level": "nonsecure_instructional",
+      "source_map_record_id": "U1-CYU-S3-05",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "cyu_number": 5,
+      "student_text": "Scaled diagram: 9 N ← [sled] → 15 N. Determine the resultant.",
+      "student_html": "<div class=\"bank-item-content\">Scaled diagram: 9 N ← [sled] → 15 N. Determine the resultant.</div>",
+      "answer": "6 N right",
+      "solution_text": "Opposite vectors subtract: 15 − 9 = 6 N, toward the larger rightward vector.",
+      "solution_html": "<div class=\"bank-item-content\">Opposite vectors subtract: 15 − 9 = 6 N, toward the larger rightward vector.</div>",
+      "figure_refs": []
+    },
+    {
+      "item_id": "U1-CYU-S3-06",
+      "record_mode": "exact_content",
+      "destination": "cyu",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Check consistency between a vector diagram and resultant statement.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "representation_mode": "vector_diagram_plus_resultant",
+      "security_level": "nonsecure_instructional",
+      "source_map_record_id": "U1-CYU-S3-06",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "cyu_number": 6,
+      "student_text": "Diagram: 7 N ← [cart] → 12 N. Which resultant statement matches the diagram?",
+      "student_html": "<div class=\"bank-item-content\">Diagram: 7 N ← [cart] → 12 N. Which resultant statement matches the diagram?</div>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "19 N right"
+        },
+        {
+          "id": "B",
+          "text": "5 N right"
+        },
+        {
+          "id": "C",
+          "text": "5 N left"
+        },
+        {
+          "id": "D",
+          "text": "0 N"
+        }
+      ],
+      "answer": {
+        "choice_id": "B",
+        "text": "5 N right"
+      },
+      "solution_text": "The opposite vectors subtract to 5 N right.",
+      "solution_html": "<div class=\"bank-item-content\">The opposite vectors subtract to 5 N right.</div>",
+      "figure_refs": []
+    }
+  ]
+}
