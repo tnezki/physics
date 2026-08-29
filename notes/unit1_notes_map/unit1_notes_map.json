@@ -1,0 +1,1842 @@
+{
+  "schema": "physics-notes-map/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "authority_snapshot": {
+    "memories_repo": "tnezki/memories",
+    "memories_commit": "5dcb933a879f3ae248be0fc0439e858bd7a0ae48",
+    "course_repo": "tnezki/physics",
+    "course_commit": "e605ab01620c926a4cb5be5735ba5043b0a4630a",
+    "philosophy_path": "_Curriculum_Philosophy_Portable_Memory_v3_14.txt",
+    "framework_authority_path": "frameworks/2_Framework_Physics",
+    "pm_authority_path": "pms_build/4a_Build_Notes_Map_PM",
+    "framework_transfer_mode": "directory_tree per Control Panel request; governing Framework entries resolved directly from the pinned directory tree"
+  },
+  "source_bank_fingerprint_method": "stage3e-canonical-v1",
+  "source_bank_fingerprint": "stage3e-canonical:48b2669e74d352d4f07f313a24aa6ae0745ded56950d743e4f44e18542f4f7f9",
+  "image_toolkit": {
+    "name": "Physics_Notes_Image_Toolkit",
+    "version": "1.0",
+    "catalog_count": 439,
+    "unit1_catalog_count": 29,
+    "toolkit_fingerprint": "github-blob:d06f6ebc343f51f3037a39f774b64b70105b294f",
+    "canonical_zip_path": "Tools/Physics_Notes_Image_Toolkit.zip",
+    "inspection_catalog_path": "Tools/Physics_Notes_Image_Toolkit_v1_0/IMAGE_CATALOG.json",
+    "fingerprint_note": "Exact Git blob identity of the canonical toolkit ZIP at the pinned memories commit."
+  },
+  "notes_story_contract": {
+    "sequence": "Vocabulary Preview -> canonical WTC navigation anchor -> developed reading/visual story beats -> immediate processing after every substantial beat -> vocabulary definitions -> summary -> common mistakes.",
+    "bank_ownership": "WTC, Example, and You Try It student-facing wording, figures, answer choices, and pair relationships remain Bank-owned and must be preserved exactly in 4B.",
+    "image_ownership": "4A selects and sequences toolkit images; 4B copies selected source images into deployed Notes assets and preserves answer-neutrality.",
+    "reading_voice": "High-school conceptual Physics: direct, concrete before abstract, phenomenon-centered, precise, respectful of student intelligence; images should often drive the surrounding explanation."
+  },
+  "sections": [
+    {
+      "section_id": "1.1",
+      "section_title": "Thinking Like a Physicist",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "i_cans": [
+        {
+          "i_can_id": "U1-S1-IC1",
+          "text": "I can distinguish between an observation, inference, hypothesis, law, and theory."
+        },
+        {
+          "i_can_id": "U1-S1-IC2",
+          "text": "I can explain why a claim must be testable to be scientific."
+        },
+        {
+          "i_can_id": "U1-S1-IC3",
+          "text": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation."
+        }
+      ],
+      "vocabulary_preview": [
+        "observation",
+        "inference",
+        "hypothesis",
+        "scientific law",
+        "scientific theory",
+        "evidence",
+        "model",
+        "testable claim"
+      ],
+      "wtc_anchor": {
+        "bank_id": "U1-S1-WTC-1",
+        "i_can_ids": [
+          "U1-S1-IC3"
+        ],
+        "bank_evidence_job": "navigate a multipart evidence/model task: identify what is observed, interpret the shared data/model, plan an evidence test, and justify which conclusion is supported",
+        "bank_representation_mode": "table_model",
+        "placement": "After Vocabulary Preview and before Story Beat 1.",
+        "instructional_purpose": "Recurring FRQ-navigation preview. Preserve the canonical Bank item exactly; do not treat it as a substitute for current-section reading or Example/YTI coverage."
+      },
+      "story_beats": [
+        {
+          "beat_id": "S1-B1",
+          "concept_title": "Measurement comes before explanation",
+          "i_can_ids": [
+            "U1-S1-IC1",
+            "U1-S1-IC3"
+          ],
+          "reading_goal": "Develop a phenomenon-centered opening around Eratosthenes: separate what was observed/measured from what the geometric model allowed scientists to infer. Use the image to drive the reading rather than decorating it.",
+          "essential_ideas": [
+            "Measurements are records of observable quantities, while inferences are interpretations built from them.",
+            "A scientific model can connect local measurements to a larger system that cannot be measured directly in the same way.",
+            "Evidence becomes powerful when the reasoning chain from observation to inference is explicit."
+          ],
+          "misconceptions": [
+            "Treating an inference as an observation.",
+            "Assuming an explanation is scientific because it sounds plausible.",
+            "Treating a formula as a rule with no physical meaning."
+          ],
+          "vocabulary": [
+            "observation",
+            "inference",
+            "evidence",
+            "model"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-89A1BA54AF31",
+              "toolkit_path": "images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.1; Figure 1.1",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S1-IC1",
+                "U1-S1-IC3"
+              ],
+              "concept_connection": "measurement, model, and inference",
+              "what_students_should_notice": "Eratosthenes measurement diagram showing Syene, Alexandria, Sun rays, verticals, and a 7.1 degree angle.",
+              "why_here": "The historical measurement story gives a concrete before-abstract entry point and lets students identify data versus interpretation.",
+              "processing_destination": "stop_discuss:S1-B1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "stop_discuss",
+            "after_story_beat_id": "S1-B1",
+            "i_can_ids": [
+              "U1-S1-IC1",
+              "U1-S1-IC3"
+            ],
+            "discussion_job": "Use the Eratosthenes model to separate direct evidence from conclusions drawn with the model.",
+            "prompt_skeleton": "From the diagram and story, sort what could be directly observed or measured from what had to be inferred. What reasoning connects the two?",
+            "source_image_ids": [
+              "PHYS-89A1BA54AF31"
+            ],
+            "expected_reasoning_evidence_to_listen_for": [
+              "Students name the shadow/angle/distance information as observations or measurements rather than conclusions.",
+              "Students identify Earth-size reasoning as an inference supported by a model.",
+              "Students articulate a link between measured evidence and the inferred conclusion instead of treating the conclusion as directly observed."
+            ]
+          }
+        },
+        {
+          "beat_id": "S1-B2",
+          "concept_title": "Observation, inference, hypothesis, law, and theory have different jobs",
+          "i_can_ids": [
+            "U1-S1-IC1"
+          ],
+          "reading_goal": "Build precise distinctions among the five scientific knowledge terms through short contrasting cases, keeping the emphasis on what kind of statement each one is and what evidence role it serves.",
+          "essential_ideas": [
+            "Observation records what is detected.",
+            "Inference interprets observations; hypothesis proposes a testable explanation or prediction.",
+            "Laws describe recurring patterns/relationships, while theories organize evidence into explanatory frameworks."
+          ],
+          "misconceptions": [
+            "Treating an inference as an observation.",
+            "Assuming an explanation is scientific because it sounds plausible.",
+            "Treating a formula as a rule with no physical meaning."
+          ],
+          "vocabulary": [
+            "observation",
+            "inference",
+            "hypothesis",
+            "scientific law",
+            "scientific theory"
+          ],
+          "reading_depth": "developed",
+          "images": [],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S1-IC1"
+            ],
+            "example_bank_id": "U1-S1-EX-1",
+            "yti_bank_id": "U1-S1-YTI-1",
+            "bank_evidence_job": "classify observation versus inference from a compact observation/measurement record",
+            "bank_representation_mode": "table_data",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S1-B3",
+          "concept_title": "Scientific claims have to risk being wrong",
+          "i_can_ids": [
+            "U1-S1-IC2"
+          ],
+          "reading_goal": "Move from plausible-sounding claims to testable claims. Use measurement-centered examples to show that a scientific claim must imply evidence that could support or challenge it.",
+          "essential_ideas": [
+            "Testability depends on possible observations or measurements, not on whether a claim sounds reasonable.",
+            "A useful test specifies what evidence would count for or against a claim.",
+            "Scientific explanations remain answerable to evidence."
+          ],
+          "misconceptions": [
+            "Treating an inference as an observation.",
+            "Assuming an explanation is scientific because it sounds plausible.",
+            "Treating a formula as a rule with no physical meaning."
+          ],
+          "vocabulary": [
+            "testable claim",
+            "evidence",
+            "hypothesis"
+          ],
+          "reading_depth": "developed",
+          "images": [
+            {
+              "image_id": "PHYS-8B222CED52FE",
+              "toolkit_path": "images/unit1/PHYS-8B222CED52FE__u1_1_from_ch_1_4_coin_moon_distance_ratio.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.1; Figure 1.4",
+              "story_role": "experiment_or_measurement",
+              "i_can_ids": [
+                "U1-S1-IC2"
+              ],
+              "concept_connection": "testability through measurable relationships",
+              "what_students_should_notice": "Coin-and-Moon similar-triangle setup connecting a measurable ratio to a model-based distance inference.",
+              "why_here": "The coin/Moon setup makes the idea of a test concrete: observable sizes and distances can check a relationship.",
+              "processing_destination": "ex_yti:U1-S1-EX-2/U1-S1-YTI-2"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S1-IC2"
+            ],
+            "example_bank_id": "U1-S1-EX-2",
+            "yti_bank_id": "U1-S1-YTI-2",
+            "bank_evidence_job": "evaluate testability of a claim and identify what evidence would test it",
+            "bank_representation_mode": "direct_text",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S1-B4",
+          "concept_title": "Evidence can support one explanation more than another",
+          "i_can_ids": [
+            "U1-S1-IC3"
+          ],
+          "reading_goal": "Use the lunar-eclipse model as a visual evidence case: develop how observations constrain explanations without pretending a diagram itself is proof.",
+          "essential_ideas": [
+            "Evidence is relevant when it bears on the claim being evaluated.",
+            "Models help organize evidence and generate predictions or relationships.",
+            "An explanation can be supported, challenged, or remain underdetermined depending on the evidence available."
+          ],
+          "misconceptions": [
+            "Treating an inference as an observation.",
+            "Assuming an explanation is scientific because it sounds plausible.",
+            "Treating a formula as a rule with no physical meaning."
+          ],
+          "vocabulary": [
+            "evidence",
+            "model",
+            "inference"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-E86B1795CA98",
+              "toolkit_path": "images/unit1/PHYS-E86B1795CA98__u1_1_from_ch_1_2_lunar_eclipse_earth_shadow.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.1; Figure 1.2",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S1-IC3"
+              ],
+              "concept_connection": "evidence-model reasoning",
+              "what_students_should_notice": "Lunar-eclipse geometry showing Earth shadow and the taper of the shadow.",
+              "why_here": "The eclipse geometry shows how one observation can be interpreted through a model to compare explanations about relative size.",
+              "processing_destination": "ex_yti:U1-S1-EX-3/U1-S1-YTI-3"
+            },
+            {
+              "image_id": "PHYS-CA9D2E2A037E",
+              "toolkit_path": "images/unit1/PHYS-CA9D2E2A037E__u1_1_from_ch_1_3_sun_earth_moon_scale_diagram.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.1; Figure 1.3",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S1-IC3"
+              ],
+              "concept_connection": "scale as a model constraint",
+              "what_students_should_notice": "Correct-scale solar/lunar eclipse geometry in which relative size and spacing matter to the model.",
+              "why_here": "The correct-scale view reinforces that models have constraints and that scale can change which explanations are plausible.",
+              "processing_destination": "ex_yti:U1-S1-EX-3/U1-S1-YTI-3"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S1-IC3"
+            ],
+            "example_bank_id": "U1-S1-EX-3",
+            "yti_bank_id": "U1-S1-YTI-3",
+            "bank_evidence_job": "judge whether evidence supports an explanation using a short scenario",
+            "bank_representation_mode": "evidence_set",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S1-B5",
+          "concept_title": "A formula is a relationship before it is a calculation",
+          "i_can_ids": [
+            "U1-S1-IC3"
+          ],
+          "reading_goal": "Close the section by interpreting a physical relationship qualitatively first: identify what each quantity represents, how a ratio encodes the phenomenon, and what a change in one quantity means for another before any arithmetic.",
+          "essential_ideas": [
+            "Symbols stand for measurable features of a physical situation.",
+            "A relationship expresses how quantities are connected; calculation is only one use of that relationship.",
+            "Units, proportional structure, and physical meaning should be interpreted before substituting numbers."
+          ],
+          "misconceptions": [
+            "Treating an inference as an observation.",
+            "Assuming an explanation is scientific because it sounds plausible.",
+            "Treating a formula as a rule with no physical meaning."
+          ],
+          "vocabulary": [
+            "model",
+            "evidence"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-5DA25DB5B295",
+              "toolkit_path": "images/unit1/PHYS-5DA25DB5B295__u1_1_from_ch_1_6_sun_diameter_measurement.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.1; Figure 1.6",
+              "story_role": "experiment_or_measurement",
+              "i_can_ids": [
+                "U1-S1-IC3"
+              ],
+              "concept_connection": "physical meaning of a ratio",
+              "what_students_should_notice": "Pinhole image and ratio used to connect a measured image to the Sun diameter/distance relationship.",
+              "why_here": "The pinhole-Sun model makes a ratio physically visible, giving 4B a natural bridge from image to relationship interpretation.",
+              "processing_destination": "ex_yti:U1-S1-EX-4/U1-S1-YTI-4"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S1-IC3"
+            ],
+            "example_bank_id": "U1-S1-EX-4",
+            "yti_bank_id": "U1-S1-YTI-4",
+            "bank_evidence_job": "interpret a supplied simple physical relationship before using it quantitatively",
+            "bank_representation_mode": "equation_relationship",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        }
+      ],
+      "unplaced_ex_yti_check": [],
+      "vocabulary_definitions": [
+        {
+          "term": "observation",
+          "definition_target": "Directly recorded information from senses or measuring tools; the target definition must separate what was detected from what is concluded."
+        },
+        {
+          "term": "inference",
+          "definition_target": "An interpretation or conclusion drawn from observations rather than a directly measured fact."
+        },
+        {
+          "term": "hypothesis",
+          "definition_target": "A proposed explanation or prediction framed so evidence can test it."
+        },
+        {
+          "term": "scientific law",
+          "definition_target": "A concise description of a repeatedly observed pattern or relationship; it describes what happens without serving as a complete explanation of why."
+        },
+        {
+          "term": "scientific theory",
+          "definition_target": "A broad, evidence-supported explanatory framework that connects many observations and tested ideas."
+        },
+        {
+          "term": "evidence",
+          "definition_target": "Relevant observations or measurements used to support, challenge, or compare claims and explanations."
+        },
+        {
+          "term": "model",
+          "definition_target": "A purposeful representation of a system or relationship used to describe, explain, or predict physical behavior."
+        },
+        {
+          "term": "testable claim",
+          "definition_target": "A claim for which possible observations or measurements could count for or against it."
+        }
+      ],
+      "summary_targets": [
+        "Physics begins with observations and measurements, but explanations require careful inference.",
+        "Scientific claims must be testable with possible evidence.",
+        "Laws, theories, hypotheses, observations, and inferences serve different scientific roles.",
+        "Models and formulas represent physical relationships and should be interpreted before they are calculated with.",
+        "Evidence supports some explanations better than others; plausibility alone is not enough."
+      ],
+      "common_mistakes": [
+        "Treating an inference as an observation.",
+        "Assuming an explanation is scientific because it sounds plausible.",
+        "Treating a formula as a rule with no physical meaning."
+      ],
+      "generated_representation_needs": []
+    },
+    {
+      "section_id": "1.2",
+      "section_title": "Forces and Newton’s First Law",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "i_cans": [
+        {
+          "i_can_id": "U1-S2-IC1",
+          "text": "I can state Newton’s First Law in everyday language."
+        },
+        {
+          "i_can_id": "U1-S2-IC2",
+          "text": "I can explain that inertia is a property of matter, not a force."
+        },
+        {
+          "i_can_id": "U1-S2-IC3",
+          "text": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations."
+        }
+      ],
+      "vocabulary_preview": [
+        "force",
+        "inertia",
+        "Newton’s First Law",
+        "net force",
+        "support force",
+        "weight"
+      ],
+      "wtc_anchor": {
+        "bank_id": "U1-S2-WTC-1",
+        "i_can_ids": [
+          "U1-S2-IC3"
+        ],
+        "bank_evidence_job": "navigate a multipart force/motion task: parse the chosen object, read a shared force diagram, identify dependencies, plan the force reasoning, and justify the motion conclusion",
+        "bank_representation_mode": "force_diagram_motion",
+        "placement": "After Vocabulary Preview and before Story Beat 1.",
+        "instructional_purpose": "Recurring FRQ-navigation preview. Preserve the canonical Bank item exactly; do not treat it as a substitute for current-section reading or Example/YTI coverage."
+      },
+      "story_beats": [
+        {
+          "beat_id": "S2-B1",
+          "concept_title": "Objects do not need a forward force to keep moving",
+          "i_can_ids": [
+            "U1-S2-IC1",
+            "U1-S2-IC2"
+          ],
+          "reading_goal": "Open with inertia phenomena and prediction. Let students notice that the object tends to keep its current state while a nearby support/card/tablecloth changes motion, then name the Newton First Law idea after the phenomenon.",
+          "essential_ideas": [
+            "Objects resist changes in velocity rather than “wanting” to stop or move.",
+            "Inertia belongs to matter; it is not a hidden force arrow.",
+            "A change in motion requires a nonzero net force, while unchanged motion does not require a forward net force."
+          ],
+          "misconceptions": [
+            "Calling inertia a force.",
+            "Assuming motion requires a net forward force.",
+            "Confusing no force with zero net force."
+          ],
+          "vocabulary": [
+            "inertia",
+            "Newton’s First Law",
+            "net force"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-EBDB211E5BE1",
+              "toolkit_path": "images/unit1/PHYS-EBDB211E5BE1__u1_2_from_ch_2_4a_inertia_tablecloth_pull.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.2; Figure 2.4",
+              "story_role": "phenomenon_or_example",
+              "i_can_ids": [
+                "U1-S2-IC1",
+                "U1-S2-IC2"
+              ],
+              "concept_connection": "inertia phenomenon",
+              "what_students_should_notice": "A tablecloth is pulled quickly from beneath dishes; the dishes tend to maintain their state of motion.",
+              "why_here": "The tablecloth case makes persistence of motion concrete before formalizing the law.",
+              "processing_destination": "stop_discuss:S2-B1"
+            },
+            {
+              "image_id": "PHYS-B74B7F006560",
+              "toolkit_path": "images/unit1/PHYS-B74B7F006560__u1_2_from_ch_2_4b_inertia_coin_card_glass.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.2; Figure 2.5",
+              "story_role": "phenomenon_or_example",
+              "i_can_ids": [
+                "U1-S2-IC1",
+                "U1-S2-IC2"
+              ],
+              "concept_connection": "inertia comparison",
+              "what_students_should_notice": "A card is accelerated from beneath a coin positioned over a glass.",
+              "why_here": "The coin-card case supplies a second phenomenon so students generalize the principle instead of memorizing one demo.",
+              "processing_destination": "stop_discuss:S2-B1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "stop_discuss",
+            "after_story_beat_id": "S2-B1",
+            "i_can_ids": [
+              "U1-S2-IC1",
+              "U1-S2-IC2"
+            ],
+            "discussion_job": "Use two inertia phenomena to distinguish “keeps its state” reasoning from an invented inertia force.",
+            "prompt_skeleton": "In both images, what changes motion first, what tends to keep its current state, and what would be wrong with drawing an “inertia force” on that object?",
+            "source_image_ids": [
+              "PHYS-EBDB211E5BE1",
+              "PHYS-B74B7F006560"
+            ],
+            "expected_reasoning_evidence_to_listen_for": [
+              "Students describe persistence of rest/motion rather than a force that pushes the object forward.",
+              "Students identify the changed interaction (tablecloth/card) as the cause of a motion change when it occurs.",
+              "Students explicitly state that inertia is a property, not an interaction force."
+            ]
+          }
+        },
+        {
+          "beat_id": "S2-B2",
+          "concept_title": "Newton’s First Law in everyday language",
+          "i_can_ids": [
+            "U1-S2-IC1"
+          ],
+          "reading_goal": "Formalize the law from the opening phenomena and repeatedly connect “zero net force” to “unchanged velocity,” including both rest and constant straight-line motion.",
+          "essential_ideas": [
+            "Zero net force means no change in velocity.",
+            "Rest is one possible unchanged-velocity state.",
+            "Constant straight-line motion is another possible unchanged-velocity state."
+          ],
+          "misconceptions": [
+            "Calling inertia a force.",
+            "Assuming motion requires a net forward force.",
+            "Confusing no force with zero net force."
+          ],
+          "vocabulary": [
+            "Newton’s First Law",
+            "net force"
+          ],
+          "reading_depth": "developed",
+          "images": [],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S2-IC1"
+            ],
+            "example_bank_id": "U1-S2-EX-1",
+            "yti_bank_id": "U1-S2-YTI-1",
+            "bank_evidence_job": "apply Newton First Law to a motion-change prediction",
+            "bank_representation_mode": "motion_description",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S2-B3",
+          "concept_title": "Inertia is a property, not a force",
+          "i_can_ids": [
+            "U1-S2-IC2"
+          ],
+          "reading_goal": "Develop the misconception explicitly using contrasting inertia examples: explain what mass/inertia changes about resistance to acceleration without adding a new force to a force diagram.",
+          "essential_ideas": [
+            "Inertia describes resistance to velocity change.",
+            "Greater mass corresponds to greater inertia in the course-level model.",
+            "Forces come from interactions; inertia does not come from a second object pushing or pulling."
+          ],
+          "misconceptions": [
+            "Calling inertia a force.",
+            "Assuming motion requires a net forward force.",
+            "Confusing no force with zero net force."
+          ],
+          "vocabulary": [
+            "inertia",
+            "force"
+          ],
+          "reading_depth": "developed",
+          "images": [
+            {
+              "image_id": "PHYS-1748C659E939",
+              "toolkit_path": "images/unit1/PHYS-1748C659E939__u1_2_from_ch_2_4c_inertia_ball_between_strings.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.2; Figure 2.5",
+              "story_role": "phenomenon_or_example",
+              "i_can_ids": [
+                "U1-S2-IC2"
+              ],
+              "concept_connection": "inertia without an inertia-force arrow",
+              "what_students_should_notice": "A massive ball hangs between an upper and lower string, providing a contrast case for inertia reasoning.",
+              "why_here": "The hanging-ball case is a useful contrast because the ball’s inertia affects the outcome even though “inertia” is not an interaction force.",
+              "processing_destination": "ex_yti:U1-S2-EX-2/U1-S2-YTI-2"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S2-IC2"
+            ],
+            "example_bank_id": "U1-S2-EX-2",
+            "yti_bank_id": "U1-S2-YTI-2",
+            "bank_evidence_job": "diagnose inertia-as-force reasoning and replace it with property-of-matter reasoning",
+            "bank_representation_mode": "direct_text",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S2-B4",
+          "concept_title": "Support force and weight can act at the same time",
+          "i_can_ids": [
+            "U1-S2-IC3"
+          ],
+          "reading_goal": "Build force identification around one chosen object. Explain weight as gravitational interaction and support force as contact interaction, always asking “force on what, by what?”",
+          "essential_ideas": [
+            "A force diagram belongs to one chosen object or system.",
+            "Weight acts downward near Earth because of gravitational interaction.",
+            "A support force can act upward while weight still acts downward; the forces do not erase each other as individual interactions."
+          ],
+          "misconceptions": [
+            "Calling inertia a force.",
+            "Assuming motion requires a net forward force.",
+            "Confusing no force with zero net force."
+          ],
+          "vocabulary": [
+            "force",
+            "support force",
+            "weight"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-5CA1F965D292",
+              "toolkit_path": "images/unit1/PHYS-5CA1F965D292__u1_2_from_ch_2_15_support_force_book_and_spring.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.2; Figure 2.15",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S2-IC3"
+              ],
+              "concept_connection": "support-force and weight identification",
+              "what_students_should_notice": "A table pushes up on a book and a spring pushes up on a hand; upward and downward interaction forces are visible.",
+              "why_here": "The book/table and hand/spring pair makes the supporting interaction visible and keeps the focus on forces acting on the chosen object.",
+              "processing_destination": "ex_yti:U1-S2-EX-3/U1-S2-YTI-3"
+            },
+            {
+              "image_id": "PHYS-7264DA39607E",
+              "toolkit_path": "images/unit1/PHYS-7264DA39607E__u1_2_from_ch_2_16_man_on_scale_support_force.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.2; Figure 2.16",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S2-IC3"
+              ],
+              "concept_connection": "support force in a familiar scale context",
+              "what_students_should_notice": "A person on a scale with gravitational force downward and support force upward.",
+              "why_here": "The scale example connects support force to a measurable real-world interaction.",
+              "processing_destination": "ex_yti:U1-S2-EX-3/U1-S2-YTI-3"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S2-IC3"
+            ],
+            "example_bank_id": "U1-S2-EX-3",
+            "yti_bank_id": "U1-S2-YTI-3",
+            "bank_evidence_job": "identify support force and weight on one chosen object from a force model",
+            "bank_representation_mode": "force_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S2-B5",
+          "concept_title": "No forces is not the same as zero net force",
+          "i_can_ids": [
+            "U1-S2-IC3"
+          ],
+          "reading_goal": "End by distinguishing the absence of forces from cancellation of nonzero forces. Tie the distinction back to Newton’s First Law and motion descriptions.",
+          "essential_ideas": [
+            "Individual forces can be nonzero while their vector sum is zero.",
+            "Balanced forces can accompany rest or constant straight-line motion.",
+            "Motion alone does not tell how many forces act; the interaction model matters."
+          ],
+          "misconceptions": [
+            "Calling inertia a force.",
+            "Assuming motion requires a net forward force.",
+            "Confusing no force with zero net force."
+          ],
+          "vocabulary": [
+            "net force",
+            "force",
+            "support force",
+            "weight"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-6B7B9CF83824",
+              "toolkit_path": "images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S2-IC3"
+              ],
+              "concept_connection": "balanced nonzero forces on a resting object",
+              "what_students_should_notice": "A book rests on a table while weight and support force act in opposite directions.",
+              "why_here": "The book-table model is a compact visual proof that rest does not imply “no forces.”",
+              "processing_destination": "ex_yti:U1-S2-EX-4/U1-S2-YTI-4"
+            },
+            {
+              "image_id": "PHYS-9C32901B2ABF",
+              "toolkit_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S2-IC3"
+              ],
+              "concept_connection": "balanced forces during motion",
+              "what_students_should_notice": "A box moves at constant speed while a push and friction act in opposite directions.",
+              "why_here": "The constant-speed box extends zero-net-force reasoning beyond rest.",
+              "processing_destination": "ex_yti:U1-S2-EX-4/U1-S2-YTI-4"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S2-IC3"
+            ],
+            "example_bank_id": "U1-S2-EX-4",
+            "yti_bank_id": "U1-S2-YTI-4",
+            "bank_evidence_job": "distinguish no forces from balanced nonzero forces by connecting a diagram to motion",
+            "bank_representation_mode": "force_diagram_motion",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        }
+      ],
+      "unplaced_ex_yti_check": [],
+      "vocabulary_definitions": [
+        {
+          "term": "force",
+          "definition_target": "A push or pull arising from an interaction that can contribute to a change in motion."
+        },
+        {
+          "term": "inertia",
+          "definition_target": "The property of matter that resists changes in velocity; it is not an additional force."
+        },
+        {
+          "term": "Newton’s First Law",
+          "definition_target": "When the net force is zero, an object maintains its velocity: rest stays rest and constant straight-line motion stays constant straight-line motion."
+        },
+        {
+          "term": "net force",
+          "definition_target": "The vector sum of all external forces acting on the chosen object or system."
+        },
+        {
+          "term": "support force",
+          "definition_target": "The contact force a supporting surface exerts on an object, directed away from the surface in simple level-support cases."
+        },
+        {
+          "term": "weight",
+          "definition_target": "The gravitational force exerted on an object by a massive body such as Earth."
+        }
+      ],
+      "summary_targets": [
+        "Newton’s First Law connects zero net force with unchanged velocity, not necessarily with rest.",
+        "Inertia is a property of matter; it does not appear as a force arrow.",
+        "An object can move while the net force is zero.",
+        "A supported object can have weight downward and a support force upward at the same time.",
+        "“No forces” and “balanced forces” are different physical situations even though both can have zero net force."
+      ],
+      "common_mistakes": [
+        "Calling inertia a force.",
+        "Assuming motion requires a net forward force.",
+        "Confusing no force with zero net force."
+      ],
+      "generated_representation_needs": []
+    },
+    {
+      "section_id": "1.3",
+      "section_title": "Net Force and Vectors",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "i_cans": [
+        {
+          "i_can_id": "U1-S3-IC1",
+          "text": "I can explain why force is a vector quantity."
+        },
+        {
+          "i_can_id": "U1-S3-IC2",
+          "text": "I can combine forces acting in the same direction or opposite directions."
+        },
+        {
+          "i_can_id": "U1-S3-IC3",
+          "text": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction."
+        }
+      ],
+      "vocabulary_preview": [
+        "vector",
+        "magnitude",
+        "direction",
+        "resultant",
+        "net force"
+      ],
+      "wtc_anchor": {
+        "bank_id": "U1-S3-WTC-1",
+        "i_can_ids": [
+          "U1-S3-IC3"
+        ],
+        "bank_evidence_job": "navigate a multipart vector task: interpret scaled arrows, plan a resultant method, carry a short analysis, and justify a comparison from the shared vector model",
+        "bank_representation_mode": "vector_diagram",
+        "placement": "After Vocabulary Preview and before Story Beat 1.",
+        "instructional_purpose": "Recurring FRQ-navigation preview. Preserve the canonical Bank item exactly; do not treat it as a substitute for current-section reading or Example/YTI coverage."
+      },
+      "story_beats": [
+        {
+          "beat_id": "S3-B1",
+          "concept_title": "Force arrows encode magnitude and direction",
+          "i_can_ids": [
+            "U1-S3-IC1",
+            "U1-S3-IC3"
+          ],
+          "reading_goal": "Start from actual force-arrow cases. Make students read arrow direction and relative length as information, then develop why a scalar list of force sizes would lose essential physics.",
+          "essential_ideas": [
+            "A force vector needs both magnitude and direction.",
+            "Arrow direction shows force direction; arrow length can show magnitude when a scale or consistent comparison is used.",
+            "Net force depends on how directed forces combine, not on magnitudes alone."
+          ],
+          "misconceptions": [
+            "Adding vector magnitudes without direction.",
+            "Treating arrow length as decorative.",
+            "Reversing resultant direction."
+          ],
+          "vocabulary": [
+            "vector",
+            "magnitude",
+            "direction",
+            "net force"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-5C23E8EEAEA8",
+              "toolkit_path": "images/unit1/PHYS-5C23E8EEAEA8__u1_2_from_ch_2_6_net_force_applied_forces_table.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.3; Figure 2.6",
+              "story_role": "table_or_data",
+              "i_can_ids": [
+                "U1-S3-IC1",
+                "U1-S3-IC3"
+              ],
+              "concept_connection": "vector information in force cases",
+              "what_students_should_notice": "Applied-force cases combine to net forces of 10 N, 0 N, and 5 N.",
+              "why_here": "The applied-force table gives multiple cases in one image so students can compare how direction changes the net result.",
+              "processing_destination": "stop_discuss:S3-B1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "stop_discuss",
+            "after_story_beat_id": "S3-B1",
+            "i_can_ids": [
+              "U1-S3-IC1",
+              "U1-S3-IC3"
+            ],
+            "discussion_job": "Read vector meaning from arrow evidence before calculating.",
+            "prompt_skeleton": "Compare the force-arrow cases. Which visual features carry magnitude information, which carry direction information, and why would a list of force sizes alone be insufficient?",
+            "source_image_ids": [
+              "PHYS-5C23E8EEAEA8"
+            ],
+            "expected_reasoning_evidence_to_listen_for": [
+              "Students cite arrow direction as part of the force quantity.",
+              "Students cite arrow length/labels as magnitude evidence.",
+              "Students explain that opposite directions can cancel, so magnitude-only addition can give the wrong net force."
+            ]
+          }
+        },
+        {
+          "beat_id": "S3-B2",
+          "concept_title": "A force vector is one quantity with two features",
+          "i_can_ids": [
+            "U1-S3-IC1"
+          ],
+          "reading_goal": "Develop vector vocabulary carefully and connect each term to the visual grammar students will use for the rest of the course.",
+          "essential_ideas": [
+            "Magnitude and direction jointly specify a force.",
+            "Changing either arrow length or arrow direction changes the represented force.",
+            "A resultant is also a vector and must be reported with direction."
+          ],
+          "misconceptions": [
+            "Adding vector magnitudes without direction.",
+            "Treating arrow length as decorative.",
+            "Reversing resultant direction."
+          ],
+          "vocabulary": [
+            "vector",
+            "magnitude",
+            "direction",
+            "resultant"
+          ],
+          "reading_depth": "developed",
+          "images": [
+            {
+              "image_id": "PHYS-ECA638594CC9",
+              "toolkit_path": "images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.3; Figure 2.8",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S3-IC1"
+              ],
+              "concept_connection": "resultant as a vector representation",
+              "what_students_should_notice": "Perpendicular vectors form two sides of a rectangle; the diagonal is the resultant.",
+              "why_here": "The rectangle construction shows that the combined effect is itself represented with a directed arrow.",
+              "processing_destination": "ex_yti:U1-S3-EX-1/U1-S3-YTI-1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S3-IC1"
+            ],
+            "example_bank_id": "U1-S3-EX-1",
+            "yti_bank_id": "U1-S3-YTI-1",
+            "bank_evidence_job": "interpret magnitude and direction as inseparable features of a force vector",
+            "bank_representation_mode": "vector_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S3-B3",
+          "concept_title": "Same-direction forces reinforce; opposite-direction forces compete",
+          "i_can_ids": [
+            "U1-S3-IC2"
+          ],
+          "reading_goal": "Build one-dimensional net-force reasoning from physical direction before introducing signed arithmetic. Students should be able to narrate the combination before calculating it.",
+          "essential_ideas": [
+            "Same-direction forces add in the shared direction.",
+            "Opposite-direction forces subtract in magnitude and point toward the larger force.",
+            "Equal opposite forces give zero net force, not “no forces.”"
+          ],
+          "misconceptions": [
+            "Adding vector magnitudes without direction.",
+            "Treating arrow length as decorative.",
+            "Reversing resultant direction."
+          ],
+          "vocabulary": [
+            "net force",
+            "resultant",
+            "direction"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-5C23E8EEAEA8",
+              "toolkit_path": "images/unit1/PHYS-5C23E8EEAEA8__u1_2_from_ch_2_6_net_force_applied_forces_table.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.3; Figure 2.6",
+              "story_role": "table_or_data",
+              "i_can_ids": [
+                "U1-S3-IC2"
+              ],
+              "concept_connection": "same/opposite force combination",
+              "what_students_should_notice": "Applied-force cases combine to net forces of 10 N, 0 N, and 5 N.",
+              "why_here": "The three net-force cases directly support verbal, diagrammatic, and quantitative combination.",
+              "processing_destination": "ex_yti:U1-S3-EX-2/U1-S3-YTI-2"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S3-IC2"
+            ],
+            "example_bank_id": "U1-S3-EX-2",
+            "yti_bank_id": "U1-S3-YTI-2",
+            "bank_evidence_job": "combine same/opposite direction forces to determine signed/directed net force",
+            "bank_representation_mode": "vector_line",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S3-B4",
+          "concept_title": "The resultant summarizes the combined effect",
+          "i_can_ids": [
+            "U1-S3-IC3"
+          ],
+          "reading_goal": "Extend from one-dimensional sums to simple two-dimensional visual resultants. Emphasize reading the geometry and direction of the resultant rather than turning the section into trigonometry instruction.",
+          "essential_ideas": [
+            "A resultant replaces multiple vectors with one equivalent vector.",
+            "Perpendicular components can be combined geometrically as sides of a rectangle.",
+            "The diagonal direction and length encode the combined force."
+          ],
+          "misconceptions": [
+            "Adding vector magnitudes without direction.",
+            "Treating arrow length as decorative.",
+            "Reversing resultant direction."
+          ],
+          "vocabulary": [
+            "resultant",
+            "vector",
+            "magnitude",
+            "direction"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-ECA638594CC9",
+              "toolkit_path": "images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.3; Figure 2.8",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S3-IC3"
+              ],
+              "concept_connection": "geometric resultant",
+              "what_students_should_notice": "Perpendicular vectors form two sides of a rectangle; the diagonal is the resultant.",
+              "why_here": "The rectangle construction lets students see the resultant as a directed combination.",
+              "processing_destination": "ex_yti:U1-S3-EX-3/U1-S3-YTI-3"
+            },
+            {
+              "image_id": "PHYS-F1137C742CAA",
+              "toolkit_path": "images/unit1/PHYS-F1137C742CAA__u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.3; Figure 2.10",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S3-IC3"
+              ],
+              "concept_connection": "scaled resultant magnitude and direction",
+              "what_students_should_notice": "A 30-N and 40-N perpendicular vector pair produces a 50-N resultant.",
+              "why_here": "The 30-40-50 example gives a concrete scaled case after the geometric idea is established.",
+              "processing_destination": "ex_yti:U1-S3-EX-3/U1-S3-YTI-3"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S3-IC3"
+            ],
+            "example_bank_id": "U1-S3-EX-3",
+            "yti_bank_id": "U1-S3-YTI-3",
+            "bank_evidence_job": "read a scaled vector diagram to determine resultant magnitude and direction",
+            "bank_representation_mode": "vector_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S3-B5",
+          "concept_title": "Vector reasoning works backward too",
+          "i_can_ids": [
+            "U1-S3-IC2",
+            "U1-S3-IC3"
+          ],
+          "reading_goal": "Close by treating a known resultant as evidence and reasoning backward to a missing force. Keep direction explicit at every step.",
+          "essential_ideas": [
+            "A target net force constrains the missing force.",
+            "The missing vector must have the magnitude and direction that make the full vector sum match the target.",
+            "Checking the reconstructed arrows against the target resultant is a physics consistency check."
+          ],
+          "misconceptions": [
+            "Adding vector magnitudes without direction.",
+            "Treating arrow length as decorative.",
+            "Reversing resultant direction."
+          ],
+          "vocabulary": [
+            "net force",
+            "resultant",
+            "direction",
+            "magnitude"
+          ],
+          "reading_depth": "developed",
+          "images": [
+            {
+              "image_id": "PHYS-2EC4ABF93A6F",
+              "toolkit_path": "images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.3; Figure 2.9",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S3-IC2",
+                "U1-S3-IC3"
+              ],
+              "concept_connection": "vector-sum constraint",
+              "what_students_should_notice": "Equal perpendicular vectors form a square; the diagonal encodes the resultant.",
+              "why_here": "The square/diagonal relationship reinforces that component vectors are constrained by the resultant geometry.",
+              "processing_destination": "ex_yti:U1-S3-EX-4/U1-S3-YTI-4"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S3-IC2"
+            ],
+            "example_bank_id": "U1-S3-EX-4",
+            "yti_bank_id": "U1-S3-YTI-4",
+            "bank_evidence_job": "reason backward from a target resultant to a missing force",
+            "bank_representation_mode": "vector_line",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        }
+      ],
+      "unplaced_ex_yti_check": [],
+      "vocabulary_definitions": [
+        {
+          "term": "vector",
+          "definition_target": "A quantity represented with both magnitude and direction."
+        },
+        {
+          "term": "magnitude",
+          "definition_target": "The size or amount of a vector quantity, represented by arrow length when a diagram is scaled."
+        },
+        {
+          "term": "direction",
+          "definition_target": "The orientation in which a vector points; direction is part of the quantity, not a decoration."
+        },
+        {
+          "term": "resultant",
+          "definition_target": "A single vector that has the same combined effect as two or more vectors."
+        },
+        {
+          "term": "net force",
+          "definition_target": "The resultant of all forces acting on the chosen object or system."
+        }
+      ],
+      "summary_targets": [
+        "Force is a vector, so both magnitude and direction matter.",
+        "Scaled arrow length represents relative or numerical magnitude.",
+        "Forces in the same direction reinforce; opposite-direction forces partially or completely cancel.",
+        "The resultant/net-force arrow points in the direction of the combined force effect.",
+        "Vector diagrams can be read forward to find a resultant or backward to infer a missing force."
+      ],
+      "common_mistakes": [
+        "Adding vector magnitudes without direction.",
+        "Treating arrow length as decorative.",
+        "Reversing resultant direction."
+      ],
+      "generated_representation_needs": []
+    },
+    {
+      "section_id": "1.4",
+      "section_title": "Equilibrium and Balanced Motion",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "i_cans": [
+        {
+          "i_can_id": "U1-S4-IC1",
+          "text": "I can recognize static equilibrium and dynamic equilibrium."
+        },
+        {
+          "i_can_id": "U1-S4-IC2",
+          "text": "I can explain why an object at rest can still have forces acting on it."
+        },
+        {
+          "i_can_id": "U1-S4-IC3",
+          "text": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces."
+        }
+      ],
+      "vocabulary_preview": [
+        "mechanical equilibrium",
+        "static equilibrium",
+        "dynamic equilibrium",
+        "balanced forces",
+        "constant velocity"
+      ],
+      "wtc_anchor": {
+        "bank_id": "U1-S4-WTC-1",
+        "i_can_ids": [
+          "U1-S4-IC3"
+        ],
+        "bank_evidence_job": "navigate a multipart equilibrium task: extract givens from a shared model, identify a balance relationship, analyze a missing force, and justify the motion state",
+        "bank_representation_mode": "force_diagram_table",
+        "placement": "After Vocabulary Preview and before Story Beat 1.",
+        "instructional_purpose": "Recurring FRQ-navigation preview. Preserve the canonical Bank item exactly; do not treat it as a substitute for current-section reading or Example/YTI coverage."
+      },
+      "story_beats": [
+        {
+          "beat_id": "S4-B1",
+          "concept_title": "Equilibrium is a force condition, not a synonym for rest",
+          "i_can_ids": [
+            "U1-S4-IC1",
+            "U1-S4-IC2",
+            "U1-S4-IC3"
+          ],
+          "reading_goal": "Open with supported systems whose forces visibly remain present. Develop the central condition ΣF=0 and then distinguish the motion states compatible with it.",
+          "essential_ideas": [
+            "Mechanical equilibrium means zero net force.",
+            "Zero net force can occur with nonzero individual forces.",
+            "Both rest and constant straight-line motion can satisfy equilibrium."
+          ],
+          "misconceptions": [
+            "Equating equilibrium with rest only.",
+            "Assuming constant speed always means equilibrium when direction changes.",
+            "Assuming forces disappear at equilibrium."
+          ],
+          "vocabulary": [
+            "mechanical equilibrium",
+            "balanced forces",
+            "constant velocity"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-B6D46ACCB666",
+              "toolkit_path": "images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.4; Figure 2.14",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S4-IC1",
+                "U1-S4-IC2",
+                "U1-S4-IC3"
+              ],
+              "concept_connection": "equilibrium condition",
+              "what_students_should_notice": "A scaffold force diagram shows upward forces balancing downward forces so the vector sum is zero.",
+              "why_here": "The scaffold diagram visibly retains several forces while showing their balanced sum.",
+              "processing_destination": "stop_discuss:S4-B1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "stop_discuss",
+            "after_story_beat_id": "S4-B1",
+            "i_can_ids": [
+              "U1-S4-IC1",
+              "U1-S4-IC2",
+              "U1-S4-IC3"
+            ],
+            "discussion_job": "Distinguish “forces are present” from “net force is zero.”",
+            "prompt_skeleton": "Using the scaffold diagram, identify the evidence that individual forces are present and the separate evidence that the scaffold is in equilibrium. What motion states would still be consistent with that condition?",
+            "source_image_ids": [
+              "PHYS-B6D46ACCB666"
+            ],
+            "expected_reasoning_evidence_to_listen_for": [
+              "Students distinguish individual force arrows from their vector sum.",
+              "Students state that zero net force, not zero individual forces, defines equilibrium.",
+              "Students name rest and constant straight-line motion as compatible with equilibrium."
+            ]
+          }
+        },
+        {
+          "beat_id": "S4-B2",
+          "concept_title": "Static and dynamic equilibrium are two versions of the same rule",
+          "i_can_ids": [
+            "U1-S4-IC1"
+          ],
+          "reading_goal": "Compare a resting supported object with a constant-speed straight-line object. Keep the classification grounded in both force evidence and motion evidence.",
+          "essential_ideas": [
+            "Static equilibrium combines zero net force with rest.",
+            "Dynamic equilibrium combines zero net force with constant velocity.",
+            "The same force condition can describe different motion states."
+          ],
+          "misconceptions": [
+            "Equating equilibrium with rest only.",
+            "Assuming constant speed always means equilibrium when direction changes.",
+            "Assuming forces disappear at equilibrium."
+          ],
+          "vocabulary": [
+            "static equilibrium",
+            "dynamic equilibrium",
+            "mechanical equilibrium",
+            "constant velocity"
+          ],
+          "reading_depth": "developed",
+          "images": [
+            {
+              "image_id": "PHYS-6B7B9CF83824",
+              "toolkit_path": "images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S4-IC1"
+              ],
+              "concept_connection": "static equilibrium case",
+              "what_students_should_notice": "A book rests on a table while weight and support force act in opposite directions.",
+              "why_here": "The resting book gives a clean static-equilibrium comparison.",
+              "processing_destination": "ex_yti:U1-S4-EX-1/U1-S4-YTI-1"
+            },
+            {
+              "image_id": "PHYS-9C32901B2ABF",
+              "toolkit_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S4-IC1"
+              ],
+              "concept_connection": "dynamic equilibrium case",
+              "what_students_should_notice": "A box moves at constant speed while a push and friction act in opposite directions.",
+              "why_here": "The constant-speed box gives a clean dynamic-equilibrium comparison.",
+              "processing_destination": "ex_yti:U1-S4-EX-1/U1-S4-YTI-1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S4-IC1"
+            ],
+            "example_bank_id": "U1-S4-EX-1",
+            "yti_bank_id": "U1-S4-YTI-1",
+            "bank_evidence_job": "classify static versus dynamic equilibrium from motion and force evidence",
+            "bank_representation_mode": "motion_description",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S4-B3",
+          "concept_title": "Rest does not make forces disappear",
+          "i_can_ids": [
+            "U1-S4-IC2"
+          ],
+          "reading_goal": "Confront the common “at rest means no forces” misconception with force models of supported objects and hanging/support situations.",
+          "essential_ideas": [
+            "A resting object can still interact gravitationally and through contact/tension.",
+            "Balanced forces are equal in vector sum, not absent.",
+            "The force model should represent interactions even when acceleration is zero."
+          ],
+          "misconceptions": [
+            "Equating equilibrium with rest only.",
+            "Assuming constant speed always means equilibrium when direction changes.",
+            "Assuming forces disappear at equilibrium."
+          ],
+          "vocabulary": [
+            "balanced forces",
+            "mechanical equilibrium"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-B094215EA3FC",
+              "toolkit_path": "images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.4; Check Point illustration",
+              "story_role": "comparison",
+              "i_can_ids": [
+                "U1-S4-IC2"
+              ],
+              "concept_connection": "supporting forces in a resting system",
+              "what_students_should_notice": "A gymnast hangs from rings in two positions, changing how the supporting forces are shared.",
+              "why_here": "The gymnast comparison makes multiple support interactions visible and prevents the “no motion, no force” shortcut.",
+              "processing_destination": "ex_yti:U1-S4-EX-2/U1-S4-YTI-2"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S4-IC2"
+            ],
+            "example_bank_id": "U1-S4-EX-2",
+            "yti_bank_id": "U1-S4-YTI-2",
+            "bank_evidence_job": "explain why a resting object can have balanced nonzero forces",
+            "bank_representation_mode": "force_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S4-B4",
+          "concept_title": "The equilibrium rule can reveal a missing force",
+          "i_can_ids": [
+            "U1-S4-IC3"
+          ],
+          "reading_goal": "Use ΣF=0 as a physical balance relationship, not an answer machine. Students should first state what must balance and why, then infer the missing force.",
+          "essential_ideas": [
+            "At equilibrium, upward and downward force components balance, as do left and right components.",
+            "A missing force can be inferred because the total vector sum must be zero.",
+            "The calculated or inferred value must be checked against the physical direction needed for balance."
+          ],
+          "misconceptions": [
+            "Equating equilibrium with rest only.",
+            "Assuming constant speed always means equilibrium when direction changes.",
+            "Assuming forces disappear at equilibrium."
+          ],
+          "vocabulary": [
+            "mechanical equilibrium",
+            "balanced forces",
+            "net force"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-052FC46E3600",
+              "toolkit_path": "images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
+              "source_provenance": "Hewitt/source textbook visual; Unit 1 section 1.4; Practicing Physics",
+              "story_role": "experiment_or_measurement",
+              "i_can_ids": [
+                "U1-S4-IC3"
+              ],
+              "concept_connection": "equilibrium as a constraint on support forces",
+              "what_students_should_notice": "Three scaffold positions show different scale readings while the total support must satisfy equilibrium.",
+              "why_here": "The changing scaffold readings create a natural need to reason about how support is redistributed while equilibrium remains.",
+              "processing_destination": "ex_yti:U1-S4-EX-3/U1-S4-YTI-3"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S4-IC3"
+            ],
+            "example_bank_id": "U1-S4-EX-3",
+            "yti_bank_id": "U1-S4-YTI-3",
+            "bank_evidence_job": "use Sigma F=0 to infer a missing balancing force and interpret unchanged motion",
+            "bank_representation_mode": "force_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S4-B5",
+          "concept_title": "Constant-speed straight-line motion can still be equilibrium",
+          "i_can_ids": [
+            "U1-S4-IC3"
+          ],
+          "reading_goal": "Close by testing consistency among a motion description, a force diagram, and the equilibrium rule. Explicitly separate constant speed in a straight line from constant speed while turning.",
+          "essential_ideas": [
+            "Constant velocity requires both constant speed and constant direction.",
+            "A constant-speed straight-line object can have zero net force.",
+            "A change in direction would mean velocity changes and therefore would not be the same equilibrium case."
+          ],
+          "misconceptions": [
+            "Equating equilibrium with rest only.",
+            "Assuming constant speed always means equilibrium when direction changes.",
+            "Assuming forces disappear at equilibrium."
+          ],
+          "vocabulary": [
+            "dynamic equilibrium",
+            "constant velocity",
+            "balanced forces"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-9C32901B2ABF",
+              "toolkit_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S4-IC3"
+              ],
+              "concept_connection": "constant-speed straight-line equilibrium",
+              "what_students_should_notice": "A box moves at constant speed while a push and friction act in opposite directions.",
+              "why_here": "The moving box ties the equilibrium rule to motion instead of rest.",
+              "processing_destination": "ex_yti:U1-S4-EX-4/U1-S4-YTI-4"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S4-IC3"
+            ],
+            "example_bank_id": "U1-S4-EX-4",
+            "yti_bank_id": "U1-S4-YTI-4",
+            "bank_evidence_job": "test whether constant-speed straight-line motion is consistent with equilibrium",
+            "bank_representation_mode": "force_diagram_motion",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        }
+      ],
+      "unplaced_ex_yti_check": [],
+      "vocabulary_definitions": [
+        {
+          "term": "mechanical equilibrium",
+          "definition_target": "The condition in which the vector sum of external forces on the chosen object/system is zero."
+        },
+        {
+          "term": "static equilibrium",
+          "definition_target": "Mechanical equilibrium while the object remains at rest."
+        },
+        {
+          "term": "dynamic equilibrium",
+          "definition_target": "Mechanical equilibrium while the object moves with constant velocity."
+        },
+        {
+          "term": "balanced forces",
+          "definition_target": "Forces whose vector sum is zero even though individual forces may be nonzero."
+        },
+        {
+          "term": "constant velocity",
+          "definition_target": "Motion with unchanging speed and unchanging direction; in this unit it is the motion state associated with zero net force."
+        }
+      ],
+      "summary_targets": [
+        "Mechanical equilibrium means the net force is zero.",
+        "Static equilibrium describes balanced forces at rest.",
+        "Dynamic equilibrium describes balanced forces during constant straight-line motion.",
+        "Individual forces do not disappear in equilibrium; they balance as vectors.",
+        "The equilibrium rule can be used to infer missing upward/downward or left/right forces."
+      ],
+      "common_mistakes": [
+        "Equating equilibrium with rest only.",
+        "Assuming constant speed always means equilibrium when direction changes.",
+        "Assuming forces disappear at equilibrium."
+      ],
+      "generated_representation_needs": []
+    },
+    {
+      "section_id": "1.5",
+      "section_title": "Modeling Forces in the Real World",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "i_cans": [
+        {
+          "i_can_id": "U1-S5-IC1",
+          "text": "I can draw a force diagram for an object in a real-world situation."
+        },
+        {
+          "i_can_id": "U1-S5-IC2",
+          "text": "I can decide whether the forces are balanced or unbalanced."
+        },
+        {
+          "i_can_id": "U1-S5-IC3",
+          "text": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary."
+        }
+      ],
+      "vocabulary_preview": [
+        "force model",
+        "system",
+        "interaction",
+        "net force",
+        "equilibrium",
+        "evidence"
+      ],
+      "wtc_anchor": {
+        "bank_id": "U1-S5-WTC-1",
+        "i_can_ids": [
+          "U1-S5-IC3"
+        ],
+        "bank_evidence_job": "navigate a multipart model-critique task: identify the system, inspect a shared flawed model/evidence set, plan a revision, and defend the revised motion explanation",
+        "bank_representation_mode": "flawed_force_diagram_motion",
+        "placement": "After Vocabulary Preview and before Story Beat 1.",
+        "instructional_purpose": "Recurring FRQ-navigation preview. Preserve the canonical Bank item exactly; do not treat it as a substitute for current-section reading or Example/YTI coverage."
+      },
+      "story_beats": [
+        {
+          "beat_id": "S5-B1",
+          "concept_title": "Choose the system before drawing any arrows",
+          "i_can_ids": [
+            "U1-S5-IC1"
+          ],
+          "reading_goal": "Open the synthesis section with a real supported object and make system selection the first modeling move. Explain that force diagrams show interactions acting on the chosen system, not every force in the scene.",
+          "essential_ideas": [
+            "A force model starts by naming the object or system being analyzed.",
+            "Only forces acting on that selected system belong on its force diagram.",
+            "Each force should correspond to a physical interaction with another object or field source."
+          ],
+          "misconceptions": [
+            "Including forces that act on other objects.",
+            "Omitting support or weight.",
+            "Matching a force diagram to the wrong motion description."
+          ],
+          "vocabulary": [
+            "force model",
+            "system",
+            "interaction"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-EAE46BC4363D",
+              "toolkit_path": "images/unit1/PHYS-EAE46BC4363D__unit1-plant-basket-forces.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S5-IC1"
+              ],
+              "concept_connection": "system selection in a multi-interaction scene",
+              "what_students_should_notice": "A plant basket is supported by two angled chains, making the selected system and interaction directions important.",
+              "why_here": "The plant basket has several visible interacting objects, making it ideal for asking which forces act on the basket itself.",
+              "processing_destination": "stop_discuss:S5-B1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "stop_discuss",
+            "after_story_beat_id": "S5-B1",
+            "i_can_ids": [
+              "U1-S5-IC1"
+            ],
+            "discussion_job": "Define the system first and filter interactions to only forces on that system.",
+            "prompt_skeleton": "If the plant basket is the system, which surrounding objects interact with it, and which possible arrows would not belong on the basket’s force diagram?",
+            "source_image_ids": [
+              "PHYS-EAE46BC4363D"
+            ],
+            "expected_reasoning_evidence_to_listen_for": [
+              "Students name the basket as the selected system before listing forces.",
+              "Students identify Earth/gravity and the supporting chains as interactions acting on the basket.",
+              "Students reject forces that act on the chains or ceiling rather than on the basket."
+            ]
+          }
+        },
+        {
+          "beat_id": "S5-B2",
+          "concept_title": "Construct a force model from a real situation",
+          "i_can_ids": [
+            "U1-S5-IC1"
+          ],
+          "reading_goal": "Develop a repeatable modeling routine: select the object, identify interactions, draw one arrow per external force from/at the object, and use direction/relative size consistently without adding motion arrows as forces.",
+          "essential_ideas": [
+            "Force arrows represent interactions on the selected system.",
+            "Arrow direction must match the direction of the force on the system.",
+            "Motion direction is not automatically a force direction."
+          ],
+          "misconceptions": [
+            "Including forces that act on other objects.",
+            "Omitting support or weight.",
+            "Matching a force diagram to the wrong motion description."
+          ],
+          "vocabulary": [
+            "force model",
+            "system",
+            "interaction"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-AA6B41E5091B",
+              "toolkit_path": "images/unit1/PHYS-AA6B41E5091B__unit1-hanging-signs.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "comparison",
+              "i_can_ids": [
+                "U1-S5-IC1"
+              ],
+              "concept_connection": "translating a visible support situation into a force model",
+              "what_students_should_notice": "One hanging sign is supported by one chain and another by two chains.",
+              "why_here": "The two hanging-sign cases create a clean comparison for constructing models from physical interactions.",
+              "processing_destination": "ex_yti:U1-S5-EX-1/U1-S5-YTI-1"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S5-IC1"
+            ],
+            "example_bank_id": "U1-S5-EX-1",
+            "yti_bank_id": "U1-S5-YTI-1",
+            "bank_evidence_job": "construct a force diagram after explicitly defining the modeled object/system",
+            "bank_representation_mode": "student_constructed_force_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S5-B3",
+          "concept_title": "Balanced or unbalanced is a statement about the vector sum",
+          "i_can_ids": [
+            "U1-S5-IC2"
+          ],
+          "reading_goal": "Move from drawing arrows to judging their combined effect. Students should compare magnitudes and directions rather than count arrows.",
+          "essential_ideas": [
+            "Balanced forces have vector sum zero.",
+            "Unbalanced forces have a nonzero resultant.",
+            "Two arrows do not automatically balance; their directions and magnitudes determine the result."
+          ],
+          "misconceptions": [
+            "Including forces that act on other objects.",
+            "Omitting support or weight.",
+            "Matching a force diagram to the wrong motion description."
+          ],
+          "vocabulary": [
+            "net force",
+            "equilibrium",
+            "force model"
+          ],
+          "reading_depth": "developed",
+          "images": [
+            {
+              "image_id": "PHYS-70800F1157C9",
+              "toolkit_path": "images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S5-IC2"
+              ],
+              "concept_connection": "balanced/unbalanced classification from arrows",
+              "what_students_should_notice": "Opposing force arrows on a box support balanced-versus-unbalanced reasoning.",
+              "why_here": "The opposing-force model provides direct visual evidence for comparing magnitudes and directions.",
+              "processing_destination": "ex_yti:U1-S5-EX-2/U1-S5-YTI-2"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S5-IC2"
+            ],
+            "example_bank_id": "U1-S5-EX-2",
+            "yti_bank_id": "U1-S5-YTI-2",
+            "bank_evidence_job": "classify a real-world force model as balanced or unbalanced",
+            "bank_representation_mode": "force_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S5-B4",
+          "concept_title": "Net force connects the model to motion change",
+          "i_can_ids": [
+            "U1-S5-IC3"
+          ],
+          "reading_goal": "Connect the completed force model to motion evidence. Emphasize that net force predicts change in velocity, while zero net force is consistent with unchanged velocity.",
+          "essential_ideas": [
+            "A nonzero net force indicates acceleration: speed and/or direction changes.",
+            "Zero net force is consistent with rest or constant straight-line motion.",
+            "Force-model and motion-description representations must tell the same physical story."
+          ],
+          "misconceptions": [
+            "Including forces that act on other objects.",
+            "Omitting support or weight.",
+            "Matching a force diagram to the wrong motion description."
+          ],
+          "vocabulary": [
+            "net force",
+            "equilibrium",
+            "evidence"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-9C32901B2ABF",
+              "toolkit_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "model_or_diagram",
+              "i_can_ids": [
+                "U1-S5-IC3"
+              ],
+              "concept_connection": "model-motion consistency for zero net force",
+              "what_students_should_notice": "A box moves at constant speed while a push and friction act in opposite directions.",
+              "why_here": "The constant-speed box gives a correct reference case before students critique mismatches.",
+              "processing_destination": "ex_yti:U1-S5-EX-3/U1-S5-YTI-3"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S5-IC3"
+            ],
+            "example_bank_id": "U1-S5-EX-3",
+            "yti_bank_id": "U1-S5-YTI-3",
+            "bank_evidence_job": "connect net-force direction to a motion-change prediction",
+            "bank_representation_mode": "force_diagram_motion",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        },
+        {
+          "beat_id": "S5-B5",
+          "concept_title": "Critique the model when the representations disagree",
+          "i_can_ids": [
+            "U1-S5-IC1",
+            "U1-S5-IC3"
+          ],
+          "reading_goal": "Finish Unit 1 by treating model critique as normal scientific practice. Compare a flawed force diagram with the motion evidence, name the inconsistency using physics vocabulary, and revise the model rather than merely labeling it wrong.",
+          "essential_ideas": [
+            "A force diagram should include the correct external interactions on the selected system.",
+            "The net force implied by the diagram must be consistent with the described motion change.",
+            "A strong critique identifies the exact mismatch and proposes a physically consistent revision."
+          ],
+          "misconceptions": [
+            "Including forces that act on other objects.",
+            "Omitting support or weight.",
+            "Matching a force diagram to the wrong motion description."
+          ],
+          "vocabulary": [
+            "force model",
+            "system",
+            "net force",
+            "equilibrium",
+            "evidence"
+          ],
+          "reading_depth": "substantial",
+          "images": [
+            {
+              "image_id": "PHYS-CE653198C2C5",
+              "toolkit_path": "images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "misconception_or_critique",
+              "i_can_ids": [
+                "U1-S5-IC1",
+                "U1-S5-IC3"
+              ],
+              "concept_connection": "diagnosing a flawed force model",
+              "what_students_should_notice": "A force model for a cart rolling at constant speed contains a flaw to diagnose and revise.",
+              "why_here": "The flawed cart model turns a common misconception into a concrete revision task.",
+              "processing_destination": "ex_yti:U1-S5-EX-4/U1-S5-YTI-4"
+            },
+            {
+              "image_id": "PHYS-DBC68196705B",
+              "toolkit_path": "images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+              "source_provenance": "Approved Unit 1 course figure preserved in Physics Notes Image Toolkit",
+              "story_role": "misconception_or_critique",
+              "i_can_ids": [
+                "U1-S5-IC1",
+                "U1-S5-IC3"
+              ],
+              "concept_connection": "representation consistency critique",
+              "what_students_should_notice": "A constant-speed motion description is paired with an unbalanced force model, creating a representation-consistency conflict.",
+              "why_here": "The mismatch between constant-speed motion and an unbalanced model supports evidence-based critique.",
+              "processing_destination": "ex_yti:U1-S5-EX-4/U1-S5-YTI-4"
+            }
+          ],
+          "processing_anchor": {
+            "type": "ex_yti",
+            "i_can_ids": [
+              "U1-S5-IC1"
+            ],
+            "example_bank_id": "U1-S5-EX-4",
+            "yti_bank_id": "U1-S5-YTI-4",
+            "bank_evidence_job": "critique and revise a flawed force model for one selected object",
+            "bank_representation_mode": "flawed_force_diagram",
+            "placement_rule": "Keep the canonical pair together and preserve Bank wording/figures exactly in 4B."
+          }
+        }
+      ],
+      "unplaced_ex_yti_check": [],
+      "vocabulary_definitions": [
+        {
+          "term": "force model",
+          "definition_target": "A representation of the external forces acting on a clearly selected object or system."
+        },
+        {
+          "term": "system",
+          "definition_target": "The object or collection of objects deliberately chosen for analysis."
+        },
+        {
+          "term": "interaction",
+          "definition_target": "A physical relationship between objects that can produce a force on the selected system."
+        },
+        {
+          "term": "net force",
+          "definition_target": "The vector sum of the external forces in the model."
+        },
+        {
+          "term": "equilibrium",
+          "definition_target": "The state in which the net force on the modeled system is zero."
+        },
+        {
+          "term": "evidence",
+          "definition_target": "Observations, motion information, measurements, or model features used to judge whether a force explanation is consistent."
+        }
+      ],
+      "summary_targets": [
+        "A useful force model begins by naming the object or system being analyzed.",
+        "Only forces acting on the selected system belong on its force diagram.",
+        "Balanced and unbalanced forces are determined by the vector sum, not by the number of arrows.",
+        "A nonzero net force signals a change in velocity; zero net force is consistent with unchanged velocity.",
+        "Force models should agree with motion evidence, and mismatches are reasons to critique and revise the model or explanation."
+      ],
+      "common_mistakes": [
+        "Including forces that act on other objects.",
+        "Omitting support or weight.",
+        "Matching a force diagram to the wrong motion description."
+      ],
+      "generated_representation_needs": [
+        {
+          "need_id": "GRN-U1-S5-01",
+          "story_beat_id": "S5-B2",
+          "i_can_ids": [
+            "U1-S5-IC1"
+          ],
+          "need": "A clean answer-neutral real-world system-selection sketch with one obvious chosen object and visible interacting objects, but no force arrows, labels that name forces, or answer-revealing annotations.",
+          "why_needed": "The toolkit visuals are strong explanatory references, but most already encode force information. A blank modeling scene would let 4B explain the construction routine without revealing the diagram students are supposed to build.",
+          "4b_rule": "Generate only if the canonical Bank Example/YTI does not already supply an appropriate answer-neutral representation. Never replace or alter Bank-owned pair figures."
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "status": "PASS",
+    "checks": {
+      "section_count_pass": true,
+      "wtc_count_pass": true,
+      "all_canonical_ex_yti_pairs_placed_exactly_once_pass": true,
+      "pair_relationships_pass": true,
+      "image_id_format_pass": true,
+      "image_catalog_membership_pass": true,
+      "image_toolkit_path_pass": true,
+      "substantial_beat_processing_pass": true,
+      "stop_discuss_schema_validation_pass": true,
+      "bank_fingerprint_format_pass": true,
+      "unplaced_ex_yti_empty_pass": true
+    },
+    "section_count": 5,
+    "wtc_anchors_mapped": 5,
+    "ex_yti_pairs_placed": 20,
+    "story_beat_count": 25,
+    "substantial_story_beat_count": 17,
+    "stop_discuss_count": 5,
+    "stop_discuss_schema_validation": "PASS",
+    "image_placements": 30,
+    "unique_images_selected": 24,
+    "generated_representation_need_count": 1,
+    "notes_anchor_stage_3e_status": "PASS for all 5 WTC + 20 Example + 20 YTI rows in the pinned unit1_mapping.csv",
+    "image_path_validation_basis": "Every selected ID/path was resolved from the pinned IMAGE_CATALOG.json; the pinned expanded toolkit unit1 image directory was also retrieved to confirm the catalog is materialized.",
+    "student_facing_wording_rewritten": false
+  }
+}

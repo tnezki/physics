@@ -1,0 +1,69 @@
+PHYSICS UNIT 1 NOTES MAP — 4A REPORT
+=====================================
+STATUS: PASS
+
+OUTPUT
+- unit1_notes_map.json
+- unit1_notes_map.html
+- NOTES_MAP_REPORT.txt
+- NOTES_MAP_HANDOFF.json
+
+CANONICAL SNAPSHOT
+- memories: 5dcb933a879f3ae248be0fc0439e858bd7a0ae48
+- physics:  e605ab01620c926a4cb5be5735ba5043b0a4630a
+- Philosophy: _Curriculum_Philosophy_Portable_Memory_v3_14.txt
+- Framework authority: frameworks/2_Framework_Physics (directory-tree mode from Control Panel request)
+- PM authority: pms_build/4a_Build_Notes_Map_PM / v1.3 clean PM
+
+SOURCE BANK
+- source_bank_fingerprint_method: stage3e-canonical-v1
+- source_bank_fingerprint: stage3e-canonical:48b2669e74d352d4f07f313a24aa6ae0745ded56950d743e4f44e18542f4f7f9
+- STAGE_3E_HANDOFF status: PASS
+- Canonical item count: 795
+- Notes/WTC rows used here: all Stage 3E PASS
+
+IMAGE TOOLKIT
+- Canonical authority: Tools/Physics_Notes_Image_Toolkit.zip
+- Version: 1.0
+- Catalog entries: 439 total / 29 Unit 1
+- image_toolkit_fingerprint: github-blob:d06f6ebc343f51f3037a39f774b64b70105b294f
+- Fingerprint basis: exact Git blob identity of canonical toolkit ZIP at pinned memories commit
+- Selected: 24 unique image IDs across 30 placements
+- Selection basis: pinned IMAGE_CATALOG.json; Unit 1 materialized image directory also resolved
+
+MAP COUNTS
+- Sections: 5
+- Story beats: 25
+- Substantial story beats: 17
+- Canonical WTC anchors mapped: 5
+- Canonical Example/YTI pairs placed exactly once: 20
+- Stop & Discuss anchors: 5
+- Generated representation needs: 1
+
+SEQUENCING DESIGN
+Each section uses:
+1. exact Learning Target and I-cans;
+2. vocabulary preview;
+3. canonical WTC navigation anchor;
+4. one image/phenomenon-led substantial reading beat with content-specific Stop & Discuss;
+5. four developed/substantial story beats ending in the four canonical Bank Example/YTI pairs;
+6. vocabulary definition targets immediately before summary;
+7. summary targets and common mistakes.
+
+Bank-owned WTC/Example/YTI wording was not rewritten or duplicated into this planning map. The map records Bank IDs, I-can routing, evidence jobs, and representation modes so 4B can re-resolve canonical student-facing content.
+
+QA
+- all five section targets and all fifteen exact Unit 1 I-cans mapped: PASS
+- five WTC anchors mapped: PASS
+- all twenty canonical Example/YTI pairs placed exactly once: PASS
+- Example/YTI pair relationships preserved: PASS
+- every substantial beat has immediate processing: PASS
+- Stop & Discuss semantic schema: PASS
+- all Stop & Discuss source image IDs match ^PHYS-[A-F0-9]{12}$ and current catalog: PASS
+- all selected image IDs/paths resolve through the pinned Unit 1 toolkit catalog: PASS
+- unplaced_ex_yti_check arrays empty: PASS
+- stable Stage 3E bank fingerprint format: PASS
+- student-facing Bank wording rewritten: NO
+
+DEPLOYMENT
+No deployment performed. This ZIP is a 4A planning artifact for 4B Build Notes.
