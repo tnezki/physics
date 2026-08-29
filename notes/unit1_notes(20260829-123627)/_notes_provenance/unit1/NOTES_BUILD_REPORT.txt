@@ -1,0 +1,53 @@
+Physics Unit 1 Notes Build — Stage 4B
+Status: PASS
+QA Status: PASS
+
+Pinned authorities
+- Memories commit: 23a64698fa411d0a31e0f0fb40d51cc0600cf920
+- Physics course commit: 0f59c3184a62b8feb23a81e82b6d266a61aa5675
+- Textbook repo/commit: tnezki/textbooks @ 647aad6b6c25e74dbd8162d8536782fb5030ae9b
+- Bank identity: stage3e-canonical-v1 / stage3e-canonical:48b2669e74d352d4f07f313a24aa6ae0745ded56950d743e4f44e18542f4f7f9
+- Notes map fingerprint: sha256:eccf3deb089d7e51ebaa3c45b2dcd2d1352841f0a5cadaf45e37c41f25589f78
+- Image toolkit fingerprint: git-blob:8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d
+
+Build results
+- Sections built: 5
+- Student HTML files: 5
+- Teacher HTML files: 5
+- WTC anchors used: 5
+- Canonical EX/YTI pairs used: 20 (40 items)
+- Stop & Discuss moments: 5
+- Mapped source images used: 8
+- Generated representations: 0
+- Textbook blocks: 11 KEEP / 9 CONDENSE / 8 DROP
+- Notes Exit Ticket: none
+- Lesson design target: 30–40 minutes per section (PASS)
+
+Dependency verification
+- Canonical 4A map: PASS
+- Map handoff freshness: PASS
+- Stage 3E Bank fingerprint match: PASS
+- Current target title/LT/I-can reconciliation: PASS
+- Pinned textbook section files: 5/5 verified
+- Mapped course image paths: 8/8 verified
+- Required production CSS: base.css then notes.css (PASS)
+
+Finalization / QA
+- Canonical fix_notes_layout_contract.py: 10/10 HTML files checked; visible escaped-whitespace audit PASS
+- Targeted structural QA: 420 checks / 420 PASS
+- Exact mapped Bank ID order: PASS
+- EX/YTI immediate pairing: PASS
+- Student/teacher source sequence parity: PASS
+- Student answer leakage: PASS
+- Mapped image ID/path parity: PASS
+- Required Notes architecture: PASS
+- Unresolved/forbidden visible tokens: PASS
+- Provenance JSON parse: PASS
+- Exact expanded output file count: 15
+- Output root contract: PASS
+
+Packaging
+- Transfer ZIP: unit1_notes.zip
+- ZIP root contains u1_1_notes/ through u1_5_notes/ plus _notes_provenance/unit1/.
+- No wrapper notes/ directory.
+- No copied Physics Notes Image Toolkit binaries.
