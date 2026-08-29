@@ -1,0 +1,1661 @@
+{
+  "schema_version": "2026-08-29.stage4a-notes-map.v1",
+  "artifact": {
+    "course": "Physics",
+    "unit_id": "unit1",
+    "unit_label": "Unit 1",
+    "unit_title": "Science, Forces, Vectors, and Equilibrium",
+    "stage": "4A",
+    "artifact_type": "canonical_notes_map",
+    "packet_build_allowed": false
+  },
+  "authority": {
+    "framework": "frameworks/Physics/FRAMEWORK.txt",
+    "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+    "bank_handoff": "banks/unit1/STAGE_3E_HANDOFF.json",
+    "bank_content_fingerprint": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61",
+    "notes_image_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+  },
+  "section_order": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4",
+    "1.5"
+  ],
+  "sections": [
+    {
+      "section_id": "1.1",
+      "bank_section_id": "S1",
+      "title": "What is Science?",
+      "i_cans": [
+        {
+          "id": "U1-S1-IC1",
+          "text": "I can distinguish between an observation, inference, hypothesis, law, and theory."
+        },
+        {
+          "id": "U1-S1-IC2",
+          "text": "I can explain why a claim must be testable to be scientific."
+        },
+        {
+          "id": "U1-S1-IC3",
+          "text": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation."
+        }
+      ],
+      "essential_question": "How do physicists turn observations into testable explanations, and what do equations tell us about physical relationships?",
+      "misconceptions": [
+        {
+          "misconception": "An observation and an inference are the same thing.",
+          "repair": "An observation is directly measured or noticed; an inference is an interpretation based on observations."
+        },
+        {
+          "misconception": "Any explanation that sounds reasonable is scientific.",
+          "repair": "A scientific claim must be testable against measurable evidence."
+        },
+        {
+          "misconception": "A physics formula is only a plug-in recipe.",
+          "repair": "An equation represents a relationship among physical quantities and should be interpreted before it is calculated."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "observation",
+          "student_definition": "A direct measurement or description of what is detected."
+        },
+        {
+          "term": "inference",
+          "student_definition": "An interpretation drawn from observations or evidence."
+        },
+        {
+          "term": "hypothesis",
+          "student_definition": "A testable proposed explanation or prediction."
+        },
+        {
+          "term": "scientific law",
+          "student_definition": "A concise description of a repeatedly observed pattern in nature."
+        },
+        {
+          "term": "scientific theory",
+          "student_definition": "A well-supported explanatory framework that connects evidence and tested ideas."
+        },
+        {
+          "term": "testable claim",
+          "student_definition": "A claim that can be checked using observable or measurable evidence."
+        },
+        {
+          "term": "evidence",
+          "student_definition": "Measurements or observations used to evaluate a claim."
+        },
+        {
+          "term": "variable",
+          "student_definition": "A quantity or condition that can change in an investigation."
+        },
+        {
+          "term": "model",
+          "student_definition": "A representation used to describe, explain, or predict a physical system."
+        }
+      ],
+      "core_relationships": [
+        "Observations report what is measured or directly noticed; inferences interpret those observations.",
+        "A scientific claim is useful only when evidence could support or contradict it.",
+        "Average speed = distance / time describes a measurable relationship, not just a calculation procedure."
+      ],
+      "worked_models": [
+        {
+          "id": "U1-S1-CONNECTIVE-MODEL-1",
+          "status": "teacher_authored_connective",
+          "purpose": "Model the Physics thinking sequence without replacing a canonical bank anchor.",
+          "prompt": "A cart travels 9 m in 3 s. What relationship should you use, what does each quantity mean, and what is the average speed?",
+          "thinking_moves": [
+            "unpack",
+            "choose representation",
+            "execute",
+            "check"
+          ],
+          "steps": [
+            "Unpack: identify distance = 9 m and time = 3 s.",
+            "Represent: average speed = distance / time.",
+            "Execute: 9 m / 3 s = 3 m/s.",
+            "Check: the units are distance per time and the value is reasonable for the measurements."
+          ],
+          "result": "3 m/s"
+        }
+      ],
+      "canonical_practice": [
+        {
+          "anchor_id": "U1-S1-WTC-1",
+          "anchor_type": "WTC",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-WTC-1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC3",
+            "dok": 3
+          },
+          "prompt": "A class tests whether changing the release height of a toy car changes the distance it rolls after leaving a ramp. Use the shared data to break down the investigation. (a) List two quantities that were directly measured. (b) State one inference the data support. (c) Identify one variable that should be controlled in a repeat test. (d) Explain whether the claim “greater release height causes greater roll distance” is testable with this setup and what pattern would support it.",
+          "representation": {
+            "type": "data_table",
+            "columns": [
+              "Release height (cm)",
+              "Roll distance (cm)"
+            ],
+            "rows": [
+              [
+                5,
+                42
+              ],
+              [
+                10,
+                71
+              ],
+              [
+                15,
+                96
+              ],
+              [
+                20,
+                124
+              ]
+            ]
+          },
+          "representation_policy": "Preserve the pinned canonical representation exactly; do not redraw, restyle, relabel, or recompute it.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-WTC-1"
+        },
+        {
+          "anchor_id": "U1-S1-EX-1",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-EX-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-EX-1"
+        },
+        {
+          "anchor_id": "U1-S1-EX-2",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-EX-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-EX-2"
+        },
+        {
+          "anchor_id": "U1-S1-EX-3",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-EX-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-EX-3"
+        },
+        {
+          "anchor_id": "U1-S1-EX-4",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-EX-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-EX-4"
+        },
+        {
+          "anchor_id": "U1-S1-YTI-1",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-YTI-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-YTI-1"
+        },
+        {
+          "anchor_id": "U1-S1-YTI-2",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-YTI-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-YTI-2"
+        },
+        {
+          "anchor_id": "U1-S1-YTI-3",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-YTI-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-YTI-3"
+        },
+        {
+          "anchor_id": "U1-S1-YTI-4",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-YTI-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-YTI-4"
+        }
+      ],
+      "formative_checks": [
+        {
+          "anchor_id": "U1-S1-WU1-Q1",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-WU1-Q1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC1"
+          },
+          "prompt": "A sensor reads 12.4 cm. Is that statement an observation or an inference?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-WU1-Q1"
+        },
+        {
+          "anchor_id": "U1-S1-WU1-Q4",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S1-WU1-Q4"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S1-IC3"
+          },
+          "prompt": "A toy car travels 6 m in 3 s. Using average speed = distance/time, find its average speed.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S1-WU1-Q4"
+        }
+      ],
+      "image_references": [
+        {
+          "image_id": "PHYS-89A1BA54AF31",
+          "toolkit_path": "images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
+          "alt_text": "Eratosthenes measurement diagram showing Syene, Alexandria, Sun rays, verticals, and 7.1 degree angle.",
+          "instructional_purpose": "Use as a historical measurement/model example: students identify observations, measured quantities, and the inference supported by geometry.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        }
+      ],
+      "optional_extensions": [
+        "Design a controlled test for a claim about a cart, ramp, or pendulum. Identify the measured variable, changed variable, controls, and evidence pattern that would support the claim."
+      ]
+    },
+    {
+      "section_id": "1.2",
+      "bank_section_id": "S2",
+      "title": "Newton’s First Law and Inertia",
+      "i_cans": [
+        {
+          "id": "U1-S2-IC1",
+          "text": "I can state Newton’s First Law in everyday language."
+        },
+        {
+          "id": "U1-S2-IC2",
+          "text": "I can explain that inertia is a property of matter, not a force."
+        },
+        {
+          "id": "U1-S2-IC3",
+          "text": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations."
+        }
+      ],
+      "essential_question": "How can an object have forces acting on it and still keep the same motion?",
+      "misconceptions": [
+        {
+          "misconception": "An object must have a forward net force to keep moving.",
+          "repair": "Constant velocity requires zero net force, not a continuing forward net force."
+        },
+        {
+          "misconception": "Inertia is a force that keeps an object moving.",
+          "repair": "Inertia is a property of matter: resistance to a change in velocity."
+        },
+        {
+          "misconception": "Zero net force means no forces are acting.",
+          "repair": "Several forces can act and cancel so their vector sum is zero."
+        },
+        {
+          "misconception": "An object at rest has no forces on it.",
+          "repair": "At rest, forces such as weight and support can be equal and opposite."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "Newton’s First Law",
+          "student_definition": "If the net force is zero, an object remains at rest or continues with constant velocity."
+        },
+        {
+          "term": "inertia",
+          "student_definition": "The tendency of matter to resist a change in velocity."
+        },
+        {
+          "term": "force",
+          "student_definition": "A push or pull interaction that can change motion."
+        },
+        {
+          "term": "net force",
+          "student_definition": "The vector sum of all forces acting on the chosen object."
+        },
+        {
+          "term": "weight",
+          "student_definition": "The gravitational force acting on an object."
+        },
+        {
+          "term": "support force",
+          "student_definition": "The contact force a surface exerts on an object, often perpendicular to the surface."
+        },
+        {
+          "term": "constant velocity",
+          "student_definition": "Motion with unchanged speed and direction."
+        },
+        {
+          "term": "balanced forces",
+          "student_definition": "Forces whose vector sum is zero."
+        }
+      ],
+      "core_relationships": [
+        "If the net force is zero, velocity does not change.",
+        "Inertia is a property of matter, not an extra force.",
+        "A support force can balance weight while both forces still act on the object."
+      ],
+      "worked_models": [
+        {
+          "id": "U1-S2-CONNECTIVE-MODEL-1",
+          "status": "teacher_authored_connective",
+          "purpose": "Model the Physics thinking sequence without replacing a canonical bank anchor.",
+          "prompt": "A cart moves right at 2 m/s while 10 N acts right and 10 N acts left. What happens if the forces remain unchanged?",
+          "thinking_moves": [
+            "unpack",
+            "choose representation",
+            "execute",
+            "check"
+          ],
+          "steps": [
+            "Unpack: the cart is already moving right.",
+            "Represent: 10 N right + 10 N left gives 0 N net force.",
+            "Execute: Newton’s First Law says velocity stays unchanged when net force is zero.",
+            "Check: zero net force does not mean zero velocity."
+          ],
+          "result": "The cart continues right at 2 m/s."
+        }
+      ],
+      "canonical_practice": [
+        {
+          "anchor_id": "U1-S2-WTC-1",
+          "anchor_type": "WTC",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-WTC-1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC3",
+            "dok": 3
+          },
+          "prompt": "A cart moves to the right at constant speed while two horizontal forces act on it. Use the diagram to unpack the situation. (a) Identify what the equal arrow lengths tell you. (b) State the net horizontal force. (c) Predict the cart’s motion one second later if the forces stay the same. (d) Explain which part of Newton’s First Law supports your prediction.",
+          "representation": {
+            "type": "force_motion_model",
+            "object": "cart",
+            "motion": "right",
+            "forces": [
+              {
+                "magnitude_N": 8,
+                "direction": "left"
+              },
+              {
+                "magnitude_N": 8,
+                "direction": "right"
+              }
+            ]
+          },
+          "representation_policy": "Preserve the pinned canonical representation exactly; do not redraw, restyle, relabel, or recompute it.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-WTC-1"
+        },
+        {
+          "anchor_id": "U1-S2-EX-1",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-EX-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-EX-1"
+        },
+        {
+          "anchor_id": "U1-S2-EX-2",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-EX-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-EX-2"
+        },
+        {
+          "anchor_id": "U1-S2-EX-3",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-EX-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-EX-3"
+        },
+        {
+          "anchor_id": "U1-S2-EX-4",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-EX-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-EX-4"
+        },
+        {
+          "anchor_id": "U1-S2-YTI-1",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-YTI-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-YTI-1"
+        },
+        {
+          "anchor_id": "U1-S2-YTI-2",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-YTI-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-YTI-2"
+        },
+        {
+          "anchor_id": "U1-S2-YTI-3",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-YTI-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-YTI-3"
+        },
+        {
+          "anchor_id": "U1-S2-YTI-4",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-YTI-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-YTI-4"
+        }
+      ],
+      "formative_checks": [
+        {
+          "anchor_id": "U1-S2-WU1-Q1",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-WU1-Q1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC1"
+          },
+          "prompt": "State Newton’s First Law in everyday language.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-WU1-Q1"
+        },
+        {
+          "anchor_id": "U1-S2-WU1-Q4",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S2-WU1-Q4"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S2-IC3"
+          },
+          "prompt": "An object at rest has a weight of 54 N downward. What support force is needed for equilibrium?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S2-WU1-Q4"
+        }
+      ],
+      "image_references": [
+        {
+          "image_id": "PHYS-9C32901B2ABF",
+          "toolkit_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "alt_text": "Box moving at constant speed with a push and friction | Constant-speed box force diagram",
+          "instructional_purpose": "Use to confront the misconception that continuing motion requires an unbalanced forward force.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        }
+      ],
+      "optional_extensions": [
+        "Explain a seat-belt or sudden-stop scenario using inertia without describing inertia as a force."
+      ]
+    },
+    {
+      "section_id": "1.3",
+      "bank_section_id": "S3",
+      "title": "Force Vectors",
+      "i_cans": [
+        {
+          "id": "U1-S3-IC1",
+          "text": "I can explain why force is a vector quantity."
+        },
+        {
+          "id": "U1-S3-IC2",
+          "text": "I can combine forces acting in the same direction or opposite directions."
+        },
+        {
+          "id": "U1-S3-IC3",
+          "text": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction."
+        }
+      ],
+      "essential_question": "How does a vector diagram encode force strength and direction, and how do we determine the resultant?",
+      "misconceptions": [
+        {
+          "misconception": "Force magnitudes should always be added.",
+          "repair": "Direction matters; opposite directions combine by subtraction."
+        },
+        {
+          "misconception": "Arrow direction matters but arrow length does not.",
+          "repair": "Arrow length represents magnitude when a vector diagram uses a scale or consistent comparison."
+        },
+        {
+          "misconception": "A net force answer is complete without direction.",
+          "repair": "A force result is a vector and needs magnitude and direction."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "vector",
+          "student_definition": "A quantity described by both magnitude and direction."
+        },
+        {
+          "term": "magnitude",
+          "student_definition": "The size or strength of a vector quantity."
+        },
+        {
+          "term": "direction",
+          "student_definition": "The orientation in which a vector points."
+        },
+        {
+          "term": "force vector",
+          "student_definition": "An arrow representing a force’s magnitude and direction."
+        },
+        {
+          "term": "resultant force",
+          "student_definition": "The single force equivalent to the vector sum of the forces."
+        },
+        {
+          "term": "scale",
+          "student_definition": "A rule connecting drawn arrow length to force magnitude."
+        }
+      ],
+      "core_relationships": [
+        "Forces in the same direction add their magnitudes.",
+        "Opposite collinear forces subtract; the resultant points toward the larger force.",
+        "Vector arrow length represents magnitude and arrow orientation represents direction."
+      ],
+      "worked_models": [
+        {
+          "id": "U1-S3-CONNECTIVE-MODEL-1",
+          "status": "teacher_authored_connective",
+          "purpose": "Model the Physics thinking sequence without replacing a canonical bank anchor.",
+          "prompt": "A crate is pulled with 17 N right and 6 N left. Determine the resultant force and explain the direction.",
+          "thinking_moves": [
+            "unpack",
+            "choose representation",
+            "execute",
+            "check"
+          ],
+          "steps": [
+            "Unpack: the forces are collinear and opposite.",
+            "Represent: choose right as positive: +17 N and -6 N.",
+            "Execute: +17 + (-6) = +11 N.",
+            "Check: the result points right because the rightward force is larger."
+          ],
+          "result": "11 N right"
+        }
+      ],
+      "canonical_practice": [
+        {
+          "anchor_id": "U1-S3-WTC-1",
+          "anchor_type": "WTC",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-WTC-1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC3",
+            "dok": 3
+          },
+          "prompt": "Two students pull a wheeled crate in opposite directions. Use the shared vector model. (a) Before calculating, predict the direction of the resultant. (b) Determine the net force. (c) A third student wants the net force to become 0 N without changing the 14 N pull. What magnitude and direction should the other side have? (d) Explain why direction must be included when combining the forces.",
+          "representation": {
+            "type": "opposing_force_vectors",
+            "object": "crate",
+            "forces": [
+              {
+                "magnitude_N": 9,
+                "direction": "left"
+              },
+              {
+                "magnitude_N": 14,
+                "direction": "right"
+              }
+            ]
+          },
+          "representation_policy": "Preserve the pinned canonical representation exactly; do not redraw, restyle, relabel, or recompute it.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-WTC-1"
+        },
+        {
+          "anchor_id": "U1-S3-EX-1",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-EX-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-EX-1"
+        },
+        {
+          "anchor_id": "U1-S3-EX-2",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-EX-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-EX-2"
+        },
+        {
+          "anchor_id": "U1-S3-EX-3",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-EX-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-EX-3"
+        },
+        {
+          "anchor_id": "U1-S3-EX-4",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-EX-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-EX-4"
+        },
+        {
+          "anchor_id": "U1-S3-YTI-1",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-YTI-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-YTI-1"
+        },
+        {
+          "anchor_id": "U1-S3-YTI-2",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-YTI-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-YTI-2"
+        },
+        {
+          "anchor_id": "U1-S3-YTI-3",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-YTI-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-YTI-3"
+        },
+        {
+          "anchor_id": "U1-S3-YTI-4",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-YTI-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-YTI-4"
+        }
+      ],
+      "formative_checks": [
+        {
+          "anchor_id": "U1-S3-WU1-Q1",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-WU1-Q1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC1"
+          },
+          "prompt": "What two pieces of information does a vector carry?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-WU1-Q1"
+        },
+        {
+          "anchor_id": "U1-S3-WU1-Q4",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S3-WU1-Q4"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S3-IC2"
+          },
+          "prompt": "A box has 12 N right and 5 N left. What is the resultant force?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S3-WU1-Q4"
+        }
+      ],
+      "image_references": [
+        {
+          "image_id": "PHYS-70800F1157C9",
+          "toolkit_path": "images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "alt_text": "Opposing forces on a box",
+          "instructional_purpose": "Use as the core visual for reading arrow direction, comparing magnitudes, and finding a resultant.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        }
+      ],
+      "optional_extensions": [
+        "Analyze three collinear force vectors by choosing a sign convention and finding the resultant."
+      ]
+    },
+    {
+      "section_id": "1.4",
+      "bank_section_id": "S4",
+      "title": "Equilibrium",
+      "i_cans": [
+        {
+          "id": "U1-S4-IC1",
+          "text": "I can recognize static equilibrium and dynamic equilibrium."
+        },
+        {
+          "id": "U1-S4-IC2",
+          "text": "I can explain why an object at rest can still have forces acting on it."
+        },
+        {
+          "id": "U1-S4-IC3",
+          "text": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces."
+        }
+      ],
+      "essential_question": "What does equilibrium mean for both forces and motion?",
+      "misconceptions": [
+        {
+          "misconception": "Equilibrium means only that an object is at rest.",
+          "repair": "Equilibrium means zero net force; it can be static or dynamic."
+        },
+        {
+          "misconception": "A moving object cannot be in equilibrium.",
+          "repair": "An object moving with constant velocity can have zero net force."
+        },
+        {
+          "misconception": "At rest means no forces act.",
+          "repair": "Static equilibrium commonly includes nonzero forces that balance."
+        },
+        {
+          "misconception": "Forces only need to balance overall, not by direction.",
+          "repair": "In simple two-dimensional cases, horizontal and vertical components must each sum to zero."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "equilibrium",
+          "student_definition": "A condition in which the net force on an object is zero."
+        },
+        {
+          "term": "static equilibrium",
+          "student_definition": "Zero net force while the object is at rest."
+        },
+        {
+          "term": "dynamic equilibrium",
+          "student_definition": "Zero net force while the object moves with constant velocity."
+        },
+        {
+          "term": "balanced forces",
+          "student_definition": "Forces whose vector sum is zero."
+        },
+        {
+          "term": "net force",
+          "student_definition": "The vector sum of forces acting on the object."
+        },
+        {
+          "term": "constant velocity",
+          "student_definition": "Motion with unchanged speed and direction."
+        }
+      ],
+      "core_relationships": [
+        "Equilibrium rule: sum of forces = 0.",
+        "Static equilibrium: zero net force and rest.",
+        "Dynamic equilibrium: zero net force and constant velocity.",
+        "For simple horizontal/vertical reasoning, forces balance separately along each axis."
+      ],
+      "worked_models": [
+        {
+          "id": "U1-S4-CONNECTIVE-MODEL-1",
+          "status": "teacher_authored_connective",
+          "purpose": "Model the Physics thinking sequence without replacing a canonical bank anchor.",
+          "prompt": "An elevator moves upward at constant speed. Its weight is 540 N downward. What upward cable force is required?",
+          "thinking_moves": [
+            "unpack",
+            "choose representation",
+            "execute",
+            "check"
+          ],
+          "steps": [
+            "Unpack: constant speed in a straight line means constant velocity.",
+            "Represent: dynamic equilibrium requires zero net force.",
+            "Execute: the upward cable force must equal the 540 N weight.",
+            "Check: equal opposite forces give zero net force while motion can continue."
+          ],
+          "result": "540 N upward"
+        }
+      ],
+      "canonical_practice": [
+        {
+          "anchor_id": "U1-S4-WTC-1",
+          "anchor_type": "WTC",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-WTC-1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC3",
+            "dok": 3
+          },
+          "prompt": "A stage light hangs motionless from a vertical cable. Use the force model. (a) Identify the evidence that the light is in static equilibrium. (b) Determine the missing upward force if the light’s weight is 120 N. (c) Predict what would happen immediately if the upward force dropped to 100 N while weight stayed 120 N. (d) Explain how the equilibrium rule connects the force model to the motion prediction.",
+          "representation": {
+            "type": "vertical_force_model",
+            "motion": "at rest",
+            "upward_cable_force_N": "?",
+            "weight_N": 120,
+            "weight_direction": "downward"
+          },
+          "representation_policy": "Preserve the pinned canonical representation exactly; do not redraw, restyle, relabel, or recompute it.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-WTC-1"
+        },
+        {
+          "anchor_id": "U1-S4-EX-1",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-EX-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-EX-1"
+        },
+        {
+          "anchor_id": "U1-S4-EX-2",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-EX-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-EX-2"
+        },
+        {
+          "anchor_id": "U1-S4-EX-3",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-EX-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-EX-3"
+        },
+        {
+          "anchor_id": "U1-S4-EX-4",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-EX-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-EX-4"
+        },
+        {
+          "anchor_id": "U1-S4-YTI-1",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-YTI-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-YTI-1"
+        },
+        {
+          "anchor_id": "U1-S4-YTI-2",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-YTI-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-YTI-2"
+        },
+        {
+          "anchor_id": "U1-S4-YTI-3",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-YTI-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-YTI-3"
+        },
+        {
+          "anchor_id": "U1-S4-YTI-4",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-YTI-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-YTI-4"
+        }
+      ],
+      "formative_checks": [
+        {
+          "anchor_id": "U1-S4-WU1-Q1",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-WU1-Q1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC1"
+          },
+          "prompt": "What is static equilibrium?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-WU1-Q1"
+        },
+        {
+          "anchor_id": "U1-S4-WU1-Q4",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S4-WU1-Q4"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S4-IC3"
+          },
+          "prompt": "A hanging object has a weight of 68 N and is in equilibrium. What is the upward tension?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S4-WU1-Q4"
+        }
+      ],
+      "image_references": [
+        {
+          "image_id": "PHYS-AA6B41E5091B",
+          "toolkit_path": "images/unit1/PHYS-AA6B41E5091B__unit1-hanging-signs.png",
+          "alt_text": "One hanging sign with one chain and one hanging sign with two chains",
+          "instructional_purpose": "Use to compare support arrangements while preserving the equilibrium requirement.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        },
+        {
+          "image_id": "PHYS-EAE46BC4363D",
+          "toolkit_path": "images/unit1/PHYS-EAE46BC4363D__unit1-plant-basket-forces.png",
+          "alt_text": "Plant basket supported by two angled chains",
+          "instructional_purpose": "Optional extension visual for qualitative two-direction equilibrium reasoning.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        }
+      ],
+      "optional_extensions": [
+        "Use a two-axis force situation to explain why horizontal and vertical forces must each balance for equilibrium."
+      ]
+    },
+    {
+      "section_id": "1.5",
+      "bank_section_id": "S5",
+      "title": "Force Diagrams and Net Force",
+      "i_cans": [
+        {
+          "id": "U1-S5-IC1",
+          "text": "I can draw a force diagram for an object in a real-world situation."
+        },
+        {
+          "id": "U1-S5-IC2",
+          "text": "I can decide whether the forces are balanced or unbalanced."
+        },
+        {
+          "id": "U1-S5-IC3",
+          "text": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary."
+        }
+      ],
+      "essential_question": "How do force diagrams help us predict motion changes and catch incorrect force explanations?",
+      "misconceptions": [
+        {
+          "misconception": "A force diagram should include forces the object exerts on other objects.",
+          "repair": "Include only external forces acting on the chosen object/system."
+        },
+        {
+          "misconception": "Moving objects need a separate force of motion.",
+          "repair": "Motion is not a force; draw interactions that act on the object."
+        },
+        {
+          "misconception": "The net force must point in the direction the object is currently moving.",
+          "repair": "Net force points in the direction of acceleration, which can differ from velocity."
+        },
+        {
+          "misconception": "Two opposite arrows always mean balanced forces.",
+          "repair": "Opposite forces balance only if their magnitudes are equal."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "force diagram",
+          "student_definition": "A diagram showing the external forces acting on a chosen object/system."
+        },
+        {
+          "term": "system",
+          "student_definition": "The object or collection of objects selected for analysis."
+        },
+        {
+          "term": "weight",
+          "student_definition": "Gravitational force on the chosen object."
+        },
+        {
+          "term": "support force",
+          "student_definition": "Contact force from a surface on the object."
+        },
+        {
+          "term": "tension",
+          "student_definition": "A pulling force transmitted by a taut rope, cable, or similar connector."
+        },
+        {
+          "term": "friction",
+          "student_definition": "A contact force that opposes relative sliding or attempted sliding."
+        },
+        {
+          "term": "applied force",
+          "student_definition": "A push or pull exerted by an external agent."
+        },
+        {
+          "term": "balanced forces",
+          "student_definition": "Forces whose vector sum is zero."
+        },
+        {
+          "term": "unbalanced forces",
+          "student_definition": "Forces whose vector sum is not zero."
+        },
+        {
+          "term": "acceleration",
+          "student_definition": "A change in velocity caused by nonzero net force."
+        }
+      ],
+      "core_relationships": [
+        "Choose the system before drawing forces.",
+        "Draw only external forces acting on the chosen object.",
+        "If net force is nonzero, velocity changes in the net-force direction.",
+        "If net force is zero, the object stays at rest or continues at constant velocity."
+      ],
+      "worked_models": [
+        {
+          "id": "U1-S5-CONNECTIVE-MODEL-1",
+          "status": "teacher_authored_connective",
+          "purpose": "Model the Physics thinking sequence without replacing a canonical bank anchor.",
+          "prompt": "A ball is moving right. The horizontal forces are 4 N right and 10 N left. What does the force diagram predict about its motion?",
+          "thinking_moves": [
+            "unpack",
+            "choose representation",
+            "execute",
+            "check"
+          ],
+          "steps": [
+            "Unpack: current velocity is right, but force direction must be determined separately.",
+            "Represent: 4 N right and 10 N left.",
+            "Execute: net force is 6 N left.",
+            "Check: acceleration is left; while the ball is still moving right it begins slowing."
+          ],
+          "result": "6 N net force left; acceleration is left."
+        }
+      ],
+      "canonical_practice": [
+        {
+          "anchor_id": "U1-S5-WTC-1",
+          "anchor_type": "WTC",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-WTC-1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC3",
+            "dok": 3
+          },
+          "prompt": "A student models a book resting on a table with the diagram below. The student claims, “The downward arrow is the force the book exerts on the table, so the two arrows cancel on the book.” (a) Define the system being modeled. (b) Identify what is wrong with the student’s explanation. (c) Revise the force labels so the model contains only forces acting on the book. (d) Use the revised model to explain why the book can remain at rest.",
+          "representation": {
+            "type": "student_force_model",
+            "object": "book",
+            "motion": "at rest",
+            "arrows": [
+              {
+                "label": "A",
+                "direction": "up"
+              },
+              {
+                "label": "B",
+                "direction": "down"
+              }
+            ]
+          },
+          "representation_policy": "Preserve the pinned canonical representation exactly; do not redraw, restyle, relabel, or recompute it.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-WTC-1"
+        },
+        {
+          "anchor_id": "U1-S5-EX-1",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-EX-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-EX-1"
+        },
+        {
+          "anchor_id": "U1-S5-EX-2",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-EX-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-EX-2"
+        },
+        {
+          "anchor_id": "U1-S5-EX-3",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-EX-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-EX-3"
+        },
+        {
+          "anchor_id": "U1-S5-EX-4",
+          "anchor_type": "NOTES_EXAMPLE",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-EX-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-EX-4"
+        },
+        {
+          "anchor_id": "U1-S5-YTI-1",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-YTI-1",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC1"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-YTI-1"
+        },
+        {
+          "anchor_id": "U1-S5-YTI-2",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-YTI-2",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC2"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-YTI-2"
+        },
+        {
+          "anchor_id": "U1-S5-YTI-3",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-YTI-3",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-YTI-3"
+        },
+        {
+          "anchor_id": "U1-S5-YTI-4",
+          "anchor_type": "NOTES_YOUR_TURN",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-YTI-4",
+            "canonical_content_sha256": "e00ee4568985142431259537156c00567e2da9a610c8dc0738eac70c5bc6ad61"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC3"
+          },
+          "content_resolution": "Resolve prompt, options/data/figure, and representation verbatim from the pinned Stage 3E bank at build time. This map intentionally does not duplicate inaccessible large-bank payload text.",
+          "mutation_policy": "Do not paraphrase, renumber data, alter figures, change answer choices, or recompute canonical values.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-YTI-4"
+        }
+      ],
+      "formative_checks": [
+        {
+          "anchor_id": "U1-S5-WU1-Q1",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-WU1-Q1"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC1"
+          },
+          "prompt": "What should you choose before drawing a force diagram?",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-WU1-Q1"
+        },
+        {
+          "anchor_id": "U1-S5-WU1-Q4",
+          "anchor_type": "FORMATIVE_CHECK",
+          "source": {
+            "repo": "tnezki/physics",
+            "commit": "d10c82fe945ad2947237e2911bd40f81562330db",
+            "path": "banks/unit1/unit1_bank_data.json",
+            "fragment_id": "U1-S5-WU1-Q4"
+          },
+          "audit_status": "PASS",
+          "alignment": {
+            "i_can_id": "U1-S5-IC2"
+          },
+          "prompt": "A cart has 14 N right and 6 N left. Find the net force and state whether the forces are balanced.",
+          "teacher_solution_ref": "u1_notes_map_teacher_reference.json#canonical_answers/U1-S5-WU1-Q4"
+        }
+      ],
+      "image_references": [
+        {
+          "image_id": "PHYS-6B7B9CF83824",
+          "toolkit_path": "images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "alt_text": "Book resting on a table with weight and support force",
+          "instructional_purpose": "Use for system choice and correct labeling of forces acting on the book.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        },
+        {
+          "image_id": "PHYS-CE653198C2C5",
+          "toolkit_path": "images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "alt_text": "Flawed force diagram for a cart rolling at constant speed",
+          "instructional_purpose": "Use as a critique-and-revise misconception check after students establish force-diagram rules.",
+          "source_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "catalog_blob_sha": "8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d"
+        }
+      ],
+      "optional_extensions": [
+        "Critique a flawed force diagram, name the specific error, redraw it for the correct system, and connect the corrected net force to motion."
+      ]
+    }
+  ],
+  "student_facing_policy": {
+    "canonical_answers_included": false,
+    "teacher_only_content_file": "u1_notes_map_teacher_reference.json",
+    "canonical_anchor_rule": "Canonical Stage 3E prompts/data/figures/options must be preserved verbatim when resolved downstream.",
+    "fresh_connective_content_rule": "Teacher-authored connective models may bridge ideas but may not replace or mutate canonical anchors."
+  }
+}
