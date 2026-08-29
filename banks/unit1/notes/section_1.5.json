@@ -1,0 +1,933 @@
+{
+  "schema": "bank-v2-exact-content-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.5",
+  "stage": "3A_instructional_core",
+  "destination_group": "notes",
+  "records": [
+    {
+      "item_id": "U1-S5-WTC-01",
+      "bank_id": "U1-S5-WTC-01",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "i_can_id": "U1-S5-IC3",
+      "i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-WTC-01",
+      "evidence_job": "Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice.",
+      "student_action": "Interpret the shared stimulus, carry evidence forward between connected parts, and justify a physics plan/model choice.",
+      "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "The supplied diagram is intended to represent a cart moving to the right at constant speed, but the force model is flawed. Use the same diagram for all parts.\n(a) Identify the feature of the force diagram that conflicts with constant-speed straight-line motion.\n(b) Based on the unequal horizontal arrows, what direction of net force does the flawed diagram imply?\n(c) Describe how you would revise the horizontal force arrows so the model matches constant-speed motion.\n(d) Explain how your revised net force predicts the cart’s motion and why that prediction is consistent with Newton’s First Law.",
+      "student_html": "<p>The supplied diagram is intended to represent a cart moving to the right at constant speed, but the force model is flawed. Use the same diagram for all parts.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png\" alt=\"Flawed force diagram for a cart described as moving at constant speed.\"><p>(a) Identify the feature of the force diagram that conflicts with constant-speed straight-line motion.</p><p>(b) Based on the unequal horizontal arrows, what direction of net force does the flawed diagram imply?</p><p>(c) Describe how you would revise the horizontal force arrows so the model matches constant-speed motion.</p><p>(d) Explain how your revised net force predicts the cart’s motion and why that prediction is consistent with Newton’s First Law.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "(a) the horizontal forces are unequal; (b) toward the longer horizontal arrow; (c) make opposing horizontal forces equal in magnitude; (d) net force becomes zero, so velocity remains constant.",
+      "answer_text": "(a) the horizontal forces are unequal; (b) toward the longer horizontal arrow; (c) make opposing horizontal forces equal in magnitude; (d) net force becomes zero, so velocity remains constant.",
+      "solution_text": "A constant-speed cart traveling in a straight line has zero net force. Unequal opposing arrows imply a nonzero resultant and therefore changing motion. The corrected model uses equal opposing horizontal forces; then Newton’s First Law supports unchanged velocity.",
+      "solution_html": "<p>A constant-speed cart traveling in a straight line has zero net force. Unequal opposing arrows imply a nonzero resultant and therefore changing motion. The corrected model uses equal opposing horizontal forces; then Newton’s First Law supports unchanged velocity.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-CE653198C2C5",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Flawed force diagram for a cart described as moving at constant speed.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-CE653198C2C5",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+        }
+      ],
+      "source_map_record_id": "U1-S5-WTC-01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S5-WTC-01: Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-WTC-01",
+        "design_slot_id": "U1-S5-WTC-01",
+        "structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+        "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+        "wording_profile": "frq_multipart",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_diagram",
+        "parallel_family": "U1-S5-WTC-01",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "dependency_path",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "asset_id": "PHYS-CE653198C2C5",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 3,
+      "bloom": "Analyze",
+      "question_family_id": "U1_WTC_SHARED_REPRESENTATION_FRQ",
+      "task_architecture": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "variation": {
+        "realized": [
+          "shared stimulus",
+          "dependent parts",
+          "model/plan justification"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "dependency_path",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "wtc_frq": true,
+      "wtc_shared_stimulus": true,
+      "wtc_part_count": 4,
+      "wtc_frq_focus": [
+        "interpret/extract from shared representation",
+        "use earlier conclusion",
+        "model/relationship choice",
+        "justify plan/model"
+      ]
+    },
+    {
+      "item_id": "U1-S5-NOTES-EXAMPLE-P1",
+      "bank_id": "U1-S5-NOTES-EXAMPLE-P1",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "i_can_id": "U1-S5-IC1",
+      "i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-EXAMPLE-P1",
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A book rests on a horizontal table. Draw a force diagram for the book only.",
+      "student_html": "<p>A book rests on a horizontal table. Draw a force diagram for the book only.</p><div class=\"response-surface force-diagram-surface\" style=\"min-height:220px;min-width:360px\" aria-label=\"Blank force-diagram workspace\"></div>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "Draw weight downward and the table’s support force upward; no force should be drawn on the book for forces it exerts on the table.",
+      "answer_text": "Draw weight downward and the table’s support force upward; no force should be drawn on the book for forces it exerts on the table.",
+      "solution_text": "Draw weight downward and the table’s support force upward; no force should be drawn on the book for forces it exerts on the table.",
+      "solution_html": "<p>Draw weight downward and the table’s support force upward; no force should be drawn on the book for forces it exerts on the table.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "student_constructed_blank_surface",
+          "surface_type": "force_diagram",
+          "minimum_workspace_px": [
+            360,
+            220
+          ]
+        }
+      ],
+      "source_map_record_id": "U1-S5-NOTES-EXAMPLE-P1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S5-NOTES-EXAMPLE-P1: Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-EXAMPLE-P1",
+        "design_slot_id": "U1-S5-NOTES-EXAMPLE-P1",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-NOTES-EXAMPLE-P1",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S15_CONSTRUCT_FBD",
+      "task_architecture": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "variation": {
+        "realized": [
+          "0"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-1",
+      "pair_role": "example"
+    },
+    {
+      "item_id": "U1-S5-NOTES-YTI-P1",
+      "bank_id": "U1-S5-NOTES-YTI-P1",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "i_can_id": "U1-S5-IC1",
+      "i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-YTI-P1",
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A lamp hangs motionless from a single vertical cord. Draw a force diagram for the lamp only.",
+      "student_html": "<p>A lamp hangs motionless from a single vertical cord. Draw a force diagram for the lamp only.</p><div class=\"response-surface force-diagram-surface\" style=\"min-height:220px;min-width:360px\" aria-label=\"Blank force-diagram workspace\"></div>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "Draw tension upward and weight downward.",
+      "answer_text": "Draw tension upward and weight downward.",
+      "solution_text": "Draw tension upward and weight downward.",
+      "solution_html": "<p>Draw tension upward and weight downward.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "student_constructed_blank_surface",
+          "surface_type": "force_diagram",
+          "minimum_workspace_px": [
+            360,
+            220
+          ]
+        }
+      ],
+      "source_map_record_id": "U1-S5-NOTES-YTI-P1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S5-NOTES-YTI-P1: Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-YTI-P1",
+        "design_slot_id": "U1-S5-NOTES-YTI-P1",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-NOTES-YTI-P1",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S15_CONSTRUCT_FBD",
+      "task_architecture": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "variation": {
+        "realized": [
+          "1"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-1",
+      "pair_role": "yti"
+    },
+    {
+      "item_id": "U1-S5-NOTES-EXAMPLE-P2",
+      "bank_id": "U1-S5-NOTES-EXAMPLE-P2",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "i_can_id": "U1-S5-IC2",
+      "i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-EXAMPLE-P2",
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "The motion description says the crate moves at constant speed, but the supplied force diagram is unbalanced. Are the representations consistent? Identify the mismatch and state one correction.",
+      "student_html": "<p>The motion description says the crate moves at constant speed, but the supplied force diagram is unbalanced. Are the representations consistent? Identify the mismatch and state one correction.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png\" alt=\"Crate moving at constant speed paired with an unbalanced force diagram for critique.\">",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "They are inconsistent. Constant straight-line speed requires zero net force; revise the horizontal arrows so opposing forces are equal (or change the motion description to indicate acceleration in the net-force direction).",
+      "answer_text": "They are inconsistent. Constant straight-line speed requires zero net force; revise the horizontal arrows so opposing forces are equal (or change the motion description to indicate acceleration in the net-force direction).",
+      "solution_text": "They are inconsistent. Constant straight-line speed requires zero net force; revise the horizontal arrows so opposing forces are equal (or change the motion description to indicate acceleration in the net-force direction).",
+      "solution_html": "<p>They are inconsistent. Constant straight-line speed requires zero net force; revise the horizontal arrows so opposing forces are equal (or change the motion description to indicate acceleration in the net-force direction).</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-DBC68196705B",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Crate moving at constant speed paired with an unbalanced force diagram for critique.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-DBC68196705B",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+        }
+      ],
+      "source_map_record_id": "U1-S5-NOTES-EXAMPLE-P2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S5-NOTES-EXAMPLE-P2: Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-EXAMPLE-P2",
+        "design_slot_id": "U1-S5-NOTES-EXAMPLE-P2",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-NOTES-EXAMPLE-P2",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "asset_id": "PHYS-DBC68196705B",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 3,
+      "bloom": "Evaluate",
+      "question_family_id": "S15_REPRESENTATION_CONSISTENCY",
+      "task_architecture": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "variation": {
+        "realized": [
+          "PHYS-DBC68196705B"
+        ],
+        "allowed_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-2",
+      "pair_role": "example"
+    },
+    {
+      "item_id": "U1-S5-NOTES-YTI-P2",
+      "bank_id": "U1-S5-NOTES-YTI-P2",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "i_can_id": "U1-S5-IC2",
+      "i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-YTI-P2",
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "The supplied diagram shows a box moving at constant speed with opposing horizontal forces. Decide whether the motion description and force model are consistent and explain why.",
+      "student_html": "<p>The supplied diagram shows a box moving at constant speed with opposing horizontal forces. Decide whether the motion description and force model are consistent and explain why.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png\" alt=\"Force diagram for a box moving at constant speed with a push in one direction and friction in the opposite direction.\">",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "They are consistent if the opposing horizontal forces are equal, because the net force is zero and constant straight-line velocity can continue.",
+      "answer_text": "They are consistent if the opposing horizontal forces are equal, because the net force is zero and constant straight-line velocity can continue.",
+      "solution_text": "They are consistent if the opposing horizontal forces are equal, because the net force is zero and constant straight-line velocity can continue.",
+      "solution_html": "<p>They are consistent if the opposing horizontal forces are equal, because the net force is zero and constant straight-line velocity can continue.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-9C32901B2ABF",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Force diagram for a box moving at constant speed with a push in one direction and friction in the opposite direction.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+        }
+      ],
+      "source_map_record_id": "U1-S5-NOTES-YTI-P2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S5-NOTES-YTI-P2: Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-YTI-P2",
+        "design_slot_id": "U1-S5-NOTES-YTI-P2",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "inverted",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-NOTES-YTI-P2",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 3,
+      "bloom": "Evaluate",
+      "question_family_id": "S15_REPRESENTATION_CONSISTENCY",
+      "task_architecture": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "variation": {
+        "realized": [
+          "PHYS-9C32901B2ABF"
+        ],
+        "allowed_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-2",
+      "pair_role": "yti"
+    },
+    {
+      "item_id": "U1-S5-NOTES-EXAMPLE-P3",
+      "bank_id": "U1-S5-NOTES-EXAMPLE-P3",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "i_can_id": "U1-S5-IC3",
+      "i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-EXAMPLE-P3",
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A crate is initially at rest and experiences a nonzero net force to the right. Predict its motion. Justify using net force.",
+      "student_html": "<p>A crate is initially at rest and experiences a nonzero net force to the right. Predict its motion. Justify using net force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "It begins changing velocity toward the right; the rightward net force means rightward acceleration.",
+      "answer_text": "It begins changing velocity toward the right; the rightward net force means rightward acceleration.",
+      "solution_text": "It begins changing velocity toward the right; the rightward net force means rightward acceleration.",
+      "solution_html": "<p>It begins changing velocity toward the right; the rightward net force means rightward acceleration.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S5-NOTES-EXAMPLE-P3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S5-NOTES-EXAMPLE-P3: Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-EXAMPLE-P3",
+        "design_slot_id": "U1-S5-NOTES-EXAMPLE-P3",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-NOTES-EXAMPLE-P3",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S15_NET_FORCE_MOTION_PREDICT",
+      "task_architecture": "PHYS-PREDICT-JUSTIFY-01",
+      "variation": {
+        "realized": [
+          "1"
+        ],
+        "allowed_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-3",
+      "pair_role": "example"
+    },
+    {
+      "item_id": "U1-S5-NOTES-YTI-P3",
+      "bank_id": "U1-S5-NOTES-YTI-P3",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "i_can_id": "U1-S5-IC3",
+      "i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-YTI-P3",
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A puck moves left while the net force is zero. Predict its motion over the next interval. Justify using net force.",
+      "student_html": "<p>A puck moves left while the net force is zero. Predict its motion over the next interval. Justify using net force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "It continues left at constant velocity because zero net force means no change in velocity.",
+      "answer_text": "It continues left at constant velocity because zero net force means no change in velocity.",
+      "solution_text": "It continues left at constant velocity because zero net force means no change in velocity.",
+      "solution_html": "<p>It continues left at constant velocity because zero net force means no change in velocity.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S5-NOTES-YTI-P3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S5-NOTES-YTI-P3: Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-YTI-P3",
+        "design_slot_id": "U1-S5-NOTES-YTI-P3",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-NOTES-YTI-P3",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S15_NET_FORCE_MOTION_PREDICT",
+      "task_architecture": "PHYS-PREDICT-JUSTIFY-01",
+      "variation": {
+        "realized": [
+          "2"
+        ],
+        "allowed_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-3",
+      "pair_role": "yti"
+    },
+    {
+      "item_id": "U1-S5-NOTES-EXAMPLE-P4",
+      "bank_id": "U1-S5-NOTES-EXAMPLE-P4",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "i_can_id": "U1-S5-IC1",
+      "i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-EXAMPLE-P4",
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A sled is pulled to the right across a rough floor at constant speed. Draw a force diagram for the sled only.",
+      "student_html": "<p>A sled is pulled to the right across a rough floor at constant speed. Draw a force diagram for the sled only.</p><div class=\"response-surface force-diagram-surface\" style=\"min-height:220px;min-width:360px\" aria-label=\"Blank force-diagram workspace\"></div>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "Draw weight down, support up, pull right, and friction left; opposing pairs balance for constant velocity.",
+      "answer_text": "Draw weight down, support up, pull right, and friction left; opposing pairs balance for constant velocity.",
+      "solution_text": "Draw weight down, support up, pull right, and friction left; opposing pairs balance for constant velocity.",
+      "solution_html": "<p>Draw weight down, support up, pull right, and friction left; opposing pairs balance for constant velocity.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "student_constructed_blank_surface",
+          "surface_type": "force_diagram",
+          "minimum_workspace_px": [
+            360,
+            220
+          ]
+        }
+      ],
+      "source_map_record_id": "U1-S5-NOTES-EXAMPLE-P4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S5-NOTES-EXAMPLE-P4: Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-EXAMPLE-P4",
+        "design_slot_id": "U1-S5-NOTES-EXAMPLE-P4",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-NOTES-EXAMPLE-P4",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S15_CONSTRUCT_FBD",
+      "task_architecture": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "variation": {
+        "realized": [
+          "2"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-4",
+      "pair_role": "example"
+    },
+    {
+      "item_id": "U1-S5-NOTES-YTI-P4",
+      "bank_id": "U1-S5-NOTES-YTI-P4",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "1.5",
+      "scope": "1.5",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "i_can_id": "U1-S5-IC1",
+      "i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG04",
+      "evidence_point_id": "U1-EP-U1-S5-NOTES-YTI-P4",
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A box is pushed to the right and speeds up on a level floor. Draw a force diagram for the box.",
+      "student_html": "<p>A box is pushed to the right and speeds up on a level floor. Draw a force diagram for the box.</p><div class=\"response-surface force-diagram-surface\" style=\"min-height:220px;min-width:360px\" aria-label=\"Blank force-diagram workspace\"></div>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "Draw weight down, support up, applied force right, friction left, with the rightward force larger than friction.",
+      "answer_text": "Draw weight down, support up, applied force right, friction left, with the rightward force larger than friction.",
+      "solution_text": "Draw weight down, support up, applied force right, friction left, with the rightward force larger than friction.",
+      "solution_html": "<p>Draw weight down, support up, applied force right, friction left, with the rightward force larger than friction.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "student_constructed_blank_surface",
+          "surface_type": "force_diagram",
+          "minimum_workspace_px": [
+            360,
+            220
+          ]
+        }
+      ],
+      "source_map_record_id": "U1-S5-NOTES-YTI-P4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S5-NOTES-YTI-P4: Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels."
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-NOTES-YTI-P4",
+        "design_slot_id": "U1-S5-NOTES-YTI-P4",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "inverted",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-NOTES-YTI-P4",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S15_CONSTRUCT_FBD",
+      "task_architecture": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "variation": {
+        "realized": [
+          "4"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "pair_id": "U1-S5-PAIR-4",
+      "pair_role": "yti"
+    }
+  ]
+}

@@ -1,0 +1,1330 @@
+{
+  "schema": "bank-v2-exact-content-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.4",
+  "stage": "3A_instructional_core",
+  "destination_group": "warmups",
+  "records": [
+    {
+      "item_id": "U1-S4-WU1-Q1",
+      "bank_id": "U1-S4-WU1-Q1",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "i_can_id": "U1-S4-IC1",
+      "i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-WU1-Q1",
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "student_action": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A conveyor belt carries a box at constant velocity with balanced forces. Classify the equilibrium.",
+      "student_html": "<p>A conveyor belt carries a box at constant velocity with balanced forces. Classify the equilibrium.</p><ol class=\"choices\" type=\"A\"><li>static equilibrium</li><li>dynamic equilibrium</li><li>unbalanced motion</li><li>no-force state</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "static equilibrium"
+        },
+        {
+          "id": "B",
+          "text": "dynamic equilibrium"
+        },
+        {
+          "id": "C",
+          "text": "unbalanced motion"
+        },
+        {
+          "id": "D",
+          "text": "no-force state"
+        }
+      ],
+      "correct_choice": "B",
+      "answer": "dynamic equilibrium",
+      "answer_text": "dynamic equilibrium",
+      "solution_text": "dynamic equilibrium matches the motion state while the net force is zero.",
+      "solution_html": "<p>dynamic equilibrium matches the motion state while the net force is zero.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-WU1-Q1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU1-Q1: Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU1-Q1",
+        "design_slot_id": "U1-S4-WU1-Q1",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-WU1-Q1",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S14_EQUILIBRIUM_TYPE",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "dynamic equilibrium"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 1,
+      "slot_role": "current_recent_retrieval"
+    },
+    {
+      "item_id": "U1-S4-WU1-Q2",
+      "bank_id": "U1-S4-WU1-Q2",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "i_can_id": "U1-S1-IC1",
+      "i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S4-WU1-Q2",
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "student_action": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What scientific-thinking term means “observations or measurements used to support or challenge a claim”?",
+      "student_html": "<p>What scientific-thinking term means “observations or measurements used to support or challenge a claim”?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "evidence",
+      "answer_text": "evidence",
+      "solution_text": "The defining feature is that this is observations or measurements used to support or challenge a claim, so the term is evidence.",
+      "solution_html": "<p>The defining feature is that this is observations or measurements used to support or challenge a claim, so the term is evidence.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-WU1-Q2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU1-Q2: Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU1-Q2",
+        "design_slot_id": "U1-S4-WU1-Q2",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-WU1-Q2",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Remember",
+      "question_family_id": "S11_SCIENCE_TERMS",
+      "task_architecture": "VOCAB-DEFINITION-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "evidence"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 2,
+      "slot_role": "older_spiral_retrieval"
+    },
+    {
+      "item_id": "U1-S4-WU1-Q3",
+      "bank_id": "U1-S4-WU1-Q3",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-WU1-Q3",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 72 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.",
+      "student_html": "<p>A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 72 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.</p><ol class=\"choices\" type=\"A\"><li>72 N to the left</li><li>99 N</li><li>45 N</li><li>cannot be determined because the object is moving</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "72 N to the left"
+        },
+        {
+          "id": "B",
+          "text": "99 N"
+        },
+        {
+          "id": "C",
+          "text": "45 N"
+        },
+        {
+          "id": "D",
+          "text": "cannot be determined because the object is moving"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "72 N to the left",
+      "answer_text": "72 N to the left",
+      "solution_text": "Constant straight-line velocity means equilibrium, so 72 N right must be balanced by 72 N left.",
+      "solution_html": "<p>Constant straight-line velocity means equilibrium, so 72 N right must be balanced by 72 N left.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU1-Q3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU1-Q3: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU1-Q3",
+        "design_slot_id": "U1-S4-WU1-Q3",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-WU1-Q3",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "72",
+          "27"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 3,
+      "slot_role": "conceptual_vocab_application"
+    },
+    {
+      "item_id": "U1-S4-WU1-Q4",
+      "bank_id": "U1-S4-WU1-Q4",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-WU1-Q4",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Use the equilibrium rule in a concrete situation to infer a missing opposing force.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 95 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.",
+      "student_html": "<p>A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 95 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "95 N to the left",
+      "answer_text": "95 N to the left",
+      "solution_text": "Constant straight-line velocity means equilibrium, so 95 N right must be balanced by 95 N left.",
+      "solution_html": "<p>Constant straight-line velocity means equilibrium, so 95 N right must be balanced by 95 N left.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU1-Q4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU1-Q4: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU1-Q4",
+        "design_slot_id": "U1-S4-WU1-Q4",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-WU1-Q4",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "95",
+          "35"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 4,
+      "slot_role": "physics_math_formula_skill"
+    },
+    {
+      "item_id": "U1-S4-WU2-Q1",
+      "bank_id": "U1-S4-WU2-Q1",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "i_can_id": "U1-S4-IC2",
+      "i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-WU2-Q1",
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "student_action": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A student says, “If an object is at rest, all forces on it must have disappeared.” Critique the statement.",
+      "student_html": "<p>A student says, “If an object is at rest, all forces on it must have disappeared.” Critique the statement.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "Rest can occur with several forces acting as long as their vector sum is zero; for example, weight and support can balance.",
+      "answer_text": "Rest can occur with several forces acting as long as their vector sum is zero; for example, weight and support can balance.",
+      "solution_text": "Rest can occur with several forces acting as long as their vector sum is zero; for example, weight and support can balance.",
+      "solution_html": "<p>Rest can occur with several forces acting as long as their vector sum is zero; for example, weight and support can balance.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-WU2-Q1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU2-Q1: Explain that an object at rest may have multiple forces acting while those forces balance to zero net force."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU2-Q1",
+        "design_slot_id": "U1-S4-WU2-Q1",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-WU2-Q1",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Evaluate",
+      "question_family_id": "S14_REST_WITH_FORCES",
+      "task_architecture": "ERROR-CRITIQUE-CLAIM-01",
+      "variation": {
+        "realized": [
+          "misconception"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 1,
+      "slot_role": "current_recent_retrieval"
+    },
+    {
+      "item_id": "U1-S4-WU2-Q2",
+      "bank_id": "U1-S4-WU2-Q2",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "i_can_id": "U1-S1-IC2",
+      "i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S4-WU2-Q2",
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "student_action": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Which row gives a falsifiable claim with a workable measurement route?",
+      "student_html": "<p>Which row gives a falsifiable claim with a workable measurement route?</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible evidence</th></tr></thead><tbody><tr><td>A</td><td>Increasing the number of rubber bands changes launch distance.</td><td>Count rubber bands and measure launch distance.</td></tr><tr><td>B</td><td>The universe likes smooth tracks.</td><td>“Likes” is not measurable.</td></tr><tr><td>C</td><td>Red carts have stronger personalities.</td><td>Personality is not a physical measurement.</td></tr><tr><td>D</td><td>The cart moves better when it is happy.</td><td>No measurable condition is defined.</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>Claim A</li><li>Claim B</li><li>Claim C</li><li>Claim D</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Claim A"
+        },
+        {
+          "id": "B",
+          "text": "Claim B"
+        },
+        {
+          "id": "C",
+          "text": "Claim C"
+        },
+        {
+          "id": "D",
+          "text": "Claim D"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "Claim A",
+      "answer_text": "Claim A",
+      "solution_text": "A claim is testable when observations or measurements could provide evidence for or against it.",
+      "solution_html": "<p>A claim is testable when observations or measurements could provide evidence for or against it.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S4-WU2-Q2-table",
+          "headers": [
+            "Option",
+            "Claim",
+            "Possible evidence"
+          ],
+          "rows": [
+            [
+              "A",
+              "Increasing the number of rubber bands changes launch distance.",
+              "Count rubber bands and measure launch distance."
+            ],
+            [
+              "B",
+              "The universe likes smooth tracks.",
+              "“Likes” is not measurable."
+            ],
+            [
+              "C",
+              "Red carts have stronger personalities.",
+              "Personality is not a physical measurement."
+            ],
+            [
+              "D",
+              "The cart moves better when it is happy.",
+              "No measurable condition is defined."
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S4-WU2-Q2-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU2-Q2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU2-Q2: Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU2-Q2",
+        "design_slot_id": "U1-S4-WU2-Q2",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S4-WU2-Q2",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_TESTABLE_CLAIM_TABLE",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "Increasing the number of rubber bands changes launch distance."
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 2,
+      "slot_role": "older_spiral_retrieval"
+    },
+    {
+      "item_id": "U1-S4-WU2-Q3",
+      "bank_id": "U1-S4-WU2-Q3",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "i_can_id": "U1-S4-IC1",
+      "i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-WU2-Q3",
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "student_action": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What equilibrium term means “zero net force while the object moves at constant velocity”?",
+      "student_html": "<p>What equilibrium term means “zero net force while the object moves at constant velocity”?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "dynamic equilibrium",
+      "answer_text": "dynamic equilibrium",
+      "solution_text": "That definition is dynamic equilibrium.",
+      "solution_html": "<p>That definition is dynamic equilibrium.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-WU2-Q3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU2-Q3: Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU2-Q3",
+        "design_slot_id": "U1-S4-WU2-Q3",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-WU2-Q3",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Remember",
+      "question_family_id": "S14_EQUILIBRIUM_TERM",
+      "task_architecture": "VOCAB-DEFINITION-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "dynamic equilibrium"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 3,
+      "slot_role": "conceptual_vocab_application"
+    },
+    {
+      "item_id": "U1-S4-WU2-Q4",
+      "bank_id": "U1-S4-WU2-Q4",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-WU2-Q4",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Use the equilibrium rule in a concrete situation to infer a missing opposing force.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 60 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.",
+      "student_html": "<p>A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 60 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "60 N to the left",
+      "answer_text": "60 N to the left",
+      "solution_text": "Constant straight-line velocity means equilibrium, so 60 N right must be balanced by 60 N left.",
+      "solution_html": "<p>Constant straight-line velocity means equilibrium, so 60 N right must be balanced by 60 N left.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU2-Q4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU2-Q4: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU2-Q4",
+        "design_slot_id": "U1-S4-WU2-Q4",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-WU2-Q4",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "60",
+          "18"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 4,
+      "slot_role": "physics_math_formula_skill"
+    },
+    {
+      "item_id": "U1-S4-WU3-Q1",
+      "bank_id": "U1-S4-WU3-Q1",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-WU3-Q1",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 84 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.",
+      "student_html": "<p>A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 84 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.</p><ol class=\"choices\" type=\"A\"><li>84 N to the left</li><li>115 N</li><li>53 N</li><li>cannot be determined because the object is moving</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "84 N to the left"
+        },
+        {
+          "id": "B",
+          "text": "115 N"
+        },
+        {
+          "id": "C",
+          "text": "53 N"
+        },
+        {
+          "id": "D",
+          "text": "cannot be determined because the object is moving"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "84 N to the left",
+      "answer_text": "84 N to the left",
+      "solution_text": "Constant straight-line velocity means equilibrium, so 84 N right must be balanced by 84 N left.",
+      "solution_html": "<p>Constant straight-line velocity means equilibrium, so 84 N right must be balanced by 84 N left.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU3-Q1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU3-Q1: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU3-Q1",
+        "design_slot_id": "U1-S4-WU3-Q1",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-WU3-Q1",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "84",
+          "31"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 1,
+      "slot_role": "current_recent_retrieval"
+    },
+    {
+      "item_id": "U1-S4-WU3-Q2",
+      "bank_id": "U1-S4-WU3-Q2",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "i_can_id": "U1-S1-IC3",
+      "i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S4-WU3-Q2",
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What feature of the distance/time data would you cite as evidence for constant average speed?",
+      "student_html": "<p>What feature of the distance/time data would you cite as evidence for constant average speed?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Distance</th><th>Time</th></tr></thead><tbody><tr><td>1</td><td>15 m</td><td>3 s</td></tr><tr><td>2</td><td>25 m</td><td>5 s</td></tr><tr><td>3</td><td>35 m</td><td>7 s</td></tr></tbody></table>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "The distance/time ratio is the same in every trial.",
+      "answer_text": "The distance/time ratio is the same in every trial.",
+      "solution_text": "Each row gives the same distance per unit time, so the repeated ratio is evidence for the model.",
+      "solution_html": "<p>Each row gives the same distance per unit time, so the repeated ratio is evidence for the model.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S4-WU3-Q2-table",
+          "headers": [
+            "Trial",
+            "Distance",
+            "Time"
+          ],
+          "rows": [
+            [
+              "1",
+              "15 m",
+              "3 s"
+            ],
+            [
+              "2",
+              "25 m",
+              "5 s"
+            ],
+            [
+              "3",
+              "35 m",
+              "7 s"
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S4-WU3-Q2-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU3-Q2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU3-Q2: Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU3-Q2",
+        "design_slot_id": "U1-S4-WU3-Q2",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S4-WU3-Q2",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_EVIDENCE_TABLE_INTERPRET",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "constant-rate data set 5 m/s"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 2,
+      "slot_role": "older_spiral_retrieval"
+    },
+    {
+      "item_id": "U1-S4-WU3-Q3",
+      "bank_id": "U1-S4-WU3-Q3",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "i_can_id": "U1-S4-IC2",
+      "i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-WU3-Q3",
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "student_action": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the scaffold force diagram to explain how the upward support forces can balance the downward loads even though none of the individual forces is zero.",
+      "student_html": "<p>Use the scaffold force diagram to explain how the upward support forces can balance the downward loads even though none of the individual forces is zero.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png\" alt=\"Force diagram for a sign-painting scaffold showing upward support forces balancing downward forces.\"><ol class=\"choices\" type=\"A\"><li>The opposing forces can balance so their vector sum is zero even though individual forces are present.</li><li>An object at rest cannot have any forces acting.</li><li>Inertia creates an upward force that removes all other forces.</li><li>Only gravitational force matters when speed is zero.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The opposing forces can balance so their vector sum is zero even though individual forces are present."
+        },
+        {
+          "id": "B",
+          "text": "An object at rest cannot have any forces acting."
+        },
+        {
+          "id": "C",
+          "text": "Inertia creates an upward force that removes all other forces."
+        },
+        {
+          "id": "D",
+          "text": "Only gravitational force matters when speed is zero."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "The opposing forces can balance so their vector sum is zero even though individual forces are present.",
+      "answer_text": "The opposing forces can balance so their vector sum is zero even though individual forces are present.",
+      "solution_text": "The opposing forces can balance so their vector sum is zero even though individual forces are present.",
+      "solution_html": "<p>The opposing forces can balance so their vector sum is zero even though individual forces are present.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-B6D46ACCB666",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Force diagram for a sign-painting scaffold showing upward support forces balancing downward forces.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU3-Q3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S4-WU3-Q3: Explain that an object at rest may have multiple forces acting while those forces balance to zero net force."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU3-Q3",
+        "design_slot_id": "U1-S4-WU3-Q3",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-WU3-Q3",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S14_REST_WITH_FORCES",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "PHYS-B6D46ACCB666"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 3,
+      "slot_role": "conceptual_vocab_application"
+    },
+    {
+      "item_id": "U1-S4-WU3-Q4",
+      "bank_id": "U1-S4-WU3-Q4",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-WU3-Q4",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Use the equilibrium rule in a concrete situation to infer a missing opposing force.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 110 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.",
+      "student_html": "<p>A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 110 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "110 N to the left",
+      "answer_text": "110 N to the left",
+      "solution_text": "Constant straight-line velocity means equilibrium, so 110 N right must be balanced by 110 N left.",
+      "solution_html": "<p>Constant straight-line velocity means equilibrium, so 110 N right must be balanced by 110 N left.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-WU3-Q4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-WU3-Q4: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-WU3-Q4",
+        "design_slot_id": "U1-S4-WU3-Q4",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-WU3-Q4",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "110",
+          "46"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 4,
+      "slot_role": "physics_math_formula_skill"
+    }
+  ]
+}

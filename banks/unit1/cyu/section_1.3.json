@@ -1,0 +1,672 @@
+{
+  "schema": "bank-v2-exact-content-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.3",
+  "stage": "3A_instructional_core",
+  "destination_group": "cyu",
+  "records": [
+    {
+      "item_id": "U1-S3-CYU-01",
+      "bank_id": "U1-S3-CYU-01",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.3",
+      "scope": "1.3",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "i_can_id": "U1-S3-IC1",
+      "i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S3-CYU-01",
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "student_action": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the vector diagram. What two pieces of information does each force arrow communicate?",
+      "student_html": "<p>Use the vector diagram. What two pieces of information does each force arrow communicate?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Vector-addition diagram showing two perpendicular component vectors and their diagonal resultant.\"><ol class=\"choices\" type=\"A\"><li>The arrow’s direction shows force direction, and its length represents the force magnitude/relative strength.</li><li>Arrow direction is speed; arrow length is time.</li><li>Arrow color is force size; arrow direction is mass.</li><li>Arrow length is distance traveled; direction is acceleration only.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The arrow’s direction shows force direction, and its length represents the force magnitude/relative strength."
+        },
+        {
+          "id": "B",
+          "text": "Arrow direction is speed; arrow length is time."
+        },
+        {
+          "id": "C",
+          "text": "Arrow color is force size; arrow direction is mass."
+        },
+        {
+          "id": "D",
+          "text": "Arrow length is distance traveled; direction is acceleration only."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "The arrow’s direction shows force direction, and its length represents the force magnitude/relative strength.",
+      "answer_text": "The arrow’s direction shows force direction, and its length represents the force magnitude/relative strength.",
+      "solution_text": "The arrow’s direction shows force direction, and its length represents the force magnitude/relative strength.",
+      "solution_html": "<p>The arrow’s direction shows force direction, and its length represents the force magnitude/relative strength.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-ECA638594CC9",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Vector-addition diagram showing two perpendicular component vectors and their diagonal resultant.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-ECA638594CC9",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        }
+      ],
+      "source_map_record_id": "U1-S3-CYU-01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S3-CYU-01: Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector."
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-CYU-01",
+        "design_slot_id": "U1-S3-CYU-01",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-CYU-01",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S13_VECTOR_MEANING",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "PHYS-ECA638594CC9"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S3-CYU-02",
+      "bank_id": "U1-S3-CYU-02",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.3",
+      "scope": "1.3",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "i_can_id": "U1-S3-IC1",
+      "i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S3-CYU-02",
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "student_action": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A physical quantity is described by both a magnitude and a direction, and it can be represented by an arrow. What type of quantity is it?",
+      "student_html": "<p>A physical quantity is described by both a magnitude and a direction, and it can be represented by an arrow. What type of quantity is it?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "vector",
+      "answer_text": "vector",
+      "solution_text": "A quantity requiring both magnitude and direction is a vector.",
+      "solution_html": "<p>A quantity requiring both magnitude and direction is a vector.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S3-CYU-02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S3-CYU-02: Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector."
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-CYU-02",
+        "design_slot_id": "U1-S3-CYU-02",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S3-CYU-02",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S13_FORCE_IS_VECTOR",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "concept to term"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S3-CYU-03",
+      "bank_id": "U1-S3-CYU-03",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.3",
+      "scope": "1.3",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "i_can_id": "U1-S3-IC2",
+      "i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S3-CYU-03",
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "student_action": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Two students push the same cart in the same direction with 14 N and 11 N. Determine the net force.",
+      "student_html": "<p>Two students push the same cart in the same direction with 14 N and 11 N. Determine the net force.</p><ol class=\"choices\" type=\"A\"><li>25 N in the direction of the pushes</li><li>0 N</li><li>the sum of all magnitudes with no direction</li><li>the same magnitude but opposite direction</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "25 N in the direction of the pushes"
+        },
+        {
+          "id": "B",
+          "text": "0 N"
+        },
+        {
+          "id": "C",
+          "text": "the sum of all magnitudes with no direction"
+        },
+        {
+          "id": "D",
+          "text": "the same magnitude but opposite direction"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "25 N in the direction of the pushes",
+      "answer_text": "25 N in the direction of the pushes",
+      "solution_text": "same direction: 14+11=25 N",
+      "solution_html": "<p>same direction: 14+11=25 N</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S3-CYU-03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S3-CYU-03: Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions."
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-CYU-03",
+        "design_slot_id": "U1-S3-CYU-03",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-CYU-03",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S13_COMBINE_FORCES",
+      "task_architecture": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "variation": {
+        "realized": [
+          "0"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S3-CYU-04",
+      "bank_id": "U1-S3-CYU-04",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.3",
+      "scope": "1.3",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "i_can_id": "U1-S3-IC2",
+      "i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S3-CYU-04",
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "student_action": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A cart has a 20 N force to the right and an unknown force to the left. The net force is 8 N to the right. Determine the unknown leftward force.",
+      "student_html": "<p>A cart has a 20 N force to the right and an unknown force to the left. The net force is 8 N to the right. Determine the unknown leftward force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "12 N left",
+      "answer_text": "12 N left",
+      "solution_text": "20 N − F_left = 8 N, so F_left = 12 N.",
+      "solution_html": "<p>20 N − F_left = 8 N, so F_left = 12 N.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S3-CYU-04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S3-CYU-04: Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions."
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-CYU-04",
+        "design_slot_id": "U1-S3-CYU-04",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-CYU-04",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S13_COMBINE_FORCES",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "0"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S3-CYU-05",
+      "bank_id": "U1-S3-CYU-05",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.3",
+      "scope": "1.3",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "i_can_id": "U1-S3-IC3",
+      "i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S3-CYU-05",
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the vector diagram to identify the diagonal resultant and explain what its direction represents.",
+      "student_html": "<p>Use the vector diagram to identify the diagonal resultant and explain what its direction represents.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Vector-addition diagram showing two perpendicular component vectors and their diagonal resultant.\"><ol class=\"choices\" type=\"A\"><li>The diagonal arrow is the resultant; it points in the combined direction and its length represents the magnitude of the combined force.</li><li>The resultant is always the longest individual arrow regardless of direction.</li><li>Opposite force arrows must always be added as positive magnitudes.</li><li>A resultant has magnitude but no direction.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The diagonal arrow is the resultant; it points in the combined direction and its length represents the magnitude of the combined force."
+        },
+        {
+          "id": "B",
+          "text": "The resultant is always the longest individual arrow regardless of direction."
+        },
+        {
+          "id": "C",
+          "text": "Opposite force arrows must always be added as positive magnitudes."
+        },
+        {
+          "id": "D",
+          "text": "A resultant has magnitude but no direction."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "The diagonal arrow is the resultant; it points in the combined direction and its length represents the magnitude of the combined force.",
+      "answer_text": "The diagonal arrow is the resultant; it points in the combined direction and its length represents the magnitude of the combined force.",
+      "solution_text": "The diagonal arrow is the resultant; it points in the combined direction and its length represents the magnitude of the combined force.",
+      "solution_html": "<p>The diagonal arrow is the resultant; it points in the combined direction and its length represents the magnitude of the combined force.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-ECA638594CC9",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Vector-addition diagram showing two perpendicular component vectors and their diagonal resultant.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-ECA638594CC9",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        }
+      ],
+      "source_map_record_id": "U1-S3-CYU-05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S3-CYU-05: Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction."
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-CYU-05",
+        "design_slot_id": "U1-S3-CYU-05",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-CYU-05",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S13_VECTOR_RESULTANT",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "PHYS-ECA638594CC9",
+          "0"
+        ],
+        "allowed_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S3-CYU-06",
+      "bank_id": "U1-S3-CYU-06",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.3",
+      "scope": "1.3",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "i_can_id": "U1-S3-IC3",
+      "i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S3-CYU-06",
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the vector diagram to identify the resultant as the arrow representing the combined effect. If two equal perpendicular component forces are each 6 N, calculate the resultant magnitude.",
+      "student_html": "<p>Use the vector diagram to identify the resultant as the arrow representing the combined effect. If two equal perpendicular component forces are each 6 N, calculate the resultant magnitude.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Diagram showing two equal perpendicular vectors and a diagonal resultant.\">",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "8.5 N (about 8.5 N)",
+      "answer_text": "8.5 N (about 8.5 N)",
+      "solution_text": "For equal perpendicular components, R = sqrt(6^2+6^2)=6√2≈8.5 N. The resultant points diagonally between the components.",
+      "solution_html": "<p>For equal perpendicular components, R = sqrt(6^2+6^2)=6√2≈8.5 N. The resultant points diagonally between the components.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Diagram showing two equal perpendicular vectors and a diagonal resultant.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        }
+      ],
+      "source_map_record_id": "U1-S3-CYU-06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S3-CYU-06: Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction."
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-CYU-06",
+        "design_slot_id": "U1-S3-CYU-06",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-CYU-06",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S13_VECTOR_RESULTANT",
+      "task_architecture": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "variation": {
+        "realized": [
+          "PHYS-2EC4ABF93A6F",
+          "6 N components"
+        ],
+        "allowed_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}

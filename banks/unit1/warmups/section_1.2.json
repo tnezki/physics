@@ -1,0 +1,1409 @@
+{
+  "schema": "bank-v2-exact-content-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.2",
+  "stage": "3A_instructional_core",
+  "destination_group": "warmups",
+  "records": [
+    {
+      "item_id": "U1-S2-WU1-Q1",
+      "bank_id": "U1-S2-WU1-Q1",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "i_can_id": "U1-S2-IC1",
+      "i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU1-Q1",
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "student_action": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A curling stone slides straight at nearly constant speed when opposing effects are negligible. Which law describes its unchanged velocity?",
+      "student_html": "<p>A curling stone slides straight at nearly constant speed when opposing effects are negligible. Which law describes its unchanged velocity?</p><ol class=\"choices\" type=\"A\"><li>Newton’s First Law</li><li>inertia force</li><li>Newton’s Third Law</li><li>gravitational law</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Newton’s First Law"
+        },
+        {
+          "id": "B",
+          "text": "inertia force"
+        },
+        {
+          "id": "C",
+          "text": "Newton’s Third Law"
+        },
+        {
+          "id": "D",
+          "text": "gravitational law"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "Newton’s First Law",
+      "answer_text": "Newton’s First Law",
+      "solution_text": "Newton’s First Law states that velocity remains unchanged when the net external force is zero.",
+      "solution_html": "<p>Newton’s First Law states that velocity remains unchanged when the net external force is zero.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S2-WU1-Q1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU1-Q1: State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU1-Q1",
+        "design_slot_id": "U1-S2-WU1-Q1",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-WU1-Q1",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S12_NEWTON_FIRST_RECOGNIZE",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "3"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 1,
+      "slot_role": "current_recent_retrieval"
+    },
+    {
+      "item_id": "U1-S2-WU1-Q2",
+      "bank_id": "U1-S2-WU1-Q2",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "i_can_id": "U1-S1-IC1",
+      "i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S2-WU1-Q2",
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "student_action": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What scientific-thinking term means “a concise description of a repeatedly observed pattern in nature”?",
+      "student_html": "<p>What scientific-thinking term means “a concise description of a repeatedly observed pattern in nature”?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "scientific law",
+      "answer_text": "scientific law",
+      "solution_text": "The defining feature is that this is a concise description of a repeatedly observed pattern in nature, so the term is scientific law.",
+      "solution_html": "<p>The defining feature is that this is a concise description of a repeatedly observed pattern in nature, so the term is scientific law.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S2-WU1-Q2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU1-Q2: Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU1-Q2",
+        "design_slot_id": "U1-S2-WU1-Q2",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-WU1-Q2",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Remember",
+      "question_family_id": "S11_SCIENCE_TERMS",
+      "task_architecture": "VOCAB-DEFINITION-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "scientific law"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 2,
+      "slot_role": "older_spiral_retrieval"
+    },
+    {
+      "item_id": "U1-S2-WU1-Q3",
+      "bank_id": "U1-S2-WU1-Q3",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "i_can_id": "U1-S2-IC3",
+      "i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU1-Q3",
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the book-on-table force diagram to identify the support-versus-weight interaction. Which statement best describes the forces on the book?",
+      "student_html": "<p>Use the book-on-table force diagram to identify the support-versus-weight interaction. Which statement best describes the forces on the book?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Book resting on a table with downward weight and upward support force.\"><ol class=\"choices\" type=\"A\"><li>Weight acts down and support force acts up; they can balance.</li><li>Only weight acts because the book is not moving.</li><li>Only support force acts because the table holds the book.</li><li>Inertia acts upward to cancel gravity.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Weight acts down and support force acts up; they can balance."
+        },
+        {
+          "id": "B",
+          "text": "Only weight acts because the book is not moving."
+        },
+        {
+          "id": "C",
+          "text": "Only support force acts because the table holds the book."
+        },
+        {
+          "id": "D",
+          "text": "Inertia acts upward to cancel gravity."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "Weight acts down and support force acts up; they can balance.",
+      "answer_text": "Weight acts down and support force acts up; they can balance.",
+      "solution_text": "A resting book still has forces acting. Weight and support can be equal and opposite, giving zero net force.",
+      "solution_html": "<p>A resting book still has forces acting. Weight and support can be equal and opposite, giving zero net force.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-6B7B9CF83824",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Book resting on a table with downward weight and upward support force.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU1-Q3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S2-WU1-Q3: Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU1-Q3",
+        "design_slot_id": "U1-S2-WU1-Q3",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-WU1-Q3",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S12_READ_FORCE_DIAGRAM",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "PHYS-6B7B9CF83824"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 3,
+      "slot_role": "conceptual_vocab_application"
+    },
+    {
+      "item_id": "U1-S2-WU1-Q4",
+      "bank_id": "U1-S2-WU1-Q4",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "i_can_id": "U1-S2-IC3",
+      "i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU1-Q4",
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Use a short concrete force situation to determine a simple net-force relationship without naked variable assignments.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "The person in the scale diagram is at rest. If the downward weight is 280 N, what upward support force should the scale exert?",
+      "student_html": "<p>The person in the scale diagram is at rest. If the downward weight is 280 N, what upward support force should the scale exert?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png\" alt=\"Person standing on a scale with upward support force and downward weight.\">",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "280 N upward",
+      "answer_text": "280 N upward",
+      "solution_text": "Rest with no acceleration means ΣF_y=0, so the upward support force equals the 280 N downward weight.",
+      "solution_html": "<p>Rest with no acceleration means ΣF_y=0, so the upward support force equals the 280 N downward weight.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-DAC530DEBC21",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Person standing on a scale with upward support force and downward weight.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-DAC530DEBC21",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU1-Q4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S2-WU1-Q4: Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU1-Q4",
+        "design_slot_id": "U1-S2-WU1-Q4",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-WU1-Q4",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+          "asset_id": "PHYS-DAC530DEBC21",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S12_FORCE_DIAGRAM_BALANCE",
+      "task_architecture": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "variation": {
+        "realized": [
+          "28 N",
+          "PHYS-DAC530DEBC21"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 1,
+      "question_number": 4,
+      "slot_role": "physics_math_formula_skill"
+    },
+    {
+      "item_id": "U1-S2-WU2-Q1",
+      "bank_id": "U1-S2-WU2-Q1",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "i_can_id": "U1-S2-IC2",
+      "i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU2-Q1",
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "student_action": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Dishes tend to remain nearly at rest when a tablecloth is pulled quickly from beneath them. What property of matter is illustrated?",
+      "student_html": "<p>Dishes tend to remain nearly at rest when a tablecloth is pulled quickly from beneath them. What property of matter is illustrated?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "inertia",
+      "answer_text": "inertia",
+      "solution_text": "The tendency to resist a change in motion is inertia.",
+      "solution_html": "<p>The tendency to resist a change in motion is inertia.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S2-WU2-Q1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU2-Q1: Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU2-Q1",
+        "design_slot_id": "U1-S2-WU2-Q1",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-WU2-Q1",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S12_INERTIA_RECOGNIZE",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "1"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 1,
+      "slot_role": "current_recent_retrieval"
+    },
+    {
+      "item_id": "U1-S2-WU2-Q2",
+      "bank_id": "U1-S2-WU2-Q2",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "i_can_id": "U1-S1-IC2",
+      "i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S2-WU2-Q2",
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "student_action": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Select the claim whose proposed evidence would allow a real test.",
+      "student_html": "<p>Select the claim whose proposed evidence would allow a real test.</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible evidence</th></tr></thead><tbody><tr><td>A</td><td>This setup is lucky.</td><td>Luck is not an operational variable.</td></tr><tr><td>B</td><td>Fast motion looks more scientific.</td><td>Appearance is not a defined measurement.</td></tr><tr><td>C</td><td>Changing surface type changes stopping distance.</td><td>Measure surface type and stopping distance.</td></tr><tr><td>D</td><td>The universe likes smooth tracks.</td><td>“Likes” is not measurable.</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>Claim A</li><li>Claim B</li><li>Claim C</li><li>Claim D</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Claim A"
+        },
+        {
+          "id": "B",
+          "text": "Claim B"
+        },
+        {
+          "id": "C",
+          "text": "Claim C"
+        },
+        {
+          "id": "D",
+          "text": "Claim D"
+        }
+      ],
+      "correct_choice": "C",
+      "answer": "Claim C",
+      "answer_text": "Claim C",
+      "solution_text": "A claim is testable when observations or measurements could provide evidence for or against it.",
+      "solution_html": "<p>A claim is testable when observations or measurements could provide evidence for or against it.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S2-WU2-Q2-table",
+          "headers": [
+            "Option",
+            "Claim",
+            "Possible evidence"
+          ],
+          "rows": [
+            [
+              "A",
+              "This setup is lucky.",
+              "Luck is not an operational variable."
+            ],
+            [
+              "B",
+              "Fast motion looks more scientific.",
+              "Appearance is not a defined measurement."
+            ],
+            [
+              "C",
+              "Changing surface type changes stopping distance.",
+              "Measure surface type and stopping distance."
+            ],
+            [
+              "D",
+              "The universe likes smooth tracks.",
+              "“Likes” is not measurable."
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S2-WU2-Q2-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU2-Q2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU2-Q2: Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU2-Q2",
+        "design_slot_id": "U1-S2-WU2-Q2",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S2-WU2-Q2",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_TESTABLE_CLAIM_TABLE",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "Changing surface type changes stopping distance."
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 2,
+      "slot_role": "older_spiral_retrieval"
+    },
+    {
+      "item_id": "U1-S2-WU2-Q3",
+      "bank_id": "U1-S2-WU2-Q3",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "i_can_id": "U1-S2-IC1",
+      "i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU2-Q3",
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "student_action": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Explain Newton’s First Law without using the phrase “an object in motion stays in motion.” Focus on what zero net force means for velocity.",
+      "student_html": "<p>Explain Newton’s First Law without using the phrase “an object in motion stays in motion.” Focus on what zero net force means for velocity.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "If the forces on an object balance, its motion does not change: an object at rest stays at rest and a moving object continues at constant velocity unless a net force acts.",
+      "answer_text": "If the forces on an object balance, its motion does not change: an object at rest stays at rest and a moving object continues at constant velocity unless a net force acts.",
+      "solution_text": "If the forces on an object balance, its motion does not change: an object at rest stays at rest and a moving object continues at constant velocity unless a net force acts.",
+      "solution_html": "<p>If the forces on an object balance, its motion does not change: an object at rest stays at rest and a moving object continues at constant velocity unless a net force acts.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S2-WU2-Q3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU2-Q3: State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU2-Q3",
+        "design_slot_id": "U1-S2-WU2-Q3",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-WU2-Q3",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S12_NEWTON_FIRST_EXPLAIN",
+      "task_architecture": "VOCAB-TERM-TO-CONCEPT-01",
+      "variation": {
+        "realized": [
+          "everyday language",
+          "1"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 3,
+      "slot_role": "conceptual_vocab_application"
+    },
+    {
+      "item_id": "U1-S2-WU2-Q4",
+      "bank_id": "U1-S2-WU2-Q4",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "i_can_id": "U1-S2-IC3",
+      "i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU2-Q4",
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Use a short concrete force situation to determine a simple net-force relationship without naked variable assignments.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "The box in the diagram moves at constant speed. If the push is 36 N to the right, determine the friction force needed for the diagram to represent that motion.",
+      "student_html": "<p>The box in the diagram moves at constant speed. If the push is 36 N to the right, determine the friction force needed for the diagram to represent that motion.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png\" alt=\"Force diagram for a box moving at constant speed with a push in one direction and friction in the opposite direction.\">",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "36 N to the left",
+      "answer_text": "36 N to the left",
+      "solution_text": "Constant straight-line speed means ΣF_x=0, so friction must equal the 36 N push in the opposite direction.",
+      "solution_html": "<p>Constant straight-line speed means ΣF_x=0, so friction must equal the 36 N push in the opposite direction.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-9C32901B2ABF",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Force diagram for a box moving at constant speed with a push in one direction and friction in the opposite direction.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU2-Q4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S2-WU2-Q4: Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU2-Q4",
+        "design_slot_id": "U1-S2-WU2-Q4",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-WU2-Q4",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S12_FORCE_DIAGRAM_BALANCE",
+      "task_architecture": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "variation": {
+        "realized": [
+          "36 N",
+          "PHYS-9C32901B2ABF"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 2,
+      "question_number": 4,
+      "slot_role": "physics_math_formula_skill"
+    },
+    {
+      "item_id": "U1-S2-WU3-Q1",
+      "bank_id": "U1-S2-WU3-Q1",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "i_can_id": "U1-S2-IC3",
+      "i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU3-Q1",
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the book-on-table force diagram to identify the force-state interpretation. Which statement best describes the forces on the book?",
+      "student_html": "<p>Use the book-on-table force diagram to identify the force-state interpretation. Which statement best describes the forces on the book?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Book resting on a table with downward weight and upward support force.\"><ol class=\"choices\" type=\"A\"><li>Weight acts down and support force acts up; they can balance.</li><li>Only weight acts because the book is not moving.</li><li>Only support force acts because the table holds the book.</li><li>Inertia acts upward to cancel gravity.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Weight acts down and support force acts up; they can balance."
+        },
+        {
+          "id": "B",
+          "text": "Only weight acts because the book is not moving."
+        },
+        {
+          "id": "C",
+          "text": "Only support force acts because the table holds the book."
+        },
+        {
+          "id": "D",
+          "text": "Inertia acts upward to cancel gravity."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "Weight acts down and support force acts up; they can balance.",
+      "answer_text": "Weight acts down and support force acts up; they can balance.",
+      "solution_text": "A resting book still has forces acting. Weight and support can be equal and opposite, giving zero net force.",
+      "solution_html": "<p>A resting book still has forces acting. Weight and support can be equal and opposite, giving zero net force.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-6B7B9CF83824",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Book resting on a table with downward weight and upward support force.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU3-Q1",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S2-WU3-Q1: Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU3-Q1",
+        "design_slot_id": "U1-S2-WU3-Q1",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-WU3-Q1",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S12_READ_FORCE_DIAGRAM",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "PHYS-6B7B9CF83824"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 1,
+      "slot_role": "current_recent_retrieval"
+    },
+    {
+      "item_id": "U1-S2-WU3-Q2",
+      "bank_id": "U1-S2-WU3-Q2",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "i_can_id": "U1-S1-IC3",
+      "i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S2-WU3-Q2",
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What pattern in the table is evidence for a constant-average-speed explanation?",
+      "student_html": "<p>What pattern in the table is evidence for a constant-average-speed explanation?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Distance</th><th>Time</th></tr></thead><tbody><tr><td>1</td><td>12 m</td><td>4 s</td></tr><tr><td>2</td><td>18 m</td><td>6 s</td></tr><tr><td>3</td><td>24 m</td><td>8 s</td></tr></tbody></table>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "The distance/time ratio is the same in every trial.",
+      "answer_text": "The distance/time ratio is the same in every trial.",
+      "solution_text": "Each row gives the same distance per unit time, so the repeated ratio is evidence for the model.",
+      "solution_html": "<p>Each row gives the same distance per unit time, so the repeated ratio is evidence for the model.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S2-WU3-Q2-table",
+          "headers": [
+            "Trial",
+            "Distance",
+            "Time"
+          ],
+          "rows": [
+            [
+              "1",
+              "12 m",
+              "4 s"
+            ],
+            [
+              "2",
+              "18 m",
+              "6 s"
+            ],
+            [
+              "3",
+              "24 m",
+              "8 s"
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S2-WU3-Q2-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU3-Q2",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU3-Q2: Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU3-Q2",
+        "design_slot_id": "U1-S2-WU3-Q2",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S2-WU3-Q2",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_EVIDENCE_TABLE_INTERPRET",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "constant-rate data set 3 m/s"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 2,
+      "slot_role": "older_spiral_retrieval"
+    },
+    {
+      "item_id": "U1-S2-WU3-Q3",
+      "bank_id": "U1-S2-WU3-Q3",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "i_can_id": "U1-S2-IC2",
+      "i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU3-Q3",
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "student_action": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A heavy cart resists a sudden change in its velocity more than a very light cart. What property of matter is being described?",
+      "student_html": "<p>A heavy cart resists a sudden change in its velocity more than a very light cart. What property of matter is being described?</p><ol class=\"choices\" type=\"A\"><li>inertia</li><li>net force</li><li>support force</li><li>friction</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "inertia"
+        },
+        {
+          "id": "B",
+          "text": "net force"
+        },
+        {
+          "id": "C",
+          "text": "support force"
+        },
+        {
+          "id": "D",
+          "text": "friction"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "inertia",
+      "answer_text": "inertia",
+      "solution_text": "Inertia is the tendency of matter to resist a change in its state of motion.",
+      "solution_html": "<p>Inertia is the tendency of matter to resist a change in its state of motion.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S2-WU3-Q3",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S2-WU3-Q3: Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU3-Q3",
+        "design_slot_id": "U1-S2-WU3-Q3",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-WU3-Q3",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S12_INERTIA_RECOGNIZE",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "2"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 3,
+      "slot_role": "conceptual_vocab_application"
+    },
+    {
+      "item_id": "U1-S2-WU3-Q4",
+      "bank_id": "U1-S2-WU3-Q4",
+      "record_mode": "exact_content",
+      "destination": "WARM_UP",
+      "section": "1.2",
+      "scope": "1.2",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "i_can_id": "U1-S2-IC3",
+      "i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S2-WU3-Q4",
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Use a short concrete force situation to determine a simple net-force relationship without naked variable assignments.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Use the opposing-force diagram. If one horizontal force is 42 N to the right and the object is in equilibrium, what leftward force is required?",
+      "student_html": "<p>Use the opposing-force diagram. If one horizontal force is 42 N to the right and the object is in equilibrium, what leftward force is required?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png\" alt=\"Diagram of opposing forces acting on a box.\">",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "42 N to the left",
+      "answer_text": "42 N to the left",
+      "solution_text": "Equilibrium requires zero net force, so the opposing force must be 42 N.",
+      "solution_html": "<p>Equilibrium requires zero net force, so the opposing force must be 42 N.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-70800F1157C9",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Diagram of opposing forces acting on a box.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-70800F1157C9",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+        }
+      ],
+      "source_map_record_id": "U1-S2-WU3-Q4",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S2-WU3-Q4: Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations."
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-WU3-Q4",
+        "design_slot_id": "U1-S2-WU3-Q4",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-WU3-Q4",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S12_FORCE_DIAGRAM_BALANCE",
+      "task_architecture": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "variation": {
+        "realized": [
+          "42 N",
+          "PHYS-70800F1157C9"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      },
+      "warmup_number": 3,
+      "question_number": 4,
+      "slot_role": "physics_math_formula_skill"
+    }
+  ]
+}

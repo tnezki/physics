@@ -1,0 +1,622 @@
+{
+  "schema": "bank-v2-exact-content-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.4",
+  "stage": "3A_instructional_core",
+  "destination_group": "cyu",
+  "records": [
+    {
+      "item_id": "U1-S4-CYU-01",
+      "bank_id": "U1-S4-CYU-01",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "i_can_id": "U1-S4-IC1",
+      "i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-CYU-01",
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "student_action": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A hanging sign remains at rest while its support forces balance its weight. What kind of equilibrium is this?",
+      "student_html": "<p>A hanging sign remains at rest while its support forces balance its weight. What kind of equilibrium is this?</p><ol class=\"choices\" type=\"A\"><li>static equilibrium</li><li>dynamic equilibrium</li><li>unbalanced motion</li><li>no-force state</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "static equilibrium"
+        },
+        {
+          "id": "B",
+          "text": "dynamic equilibrium"
+        },
+        {
+          "id": "C",
+          "text": "unbalanced motion"
+        },
+        {
+          "id": "D",
+          "text": "no-force state"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "static equilibrium",
+      "answer_text": "static equilibrium",
+      "solution_text": "static equilibrium matches the motion state while the net force is zero.",
+      "solution_html": "<p>static equilibrium matches the motion state while the net force is zero.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-CYU-01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-CYU-01: Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-CYU-01",
+        "design_slot_id": "U1-S4-CYU-01",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-CYU-01",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S14_EQUILIBRIUM_TYPE",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "static equilibrium"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S4-CYU-02",
+      "bank_id": "U1-S4-CYU-02",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "i_can_id": "U1-S4-IC1",
+      "i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-CYU-02",
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "student_action": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What equilibrium term means “zero net force while the object is at rest”?",
+      "student_html": "<p>What equilibrium term means “zero net force while the object is at rest”?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "static equilibrium",
+      "answer_text": "static equilibrium",
+      "solution_text": "That definition is static equilibrium.",
+      "solution_html": "<p>That definition is static equilibrium.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-CYU-02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-CYU-02: Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-CYU-02",
+        "design_slot_id": "U1-S4-CYU-02",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-CYU-02",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Remember",
+      "question_family_id": "S14_EQUILIBRIUM_TERM",
+      "task_architecture": "VOCAB-DEFINITION-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "static equilibrium"
+        ],
+        "allowed_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S4-CYU-03",
+      "bank_id": "U1-S4-CYU-03",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "i_can_id": "U1-S4-IC2",
+      "i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-CYU-03",
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "student_action": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "The book is resting on the table. Use the weight and support arrows to explain why rest does not mean that no forces are acting.",
+      "student_html": "<p>The book is resting on the table. Use the weight and support arrows to explain why rest does not mean that no forces are acting.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Book resting on a table with downward weight and upward support force.\"><ol class=\"choices\" type=\"A\"><li>The opposing forces can balance so their vector sum is zero even though individual forces are present.</li><li>An object at rest cannot have any forces acting.</li><li>Inertia creates an upward force that removes all other forces.</li><li>Only gravitational force matters when speed is zero.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The opposing forces can balance so their vector sum is zero even though individual forces are present."
+        },
+        {
+          "id": "B",
+          "text": "An object at rest cannot have any forces acting."
+        },
+        {
+          "id": "C",
+          "text": "Inertia creates an upward force that removes all other forces."
+        },
+        {
+          "id": "D",
+          "text": "Only gravitational force matters when speed is zero."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "The opposing forces can balance so their vector sum is zero even though individual forces are present.",
+      "answer_text": "The opposing forces can balance so their vector sum is zero even though individual forces are present.",
+      "solution_text": "The opposing forces can balance so their vector sum is zero even though individual forces are present.",
+      "solution_html": "<p>The opposing forces can balance so their vector sum is zero even though individual forces are present.</p>",
+      "tables": [],
+      "figures": [
+        {
+          "asset_id": "PHYS-6B7B9CF83824",
+          "file": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "render_mode": "canonical_asset_reference",
+          "student_evidence_role": "required representation for the mapped evidence job",
+          "alt_text": "Book resting on a table with downward weight and upward support force.",
+          "answer_neutrality": "Use without the source caption; labels needed to read the representation remain visible."
+        }
+      ],
+      "figure_refs": [
+        "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+      ],
+      "representation_refs": [
+        {
+          "type": "canonical_asset",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        }
+      ],
+      "source_map_record_id": "U1-S4-CYU-03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "accepted Bank Map record U1-S4-CYU-03: Explain that an object at rest may have multiple forces acting while those forces balance to zero net force."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-CYU-03",
+        "design_slot_id": "U1-S4-CYU-03",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-CYU-03",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S14_REST_WITH_FORCES",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "PHYS-6B7B9CF83824"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S4-CYU-04",
+      "bank_id": "U1-S4-CYU-04",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "i_can_id": "U1-S4-IC2",
+      "i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG02",
+      "evidence_point_id": "U1-EP-U1-S4-CYU-04",
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "student_action": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A 4 kg book is resting on a level table. Predict what happens to its motion while the upward support force remains equal to its downward weight. Justify using net force.",
+      "student_html": "<p>A 4 kg book is resting on a level table. Predict what happens to its motion while the upward support force remains equal to its downward weight. Justify using net force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "It remains at rest because the vertical forces balance and the net force is zero.",
+      "answer_text": "It remains at rest because the vertical forces balance and the net force is zero.",
+      "solution_text": "It remains at rest because the vertical forces balance and the net force is zero.",
+      "solution_html": "<p>It remains at rest because the vertical forces balance and the net force is zero.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S4-CYU-04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-CYU-04: Explain that an object at rest may have multiple forces acting while those forces balance to zero net force."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-CYU-04",
+        "design_slot_id": "U1-S4-CYU-04",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-CYU-04",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_REST_WITH_FORCES",
+      "task_architecture": "PHYS-PREDICT-JUSTIFY-01",
+      "variation": {
+        "realized": [
+          "book balanced"
+        ],
+        "allowed_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S4-CYU-05",
+      "bank_id": "U1-S4-CYU-05",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-CYU-05",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A suspended light is in vertical equilibrium. One cable pulls upward with 19 N and a second cable pulls upward with 29 N while the light’s weight is 48 N downward. Use \\(\\Sigma F_y\\) to determine the net force.",
+      "student_html": "<p>A suspended light is in vertical equilibrium. One cable pulls upward with 19 N and a second cable pulls upward with 29 N while the light’s weight is 48 N downward. Use \\(\\Sigma F_y\\) to determine the net force.</p><ol class=\"choices\" type=\"A\"><li>0 N</li><li>67 N</li><li>29 N</li><li>cannot be determined because the object is moving</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "0 N"
+        },
+        {
+          "id": "B",
+          "text": "67 N"
+        },
+        {
+          "id": "C",
+          "text": "29 N"
+        },
+        {
+          "id": "D",
+          "text": "cannot be determined because the object is moving"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "0 N",
+      "answer_text": "0 N",
+      "solution_text": "Upward total is 19+29=48 N, equal to the 48 N downward weight, so ΣF_y=0.",
+      "solution_html": "<p>Upward total is 19+29=48 N, equal to the 48 N downward weight, so ΣF_y=0.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-CYU-05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-CYU-05: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-CYU-05",
+        "design_slot_id": "U1-S4-CYU-05",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-CYU-05",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "variation": {
+        "realized": [
+          "48",
+          "19"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S4-CYU-06",
+      "bank_id": "U1-S4-CYU-06",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.4",
+      "scope": "1.4",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "i_can_id": "U1-S4-IC3",
+      "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG03",
+      "evidence_point_id": "U1-EP-U1-S4-CYU-06",
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 48 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.",
+      "student_html": "<p>A stage platform moves in a straight line at constant speed. Horizontally, a motor pulls with 48 N to the right while resistance acts to the left. Using \\(\\Sigma F_x=0\\), determine the resistance force.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "48 N to the left",
+      "answer_text": "48 N to the left",
+      "solution_text": "Constant straight-line velocity means equilibrium, so 48 N right must be balanced by 48 N left.",
+      "solution_html": "<p>Constant straight-line velocity means equilibrium, so 48 N right must be balanced by 48 N left.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "direct_equation_mathjax"
+        }
+      ],
+      "source_map_record_id": "U1-S4-CYU-06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S4-CYU-06: Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components."
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-CYU-06",
+        "design_slot_id": "U1-S4-CYU-06",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-CYU-06",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Apply",
+      "question_family_id": "S14_EQUILIBRIUM_FORCE_BALANCE",
+      "task_architecture": "FORMULA-INVERSE-VARIABLE-01",
+      "variation": {
+        "realized": [
+          "48",
+          "19"
+        ],
+        "allowed_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}

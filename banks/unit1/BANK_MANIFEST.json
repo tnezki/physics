@@ -1,0 +1,53 @@
+{
+  "schema": "bank-v2-manifest/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "status": "BUILDING",
+  "ready_for_downstream": false,
+  "completed": [
+    "3A_instructional_core"
+  ],
+  "pending": [
+    "3B_practice_families",
+    "3C_assessment_families"
+  ],
+  "next_phase": "3B_practice_families",
+  "profile": {
+    "name": "Conceptual Physics Bank v2 Course Profile",
+    "schema": "course-bank-v2-profile/1.0",
+    "profile_version": "v1.2",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "repository": "tnezki/memories",
+    "pinned_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
+  },
+  "accepted_bank_map": {
+    "path": "banks/unit1_bank_map/MAP_MANIFEST.json",
+    "map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451",
+    "status": "PASS",
+    "question_design_map_sha256": "7f097e566b6043254e5125e8ce5f7d061cf800cb787d3f6778c5ff077da76f60"
+  },
+  "pinned_run": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8",
+    "course_repo": "tnezki/physics",
+    "course_commit": "ea800dba3060ce8257eda8c80e9b5bfbed0c5d75"
+  },
+  "record_counts": {
+    "stage_3a_total": 135,
+    "wtc": 5,
+    "notes_example": 20,
+    "notes_yti": 20,
+    "cyu": 30,
+    "warmups": 60
+  },
+  "paths": {
+    "item_index": "ITEM_INDEX.json",
+    "notes": "notes/section_<section-id>.json",
+    "cyu": "cyu/section_<section-id>.json",
+    "warmups": "warmups/section_<section-id>.json",
+    "provenance_build": "provenance/3a_build.json",
+    "provenance_report": "provenance/3a_report.txt"
+  },
+  "figure_delivery": "Canonical mapped course assets are referenced in place by exact repository path + pinned asset commit; no duplicate binary copies are included in this 3A snapshot.",
+  "qa_status": "PASS"
+}

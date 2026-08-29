@@ -1,0 +1,724 @@
+{
+  "schema": "bank-v2-exact-content-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.1",
+  "stage": "3A_instructional_core",
+  "destination_group": "cyu",
+  "records": [
+    {
+      "item_id": "U1-S1-CYU-01",
+      "bank_id": "U1-S1-CYU-01",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.1",
+      "scope": "1.1",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "i_can_id": "U1-S1-IC1",
+      "i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S1-CYU-01",
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "student_action": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "What scientific-thinking term means “a direct description or measurement made with the senses or an instrument”?",
+      "student_html": "<p>What scientific-thinking term means “a direct description or measurement made with the senses or an instrument”?</p><ol class=\"choices\" type=\"A\"><li>observation</li><li>inference</li><li>hypothesis</li><li>scientific law</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "observation"
+        },
+        {
+          "id": "B",
+          "text": "inference"
+        },
+        {
+          "id": "C",
+          "text": "hypothesis"
+        },
+        {
+          "id": "D",
+          "text": "scientific law"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "observation",
+      "answer_text": "observation",
+      "solution_text": "The definition describes observation.",
+      "solution_html": "<p>The definition describes observation.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S1-CYU-01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S1-CYU-01: Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it."
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-CYU-01",
+        "design_slot_id": "U1-S1-CYU-01",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-CYU-01",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Remember",
+      "question_family_id": "S11_SCIENCE_TERMS",
+      "task_architecture": "VOCAB-DEFINITION-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "observation"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S1-CYU-02",
+      "bank_id": "U1-S1-CYU-02",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.1",
+      "scope": "1.1",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "i_can_id": "U1-S1-IC1",
+      "i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S1-CYU-02",
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "student_action": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A student writes, “The cart traveled 1.6 m in 2.0 s.” Which term best classifies the statement?",
+      "student_html": "<p>A student writes, “The cart traveled 1.6 m in 2.0 s.” Which term best classifies the statement?</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "observation",
+      "answer_text": "observation",
+      "solution_text": "The key feature makes it an observation.",
+      "solution_html": "<p>The key feature makes it an observation.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S1-CYU-02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S1-CYU-02: Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it."
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-CYU-02",
+        "design_slot_id": "U1-S1-CYU-02",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-CYU-02",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 1,
+      "bloom": "Understand",
+      "question_family_id": "S11_CLASSIFY_SCIENTIFIC_STATEMENT",
+      "task_architecture": "VOCAB-CONCEPT-TO-TERM-01",
+      "variation": {
+        "realized": [
+          "observation"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S1-CYU-03",
+      "bank_id": "U1-S1-CYU-03",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.1",
+      "scope": "1.1",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "i_can_id": "U1-S1-IC2",
+      "i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S1-CYU-03",
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "student_action": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Which claim in this evidence table is scientifically testable as written?",
+      "student_html": "<p>Which claim in this evidence table is scientifically testable as written?</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible evidence</th></tr></thead><tbody><tr><td>A</td><td>Increasing ramp height reduces travel time over 2.0 m.</td><td>Measure ramp height and travel time.</td></tr><tr><td>B</td><td>The cart moves better when it is happy.</td><td>No measurable condition is defined.</td></tr><tr><td>C</td><td>Nature prefers blue carts.</td><td>“Prefers” is not operationally defined.</td></tr><tr><td>D</td><td>This setup is lucky.</td><td>Luck is not an operational variable.</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>Claim A</li><li>Claim B</li><li>Claim C</li><li>Claim D</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Claim A"
+        },
+        {
+          "id": "B",
+          "text": "Claim B"
+        },
+        {
+          "id": "C",
+          "text": "Claim C"
+        },
+        {
+          "id": "D",
+          "text": "Claim D"
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "Claim A",
+      "answer_text": "Claim A",
+      "solution_text": "A claim is testable when observations or measurements could provide evidence for or against it.",
+      "solution_html": "<p>A claim is testable when observations or measurements could provide evidence for or against it.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S1-CYU-03-table",
+          "headers": [
+            "Option",
+            "Claim",
+            "Possible evidence"
+          ],
+          "rows": [
+            [
+              "A",
+              "Increasing ramp height reduces travel time over 2.0 m.",
+              "Measure ramp height and travel time."
+            ],
+            [
+              "B",
+              "The cart moves better when it is happy.",
+              "No measurable condition is defined."
+            ],
+            [
+              "C",
+              "Nature prefers blue carts.",
+              "“Prefers” is not operationally defined."
+            ],
+            [
+              "D",
+              "This setup is lucky.",
+              "Luck is not an operational variable."
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S1-CYU-03-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S1-CYU-03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S1-CYU-03: Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable."
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-CYU-03",
+        "design_slot_id": "U1-S1-CYU-03",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-CYU-03",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_TESTABLE_CLAIM_TABLE",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "Increasing ramp height reduces travel time over 2.0 m."
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S1-CYU-04",
+      "bank_id": "U1-S1-CYU-04",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.1",
+      "scope": "1.1",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "i_can_id": "U1-S1-IC2",
+      "i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S1-CYU-04",
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "student_action": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "A student says, “Invisible motion spirits make this cart faster, and no measurement could ever detect the spirits.” Evaluate the claim’s testability and explain what would need to be measured.",
+      "student_html": "<p>A student says, “Invisible motion spirits make this cart faster, and no measurement could ever detect the spirits.” Evaluate the claim’s testability and explain what would need to be measured.</p>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "The claim is not scientifically testable as stated because no possible observation or measurement could count for or against the proposed cause.",
+      "answer_text": "The claim is not scientifically testable as stated because no possible observation or measurement could count for or against the proposed cause.",
+      "solution_text": "The claim is not scientifically testable as stated because no possible observation or measurement could count for or against the proposed cause.",
+      "solution_html": "<p>The claim is not scientifically testable as stated because no possible observation or measurement could count for or against the proposed cause.</p>",
+      "tables": [],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [],
+      "source_map_record_id": "U1-S1-CYU-04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S1-CYU-04: Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable."
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-CYU-04",
+        "design_slot_id": "U1-S1-CYU-04",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-CYU-04",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "dok": 2,
+      "bloom": "Evaluate",
+      "question_family_id": "S11_TESTABILITY_CRITIQUE",
+      "task_architecture": "ERROR-CRITIQUE-CLAIM-01",
+      "variation": {
+        "realized": [
+          "0"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S1-CYU-05",
+      "bank_id": "U1-S1-CYU-05",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.1",
+      "scope": "1.1",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "i_can_id": "U1-S1-IC3",
+      "i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S1-CYU-05",
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "Which explanation is best supported by the table?",
+      "student_html": "<p>Which explanation is best supported by the table?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Distance</th><th>Time</th></tr></thead><tbody><tr><td>1</td><td>4 m</td><td>2 s</td></tr><tr><td>2</td><td>8 m</td><td>4 s</td></tr><tr><td>3</td><td>12 m</td><td>6 s</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>The cart has approximately constant average speed.</li><li>The cart is definitely accelerating because distance increases.</li><li>The formula cannot be used because the distances differ.</li><li>The data prove no forces act on the cart.</li></ol>",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The cart has approximately constant average speed."
+        },
+        {
+          "id": "B",
+          "text": "The cart is definitely accelerating because distance increases."
+        },
+        {
+          "id": "C",
+          "text": "The formula cannot be used because the distances differ."
+        },
+        {
+          "id": "D",
+          "text": "The data prove no forces act on the cart."
+        }
+      ],
+      "correct_choice": "A",
+      "answer": "The cart has approximately constant average speed.",
+      "answer_text": "The cart has approximately constant average speed.",
+      "solution_text": "Equal distance/time ratios support a constant average speed; the table alone does not establish the force state.",
+      "solution_html": "<p>Equal distance/time ratios support a constant average speed; the table alone does not establish the force state.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S1-CYU-05-table",
+          "headers": [
+            "Trial",
+            "Distance",
+            "Time"
+          ],
+          "rows": [
+            [
+              "1",
+              "4 m",
+              "2 s"
+            ],
+            [
+              "2",
+              "8 m",
+              "4 s"
+            ],
+            [
+              "3",
+              "12 m",
+              "6 s"
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S1-CYU-05-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S1-CYU-05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S1-CYU-05: Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule."
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-CYU-05",
+        "design_slot_id": "U1-S1-CYU-05",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-CYU-05",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_EVIDENCE_TABLE_INTERPRET",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "constant-rate data set 2 m/s"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "item_id": "U1-S1-CYU-06",
+      "bank_id": "U1-S1-CYU-06",
+      "record_mode": "exact_content",
+      "destination": "CYU",
+      "section": "1.1",
+      "scope": "1.1",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "i_can_id": "U1-S1-IC3",
+      "i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "mastery_goal_id": "U1-MG01",
+      "evidence_point_id": "U1-EP-U1-S1-CYU-06",
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "security_level": "nonsecure_instructional",
+      "audit_status": "NEEDS AUDIT",
+      "student_text": "State the numerical pattern in the table that supports a constant-average-speed model.",
+      "student_html": "<p>State the numerical pattern in the table that supports a constant-average-speed model.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Distance</th><th>Time</th></tr></thead><tbody><tr><td>1</td><td>9 m</td><td>3 s</td></tr><tr><td>2</td><td>15 m</td><td>5 s</td></tr><tr><td>3</td><td>21 m</td><td>7 s</td></tr></tbody></table>",
+      "choices": [],
+      "correct_choice": "",
+      "answer": "The distance/time ratio is the same in every trial.",
+      "answer_text": "The distance/time ratio is the same in every trial.",
+      "solution_text": "Each row gives the same distance per unit time, so the repeated ratio is evidence for the model.",
+      "solution_html": "<p>Each row gives the same distance per unit time, so the repeated ratio is evidence for the model.</p>",
+      "tables": [
+        {
+          "table_id": "U1-S1-CYU-06-table",
+          "headers": [
+            "Trial",
+            "Distance",
+            "Time"
+          ],
+          "rows": [
+            [
+              "1",
+              "9 m",
+              "3 s"
+            ],
+            [
+              "2",
+              "15 m",
+              "5 s"
+            ],
+            [
+              "3",
+              "21 m",
+              "7 s"
+            ]
+          ]
+        }
+      ],
+      "figures": [],
+      "figure_refs": [],
+      "representation_refs": [
+        {
+          "type": "semantic_html_table",
+          "table_id": "U1-S1-CYU-06-table",
+          "html_contract": "<table class=\"values\">"
+        }
+      ],
+      "source_map_record_id": "U1-S1-CYU-06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "accepted Bank Map record U1-S1-CYU-06: Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule."
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-CYU-06",
+        "design_slot_id": "U1-S1-CYU-06",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-CYU-06",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "dok": 2,
+      "bloom": "Analyze",
+      "question_family_id": "S11_EVIDENCE_TABLE_INTERPRET",
+      "task_architecture": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "variation": {
+        "realized": [
+          "constant-rate data set 3 m/s"
+        ],
+        "allowed_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}
