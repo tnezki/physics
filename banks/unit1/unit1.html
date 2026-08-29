@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Physics — Unit 1 Bank</title>
+<style>
+:root{
+  --navy:#203f73;
+  --navy-dark:#162f58;
+  --ink:#172033;
+  --muted:#59677e;
+  --line:#d6dce7;
+  --soft:#f6f8fb;
+  --paper:#fff;
+  --gold:#c9a84c;
+  --green:#2f6b3a;
+  --answer:#f0f7f1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:#fff;
+  color:var(--ink);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.45;
+}
+.wrap{max-width:1280px;margin:0 auto;padding:22px 38px 70px}
+h1{
+  margin:0;
+  color:var(--navy);
+  font-size:46px;
+  line-height:1.1;
+  letter-spacing:-.8px;
+}
+.subtitle{font-size:20px;margin:10px 0 26px;color:#1f2937}
+.top-nav{
+  display:flex;
+  gap:26px;
+  flex-wrap:wrap;
+  align-items:center;
+  border-bottom:1px solid #bbb;
+  padding:8px 12px 18px;
+  margin-bottom:28px;
+}
+.top-nav a{
+  color:var(--navy);
+  font-size:18px;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.utility{
+  margin-left:auto;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.utility button{
+  border:1px solid #b9c5d8;
+  background:#fff;
+  color:var(--navy);
+  border-radius:6px;
+  padding:7px 11px;
+  font-weight:700;
+  cursor:pointer;
+}
+.section{
+  margin:0 0 46px;
+  scroll-margin-top:16px;
+}
+.section-title{
+  border-left:8px solid #0d174f;
+  padding-left:12px;
+  color:var(--navy);
+  font-size:30px;
+  line-height:1.15;
+  margin:0 0 18px;
+}
+.learning-target{font-size:18px;margin-bottom:13px}
+.icans{
+  background:#f8fafc;
+  border:1px solid var(--line);
+  border-radius:7px;
+  padding:12px 16px;
+  margin-bottom:22px;
+}
+.icans strong{color:var(--navy)}
+.icans ul{margin:6px 0 0;padding-left:22px}
+.icans li{margin:4px 0}
+.group{margin:28px 0 34px}
+.group-title{
+  color:var(--navy);
+  font-size:25px;
+  margin:0 0 14px;
+}
+.item{
+  border:1px solid #cfd7e4;
+  border-radius:8px;
+  padding:18px 19px;
+  margin:0 0 16px;
+  background:#fff;
+}
+.item h4{
+  color:var(--navy);
+  margin:0 0 7px;
+  font-size:20px;
+}
+.meta{
+  color:#53627c;
+  font-size:13px;
+  margin-bottom:12px;
+  overflow-wrap:anywhere;
+}
+.prompt{
+  font-size:17px;
+  color:#151b26;
+}
+.prompt table{
+  border-collapse:collapse;
+  margin:10px auto;
+  max-width:100%;
+}
+.prompt th,.prompt td{
+  border:1px solid #888;
+  padding:5px 8px;
+  text-align:left;
+}
+.prompt img,.figure{
+  display:block;
+  max-width:min(720px,100%);
+  height:auto;
+  margin:16px auto;
+}
+.answer{
+  display:none;
+  margin-top:15px;
+  padding:13px 15px;
+  background:var(--answer);
+  border-left:4px solid var(--green);
+  border-radius:5px;
+}
+.answer.open{display:block}
+.answer-label{font-weight:700;color:var(--green)}
+.answer-btn{
+  margin-top:13px;
+  border:1px solid #b8c5d8;
+  background:#f8fafc;
+  color:var(--navy);
+  border-radius:5px;
+  padding:6px 10px;
+  font-weight:700;
+  cursor:pointer;
+}
+.role-chip{
+  display:inline-block;
+  padding:2px 7px;
+  background:#edf2f8;
+  border:1px solid #cbd6e5;
+  border-radius:999px;
+  color:var(--navy);
+  font-size:11px;
+  font-weight:700;
+}
+.loading,.error{
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:16px;
+  color:var(--muted);
+}
+.error{color:#8b2e2e;background:#fff5f5;border-color:#e3bcbc}
+.summative-nav{
+  display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap
+}
+.summative-nav button{
+  border:1px solid #b8c5d8;background:#fff;color:var(--navy);
+  padding:8px 12px;border-radius:5px;font-weight:700;cursor:pointer
+}
+.hidden{display:none!important}
+@media(max-width:700px){
+  .wrap{padding:16px}
+  h1{font-size:34px}
+  .top-nav{gap:14px;padding-left:0;padding-right:0}
+  .top-nav a{font-size:15px}
+  .section-title{font-size:25px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Physics — Unit 1 Bank</h1>
+  <div class="subtitle">Forces, Motion, and Equilibrium · Canonical Bank v2</div>
+
+  <nav class="top-nav">
+    <a href="#s11">Section 1.1</a>
+    <a href="#s12">Section 1.2</a>
+    <a href="#s13">Section 1.3</a>
+    <a href="#s14">Section 1.4</a>
+    <a href="#s15">Section 1.5</a>
+    <a href="#summative">Secure Summative</a>
+    <div class="utility">
+      <button id="showAll">Show all answers</button>
+      <button id="hideAll">Hide all answers</button>
+    </div>
+  </nav>
+
+  <main id="bank"></main>
+</div>
+
+<script>
+const RAW_ROOT = "https://raw.githubusercontent.com/tnezki/physics/main/banks/unit1/";
+
+const sections = [
+  {
+    id:"1.1", anchor:"s11", title:"Thinking Like a Physicist",
+    lt:"Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+    icans:[
+      ["U1-S1-IC1","I can distinguish between an observation, inference, hypothesis, law, and theory."],
+      ["U1-S1-IC2","I can explain why a claim must be testable to be scientific."],
+      ["U1-S1-IC3","I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation."]
+    ]
+  },
+  {
+    id:"1.2", anchor:"s12", title:"Forces and Newton’s First Law",
+    lt:"Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+    icans:[
+      ["U1-S2-IC1","I can state Newton’s First Law in everyday language."],
+      ["U1-S2-IC2","I can explain that inertia is a property of matter, not a force."],
+      ["U1-S2-IC3","I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations."]
+    ]
+  },
+  {
+    id:"1.3", anchor:"s13", title:"Net Force and Vectors",
+    lt:"Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+    icans:[
+      ["U1-S3-IC1","I can explain why force is a vector quantity."],
+      ["U1-S3-IC2","I can combine forces acting in the same direction or opposite directions."],
+      ["U1-S3-IC3","I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction."]
+    ]
+  },
+  {
+    id:"1.4", anchor:"s14", title:"Equilibrium and Balanced Motion",
+    lt:"Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+    icans:[
+      ["U1-S4-IC1","I can recognize static equilibrium and dynamic equilibrium."],
+      ["U1-S4-IC2","I can explain why an object at rest can still have forces acting on it."],
+      ["U1-S4-IC3","I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces."]
+    ]
+  },
+  {
+    id:"1.5", anchor:"s15", title:"Modeling Forces in the Real World",
+    lt:"Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+    icans:[
+      ["U1-S5-IC1","I can draw a force diagram for an object in a real-world situation."],
+      ["U1-S5-IC2","I can decide whether the forces are balanced or unbalanced."],
+      ["U1-S5-IC3","I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary."]
+    ]
+  }
+];
+
+const pathsFor = id => {
+  const slug=id.replace(".","_");
+  return {
+    notes:`notes/section_${slug}.json`,
+    cyu:`cyu/section_${slug}.json`,
+    warmups:`warmups/section_${slug}.json`,
+    practice:`practice/section_${slug}.json`,
+    exit:`exit/section_${slug}.json`
+  };
+};
+
+function esc(v){
+  return String(v ?? "")
+    .replaceAll("&","&amp;").replaceAll("<","&lt;")
+    .replaceAll(">","&gt;").replaceAll('"',"&quot;");
+}
+function records(data){
+  return data?.items || data?.families || data?.records || [];
+}
+function seed(r){ return r.canonical_seed || r; }
+function rid(r){ return r.item_id || r.family_id || r.record_id || "Bank item"; }
+
+function roleName(r, group){
+  if(group==="notes"){
+    if(r.notes_role==="wtc") return "What's to Come";
+    if(r.notes_role==="example") return `Example ${r.pair_number || ""}`.trim();
+    if(r.notes_role==="yti") return `You Try It ${r.pair_number || ""}`.trim();
+    return "Notes Bank Item";
+  }
+  if(group==="warmups"){
+    const n=r.warmup_number || r.warmup || "";
+    const q=r.slot || r.question_number || "";
+    return ["Warm-Up",n,q].filter(Boolean).join(" ");
+  }
+  if(group==="practice") return "Practice Family";
+  if(group==="exit") return "Exit Family";
+  if(group==="cyu") return "Check Your Understanding";
+  if(group==="summative") return "Summative Family";
+  return "Bank Item";
+}
+
+function promptHTML(r){
+  const s=seed(r);
+  if(s.student_html) return s.student_html;
+  return `<div>${esc(s.student_text).replaceAll("\n","<br>")}</div>`;
+}
+function answerHTML(r){
+  const s=seed(r);
+  const ans=s.answer || "";
+  const sol=s.solution_html || s.solution_text || "";
+  let out="";
+  if(ans) out += `<div><span class="answer-label">Answer:</span> ${esc(ans)}</div>`;
+  if(sol){
+    out += `<div style="margin-top:8px"><span class="answer-label">Solution:</span> `;
+    out += s.solution_html ? sol : esc(sol).replaceAll("\n","<br>");
+    out += `</div>`;
+  }
+  return out || `<div>No answer/solution field found.</div>`;
+}
+function metadata(r, group){
+  const parts=[
+    rid(r),
+    roleName(r,group),
+    r.section?.id || r.section,
+    r.primary_i_can_id,
+    r.family_type,
+    r.question_structure_id,
+    r.representation_mode,
+    r.response_mode,
+    r.difficulty_intent
+  ].filter(Boolean);
+  return parts.map(esc).join(" · ");
+}
+function figureHTML(r){
+  const s=seed(r);
+  const refs=s.figure_refs || r.figure_refs || [];
+  if(!refs.length) return "";
+  return refs.map(ref=>{
+    const path=String(ref).replace(/^banks\/unit1\//,"");
+    return `<img class="figure" src="${RAW_ROOT+path}" alt="Bank figure">`;
+  }).join("");
+}
+
+function itemCard(r, group){
+  const role=roleName(r,group);
+  return `
+  <article class="item">
+    <h4>${esc(role)}</h4>
+    <div class="meta">${metadata(r,group)}</div>
+    <div class="prompt">${promptHTML(r)}${figureHTML(r)}</div>
+    <button class="answer-btn" type="button">Show answer / solution</button>
+    <div class="answer">${answerHTML(r)}</div>
+  </article>`;
+}
+
+function groupBlock(title, recs, group){
+  return `
+  <div class="group">
+    <h3 class="group-title">${esc(title)}</h3>
+    ${recs.length ? recs.map(r=>itemCard(r,group)).join("") : '<div class="loading">No records found.</div>'}
+  </div>`;
+}
+
+async function getJSON(path){
+  const url=RAW_ROOT+path;
+  const res=await fetch(url,{cache:"no-store"});
+  if(!res.ok) throw new Error(`${res.status} ${res.statusText}: ${path}`);
+  return await res.json();
+}
+
+async function renderSection(sec){
+  const shell=document.createElement("section");
+  shell.className="section";
+  shell.id=sec.anchor;
+  shell.innerHTML=`
+    <h2 class="section-title">Section ${esc(sec.id)}: ${esc(sec.title)}</h2>
+    <div class="learning-target"><strong>Learning target:</strong> ${esc(sec.lt)}</div>
+    <div class="icans">
+      <strong>I Can Statements</strong>
+      <ul>${sec.icans.map(([id,t])=>`<li><b>${esc(id)}</b> — ${esc(t)}</li>`).join("")}</ul>
+    </div>
+    <div class="loading">Loading canonical Bank content…</div>`;
+  document.getElementById("bank").appendChild(shell);
+
+  try{
+    const p=pathsFor(sec.id);
+    const [notes,cyu,warmups,practice,exit] = await Promise.all([
+      getJSON(p.notes),getJSON(p.cyu),getJSON(p.warmups),getJSON(p.practice),getJSON(p.exit)
+    ]);
+    const nr=records(notes);
+    const wtc=nr.filter(r=>r.notes_role==="wtc");
+    const exyti=nr.filter(r=>r.notes_role!=="wtc");
+    shell.querySelector(".loading").remove();
+    shell.insertAdjacentHTML("beforeend",
+      groupBlock("WTC",wtc,"notes")+
+      groupBlock("Example / You Try It",exyti,"notes")+
+      groupBlock("Check Your Understanding",records(cyu),"cyu")+
+      groupBlock("Warm-Ups",records(warmups),"warmups")+
+      groupBlock("Practice Families",records(practice),"practice")+
+      groupBlock("Exit Families",records(exit),"exit")
+    );
+  }catch(err){
+    shell.querySelector(".loading").className="error";
+    shell.querySelector(".error").innerHTML =
+      `<strong>Could not load this section.</strong><br>${esc(err.message)}<br><br>
+       This page reads the canonical expanded Bank directly from the Physics GitHub repository.`;
+  }
+}
+
+async function renderSummative(){
+  const shell=document.createElement("section");
+  shell.className="section";
+  shell.id="summative";
+  shell.innerHTML=`
+    <h2 class="section-title">Secure Summative</h2>
+    <div class="learning-target"><strong>Unit-wide secure family bank:</strong> Blueprint A (V1–V4) and Blueprint B (V5–V6).</div>
+    <div class="loading">Loading secure summative families…</div>`;
+  document.getElementById("bank").appendChild(shell);
+  try{
+    const [a,b]=await Promise.all([
+      getJSON("summative/blueprint_a.json"),
+      getJSON("summative/blueprint_b.json")
+    ]);
+    shell.querySelector(".loading").remove();
+    shell.insertAdjacentHTML("beforeend",
+      groupBlock("Blueprint A",records(a),"summative")+
+      groupBlock("Blueprint B",records(b),"summative")
+    );
+  }catch(err){
+    shell.querySelector(".loading").className="error";
+    shell.querySelector(".error").textContent="Could not load Summative Bank: "+err.message;
+  }
+}
+
+document.addEventListener("click",e=>{
+  if(e.target.classList.contains("answer-btn")){
+    const ans=e.target.nextElementSibling;
+    ans.classList.toggle("open");
+    e.target.textContent=ans.classList.contains("open") ? "Hide answer / solution" : "Show answer / solution";
+  }
+});
+document.getElementById("showAll").addEventListener("click",()=>{
+  document.querySelectorAll(".answer").forEach(x=>x.classList.add("open"));
+  document.querySelectorAll(".answer-btn").forEach(x=>x.textContent="Hide answer / solution");
+});
+document.getElementById("hideAll").addEventListener("click",()=>{
+  document.querySelectorAll(".answer").forEach(x=>x.classList.remove("open"));
+  document.querySelectorAll(".answer-btn").forEach(x=>x.textContent="Show answer / solution");
+});
+
+(async()=>{
+  for(const sec of sections) await renderSection(sec);
+  await renderSummative();
+})();
+</script>
+</body>
+</html>
