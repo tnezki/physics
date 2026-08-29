@@ -1,0 +1,3293 @@
+{
+  "schema": "bank-v2-family-seed-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.2",
+  "stage": "3B_practice_families",
+  "destination_group": "practice",
+  "family_records": [
+    {
+      "family_id": "U1-S2-PRACTICE-F01",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F01",
+        "design_slot_id": "U1-S2-PRACTICE-F01",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F01",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A puck glides east at constant speed on nearly frictionless ice while net force is zero. Which principle directly explains this unchanged state of motion?",
+        "student_html": "<p>A puck glides east at constant speed on nearly frictionless ice while net force is zero. Which principle directly explains this unchanged state of motion?</p><ol class=\"choices\" type=\"A\"><li>Newton's First Law</li><li>a forward inertia force</li><li>Newton's Third Law</li><li>a rule that moving objects require net force</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Newton's First Law"
+          },
+          {
+            "id": "B",
+            "text": "a forward inertia force"
+          },
+          {
+            "id": "C",
+            "text": "Newton's Third Law"
+          },
+          {
+            "id": "D",
+            "text": "a rule that moving objects require net force"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Newton's First Law",
+        "solution_text": "Newton's First Law connects zero net force with unchanged velocity.",
+        "solution_html": "<p>Newton's First Law connects zero net force with unchanged velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F02",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F02",
+        "design_slot_id": "U1-S2-PRACTICE-F02",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F02",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A book rests on a level desk while the forces remain balanced. Which principle directly explains this unchanged state of motion?",
+        "student_html": "<p>A book rests on a level desk while the forces remain balanced. Which principle directly explains this unchanged state of motion?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Newton's First Law",
+        "solution_text": "The law predicts that the object will remain at rest unless a nonzero net force acts.",
+        "solution_html": "<p>The law predicts that the object will remain at rest unless a nonzero net force acts.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F03",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F03",
+        "design_slot_id": "U1-S2-PRACTICE-F03",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F03",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A spacecraft coasts through deep space with negligible net force. Predict what happens next and justify with Newton’s First Law.",
+        "student_html": "<p>A spacecraft coasts through deep space with negligible net force. Predict what happens next and justify with Newton’s First Law.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "continue with constant velocity",
+        "solution_text": "Newton’s First Law says zero net force produces no change in velocity, so it will continue with constant velocity.",
+        "solution_html": "<p>Newton’s First Law says zero net force produces no change in velocity, so it will continue with constant velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F04",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F04",
+        "design_slot_id": "U1-S2-PRACTICE-F04",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F04",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart rolls straight at 0.8 m/s while balanced forces act. Which principle directly explains this unchanged state of motion?",
+        "student_html": "<p>A cart rolls straight at 0.8 m/s while balanced forces act. Which principle directly explains this unchanged state of motion?</p><ol class=\"choices\" type=\"A\"><li>Newton's First Law</li><li>a forward inertia force</li><li>Newton's Third Law</li><li>a rule that moving objects require net force</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Newton's First Law"
+          },
+          {
+            "id": "B",
+            "text": "a forward inertia force"
+          },
+          {
+            "id": "C",
+            "text": "Newton's Third Law"
+          },
+          {
+            "id": "D",
+            "text": "a rule that moving objects require net force"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Newton's First Law",
+        "solution_text": "Newton's First Law connects zero net force with unchanged velocity.",
+        "solution_html": "<p>Newton's First Law connects zero net force with unchanged velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F05",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F05",
+        "design_slot_id": "U1-S2-PRACTICE-F05",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F05",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A bowling ball is initially at rest and the net force stays zero. Which principle directly explains this unchanged state of motion?",
+        "student_html": "<p>A bowling ball is initially at rest and the net force stays zero. Which principle directly explains this unchanged state of motion?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Newton's First Law",
+        "solution_text": "The law predicts that the object will remain at rest unless a nonzero net force acts.",
+        "solution_html": "<p>The law predicts that the object will remain at rest unless a nonzero net force acts.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F06",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F06",
+        "design_slot_id": "U1-S2-PRACTICE-F06",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F06",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "An air-track glider moves left while the net force is zero. Predict what happens next and justify with Newton’s First Law.",
+        "student_html": "<p>An air-track glider moves left while the net force is zero. Predict what happens next and justify with Newton’s First Law.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "continue left at constant speed",
+        "solution_text": "Newton’s First Law says zero net force produces no change in velocity, so it will continue left at constant speed.",
+        "solution_html": "<p>Newton’s First Law says zero net force produces no change in velocity, so it will continue left at constant speed.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F07",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F07",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F07",
+        "design_slot_id": "U1-S2-PRACTICE-F07",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F07",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A hockey puck moves north at constant velocity with zero net force. Which principle directly explains this unchanged state of motion?",
+        "student_html": "<p>A hockey puck moves north at constant velocity with zero net force. Which principle directly explains this unchanged state of motion?</p><ol class=\"choices\" type=\"A\"><li>Newton's First Law</li><li>a forward inertia force</li><li>Newton's Third Law</li><li>a rule that moving objects require net force</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Newton's First Law"
+          },
+          {
+            "id": "B",
+            "text": "a forward inertia force"
+          },
+          {
+            "id": "C",
+            "text": "Newton's Third Law"
+          },
+          {
+            "id": "D",
+            "text": "a rule that moving objects require net force"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Newton's First Law",
+        "solution_text": "Newton's First Law connects zero net force with unchanged velocity.",
+        "solution_html": "<p>Newton's First Law connects zero net force with unchanged velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F08",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "intended_reasoning": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F08",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F08",
+        "design_slot_id": "U1-S2-PRACTICE-F08",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F08",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_type",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A toy car moves straight across a low-friction track while the net force remains zero. Which principle directly explains this unchanged state of motion?",
+        "student_html": "<p>A toy car moves straight across a low-friction track while the net force remains zero. Which principle directly explains this unchanged state of motion?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Newton's First Law",
+        "solution_text": "The law predicts that the object will keep the same velocity unless a nonzero net force acts.",
+        "solution_html": "<p>The law predicts that the object will keep the same velocity unless a nonzero net force acts.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F09",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F09",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F09",
+        "design_slot_id": "U1-S2-PRACTICE-F09",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F09",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Which term names the property of matter that resists a change in velocity?",
+        "student_html": "<p>Which term names the property of matter that resists a change in velocity?</p><ol class=\"choices\" type=\"A\"><li>inertia</li><li>friction</li><li>support force</li><li>net force</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "inertia"
+          },
+          {
+            "id": "B",
+            "text": "friction"
+          },
+          {
+            "id": "C",
+            "text": "support force"
+          },
+          {
+            "id": "D",
+            "text": "net force"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "inertia",
+        "solution_text": "Inertia is a property of matter; it is not an interaction force.",
+        "solution_html": "<p>Inertia is a property of matter; it is not an interaction force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F10",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F10",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F10",
+        "design_slot_id": "U1-S2-PRACTICE-F10",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F10",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Explain why a loaded grocery cart is harder to start or stop than the same empty cart, using the word inertia correctly.",
+        "student_html": "<p>Explain why a loaded grocery cart is harder to start or stop than the same empty cart, using the word inertia correctly.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The loaded cart has more mass and therefore greater inertia, so its velocity is harder to change. Inertia is a property, not an extra force.",
+        "solution_text": "Mass measures inertia; the external push or pull is the force that changes the motion.",
+        "solution_html": "<p>Mass measures inertia; the external push or pull is the force that changes the motion.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F11",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F11",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F11",
+        "design_slot_id": "U1-S2-PRACTICE-F11",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F11",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A free-body diagram of a sliding cart includes a forward arrow labeled “inertia force.” Critique the diagram.",
+        "student_html": "<p>A free-body diagram of a sliding cart includes a forward arrow labeled “inertia force.” Critique the diagram.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Remove the inertia arrow. Inertia is a property of the cart, not a force exerted on it by another object.",
+        "solution_text": "A free-body diagram shows interaction forces acting on the selected object; inertia is not one of those interactions.",
+        "solution_html": "<p>A free-body diagram shows interaction forces acting on the selected object; inertia is not one of those interactions.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F12",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F12",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F12",
+        "design_slot_id": "U1-S2-PRACTICE-F12",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F12",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Two carts receive equal pushes for the same time, but one cart has much greater mass. Use inertia—not an “inertia force”—to explain why the heavier cart’s motion is harder to change.",
+        "student_html": "<p>Two carts receive equal pushes for the same time, but one cart has much greater mass. Use inertia—not an “inertia force”—to explain why the heavier cart’s motion is harder to change.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The more massive cart has greater inertia, so the same interaction produces a smaller change in its motion.",
+        "solution_text": "The push is the force; inertia describes the object’s resistance to the change.",
+        "solution_html": "<p>The push is the force; inertia describes the object’s resistance to the change.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F13",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F13",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F13",
+        "design_slot_id": "U1-S2-PRACTICE-F13",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F13",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student says, “Inertia is what keeps a moving object going forward.” Rewrite the statement so it treats inertia as a property rather than a force.",
+        "student_html": "<p>A student says, “Inertia is what keeps a moving object going forward.” Rewrite the statement so it treats inertia as a property rather than a force.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "An object has inertia, meaning it resists changes in its velocity; no forward “inertia force” is required to maintain constant velocity when net force is zero.",
+        "solution_text": "Inertia describes persistence of motion, not a hidden forward interaction.",
+        "solution_html": "<p>Inertia describes persistence of motion, not a hidden forward interaction.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F14",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F14",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F14",
+        "design_slot_id": "U1-S2-PRACTICE-F14",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F14",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "What property is greater for a 12 kg cart than for a 3 kg cart and makes the 12 kg cart more resistant to the same attempted change in motion?",
+        "student_html": "<p>What property is greater for a 12 kg cart than for a 3 kg cart and makes the 12 kg cart more resistant to the same attempted change in motion?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "inertia",
+        "solution_text": "Greater mass means greater inertia, the resistance of matter to changes in velocity.",
+        "solution_html": "<p>Greater mass means greater inertia, the resistance of matter to changes in velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F15",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F15",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F15",
+        "design_slot_id": "U1-S2-PRACTICE-F15",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F15",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student claims that when a bus stops suddenly, passengers move forward because a forward force called inertia appears. Critique the explanation.",
+        "student_html": "<p>A student claims that when a bus stops suddenly, passengers move forward because a forward force called inertia appears. Critique the explanation.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "No forward inertia force appears. The passengers’ inertia means their bodies tend to maintain their previous velocity until real forces from the bus act on them.",
+        "solution_text": "Inertia is a property that describes resistance to a velocity change, not a new force.",
+        "solution_html": "<p>Inertia is a property that describes resistance to a velocity change, not a new force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F16",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "intended_reasoning": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F16",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F16",
+        "design_slot_id": "U1-S2-PRACTICE-F16",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F16",
+        "variation_axes": [
+          "context_evidence",
+          "misconception_target",
+          "givens_evidence_set",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Compare two otherwise identical carts, one empty and one carrying added masses. Which cart has greater inertia, and what does that imply about changing its motion?",
+        "student_html": "<p>Compare two otherwise identical carts, one empty and one carrying added masses. Which cart has greater inertia, and what does that imply about changing its motion?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The loaded cart has greater inertia, so a greater net interaction is needed for the same change in motion.",
+        "solution_text": "The comparison links inertia to mass while keeping it distinct from force.",
+        "solution_html": "<p>The comparison links inertia to mass while keeping it distinct from force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F17",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F17",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F17",
+        "design_slot_id": "U1-S2-PRACTICE-F17",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-PRACTICE-F17",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied book-on-table diagram. Which description correctly identifies the forces acting on the book?",
+        "student_html": "<p>Use the supplied book-on-table diagram. Which description correctly identifies the forces acting on the book?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>Weight acts downward and table support acts upward; the forces can balance.</li><li>No forces act because the book is at rest.</li><li>An inertia force acts upward.</li><li>Only the force the book exerts on the table belongs on the book diagram.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Weight acts downward and table support acts upward; the forces can balance."
+          },
+          {
+            "id": "B",
+            "text": "No forces act because the book is at rest."
+          },
+          {
+            "id": "C",
+            "text": "An inertia force acts upward."
+          },
+          {
+            "id": "D",
+            "text": "Only the force the book exerts on the table belongs on the book diagram."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Weight acts downward and table support acts upward; the forces can balance.",
+        "solution_text": "The book has downward weight and upward support force; at rest they can sum to zero.",
+        "solution_html": "<p>The book has downward weight and upward support force; at rest they can sum to zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-6B7B9CF83824",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F18",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F18",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F18",
+        "design_slot_id": "U1-S2-PRACTICE-F18",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F18",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A lamp hangs motionless from one cord. Identify the forces on the lamp and describe the net force.",
+        "student_html": "<p>A lamp hangs motionless from one cord. Identify the forces on the lamp and describe the net force.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Tension acts upward and weight acts downward; they balance, so net force is zero.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F19",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F19",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F19",
+        "design_slot_id": "U1-S2-PRACTICE-F19",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F19",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A parked car rests on a level road. Identify the main vertical forces on the car and explain why rest does not mean “no forces.”",
+        "student_html": "<p>A parked car rests on a level road. Identify the main vertical forces on the car and explain why rest does not mean “no forces.”</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The road exerts an upward support force and Earth exerts downward weight; they balance vertically.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F20",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F20",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F20",
+        "design_slot_id": "U1-S2-PRACTICE-F20",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F20",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "An elevator moves upward at constant speed. Which statement is correct about the vertical forces?",
+        "student_html": "<p>An elevator moves upward at constant speed. Which statement is correct about the vertical forces?</p><ol class=\"choices\" type=\"A\"><li>Cable/support forces upward balance the downward weight, so vertical net force is zero.</li><li>No forces act because the object is not accelerating.</li><li>An inertia force must cancel gravity.</li><li>Only one force can act when net force is zero.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Cable/support forces upward balance the downward weight, so vertical net force is zero."
+          },
+          {
+            "id": "B",
+            "text": "No forces act because the object is not accelerating."
+          },
+          {
+            "id": "C",
+            "text": "An inertia force must cancel gravity."
+          },
+          {
+            "id": "D",
+            "text": "Only one force can act when net force is zero."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Cable/support forces upward balance the downward weight, so vertical net force is zero.",
+        "solution_text": "Zero net force can result from multiple real forces that balance.",
+        "solution_html": "<p>Zero net force can result from multiple real forces that balance.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F21",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F21",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F21",
+        "design_slot_id": "U1-S2-PRACTICE-F21",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-PRACTICE-F21",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied book-on-table diagram to explain the difference between “no forces act” and “the net force is zero.”",
+        "student_html": "<p>Use the supplied book-on-table diagram to explain the difference between “no forces act” and “the net force is zero.”</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Weight and support both act on the book. When they balance, their vector sum is zero even though neither force is absent.",
+        "solution_text": "Zero net force describes the sum, not the absence of interactions.",
+        "solution_html": "<p>Zero net force describes the sum, not the absence of interactions.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-6B7B9CF83824",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F22",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F22",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F22",
+        "design_slot_id": "U1-S2-PRACTICE-F22",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F22",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A foam block floats motionless in water. Identify the main vertical forces and the net-force condition.",
+        "student_html": "<p>A foam block floats motionless in water. Identify the main vertical forces and the net-force condition.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Buoyant force acts upward and weight acts downward; they balance to zero net force.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F23",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F23",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F23",
+        "design_slot_id": "U1-S2-PRACTICE-F23",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F23",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A sled moves right at constant speed across level snow. Which force condition is consistent with this motion?",
+        "student_html": "<p>A sled moves right at constant speed across level snow. Which force condition is consistent with this motion?</p><ol class=\"choices\" type=\"A\"><li>The vector sum of all forces is zero; horizontal driving/pull and resistance balance, and vertical support and weight balance.</li><li>No forces act because the object is not accelerating.</li><li>An inertia force must cancel gravity.</li><li>Only one force can act when net force is zero.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The vector sum of all forces is zero; horizontal driving/pull and resistance balance, and vertical support and weight balance."
+          },
+          {
+            "id": "B",
+            "text": "No forces act because the object is not accelerating."
+          },
+          {
+            "id": "C",
+            "text": "An inertia force must cancel gravity."
+          },
+          {
+            "id": "D",
+            "text": "Only one force can act when net force is zero."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The vector sum of all forces is zero; horizontal driving/pull and resistance balance, and vertical support and weight balance.",
+        "solution_text": "Zero net force can result from multiple real forces that balance.",
+        "solution_html": "<p>Zero net force can result from multiple real forces that balance.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F24",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F24",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F24",
+        "design_slot_id": "U1-S2-PRACTICE-F24",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F24",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A sign hangs at rest from a ceiling cable. Identify the forces on the sign, not the forces it exerts on other objects.",
+        "student_html": "<p>A sign hangs at rest from a ceiling cable. Identify the forces on the sign, not the forces it exerts on other objects.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Cable tension acts upward and weight acts downward; those are forces on the sign.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F25",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F25",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F25",
+        "design_slot_id": "U1-S2-PRACTICE-F25",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-PRACTICE-F25",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied diagram to name the interaction partner that produces each force on the book.",
+        "student_html": "<p>Use the supplied diagram to name the interaction partner that produces each force on the book.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Earth produces the downward gravitational force (weight), and the table produces the upward support/normal force.",
+        "solution_text": "Identifying interaction partners distinguishes real forces from labels such as “inertia force.”",
+        "solution_html": "<p>Identifying interaction partners distinguishes real forces from labels such as “inertia force.”</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-6B7B9CF83824",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F26",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F26",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F26",
+        "design_slot_id": "U1-S2-PRACTICE-F26",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F26",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A backpack rests on the classroom floor. Which statement correctly describes its force state?",
+        "student_html": "<p>A backpack rests on the classroom floor. Which statement correctly describes its force state?</p><ol class=\"choices\" type=\"A\"><li>The floor support and weight are both present and can balance to zero net force.</li><li>No forces act because the object is not accelerating.</li><li>An inertia force must cancel gravity.</li><li>Only one force can act when net force is zero.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The floor support and weight are both present and can balance to zero net force."
+          },
+          {
+            "id": "B",
+            "text": "No forces act because the object is not accelerating."
+          },
+          {
+            "id": "C",
+            "text": "An inertia force must cancel gravity."
+          },
+          {
+            "id": "D",
+            "text": "Only one force can act when net force is zero."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The floor support and weight are both present and can balance to zero net force.",
+        "solution_text": "Zero net force can result from multiple real forces that balance.",
+        "solution_html": "<p>Zero net force can result from multiple real forces that balance.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F27",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F27",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F27",
+        "design_slot_id": "U1-S2-PRACTICE-F27",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F27",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate rests on a horizontal floor while a student pushes right and another student pushes left with equal force. Describe the forces and net force.",
+        "student_html": "<p>A crate rests on a horizontal floor while a student pushes right and another student pushes left with equal force. Describe the forces and net force.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Horizontal pushes cancel while support and weight cancel vertically, so multiple forces act but the net force is zero.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F28",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F28",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F28",
+        "design_slot_id": "U1-S2-PRACTICE-F28",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F28",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A parachutist descends at terminal speed. Identify the two main vertical forces and the net-force condition.",
+        "student_html": "<p>A parachutist descends at terminal speed. Identify the two main vertical forces and the net-force condition.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Air drag upward balances weight downward, so net force is zero even though the parachutist is moving.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F29",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F29",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F29",
+        "design_slot_id": "U1-S2-PRACTICE-F29",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S2-PRACTICE-F29",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied force diagram. Which statement best distinguishes individual forces from net force?",
+        "student_html": "<p>Use the supplied force diagram. Which statement best distinguishes individual forces from net force?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>The diagram can show multiple real forces while the net force is zero.</li><li>A stationary object cannot have any forces on it.</li><li>Support force is the same thing as inertia.</li><li>Weight is a force the book exerts on Earth, so it does not act on the book.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The diagram can show multiple real forces while the net force is zero."
+          },
+          {
+            "id": "B",
+            "text": "A stationary object cannot have any forces on it."
+          },
+          {
+            "id": "C",
+            "text": "Support force is the same thing as inertia."
+          },
+          {
+            "id": "D",
+            "text": "Weight is a force the book exerts on Earth, so it does not act on the book."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The diagram can show multiple real forces while the net force is zero.",
+        "solution_text": "Multiple forces may act and still have a zero vector sum.",
+        "solution_html": "<p>Multiple forces may act and still have a zero vector sum.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-6B7B9CF83824",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S2-PRACTICE-F30",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "intended_reasoning": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S2-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.2",
+      "scope": "1.2",
+      "source_map_record_id": "U1-S2-PRACTICE-F30",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S2-PRACTICE-F30",
+        "design_slot_id": "U1-S2-PRACTICE-F30",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S2-PRACTICE-F30",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A boat floats at rest. Identify the main vertical forces and explain why “no forces” is incorrect.",
+        "student_html": "<p>A boat floats at rest. Identify the main vertical forces and explain why “no forces” is incorrect.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Buoyant force upward balances weight downward; the forces exist even though the net force is zero.",
+        "solution_text": "Name each real interaction force first, then use their vector sum to describe the net force.",
+        "solution_html": "<p>Name each real interaction force first, then use their vector sum to describe the net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}

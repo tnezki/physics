@@ -1,0 +1,3388 @@
+{
+  "schema": "bank-v2-family-seed-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.4",
+  "stage": "3B_practice_families",
+  "destination_group": "practice",
+  "family_records": [
+    {
+      "family_id": "U1-S4-PRACTICE-F01",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F01",
+        "design_slot_id": "U1-S4-PRACTICE-F01",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F01",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A puck moves east at constant speed with zero net force. Which state describes it?",
+        "student_html": "<p>A puck moves east at constant speed with zero net force. Which state describes it?</p><ol class=\"choices\" type=\"A\"><li>dynamic equilibrium</li><li>static equilibrium</li><li>unbalanced motion</li><li>no-force condition</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "dynamic equilibrium"
+          },
+          {
+            "id": "B",
+            "text": "static equilibrium"
+          },
+          {
+            "id": "C",
+            "text": "unbalanced motion"
+          },
+          {
+            "id": "D",
+            "text": "no-force condition"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "dynamic equilibrium",
+        "solution_text": "Dynamic equilibrium is identified by zero net force together with the stated motion.",
+        "solution_html": "<p>Dynamic equilibrium is identified by zero net force together with the stated motion.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F02",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F02",
+        "design_slot_id": "U1-S4-PRACTICE-F02",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F02",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A picture frame hangs motionless with balanced forces. Name the equilibrium state.",
+        "student_html": "<p>A picture frame hangs motionless with balanced forces. Name the equilibrium state.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "static equilibrium",
+        "solution_text": "Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.",
+        "solution_html": "<p>Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F03",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-MATCHING-SET-01",
+      "response_mode": "matching",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F03",
+        "design_slot_id": "U1-S4-PRACTICE-F03",
+        "structure_id": "VOCAB-MATCHING-SET-01",
+        "question_structure_id": "VOCAB-MATCHING-SET-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "matching",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F03",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Match each situation to its equilibrium classification.\n1. Book at rest on a table | 2. Train moving straight at constant speed | 3. Bicycle speeding up | 4. Car turning at constant speed\nA. static equilibrium | B. dynamic equilibrium | C. not equilibrium because speed changes | D. not equilibrium because direction changes",
+        "student_html": "<p>Match each situation to its equilibrium classification.</p><ol class=\"matching-prompts\"><li>Book at rest on a table</li><li>Train moving straight at constant speed</li><li>Bicycle speeding up</li><li>Car turning at constant speed</li></ol><ol class=\"matching-choices\" type=\"A\"><li>static equilibrium</li><li>dynamic equilibrium</li><li>not equilibrium because speed changes</li><li>not equilibrium because direction changes</li></ol>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "1-A; 2-B; 3-C; 4-D",
+        "solution_text": "The correct matching is 1-A; 2-B; 3-C; 4-D.",
+        "solution_html": "<p>The correct matching is 1-A; 2-B; 3-C; 4-D.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F04",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F04",
+        "design_slot_id": "U1-S4-PRACTICE-F04",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F04",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart is in dynamic equilibrium and then an unbalanced force begins acting left. Predict what changes.",
+        "student_html": "<p>A cart is in dynamic equilibrium and then an unbalanced force begins acting left. Predict what changes.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Its velocity begins changing leftward, so it is no longer in equilibrium.",
+        "solution_text": "Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.",
+        "solution_html": "<p>Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F05",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F05",
+        "design_slot_id": "U1-S4-PRACTICE-F05",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F05",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student stands motionless on the floor while support force balances weight. Classify the state.",
+        "student_html": "<p>A student stands motionless on the floor while support force balances weight. Classify the state.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "static equilibrium",
+        "solution_text": "Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.",
+        "solution_html": "<p>Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F06",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F06",
+        "design_slot_id": "U1-S4-PRACTICE-F06",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F06",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A bus travels straight at constant velocity while driving and resistance forces balance. Classify the state.",
+        "student_html": "<p>A bus travels straight at constant velocity while driving and resistance forces balance. Classify the state.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "dynamic equilibrium",
+        "solution_text": "Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.",
+        "solution_html": "<p>Equilibrium requires zero net force; static and dynamic equilibrium differ by whether the constant velocity is zero or nonzero.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F07",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "intended_reasoning": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "question_structure_id": "VOCAB-MATCHING-SET-01",
+      "response_mode": "matching",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F07",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F07",
+        "design_slot_id": "U1-S4-PRACTICE-F07",
+        "structure_id": "VOCAB-MATCHING-SET-01",
+        "question_structure_id": "VOCAB-MATCHING-SET-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "matching",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F07",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "response_mode",
+          "representation_type"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Match each force/motion description to the correct state.\n1. zero net force and zero velocity | 2. zero net force and nonzero constant velocity | 3. nonzero net force | 4. changing direction\nA. static equilibrium | B. dynamic equilibrium | C. not equilibrium | D. not equilibrium",
+        "student_html": "<p>Match each force/motion description to the correct state.</p><ol class=\"matching-prompts\"><li>zero net force and zero velocity</li><li>zero net force and nonzero constant velocity</li><li>nonzero net force</li><li>changing direction</li></ol><ol class=\"matching-choices\" type=\"A\"><li>static equilibrium</li><li>dynamic equilibrium</li><li>not equilibrium</li><li>not equilibrium</li></ol>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "1-A; 2-B; 3-C; 4-D",
+        "solution_text": "The correct matching is 1-A; 2-B; 3-C; 4-D.",
+        "solution_html": "<p>The correct matching is 1-A; 2-B; 3-C; 4-D.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F08",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F08",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F08",
+        "design_slot_id": "U1-S4-PRACTICE-F08",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F08",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied force diagram to explain how an object can be at rest while nonzero forces act.",
+        "student_html": "<p>Use the supplied force diagram to explain how an object can be at rest while nonzero forces act.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>Opposing forces can balance so the vector sum is zero.</li><li>Rest means every force is absent.</li><li>Inertia is an upward balancing force.</li><li>Only one force may act at equilibrium.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Opposing forces can balance so the vector sum is zero."
+          },
+          {
+            "id": "B",
+            "text": "Rest means every force is absent."
+          },
+          {
+            "id": "C",
+            "text": "Inertia is an upward balancing force."
+          },
+          {
+            "id": "D",
+            "text": "Only one force may act at equilibrium."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Opposing forces can balance so the vector sum is zero.",
+        "solution_text": "Static equilibrium can contain multiple nonzero forces whose vector sum is zero.",
+        "solution_html": "<p>Static equilibrium can contain multiple nonzero forces whose vector sum is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-6B7B9CF83824",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F09",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F09",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F09",
+        "design_slot_id": "U1-S4-PRACTICE-F09",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F09",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A book rests on a desk. Explain why gravity still acts and identify the force that balances it.",
+        "student_html": "<p>A book rests on a desk. Explain why gravity still acts and identify the force that balances it.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Weight acts downward and the desk’s support force acts upward; they balance.",
+        "solution_text": "Static equilibrium can involve multiple real forces whose vector components cancel.",
+        "solution_html": "<p>Static equilibrium can involve multiple real forces whose vector components cancel.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F10",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F10",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F10",
+        "design_slot_id": "U1-S4-PRACTICE-F10",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F10",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied diagram to identify a pair of forces that can balance on the selected object and explain why both belong on its free-body diagram.",
+        "student_html": "<p>Use the supplied diagram to identify a pair of forces that can balance on the selected object and explain why both belong on its free-body diagram.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The upward support/tension interaction and downward weight can balance. Both are forces acting on the selected object.",
+        "solution_text": "A free-body diagram includes real interactions on the object even when their vector sum is zero.",
+        "solution_html": "<p>A free-body diagram includes real interactions on the object even when their vector sum is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-B6D46ACCB666",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F11",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F11",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F11",
+        "design_slot_id": "U1-S4-PRACTICE-F11",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F11",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A hanging plant is motionless. Explain why its rest does not mean “no forces act.”",
+        "student_html": "<p>A hanging plant is motionless. Explain why its rest does not mean “no forces act.”</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Cord tension upward balances gravitational weight downward.",
+        "solution_text": "Static equilibrium can involve multiple real forces whose vector components cancel.",
+        "solution_html": "<p>Static equilibrium can involve multiple real forces whose vector components cancel.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F12",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F12",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F12",
+        "design_slot_id": "U1-S4-PRACTICE-F12",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F12",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "asset_id": "PHYS-6B7B9CF83824",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium diagram. Which statement correctly connects the force arrows with the object’s rest?",
+        "student_html": "<p>Use the supplied equilibrium diagram. Which statement correctly connects the force arrows with the object’s rest?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The opposing components can sum to zero net force.",
+        "solution_text": "Equilibrium is a statement about the vector sum, not about the absence of forces.",
+        "solution_html": "<p>Equilibrium is a statement about the vector sum, not about the absence of forces.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-6B7B9CF83824",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F13",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F13",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F13",
+        "design_slot_id": "U1-S4-PRACTICE-F13",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F13",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student claims, “If an object is at rest, its weight must be zero.” Critique the claim.",
+        "student_html": "<p>A student claims, “If an object is at rest, its weight must be zero.” Critique the claim.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Weight can be nonzero; a support or tension force can balance it so the net force is zero.",
+        "solution_text": "Static equilibrium can involve multiple real forces whose vector components cancel.",
+        "solution_html": "<p>Static equilibrium can involve multiple real forces whose vector components cancel.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F14",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "intended_reasoning": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F14",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F14",
+        "design_slot_id": "U1-S4-PRACTICE-F14",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F14",
+        "variation_axes": [
+          "representation_type",
+          "misconception_target",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied force diagram. Which explanation best accounts for an object remaining at rest while the shown forces act?",
+        "student_html": "<p>Use the supplied force diagram. Which explanation best accounts for an object remaining at rest while the shown forces act?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>The vector sum of the forces can be zero even though individual forces are nonzero.</li><li>All forces disappear whenever an object is at rest.</li><li>A separate inertia force cancels every real force.</li><li>Only weight can act on a resting object.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The vector sum of the forces can be zero even though individual forces are nonzero."
+          },
+          {
+            "id": "B",
+            "text": "All forces disappear whenever an object is at rest."
+          },
+          {
+            "id": "C",
+            "text": "A separate inertia force cancels every real force."
+          },
+          {
+            "id": "D",
+            "text": "Only weight can act on a resting object."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The vector sum of the forces can be zero even though individual forces are nonzero.",
+        "solution_text": "Static equilibrium occurs when the real forces acting on the object balance to a zero vector sum.",
+        "solution_html": "<p>Static equilibrium occurs when the real forces acting on the object balance to a zero vector sum.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-B6D46ACCB666",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F15",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F15",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F15",
+        "design_slot_id": "U1-S4-PRACTICE-F15",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F15",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate moves right at constant speed while a 103 N driving force acts right. Determine the horizontal resistive force required for equilibrium.",
+        "student_html": "<p>A crate moves right at constant speed while a 103 N driving force acts right. Determine the horizontal resistive force required for equilibrium.</p><p>\\\\(\\\\sum F_x=0\\\\Rightarrow F_{\\\\text{right}}=F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>103 N left</li><li>103 N right</li><li>206 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "103 N left"
+          },
+          {
+            "id": "B",
+            "text": "103 N right"
+          },
+          {
+            "id": "C",
+            "text": "206 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "103 N left",
+        "solution_text": "Constant velocity means zero horizontal net force, so resistance must be 103 N left.",
+        "solution_html": "<p>Constant velocity means zero horizontal net force, so resistance must be 103 N left.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F16",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F16",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F16",
+        "design_slot_id": "U1-S4-PRACTICE-F16",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F16",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A hanging object is in equilibrium. The total upward force is 294 N. Determine the downward weight.",
+        "student_html": "<p>A hanging object is in equilibrium. The total upward force is 294 N. Determine the downward weight.</p><p>\\\\(\\\\sum F_y=0\\\\Rightarrow F_{\\\\text{up}}=F_{\\\\text{down}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "294 N downward",
+        "solution_text": "Vertical equilibrium requires equal upward and downward totals, so the weight is 294 N downward.",
+        "solution_html": "<p>Vertical equilibrium requires equal upward and downward totals, so the weight is 294 N downward.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F17",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F17",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F17",
+        "design_slot_id": "U1-S4-PRACTICE-F17",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F17",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
+          "asset_id": "PHYS-B094215EA3FC",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 311 N, determine the total upward force required for equilibrium.",
+        "student_html": "<p>Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 311 N, determine the total upward force required for equilibrium.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "311 N upward",
+        "solution_text": "For zero vertical net force, the upward total must equal the downward total: 311 N.",
+        "solution_html": "<p>For zero vertical net force, the upward total must equal the downward total: 311 N.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-B094215EA3FC",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F18",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F18",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F18",
+        "design_slot_id": "U1-S4-PRACTICE-F18",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F18",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate moves right at constant speed while a 142 N driving force acts right. Determine the horizontal resistive force required for equilibrium.",
+        "student_html": "<p>A crate moves right at constant speed while a 142 N driving force acts right. Determine the horizontal resistive force required for equilibrium.</p><p>\\\\(\\\\sum F_x=0\\\\Rightarrow F_{\\\\text{right}}=F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>142 N left</li><li>142 N right</li><li>284 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "142 N left"
+          },
+          {
+            "id": "B",
+            "text": "142 N right"
+          },
+          {
+            "id": "C",
+            "text": "284 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "142 N left",
+        "solution_text": "Constant velocity means zero horizontal net force, so resistance must be 142 N left.",
+        "solution_html": "<p>Constant velocity means zero horizontal net force, so resistance must be 142 N left.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F19",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F19",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F19",
+        "design_slot_id": "U1-S4-PRACTICE-F19",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F19",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A hanging object is in equilibrium. The total upward force is 345 N. Determine the downward weight.",
+        "student_html": "<p>A hanging object is in equilibrium. The total upward force is 345 N. Determine the downward weight.</p><p>\\\\(\\\\sum F_y=0\\\\Rightarrow F_{\\\\text{up}}=F_{\\\\text{down}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "345 N downward",
+        "solution_text": "Vertical equilibrium requires equal upward and downward totals, so the weight is 345 N downward.",
+        "solution_html": "<p>Vertical equilibrium requires equal upward and downward totals, so the weight is 345 N downward.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F20",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F20",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F20",
+        "design_slot_id": "U1-S4-PRACTICE-F20",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F20",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 362 N, determine the total upward force required for equilibrium.",
+        "student_html": "<p>Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 362 N, determine the total upward force required for equilibrium.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "362 N upward",
+        "solution_text": "For zero vertical net force, the upward total must equal the downward total: 362 N.",
+        "solution_html": "<p>For zero vertical net force, the upward total must equal the downward total: 362 N.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-B6D46ACCB666",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F21",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F21",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F21",
+        "design_slot_id": "U1-S4-PRACTICE-F21",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F21",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate moves right at constant speed while a 181 N driving force acts right. Determine the horizontal resistive force required for equilibrium.",
+        "student_html": "<p>A crate moves right at constant speed while a 181 N driving force acts right. Determine the horizontal resistive force required for equilibrium.</p><p>\\\\(\\\\sum F_x=0\\\\Rightarrow F_{\\\\text{right}}=F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>181 N left</li><li>181 N right</li><li>362 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "181 N left"
+          },
+          {
+            "id": "B",
+            "text": "181 N right"
+          },
+          {
+            "id": "C",
+            "text": "362 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "181 N left",
+        "solution_text": "Constant velocity means zero horizontal net force, so resistance must be 181 N left.",
+        "solution_html": "<p>Constant velocity means zero horizontal net force, so resistance must be 181 N left.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F22",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F22",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F22",
+        "design_slot_id": "U1-S4-PRACTICE-F22",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F22",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A hanging object is in equilibrium. The total upward force is 396 N. Determine the downward weight.",
+        "student_html": "<p>A hanging object is in equilibrium. The total upward force is 396 N. Determine the downward weight.</p><p>\\\\(\\\\sum F_y=0\\\\Rightarrow F_{\\\\text{up}}=F_{\\\\text{down}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "396 N downward",
+        "solution_text": "Vertical equilibrium requires equal upward and downward totals, so the weight is 396 N downward.",
+        "solution_html": "<p>Vertical equilibrium requires equal upward and downward totals, so the weight is 396 N downward.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F23",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F23",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F23",
+        "design_slot_id": "U1-S4-PRACTICE-F23",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F23",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate moves right at constant speed while a 207 N driving force acts right. Determine the horizontal resistive force required for equilibrium.",
+        "student_html": "<p>A crate moves right at constant speed while a 207 N driving force acts right. Determine the horizontal resistive force required for equilibrium.</p><p>\\\\(\\\\sum F_x=0\\\\Rightarrow F_{\\\\text{right}}=F_{\\\\text{left}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "207 N left",
+        "solution_text": "Constant velocity means zero horizontal net force, so resistance must be 207 N left.",
+        "solution_html": "<p>Constant velocity means zero horizontal net force, so resistance must be 207 N left.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F24",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F24",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F24",
+        "design_slot_id": "U1-S4-PRACTICE-F24",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F24",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate moves right at constant speed while a 220 N driving force acts right. Determine the horizontal resistive force required for equilibrium.",
+        "student_html": "<p>A crate moves right at constant speed while a 220 N driving force acts right. Determine the horizontal resistive force required for equilibrium.</p><p>\\\\(\\\\sum F_x=0\\\\Rightarrow F_{\\\\text{right}}=F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>220 N left</li><li>220 N right</li><li>440 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "220 N left"
+          },
+          {
+            "id": "B",
+            "text": "220 N right"
+          },
+          {
+            "id": "C",
+            "text": "440 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "220 N left",
+        "solution_text": "Constant velocity means zero horizontal net force, so resistance must be 220 N left.",
+        "solution_html": "<p>Constant velocity means zero horizontal net force, so resistance must be 220 N left.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F25",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F25",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F25",
+        "design_slot_id": "U1-S4-PRACTICE-F25",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F25",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 447 N, determine the total upward force required for equilibrium.",
+        "student_html": "<p>Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 447 N, determine the total upward force required for equilibrium.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "447 N upward",
+        "solution_text": "For zero vertical net force, the upward total must equal the downward total: 447 N.",
+        "solution_html": "<p>For zero vertical net force, the upward total must equal the downward total: 447 N.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-B6D46ACCB666",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F26",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F26",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F26",
+        "design_slot_id": "U1-S4-PRACTICE-F26",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F26",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
+          "asset_id": "PHYS-052FC46E3600",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 464 N, determine the total upward force required for equilibrium.",
+        "student_html": "<p>Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 464 N, determine the total upward force required for equilibrium.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "464 N upward",
+        "solution_text": "For zero vertical net force, the upward total must equal the downward total: 464 N.",
+        "solution_html": "<p>For zero vertical net force, the upward total must equal the downward total: 464 N.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-052FC46E3600",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F27",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F27",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F27",
+        "design_slot_id": "U1-S4-PRACTICE-F27",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F27",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate moves right at constant speed while a 259 N driving force acts right. Determine the horizontal resistive force required for equilibrium.",
+        "student_html": "<p>A crate moves right at constant speed while a 259 N driving force acts right. Determine the horizontal resistive force required for equilibrium.</p><p>\\\\(\\\\sum F_x=0\\\\Rightarrow F_{\\\\text{right}}=F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>259 N left</li><li>259 N right</li><li>518 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "259 N left"
+          },
+          {
+            "id": "B",
+            "text": "259 N right"
+          },
+          {
+            "id": "C",
+            "text": "518 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "259 N left",
+        "solution_text": "Constant velocity means zero horizontal net force, so resistance must be 259 N left.",
+        "solution_html": "<p>Constant velocity means zero horizontal net force, so resistance must be 259 N left.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F28",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F28",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F28",
+        "design_slot_id": "U1-S4-PRACTICE-F28",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S4-PRACTICE-F28",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A hanging object is in equilibrium. The total upward force is 498 N. Determine the downward weight.",
+        "student_html": "<p>A hanging object is in equilibrium. The total upward force is 498 N. Determine the downward weight.</p><p>\\\\(\\\\sum F_y=0\\\\Rightarrow F_{\\\\text{up}}=F_{\\\\text{down}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "498 N downward",
+        "solution_text": "Vertical equilibrium requires equal upward and downward totals, so the weight is 498 N downward.",
+        "solution_html": "<p>Vertical equilibrium requires equal upward and downward totals, so the weight is 498 N downward.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F29",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F29",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F29",
+        "design_slot_id": "U1-S4-PRACTICE-F29",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S4-PRACTICE-F29",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 515 N, determine the total upward force required for equilibrium.",
+        "student_html": "<p>Use the supplied equilibrium diagram as the force model. If the downward force on the selected object is 515 N, determine the total upward force required for equilibrium.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "515 N upward",
+        "solution_text": "For zero vertical net force, the upward total must equal the downward total: 515 N.",
+        "solution_html": "<p>For zero vertical net force, the upward total must equal the downward total: 515 N.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-9C32901B2ABF",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S4-PRACTICE-F30",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "intended_reasoning": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S4-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.4",
+      "scope": "1.4",
+      "source_map_record_id": "U1-S4-PRACTICE-F30",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S4-PRACTICE-F30",
+        "design_slot_id": "U1-S4-PRACTICE-F30",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S4-PRACTICE-F30",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "context_evidence",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "An object moves straight at constant speed. The rightward force is 298 N. What leftward force is required for horizontal equilibrium, and why?",
+        "student_html": "<p>An object moves straight at constant speed. The rightward force is 298 N. What leftward force is required for horizontal equilibrium, and why?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "298 N left",
+        "solution_text": "Constant velocity requires zero net force, so equal opposite horizontal forces are required.",
+        "solution_html": "<p>Constant velocity requires zero net force, so equal opposite horizontal forces are required.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}

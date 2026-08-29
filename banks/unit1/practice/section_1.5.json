@@ -1,0 +1,3347 @@
+{
+  "schema": "bank-v2-family-seed-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.5",
+  "stage": "3B_practice_families",
+  "destination_group": "practice",
+  "family_records": [
+    {
+      "family_id": "U1-S5-PRACTICE-F01",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F01",
+        "design_slot_id": "U1-S5-PRACTICE-F01",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F01",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A book rests on a level table. Draw a free-body diagram for the book.",
+        "student_html": "<p>A book rests on a level table. Draw a free-body diagram for the book.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight downward and the table’s support/normal force upward; do not include forces the book exerts on the table.",
+        "solution_text": "Draw weight downward and the table’s support/normal force upward; do not include forces the book exerts on the table.",
+        "solution_html": "<p>Draw weight downward and the table’s support/normal force upward; do not include forces the book exerts on the table.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F02",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F02",
+        "design_slot_id": "U1-S5-PRACTICE-F02",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F02",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A lamp hangs motionless from one vertical cord. Draw a free-body diagram for the lamp.",
+        "student_html": "<p>A lamp hangs motionless from one vertical cord. Draw a free-body diagram for the lamp.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw tension upward and weight downward.",
+        "solution_text": "Draw tension upward and weight downward.",
+        "solution_html": "<p>Draw tension upward and weight downward.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F03",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F03",
+        "design_slot_id": "U1-S5-PRACTICE-F03",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F03",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A sled is pulled right across rough level snow and is speeding up. Draw a free-body diagram for the sled.",
+        "student_html": "<p>A sled is pulled right across rough level snow and is speeding up. Draw a free-body diagram for the sled.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight down, support up, pull right, and friction left; the rightward force must exceed friction for a rightward net force.",
+        "solution_text": "Draw weight down, support up, pull right, and friction left; the rightward force must exceed friction for a rightward net force.",
+        "solution_html": "<p>Draw weight down, support up, pull right, and friction left; the rightward force must exceed friction for a rightward net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F04",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F04",
+        "design_slot_id": "U1-S5-PRACTICE-F04",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F04",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A ball is falling after being released; neglect air resistance. Draw a free-body diagram for the ball.",
+        "student_html": "<p>A ball is falling after being released; neglect air resistance. Draw a free-body diagram for the ball.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw only the downward gravitational force (weight).",
+        "solution_text": "Draw only the downward gravitational force (weight).",
+        "solution_html": "<p>Draw only the downward gravitational force (weight).</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F05",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F05",
+        "design_slot_id": "U1-S5-PRACTICE-F05",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F05",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "An elevator moves upward at constant speed. Draw a free-body diagram for the elevator car.",
+        "student_html": "<p>An elevator moves upward at constant speed. Draw a free-body diagram for the elevator car.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw cable tension upward and weight downward with equal magnitudes for zero net force.",
+        "solution_text": "Draw cable tension upward and weight downward with equal magnitudes for zero net force.",
+        "solution_html": "<p>Draw cable tension upward and weight downward with equal magnitudes for zero net force.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F06",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F06",
+        "design_slot_id": "U1-S5-PRACTICE-F06",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F06",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A car travels right at constant speed on a level road. Draw a simplified free-body diagram for the car.",
+        "student_html": "<p>A car travels right at constant speed on a level road. Draw a simplified free-body diagram for the car.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight down, road support up, driving/traction force right, and resistive force left; opposite pairs balance in the constant-speed model.",
+        "solution_text": "Draw weight down, road support up, driving/traction force right, and resistive force left; opposite pairs balance in the constant-speed model.",
+        "solution_html": "<p>Draw weight down, road support up, driving/traction force right, and resistive force left; opposite pairs balance in the constant-speed model.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F07",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F07",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F07",
+        "design_slot_id": "U1-S5-PRACTICE-F07",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F07",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A block rests on a frictionless incline. Draw a free-body diagram for the block.",
+        "student_html": "<p>A block rests on a frictionless incline. Draw a free-body diagram for the block.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight vertically downward and the normal force perpendicular to the incline; do not draw a force “down the ramp” in addition to weight.",
+        "solution_text": "Draw weight vertically downward and the normal force perpendicular to the incline; do not draw a force “down the ramp” in addition to weight.",
+        "solution_html": "<p>Draw weight vertically downward and the normal force perpendicular to the incline; do not draw a force “down the ramp” in addition to weight.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F08",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F08",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F08",
+        "design_slot_id": "U1-S5-PRACTICE-F08",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F08",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A sign hangs at rest from two angled cables. Draw a free-body diagram for the sign.",
+        "student_html": "<p>A sign hangs at rest from two angled cables. Draw a free-body diagram for the sign.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight downward and one tension force along each cable, directed away from the sign.",
+        "solution_text": "Draw weight downward and one tension force along each cable, directed away from the sign.",
+        "solution_html": "<p>Draw weight downward and one tension force along each cable, directed away from the sign.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F09",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F09",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F09",
+        "design_slot_id": "U1-S5-PRACTICE-F09",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F09",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A foam block floats motionless in water. Draw a free-body diagram for the block.",
+        "student_html": "<p>A foam block floats motionless in water. Draw a free-body diagram for the block.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight downward and buoyant force upward; the forces balance.",
+        "solution_text": "Draw weight downward and buoyant force upward; the forces balance.",
+        "solution_html": "<p>Draw weight downward and buoyant force upward; the forces balance.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F10",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F10",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F10",
+        "design_slot_id": "U1-S5-PRACTICE-F10",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F10",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A parachutist descends at terminal speed. Draw a free-body diagram for the parachutist.",
+        "student_html": "<p>A parachutist descends at terminal speed. Draw a free-body diagram for the parachutist.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight downward and air drag upward with equal magnitudes at terminal speed.",
+        "solution_text": "Draw weight downward and air drag upward with equal magnitudes at terminal speed.",
+        "solution_html": "<p>Draw weight downward and air drag upward with equal magnitudes at terminal speed.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F11",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F11",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F11",
+        "design_slot_id": "U1-S5-PRACTICE-F11",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F11",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A crate is pushed left at constant speed across a rough floor. Draw a free-body diagram for the crate.",
+        "student_html": "<p>A crate is pushed left at constant speed across a rough floor. Draw a free-body diagram for the crate.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw weight down, support up, applied push left, and friction right; horizontal forces balance.",
+        "solution_text": "Draw weight down, support up, applied push left, and friction right; horizontal forces balance.",
+        "solution_html": "<p>Draw weight down, support up, applied push left, and friction right; horizontal forces balance.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F12",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "intended_reasoning": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F12",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F12",
+        "design_slot_id": "U1-S5-PRACTICE-F12",
+        "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_fbd",
+        "parallel_family": "U1-S5-PRACTICE-F12",
+        "variation_axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values"
+        ],
+        "representation_route": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        },
+        "render_contract": {
+          "route_type": "student_constructed",
+          "surface_type": "force_diagram",
+          "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+          "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A metal sphere is suspended motionless by a string. Draw a free-body diagram for the sphere.",
+        "student_html": "<p>A metal sphere is suspended motionless by a string. Draw a free-body diagram for the sphere.</p><div class=\"response-surface\" aria-label=\"Draw your force diagram here\"></div>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Draw string tension upward and weight downward; the two forces balance.",
+        "solution_text": "Draw string tension upward and weight downward; the two forces balance.",
+        "solution_html": "<p>Draw string tension upward and weight downward; the two forces balance.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "student_constructed",
+            "surface": "response-surface"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F13",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F13",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F13",
+        "design_slot_id": "U1-S5-PRACTICE-F13",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F13",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "asset_id": "PHYS-CE653198C2C5",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied cart diagram to decide whether its force representation can support a balanced-force conclusion. Identify the force-vector evidence you would use.",
+        "student_html": "<p>Use the supplied cart diagram to decide whether its force representation can support a balanced-force conclusion. Identify the force-vector evidence you would use.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>Balanced means the vector sum of the shown forces is zero.</li><li>Balanced means no arrows should be shown.</li><li>Any moving object must have unbalanced forces.</li><li>The arrow directions can be ignored.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Balanced means the vector sum of the shown forces is zero."
+          },
+          {
+            "id": "B",
+            "text": "Balanced means no arrows should be shown."
+          },
+          {
+            "id": "C",
+            "text": "Any moving object must have unbalanced forces."
+          },
+          {
+            "id": "D",
+            "text": "The arrow directions can be ignored."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Balanced means the vector sum of the shown forces is zero.",
+        "solution_text": "Balance is determined by the vector sum, not by whether the object is moving.",
+        "solution_html": "<p>Balance is determined by the vector sum, not by whether the object is moving.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-CE653198C2C5",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F14",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F14",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F14",
+        "design_slot_id": "U1-S5-PRACTICE-F14",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F14",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "asset_id": "PHYS-DBC68196705B",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Compare the supplied representation with a zero-net-force model. Identify any mismatch between the shown arrows and a balanced state.",
+        "student_html": "<p>Compare the supplied representation with a zero-net-force model. Identify any mismatch between the shown arrows and a balanced state.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Balanced forces require a zero vector sum: real force arrows on the selected object must cancel component by component; any uncanceled component makes the forces unbalanced.",
+        "solution_text": "Check arrow identity, direction, and magnitude before deciding whether the net force is zero.",
+        "solution_html": "<p>Check arrow identity, direction, and magnitude before deciding whether the net force is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-DBC68196705B",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F15",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F15",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F15",
+        "design_slot_id": "U1-S5-PRACTICE-F15",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F15",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied constant-speed box representation. Explain what the motion description requires about the vector sum of forces.",
+        "student_html": "<p>Use the supplied constant-speed box representation. Explain what the motion description requires about the vector sum of forces.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Balanced forces require a zero vector sum: real force arrows on the selected object must cancel component by component; any uncanceled component makes the forces unbalanced.",
+        "solution_text": "Check arrow identity, direction, and magnitude before deciding whether the net force is zero.",
+        "solution_html": "<p>Check arrow identity, direction, and magnitude before deciding whether the net force is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-9C32901B2ABF",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F16",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F16",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F16",
+        "design_slot_id": "U1-S5-PRACTICE-F16",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F16",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "asset_id": "PHYS-B6D46ACCB666",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied equilibrium force diagram. Decide whether its opposing components are consistent with balanced forces and explain why.",
+        "student_html": "<p>Use the supplied equilibrium force diagram. Decide whether its opposing components are consistent with balanced forces and explain why.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>Balanced means the vector sum of the shown forces is zero.</li><li>Balanced means no arrows should be shown.</li><li>Any moving object must have unbalanced forces.</li><li>The arrow directions can be ignored.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Balanced means the vector sum of the shown forces is zero."
+          },
+          {
+            "id": "B",
+            "text": "Balanced means no arrows should be shown."
+          },
+          {
+            "id": "C",
+            "text": "Any moving object must have unbalanced forces."
+          },
+          {
+            "id": "D",
+            "text": "The arrow directions can be ignored."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Balanced means the vector sum of the shown forces is zero.",
+        "solution_text": "Balance is determined by the vector sum, not by whether the object is moving.",
+        "solution_html": "<p>Balance is determined by the vector sum, not by whether the object is moving.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-B6D46ACCB666",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F17",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F17",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F17",
+        "design_slot_id": "U1-S5-PRACTICE-F17",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F17",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied opposing-force diagram. State the condition under which the two shown directions would balance.",
+        "student_html": "<p>Use the supplied opposing-force diagram. State the condition under which the two shown directions would balance.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Balanced forces require a zero vector sum: real force arrows on the selected object must cancel component by component; any uncanceled component makes the forces unbalanced.",
+        "solution_text": "Check arrow identity, direction, and magnitude before deciding whether the net force is zero.",
+        "solution_html": "<p>Check arrow identity, direction, and magnitude before deciding whether the net force is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-70800F1157C9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F18",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F18",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F18",
+        "design_slot_id": "U1-S5-PRACTICE-F18",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F18",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "asset_id": "PHYS-CE653198C2C5",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied flawed-cart diagram to distinguish a real force arrow from an arrow that merely describes motion.",
+        "student_html": "<p>Use the supplied flawed-cart diagram to distinguish a real force arrow from an arrow that merely describes motion.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Balanced forces require a zero vector sum: real force arrows on the selected object must cancel component by component; any uncanceled component makes the forces unbalanced.",
+        "solution_text": "Check arrow identity, direction, and magnitude before deciding whether the net force is zero.",
+        "solution_html": "<p>Check arrow identity, direction, and magnitude before deciding whether the net force is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-CE653198C2C5",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F19",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F19",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F19",
+        "design_slot_id": "U1-S5-PRACTICE-F19",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F19",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "asset_id": "PHYS-DBC68196705B",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied representation-mismatch diagram. Explain what must be revised before it can be used to claim zero net force.",
+        "student_html": "<p>Use the supplied representation-mismatch diagram. Explain what must be revised before it can be used to claim zero net force.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>Balanced means the vector sum of the shown forces is zero.</li><li>Balanced means no arrows should be shown.</li><li>Any moving object must have unbalanced forces.</li><li>The arrow directions can be ignored.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Balanced means the vector sum of the shown forces is zero."
+          },
+          {
+            "id": "B",
+            "text": "Balanced means no arrows should be shown."
+          },
+          {
+            "id": "C",
+            "text": "Any moving object must have unbalanced forces."
+          },
+          {
+            "id": "D",
+            "text": "The arrow directions can be ignored."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Balanced means the vector sum of the shown forces is zero.",
+        "solution_text": "Balance is determined by the vector sum, not by whether the object is moving.",
+        "solution_html": "<p>Balance is determined by the vector sum, not by whether the object is moving.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-DBC68196705B",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F20",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "intended_reasoning": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F20",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F20",
+        "design_slot_id": "U1-S5-PRACTICE-F20",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F20",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "asset_id": "PHYS-9C32901B2ABF",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied constant-speed diagram to connect balanced forces with unchanged velocity.",
+        "student_html": "<p>Use the supplied constant-speed diagram to connect balanced forces with unchanged velocity.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Balanced forces require a zero vector sum: real force arrows on the selected object must cancel component by component; any uncanceled component makes the forces unbalanced.",
+        "solution_text": "Check arrow identity, direction, and magnitude before deciding whether the net force is zero.",
+        "solution_html": "<p>Check arrow identity, direction, and magnitude before deciding whether the net force is zero.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-9C32901B2ABF",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F21",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F21",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F21",
+        "design_slot_id": "U1-S5-PRACTICE-F21",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F21",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart moves right at constant speed. A student says, “Because it moves right, the net force must point right.” Critique the statement.",
+        "student_html": "<p>A cart moves right at constant speed. A student says, “Because it moves right, the net force must point right.” Critique the statement.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Constant rightward velocity is consistent with zero net force; motion direction alone does not determine net-force direction.",
+        "solution_text": "Net force predicts the change in velocity, not simply the direction of the existing velocity.",
+        "solution_html": "<p>Net force predicts the change in velocity, not simply the direction of the existing velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F22",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F22",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F22",
+        "design_slot_id": "U1-S5-PRACTICE-F22",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F22",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "asset_id": "PHYS-DBC68196705B",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied representation to critique the statement, “The object must move in the direction of the largest force arrow.”",
+        "student_html": "<p>Use the supplied representation to critique the statement, “The object must move in the direction of the largest force arrow.”</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Net force is the vector sum of forces and determines the direction of acceleration/change in velocity; it does not necessarily point in the same direction as the object’s current velocity.",
+        "solution_text": "Separate the current motion state from the force model, then use the vector sum to predict the change in velocity.",
+        "solution_html": "<p>Separate the current motion state from the force model, then use the vector sum to predict the change in velocity.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-DBC68196705B",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F23",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F23",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F23",
+        "design_slot_id": "U1-S5-PRACTICE-F23",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F23",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart is moving right when a constant net force begins acting left. Predict the sequence of motion changes if the force continues.",
+        "student_html": "<p>A cart is moving right when a constant net force begins acting left. Predict the sequence of motion changes if the force continues.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The cart slows while moving right, can momentarily stop, then speeds up left.",
+        "solution_text": "A leftward net force produces leftward acceleration throughout, continuously changing the velocity toward the left.",
+        "solution_html": "<p>A leftward net force produces leftward acceleration throughout, continuously changing the velocity toward the left.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F24",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F24",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F24",
+        "design_slot_id": "U1-S5-PRACTICE-F24",
+        "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F24",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A model shows 30 N right and 12 N left on a cart. A student argues that the cart’s current leftward motion proves the net force is left. Critique the model reasoning.",
+        "student_html": "<p>A model shows 30 N right and 12 N left on a cart. A student argues that the cart’s current leftward motion proves the net force is left. Critique the model reasoning.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The net force is 18 N right. If the cart is moving left, that rightward net force makes it slow before it could reverse.",
+        "solution_text": "Force vectors determine acceleration; the current velocity does not determine the net-force direction.",
+        "solution_html": "<p>Force vectors determine acceleration; the current velocity does not determine the net-force direction.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F25",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F25",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F25",
+        "design_slot_id": "U1-S5-PRACTICE-F25",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F25",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A ball is moving upward after leaving a hand. A student says, “An upward force must keep acting because the ball is still moving upward.” Critique the statement, neglecting air resistance.",
+        "student_html": "<p>A ball is moving upward after leaving a hand. A student says, “An upward force must keep acting because the ball is still moving upward.” Critique the statement, neglecting air resistance.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "After release, gravity acts downward. The ball can still move upward while a downward net force changes its velocity.",
+        "solution_text": "Net force predicts the change in velocity, not simply the direction of the existing velocity.",
+        "solution_html": "<p>Net force predicts the change in velocity, not simply the direction of the existing velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F26",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F26",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F26",
+        "design_slot_id": "U1-S5-PRACTICE-F26",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F26",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "asset_id": "PHYS-DBC68196705B",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied representation to decide whether the arrows describe velocity or forces, then revise any explanation that confuses the two.",
+        "student_html": "<p>Use the supplied representation to decide whether the arrows describe velocity or forces, then revise any explanation that confuses the two.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Net force is the vector sum of forces and determines the direction of acceleration/change in velocity; it does not necessarily point in the same direction as the object’s current velocity.",
+        "solution_text": "Separate the current motion state from the force model, then use the vector sum to predict the change in velocity.",
+        "solution_html": "<p>Separate the current motion state from the force model, then use the vector sum to predict the change in velocity.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-DBC68196705B",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F27",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F27",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F27",
+        "design_slot_id": "U1-S5-PRACTICE-F27",
+        "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F27",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A puck is moving left when a constant net force begins acting right. Predict how its velocity changes if the force continues.",
+        "student_html": "<p>A puck is moving left when a constant net force begins acting right. Predict how its velocity changes if the force continues.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The puck slows while moving left, can stop, then speeds up right.",
+        "solution_text": "A rightward net force produces a rightward change in velocity regardless of the initial leftward motion.",
+        "solution_html": "<p>A rightward net force produces a rightward change in velocity regardless of the initial leftward motion.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F28",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F28",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F28",
+        "design_slot_id": "U1-S5-PRACTICE-F28",
+        "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F28",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A model shows equal 20 N forces left and right, but a student predicts the cart must stop because the forces are balanced. Critique the prediction.",
+        "student_html": "<p>A model shows equal 20 N forces left and right, but a student predicts the cart must stop because the forces are balanced. Critique the prediction.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Balanced forces mean zero acceleration, not necessarily zero velocity. A moving cart can continue at constant velocity.",
+        "solution_text": "Zero net force preserves velocity according to Newton’s First Law; it does not force velocity to zero.",
+        "solution_html": "<p>Zero net force preserves velocity according to Newton’s First Law; it does not force velocity to zero.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F29",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F29",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F29",
+        "design_slot_id": "U1-S5-PRACTICE-F29",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S5-PRACTICE-F29",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A sled is slowing while moving right. A student says, “The net force must point right because the sled is going right.” Critique the statement.",
+        "student_html": "<p>A sled is slowing while moving right. A student says, “The net force must point right because the sled is going right.” Critique the statement.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "If the sled is slowing while moving right, its acceleration and net force point left, opposite its current velocity.",
+        "solution_text": "Net force predicts the change in velocity, not simply the direction of the existing velocity.",
+        "solution_html": "<p>Net force predicts the change in velocity, not simply the direction of the existing velocity.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S5-PRACTICE-F30",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "intended_reasoning": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S5-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.5",
+      "scope": "1.5",
+      "source_map_record_id": "U1-S5-PRACTICE-F30",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S5-PRACTICE-F30",
+        "design_slot_id": "U1-S5-PRACTICE-F30",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_force_diagram",
+        "parallel_family": "U1-S5-PRACTICE-F30",
+        "variation_axes": [
+          "misconception_target",
+          "context_evidence",
+          "representation_type",
+          "givens_evidence_set"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "asset_id": "PHYS-DBC68196705B",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied representation mismatch to explain why a force diagram cannot be justified from the direction of motion alone.",
+        "student_html": "<p>Use the supplied representation mismatch to explain why a force diagram cannot be justified from the direction of motion alone.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Net force is the vector sum of forces and determines the direction of acceleration/change in velocity; it does not necessarily point in the same direction as the object’s current velocity.",
+        "solution_text": "Separate the current motion state from the force model, then use the vector sum to predict the change in velocity.",
+        "solution_html": "<p>Separate the current motion state from the force model, then use the vector sum to predict the change in velocity.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-DBC68196705B",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3936 @@
+{
+  "schema": "bank-v2-family-seed-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.1",
+  "stage": "3B_practice_families",
+  "destination_group": "practice",
+  "family_records": [
+    {
+      "family_id": "U1-S1-PRACTICE-F01",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F01",
+        "design_slot_id": "U1-S1-PRACTICE-F01",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F01",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A photogate records that a cart takes 0.84 s to pass between two marked points. Which scientific-thinking term best classifies that recorded result?",
+        "student_html": "<p>A photogate records that a cart takes 0.84 s to pass between two marked points. Which scientific-thinking term best classifies that recorded result?</p><ol class=\"choices\" type=\"A\"><li>observation</li><li>inference</li><li>hypothesis</li><li>scientific law</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "observation"
+          },
+          {
+            "id": "B",
+            "text": "inference"
+          },
+          {
+            "id": "C",
+            "text": "hypothesis"
+          },
+          {
+            "id": "D",
+            "text": "scientific law"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "observation",
+        "solution_text": "A directly recorded measurement is an observation.",
+        "solution_html": "<p>A directly recorded measurement is an observation.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F02",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F02",
+        "design_slot_id": "U1-S1-PRACTICE-F02",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F02",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student sees that the cart stops sooner on carpet than on tile and concludes that carpet exerts a larger resistive interaction. Classify the conclusion and explain why.",
+        "student_html": "<p>A student sees that the cart stops sooner on carpet than on tile and concludes that carpet exerts a larger resistive interaction. Classify the conclusion and explain why.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "inference",
+        "solution_text": "The stopping observations are evidence; the statement about a larger resistive interaction interprets that evidence, so it is an inference.",
+        "solution_html": "<p>The stopping observations are evidence; the statement about a larger resistive interaction interprets that evidence, so it is an inference.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F03",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-MATCHING-SET-01",
+      "response_mode": "matching",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F03",
+        "design_slot_id": "U1-S1-PRACTICE-F03",
+        "structure_id": "VOCAB-MATCHING-SET-01",
+        "question_structure_id": "VOCAB-MATCHING-SET-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "matching",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F03",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Match each scientific-thinking term to its defining role.\n1. observation | 2. inference | 3. hypothesis | 4. scientific law | 5. scientific theory\nA. directly recorded evidence | B. interpretation drawn from evidence | C. tentative testable explanation | D. compact description of a repeated pattern | E. broad explanatory framework supported by evidence",
+        "student_html": "<p>Match each scientific-thinking term to its defining role.</p><ol class=\"matching-prompts\"><li>observation</li><li>inference</li><li>hypothesis</li><li>scientific law</li><li>scientific theory</li></ol><ol class=\"matching-choices\" type=\"A\"><li>directly recorded evidence</li><li>interpretation drawn from evidence</li><li>tentative testable explanation</li><li>compact description of a repeated pattern</li><li>broad explanatory framework supported by evidence</li></ol>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "1-A; 2-B; 3-C; 4-D; 5-E",
+        "solution_text": "The correct matching is 1-A; 2-B; 3-C; 4-D; 5-E.",
+        "solution_html": "<p>The correct matching is 1-A; 2-B; 3-C; 4-D; 5-E.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F04",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F04",
+        "design_slot_id": "U1-S1-PRACTICE-F04",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F04",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A classmate says, “A scientific theory is just an untested guess that becomes a law after enough experiments.” Identify both errors in the statement.",
+        "student_html": "<p>A classmate says, “A scientific theory is just an untested guess that becomes a law after enough experiments.” Identify both errors in the statement.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "A theory is a well-supported explanatory framework, not an untested guess, and theories do not turn into laws; laws summarize patterns while theories explain.",
+        "solution_text": "Theory and law are different kinds of scientific knowledge with different roles.",
+        "solution_html": "<p>Theory and law are different kinds of scientific knowledge with different roles.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F05",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F05",
+        "design_slot_id": "U1-S1-PRACTICE-F05",
+        "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F05",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "What scientific-thinking term describes a concise statement that summarizes a repeatedly observed relationship in nature without serving as the full explanation for why it occurs?",
+        "student_html": "<p>What scientific-thinking term describes a concise statement that summarizes a repeatedly observed relationship in nature without serving as the full explanation for why it occurs?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "scientific law",
+        "solution_text": "A scientific law summarizes a consistent pattern or relationship; it does not replace an explanatory theory.",
+        "solution_html": "<p>A scientific law summarizes a consistent pattern or relationship; it does not replace an explanatory theory.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F06",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F06",
+        "design_slot_id": "U1-S1-PRACTICE-F06",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F06",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "After repeated tests, researchers build a broad explanation that connects many observations and successful predictions. Which scientific-thinking term best describes that explanation, and why?",
+        "student_html": "<p>After repeated tests, researchers build a broad explanation that connects many observations and successful predictions. Which scientific-thinking term best describes that explanation, and why?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "scientific theory",
+        "solution_text": "A scientific theory is a broad explanatory framework supported by extensive evidence and successful testing.",
+        "solution_html": "<p>A scientific theory is a broad explanatory framework supported by extensive evidence and successful testing.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F07",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "VOCAB-MATCHING-SET-01",
+      "response_mode": "matching",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F07",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F07",
+        "design_slot_id": "U1-S1-PRACTICE-F07",
+        "structure_id": "VOCAB-MATCHING-SET-01",
+        "question_structure_id": "VOCAB-MATCHING-SET-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "matching",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F07",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Match each short physics example to the kind of scientific statement it illustrates.\n1. “The scale reads 4.2 N.” | 2. “The lower reading may be caused by reduced contact force.” | 3. “If the ramp angle increases, travel time will decrease.” | 4. “For this class of systems, the measured pattern is consistently proportional.” | 5. “A broad model explains many related observations and predicts new ones.”\nA. observation | B. inference | C. hypothesis | D. scientific law | E. scientific theory",
+        "student_html": "<p>Match each short physics example to the kind of scientific statement it illustrates.</p><ol class=\"matching-prompts\"><li>“The scale reads 4.2 N.”</li><li>“The lower reading may be caused by reduced contact force.”</li><li>“If the ramp angle increases, travel time will decrease.”</li><li>“For this class of systems, the measured pattern is consistently proportional.”</li><li>“A broad model explains many related observations and predicts new ones.”</li></ol><ol class=\"matching-choices\" type=\"A\"><li>observation</li><li>inference</li><li>hypothesis</li><li>scientific law</li><li>scientific theory</li></ol>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "1-A; 2-B; 3-C; 4-D; 5-E",
+        "solution_text": "The correct matching is 1-A; 2-B; 3-C; 4-D; 5-E.",
+        "solution_html": "<p>The correct matching is 1-A; 2-B; 3-C; 4-D; 5-E.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F08",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "intended_reasoning": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F08",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F08",
+        "design_slot_id": "U1-S1-PRACTICE-F08",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F08",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "response_mode",
+          "wording_profile"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student argues, “Because a law is supported by lots of evidence, it explains nature more deeply than a theory.” Critique the claim using the distinct roles of laws and theories.",
+        "student_html": "<p>A student argues, “Because a law is supported by lots of evidence, it explains nature more deeply than a theory.” Critique the claim using the distinct roles of laws and theories.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The claim confuses roles: a law summarizes a pattern, while a theory explains a broad body of evidence. Strong evidence does not place laws above theories.",
+        "solution_text": "Laws and theories are both evidence-based but answer different scientific questions.",
+        "solution_html": "<p>Laws and theories are both evidence-based but answer different scientific questions.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F09",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F09",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F09",
+        "design_slot_id": "U1-S1-PRACTICE-F09",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F09",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the ramp test table. Which claim is scientifically testable as written?",
+        "student_html": "<p>Use the ramp test table. Which claim is scientifically testable as written?</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible measurement</th></tr></thead><tbody><tr><td>A</td><td>Greater ramp angle decreases travel time over 1.5 m.</td><td>angle; travel time</td></tr><tr><td>B</td><td>The cart moves better when it is excited.</td><td>no operational measure of “excited”</td></tr><tr><td>C</td><td>Nature prefers red carts.</td><td>“prefers” not measurable</td></tr><tr><td>D</td><td>This ramp is lucky.</td><td>luck not measurable</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>Claim A</li><li>Claim B</li><li>Claim C</li><li>Claim D</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Claim A"
+          },
+          {
+            "id": "B",
+            "text": "Claim B"
+          },
+          {
+            "id": "C",
+            "text": "Claim C"
+          },
+          {
+            "id": "D",
+            "text": "Claim D"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Claim A",
+        "solution_text": "Claim A identifies measurable variables and can be supported or contradicted by observations.",
+        "solution_html": "<p>Claim A identifies measurable variables and can be supported or contradicted by observations.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F09-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F09-table",
+            "headers": [
+              "Option",
+              "Claim",
+              "Possible measurement"
+            ],
+            "rows": [
+              [
+                "A",
+                "Greater ramp angle decreases travel time over 1.5 m.",
+                "angle; travel time"
+              ],
+              [
+                "B",
+                "The cart moves better when it is excited.",
+                "no operational measure of “excited”"
+              ],
+              [
+                "C",
+                "Nature prefers red carts.",
+                "“prefers” not measurable"
+              ],
+              [
+                "D",
+                "This ramp is lucky.",
+                "luck not measurable"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F10",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F10",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F10",
+        "design_slot_id": "U1-S1-PRACTICE-F10",
+        "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F10",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student claims, “A hidden motion spirit makes the cart faster, but no observation could ever reveal whether the spirit is present.” Evaluate the claim’s scientific testability.",
+        "student_html": "<p>A student claims, “A hidden motion spirit makes the cart faster, but no observation could ever reveal whether the spirit is present.” Evaluate the claim’s scientific testability.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "It is not scientifically testable as stated because no possible observation or measurement could support or contradict the proposed cause.",
+        "solution_text": "A scientific claim must make contact with measurable evidence and allow the possibility of being contradicted.",
+        "solution_html": "<p>A scientific claim must make contact with measurable evidence and allow the possibility of being contradicted.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F11",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F11",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F11",
+        "design_slot_id": "U1-S1-PRACTICE-F11",
+        "structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+        "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F11",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student claims that increasing a toy car’s ramp height increases its speed at the bottom. Design a measurement procedure that could support or challenge the claim.",
+        "student_html": "<p>A student claims that increasing a toy car’s ramp height increases its speed at the bottom. Design a measurement procedure that could support or challenge the claim.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Use several measured ramp heights, release the same car consistently, measure speed at the same bottom location for repeated trials, and compare average speed with ramp height.",
+        "solution_text": "The procedure deliberately changes ramp height, measures the predicted response, controls other conditions, and repeats trials.",
+        "solution_html": "<p>The procedure deliberately changes ramp height, measures the predicted response, controls other conditions, and repeats trials.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F12",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F12",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F12",
+        "design_slot_id": "U1-S1-PRACTICE-F12",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F12",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the surface test table. Which claim is scientifically testable as written?",
+        "student_html": "<p>Use the surface test table. Which claim is scientifically testable as written?</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible measurement</th></tr></thead><tbody><tr><td>A</td><td>A rougher surface increases stopping distance.</td><td>surface condition; stopping distance</td></tr><tr><td>B</td><td>The floor has stronger personality.</td><td>personality not measurable</td></tr><tr><td>C</td><td>The cart wants to stop.</td><td>“wants” not measurable</td></tr><tr><td>D</td><td>Blue tape makes motion more natural.</td><td>“natural” not operationally defined</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>Claim A</li><li>Claim B</li><li>Claim C</li><li>Claim D</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "Claim A"
+          },
+          {
+            "id": "B",
+            "text": "Claim B"
+          },
+          {
+            "id": "C",
+            "text": "Claim C"
+          },
+          {
+            "id": "D",
+            "text": "Claim D"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "Claim A",
+        "solution_text": "Claim A identifies measurable variables and can be supported or contradicted by observations.",
+        "solution_html": "<p>Claim A identifies measurable variables and can be supported or contradicted by observations.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F12-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F12-table",
+            "headers": [
+              "Option",
+              "Claim",
+              "Possible measurement"
+            ],
+            "rows": [
+              [
+                "A",
+                "A rougher surface increases stopping distance.",
+                "surface condition; stopping distance"
+              ],
+              [
+                "B",
+                "The floor has stronger personality.",
+                "personality not measurable"
+              ],
+              [
+                "C",
+                "The cart wants to stop.",
+                "“wants” not measurable"
+              ],
+              [
+                "D",
+                "Blue tape makes motion more natural.",
+                "“natural” not operationally defined"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F13",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F13",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F13",
+        "design_slot_id": "U1-S1-PRACTICE-F13",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F13",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the pendulum claim table to explain why Claim A is testable and revise one non-testable claim so it becomes measurable.",
+        "student_html": "<p>Use the pendulum claim table to explain why Claim A is testable and revise one non-testable claim so it becomes measurable.</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible measurement</th></tr></thead><tbody><tr><td>A</td><td>Increasing string length changes the time for one swing.</td><td>string length; period</td></tr><tr><td>B</td><td>The pendulum knows when to turn around.</td><td>knowledge not measurable</td></tr><tr><td>C</td><td>The bob prefers the center.</td><td>preference not measurable</td></tr><tr><td>D</td><td>The setup has good rhythm.</td><td>“good rhythm” undefined</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Claim A names measurable variables. A non-testable claim must be rewritten to specify an observable condition and a measurable outcome.",
+        "solution_text": "Testability requires evidence that could count for or against the claim.",
+        "solution_html": "<p>Testability requires evidence that could count for or against the claim.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F13-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F13-table",
+            "headers": [
+              "Option",
+              "Claim",
+              "Possible measurement"
+            ],
+            "rows": [
+              [
+                "A",
+                "Increasing string length changes the time for one swing.",
+                "string length; period"
+              ],
+              [
+                "B",
+                "The pendulum knows when to turn around.",
+                "knowledge not measurable"
+              ],
+              [
+                "C",
+                "The bob prefers the center.",
+                "preference not measurable"
+              ],
+              [
+                "D",
+                "The setup has good rhythm.",
+                "“good rhythm” undefined"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F14",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F14",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F14",
+        "design_slot_id": "U1-S1-PRACTICE-F14",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F14",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the cooling claim table to explain why Claim A is testable and revise one non-testable claim so it becomes measurable.",
+        "student_html": "<p>Use the cooling claim table to explain why Claim A is testable and revise one non-testable claim so it becomes measurable.</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible measurement</th></tr></thead><tbody><tr><td>A</td><td>A larger exposed surface changes the cooling time.</td><td>surface area; temperature versus time</td></tr><tr><td>B</td><td>The cup releases heat because it feels generous.</td><td>generosity not measurable</td></tr><tr><td>C</td><td>Metal is naturally happier when cold.</td><td>happiness not measurable</td></tr><tr><td>D</td><td>The thermometer is lucky today.</td><td>luck not measurable</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Claim A names measurable variables. A non-testable claim must be rewritten to specify an observable condition and a measurable outcome.",
+        "solution_text": "Testability requires evidence that could count for or against the claim.",
+        "solution_html": "<p>Testability requires evidence that could count for or against the claim.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F14-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F14-table",
+            "headers": [
+              "Option",
+              "Claim",
+              "Possible measurement"
+            ],
+            "rows": [
+              [
+                "A",
+                "A larger exposed surface changes the cooling time.",
+                "surface area; temperature versus time"
+              ],
+              [
+                "B",
+                "The cup releases heat because it feels generous.",
+                "generosity not measurable"
+              ],
+              [
+                "C",
+                "Metal is naturally happier when cold.",
+                "happiness not measurable"
+              ],
+              [
+                "D",
+                "The thermometer is lucky today.",
+                "luck not measurable"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F15",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F15",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F15",
+        "design_slot_id": "U1-S1-PRACTICE-F15",
+        "structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+        "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F15",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student claims that a heavier cart always takes longer to travel 2.0 m down the same ramp. Design a test that could support or challenge the claim.",
+        "student_html": "<p>A student claims that a heavier cart always takes longer to travel 2.0 m down the same ramp. Design a test that could support or challenge the claim.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Use carts with several measured masses on the same ramp, hold the ramp and release conditions fixed, measure travel time over the same 2.0 m for repeated trials, and compare average times.",
+        "solution_text": "The test connects a measurable independent variable, mass, to a measurable outcome, travel time, while controlling the ramp and distance.",
+        "solution_html": "<p>The test connects a measurable independent variable, mass, to a measurable outcome, travel time, while controlling the ramp and distance.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F16",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "intended_reasoning": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC2",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F16",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F16",
+        "design_slot_id": "U1-S1-PRACTICE-F16",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F16",
+        "variation_axes": [
+          "givens_evidence_set",
+          "misconception_target",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the launch claim table to explain why Claim A is testable and revise one non-testable claim so it becomes measurable.",
+        "student_html": "<p>Use the launch claim table to explain why Claim A is testable and revise one non-testable claim so it becomes measurable.</p><table class=\"values\"><thead><tr><th>Option</th><th>Claim</th><th>Possible measurement</th></tr></thead><tbody><tr><td>A</td><td>Increasing launch speed increases horizontal range under the same setup.</td><td>launch speed; range</td></tr><tr><td>B</td><td>The ball travels farther because it is confident.</td><td>confidence not measurable</td></tr><tr><td>C</td><td>The launcher prefers long shots.</td><td>preference not measurable</td></tr><tr><td>D</td><td>This trial has better energy vibes.</td><td>“vibes” not measurable</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Claim A names measurable variables. A non-testable claim must be rewritten to specify an observable condition and a measurable outcome.",
+        "solution_text": "Testability requires evidence that could count for or against the claim.",
+        "solution_html": "<p>Testability requires evidence that could count for or against the claim.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F16-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F16-table",
+            "headers": [
+              "Option",
+              "Claim",
+              "Possible measurement"
+            ],
+            "rows": [
+              [
+                "A",
+                "Increasing launch speed increases horizontal range under the same setup.",
+                "launch speed; range"
+              ],
+              [
+                "B",
+                "The ball travels farther because it is confident.",
+                "confidence not measurable"
+              ],
+              [
+                "C",
+                "The launcher prefers long shots.",
+                "preference not measurable"
+              ],
+              [
+                "D",
+                "This trial has better energy vibes.",
+                "“vibes” not measurable"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F17",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F17",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F17",
+        "design_slot_id": "U1-S1-PRACTICE-F17",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F17",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "The table shows repeated measurements for a lab cart. Which explanation is best supported by the evidence and the relationship speed = distance/time?",
+        "student_html": "<p>The table shows repeated measurements for a lab cart. Which explanation is best supported by the evidence and the relationship speed = distance/time?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Lab Cart distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>3.5 m</td><td>2 s</td></tr><tr><td>2</td><td>7.0 m</td><td>4 s</td></tr><tr><td>3</td><td>10.5 m</td><td>6 s</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>The average speed is approximately constant across the trials.</li><li>The object must be accelerating because the distance entries grow.</li><li>Distance alone determines speed, so time can be ignored.</li><li>The data prove that no forces act on the object.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The average speed is approximately constant across the trials."
+          },
+          {
+            "id": "B",
+            "text": "The object must be accelerating because the distance entries grow."
+          },
+          {
+            "id": "C",
+            "text": "Distance alone determines speed, so time can be ignored."
+          },
+          {
+            "id": "D",
+            "text": "The data prove that no forces act on the object."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The average speed is approximately constant across the trials.",
+        "solution_text": "Each distance/time ratio is 1.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 1.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F17-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F17-table",
+            "headers": [
+              "Trial",
+              "Lab Cart distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "3.5 m",
+                "2 s"
+              ],
+              [
+                2,
+                "7.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "10.5 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F18",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F18",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F18",
+        "design_slot_id": "U1-S1-PRACTICE-F18",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F18",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the battery robot data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the battery robot data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Battery Robot distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>4.0 m</td><td>2 s</td></tr><tr><td>2</td><td>8.0 m</td><td>4 s</td></tr><tr><td>3</td><td>12.0 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 2.00 m/s.",
+        "solution_text": "Each distance/time ratio is 2.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 2.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F18-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F18-table",
+            "headers": [
+              "Trial",
+              "Battery Robot distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "4.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "8.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "12.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F19",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F19",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F19",
+        "design_slot_id": "U1-S1-PRACTICE-F19",
+        "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F19",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student says, “Cart A traveled farther than Cart B, so Cart A was faster,” even though the travel times were different. Critique the reasoning using speed = distance/time.",
+        "student_html": "<p>A student says, “Cart A traveled farther than Cart B, so Cart A was faster,” even though the travel times were different. Critique the reasoning using speed = distance/time.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Distance alone cannot establish speed; compare distance per unit time for each cart.",
+        "solution_text": "The formula is a relationship between measurements, so both distance and elapsed time must correspond to the same motion interval.",
+        "solution_html": "<p>The formula is a relationship between measurements, so both distance and elapsed time must correspond to the same motion interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F20",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F20",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F20",
+        "design_slot_id": "U1-S1-PRACTICE-F20",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F20",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "The table shows repeated measurements for a student walker. Which explanation is best supported by the evidence and the relationship speed = distance/time?",
+        "student_html": "<p>The table shows repeated measurements for a student walker. Which explanation is best supported by the evidence and the relationship speed = distance/time?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Student Walker distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>5.0 m</td><td>2 s</td></tr><tr><td>2</td><td>10.0 m</td><td>4 s</td></tr><tr><td>3</td><td>15.0 m</td><td>6 s</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>The average speed is approximately constant across the trials.</li><li>The object must be accelerating because the distance entries grow.</li><li>Distance alone determines speed, so time can be ignored.</li><li>The data prove that no forces act on the object.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The average speed is approximately constant across the trials."
+          },
+          {
+            "id": "B",
+            "text": "The object must be accelerating because the distance entries grow."
+          },
+          {
+            "id": "C",
+            "text": "Distance alone determines speed, so time can be ignored."
+          },
+          {
+            "id": "D",
+            "text": "The data prove that no forces act on the object."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The average speed is approximately constant across the trials.",
+        "solution_text": "Each distance/time ratio is 2.50 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 2.50 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F20-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F20-table",
+            "headers": [
+              "Trial",
+              "Student Walker distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "5.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "10.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "15.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F21",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F21",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F21",
+        "design_slot_id": "U1-S1-PRACTICE-F21",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F21",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the rolling ball data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the rolling ball data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Rolling Ball distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>5.5 m</td><td>2 s</td></tr><tr><td>2</td><td>11.0 m</td><td>4 s</td></tr><tr><td>3</td><td>16.5 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 2.75 m/s.",
+        "solution_text": "Each distance/time ratio is 2.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 2.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F21-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F21-table",
+            "headers": [
+              "Trial",
+              "Rolling Ball distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "5.5 m",
+                "2 s"
+              ],
+              [
+                2,
+                "11.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "16.5 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F22",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F22",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F22",
+        "design_slot_id": "U1-S1-PRACTICE-F22",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F22",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the conveyor marker data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the conveyor marker data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Conveyor Marker distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>6.0 m</td><td>2 s</td></tr><tr><td>2</td><td>12.0 m</td><td>4 s</td></tr><tr><td>3</td><td>18.0 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 3.00 m/s.",
+        "solution_text": "Each distance/time ratio is 3.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 3.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F22-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F22-table",
+            "headers": [
+              "Trial",
+              "Conveyor Marker distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "6.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "12.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "18.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F23",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F23",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F23",
+        "design_slot_id": "U1-S1-PRACTICE-F23",
+        "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S1-PRACTICE-F23",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student says, “The shorter travel time always means greater speed,” without checking that the compared objects traveled the same distance. Critique the reasoning.",
+        "student_html": "<p>A student says, “The shorter travel time always means greater speed,” without checking that the compared objects traveled the same distance. Critique the reasoning.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Time alone cannot establish speed when distances differ; compare each object’s distance/time ratio.",
+        "solution_text": "A physically meaningful comparison uses both measured quantities in the relationship, not one number in isolation.",
+        "solution_html": "<p>A physically meaningful comparison uses both measured quantities in the relationship, not one number in isolation.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F24",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F24",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F24",
+        "design_slot_id": "U1-S1-PRACTICE-F24",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F24",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the skateboard model data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the skateboard model data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Skateboard Model distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>7.0 m</td><td>2 s</td></tr><tr><td>2</td><td>14.0 m</td><td>4 s</td></tr><tr><td>3</td><td>21.0 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 3.50 m/s.",
+        "solution_text": "Each distance/time ratio is 3.50 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 3.50 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F24-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F24-table",
+            "headers": [
+              "Trial",
+              "Skateboard Model distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "7.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "14.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "21.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F25",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F25",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F25",
+        "design_slot_id": "U1-S1-PRACTICE-F25",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F25",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the toy train data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the toy train data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Toy Train distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>7.5 m</td><td>2 s</td></tr><tr><td>2</td><td>15.0 m</td><td>4 s</td></tr><tr><td>3</td><td>22.5 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 3.75 m/s.",
+        "solution_text": "Each distance/time ratio is 3.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 3.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F25-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F25-table",
+            "headers": [
+              "Trial",
+              "Toy Train distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "7.5 m",
+                "2 s"
+              ],
+              [
+                2,
+                "15.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "22.5 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F26",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F26",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F26",
+        "design_slot_id": "U1-S1-PRACTICE-F26",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F26",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "The table shows repeated measurements for a remote-control car. Which explanation is best supported by the evidence and the relationship speed = distance/time?",
+        "student_html": "<p>The table shows repeated measurements for a remote-control car. Which explanation is best supported by the evidence and the relationship speed = distance/time?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Remote-Control Car distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>8.0 m</td><td>2 s</td></tr><tr><td>2</td><td>16.0 m</td><td>4 s</td></tr><tr><td>3</td><td>24.0 m</td><td>6 s</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>The average speed is approximately constant across the trials.</li><li>The object must be accelerating because the distance entries grow.</li><li>Distance alone determines speed, so time can be ignored.</li><li>The data prove that no forces act on the object.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The average speed is approximately constant across the trials."
+          },
+          {
+            "id": "B",
+            "text": "The object must be accelerating because the distance entries grow."
+          },
+          {
+            "id": "C",
+            "text": "Distance alone determines speed, so time can be ignored."
+          },
+          {
+            "id": "D",
+            "text": "The data prove that no forces act on the object."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The average speed is approximately constant across the trials.",
+        "solution_text": "Each distance/time ratio is 4.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 4.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F26-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F26-table",
+            "headers": [
+              "Trial",
+              "Remote-Control Car distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "8.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "16.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "24.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F27",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F27",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F27",
+        "design_slot_id": "U1-S1-PRACTICE-F27",
+        "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S1-PRACTICE-F27",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A runner covers 6 m in 2 s during one interval and 12 m in 4 s during another. Use the relationship to explain why the doubled distance does not mean the runner was faster in the second interval.",
+        "student_html": "<p>A runner covers 6 m in 2 s during one interval and 12 m in 4 s during another. Use the relationship to explain why the doubled distance does not mean the runner was faster in the second interval.</p><p>\\\\(v=\\\\frac{d}{t}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Both intervals have the same distance/time ratio, 3 m/s, so the average speeds are equal.",
+        "solution_text": "The equation compares distance with the time required for that distance; both quantities change together here.",
+        "solution_html": "<p>The equation compares distance with the time required for that distance; both quantities change together here.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F28",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F28",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F28",
+        "design_slot_id": "U1-S1-PRACTICE-F28",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F28",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the delivery robot data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the delivery robot data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Delivery Robot distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>9.0 m</td><td>2 s</td></tr><tr><td>2</td><td>18.0 m</td><td>4 s</td></tr><tr><td>3</td><td>27.0 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 4.50 m/s.",
+        "solution_text": "Each distance/time ratio is 4.50 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 4.50 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F28-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F28-table",
+            "headers": [
+              "Trial",
+              "Delivery Robot distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "9.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "18.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "27.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F29",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F29",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F29",
+        "design_slot_id": "U1-S1-PRACTICE-F29",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F29",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "The table shows repeated measurements for a cart on a track. Which explanation is best supported by the evidence and the relationship speed = distance/time?",
+        "student_html": "<p>The table shows repeated measurements for a cart on a track. Which explanation is best supported by the evidence and the relationship speed = distance/time?</p><table class=\"values\"><thead><tr><th>Trial</th><th>Cart On A Track distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>9.5 m</td><td>2 s</td></tr><tr><td>2</td><td>19.0 m</td><td>4 s</td></tr><tr><td>3</td><td>28.5 m</td><td>6 s</td></tr></tbody></table><ol class=\"choices\" type=\"A\"><li>The average speed is approximately constant across the trials.</li><li>The object must be accelerating because the distance entries grow.</li><li>Distance alone determines speed, so time can be ignored.</li><li>The data prove that no forces act on the object.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The average speed is approximately constant across the trials."
+          },
+          {
+            "id": "B",
+            "text": "The object must be accelerating because the distance entries grow."
+          },
+          {
+            "id": "C",
+            "text": "Distance alone determines speed, so time can be ignored."
+          },
+          {
+            "id": "D",
+            "text": "The data prove that no forces act on the object."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The average speed is approximately constant across the trials.",
+        "solution_text": "Each distance/time ratio is 4.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 4.75 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F29-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F29-table",
+            "headers": [
+              "Trial",
+              "Cart On A Track distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "9.5 m",
+                "2 s"
+              ],
+              [
+                2,
+                "19.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "28.5 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S1-PRACTICE-F30",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "intended_reasoning": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S1-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.1",
+      "scope": "1.1",
+      "source_map_record_id": "U1-S1-PRACTICE-F30",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S1-PRACTICE-F30",
+        "design_slot_id": "U1-S1-PRACTICE-F30",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "semantic_data_table",
+        "parallel_family": "U1-S1-PRACTICE-F30",
+        "variation_axes": [
+          "givens_evidence_set",
+          "representation_type",
+          "representation_values",
+          "misconception_target",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        },
+        "render_contract": {
+          "route_type": "semantic_html_table",
+          "html_contract": "<table class=\"values\">",
+          "requirements": [
+            "real <table> markup",
+            "headers present",
+            "units in headers or cells where applicable",
+            "compact values class for small data sets",
+            "no pipe-delimited pseudo-table"
+          ]
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the sensor flag data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.",
+        "student_html": "<p>Use the sensor flag data to identify the numerical pattern that supports a constant-average-speed model, then explain what speed = distance/time says about the two measured quantities.</p><table class=\"values\"><thead><tr><th>Trial</th><th>Sensor Flag distance</th><th>Elapsed time</th></tr></thead><tbody><tr><td>1</td><td>10.0 m</td><td>2 s</td></tr><tr><td>2</td><td>20.0 m</td><td>4 s</td></tr><tr><td>3</td><td>30.0 m</td><td>6 s</td></tr></tbody></table>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Every row has the same distance/time ratio, 5.00 m/s.",
+        "solution_text": "Each distance/time ratio is 5.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.",
+        "solution_html": "<p>Each distance/time ratio is 5.00 m/s, so the repeated ratio supports a constant-average-speed model. The relationship compares measured distance with the corresponding time interval.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "semantic_html_table",
+            "table_id": "U1-S1-PRACTICE-F30-table",
+            "html_contract": "<table class=\"values\">"
+          }
+        ],
+        "tables": [
+          {
+            "table_id": "U1-S1-PRACTICE-F30-table",
+            "headers": [
+              "Trial",
+              "Sensor Flag distance",
+              "Elapsed time"
+            ],
+            "rows": [
+              [
+                1,
+                "10.0 m",
+                "2 s"
+              ],
+              [
+                2,
+                "20.0 m",
+                "4 s"
+              ],
+              [
+                3,
+                "30.0 m",
+                "6 s"
+              ]
+            ]
+          }
+        ]
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}

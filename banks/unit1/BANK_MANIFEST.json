@@ -5,13 +5,13 @@
   "status": "BUILDING",
   "ready_for_downstream": false,
   "completed": [
-    "3A_instructional_core"
+    "3A_instructional_core",
+    "3B_practice_families"
   ],
   "pending": [
-    "3B_practice_families",
     "3C_assessment_families"
   ],
-  "next_phase": "3B_practice_families",
+  "next_phase": "3C_assessment_families",
   "profile": {
     "name": "Conceptual Physics Bank v2 Course Profile",
     "schema": "course-bank-v2-profile/1.0",
@@ -38,7 +38,10 @@
     "notes_example": 20,
     "notes_yti": 20,
     "cyu": 30,
-    "warmups": 60
+    "warmups": 60,
+    "practice_families": 150,
+    "current_bank_total": 285,
+    "stage_3b_total": 150
   },
   "paths": {
     "item_index": "ITEM_INDEX.json",
@@ -46,8 +49,24 @@
     "cyu": "cyu/section_<section-id>.json",
     "warmups": "warmups/section_<section-id>.json",
     "provenance_build": "provenance/3a_build.json",
-    "provenance_report": "provenance/3a_report.txt"
+    "provenance_report": "provenance/3a_report.txt",
+    "practice": "practice/section_<section-id>.json",
+    "provenance_3b_build": "provenance/3b_build.json",
+    "provenance_3b_contract_qa": "provenance/3b_contract_qa.json",
+    "provenance_3b_report": "provenance/3b_report.txt"
   },
   "figure_delivery": "Canonical mapped course assets are referenced in place by exact repository path + pinned asset commit; no duplicate binary copies are included in this 3A snapshot.",
-  "qa_status": "PASS"
+  "qa_status": "PASS",
+  "stage_3b_pinned_run": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
+    "course_repo": "tnezki/physics",
+    "course_commit": "38ccf4b001ed26fdbf56b301815d86b73eab2e97"
+  },
+  "continuation_profile": {
+    "profile_version": "v1.3",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "repository": "tnezki/memories",
+    "pinned_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b"
+  }
 }

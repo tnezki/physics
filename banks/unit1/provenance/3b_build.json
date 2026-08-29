@@ -1,0 +1,134 @@
+{
+  "schema": "bank-3b-build-provenance/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "stage": "3B_practice_families",
+  "status": "PASS",
+  "request_run": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
+    "course_repo": "tnezki/physics",
+    "course_commit": "38ccf4b001ed26fdbf56b301815d86b73eab2e97",
+    "pm_path": "pms_build/bank_practice_families.txt"
+  },
+  "accepted_bank_map": {
+    "path": "banks/unit1_bank_map/MAP_MANIFEST.json",
+    "status": "PASS",
+    "map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451",
+    "practice_map_sha256": "1a4d8191f7b140a77f5b30522118d912d2b25102996196c21fabf8e0a713bb9b",
+    "declared_practice_map_sha256": "1a4d8191f7b140a77f5b30522118d912d2b25102996196c21fabf8e0a713bb9b",
+    "accepted_profile_version": "v1.2",
+    "accepted_profile_system_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
+  },
+  "continuation_profile": {
+    "profile_version": "v1.3",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
+    "compatibility_basis": "Current v1.3 profile permits an accepted v1.2 map and completed v1.2 Stage 3A bank to continue into Stage 3B when the accepted map identity is unchanged; Practice-family contracts are unchanged."
+  },
+  "stage_3a_gate": {
+    "status": "PASS",
+    "source": "provenance/3a_contract_qa.json",
+    "rerun": "not required under the current profile continuation rule",
+    "preservation_check": "PASS",
+    "preserved_pinned_3a_files": 18
+  },
+  "authoring_counts": {
+    "practice_families": 150,
+    "sections": {
+      "1.1": 30,
+      "1.2": 30,
+      "1.3": 30,
+      "1.4": 30,
+      "1.5": 30
+    },
+    "response_modes": {
+      "selected_response": 33,
+      "constructed_response": 113,
+      "matching": 4
+    },
+    "representation_modes": {
+      "direct_text": 60,
+      "semantic_data_table": 16,
+      "equation_relationship": 17,
+      "supplied_force_diagram": 24,
+      "supplied_vector_diagram": 21,
+      "student_constructed_fbd": 12
+    },
+    "render_routes": {
+      "direct_render": 77,
+      "semantic_html_table": 16,
+      "canonical_asset": 45,
+      "student_constructed": 12
+    },
+    "unique_canonical_assets_referenced": 11
+  },
+  "family_mix": {
+    "1.1": {
+      "conceptual_application": 20,
+      "vocabulary_representation": 10
+    },
+    "1.2": {
+      "conceptual_application": 22,
+      "vocabulary_representation": 8
+    },
+    "1.3": {
+      "conceptual_application": 12,
+      "quantitative_modeling": 12,
+      "vocabulary_representation": 6
+    },
+    "1.4": {
+      "conceptual_application": 15,
+      "vocabulary_representation": 5,
+      "quantitative_modeling": 10
+    },
+    "1.5": {
+      "conceptual_application": 21,
+      "vocabulary_representation": 5,
+      "quantitative_modeling": 4
+    }
+  },
+  "canonical_assets": {
+    "delivery": "referenced in place; no duplicate binaries authored in Stage 3B",
+    "paths": [
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+      "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+    ],
+    "qa_basis": "accepted Bank Map route identities plus Stage 3B seed render/reference contract checks"
+  },
+  "qa": {
+    "deterministic_contract": {
+      "status": "PASS",
+      "tool": "qa_bank_3b_contract.py",
+      "tool_version": "1.0.0",
+      "expected_families": 150,
+      "authored_families": 150,
+      "findings": 0
+    },
+    "semantic_content_review": {
+      "status": "PASS",
+      "checks": [
+        "all 150 seeds contain complete prompt/answer/solution content",
+        "zero duplicate student_text across canonical seeds",
+        "zero duplicate student_html across canonical seeds",
+        "selected-response choices stored, distinct, visible, and keyed",
+        "matching seeds contain prompt and option sets",
+        "quantitative-modeling seeds begin from concrete physical situations/evidence rather than naked variable assignments",
+        "required tables use semantic HTML",
+        "equation relationships render with MathJax delimiters",
+        "student-constructed FBD tasks include a response surface",
+        "canonical-asset seeds explicitly invoke the supplied representation as evidence"
+      ]
+    }
+  },
+  "next_phase": "3C_assessment_families"
+}

@@ -1,0 +1,3502 @@
+{
+  "schema": "bank-v2-family-seed-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "section": "1.3",
+  "stage": "3B_practice_families",
+  "destination_group": "practice",
+  "family_records": [
+    {
+      "family_id": "U1-S3-PRACTICE-F01",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F01",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F01",
+        "design_slot_id": "U1-S3-PRACTICE-F01",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F01",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram. What two visual properties of each arrow are needed to communicate a force vector?",
+        "student_html": "<p>Use the supplied vector diagram. What two visual properties of each arrow are needed to communicate a force vector?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>arrow length and arrow direction</li><li>arrow color and label position</li><li>only the numerical magnitude</li><li>only whether the arrow is horizontal</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "arrow length and arrow direction"
+          },
+          {
+            "id": "B",
+            "text": "arrow color and label position"
+          },
+          {
+            "id": "C",
+            "text": "only the numerical magnitude"
+          },
+          {
+            "id": "D",
+            "text": "only whether the arrow is horizontal"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "arrow length and arrow direction",
+        "solution_text": "Arrow length represents magnitude and orientation represents direction.",
+        "solution_html": "<p>Arrow length represents magnitude and orientation represents direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F02",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F02",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F02",
+        "design_slot_id": "U1-S3-PRACTICE-F02",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S3-PRACTICE-F02",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A student reports “the force is 12 N” and stops. What information is missing from a complete vector description?",
+        "student_html": "<p>A student reports “the force is 12 N” and stops. What information is missing from a complete vector description?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The direction is missing.",
+        "solution_text": "A force vector requires both magnitude and direction.",
+        "solution_html": "<p>A force vector requires both magnitude and direction.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F03",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F03",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F03",
+        "design_slot_id": "U1-S3-PRACTICE-F03",
+        "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S3-PRACTICE-F03",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Explain what it means to say that force is a vector quantity, and contrast it with a description that gives magnitude only.",
+        "student_html": "<p>Explain what it means to say that force is a vector quantity, and contrast it with a description that gives magnitude only.</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "A force has both magnitude and direction; magnitude alone is incomplete.",
+        "solution_text": "Changing direction changes the force vector even if the magnitude stays the same.",
+        "solution_html": "<p>Changing direction changes the force vector even if the magnitude stays the same.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F04",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F04",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F04",
+        "design_slot_id": "U1-S3-PRACTICE-F04",
+        "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F04",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector representation to check this claim: “Two equal-length arrows pointing in different directions represent the same force.” Explain whether the claim is correct.",
+        "student_html": "<p>Use the supplied vector representation to check this claim: “Two equal-length arrows pointing in different directions represent the same force.” Explain whether the claim is correct.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The claim is incorrect. Equal length means equal magnitude, but different directions make the force vectors different.",
+        "solution_text": "Both magnitude and direction are part of the vector identity.",
+        "solution_html": "<p>Both magnitude and direction are part of the vector identity.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F05",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F05",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F05",
+        "design_slot_id": "U1-S3-PRACTICE-F05",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F05",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram. If one force arrow were redrawn with the same length but pointed in a different direction, explain which part of the force vector changed and which part stayed the same.",
+        "student_html": "<p>Use the supplied vector diagram. If one force arrow were redrawn with the same length but pointed in a different direction, explain which part of the force vector changed and which part stayed the same.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The direction changed while the magnitude stayed the same.",
+        "solution_text": "Keeping arrow length preserves magnitude; rotating the arrow changes the vector direction.",
+        "solution_html": "<p>Keeping arrow length preserves magnitude; rotating the arrow changes the vector direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F06",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "intended_reasoning": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC1",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F06",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F06",
+        "design_slot_id": "U1-S3-PRACTICE-F06",
+        "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "parallel_family": "U1-S3-PRACTICE-F06",
+        "variation_axes": [
+          "representation_type",
+          "representation_values",
+          "context_evidence",
+          "response_mode"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "direct_text",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A force arrow is redrawn with the same direction but twice the length. What property of the force changed, and what property stayed the same?",
+        "student_html": "<p>A force arrow is redrawn with the same direction but twice the length. What property of the force changed, and what property stayed the same?</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The magnitude increased while the direction stayed the same.",
+        "solution_text": "Vector arrow length represents magnitude, while orientation represents direction.",
+        "solution_html": "<p>Vector arrow length represents magnitude, while orientation represents direction.</p>",
+        "figure_refs": [],
+        "representation_refs": [],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F07",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F07",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F07",
+        "design_slot_id": "U1-S3-PRACTICE-F07",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-PRACTICE-F07",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart is pulled 20 N right and 6 N left. Determine the net force and direction.",
+        "student_html": "<p>A cart is pulled 20 N right and 6 N left. Determine the net force and direction.</p><p>\\\\(F_{\\\\text{net}}=F_{\\\\text{right}}-F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>14 N right</li><li>26 N right</li><li>14 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "14 N right"
+          },
+          {
+            "id": "B",
+            "text": "26 N right"
+          },
+          {
+            "id": "C",
+            "text": "14 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "14 N right",
+        "solution_text": "Opposite collinear forces subtract: 20-6=14 N, toward the larger rightward force.",
+        "solution_html": "<p>Opposite collinear forces subtract: 20-6=14 N, toward the larger rightward force.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F08",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F08",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F08",
+        "design_slot_id": "U1-S3-PRACTICE-F08",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-PRACTICE-F08",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart has a 22 N force to the right. Its net force is 15 N to the right. Determine the leftward force.",
+        "student_html": "<p>A cart has a 22 N force to the right. Its net force is 15 N to the right. Determine the leftward force.</p><p>\\\\(F_{\\\\text{net}}=F_{\\\\text{right}}-F_{\\\\text{left}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "7 N left",
+        "solution_text": "Using right as positive, 15 = 22 - F_left, so F_left = 7 N.",
+        "solution_html": "<p>Using right as positive, 15 = 22 - F_left, so F_left = 7 N.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F09",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F09",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F09",
+        "design_slot_id": "U1-S3-PRACTICE-F09",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F09",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 24 N rightward force and a 8 N leftward force acting on one cart.",
+        "student_html": "<p>Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 24 N rightward force and a 8 N leftward force acting on one cart.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "16 N right",
+        "solution_text": "Opposite collinear forces subtract and the resultant points toward the larger force: 24-8=16 N right.",
+        "solution_html": "<p>Opposite collinear forces subtract and the resultant points toward the larger force: 24-8=16 N right.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F10",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F10",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F10",
+        "design_slot_id": "U1-S3-PRACTICE-F10",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F10",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 26 N rightward force and a 5 N leftward force acting on one cart.",
+        "student_html": "<p>Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 26 N rightward force and a 5 N leftward force acting on one cart.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "21 N right",
+        "solution_text": "Opposite collinear forces subtract and the resultant points toward the larger force: 26-5=21 N right.",
+        "solution_html": "<p>Opposite collinear forces subtract and the resultant points toward the larger force: 26-5=21 N right.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F11",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F11",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F11",
+        "design_slot_id": "U1-S3-PRACTICE-F11",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-PRACTICE-F11",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Two students push a sled in the same direction with 18 N and 6 N. Determine the net force.",
+        "student_html": "<p>Two students push a sled in the same direction with 18 N and 6 N. Determine the net force.</p><p>\\\\(F_{\\\\text{net}}=F_1+F_2\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "24 N in the direction of the pushes",
+        "solution_text": "Same-direction collinear forces add: 18+6=24 N.",
+        "solution_html": "<p>Same-direction collinear forces add: 18+6=24 N.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F12",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F12",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F12",
+        "design_slot_id": "U1-S3-PRACTICE-F12",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-PRACTICE-F12",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart has a 20 N force to the right. Its net force is 13 N to the right. Determine the leftward force.",
+        "student_html": "<p>A cart has a 20 N force to the right. Its net force is 13 N to the right. Determine the leftward force.</p><p>\\\\(F_{\\\\text{net}}=F_{\\\\text{right}}-F_{\\\\text{left}}\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "7 N left",
+        "solution_text": "Using right as positive, 13 = 20 - F_left, so F_left = 7 N.",
+        "solution_html": "<p>Using right as positive, 13 = 20 - F_left, so F_left = 7 N.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F13",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F13",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F13",
+        "design_slot_id": "U1-S3-PRACTICE-F13",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F13",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 22 N rightward force and a 8 N leftward force acting on one cart.",
+        "student_html": "<p>Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 22 N rightward force and a 8 N leftward force acting on one cart.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>14 N right</li><li>30 N right</li><li>14 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "14 N right"
+          },
+          {
+            "id": "B",
+            "text": "30 N right"
+          },
+          {
+            "id": "C",
+            "text": "14 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "14 N right",
+        "solution_text": "Opposite collinear forces subtract and the resultant points toward the larger force: 22-8=14 N right.",
+        "solution_html": "<p>Opposite collinear forces subtract and the resultant points toward the larger force: 22-8=14 N right.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F14",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F14",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F14",
+        "design_slot_id": "U1-S3-PRACTICE-F14",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F14",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 24 N rightward force and a 5 N leftward force acting on one cart.",
+        "student_html": "<p>Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 24 N rightward force and a 5 N leftward force acting on one cart.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "19 N right",
+        "solution_text": "Opposite collinear forces subtract and the resultant points toward the larger force: 24-5=19 N right.",
+        "solution_html": "<p>Opposite collinear forces subtract and the resultant points toward the larger force: 24-5=19 N right.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F15",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F15",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F15",
+        "design_slot_id": "U1-S3-PRACTICE-F15",
+        "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-PRACTICE-F15",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Two students push a sled in the same direction with 26 N and 6 N. Determine the net force.",
+        "student_html": "<p>Two students push a sled in the same direction with 26 N and 6 N. Determine the net force.</p><p>\\\\(F_{\\\\text{net}}=F_1+F_2\\\\)</p>",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "32 N in the direction of the pushes",
+        "solution_text": "Same-direction collinear forces add: 26+6=32 N.",
+        "solution_html": "<p>Same-direction collinear forces add: 26+6=32 N.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F16",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Keep the mapped representation behavior fixed unless an explicitly listed alternate route preserves the same evidence job.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F16",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F16",
+        "design_slot_id": "U1-S3-PRACTICE-F16",
+        "structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "equation_relationship",
+        "parallel_family": "U1-S3-PRACTICE-F16",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        },
+        "render_contract": {
+          "route_type": "direct_render",
+          "representation": "equation_relationship",
+          "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+        }
+      },
+      "canonical_seed": {
+        "student_text": "A cart has a 18 N force to the right. Its net force is 11 N to the right. Determine the leftward force.",
+        "student_html": "<p>A cart has a 18 N force to the right. Its net force is 11 N to the right. Determine the leftward force.</p><p>\\\\(F_{\\\\text{net}}=F_{\\\\text{right}}-F_{\\\\text{left}}\\\\)</p><ol class=\"choices\" type=\"A\"><li>7 N left</li><li>11 N left</li><li>18 N left</li><li>25 N left</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "7 N left"
+          },
+          {
+            "id": "B",
+            "text": "11 N left"
+          },
+          {
+            "id": "C",
+            "text": "18 N left"
+          },
+          {
+            "id": "D",
+            "text": "25 N left"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "7 N left",
+        "solution_text": "Using right as positive, 11 = 18 - F_left, so F_left = 7 N.",
+        "solution_html": "<p>Using right as positive, 11 = 18 - F_left, so F_left = 7 N.</p>",
+        "figure_refs": [],
+        "representation_refs": [
+          {
+            "type": "direct_equation_mathjax"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F17",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F17",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F17",
+        "design_slot_id": "U1-S3-PRACTICE-F17",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F17",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 20 N rightward force and a 8 N leftward force acting on one cart.",
+        "student_html": "<p>Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 20 N rightward force and a 8 N leftward force acting on one cart.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "12 N right",
+        "solution_text": "Opposite collinear forces subtract and the resultant points toward the larger force: 20-8=12 N right.",
+        "solution_html": "<p>Opposite collinear forces subtract and the resultant points toward the larger force: 20-8=12 N right.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F18",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "intended_reasoning": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC2",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F18",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F18",
+        "design_slot_id": "U1-S3-PRACTICE-F18",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "context_rich",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F18",
+        "variation_axes": [
+          "unknown_quantity",
+          "values_units",
+          "representation_values",
+          "givens_evidence_set",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 22 N rightward force and a 5 N leftward force acting on one cart.",
+        "student_html": "<p>Use the arrow directions in the supplied vector diagram to establish a sign convention. Then combine a 22 N rightward force and a 5 N leftward force acting on one cart.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "17 N right",
+        "solution_text": "Opposite collinear forces subtract and the resultant points toward the larger force: 22-5=17 N right.",
+        "solution_html": "<p>Opposite collinear forces subtract and the resultant points toward the larger force: 22-5=17 N right.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F19",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F19",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F19",
+        "design_slot_id": "U1-S3-PRACTICE-F19",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F19",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram. Which statement about reading the resultant is correct?",
+        "student_html": "<p>Use the supplied vector diagram. Which statement about reading the resultant is correct?</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>The resultant points toward the larger opposing vector.</li><li>The resultant must always point left.</li><li>Arrow length does not contain magnitude information.</li><li>Direction can be ignored when comparing forces.</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "The resultant points toward the larger opposing vector."
+          },
+          {
+            "id": "B",
+            "text": "The resultant must always point left."
+          },
+          {
+            "id": "C",
+            "text": "Arrow length does not contain magnitude information."
+          },
+          {
+            "id": "D",
+            "text": "Direction can be ignored when comparing forces."
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "The resultant points toward the larger opposing vector.",
+        "solution_text": "For opposing vectors, direction matters and the resultant points toward the larger-magnitude vector.",
+        "solution_html": "<p>For opposing vectors, direction matters and the resultant points toward the larger-magnitude vector.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F20",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F20",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F20",
+        "design_slot_id": "U1-S3-PRACTICE-F20",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F20",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to explain what the longest force arrow tells you about relative force magnitude, and separately state what the arrow direction tells you.",
+        "student_html": "<p>Use the supplied vector diagram to explain what the longest force arrow tells you about relative force magnitude, and separately state what the arrow direction tells you.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The longest arrow represents the largest force magnitude among the compared arrows; its orientation gives the force direction.",
+        "solution_text": "Arrow length encodes magnitude and arrow orientation encodes direction.",
+        "solution_html": "<p>Arrow length encodes magnitude and arrow orientation encodes direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F21",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F21",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F21",
+        "design_slot_id": "U1-S3-PRACTICE-F21",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F21",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied opposing-force diagram. Explain how you would determine the direction of the resultant from the relative arrow lengths.",
+        "student_html": "<p>Use the supplied opposing-force diagram. Explain how you would determine the direction of the resultant from the relative arrow lengths.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "For opposing collinear vectors, the resultant points toward the longer arrow; its magnitude corresponds to the difference in the opposing magnitudes.",
+        "solution_text": "The vector sum keeps the direction of the larger opposing component.",
+        "solution_html": "<p>The vector sum keeps the direction of the larger opposing component.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-70800F1157C9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F22",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F22",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F22",
+        "design_slot_id": "U1-S3-PRACTICE-F22",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F22",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied diagram to explain how the resultant depends on both arrow lengths and arrow directions.",
+        "student_html": "<p>Use the supplied diagram to explain how the resultant depends on both arrow lengths and arrow directions.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The resultant is determined by vector addition; longer arrows represent larger magnitudes and directions determine how components combine.",
+        "solution_text": "Read both visual features before identifying the resultant.",
+        "solution_html": "<p>Read both visual features before identifying the resultant.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F23",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F23",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F23",
+        "design_slot_id": "U1-S3-PRACTICE-F23",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F23",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to read the arrow-direction convention. For a one-dimensional case with 26 N right and 11 N left, calculate the resultant and state its direction.",
+        "student_html": "<p>Use the supplied vector diagram to read the arrow-direction convention. For a one-dimensional case with 26 N right and 11 N left, calculate the resultant and state its direction.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "15 N right",
+        "solution_text": "Use the vector directions to distinguish signs; 26-11=15 N, toward the larger rightward force.",
+        "solution_html": "<p>Use the vector directions to distinguish signs; 26-11=15 N, toward the larger rightward force.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F24",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F24",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F24",
+        "design_slot_id": "U1-S3-PRACTICE-F24",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F24",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to evaluate this claim: “Two equal-length force arrows always make a zero resultant.” Explain the missing condition.",
+        "student_html": "<p>Use the supplied vector diagram to evaluate this claim: “Two equal-length force arrows always make a zero resultant.” Explain the missing condition.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Equal magnitudes cancel only when the force vectors are collinear and opposite. Equal-length arrows in other directions can have a nonzero resultant.",
+        "solution_text": "Magnitude equality alone is not enough; direction is also part of vector addition.",
+        "solution_html": "<p>Magnitude equality alone is not enough; direction is also part of vector addition.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F25",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F25",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F25",
+        "design_slot_id": "U1-S3-PRACTICE-F25",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "selected_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F25",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to read the arrow-direction convention. For a one-dimensional case with 30 N right and 10 N left, calculate the resultant and state its direction.",
+        "student_html": "<p>Use the supplied vector diagram to read the arrow-direction convention. For a one-dimensional case with 30 N right and 10 N left, calculate the resultant and state its direction.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\"><ol class=\"choices\" type=\"A\"><li>20 N right</li><li>40 N right</li><li>20 N left</li><li>0 N</li></ol>",
+        "choices": [
+          {
+            "id": "A",
+            "text": "20 N right"
+          },
+          {
+            "id": "B",
+            "text": "40 N right"
+          },
+          {
+            "id": "C",
+            "text": "20 N left"
+          },
+          {
+            "id": "D",
+            "text": "0 N"
+          }
+        ],
+        "correct_choice": "A",
+        "answer": "20 N right",
+        "solution_text": "Use the vector directions to distinguish signs; 30-10=20 N, toward the larger rightward force.",
+        "solution_html": "<p>Use the vector directions to distinguish signs; 30-10=20 N, toward the larger rightward force.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-70800F1157C9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F26",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F26",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F26",
+        "design_slot_id": "U1-S3-PRACTICE-F26",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F26",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied diagram to compare two force arrows. Explain what equal arrow lengths would mean and what opposite arrow directions would mean for their resultant.",
+        "student_html": "<p>Use the supplied diagram to compare two force arrows. Explain what equal arrow lengths would mean and what opposite arrow directions would mean for their resultant.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Equal lengths mean equal force magnitudes. If equal forces are collinear and opposite, their resultant is zero.",
+        "solution_text": "Magnitude comes from length; direction determines whether vectors reinforce or cancel.",
+        "solution_html": "<p>Magnitude comes from length; direction determines whether vectors reinforce or cancel.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F27",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F27",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F27",
+        "design_slot_id": "U1-S3-PRACTICE-F27",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F27",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "asset_id": "PHYS-ECA638594CC9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector representation to explain why the resultant cannot be identified from arrow length alone.",
+        "student_html": "<p>Use the supplied vector representation to explain why the resultant cannot be identified from arrow length alone.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "The resultant depends on both magnitudes and directions, so the arrow orientations must be included when vectors are combined.",
+        "solution_text": "Force is a vector; direction changes how magnitudes add or cancel.",
+        "solution_html": "<p>Force is a vector; direction changes how magnitudes add or cancel.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-ECA638594CC9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F28",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "quantitative_modeling",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "quantitative_modeling",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F28",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F28",
+        "design_slot_id": "U1-S3-PRACTICE-F28",
+        "structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F28",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to rank the force arrows by magnitude. State the visual evidence you use for the ranking.",
+        "student_html": "<p>Use the supplied vector diagram to rank the force arrows by magnitude. State the visual evidence you use for the ranking.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Rank the arrows from longest to shortest; equal-length arrows have equal magnitude.",
+        "solution_text": "Arrow length is the representation of vector magnitude. The ranking must therefore follow the displayed lengths, while arrow orientation gives direction.",
+        "solution_html": "<p>Arrow length is the representation of vector magnitude. The ranking must therefore follow the displayed lengths, while arrow orientation gives direction.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-2EC4ABF93A6F",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F29",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "conceptual_application",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "conceptual_application",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F29",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F29",
+        "design_slot_id": "U1-S3-PRACTICE-F29",
+        "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "wording_profile": "standard",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F29",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "asset_id": "PHYS-70800F1157C9",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied vector diagram to read the arrow-direction convention. For a one-dimensional case with 30 N right and 11 N left, calculate the resultant and state its direction.",
+        "student_html": "<p>Use the supplied vector diagram to read the arrow-direction convention. For a one-dimensional case with 30 N right and 11 N left, calculate the resultant and state its direction.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "19 N right",
+        "solution_text": "Use the vector directions to distinguish signs; 30-11=19 N, toward the larger rightward force.",
+        "solution_html": "<p>Use the vector directions to distinguish signs; 30-11=19 N, toward the larger rightward force.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-70800F1157C9",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    },
+    {
+      "family_id": "U1-S3-PRACTICE-F30",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "family_type": "vocabulary_representation",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "intended_reasoning": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "difficulty_intent": "section-practice moderate; vary within family without changing target difficulty",
+      "security_level": "nonsecure_family",
+      "selection_tags": [
+        "U1-S3-IC3",
+        "vocabulary_representation",
+        "practice"
+      ],
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "response_mode",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "givens_evidence_set",
+        "context_evidence",
+        "representation_values",
+        "representation_type when listed by the family",
+        "misconception_target when listed by the family",
+        "wording_profile",
+        "values_units only when quantitative and compatible"
+      ],
+      "required_variations": [
+        "At least one evidence-primary variation axis must change across controlled variants."
+      ],
+      "forbidden_variations": [
+        "change primary I-can",
+        "change evidence job",
+        "change intended reasoning",
+        "change approximate difficulty",
+        "remove a required representation",
+        "noun/name swap as the only meaningful change"
+      ],
+      "representation_variation_rule": "Seed uses the mapped route. Controlled variants may rotate only among the exact alternate canonical asset routes listed in allowed_representation_routes, preserving the same evidence job and answer-neutrality.",
+      "section": "1.3",
+      "scope": "1.3",
+      "source_map_record_id": "U1-S3-PRACTICE-F30",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "question_design": {
+        "slot_id": "U1-S3-PRACTICE-F30",
+        "design_slot_id": "U1-S3-PRACTICE-F30",
+        "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+        "wording_profile": "natural_direct",
+        "response_mode": "constructed_response",
+        "representation_mode": "supplied_vector_diagram",
+        "parallel_family": "U1-S3-PRACTICE-F30",
+        "variation_axes": [
+          "representation_values",
+          "representation_type",
+          "unknown_quantity",
+          "context_evidence"
+        ],
+        "representation_route": {
+          "route_type": "canonical_asset",
+          "repository": "tnezki/physics",
+          "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+          "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "asset_id": "PHYS-15C8D0E3F482",
+          "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+          "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+        },
+        "render_contract": {
+          "render": "canonical_image_asset",
+          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "no_student_caption": true,
+          "verify_readability_and_answer_neutrality": true
+        }
+      },
+      "canonical_seed": {
+        "student_text": "Use the supplied diagram to describe a complete evidence-based method for identifying a resultant force from the shown arrows.",
+        "student_html": "<p>Use the supplied diagram to describe a complete evidence-based method for identifying a resultant force from the shown arrows.</p><img class=\"bank-figure\" src=\"../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png\" alt=\"Approved Unit 1 physics diagram for this question.\">",
+        "choices": [],
+        "correct_choice": "",
+        "answer": "Read each arrow’s length as magnitude and orientation as direction, combine the vectors according to their directions, and report both magnitude and direction of the resultant.",
+        "solution_text": "A valid resultant uses all vector information rather than comparing magnitudes alone.",
+        "solution_html": "<p>A valid resultant uses all vector information rather than comparing magnitudes alone.</p>",
+        "figure_refs": [
+          "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+        ],
+        "representation_refs": [
+          {
+            "type": "canonical_asset",
+            "asset_id": "PHYS-15C8D0E3F482",
+            "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+          }
+        ],
+        "tables": []
+      },
+      "verification": {
+        "independent_content_check": "PASS",
+        "representation_contract_check": "PASS"
+      }
+    }
+  ]
+}
