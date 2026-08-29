@@ -1,0 +1,162 @@
+{
+  "schema": "bank-map-manifest/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "status": "PASS",
+  "profile": {
+    "name": "Conceptual Physics Bank v2 Course Profile",
+    "schema": "course-bank-v2-profile/1.0",
+    "profile_version": "v1.2",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "repository": "tnezki/memories",
+    "pinned_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
+  },
+  "pinned_sources": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8",
+    "course_repo": "tnezki/physics",
+    "course_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+    "philosophy": "Curriculum_Philosophy.txt",
+    "runtime_contract": "SYSTEM_RUNTIME_CONTRACT.txt",
+    "question_structure_entrypoint": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+    "question_design_schema": "_question_structure/contracts/question_design_schema.json",
+    "question_design_workflow": "_question_structure/contracts/question_design_workflow.json",
+    "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+    "i_can_index": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json",
+    "tools_manifest": "Tools/MANIFEST.json",
+    "asset_catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+  },
+  "canonical_expanded_location": "banks/unit1_bank_map/",
+  "transport_filename": "unit1_bank_map.zip",
+  "files": [
+    {
+      "path": "unit1_question_design_map.json",
+      "sha256": "7f097e566b6043254e5125e8ce5f7d061cf800cb787d3f6778c5ff077da76f60"
+    },
+    {
+      "path": "notes_map.json",
+      "sha256": "b7d4730ba1c9aa40ae6bcc2f07785be980daa0f86ab7a778c837d4b978c2f594"
+    },
+    {
+      "path": "practice_map.json",
+      "sha256": "1a4d8191f7b140a77f5b30522118d912d2b25102996196c21fabf8e0a713bb9b"
+    },
+    {
+      "path": "cyu_map.json",
+      "sha256": "c1bf3133192a6d98f074a9889882eebdbc7e94a0a95a3d85091844700f4d0e1b"
+    },
+    {
+      "path": "warmup_map.json",
+      "sha256": "7a638e9539b42ab6a2c72061925cb562ad5d3726927a2710be3cd08a8193c633"
+    },
+    {
+      "path": "exit_map.json",
+      "sha256": "41d5b81311a688a554f70ae64e7f2ad00c1ab1e3490282e31cd8539c6805349c"
+    },
+    {
+      "path": "summative_map.json",
+      "sha256": "14044d71fde971c497ab74025e42b4a90d874ab8bd6b0329f8936248dc707d40"
+    },
+    {
+      "path": "MAP_REPORT.txt",
+      "sha256": "d859402fada9d190f0181fb7261810fe3b8ab80c167af055ba4d5af6844d7e4b"
+    }
+  ],
+  "counts": {
+    "exact_content_records": 135,
+    "family_seed_records": 230,
+    "total_records": 365,
+    "wtc": 5,
+    "example_yti": 40,
+    "practice_families": 150,
+    "cyu": 30,
+    "warmup_records": 60,
+    "exit_families": 40,
+    "summative_families": 40
+  },
+  "practice_section_mix": {
+    "1.1": {
+      "vocabulary_representation": 10,
+      "conceptual_application": 20,
+      "quantitative_modeling": 0
+    },
+    "1.2": {
+      "vocabulary_representation": 8,
+      "conceptual_application": 22,
+      "quantitative_modeling": 0
+    },
+    "1.3": {
+      "vocabulary_representation": 6,
+      "conceptual_application": 12,
+      "quantitative_modeling": 12
+    },
+    "1.4": {
+      "vocabulary_representation": 5,
+      "conceptual_application": 15,
+      "quantitative_modeling": 10
+    },
+    "1.5": {
+      "vocabulary_representation": 5,
+      "conceptual_application": 21,
+      "quantitative_modeling": 4
+    }
+  },
+  "summative_blueprints": {
+    "A": {
+      "families": 20,
+      "forms": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "selected_response": 16,
+      "constructed_response": 4,
+      "covers_all_15_i_cans": true
+    },
+    "B": {
+      "families": 20,
+      "forms": [
+        "V5",
+        "V6"
+      ],
+      "selected_response": 16,
+      "constructed_response": 4,
+      "covers_all_15_i_cans": true
+    }
+  },
+  "representation_route_counts": {
+    "canonical_asset": 117,
+    "direct_text": 139,
+    "direct_equation_mathjax": 41,
+    "student_constructed_blank_surface": 25,
+    "semantic_table_values": 43
+  },
+  "registered_graph_tool": {
+    "tool_key": "graph_tool",
+    "registry_path": "Tools/MANIFEST.json",
+    "used_by_unit1_slots": 0,
+    "reason": "No Unit 1 evidence job in this map naturally requires a graph; graph use was not forced for variety."
+  },
+  "map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451",
+  "qa": {
+    "status": "PASS",
+    "checks": [
+      "declared files present",
+      "unique IDs",
+      "exact I-can ID/text resolution",
+      "all records resolve to one design slot",
+      "selected-response planning contract present",
+      "construction evidence not mapped as selected response",
+      "practice mix fit-driven with allowed zero categories",
+      "semantic table route executable",
+      "supplied diagram/vector routes exact and pinned",
+      "student-constructed FBD uses explicit blank response surface",
+      "WTC connected-FRQ rigor gate",
+      "family locks/variation explicit",
+      "secure families forbid exposed prompt reuse",
+      "summative A/B each 16 SR + 4 CR and cover all 15 I-cans",
+      "no final prompt/answer/solution fields in map"
+    ]
+  }
+}

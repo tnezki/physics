@@ -1,0 +1,2370 @@
+{
+  "schema": "bank-map-slice/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "destination": "notes",
+  "wtc_records": [
+    {
+      "record_id": "U1-S1-WTC-01",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice.",
+      "student_action": "Interpret the shared stimulus, carry evidence forward between connected parts, and justify a physics plan/model choice.",
+      "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S1-WTC-01",
+      "design_slot_id": "U1-S1-WTC-01",
+      "wording_profile": "frq_multipart",
+      "length_intent": "connected_multipart",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Map 4 connected labeled parts around one shared stimulus. Include one extraction/interpretation move, one explicit dependency/use of an earlier conclusion, and one planning/model-choice/justification move. Do not write final prompt prose at Step 2A.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "dependency_path",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S1-WTC-01",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
+        "asset_id": "PHYS-89A1BA54AF31",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "parts_plan": [
+        {
+          "part": "a",
+          "move": "extract_or_interpret_representation"
+        },
+        {
+          "part": "b",
+          "move": "make_qualitative_prediction_or_identify_relationship",
+          "depends_on": "part a evidence"
+        },
+        {
+          "part": "c",
+          "move": "use_earlier_conclusion_in_connected_reasoning",
+          "depends_on": "part a or b"
+        },
+        {
+          "part": "d",
+          "move": "justify_model_choice_or_outline_plan",
+          "depends_on": "shared stimulus and prior reasoning"
+        }
+      ],
+      "accessibility_plan": "If the stimulus uses content not yet taught, keep the work at interpretation, unpacking, prediction, relationship selection, or planning level rather than requiring an untaught procedure."
+    },
+    {
+      "record_id": "U1-S2-WTC-01",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice.",
+      "student_action": "Interpret the shared stimulus, carry evidence forward between connected parts, and justify a physics plan/model choice.",
+      "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S2-WTC-01",
+      "design_slot_id": "U1-S2-WTC-01",
+      "wording_profile": "frq_multipart",
+      "length_intent": "connected_multipart",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Map 4 connected labeled parts around one shared stimulus. Include one extraction/interpretation move, one explicit dependency/use of an earlier conclusion, and one planning/model-choice/justification move. Do not write final prompt prose at Step 2A.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "dependency_path",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S2-WTC-01",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "asset_id": "PHYS-9C32901B2ABF",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "parts_plan": [
+        {
+          "part": "a",
+          "move": "extract_or_interpret_representation"
+        },
+        {
+          "part": "b",
+          "move": "make_qualitative_prediction_or_identify_relationship",
+          "depends_on": "part a evidence"
+        },
+        {
+          "part": "c",
+          "move": "use_earlier_conclusion_in_connected_reasoning",
+          "depends_on": "part a or b"
+        },
+        {
+          "part": "d",
+          "move": "justify_model_choice_or_outline_plan",
+          "depends_on": "shared stimulus and prior reasoning"
+        }
+      ],
+      "accessibility_plan": "If the stimulus uses content not yet taught, keep the work at interpretation, unpacking, prediction, relationship selection, or planning level rather than requiring an untaught procedure."
+    },
+    {
+      "record_id": "U1-S3-WTC-01",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice.",
+      "student_action": "Interpret the shared stimulus, carry evidence forward between connected parts, and justify a physics plan/model choice.",
+      "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-WTC-01",
+      "design_slot_id": "U1-S3-WTC-01",
+      "wording_profile": "frq_multipart",
+      "length_intent": "connected_multipart",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Map 4 connected labeled parts around one shared stimulus. Include one extraction/interpretation move, one explicit dependency/use of an earlier conclusion, and one planning/model-choice/justification move. Do not write final prompt prose at Step 2A.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "dependency_path",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-WTC-01",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "asset_id": "PHYS-ECA638594CC9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "parts_plan": [
+        {
+          "part": "a",
+          "move": "extract_or_interpret_representation"
+        },
+        {
+          "part": "b",
+          "move": "make_qualitative_prediction_or_identify_relationship",
+          "depends_on": "part a evidence"
+        },
+        {
+          "part": "c",
+          "move": "use_earlier_conclusion_in_connected_reasoning",
+          "depends_on": "part a or b"
+        },
+        {
+          "part": "d",
+          "move": "justify_model_choice_or_outline_plan",
+          "depends_on": "shared stimulus and prior reasoning"
+        }
+      ],
+      "accessibility_plan": "If the stimulus uses content not yet taught, keep the work at interpretation, unpacking, prediction, relationship selection, or planning level rather than requiring an untaught procedure."
+    },
+    {
+      "record_id": "U1-S4-WTC-01",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice.",
+      "student_action": "Interpret the shared stimulus, carry evidence forward between connected parts, and justify a physics plan/model choice.",
+      "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S4-WTC-01",
+      "design_slot_id": "U1-S4-WTC-01",
+      "wording_profile": "frq_multipart",
+      "length_intent": "connected_multipart",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Map 4 connected labeled parts around one shared stimulus. Include one extraction/interpretation move, one explicit dependency/use of an earlier conclusion, and one planning/model-choice/justification move. Do not write final prompt prose at Step 2A.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "dependency_path",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S4-WTC-01",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+        "asset_id": "PHYS-B6D46ACCB666",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "parts_plan": [
+        {
+          "part": "a",
+          "move": "extract_or_interpret_representation"
+        },
+        {
+          "part": "b",
+          "move": "make_qualitative_prediction_or_identify_relationship",
+          "depends_on": "part a evidence"
+        },
+        {
+          "part": "c",
+          "move": "use_earlier_conclusion_in_connected_reasoning",
+          "depends_on": "part a or b"
+        },
+        {
+          "part": "d",
+          "move": "justify_model_choice_or_outline_plan",
+          "depends_on": "shared stimulus and prior reasoning"
+        }
+      ],
+      "accessibility_plan": "If the stimulus uses content not yet taught, keep the work at interpretation, unpacking, prediction, relationship selection, or planning level rather than requiring an untaught procedure."
+    },
+    {
+      "record_id": "U1-S5-WTC-01",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Practice breaking down one coherent free-response-style physics situation; interpret the shared representation, use an earlier conclusion in a later part, and make or justify a model/plan choice.",
+      "student_action": "Interpret the shared stimulus, carry evidence forward between connected parts, and justify a physics plan/model choice.",
+      "question_structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "structure_id": "FRQ-MULTIPART-SHARED-CONTEXT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S5-WTC-01",
+      "design_slot_id": "U1-S5-WTC-01",
+      "wording_profile": "frq_multipart",
+      "length_intent": "connected_multipart",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Map 4 connected labeled parts around one shared stimulus. Include one extraction/interpretation move, one explicit dependency/use of an earlier conclusion, and one planning/model-choice/justification move. Do not write final prompt prose at Step 2A.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "dependency_path",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S5-WTC-01",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+        "asset_id": "PHYS-CE653198C2C5",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "parts_plan": [
+        {
+          "part": "a",
+          "move": "extract_or_interpret_representation"
+        },
+        {
+          "part": "b",
+          "move": "make_qualitative_prediction_or_identify_relationship",
+          "depends_on": "part a evidence"
+        },
+        {
+          "part": "c",
+          "move": "use_earlier_conclusion_in_connected_reasoning",
+          "depends_on": "part a or b"
+        },
+        {
+          "part": "d",
+          "move": "justify_model_choice_or_outline_plan",
+          "depends_on": "shared stimulus and prior reasoning"
+        }
+      ],
+      "accessibility_plan": "If the stimulus uses content not yet taught, keep the work at interpretation, unpacking, prediction, relationship selection, or planning level rather than requiring an untaught procedure."
+    }
+  ],
+  "example_yti_records": [
+    {
+      "record_id": "U1-S1-NOTES-EXAMPLE-P1",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-EXAMPLE-P1",
+      "design_slot_id": "U1-S1-NOTES-EXAMPLE-P1",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "misconception_target",
+        "response_mode",
+        "wording_profile"
+      ],
+      "parallel_family": "U1-S1-NOTES-EXAMPLE-P1",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-1",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S1-NOTES-YTI-P1",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify and distinguish observation, inference, hypothesis, scientific law, and scientific theory from definitions or short physics situations; explain the defining distinction when the response mode calls for it.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "structure_id": "VOCAB-DEFINITION-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-YTI-P1",
+      "design_slot_id": "U1-S1-NOTES-YTI-P1",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "misconception_target",
+        "response_mode",
+        "wording_profile"
+      ],
+      "parallel_family": "U1-S1-NOTES-YTI-P1",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-1",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S1-NOTES-EXAMPLE-P2",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-EXAMPLE-P2",
+      "design_slot_id": "U1-S1-NOTES-EXAMPLE-P2",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "misconception_target",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S1-NOTES-EXAMPLE-P2",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-2",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S1-NOTES-YTI-P2",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Judge whether a scientific claim is testable and explain what observable or measurable evidence would make the claim testable.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-YTI-P2",
+      "design_slot_id": "U1-S1-NOTES-YTI-P2",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "misconception_target",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S1-NOTES-YTI-P2",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-2",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S1-NOTES-EXAMPLE-P3",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-EXAMPLE-P3",
+      "design_slot_id": "U1-S1-NOTES-EXAMPLE-P3",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S1-NOTES-EXAMPLE-P3",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-3",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S1-NOTES-YTI-P3",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "structure_id": "PHYS-ASSUMPTION-MODEL-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-YTI-P3",
+      "design_slot_id": "U1-S1-NOTES-YTI-P3",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S1-NOTES-YTI-P3",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-3",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S1-NOTES-EXAMPLE-P4",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S1-NOTES-EXAMPLE-P4",
+      "design_slot_id": "U1-S1-NOTES-EXAMPLE-P4",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S1-NOTES-EXAMPLE-P4",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-4",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S1-NOTES-YTI-P4",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.1",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use observations or measurements from a short scenario to decide whether an explanation is supported, and interpret a supplied physics formula as a relationship among physical quantities rather than as a calculation-only rule.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "slot_id": "U1-S1-NOTES-YTI-P4",
+      "design_slot_id": "U1-S1-NOTES-YTI-P4",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "givens_evidence_set",
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S1-NOTES-YTI-P4",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "equation_relationship",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "equation_relationship",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S1-PAIR-4",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S2-NOTES-EXAMPLE-P1",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S2-NOTES-EXAMPLE-P1",
+      "design_slot_id": "U1-S2-NOTES-EXAMPLE-P1",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_type",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-EXAMPLE-P1",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S2-PAIR-1",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S2-NOTES-YTI-P1",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "State or recognize Newton’s First Law in ordinary language and apply it to predict unchanged motion when net force is zero.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S2-NOTES-YTI-P1",
+      "design_slot_id": "U1-S2-NOTES-YTI-P1",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_type",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-YTI-P1",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S2-PAIR-1",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S2-NOTES-EXAMPLE-P2",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S2-NOTES-EXAMPLE-P2",
+      "design_slot_id": "U1-S2-NOTES-EXAMPLE-P2",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "misconception_target",
+        "givens_evidence_set",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-EXAMPLE-P2",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S2-PAIR-2",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S2-NOTES-YTI-P2",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or recognize that inertia is a property of matter that resists changes in motion and is not an additional force acting on the object.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S2-NOTES-YTI-P2",
+      "design_slot_id": "U1-S2-NOTES-YTI-P2",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "misconception_target",
+        "givens_evidence_set",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-YTI-P2",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S2-PAIR-2",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S2-NOTES-EXAMPLE-P3",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S2-NOTES-EXAMPLE-P3",
+      "design_slot_id": "U1-S2-NOTES-EXAMPLE-P3",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-EXAMPLE-P3",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "asset_id": "PHYS-9C32901B2ABF",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S2-PAIR-3",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S2-NOTES-YTI-P3",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S2-NOTES-YTI-P3",
+      "design_slot_id": "U1-S2-NOTES-YTI-P3",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-YTI-P3",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "asset_id": "PHYS-70800F1157C9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S2-PAIR-3",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S2-NOTES-EXAMPLE-P4",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S2-NOTES-EXAMPLE-P4",
+      "design_slot_id": "U1-S2-NOTES-EXAMPLE-P4",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-EXAMPLE-P4",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "asset_id": "PHYS-70800F1157C9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S2-PAIR-4",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S2-NOTES-YTI-P4",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.2",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish zero net force from no forces at all, and identify support force, weight, and other common forces in simple situations.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S2-NOTES-YTI-P4",
+      "design_slot_id": "U1-S2-NOTES-YTI-P4",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "misconception_target",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S2-NOTES-YTI-P4",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+        "asset_id": "PHYS-6B7B9CF83824",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "pair_id": "U1-S2-PAIR-4",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S3-NOTES-EXAMPLE-P1",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-EXAMPLE-P1",
+      "design_slot_id": "U1-S3-NOTES-EXAMPLE-P1",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S3-NOTES-EXAMPLE-P1",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "asset_id": "PHYS-ECA638594CC9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S3-PAIR-1",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S3-NOTES-YTI-P1",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain or identify why a force requires both magnitude and direction and therefore is represented as a vector.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-YTI-P1",
+      "design_slot_id": "U1-S3-NOTES-YTI-P1",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "representation_values",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S3-NOTES-YTI-P1",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "asset_id": "PHYS-2EC4ABF93A6F",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S3-PAIR-1",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S3-NOTES-EXAMPLE-P2",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-EXAMPLE-P2",
+      "design_slot_id": "U1-S3-NOTES-EXAMPLE-P2",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "givens_evidence_set",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-NOTES-EXAMPLE-P2",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "asset_id": "PHYS-ECA638594CC9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S3-PAIR-2",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S3-NOTES-YTI-P2",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Combine collinear forces with direction preserved to determine net/resultant force for forces in the same or opposite directions.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-YTI-P2",
+      "design_slot_id": "U1-S3-NOTES-YTI-P2",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "givens_evidence_set",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-NOTES-YTI-P2",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "asset_id": "PHYS-2EC4ABF93A6F",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "pair_id": "U1-S3-PAIR-2",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S3-NOTES-EXAMPLE-P3",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-EXAMPLE-P3",
+      "design_slot_id": "U1-S3-NOTES-EXAMPLE-P3",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-NOTES-EXAMPLE-P3",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "asset_id": "PHYS-70800F1157C9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S3-PAIR-3",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S3-NOTES-YTI-P3",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-YTI-P3",
+      "design_slot_id": "U1-S3-NOTES-YTI-P3",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-NOTES-YTI-P3",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "asset_id": "PHYS-15C8D0E3F482",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S3-PAIR-3",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S3-NOTES-EXAMPLE-P4",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-EXAMPLE-P4",
+      "design_slot_id": "U1-S3-NOTES-EXAMPLE-P4",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-NOTES-EXAMPLE-P4",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "asset_id": "PHYS-15C8D0E3F482",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S3-PAIR-4",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S3-NOTES-YTI-P4",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.3",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Read a simple vector diagram to identify the resultant and use arrow length and direction as evidence for relative force magnitude and direction.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_vector_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S3-NOTES-YTI-P4",
+      "design_slot_id": "U1-S3-NOTES-YTI-P4",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "unknown_quantity",
+        "context_evidence"
+      ],
+      "parallel_family": "U1-S3-NOTES-YTI-P4",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "asset_id": "PHYS-ECA638594CC9",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "pair_id": "U1-S3-PAIR-4",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S4-NOTES-EXAMPLE-P1",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S4-NOTES-EXAMPLE-P1",
+      "design_slot_id": "U1-S4-NOTES-EXAMPLE-P1",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "response_mode",
+        "representation_type"
+      ],
+      "parallel_family": "U1-S4-NOTES-EXAMPLE-P1",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S4-PAIR-1",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S4-NOTES-YTI-P1",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Recognize and distinguish static equilibrium and dynamic equilibrium from motion and force-state descriptions.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S4-NOTES-YTI-P1",
+      "design_slot_id": "U1-S4-NOTES-YTI-P1",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "response_mode",
+        "representation_type"
+      ],
+      "parallel_family": "U1-S4-NOTES-YTI-P1",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S4-PAIR-1",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S4-NOTES-EXAMPLE-P2",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S4-NOTES-EXAMPLE-P2",
+      "design_slot_id": "U1-S4-NOTES-EXAMPLE-P2",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "misconception_target",
+        "context_evidence",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S4-NOTES-EXAMPLE-P2",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+        "asset_id": "PHYS-DAC530DEBC21",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S4-PAIR-2",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S4-NOTES-YTI-P2",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that an object at rest may have multiple forces acting while those forces balance to zero net force.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "structure_id": "FEATURE-IDENTIFY-FROM-REPRESENTATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S4-NOTES-YTI-P2",
+      "design_slot_id": "U1-S4-NOTES-YTI-P2",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_type",
+        "misconception_target",
+        "context_evidence",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S4-NOTES-YTI-P2",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+        "asset_id": "PHYS-B6D46ACCB666",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "pair_id": "U1-S4-PAIR-2",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S4-NOTES-EXAMPLE-P3",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "slot_id": "U1-S4-NOTES-EXAMPLE-P3",
+      "design_slot_id": "U1-S4-NOTES-EXAMPLE-P3",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "context_evidence",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S4-NOTES-EXAMPLE-P3",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "equation_relationship",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "equation_relationship",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S4-PAIR-3",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S4-NOTES-YTI-P3",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "required_relationship",
+      "slot_id": "U1-S4-NOTES-YTI-P3",
+      "design_slot_id": "U1-S4-NOTES-YTI-P3",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "context_evidence",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S4-NOTES-YTI-P3",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "equation_relationship",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "equation_relationship",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S4-PAIR-3",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S4-NOTES-EXAMPLE-P4",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S4-NOTES-EXAMPLE-P4",
+      "design_slot_id": "U1-S4-NOTES-EXAMPLE-P4",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "context_evidence",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S4-NOTES-EXAMPLE-P4",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "asset_id": "PHYS-15C8D0E3F482",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S4-PAIR-4",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S4-NOTES-YTI-P4",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.4",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain that constant straight-line velocity can occur in equilibrium and use the equilibrium rule to reason about unknown upward/downward or left/right force components.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S4-NOTES-YTI-P4",
+      "design_slot_id": "U1-S4-NOTES-YTI-P4",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "unknown_quantity",
+        "values_units",
+        "representation_values",
+        "context_evidence",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S4-NOTES-YTI-P4",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "asset_id": "PHYS-9C32901B2ABF",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "Use plausible misconception/error alternatives tied to the exact mapped evidence job; no duplicate or throwaway choices.",
+      "pair_id": "U1-S4-PAIR-4",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S5-NOTES-EXAMPLE-P1",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "slot_id": "U1-S5-NOTES-EXAMPLE-P1",
+      "design_slot_id": "U1-S5-NOTES-EXAMPLE-P1",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values"
+      ],
+      "parallel_family": "U1-S5-NOTES-EXAMPLE-P1",
+      "representation_route": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "pair_id": "U1-S5-PAIR-1",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S5-NOTES-YTI-P1",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "slot_id": "U1-S5-NOTES-YTI-P1",
+      "design_slot_id": "U1-S5-NOTES-YTI-P1",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values"
+      ],
+      "parallel_family": "U1-S5-NOTES-YTI-P1",
+      "representation_route": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "pair_id": "U1-S5-PAIR-1",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S5-NOTES-EXAMPLE-P2",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S5-NOTES-EXAMPLE-P2",
+      "design_slot_id": "U1-S5-NOTES-EXAMPLE-P2",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S5-NOTES-EXAMPLE-P2",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+        "asset_id": "PHYS-DBC68196705B",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S5-PAIR-2",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S5-NOTES-YTI-P2",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether the forces on the modeled object are balanced or unbalanced and connect that judgment to zero or nonzero net force.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "supplied_force_diagram",
+      "representation_need": "required",
+      "slot_id": "U1-S5-NOTES-YTI-P2",
+      "design_slot_id": "U1-S5-NOTES-YTI-P2",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md",
+        "tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9:resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "representation_values",
+        "representation_type",
+        "context_evidence",
+        "response_mode"
+      ],
+      "parallel_family": "U1-S5-NOTES-YTI-P2",
+      "representation_route": {
+        "route_type": "canonical_asset",
+        "repository": "tnezki/physics",
+        "pinned_commit": "0308da744c69ba0c83f5e922625e3117d6594dc9",
+        "canonical_path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "asset_id": "PHYS-9C32901B2ABF",
+        "catalog": "resources/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+        "answer_neutrality_contract": "Render the asset without its source caption. Verify that labels/arrows needed for the task are visible, but no visible text directly states the requested conclusion."
+      },
+      "render_contract": {
+        "render": "canonical_image_asset",
+        "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "no_student_caption": true,
+        "verify_readability_and_answer_neutrality": true
+      },
+      "pair_id": "U1-S5-PAIR-2",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S5-NOTES-EXAMPLE-P3",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S5-NOTES-EXAMPLE-P3",
+      "design_slot_id": "U1-S5-NOTES-EXAMPLE-P3",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "misconception_target",
+        "context_evidence",
+        "representation_type",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S5-NOTES-EXAMPLE-P3",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S5-PAIR-3",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S5-NOTES-YTI-P3",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain how nonzero net force changes motion, diagnose an incorrect force explanation, and revise the explanation using accurate physics vocabulary and model reasoning.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "none",
+      "slot_id": "U1-S5-NOTES-YTI-P3",
+      "design_slot_id": "U1-S5-NOTES-YTI-P3",
+      "wording_profile": "context_rich",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "misconception_target",
+        "context_evidence",
+        "representation_type",
+        "givens_evidence_set"
+      ],
+      "parallel_family": "U1-S5-NOTES-YTI-P3",
+      "representation_route": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "render_contract": {
+        "route_type": "direct_render",
+        "representation": "direct_text",
+        "html_contract": "Render directly in student text/MathJax as applicable. Do not add a decorative figure."
+      },
+      "pair_id": "U1-S5-PAIR-3",
+      "pair_role": "yti"
+    },
+    {
+      "record_id": "U1-S5-NOTES-EXAMPLE-P4",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Execute the mapped learning action in a teacher-modeled example.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "slot_id": "U1-S5-NOTES-EXAMPLE-P4",
+      "design_slot_id": "U1-S5-NOTES-EXAMPLE-P4",
+      "wording_profile": "standard",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Example anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values"
+      ],
+      "parallel_family": "U1-S5-NOTES-EXAMPLE-P4",
+      "representation_route": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "pair_id": "U1-S5-PAIR-4",
+      "pair_role": "example"
+    },
+    {
+      "record_id": "U1-S5-NOTES-YTI-P4",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "scope": "1.5",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Construct a force diagram for one identified object in a real-world situation, showing only forces acting on that object with appropriate directions and labels.",
+      "student_action": "Apply the modeled idea to a meaningfully changed but comparable case.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_fbd",
+      "representation_need": "required",
+      "slot_id": "U1-S5-NOTES-YTI-P4",
+      "design_slot_id": "U1-S5-NOTES-YTI-P4",
+      "wording_profile": "inverted",
+      "length_intent": "concise",
+      "security_level": "nonsecure_instructional",
+      "source_basis": [
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+        "tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8:_question_structure/QUESTION_STRUCTURE_CORE.md"
+      ],
+      "authoring_notes": "Yti anchor for the exact target. Example models the reasoning; YTI preserves the same learning idea while changing meaningful evidence. No final prompt/answer prose belongs in this map.",
+      "variation_axes": [
+        "context_evidence",
+        "givens_evidence_set",
+        "representation_values"
+      ],
+      "parallel_family": "U1-S5-NOTES-YTI-P4",
+      "representation_route": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface_type": "force_diagram",
+        "html_contract": "Blank answer surface rendered in the student artifact; minimum usable handwritten/digital workspace approximately 360x220 px. Do not pre-render a completed answer diagram. A neutral object marker may be supplied only if the authoring slot explicitly treats placement of the object as non-evidence.",
+        "answer_neutrality_contract": "No force/vector arrows, labels, resultant, or balance cue may be pre-drawn when construction is the evidence job."
+      },
+      "pair_id": "U1-S5-PAIR-4",
+      "pair_role": "yti"
+    }
+  ],
+  "counts": {
+    "wtc": 5,
+    "example_yti": 40
+  },
+  "rules": {
+    "wtc_coverage_role": "wtc_frq_practice",
+    "example_yti_pairs_per_section": 4,
+    "every_exact_section_i_can_gets_pair_before_enrichment": true
+  }
+}

@@ -1,0 +1,62 @@
+PHYSICS UNIT 1 BANK MAP — MAP REPORT
+=====================================
+
+STATUS: PASS
+COURSE / UNIT: Physics / Unit 1 — Forces, Motion, and Equilibrium
+PROFILE: Conceptual Physics Bank v2 Course Profile v1.2
+SYSTEM SNAPSHOT: tnezki/memories@84e34ee822efdc3477ce69fc480f7ab1539af4e8
+COURSE SNAPSHOT: tnezki/physics@0308da744c69ba0c83f5e922625e3117d6594dc9
+MAP FINGERPRINT: bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451
+
+QUESTION-DESIGN MAP
+-------------------
+PASS. All 15 exact Unit 1 I-can IDs/text are mapped before question prose. Every destination record carries executable evidence-job -> student-action -> structure -> response -> representation -> route metadata. No final student prompt, final choice set, final answer, or final solution is authored in Step 2A.
+
+WTC
+---
+5 exact WTC records (1/section). Each is one connected 4-part FRQ-decomposition routine with one shared pinned canonical representation, an interpretation/extraction move, an explicit dependency/use of an earlier conclusion, and a planning/model-choice/justification move. coverage_role=wtc_frq_practice; WTC does not count toward Unit 1 I-can floors.
+
+INVENTORY
+---------
+Exact-content records: 135
+  WTC: 5
+  Example/YTI: 40 (4 complete pairs/section; every exact section I-can receives a pair before the enrichment pair)
+  CYU: 30 (6/section)
+  Warm-Ups: 60 (3 x 4/section)
+Family seeds: 230
+  Practice: 150 (30/section)
+  Exit: 40 (8/section)
+  Summative: 40 (unit pool)
+Total mapped records: 365
+
+PRACTICE FIT-BEFORE-CATEGORY MIX
+--------------------------------
+1.1: vocabulary_representation=10, conceptual_application=20, quantitative_modeling=0
+1.2: vocabulary_representation=8, conceptual_application=22, quantitative_modeling=0
+1.3: vocabulary_representation=6, conceptual_application=12, quantitative_modeling=12
+1.4: vocabulary_representation=5, conceptual_application=15, quantitative_modeling=10
+1.5: vocabulary_representation=5, conceptual_application=21, quantitative_modeling=4
+No quantitative/modeling family was created solely to fill a quota.
+
+REPRESENTATION / TOOL ROUTES
+----------------------------
+Canonical supplied diagram/vector assets: 117 mapped records, each with repository=tnezki/physics, pinned commit, exact path, and asset_id.
+Student-constructed FBD blank response surfaces: 25 mapped records; completed answer diagrams are explicitly forbidden in the student surface.
+Semantic compact tables: 43 mapped records using <table class="values">.
+Direct equation/MathJax relationship routes: 41 mapped records.
+Direct text routes: 139 mapped records.
+Registered graph tool: graph_tool -> Tools/~graph_tool_v12.py. It is registered and available, but this Unit 1 map intentionally uses 0 graph slots because no exact Unit 1 evidence job requires a graph; graph variety was not forced.
+
+DETERMINISTIC BLUEPRINT FEASIBILITY
+-----------------------------------
+Practice: PASS. Each section has a 30-family pool; downstream 24-family sets apply hard I-can/evidence/representation constraints first and then the profile stable-key tie-break using the canonical Bank fingerprint.
+Exit: PASS. Each section has an explicit 4-family blueprint shared by A/B/C and backed by an 8-family secure pool.
+Summative: PASS. Blueprint A maps 20 exact semantic families for V1-V4; Blueprint B maps 20 materially alternate families for V5-V6. Each blueprint covers all 15 Unit I-cans and is exactly 16 selected response + 4 constructed response.
+
+SECURITY / VARIATION
+--------------------
+Practice families have explicit locks and legal variation axes. Exit and Summative families forbid exposed finished-prompt reuse and forbid wording/name/value/choice-order-only changes as the sole secure variation. Supplied-diagram families list only exact pinned canonical asset routes as allowed representation variants.
+
+INTEGRATED QA
+-------------
+PASS. Unique IDs; exact I-can text; executable route checks; selected-response choice/distractor planning; semantic-table contract; no generic diagram aliases; construction evidence uses constructed response; WTC rigor gate; family lock/variation fields; secure-family rules; Summative response counts/coverage; and no final prompt/answer/solution leakage all passed.
