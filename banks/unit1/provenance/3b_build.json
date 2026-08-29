@@ -1,0 +1,82 @@
+{
+  "schema": "bank-build-provenance/3b/1.0",
+  "course": "Physics",
+  "unit": 1,
+  "phase": "3B_practice_families",
+  "status": "QA_PASS",
+  "request_pins": {
+    "system_repo": {
+      "repo": "tnezki/memories",
+      "commit": "d34ed1c0c5308296e1b1a10a62276237f5a4acdd"
+    },
+    "course_repo": {
+      "repo": "tnezki/physics",
+      "commit": "9d546f3f902d123a71553eeeab43f38a41612428"
+    }
+  },
+  "authorities": {
+    "selected_pm": "pms_build/bank_instructional_parallels/PM.txt",
+    "philosophy": "Curriculum_Philosophy.txt",
+    "runtime_contract": "SYSTEM_RUNTIME_CONTRACT.txt",
+    "framework": "frameworks/Physics/FRAMEWORK.txt",
+    "course_profile": {
+      "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+      "blob_sha": "5447856b09a0148cacfbf5371d208392d721707c"
+    },
+    "i_can_index": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json",
+    "question_structure": {
+      "version": "1.0",
+      "manifest_blob_sha": "b3bb51eac3638e5a9058001860007f9dc8f76db9",
+      "core_blob_sha": "58549ffc875cbd8de95e3728289d25f1e2ec7c22"
+    },
+    "bank_map": {
+      "path": "banks/unit1_bank_map/practice_map.json",
+      "sha256": "ddc08efe4494e60cd5f1e1b27d798790e9c5e035a9328b91a1108a3f27cae779",
+      "record_count": 150,
+      "record_mode": "family_seed"
+    },
+    "starting_bank_manifest_blob_sha": "5d61186ac98010d9cc4d73bc11e4a676f42756e6",
+    "starting_item_index_blob_sha": "84edcdb8d03ac8281e5fe654ab5286835a8b146a"
+  },
+  "normalizations": {
+    "question_structure": "question_structure_id",
+    "approximate_difficulty": "difficulty_intent",
+    "representation_job": "representation_mode plus representation_need/embedded representation",
+    "intended_reasoning": "explicit derived statement from mapped evidence job",
+    "locked_elements": "explicit key/value lock object",
+    "variation_contract": "explicit allowed/required/forbidden rule objects"
+  },
+  "representation_strategy": "Evidence-bearing tables and force/vector diagrams are embedded directly in canonical seed HTML plus structured embedded_representation data; no external figure file is required, so figure_refs are empty and no figures/ folder is emitted.",
+  "counts": {
+    "sections": 5,
+    "families_per_section": 30,
+    "practice_families": 150,
+    "starting_canonical_records": 135,
+    "ending_canonical_records": 285,
+    "quantitative_families": 35
+  },
+  "practice_file_sha256": {
+    "banks/unit1/practice/section_1_1.json": "4cb4048fe1074812ab0aafcd2b0988dafa7bbd4c0e115594cc3319a46056252f",
+    "banks/unit1/practice/section_1_2.json": "f2b9e150fc81f20fea9c9ced838c4025dd6c437d735bac525d5658f1c9bb60d3",
+    "banks/unit1/practice/section_1_3.json": "446debbe4a54dd21a00b78da08167773109d36e5d55cd31f17a7ae6612c182d8",
+    "banks/unit1/practice/section_1_4.json": "235ba44c440984c27d6ee94e8f037420a2184a2888b93835734c3fedd99d8d6d",
+    "banks/unit1/practice/section_1_5.json": "2c00e43272a309a5ab64da5d4c4d667d7bcec90c30cc1b6af1e57501a43f730c"
+  },
+  "qa": {
+    "result": "PASS",
+    "errors": [],
+    "checks": [
+      "all 150 mapped family IDs authored",
+      "30 families per section",
+      "section family-type mixes preserved",
+      "exact Unit 1 I-can texts preserved",
+      "selected-response seeds have choices",
+      "every seed has answer and full solution",
+      "representation-read/construct families carry embedded evidence-bearing representations",
+      "locks normalized to explicit key/value objects",
+      "quantitative seeds contain concrete physical situations and numeric answers",
+      "ITEM_INDEX appends 150 practice routes after 135 preserved 3A routes",
+      "BANK_MANIFEST remains BUILDING and advances next phase to 3C"
+    ]
+  }
+}
