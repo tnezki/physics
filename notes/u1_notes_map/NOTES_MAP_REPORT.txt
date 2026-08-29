@@ -1,0 +1,39 @@
+PHYSICS UNIT 1 NOTES MAP — 4A VALIDATION / PROVENANCE REPORT
+
+STATUS: PASS
+QA STATUS: PASS
+
+Authorities
+- System: tnezki/memories@23a64698fa411d0a31e0f0fb40d51cc0600cf920
+- Course: tnezki/physics@1fc80b19813855ace0233b65bab36a628cf9ad29
+- Textbook: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
+- PM: pms_build/notes_map/PM.txt
+- Original assessment plan: Unit 1 / Forces, Motion, and Equilibrium
+
+Identity
+- source_bank_fingerprint_method: stage3e-canonical-v1
+- source_bank_fingerprint: stage3e-canonical:48b2669e74d352d4f07f313a24aa6ae0745ded56950d743e4f44e18542f4f7f9
+- image_toolkit_fingerprint: git-blob:8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d
+
+Validation
+- Sections mapped: 5
+- WTC anchors placed: 5/5
+- Canonical EX/YTI pairs placed: 20/20
+- Textbook blocks: KEEP 11, CONDENSE 9, DROP 8
+- Images retained/resolved: 8
+- Stop & Discuss moments: 5
+- Generated representation needs: 0
+- Section timing: all mapped to 30–40 minutes
+- Stop & Discuss image-ID schema: PASS
+- Canonical map JSON parse/contract: PASS
+
+Non-blocking source notes
+1. Section 1.4 textbook file explicitly reports source cp_section_2_7 unavailable. The target course section file is present, and dynamic-equilibrium coverage is preserved through current assessment authority, existing unchanged-motion text, Bank anchors, and canonical extra course figure PHYS-9C32901B2ABF.
+2. Section 1.5 is explicitly a synthesis/application textbook section with no single corresponding source-textbook passage; its existing pinned course-textbook synthesis is used as the spine.
+
+Output contract
+- u1_notes_map.json
+- u1_notes_map.html
+- NOTES_MAP_REPORT.txt
+- NOTES_MAP_HANDOFF.json
+- Exact four-file canonical folder contract: PASS
