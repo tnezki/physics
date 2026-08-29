@@ -1,20 +1,20 @@
 {
   "schema": "canonical-bank-manifest/2.0",
-  "bank_version": "2.0-building",
+  "bank_version": "2.0",
   "course": "Physics",
   "course_title": "Conceptual Physics",
   "unit": 1,
   "unit_title": "Forces, Motion, and Equilibrium",
-  "status": "BUILDING",
-  "ready_for_downstream": false,
+  "status": "COMPLETE",
+  "ready_for_downstream": true,
   "pinned_sources": {
     "system_repo": {
       "repo": "tnezki/memories",
-      "commit": "af360ab79972f81144fe4b43c7be1214413e5523"
+      "commit": "e3fca011e829523617b291bd42f22391e5f800ee"
     },
     "course_repo": {
       "repo": "tnezki/physics",
-      "commit": "f53ec5776ece995e314338ffbf2bdfb13ee344a0"
+      "commit": "269fe9fc999449766bd6d2c78013489dd2b40f00"
     }
   },
   "bank_map": {
@@ -24,7 +24,9 @@
       "notes": "67b7b100de914050f74522f39f63c681482a3c7c2dabb9e08855ef222ba5b516",
       "cyu": "8e375889391d2631c9125a9fb417be0ef85d1716f713ad2596354a766d1cc9c4",
       "warmups": "18f80510907ea8e724dff801ca6f7aebdfa70a710e89443dd9c6f33ea70a9940",
-      "practice": "ddc08efe4494e60cd5f1e1b27d798790e9c5e035a9328b91a1108a3f27cae779"
+      "practice": "ddc08efe4494e60cd5f1e1b27d798790e9c5e035a9328b91a1108a3f27cae779",
+      "exit": "a007b0e40b99945f48a2f80365b384f1c8cec3ada61a883af58f126e5f3ad1f5",
+      "summative": "133c24b91705b8cc4dc3c39a2099e6136173599a7f7766ffd3f0c7e496612ad6"
     }
   },
   "course_bank_profile": {
@@ -34,12 +36,11 @@
   },
   "completed_phases": [
     "3A_instructional_core",
-    "3B_practice_families"
-  ],
-  "pending_phases": [
+    "3B_practice_families",
     "3C_assessment_families"
   ],
-  "next_phase": "3C_assessment_families",
+  "pending_phases": [],
+  "next_phase": null,
   "canonical_artifacts": {
     "notes": {
       "1.1": "banks/unit1/notes/section_1_1.json",
@@ -68,6 +69,17 @@
       "1.3": "banks/unit1/practice/section_1_3.json",
       "1.4": "banks/unit1/practice/section_1_4.json",
       "1.5": "banks/unit1/practice/section_1_5.json"
+    },
+    "exit": {
+      "1.1": "banks/unit1/exit/section_1_1.json",
+      "1.2": "banks/unit1/exit/section_1_2.json",
+      "1.3": "banks/unit1/exit/section_1_3.json",
+      "1.4": "banks/unit1/exit/section_1_4.json",
+      "1.5": "banks/unit1/exit/section_1_5.json"
+    },
+    "summative": {
+      "A": "banks/unit1/summative/blueprint_a.json",
+      "B": "banks/unit1/summative/blueprint_b.json"
     }
   },
   "counts": {
@@ -75,7 +87,23 @@
     "cyu": 30,
     "warmups": 60,
     "practice": 150,
-    "total": 285
+    "total": 365,
+    "exit": 40,
+    "summative": 40
   },
-  "item_index": "ITEM_INDEX.json"
+  "item_index": "ITEM_INDEX.json",
+  "provenance_artifacts": {
+    "3A": [
+      "banks/unit1/provenance/3a_build.json",
+      "banks/unit1/provenance/3a_report.txt"
+    ],
+    "3B": [
+      "banks/unit1/provenance/3b_build.json",
+      "banks/unit1/provenance/3b_report.txt"
+    ],
+    "3C": [
+      "banks/unit1/provenance/3c_build.json",
+      "banks/unit1/provenance/3c_report.txt"
+    ]
+  }
 }

@@ -1,0 +1,3629 @@
+{
+  "schema": "summative-family-blueprint/2.0",
+  "course": "Physics",
+  "course_title": "Conceptual Physics",
+  "unit": 1,
+  "unit_title": "Forces, Motion, and Equilibrium",
+  "destination": "summative",
+  "record_mode": "family_seed",
+  "blueprint": "B",
+  "forms": [
+    "V5",
+    "V6"
+  ],
+  "record_count": 20,
+  "selected_response_count": 16,
+  "constructed_response_count": 4,
+  "families": [
+    {
+      "family_id": "U1-SUM-B-F01",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S1-IC1",
+      "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Critique labels in a secure observation/inference/evidence representation.",
+      "intended_reasoning": "Student must critique labels in a secure observation/inference/evidence representation.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_observation_table",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "Which row is labeled incorrectly?\n\nRow 1: scale reads 0.82 kg — observation\nRow 2: the cart slowed because its axle is rough — observation\nRow 3: if mass increases, stopping distance will increase — hypothesis\nA. Row 1\nB. Row 2\nC. Row 3\nD. All labels are correct",
+        "student_html": "<p>Which row is labeled incorrectly?</p><pre>Row 1: scale reads 0.82 kg — observation\nRow 2: the cart slowed because its axle is rough — observation\nRow 3: if mass increases, stopping distance will increase — hypothesis</pre><ol type=\"A\"><li>Row 1</li><li>Row 2</li><li>Row 3</li><li>All labels are correct</li></ol>",
+        "choices": [
+          "Row 1",
+          "Row 2",
+          "Row 3",
+          "All labels are correct"
+        ],
+        "answer": "B — Row 2",
+        "solution_text": "Row 2 explains a cause that was not directly measured, so it is an inference, not an observation.",
+        "solution_html": "<p>Row 2 explains a cause that was not directly measured, so it is an inference, not an observation.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "Row 1: scale reads 0.82 kg — observation\nRow 2: the cart slowed because its axle is rough — observation\nRow 3: if mass increases, stopping distance will increase — hypothesis",
+          "html": "<pre>Row 1: scale reads 0.82 kg — observation\nRow 2: the cart slowed because its axle is rough — observation\nRow 3: if mass increases, stopping distance will increase — hypothesis</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.1",
+        "primary_i_can_id": "U1-S1-IC1",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 1,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F01",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S1-IC1",
+        "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+        "evidence_job": "Critique labels in a secure observation/inference/evidence representation.",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "intended_reasoning": "Student must critique labels in a secure observation/inference/evidence representation.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_observation_table",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 1,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S1-IC1",
+          "primary_i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+          "evidence_job": "Critique labels in a secure observation/inference/evidence representation.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "intended_reasoning": "Student must critique labels in a secure observation/inference/evidence representation.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_observation_table",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F02",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S1-IC2",
+      "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine which measurement/evidence plan would actually test a novel claim.",
+      "intended_reasoning": "Student must determine which measurement/evidence plan would actually test a novel claim.",
+      "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_claim_measurement_plan",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "Claim: “A rougher surface makes the same sliding block slow more quickly.” Which plan most directly tests the claim?\nA. Use identical blocks with the same initial speed on surfaces of different roughness and measure the change in speed over the same time.\nB. Use different blocks on one surface and ask which looks rougher.\nC. Change both block mass and surface roughness at the same time.\nD. Measure only the color of each surface.",
+        "student_html": "<p>Claim: “A rougher surface makes the same sliding block slow more quickly.” Which plan most directly tests the claim?</p><ol type=\"A\"><li>Use identical blocks with the same initial speed on surfaces of different roughness and measure the change in speed over the same time.</li><li>Use different blocks on one surface and ask which looks rougher.</li><li>Change both block mass and surface roughness at the same time.</li><li>Measure only the color of each surface.</li></ol>",
+        "choices": [
+          "Use identical blocks with the same initial speed on surfaces of different roughness and measure the change in speed over the same time.",
+          "Use different blocks on one surface and ask which looks rougher.",
+          "Change both block mass and surface roughness at the same time.",
+          "Measure only the color of each surface."
+        ],
+        "answer": "A — Use identical blocks with the same initial speed on surfaces of different roughness and measure the change in speed over the same time.",
+        "solution_text": "The plan varies surface roughness while controlling the block/starting motion and measures the claimed consequence.",
+        "solution_html": "<p>The plan varies surface roughness while controlling the block/starting motion and measures the claimed consequence.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.1",
+        "primary_i_can_id": "U1-S1-IC2",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 2,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F02",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S1-IC2",
+        "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+        "evidence_job": "Determine which measurement/evidence plan would actually test a novel claim.",
+        "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+        "intended_reasoning": "Student must determine which measurement/evidence plan would actually test a novel claim.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_claim_measurement_plan",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 2,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S1-IC2",
+          "primary_i_can": "I can explain why a claim must be testable to be scientific.",
+          "evidence_job": "Determine which measurement/evidence plan would actually test a novel claim.",
+          "question_structure_id": "PHYS-DESIGN-MEASUREMENT-PROCEDURE-01",
+          "intended_reasoning": "Student must determine which measurement/evidence plan would actually test a novel claim.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_claim_measurement_plan",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F03",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+      "intended_reasoning": "Student must reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "response_class": "constructed",
+      "representation_mode": "secure_relationship_evidence_set",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A model predicts that, for equal time intervals, displacement should be proportional to speed. Decide whether the evidence is consistent with the model and explain why the formula is useful for reasoning, not just calculation.\n\nSpeed (m/s): 0.4 | 0.8 | 1.2\nDistance in 5 s (m): 2.0 | 4.0 | 6.0",
+        "student_html": "<p>A model predicts that, for equal time intervals, displacement should be proportional to speed. Decide whether the evidence is consistent with the model and explain why the formula is useful for reasoning, not just calculation.</p><pre>Speed (m/s): 0.4 | 0.8 | 1.2\nDistance in 5 s (m): 2.0 | 4.0 | 6.0</pre>",
+        "answer": "Yes. At 0.4, 0.8, and 1.2 m/s for the same 5 s interval, the displacements 2.0, 4.0, and 6.0 m scale proportionally. The relationship d=vt expresses how changing speed changes distance when time is fixed.",
+        "solution_text": "Yes. At 0.4, 0.8, and 1.2 m/s for the same 5 s interval, the displacements 2.0, 4.0, and 6.0 m scale proportionally. The relationship d=vt expresses how changing speed changes distance when time is fixed.",
+        "solution_html": "<p>Yes. At 0.4, 0.8, and 1.2 m/s for the same 5 s interval, the displacements 2.0, 4.0, and 6.0 m scale proportionally. The relationship d=vt expresses how changing speed changes distance when time is fixed.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "Speed (m/s): 0.4 | 0.8 | 1.2\nDistance in 5 s (m): 2.0 | 4.0 | 6.0",
+          "html": "<pre>Speed (m/s): 0.4 | 0.8 | 1.2\nDistance in 5 s (m): 2.0 | 4.0 | 6.0</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.1",
+        "primary_i_can_id": "U1-S1-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "blueprint": "B",
+        "blueprint_position": 3,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F03",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S1-IC3",
+        "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+        "evidence_job": "Reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "constructed",
+        "representation_job": "secure_relationship_evidence_set",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 3,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S1-IC3",
+          "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "evidence_job": "Reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must reconcile a relationship/model, evidence set, and explanation in a new secure stimulus.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "constructed",
+          "representation_job": "secure_relationship_evidence_set",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F04",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S2-IC1",
+      "primary_i_can": "I can state Newton’s First Law in everyday language.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine whether a motion representation is consistent with a zero-net-force condition.",
+      "intended_reasoning": "Student must determine whether a motion representation is consistent with a zero-net-force condition.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_motion_plus_force_condition",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A motion map shows equal spacing between successive positions. The force model shows 14 N left and 14 N right. Which conclusion is best?\nA. The evidence is consistent with zero net force and constant velocity.\nB. The object must be speeding up.\nC. The rightward force is larger because the object moves right.\nD. Equal forces mean the object must be at rest.",
+        "student_html": "<p>A motion map shows equal spacing between successive positions. The force model shows 14 N left and 14 N right. Which conclusion is best?</p><ol type=\"A\"><li>The evidence is consistent with zero net force and constant velocity.</li><li>The object must be speeding up.</li><li>The rightward force is larger because the object moves right.</li><li>Equal forces mean the object must be at rest.</li></ol>",
+        "choices": [
+          "The evidence is consistent with zero net force and constant velocity.",
+          "The object must be speeding up.",
+          "The rightward force is larger because the object moves right.",
+          "Equal forces mean the object must be at rest."
+        ],
+        "answer": "A — The evidence is consistent with zero net force and constant velocity.",
+        "solution_text": "Equal spacing indicates constant velocity and the equal opposite forces give zero net force.",
+        "solution_html": "<p>Equal spacing indicates constant velocity and the equal opposite forces give zero net force.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.2",
+        "primary_i_can_id": "U1-S2-IC1",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 4,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F04",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S2-IC1",
+        "primary_i_can": "I can state Newton’s First Law in everyday language.",
+        "evidence_job": "Determine whether a motion representation is consistent with a zero-net-force condition.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must determine whether a motion representation is consistent with a zero-net-force condition.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_motion_plus_force_condition",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 4,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S2-IC1",
+          "primary_i_can": "I can state Newton’s First Law in everyday language.",
+          "evidence_job": "Determine whether a motion representation is consistent with a zero-net-force condition.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must determine whether a motion representation is consistent with a zero-net-force condition.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_motion_plus_force_condition",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F05",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S2-IC2",
+      "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use comparative inertia reasoning without treating inertia as a force.",
+      "intended_reasoning": "Student must use comparative inertia reasoning without treating inertia as a force.",
+      "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_mass_inertia_comparison",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "Two carts are pushed by identical spring launchers for the same short time. Cart X has twice the mass of Cart Y. Which prediction uses inertia correctly?\nA. X resists the velocity change more because it has more inertia.\nB. X has twice as much forward inertia force.\nC. Y has no inertia because it is lighter.\nD. Inertia depends only on speed, so they are equal.",
+        "student_html": "<p>Two carts are pushed by identical spring launchers for the same short time. Cart X has twice the mass of Cart Y. Which prediction uses inertia correctly?</p><ol type=\"A\"><li>X resists the velocity change more because it has more inertia.</li><li>X has twice as much forward inertia force.</li><li>Y has no inertia because it is lighter.</li><li>Inertia depends only on speed, so they are equal.</li></ol>",
+        "choices": [
+          "X resists the velocity change more because it has more inertia.",
+          "X has twice as much forward inertia force.",
+          "Y has no inertia because it is lighter.",
+          "Inertia depends only on speed, so they are equal."
+        ],
+        "answer": "A — X resists the velocity change more because it has more inertia.",
+        "solution_text": "More mass means more inertia, a property, not a force.",
+        "solution_html": "<p>More mass means more inertia, a property, not a force.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.2",
+        "primary_i_can_id": "U1-S2-IC2",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 5,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F05",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S2-IC2",
+        "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+        "evidence_job": "Use comparative inertia reasoning without treating inertia as a force.",
+        "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+        "intended_reasoning": "Student must use comparative inertia reasoning without treating inertia as a force.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_mass_inertia_comparison",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 5,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S2-IC2",
+          "primary_i_can": "I can explain that inertia is a property of matter, not a force.",
+          "evidence_job": "Use comparative inertia reasoning without treating inertia as a force.",
+          "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+          "intended_reasoning": "Student must use comparative inertia reasoning without treating inertia as a force.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_mass_inertia_comparison",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F06",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+      "intended_reasoning": "Student must distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_two_force_models",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "Two models are proposed for a tablet resting on a desk. Model 1 has no arrows. Model 2 has equal upward normal and downward weight arrows. Which is physically correct?\nA. Model 1, because rest means no forces.\nB. Model 2, because real forces can act while their net is zero.\nC. Both, because diagrams are optional.\nD. Neither, because gravity acts upward.",
+        "student_html": "<p>Two models are proposed for a tablet resting on a desk. Model 1 has no arrows. Model 2 has equal upward normal and downward weight arrows. Which is physically correct?</p><ol type=\"A\"><li>Model 1, because rest means no forces.</li><li>Model 2, because real forces can act while their net is zero.</li><li>Both, because diagrams are optional.</li><li>Neither, because gravity acts upward.</li></ol>",
+        "choices": [
+          "Model 1, because rest means no forces.",
+          "Model 2, because real forces can act while their net is zero.",
+          "Both, because diagrams are optional.",
+          "Neither, because gravity acts upward."
+        ],
+        "answer": "B — Model 2, because real forces can act while their net is zero.",
+        "solution_text": "A supported object at rest has weight and normal force that balance.",
+        "solution_html": "<p>A supported object at rest has weight and normal force that balance.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.2",
+        "primary_i_can_id": "U1-S2-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 6,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F06",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S2-IC3",
+        "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+        "evidence_job": "Distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_two_force_models",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 6,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S2-IC3",
+          "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "evidence_job": "Distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must distinguish a no-forces model from a multiple-forces-with-zero-net-force model.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_two_force_models",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F07",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S3-IC1",
+      "primary_i_can": "I can explain why force is a vector quantity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify or correct vector arrows whose length/direction do not match the force description.",
+      "intended_reasoning": "Student must identify or correct vector arrows whose length/direction do not match the force description.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_vector_arrow_set",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A key says 1 cm = 6 N. Which arrow is inconsistent with the stated force?\nA. 18 N east drawn 3 cm east\nB. 12 N west drawn 2 cm west\nC. 24 N east drawn 4 cm west\nD. 6 N west drawn 1 cm west",
+        "student_html": "<p>A key says 1 cm = 6 N. Which arrow is inconsistent with the stated force?</p><ol type=\"A\"><li>18 N east drawn 3 cm east</li><li>12 N west drawn 2 cm west</li><li>24 N east drawn 4 cm west</li><li>6 N west drawn 1 cm west</li></ol>",
+        "choices": [
+          "18 N east drawn 3 cm east",
+          "12 N west drawn 2 cm west",
+          "24 N east drawn 4 cm west",
+          "6 N west drawn 1 cm west"
+        ],
+        "answer": "C — 24 N east drawn 4 cm west",
+        "solution_text": "A 24 N east force should be 4 cm east, not west.",
+        "solution_html": "<p>A 24 N east force should be 4 cm east, not west.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.3",
+        "primary_i_can_id": "U1-S3-IC1",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 7,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F07",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S3-IC1",
+        "primary_i_can": "I can explain why force is a vector quantity.",
+        "evidence_job": "Identify or correct vector arrows whose length/direction do not match the force description.",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "intended_reasoning": "Student must identify or correct vector arrows whose length/direction do not match the force description.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_vector_arrow_set",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 7,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S3-IC1",
+          "primary_i_can": "I can explain why force is a vector quantity.",
+          "evidence_job": "Identify or correct vector arrows whose length/direction do not match the force description.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "intended_reasoning": "Student must identify or correct vector arrows whose length/direction do not match the force description.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_vector_arrow_set",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F08",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S3-IC2",
+      "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Work backward from a resultant to a missing force in a novel one-dimensional situation.",
+      "intended_reasoning": "Student must work backward from a resultant to a missing force in a novel one-dimensional situation.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_missing_force_case",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A crate has a resultant of 22 N left. One worker pulls 58 N left while a second worker pulls right. What is the second worker’s force?\nA. 22 N right\nB. 36 N right\nC. 58 N right\nD. 80 N right",
+        "student_html": "<p>A crate has a resultant of 22 N left. One worker pulls 58 N left while a second worker pulls right. What is the second worker’s force?</p><ol type=\"A\"><li>22 N right</li><li>36 N right</li><li>58 N right</li><li>80 N right</li></ol>",
+        "choices": [
+          "22 N right",
+          "36 N right",
+          "58 N right",
+          "80 N right"
+        ],
+        "answer": "B — 36 N right",
+        "solution_text": "58 N left − 36 N right = 22 N left.",
+        "solution_html": "<p>58 N left − 36 N right = 22 N left.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.3",
+        "primary_i_can_id": "U1-S3-IC2",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 8,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F08",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S3-IC2",
+        "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+        "evidence_job": "Work backward from a resultant to a missing force in a novel one-dimensional situation.",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "intended_reasoning": "Student must work backward from a resultant to a missing force in a novel one-dimensional situation.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_missing_force_case",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 8,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S3-IC2",
+          "primary_i_can": "I can combine forces acting in the same direction or opposite directions.",
+          "evidence_job": "Work backward from a resultant to a missing force in a novel one-dimensional situation.",
+          "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+          "intended_reasoning": "Student must work backward from a resultant to a missing force in a novel one-dimensional situation.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_missing_force_case",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F09",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Rank resultants across fresh vector diagrams and justify from arrow evidence.",
+      "intended_reasoning": "Student must rank resultants across fresh vector diagrams and justify from arrow evidence.",
+      "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+      "response_mode": "constructed_response",
+      "response_class": "constructed",
+      "representation_mode": "secure_multiple_vector_diagrams",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "Rank the three force diagrams from greatest to least resultant magnitude, and cite the arrow values that support your ranking.\n\nA: 52 N ← [A] → 34 N\nB: 27 N ← [B] → 33 N\nC: 11 N ← [C] → 39 N",
+        "student_html": "<p>Rank the three force diagrams from greatest to least resultant magnitude, and cite the arrow values that support your ranking.</p><pre>A: 52 N ← [A] → 34 N\nB: 27 N ← [B] → 33 N\nC: 11 N ← [C] → 39 N</pre>",
+        "answer": "C > A > B. Resultant magnitudes: C=28 N, A=18 N, B=6 N.",
+        "solution_text": "Subtract opposite-direction magnitudes in each case.",
+        "solution_html": "<p>Subtract opposite-direction magnitudes in each case.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "A: 52 N ← [A] → 34 N\nB: 27 N ← [B] → 33 N\nC: 11 N ← [C] → 39 N",
+          "html": "<pre>A: 52 N ← [A] → 34 N\nB: 27 N ← [B] → 33 N\nC: 11 N ← [C] → 39 N</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.3",
+        "primary_i_can_id": "U1-S3-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "blueprint": "B",
+        "blueprint_position": 9,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F09",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S3-IC3",
+        "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+        "evidence_job": "Rank resultants across fresh vector diagrams and justify from arrow evidence.",
+        "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+        "intended_reasoning": "Student must rank resultants across fresh vector diagrams and justify from arrow evidence.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "constructed",
+        "representation_job": "secure_multiple_vector_diagrams",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 9,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "evidence_job": "Rank resultants across fresh vector diagrams and justify from arrow evidence.",
+          "question_structure_id": "PHYS-RANK-COMPARE-QUANTITIES-01",
+          "intended_reasoning": "Student must rank resultants across fresh vector diagrams and justify from arrow evidence.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "constructed",
+          "representation_job": "secure_multiple_vector_diagrams",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F10",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify equilibrium type by reconciling motion and force representations.",
+      "intended_reasoning": "Student must identify equilibrium type by reconciling motion and force representations.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_motion_fbd_pairs",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A platform moves upward at constant speed. Its force model shows equal upward cable force and downward weight. Which classification fits?\nA. static equilibrium\nB. dynamic equilibrium\nC. unbalanced acceleration\nD. no forces",
+        "student_html": "<p>A platform moves upward at constant speed. Its force model shows equal upward cable force and downward weight. Which classification fits?</p><ol type=\"A\"><li>static equilibrium</li><li>dynamic equilibrium</li><li>unbalanced acceleration</li><li>no forces</li></ol>",
+        "choices": [
+          "static equilibrium",
+          "dynamic equilibrium",
+          "unbalanced acceleration",
+          "no forces"
+        ],
+        "answer": "B — dynamic equilibrium",
+        "solution_text": "The velocity is constant and nonzero while net force is zero, so the platform is in dynamic equilibrium.",
+        "solution_html": "<p>The velocity is constant and nonzero while net force is zero, so the platform is in dynamic equilibrium.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC1",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 10,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F10",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC1",
+        "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+        "evidence_job": "Identify equilibrium type by reconciling motion and force representations.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must identify equilibrium type by reconciling motion and force representations.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_motion_fbd_pairs",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 10,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC1",
+          "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+          "evidence_job": "Identify equilibrium type by reconciling motion and force representations.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must identify equilibrium type by reconciling motion and force representations.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_motion_fbd_pairs",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F11",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Choose or complete a real-force model for an object at rest.",
+      "intended_reasoning": "Student must choose or complete a real-force model for an object at rest.",
+      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_resting_object_fbd",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A wall-mounted clock is motionless. Which force model for the clock is complete at the introductory level?\nA. weight downward plus an upward support/contact force from the mount\nB. weight downward only\nC. an upward “rest force” only\nD. no forces",
+        "student_html": "<p>A wall-mounted clock is motionless. Which force model for the clock is complete at the introductory level?</p><ol type=\"A\"><li>weight downward plus an upward support/contact force from the mount</li><li>weight downward only</li><li>an upward “rest force” only</li><li>no forces</li></ol>",
+        "choices": [
+          "weight downward plus an upward support/contact force from the mount",
+          "weight downward only",
+          "an upward “rest force” only",
+          "no forces"
+        ],
+        "answer": "A — weight downward plus an upward support/contact force from the mount",
+        "solution_text": "Gravity and contact/support interactions can balance on a resting object.",
+        "solution_html": "<p>Gravity and contact/support interactions can balance on a resting object.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC2",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 11,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F11",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC2",
+        "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+        "evidence_job": "Choose or complete a real-force model for an object at rest.",
+        "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+        "intended_reasoning": "Student must choose or complete a real-force model for an object at rest.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_resting_object_fbd",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 11,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC2",
+          "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+          "evidence_job": "Choose or complete a real-force model for an object at rest.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "intended_reasoning": "Student must choose or complete a real-force model for an object at rest.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_resting_object_fbd",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F12",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+      "intended_reasoning": "Student must explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "constructed_response",
+      "response_class": "constructed",
+      "representation_mode": "secure_constant_velocity_force_model",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "An airport cart moves straight east at constant speed. The diagram shows 90 N upward and downward, plus 44 N east and west. Explain the motion from the force model. Then state what changes if the westward resistance rises to 60 N while the drive stays 44 N.\n\n90 N up; 90 N down; 44 N east; 44 N west",
+        "student_html": "<p>An airport cart moves straight east at constant speed. The diagram shows 90 N upward and downward, plus 44 N east and west. Explain the motion from the force model. Then state what changes if the westward resistance rises to 60 N while the drive stays 44 N.</p><pre>90 N up; 90 N down; 44 N east; 44 N west</pre>",
+        "answer": "Initially both axes balance, so net force is zero and constant eastward velocity is consistent. If resistance becomes 60 N west while drive stays 44 N east, the net force is 16 N west, so the cart accelerates west (initially slows if still moving east).",
+        "solution_text": "The response must connect vector balance to constant velocity, then use the new nonzero resultant to predict change in velocity.",
+        "solution_html": "<p>The response must connect vector balance to constant velocity, then use the new nonzero resultant to predict change in velocity.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "90 N up; 90 N down; 44 N east; 44 N west",
+          "html": "<pre>90 N up; 90 N down; 44 N east; 44 N west</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "blueprint": "B",
+        "blueprint_position": 12,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F12",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC3",
+        "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+        "evidence_job": "Explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "intended_reasoning": "Student must explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "constructed",
+        "representation_job": "secure_constant_velocity_force_model",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 12,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "evidence_job": "Explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+          "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+          "intended_reasoning": "Student must explain a constant straight-line motion case from a fresh balanced-force model and predict the effect of imbalance.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "constructed",
+          "representation_job": "secure_constant_velocity_force_model",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F13",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S5-IC1",
+      "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Critique competing force models for the same isolated object.",
+      "intended_reasoning": "Student must critique competing force models for the same isolated object.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_candidate_real_world_fbds",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A sled is pulled right by a rope while sliding on rough snow. Which candidate force model is best for the sled only?\nA. weight down, normal up, tension right, friction left\nB. weight down, normal up, tension right, a “motion force” right\nC. weight down, rope force left, normal right\nD. normal up and tension right only",
+        "student_html": "<p>A sled is pulled right by a rope while sliding on rough snow. Which candidate force model is best for the sled only?</p><ol type=\"A\"><li>weight down, normal up, tension right, friction left</li><li>weight down, normal up, tension right, a “motion force” right</li><li>weight down, rope force left, normal right</li><li>normal up and tension right only</li></ol>",
+        "choices": [
+          "weight down, normal up, tension right, friction left",
+          "weight down, normal up, tension right, a “motion force” right",
+          "weight down, rope force left, normal right",
+          "normal up and tension right only"
+        ],
+        "answer": "A — weight down, normal up, tension right, friction left",
+        "solution_text": "The isolated sled has weight, normal, rope tension, and friction; motion itself is not a force.",
+        "solution_html": "<p>The isolated sled has weight, normal, rope tension, and friction; motion itself is not a force.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.5",
+        "primary_i_can_id": "U1-S5-IC1",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 13,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F13",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S5-IC1",
+        "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+        "evidence_job": "Critique competing force models for the same isolated object.",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "intended_reasoning": "Student must critique competing force models for the same isolated object.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_candidate_real_world_fbds",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 13,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S5-IC1",
+          "primary_i_can": "I can draw a force diagram for an object in a real-world situation.",
+          "evidence_job": "Critique competing force models for the same isolated object.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "intended_reasoning": "Student must critique competing force models for the same isolated object.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_candidate_real_world_fbds",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F14",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S5-IC2",
+      "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Determine net force from a fresh force model and classify balanced/unbalanced.",
+      "intended_reasoning": "Student must determine net force from a fresh force model and classify balanced/unbalanced.",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_force_values_model",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A powered cart has 83 N thrust right and 47 N rolling resistance left. What is its net force and balance classification?\nA. 36 N right, unbalanced\nB. 36 N left, unbalanced\nC. 130 N right, balanced\nD. 0 N, balanced",
+        "student_html": "<p>A powered cart has 83 N thrust right and 47 N rolling resistance left. What is its net force and balance classification?</p><ol type=\"A\"><li>36 N right, unbalanced</li><li>36 N left, unbalanced</li><li>130 N right, balanced</li><li>0 N, balanced</li></ol>",
+        "choices": [
+          "36 N right, unbalanced",
+          "36 N left, unbalanced",
+          "130 N right, balanced",
+          "0 N, balanced"
+        ],
+        "answer": "A — 36 N right, unbalanced",
+        "solution_text": "83−47=36 N right, a nonzero resultant.",
+        "solution_html": "<p>83−47=36 N right, a nonzero resultant.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.5",
+        "primary_i_can_id": "U1-S5-IC2",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 14,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F14",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S5-IC2",
+        "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+        "evidence_job": "Determine net force from a fresh force model and classify balanced/unbalanced.",
+        "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+        "intended_reasoning": "Student must determine net force from a fresh force model and classify balanced/unbalanced.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_force_values_model",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 14,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S5-IC2",
+          "primary_i_can": "I can decide whether the forces are balanced or unbalanced.",
+          "evidence_job": "Determine net force from a fresh force model and classify balanced/unbalanced.",
+          "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+          "intended_reasoning": "Student must determine net force from a fresh force model and classify balanced/unbalanced.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_force_values_model",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F15",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "family_type": "direct_i_can_evidence",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+      "intended_reasoning": "Student must reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "constructed_response",
+      "response_class": "constructed",
+      "representation_mode": "secure_fbd_motion_explanation",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A wagon is moving right and speeding up. Its model shows 70 N right and 25 N left. A student says, “The forces are balanced because the wagon is already moving.” Evaluate the model, motion evidence, and explanation.\n\n25 N ← [wagon] → 70 N\nObserved: moving right, speed increasing",
+        "student_html": "<p>A wagon is moving right and speeding up. Its model shows 70 N right and 25 N left. A student says, “The forces are balanced because the wagon is already moving.” Evaluate the model, motion evidence, and explanation.</p><pre>25 N ← [wagon] → 70 N\nObserved: moving right, speed increasing</pre>",
+        "answer": "The model and motion evidence are consistent: the net force is 45 N right, so rightward speed can increase. The student explanation is incorrect because balanced forces would produce no change in velocity.",
+        "solution_text": "Use both the force diagram and the observed velocity change; do not equate motion with balance.",
+        "solution_html": "<p>Use both the force diagram and the observed velocity change; do not equate motion with balance.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "25 N ← [wagon] → 70 N\nObserved: moving right, speed increasing",
+          "html": "<pre>25 N ← [wagon] → 70 N\nObserved: moving right, speed increasing</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.5",
+        "primary_i_can_id": "U1-S5-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "blueprint": "B",
+        "blueprint_position": 15,
+        "high_leverage_repeat": false
+      },
+      "source_map_record_id": "U1-SUM-B-F15",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S5-IC3",
+        "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+        "evidence_job": "Reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "constructed",
+        "representation_job": "secure_fbd_motion_explanation",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 15,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S5-IC3",
+          "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+          "evidence_job": "Reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must reconcile force diagram, motion evidence, and explanation in a new real-world system.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "constructed",
+          "representation_job": "secure_fbd_motion_explanation",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F16",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.1",
+        "title": "Thinking Like a Physicist"
+      },
+      "family_type": "high_leverage_repeat",
+      "primary_i_can_id": "U1-S1-IC3",
+      "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Extract evidence from a representation, use a simple relationship, and interpret the result.",
+      "intended_reasoning": "Student must extract evidence from a representation, use a simple relationship, and interpret the result.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_data_relationship",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "On a conveyor, a package moves steadily at 1.25 m/s for 12 s. What distance should d=vt predict, and what does that value represent?\nA. 10 m, the package speed\nB. 15 m, the package displacement along the belt\nC. 12 m, the elapsed time\nD. 1.25 m, the package acceleration",
+        "student_html": "<p>On a conveyor, a package moves steadily at 1.25 m/s for 12 s. What distance should d=vt predict, and what does that value represent?</p><ol type=\"A\"><li>10 m, the package speed</li><li>15 m, the package displacement along the belt</li><li>12 m, the elapsed time</li><li>1.25 m, the package acceleration</li></ol>",
+        "choices": [
+          "10 m, the package speed",
+          "15 m, the package displacement along the belt",
+          "12 m, the elapsed time",
+          "1.25 m, the package acceleration"
+        ],
+        "answer": "B — 15 m, the package displacement along the belt",
+        "solution_text": "d=(1.25 m/s)(12 s)=15 m; it is the distance traveled in that time.",
+        "solution_html": "<p>d=(1.25 m/s)(12 s)=15 m; it is the distance traveled in that time.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.1",
+        "primary_i_can_id": "U1-S1-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 16,
+        "high_leverage_repeat": true
+      },
+      "source_map_record_id": "U1-SUM-B-F16",
+      "source_basis": "Original Unit 1 Assessment Plan §1.1: observations/evidence/testability/model-or-formula interpretation; Physics Framework: conceptual meaning before calculation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S1-IC3",
+        "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+        "evidence_job": "Extract evidence from a representation, use a simple relationship, and interpret the result.",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "intended_reasoning": "Student must extract evidence from a representation, use a simple relationship, and interpret the result.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_data_relationship",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 16,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S1-IC3",
+          "primary_i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "evidence_job": "Extract evidence from a representation, use a simple relationship, and interpret the result.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "intended_reasoning": "Student must extract evidence from a representation, use a simple relationship, and interpret the result.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_data_relationship",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F17",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.2",
+        "title": "Forces and Newton’s First Law"
+      },
+      "family_type": "high_leverage_repeat",
+      "primary_i_can_id": "U1-S2-IC3",
+      "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Diagnose a common force-identification misconception in a new context.",
+      "intended_reasoning": "Student must diagnose a common force-identification misconception in a new context.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_force_identification_claim",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A hockey puck slides right after leaving a player’s stick. A student includes a rightward “stick force” on the puck long after contact ended. Which correction is best?\nA. Keep it because moving objects need a forward force.\nB. Remove it; the stick no longer interacts with the puck after contact ends.\nC. Rename it inertia force.\nD. Replace gravity with the stick force.",
+        "student_html": "<p>A hockey puck slides right after leaving a player’s stick. A student includes a rightward “stick force” on the puck long after contact ended. Which correction is best?</p><ol type=\"A\"><li>Keep it because moving objects need a forward force.</li><li>Remove it; the stick no longer interacts with the puck after contact ends.</li><li>Rename it inertia force.</li><li>Replace gravity with the stick force.</li></ol>",
+        "choices": [
+          "Keep it because moving objects need a forward force.",
+          "Remove it; the stick no longer interacts with the puck after contact ends.",
+          "Rename it inertia force.",
+          "Replace gravity with the stick force."
+        ],
+        "answer": "B — Remove it; the stick no longer interacts with the puck after contact ends.",
+        "solution_text": "A force requires an interaction. Once contact ends, the stick no longer exerts that force.",
+        "solution_html": "<p>A force requires an interaction. Once contact ends, the stick no longer exerts that force.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.2",
+        "primary_i_can_id": "U1-S2-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 17,
+        "high_leverage_repeat": true
+      },
+      "source_map_record_id": "U1-SUM-B-F17",
+      "source_basis": "Original Unit 1 Assessment Plan §1.2: Newton’s First Law, inertia, zero-net-force distinction, support force/weight; Physics Framework: physical-situation force reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S2-IC3",
+        "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+        "evidence_job": "Diagnose a common force-identification misconception in a new context.",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "intended_reasoning": "Student must diagnose a common force-identification misconception in a new context.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_force_identification_claim",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 17,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S2-IC3",
+          "primary_i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "evidence_job": "Diagnose a common force-identification misconception in a new context.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "intended_reasoning": "Student must diagnose a common force-identification misconception in a new context.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_force_identification_claim",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F18",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.3",
+        "title": "Net Force and Vectors"
+      },
+      "family_type": "high_leverage_repeat",
+      "primary_i_can_id": "U1-S3-IC3",
+      "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Select or correct a resultant representation from fresh vector evidence.",
+      "intended_reasoning": "Student must select or correct a resultant representation from fresh vector evidence.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_resultant_diagram",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "The forces on a cart are 46 N east and 19 N west. Which resultant representation is correct?\nA. 27 N east\nB. 27 N west\nC. 65 N east\nD. 65 N west",
+        "student_html": "<p>The forces on a cart are 46 N east and 19 N west. Which resultant representation is correct?</p><ol type=\"A\"><li>27 N east</li><li>27 N west</li><li>65 N east</li><li>65 N west</li></ol>",
+        "choices": [
+          "27 N east",
+          "27 N west",
+          "65 N east",
+          "65 N west"
+        ],
+        "answer": "A — 27 N east",
+        "solution_text": "Opposite forces subtract and the direction follows the larger eastward force.",
+        "solution_html": "<p>Opposite forces subtract and the direction follows the larger eastward force.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.3",
+        "primary_i_can_id": "U1-S3-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 18,
+        "high_leverage_repeat": true
+      },
+      "source_map_record_id": "U1-SUM-B-F18",
+      "source_basis": "Original Unit 1 Assessment Plan §1.3: force vectors, same/opposite-direction combination, resultant from scaled arrows; Physics Framework: representations carry evidence.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S3-IC3",
+        "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+        "evidence_job": "Select or correct a resultant representation from fresh vector evidence.",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "intended_reasoning": "Student must select or correct a resultant representation from fresh vector evidence.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_resultant_diagram",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 18,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S3-IC3",
+          "primary_i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "evidence_job": "Select or correct a resultant representation from fresh vector evidence.",
+          "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+          "intended_reasoning": "Student must select or correct a resultant representation from fresh vector evidence.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_resultant_diagram",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F19",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "high_leverage_repeat",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use diagram values to verify equilibrium or identify residual net force.",
+      "intended_reasoning": "Student must use diagram values to verify equilibrium or identify residual net force.",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_two_axis_force_diagram",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A moving platform has the force values shown. Which statement is correct?\n\n150 N up; 150 N down; 35 N left; 35 N right\nA. It is in equilibrium because both axes sum to zero.\nB. It has 10 N net force right.\nC. It has 20 N net force upward.\nD. It has 150 N net force downward.",
+        "student_html": "<p>A moving platform has the force values shown. Which statement is correct?</p><pre>150 N up; 150 N down; 35 N left; 35 N right</pre><ol type=\"A\"><li>It is in equilibrium because both axes sum to zero.</li><li>It has 10 N net force right.</li><li>It has 20 N net force upward.</li><li>It has 150 N net force downward.</li></ol>",
+        "choices": [
+          "It is in equilibrium because both axes sum to zero.",
+          "It has 10 N net force right.",
+          "It has 20 N net force upward.",
+          "It has 150 N net force downward."
+        ],
+        "answer": "A — It is in equilibrium because both axes sum to zero.",
+        "solution_text": "Horizontal 35 N forces cancel and vertical 150 N forces cancel, giving zero net force.",
+        "solution_html": "<p>Horizontal 35 N forces cancel and vertical 150 N forces cancel, giving zero net force.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "150 N up; 150 N down; 35 N left; 35 N right",
+          "html": "<pre>150 N up; 150 N down; 35 N left; 35 N right</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 19,
+        "high_leverage_repeat": true
+      },
+      "source_map_record_id": "U1-SUM-B-F19",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC3",
+        "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+        "evidence_job": "Use diagram values to verify equilibrium or identify residual net force.",
+        "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+        "intended_reasoning": "Student must use diagram values to verify equilibrium or identify residual net force.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_two_axis_force_diagram",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 19,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "evidence_job": "Use diagram values to verify equilibrium or identify residual net force.",
+          "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+          "intended_reasoning": "Student must use diagram values to verify equilibrium or identify residual net force.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_two_axis_force_diagram",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-SUM-B-F20",
+      "record_mode": "family_seed",
+      "destination": "summative",
+      "section": {
+        "id": "1.5",
+        "title": "Modeling Forces in the Real World"
+      },
+      "family_type": "high_leverage_repeat",
+      "primary_i_can_id": "U1-S5-IC3",
+      "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Identify which of two force explanations is consistent with the model and motion evidence.",
+      "intended_reasoning": "Student must identify which of two force explanations is consistent with the model and motion evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "secure_competing_force_explanations",
+      "representation_need": "Use a real evidence-bearing representation when required. Student-safe figures must not reveal the result; do not replace required diagrams/models with prose descriptions.",
+      "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+      "security_level": "secure_summative",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A cart moves left and is slowing. Its model shows a 21 N net force right. Which explanation is consistent with both pieces of evidence?\nA. The model is wrong because force must point left with velocity.\nB. The rightward net force produces rightward acceleration, which can slow a left-moving cart.\nC. The cart has zero acceleration because it is moving.\nD. The rightward force instantly makes velocity rightward.",
+        "student_html": "<p>A cart moves left and is slowing. Its model shows a 21 N net force right. Which explanation is consistent with both pieces of evidence?</p><ol type=\"A\"><li>The model is wrong because force must point left with velocity.</li><li>The rightward net force produces rightward acceleration, which can slow a left-moving cart.</li><li>The cart has zero acceleration because it is moving.</li><li>The rightward force instantly makes velocity rightward.</li></ol>",
+        "choices": [
+          "The model is wrong because force must point left with velocity.",
+          "The rightward net force produces rightward acceleration, which can slow a left-moving cart.",
+          "The cart has zero acceleration because it is moving.",
+          "The rightward force instantly makes velocity rightward."
+        ],
+        "answer": "B — The rightward net force produces rightward acceleration, which can slow a left-moving cart.",
+        "solution_text": "A rightward acceleration changes a leftward velocity toward zero before reversing it; net force need not match current velocity.",
+        "solution_html": "<p>A rightward acceleration changes a leftward velocity toward zero before reversing it; net force need not match current velocity.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.5",
+        "primary_i_can_id": "U1-S5-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "selected",
+        "blueprint": "B",
+        "blueprint_position": 20,
+        "high_leverage_repeat": true
+      },
+      "source_map_record_id": "U1-SUM-B-F20",
+      "source_basis": "Original Unit 1 Assessment Plan §1.5: construct/critique real-world force models, balanced/unbalanced classification, net-force-to-motion explanation.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S5-IC3",
+        "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+        "evidence_job": "Identify which of two force explanations is consistent with the model and motion evidence.",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "intended_reasoning": "Student must identify which of two force explanations is consistent with the model and motion evidence.",
+        "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+        "security_level": "secure_summative",
+        "response_class": "selected",
+        "representation_job": "secure_competing_force_explanations",
+        "blueprint_assignment": "B"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "values_units",
+          "unknown_quantity",
+          "wording_profile"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "fresh_secure_stimulus",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "reuse_other_blueprint_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "version_or_question_number_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "blueprint_assignment": "B",
+      "blueprint_position": 20,
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S5-IC3",
+          "primary_i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+          "evidence_job": "Identify which of two force explanations is consistent with the model and motion evidence.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "intended_reasoning": "Student must identify which of two force explanations is consistent with the model and motion evidence.",
+          "difficulty_intent": "secure_meeting_level_with_course_appropriate_rigor",
+          "security_level": "secure_summative",
+          "response_class": "selected",
+          "representation_job": "secure_competing_force_explanations",
+          "blueprint_assignment": "B"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "values_units",
+            "unknown_quantity",
+            "wording_profile"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "fresh_secure_stimulus",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "reuse_other_blueprint_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "version_or_question_number_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Preserve the evidence-bearing representation job and approximate complexity. Secure instances must use genuinely fresh data/geometry/orientation/context where applicable, not cosmetic relabeling.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    }
+  ]
+}

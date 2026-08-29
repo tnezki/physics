@@ -1,0 +1,19 @@
+Bank Stage 3C — Physics Unit 1
+STATUS: PASS
+
+Authored 80 secure family seeds from the accepted Bank-v2 map:
+- Exit: 40 families (8 per section × 5 sections)
+- Summative Blueprint A: 20 families (16 selected, 4 constructed)
+- Summative Blueprint B: 20 families (16 selected, 4 constructed)
+
+Validation passed:
+- all mapped family IDs authored exactly once
+- all exact Unit 1 I-can IDs/text resolved
+- Exit pool/selection constraints remain feasible
+- each Summative blueprint samples all 15 exact Unit 1 I-cans
+- Blueprint B remains materially alternate in evidence architecture
+- secure prompts use fresh semantic stimuli; exposed instructional finished-prompt reuse is prohibited
+- representation-bearing families contain/require real evidence-bearing representations
+- no audit_status fields were introduced
+
+The final assembler preserves 3A/3B canonical files, appends 3C routes to ITEM_INDEX.json, updates BANK_MANIFEST.json to COMPLETE, then reopens and verifies unit1.zip.

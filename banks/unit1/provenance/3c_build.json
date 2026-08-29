@@ -1,0 +1,101 @@
+{
+  "schema": "bank-stage-build-provenance/2.0",
+  "course": "Physics",
+  "unit": 1,
+  "stage": "3C_assessment_families",
+  "job": "bank_stage_3c",
+  "status": "PASS",
+  "request_pins": {
+    "system_repo": "tnezki/memories",
+    "system_commit": "e3fca011e829523617b291bd42f22391e5f800ee",
+    "course_repo": "tnezki/physics",
+    "course_commit": "269fe9fc999449766bd6d2c78013489dd2b40f00"
+  },
+  "authorities": {
+    "pm": "pms_build/bank_exit_tickets/PM.txt",
+    "framework": "frameworks/Physics/FRAMEWORK.txt",
+    "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+    "bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "i_can_index": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json",
+    "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md"
+  },
+  "accepted_map": {
+    "path": "banks/unit1_bank_map/MAP_MANIFEST.json",
+    "manifest_blob_sha": "07bb65f13843292110462016640550f880adcc0b",
+    "exit_family_count": 40,
+    "summative_family_count": 40,
+    "exit_map_sha256": "a007b0e40b99945f48a2f80365b384f1c8cec3ada61a883af58f126e5f3ad1f5",
+    "summative_map_sha256": "133c24b91705b8cc4dc3c39a2099e6136173599a7f7766ffd3f0c7e496612ad6"
+  },
+  "normalizations": [
+    {
+      "map_token": "question_structure",
+      "canonical_field": "question_structure_id"
+    },
+    {
+      "map_token": "approximate_difficulty",
+      "canonical_field": "difficulty_intent"
+    },
+    {
+      "map_token": "representation_job",
+      "canonical_field": "representation_mode + representation_need + representation_variation_rule"
+    },
+    {
+      "derived": "intended_reasoning",
+      "rule": "directly restates the mapped evidence job as student reasoning demand"
+    },
+    {
+      "derived": "response_class",
+      "rule": "selected_response→selected; all other mapped response modes→constructed"
+    },
+    {
+      "derived": "blueprint_assignment",
+      "rule": "summative family ID/map blueprint A or B"
+    }
+  ],
+  "counts": {
+    "exit_families": 40,
+    "summative_families": 40,
+    "new_family_records": 80,
+    "summative_blueprint_a": 20,
+    "summative_blueprint_b": 20
+  },
+  "runtime": {
+    "web_search_used": false,
+    "web_fetch_used": false,
+    "external_research_used": false
+  },
+  "security_review": {
+    "known_exposed_instructional_stimuli_avoided": true,
+    "surface_only_parallelism_forbidden": true,
+    "secure_semantic_change_required": true,
+    "representation_freshness_required_when_representation_bearing": true,
+    "exact_finished_prompt_matches_to_exposed_instructional_bank": 0,
+    "summative_a_b_exact_prompt_matches": 0
+  },
+  "qa": {
+    "unique_family_ids": "PASS",
+    "exact_i_can_resolution": "PASS",
+    "exit_pool_counts": "PASS",
+    "exit_selection_feasibility": "PASS",
+    "summative_blueprint_counts": "PASS",
+    "summative_response_mix": "PASS",
+    "summative_all_15_i_cans_each_blueprint": "PASS",
+    "no_audit_status_fields": "PASS",
+    "solution_consistency": "PASS",
+    "full_snapshot_preservation": "PASS",
+    "item_index_append_only_prior_routes": "PASS",
+    "final_manifest_complete": "PASS"
+  },
+  "preservation_verification": {
+    "method": "Immediate prior 3A/3B handoff artifacts were used only as a transport copy; every preserved file was verified byte-for-byte by Git blob SHA against the pinned course commit before assembly.",
+    "pinned_course_commit": "269fe9fc999449766bd6d2c78013489dd2b40f00",
+    "verified_files_including_preupdate_manifest_and_index": 26,
+    "intentionally_mutated_existing_files": [
+      "BANK_MANIFEST.json",
+      "ITEM_INDEX.json"
+    ],
+    "other_preserved_files_unchanged": 24,
+    "result": "PASS"
+  }
+}

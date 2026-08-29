@@ -1,0 +1,1330 @@
+{
+  "schema": "exit-family-section/2.0",
+  "course": "Physics",
+  "course_title": "Conceptual Physics",
+  "unit": 1,
+  "unit_title": "Forces, Motion, and Equilibrium",
+  "destination": "exit",
+  "record_mode": "family_seed",
+  "section": {
+    "id": "1.4",
+    "title": "Equilibrium and Balanced Motion"
+  },
+  "record_count": 8,
+  "families": [
+    {
+      "family_id": "U1-EXIT-S4-F01",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "core_understanding",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Classify fresh static, dynamic, and non-equilibrium cases.",
+      "intended_reasoning": "Student must classify fresh static, dynamic, and non-equilibrium cases.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "equilibrium_cases",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A train moves in a straight line at a steady 18 m/s while its forces balance. Which condition describes it?\nA. static equilibrium\nB. dynamic equilibrium\nC. unbalanced motion\nD. no-force motion",
+        "student_html": "<p>A train moves in a straight line at a steady 18 m/s while its forces balance. Which condition describes it?</p><ol type=\"A\"><li>static equilibrium</li><li>dynamic equilibrium</li><li>unbalanced motion</li><li>no-force motion</li></ol>",
+        "choices": [
+          "static equilibrium",
+          "dynamic equilibrium",
+          "unbalanced motion",
+          "no-force motion"
+        ],
+        "answer": "B — dynamic equilibrium",
+        "solution_text": "Balanced forces with nonzero constant velocity are dynamic equilibrium.",
+        "solution_html": "<p>Balanced forces with nonzero constant velocity are dynamic equilibrium.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC1",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "selected",
+        "exit_evidence_type": "core_understanding"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F01",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC1",
+        "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+        "evidence_job": "Classify fresh static, dynamic, and non-equilibrium cases.",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "intended_reasoning": "Student must classify fresh static, dynamic, and non-equilibrium cases.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "selected",
+        "representation_job": "equilibrium_cases"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC1",
+          "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+          "evidence_job": "Classify fresh static, dynamic, and non-equilibrium cases.",
+          "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+          "intended_reasoning": "Student must classify fresh static, dynamic, and non-equilibrium cases.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "selected",
+          "representation_job": "equilibrium_cases"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F02",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "representation",
+      "primary_i_can_id": "U1-S4-IC1",
+      "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use both motion and force evidence to identify equilibrium.",
+      "intended_reasoning": "Student must use both motion and force evidence to identify equilibrium.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "short_constructed",
+      "response_class": "constructed",
+      "representation_mode": "motion_plus_fbd",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A motion strip has equal spacing and the force diagram is balanced. Is this object in equilibrium? If so, identify the type.\n\nMotion: •---•---•---•---•\nForces: 40 N ← [cart] → 40 N",
+        "student_html": "<p>A motion strip has equal spacing and the force diagram is balanced. Is this object in equilibrium? If so, identify the type.</p><pre>Motion: •---•---•---•---•\nForces: 40 N ← [cart] → 40 N</pre>",
+        "answer": "Yes, dynamic equilibrium, because velocity is constant and net force is zero.",
+        "solution_text": "Yes, dynamic equilibrium, because velocity is constant and net force is zero.",
+        "solution_html": "<p>Yes, dynamic equilibrium, because velocity is constant and net force is zero.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "Motion: •---•---•---•---•\nForces: 40 N ← [cart] → 40 N",
+          "html": "<pre>Motion: •---•---•---•---•\nForces: 40 N ← [cart] → 40 N</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC1",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "exit_evidence_type": "representation"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F02",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC1",
+        "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+        "evidence_job": "Use both motion and force evidence to identify equilibrium.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must use both motion and force evidence to identify equilibrium.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "constructed",
+        "representation_job": "motion_plus_fbd"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC1",
+          "primary_i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+          "evidence_job": "Use both motion and force evidence to identify equilibrium.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must use both motion and force evidence to identify equilibrium.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "constructed",
+          "representation_job": "motion_plus_fbd"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F03",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "core_understanding",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Correct the misconception that rest means no forces.",
+      "intended_reasoning": "Student must correct the misconception that rest means no forces.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "rest_no_force_claim",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A book lies motionless on a shelf. Which statement is correct?\nA. No forces act because the book is at rest.\nB. Only gravity acts.\nC. Gravity downward and shelf support upward act and balance.\nD. A force of rest points upward.",
+        "student_html": "<p>A book lies motionless on a shelf. Which statement is correct?</p><ol type=\"A\"><li>No forces act because the book is at rest.</li><li>Only gravity acts.</li><li>Gravity downward and shelf support upward act and balance.</li><li>A force of rest points upward.</li></ol>",
+        "choices": [
+          "No forces act because the book is at rest.",
+          "Only gravity acts.",
+          "Gravity downward and shelf support upward act and balance.",
+          "A force of rest points upward."
+        ],
+        "answer": "C — Gravity downward and shelf support upward act and balance.",
+        "solution_text": "Rest does not mean no forces; the support and weight forces can be equal and opposite.",
+        "solution_html": "<p>Rest does not mean no forces; the support and weight forces can be equal and opposite.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC2",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "selected",
+        "exit_evidence_type": "core_understanding"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F03",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC2",
+        "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+        "evidence_job": "Correct the misconception that rest means no forces.",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "intended_reasoning": "Student must correct the misconception that rest means no forces.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "selected",
+        "representation_job": "rest_no_force_claim"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC2",
+          "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+          "evidence_job": "Correct the misconception that rest means no forces.",
+          "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+          "intended_reasoning": "Student must correct the misconception that rest means no forces.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "selected",
+          "representation_job": "rest_no_force_claim"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F04",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "representation",
+      "primary_i_can_id": "U1-S4-IC2",
+      "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Represent all real forces on a resting object.",
+      "intended_reasoning": "Student must represent all real forces on a resting object.",
+      "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+      "response_mode": "diagram_constructed",
+      "response_class": "constructed",
+      "representation_mode": "fresh_resting_object",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A hanging sign is motionless on one vertical cable. Draw the force diagram for the sign only.",
+        "student_html": "<p>A hanging sign is motionless on one vertical cable. Draw the force diagram for the sign only.</p>",
+        "answer": "Two vertical forces: cable tension upward and weight downward; equal magnitudes for equilibrium.",
+        "solution_text": "Only forces acting on the isolated sign belong on its force diagram.",
+        "solution_html": "<p>Only forces acting on the isolated sign belong on its force diagram.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC2",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "exit_evidence_type": "representation"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F04",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC2",
+        "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+        "evidence_job": "Represent all real forces on a resting object.",
+        "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+        "intended_reasoning": "Student must represent all real forces on a resting object.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "constructed",
+        "representation_job": "fresh_resting_object"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC2",
+          "primary_i_can": "I can explain why an object at rest can still have forces acting on it.",
+          "evidence_job": "Represent all real forces on a resting object.",
+          "question_structure_id": "FREEBODY-DIAGRAM-CONSTRUCT-01",
+          "intended_reasoning": "Student must represent all real forces on a resting object.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "constructed",
+          "representation_job": "fresh_resting_object"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F05",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "quantitative_application",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use ΣF=0 to infer a missing force.",
+      "intended_reasoning": "Student must use ΣF=0 to infer a missing force.",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "numeric_constructed",
+      "response_class": "constructed",
+      "representation_mode": "fresh_equilibrium_force_case",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A utility cart moves straight at constant speed. Air resistance and rolling friction total 38 N left. What rightward drive force keeps it in equilibrium?",
+        "student_html": "<p>A utility cart moves straight at constant speed. Air resistance and rolling friction total 38 N left. What rightward drive force keeps it in equilibrium?</p>",
+        "answer": "38 N right.",
+        "solution_text": "Constant velocity requires zero net force, so the horizontal forces must balance.",
+        "solution_html": "<p>Constant velocity requires zero net force, so the horizontal forces must balance.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC3",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "constructed",
+        "exit_evidence_type": "quantitative_application"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F05",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC3",
+        "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+        "evidence_job": "Use ΣF=0 to infer a missing force.",
+        "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+        "intended_reasoning": "Student must use ΣF=0 to infer a missing force.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "constructed",
+        "representation_job": "fresh_equilibrium_force_case"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "evidence_job": "Use ΣF=0 to infer a missing force.",
+          "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+          "intended_reasoning": "Student must use ΣF=0 to infer a missing force.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "constructed",
+          "representation_job": "fresh_equilibrium_force_case"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F06",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "core_understanding",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain why constant straight-line motion can be equilibrium.",
+      "intended_reasoning": "Student must explain why constant straight-line motion can be equilibrium.",
+      "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "constant_velocity_scenario",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A drone flies straight east at constant speed while maintaining constant altitude. Which statement best explains why it can be in equilibrium?\nA. Equilibrium requires the drone to be at rest.\nB. Its velocity can be constant while the net force is zero.\nC. A moving object must have a net force east.\nD. Its weight disappears while flying.",
+        "student_html": "<p>A drone flies straight east at constant speed while maintaining constant altitude. Which statement best explains why it can be in equilibrium?</p><ol type=\"A\"><li>Equilibrium requires the drone to be at rest.</li><li>Its velocity can be constant while the net force is zero.</li><li>A moving object must have a net force east.</li><li>Its weight disappears while flying.</li></ol>",
+        "choices": [
+          "Equilibrium requires the drone to be at rest.",
+          "Its velocity can be constant while the net force is zero.",
+          "A moving object must have a net force east.",
+          "Its weight disappears while flying."
+        ],
+        "answer": "B — Its velocity can be constant while the net force is zero.",
+        "solution_text": "Dynamic equilibrium is constant velocity with zero net force.",
+        "solution_html": "<p>Dynamic equilibrium is constant velocity with zero net force.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC3",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "selected",
+        "exit_evidence_type": "core_understanding"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F06",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC3",
+        "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+        "evidence_job": "Explain why constant straight-line motion can be equilibrium.",
+        "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+        "intended_reasoning": "Student must explain why constant straight-line motion can be equilibrium.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "selected",
+        "representation_job": "constant_velocity_scenario"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "evidence_job": "Explain why constant straight-line motion can be equilibrium.",
+          "question_structure_id": "PHYS-PREDICT-JUSTIFY-01",
+          "intended_reasoning": "Student must explain why constant straight-line motion can be equilibrium.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "selected",
+          "representation_job": "constant_velocity_scenario"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F07",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "representation",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Reconcile a two-axis force model with constant-velocity motion.",
+      "intended_reasoning": "Student must reconcile a two-axis force model with constant-velocity motion.",
+      "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+      "response_mode": "short_constructed",
+      "response_class": "constructed",
+      "representation_mode": "two_axis_fbd_plus_motion",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A warehouse robot moves straight right at constant speed. Its force model is shown. Is the model consistent with that motion? Explain using both axes.\n\n          120 N up\n             ↑\n65 N left ← [robot] → 65 N right\n             ↓\n          120 N down",
+        "student_html": "<p>A warehouse robot moves straight right at constant speed. Its force model is shown. Is the model consistent with that motion? Explain using both axes.</p><pre>          120 N up\n             ↑\n65 N left ← [robot] → 65 N right\n             ↓\n          120 N down</pre>",
+        "answer": "Yes. Left/right forces cancel and up/down forces cancel, so the total net force is zero and constant velocity is possible.",
+        "solution_text": "Yes. Left/right forces cancel and up/down forces cancel, so the total net force is zero and constant velocity is possible.",
+        "solution_html": "<p>Yes. Left/right forces cancel and up/down forces cancel, so the total net force is zero and constant velocity is possible.</p>",
+        "figure_refs": [],
+        "embedded_representation": {
+          "type": "inline_text_model",
+          "content": "          120 N up\n             ↑\n65 N left ← [robot] → 65 N right\n             ↓\n          120 N down",
+          "html": "<pre>          120 N up\n             ↑\n65 N left ← [robot] → 65 N right\n             ↓\n          120 N down</pre>"
+        }
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC3",
+        "secure": true,
+        "representation_bearing": true,
+        "response_class": "constructed",
+        "exit_evidence_type": "representation"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F07",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC3",
+        "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+        "evidence_job": "Reconcile a two-axis force model with constant-velocity motion.",
+        "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+        "intended_reasoning": "Student must reconcile a two-axis force model with constant-velocity motion.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "constructed",
+        "representation_job": "two_axis_fbd_plus_motion"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          },
+          {
+            "id": "fresh_representation_instance",
+            "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "evidence_job": "Reconcile a two-axis force model with constant-velocity motion.",
+          "question_structure_id": "PHYS-REPRESENTATION-CONSISTENCY-01",
+          "intended_reasoning": "Student must reconcile a two-axis force model with constant-velocity motion.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "constructed",
+          "representation_job": "two_axis_fbd_plus_motion"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            },
+            {
+              "id": "fresh_representation_instance",
+              "rule": "Use a genuinely fresh evidence-bearing representation/stimulus of comparable complexity."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    },
+    {
+      "family_id": "U1-EXIT-S4-F08",
+      "record_mode": "family_seed",
+      "destination": "exit",
+      "section": {
+        "id": "1.4",
+        "title": "Equilibrium and Balanced Motion"
+      },
+      "family_type": "transfer",
+      "primary_i_can_id": "U1-S4-IC3",
+      "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Predict the motion implication when one previously balanced interaction changes.",
+      "intended_reasoning": "Student must predict the motion implication when one previously balanced interaction changes.",
+      "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+      "response_mode": "selected_response",
+      "response_class": "selected",
+      "representation_mode": "balance_change_scenario",
+      "representation_need": "Use a real evidence-bearing representation when required; secure variants must change the actual stimulus/representation, not merely surface wording.",
+      "difficulty_intent": "meeting_level_quick_evidence",
+      "security_level": "formative_secure",
+      "wording_profile": {
+        "preferred": "standard",
+        "allowed": [
+          "standard",
+          "inverted",
+          "context_rich"
+        ],
+        "length_intent": "short_by_default"
+      },
+      "canonical_seed": {
+        "student_text": "A cart is moving right at constant speed with 32 N pull right and 32 N resistance left. The resistance suddenly drops to 20 N while the pull stays 32 N. What happens?\nA. It keeps exactly the same velocity.\nB. It accelerates to the right.\nC. It accelerates to the left.\nD. It stops because forces are no longer equal.",
+        "student_html": "<p>A cart is moving right at constant speed with 32 N pull right and 32 N resistance left. The resistance suddenly drops to 20 N while the pull stays 32 N. What happens?</p><ol type=\"A\"><li>It keeps exactly the same velocity.</li><li>It accelerates to the right.</li><li>It accelerates to the left.</li><li>It stops because forces are no longer equal.</li></ol>",
+        "choices": [
+          "It keeps exactly the same velocity.",
+          "It accelerates to the right.",
+          "It accelerates to the left.",
+          "It stops because forces are no longer equal."
+        ],
+        "answer": "B — It accelerates to the right.",
+        "solution_text": "The new net force is 12 N right, so velocity changes toward the right.",
+        "solution_html": "<p>The new net force is 12 N right, so velocity changes toward the right.</p>",
+        "figure_refs": []
+      },
+      "selection_tags": {
+        "section": "1.4",
+        "primary_i_can_id": "U1-S4-IC3",
+        "secure": true,
+        "representation_bearing": false,
+        "response_class": "selected",
+        "exit_evidence_type": "transfer"
+      },
+      "source_map_record_id": "U1-EXIT-S4-F08",
+      "source_basis": "Original Unit 1 Assessment Plan §1.4: static/dynamic equilibrium, forces at rest, ΣF=0 for constant straight-line motion; Physics Framework: balanced-force model reasoning.",
+      "locked_elements": {
+        "primary_i_can_id": "U1-S4-IC3",
+        "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+        "evidence_job": "Predict the motion implication when one previously balanced interaction changes.",
+        "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+        "intended_reasoning": "Student must predict the motion implication when one previously balanced interaction changes.",
+        "difficulty_intent": "meeting_level_quick_evidence",
+        "security_level": "formative_secure",
+        "response_class": "selected",
+        "representation_job": "balance_change_scenario"
+      },
+      "allowed_variations": {
+        "axes": [
+          "context_evidence",
+          "givens_evidence_set",
+          "representation_values",
+          "representation_type",
+          "misconception_target",
+          "response_mode",
+          "wording_profile",
+          "values_units"
+        ],
+        "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+      },
+      "required_variations": {
+        "requirements": [
+          {
+            "id": "secure_semantic_stimulus_change",
+            "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+          }
+        ]
+      },
+      "forbidden_variations": {
+        "rules": [
+          "reuse_exposed_finished_prompt",
+          "names_objects_only",
+          "wording_profile_only",
+          "choice_order_only",
+          "values_units_only",
+          "change_primary_i_can",
+          "change_evidence_job",
+          "change_question_structure",
+          "change_intended_reasoning",
+          "change_approximate_difficulty"
+        ]
+      },
+      "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+      "security_freshness_contract": {
+        "must_be_semantically_fresh": true,
+        "exposed_instructional_prompt_reuse": "forbidden",
+        "surface_only_variation": "forbidden",
+        "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+      },
+      "transformation_contract": {
+        "locked_elements": {
+          "primary_i_can_id": "U1-S4-IC3",
+          "primary_i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "evidence_job": "Predict the motion implication when one previously balanced interaction changes.",
+          "question_structure_id": "PHYS-QUALITATIVE-CHANGE-PREDICT-01",
+          "intended_reasoning": "Student must predict the motion implication when one previously balanced interaction changes.",
+          "difficulty_intent": "meeting_level_quick_evidence",
+          "security_level": "formative_secure",
+          "response_class": "selected",
+          "representation_job": "balance_change_scenario"
+        },
+        "allowed_variations": {
+          "axes": [
+            "context_evidence",
+            "givens_evidence_set",
+            "representation_values",
+            "representation_type",
+            "misconception_target",
+            "response_mode",
+            "wording_profile",
+            "values_units"
+          ],
+          "rule": "Only these axes may vary, and only when the locked evidence architecture, security level, and approximate difficulty are preserved."
+        },
+        "required_variations": {
+          "requirements": [
+            {
+              "id": "secure_semantic_stimulus_change",
+              "rule": "A downstream secure parallel must visibly change a semantic stimulus/evidence axis; surface-only changes do not count."
+            }
+          ]
+        },
+        "forbidden_variations": {
+          "rules": [
+            "reuse_exposed_finished_prompt",
+            "names_objects_only",
+            "wording_profile_only",
+            "choice_order_only",
+            "values_units_only",
+            "change_primary_i_can",
+            "change_evidence_job",
+            "change_question_structure",
+            "change_intended_reasoning",
+            "change_approximate_difficulty"
+          ]
+        },
+        "representation_variation_rule": "Each A/B/C instance must use a genuinely fresh evidence-bearing representation/stimulus when the family is representation-based; preserve the same representation job and approximate complexity.",
+        "security_freshness_contract": {
+          "must_be_semantically_fresh": true,
+          "exposed_instructional_prompt_reuse": "forbidden",
+          "surface_only_variation": "forbidden",
+          "comparison_scope": "Unit 1 Notes/CYU/Warm-Up/Practice exact and family seeds sharing the same I-can/evidence neighborhood"
+        }
+      }
+    }
+  ]
+}
