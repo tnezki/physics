@@ -1,0 +1,3069 @@
+{
+  "schema": "physics-notes-map/4A.1",
+  "stage": "4A",
+  "downstream_stage": "4B",
+  "course": "Physics",
+  "course_variant": "Conceptual Physics",
+  "unit": 1,
+  "unit_title": "Forces, Motion, and Equilibrium",
+  "notes_map_version": "4A.1",
+  "purpose": "Construction roadmap for Stage 4B. This file intentionally plans developed reading, visual cadence, Bank anchors, processing, and summary goals without writing the final notes prose.",
+  "authority_resolution": {
+    "system": {
+      "repo": "tnezki/memories",
+      "commit": "2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341",
+      "system_manifest": "SYSTEM_MANIFEST.json"
+    },
+    "course_bank": {
+      "repo": "tnezki/physics",
+      "commit": "b98a142938d5280a57896b38b87393b2bd04f33f",
+      "authoritative_bank_path": "banks/unit1",
+      "bank_mapping_path": "banks/unit1/unit1_mapping.csv",
+      "bank_i_can_map_path": "banks/unit1/unit1_i_can_map.csv",
+      "bank_downstream_manifest_path": "banks/unit1/unit1_downstream_manifest.json",
+      "stage_3e_handoff_path": "banks/unit1/STAGE_3E_HANDOFF.json"
+    },
+    "framework": {
+      "repo": "tnezki/memories",
+      "commit": "2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341",
+      "assessment_plan_path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+      "section_index_path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/section_index.json",
+      "i_can_index_path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json",
+      "framework_version": "v6.4",
+      "conflict_rule": "Original Unit Assessment Plan HTML wins on wording/title conflict; current section_index and i_can_index agree with it for Unit 1."
+    },
+    "conditioning_dependencies": [
+      "Curriculum_Philosophy.txt",
+      "frameworks/Physics/FRAMEWORK.txt",
+      "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/notes_course_profile.json",
+      "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/language_reading_tone.json",
+      "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/contracts/notes_visual_contract.json",
+      "pms_build/notes_map/PM.txt"
+    ],
+    "stale_input_check": {
+      "status": "PASS",
+      "note": "All canonical dependencies and Bank anchors were resolved at the request-pinned commits; no stale upload substituted for repo authority."
+    }
+  },
+  "build_contract": {
+    "developed_reading": "Required. Use connected prose with accessible grade-10 language; avoid slogan-only, shorthand-only, Q&A-only, or bullet-fragment-only treatment.",
+    "vocabulary": "Define terms in context as concepts are developed, then consolidate vocabulary definition targets immediately before each section Summary.",
+    "processing": "Every non-trivial explanatory passage and every selected visual must route to a canonical Example/Your Turn pair or a Stop & Discuss prompt.",
+    "bank_pairing": "Every canonical Notes Example has exactly one deliberate parallel Your Turn; preserve adjacency and one-time use.",
+    "visual_cadence": "Use image-first or image-adjacent sequencing when a source figure carries the phenomenon/model; do not silently redraw exact source figures.",
+    "vector_boundary": "Magnitude + direction; same/opposite-line forces and familiar/easy geometric cases. Avoid systematic component decomposition.",
+    "final_notes_prose_allowed": false
+  },
+  "image_toolkit": {
+    "repo": "tnezki/memories",
+    "commit": "2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341",
+    "root": "Tools/Physics_Notes_Image_Toolkit",
+    "version_id": "physics-notes-image-toolkit-v1",
+    "catalog_path": "Tools/Physics_Notes_Image_Toolkit/IMAGE_CATALOG.json",
+    "version_manifest_path": "Tools/Physics_Notes_Image_Toolkit/version_manifest.json",
+    "image_toolkit_fingerprint": "physics-notes-image-toolkit-v1|repo=tnezki/memories@2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341|catalog_git_blob_sha1=8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d|version_manifest_git_blob_sha1=f9028f17730383366f54307157597664aed58a1d",
+    "selected_image_count": 29,
+    "selection_rule": "Selected assets are exact current toolkit entries with verified rel_path values. The approved course figure unit1-sled-same-direction.png is not selected because no current canonical toolkit asset/path exists for it at the pinned commit."
+  },
+  "pair_semantics": [
+    {
+      "section_id": "1.1",
+      "example_id": "U1-S1-EX-1",
+      "your_turn_id": "U1-S1-YTI-1",
+      "seed_slot_id_for_yti": "U1-S1-EX-1",
+      "i_can_id": "U1-S1-IC1",
+      "evidence_job": "classify observation versus inference from a compact observation/measurement record",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.1",
+      "example_id": "U1-S1-EX-2",
+      "your_turn_id": "U1-S1-YTI-2",
+      "seed_slot_id_for_yti": "U1-S1-EX-2",
+      "i_can_id": "U1-S1-IC2",
+      "evidence_job": "evaluate testability of a claim and identify what evidence would test it",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.1",
+      "example_id": "U1-S1-EX-3",
+      "your_turn_id": "U1-S1-YTI-3",
+      "seed_slot_id_for_yti": "U1-S1-EX-3",
+      "i_can_id": "U1-S1-IC3",
+      "evidence_job": "judge whether evidence supports an explanation using a short scenario",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.1",
+      "example_id": "U1-S1-EX-4",
+      "your_turn_id": "U1-S1-YTI-4",
+      "seed_slot_id_for_yti": "U1-S1-EX-4",
+      "i_can_id": "U1-S1-IC3",
+      "evidence_job": "interpret a supplied simple physical relationship before using it quantitatively",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.2",
+      "example_id": "U1-S2-EX-1",
+      "your_turn_id": "U1-S2-YTI-1",
+      "seed_slot_id_for_yti": "U1-S2-EX-1",
+      "i_can_id": "U1-S2-IC1",
+      "evidence_job": "apply Newton First Law to a motion-change prediction",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.2",
+      "example_id": "U1-S2-EX-2",
+      "your_turn_id": "U1-S2-YTI-2",
+      "seed_slot_id_for_yti": "U1-S2-EX-2",
+      "i_can_id": "U1-S2-IC2",
+      "evidence_job": "diagnose inertia-as-force reasoning and replace it with property-of-matter reasoning",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.2",
+      "example_id": "U1-S2-EX-3",
+      "your_turn_id": "U1-S2-YTI-3",
+      "seed_slot_id_for_yti": "U1-S2-EX-3",
+      "i_can_id": "U1-S2-IC3",
+      "evidence_job": "identify support force and weight on one chosen object from a force model",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.2",
+      "example_id": "U1-S2-EX-4",
+      "your_turn_id": "U1-S2-YTI-4",
+      "seed_slot_id_for_yti": "U1-S2-EX-4",
+      "i_can_id": "U1-S2-IC3",
+      "evidence_job": "distinguish no forces from balanced nonzero forces by connecting a diagram to motion",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.3",
+      "example_id": "U1-S3-EX-1",
+      "your_turn_id": "U1-S3-YTI-1",
+      "seed_slot_id_for_yti": "U1-S3-EX-1",
+      "i_can_id": "U1-S3-IC1",
+      "evidence_job": "interpret magnitude and direction as inseparable features of a force vector",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.3",
+      "example_id": "U1-S3-EX-2",
+      "your_turn_id": "U1-S3-YTI-2",
+      "seed_slot_id_for_yti": "U1-S3-EX-2",
+      "i_can_id": "U1-S3-IC2",
+      "evidence_job": "combine same/opposite direction forces to determine signed/directed net force",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.3",
+      "example_id": "U1-S3-EX-3",
+      "your_turn_id": "U1-S3-YTI-3",
+      "seed_slot_id_for_yti": "U1-S3-EX-3",
+      "i_can_id": "U1-S3-IC3",
+      "evidence_job": "read a scaled vector diagram to determine resultant magnitude and direction",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.3",
+      "example_id": "U1-S3-EX-4",
+      "your_turn_id": "U1-S3-YTI-4",
+      "seed_slot_id_for_yti": "U1-S3-EX-4",
+      "i_can_id": "U1-S3-IC2",
+      "evidence_job": "reason backward from a target resultant to a missing force",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.4",
+      "example_id": "U1-S4-EX-1",
+      "your_turn_id": "U1-S4-YTI-1",
+      "seed_slot_id_for_yti": "U1-S4-EX-1",
+      "i_can_id": "U1-S4-IC1",
+      "evidence_job": "classify static versus dynamic equilibrium from motion and force evidence",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.4",
+      "example_id": "U1-S4-EX-2",
+      "your_turn_id": "U1-S4-YTI-2",
+      "seed_slot_id_for_yti": "U1-S4-EX-2",
+      "i_can_id": "U1-S4-IC2",
+      "evidence_job": "explain why a resting object can have balanced nonzero forces",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.4",
+      "example_id": "U1-S4-EX-3",
+      "your_turn_id": "U1-S4-YTI-3",
+      "seed_slot_id_for_yti": "U1-S4-EX-3",
+      "i_can_id": "U1-S4-IC3",
+      "evidence_job": "use Sigma F=0 to infer a missing balancing force and interpret unchanged motion",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.4",
+      "example_id": "U1-S4-EX-4",
+      "your_turn_id": "U1-S4-YTI-4",
+      "seed_slot_id_for_yti": "U1-S4-EX-4",
+      "i_can_id": "U1-S4-IC3",
+      "evidence_job": "test whether constant-speed straight-line motion is consistent with equilibrium",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.5",
+      "example_id": "U1-S5-EX-1",
+      "your_turn_id": "U1-S5-YTI-1",
+      "seed_slot_id_for_yti": "U1-S5-EX-1",
+      "i_can_id": "U1-S5-IC1",
+      "evidence_job": "construct a force diagram after explicitly defining the modeled object/system",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.5",
+      "example_id": "U1-S5-EX-2",
+      "your_turn_id": "U1-S5-YTI-2",
+      "seed_slot_id_for_yti": "U1-S5-EX-2",
+      "i_can_id": "U1-S5-IC2",
+      "evidence_job": "classify a real-world force model as balanced or unbalanced",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.5",
+      "example_id": "U1-S5-EX-3",
+      "your_turn_id": "U1-S5-YTI-3",
+      "seed_slot_id_for_yti": "U1-S5-EX-3",
+      "i_can_id": "U1-S5-IC3",
+      "evidence_job": "connect net-force direction to a motion-change prediction",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    },
+    {
+      "section_id": "1.5",
+      "example_id": "U1-S5-EX-4",
+      "your_turn_id": "U1-S5-YTI-4",
+      "seed_slot_id_for_yti": "U1-S5-EX-4",
+      "i_can_id": "U1-S5-IC1",
+      "evidence_job": "critique and revise a flawed force model for one selected object",
+      "relationship": "parallel Your Turn is the deliberate Bank partner for this Example; preserve adjacency and do not reuse either anchor elsewhere"
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "1.1",
+      "section_number": 1,
+      "title": "Thinking Like a Physicist",
+      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
+      "i_can_targets": [
+        {
+          "i_can_id": "U1-S1-IC1",
+          "i_can": "I can distinguish between an observation, inference, hypothesis, law, and theory.",
+          "developed_in": [
+            "U1-S1-B1",
+            "U1-S1-B5"
+          ],
+          "checked_in": [
+            "U1-S1-EX-1",
+            "U1-S1-YTI-1",
+            "U1-S1-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S1-EX-1",
+            "U1-S1-YTI-1"
+          ]
+        },
+        {
+          "i_can_id": "U1-S1-IC2",
+          "i_can": "I can explain why a claim must be testable to be scientific.",
+          "developed_in": [
+            "U1-S1-B2",
+            "U1-S1-B5"
+          ],
+          "checked_in": [
+            "U1-S1-EX-2",
+            "U1-S1-YTI-2",
+            "U1-S1-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S1-EX-2",
+            "U1-S1-YTI-2"
+          ]
+        },
+        {
+          "i_can_id": "U1-S1-IC3",
+          "i_can": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation.",
+          "developed_in": [
+            "U1-S1-B3",
+            "U1-S1-B4",
+            "U1-S1-B5"
+          ],
+          "checked_in": [
+            "U1-S1-EX-3",
+            "U1-S1-YTI-3",
+            "U1-S1-EX-4",
+            "U1-S1-YTI-4",
+            "U1-S1-WTC-1",
+            "U1-S1-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S1-EX-3",
+            "U1-S1-YTI-3",
+            "U1-S1-EX-4",
+            "U1-S1-YTI-4",
+            "U1-S1-WTC-1"
+          ]
+        }
+      ],
+      "vocabulary_definition_targets": [
+        {
+          "term": "observation",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "inference",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "hypothesis",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "scientific law",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "scientific theory",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "evidence",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "model",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "testable claim",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        }
+      ],
+      "misconception_inventory": [
+        "Treating an inference as an observation",
+        "Assuming an explanation is scientific because it sounds plausible",
+        "Treating a formula as a rule with no physical meaning"
+      ],
+      "summary_target": {
+        "id": "U1-S1-SUMMARY-TARGET",
+        "student_explanation_goal": "Explain how physicists move from observations and measurements to testable claims, use evidence to judge explanations, and interpret a simple formula or model as a statement about the physical world rather than as an isolated calculation rule.",
+        "must_reconnect_i_cans": [
+          "U1-S1-IC1",
+          "U1-S1-IC2",
+          "U1-S1-IC3"
+        ]
+      },
+      "build_story": [
+        {
+          "beat_id": "U1-S1-B1",
+          "sequence": 1,
+          "title": "From observation to inference",
+          "instructional_purpose": "Open with concrete measurements/figures. Plan a developed reading that separates what is directly observed from what is inferred and names hypothesis/law/theory by role rather than as a memorization list.",
+          "target_i_can_ids": [
+            "U1-S1-IC1"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S1-EX-1"
+              ],
+              "bank_your_turns": [
+                "U1-S1-YTI-1"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-89A1BA54AF31",
+              "rel_path": "images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_12_eratosthenes_sun_ray_geometry.png"
+            },
+            {
+              "asset_id": "PHYS-CA9D2E2A037E",
+              "rel_path": "images/unit1/PHYS-CA9D2E2A037E__u1_1_from_ch_1_pp_17_1_scale_balance.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S1-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S1-EX-1",
+            "your_turn_id": "U1-S1-YTI-1",
+            "i_can_id": "U1-S1-IC1",
+            "evidence_job": "classify observation versus inference from a compact observation/measurement record",
+            "representation_mode": "table_data"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S1-B2",
+          "sequence": 2,
+          "title": "Testability turns an idea into a scientific claim",
+          "instructional_purpose": "Use image/model evidence to ask what new observation or measurement could support or challenge a claim. Keep the reading grounded in what could actually be measured.",
+          "target_i_can_ids": [
+            "U1-S1-IC2"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S1-EX-2"
+              ],
+              "bank_your_turns": [
+                "U1-S1-YTI-2"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-E86B1795CA98",
+              "rel_path": "images/unit1/PHYS-E86B1795CA98__u1_1_from_ch_1_16_lunar_eclipse_earth_shadow_sizes.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S1-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S1-EX-2",
+            "your_turn_id": "U1-S1-YTI-2",
+            "i_can_id": "U1-S1-IC2",
+            "evidence_job": "evaluate testability of a claim and identify what evidence would test it",
+            "representation_mode": "direct_text"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S1-B3",
+          "sequence": 3,
+          "title": "Evidence supports explanations; it does not automatically prove them",
+          "instructional_purpose": "Develop the claim-evidence-reasoning move with a visual model. Emphasize strength/limits of evidence and competing explanations.",
+          "target_i_can_ids": [
+            "U1-S1-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S1-EX-3"
+              ],
+              "bank_your_turns": [
+                "U1-S1-YTI-3"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-8B222CED52FE",
+              "rel_path": "images/unit1/PHYS-8B222CED52FE__u1_1_from_ch_1_7_coin_size_moon_measurement.png"
+            },
+            {
+              "asset_id": "PHYS-9A96F2D9C368",
+              "rel_path": "images/unit1/PHYS-9A96F2D9C368__u1_1_from_ch_1_9_half_moon_earth_moon_sun_geometry.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S1-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S1-EX-3",
+            "your_turn_id": "U1-S1-YTI-3",
+            "i_can_id": "U1-S1-IC3",
+            "evidence_job": "judge whether evidence supports an explanation using a short scenario",
+            "representation_mode": "evidence_set"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S1-B4",
+          "sequence": 4,
+          "title": "A formula is a model of a relationship",
+          "instructional_purpose": "Use a simple source-supported geometry/relationship to have students interpret variables and physical meaning before any arithmetic.",
+          "target_i_can_ids": [
+            "U1-S1-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S1-EX-4"
+              ],
+              "bank_your_turns": [
+                "U1-S1-YTI-4"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-5DA25DB5B295",
+              "rel_path": "images/unit1/PHYS-5DA25DB5B295__u1_1_from_ch_1_11_sun_diameter_angular_measurement.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S1-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S1-EX-4",
+            "your_turn_id": "U1-S1-YTI-4",
+            "i_can_id": "U1-S1-IC3",
+            "evidence_job": "interpret a supplied simple physical relationship before using it quantitatively",
+            "representation_mode": "equation_relationship"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S1-B5",
+          "sequence": 5,
+          "title": "Synthesis: defend a physics explanation",
+          "instructional_purpose": "Close the conceptual arc by asking students to state what was observed, what was inferred, what model/relationship was used, and what evidence makes the conclusion testable and defensible.",
+          "target_i_can_ids": [
+            "U1-S1-IC1",
+            "U1-S1-IC2",
+            "U1-S1-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "synthesis passage that reconnects the section representations to the exact I-can targets without becoming a bullet-only recap",
+            "processing_route": {
+              "bank_examples": [],
+              "bank_your_turns": [],
+              "stop_and_discuss": [
+                "U1-S1-SD-1"
+              ]
+            }
+          },
+          "visuals": [],
+          "processing_anchor": {
+            "bank_examples": [],
+            "bank_your_turns": [],
+            "stop_and_discuss": [
+              "U1-S1-SD-1"
+            ]
+          },
+          "stop_and_discuss": {
+            "id": "U1-S1-SD-1",
+            "prompt_intent": "Have students name one observation, one inference, and one piece of evidence they would still want before accepting a claim; then explain why the claim is testable."
+          },
+          "transition_rationale": "The synthesis discussion makes students process the section’s explanatory throughline before vocabulary is consolidated and the final summary target is written."
+        }
+      ],
+      "image_plan": [
+        {
+          "asset_id": "PHYS-89A1BA54AF31",
+          "rel_path": "images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_12_eratosthenes_sun_ray_geometry.png",
+          "label": "Eratosthenes sun-ray geometry",
+          "instructional_use": "Use as an image-first evidence puzzle: ask what is directly observed/measured versus inferred from the geometry.",
+          "placement": {
+            "beat_id": "U1-S1-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S1-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-CA9D2E2A037E",
+          "rel_path": "images/unit1/PHYS-CA9D2E2A037E__u1_1_from_ch_1_pp_17_1_scale_balance.png",
+          "label": "Two-pan scale",
+          "instructional_use": "Use as a concrete measurement/model representation; distinguish reading the device from interpreting what the reading means.",
+          "placement": {
+            "beat_id": "U1-S1-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S1-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-E86B1795CA98",
+          "rel_path": "images/unit1/PHYS-E86B1795CA98__u1_1_from_ch_1_16_lunar_eclipse_earth_shadow_sizes.png",
+          "label": "Lunar-eclipse Earth-shadow sizes",
+          "instructional_use": "Use to show how an observed pattern can constrain a model and support an inference.",
+          "placement": {
+            "beat_id": "U1-S1-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S1-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-8B222CED52FE",
+          "rel_path": "images/unit1/PHYS-8B222CED52FE__u1_1_from_ch_1_7_coin_size_moon_measurement.png",
+          "label": "Coin-size Moon measurement geometry",
+          "instructional_use": "Use to connect a simple model/relationship to the physical quantities it represents.",
+          "placement": {
+            "beat_id": "U1-S1-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S1-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-9A96F2D9C368",
+          "rel_path": "images/unit1/PHYS-9A96F2D9C368__u1_1_from_ch_1_9_half_moon_earth_moon_sun_geometry.png",
+          "label": "Half-Moon Earth-Moon-Sun geometry",
+          "instructional_use": "Use as a model-evidence example where geometry organizes observations into a testable explanation.",
+          "placement": {
+            "beat_id": "U1-S1-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S1-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-5DA25DB5B295",
+          "rel_path": "images/unit1/PHYS-5DA25DB5B295__u1_1_from_ch_1_11_sun_diameter_angular_measurement.png",
+          "label": "Sun angular-size geometry",
+          "instructional_use": "Use for the section’s formula/model interpretation beat; emphasize meaning before computation.",
+          "placement": {
+            "beat_id": "U1-S1-B4",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S1-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S1-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        }
+      ],
+      "generated_representation_needs": [],
+      "bank_anchors": {
+        "source_file": "banks/unit1/unit1_mapping.csv",
+        "what_to_call_out": {
+          "id": "U1-S1-WTC-1",
+          "i_can_id": "U1-S1-IC3",
+          "evidence_job": "navigate a multipart evidence/model task: identify what is observed, interpret the shared data/model, plan an evidence test, and justify which conclusion is supported",
+          "representation_mode": "table_model"
+        },
+        "example_your_turn_pairs": [
+          {
+            "example_id": "U1-S1-EX-1",
+            "your_turn_id": "U1-S1-YTI-1",
+            "i_can_id": "U1-S1-IC1",
+            "evidence_job": "classify observation versus inference from a compact observation/measurement record",
+            "representation_mode": "table_data"
+          },
+          {
+            "example_id": "U1-S1-EX-2",
+            "your_turn_id": "U1-S1-YTI-2",
+            "i_can_id": "U1-S1-IC2",
+            "evidence_job": "evaluate testability of a claim and identify what evidence would test it",
+            "representation_mode": "direct_text"
+          },
+          {
+            "example_id": "U1-S1-EX-3",
+            "your_turn_id": "U1-S1-YTI-3",
+            "i_can_id": "U1-S1-IC3",
+            "evidence_job": "judge whether evidence supports an explanation using a short scenario",
+            "representation_mode": "evidence_set"
+          },
+          {
+            "example_id": "U1-S1-EX-4",
+            "your_turn_id": "U1-S1-YTI-4",
+            "i_can_id": "U1-S1-IC3",
+            "evidence_job": "interpret a supplied simple physical relationship before using it quantitatively",
+            "representation_mode": "equation_relationship"
+          }
+        ]
+      },
+      "section_sequence": [
+        {
+          "type": "story_beat",
+          "id": "U1-S1-B1"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S1-B2"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S1-B3"
+        },
+        {
+          "type": "what_to_call_out",
+          "id": "U1-S1-WTC-1",
+          "placement": "after Beat 3, before the final canonical Example/Your Turn and synthesis; preserve Bank FRQ-navigation function"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S1-B4"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S1-B5"
+        },
+        {
+          "type": "vocabulary_definition_targets",
+          "id": "U1-S1-VOCAB",
+          "placement_rule": "immediately before summary target"
+        },
+        {
+          "type": "summary_target",
+          "id": "U1-S1-SUMMARY-TARGET"
+        }
+      ],
+      "section_completion_check": {
+        "all_exact_i_cans_developed": true,
+        "all_exact_i_cans_checked": true,
+        "four_canonical_example_your_turn_pairs_placed_once": true,
+        "wtc_preserved": true,
+        "all_planned_reading_passages_have_processing_route": true,
+        "all_selected_visuals_have_processing_route": true,
+        "vocabulary_immediately_before_summary": true
+      }
+    },
+    {
+      "section_id": "1.2",
+      "section_number": 2,
+      "title": "Forces and Newton’s First Law",
+      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
+      "i_can_targets": [
+        {
+          "i_can_id": "U1-S2-IC1",
+          "i_can": "I can state Newton’s First Law in everyday language.",
+          "developed_in": [
+            "U1-S2-B1",
+            "U1-S2-B4",
+            "U1-S2-B5"
+          ],
+          "checked_in": [
+            "U1-S2-EX-1",
+            "U1-S2-YTI-1",
+            "U1-S2-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S2-EX-1",
+            "U1-S2-YTI-1"
+          ]
+        },
+        {
+          "i_can_id": "U1-S2-IC2",
+          "i_can": "I can explain that inertia is a property of matter, not a force.",
+          "developed_in": [
+            "U1-S2-B2",
+            "U1-S2-B5"
+          ],
+          "checked_in": [
+            "U1-S2-EX-2",
+            "U1-S2-YTI-2",
+            "U1-S2-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S2-EX-2",
+            "U1-S2-YTI-2"
+          ]
+        },
+        {
+          "i_can_id": "U1-S2-IC3",
+          "i_can": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations.",
+          "developed_in": [
+            "U1-S2-B3",
+            "U1-S2-B4",
+            "U1-S2-B5"
+          ],
+          "checked_in": [
+            "U1-S2-EX-3",
+            "U1-S2-YTI-3",
+            "U1-S2-EX-4",
+            "U1-S2-YTI-4",
+            "U1-S2-WTC-1",
+            "U1-S2-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S2-EX-3",
+            "U1-S2-YTI-3",
+            "U1-S2-EX-4",
+            "U1-S2-YTI-4",
+            "U1-S2-WTC-1"
+          ]
+        }
+      ],
+      "vocabulary_definition_targets": [
+        {
+          "term": "force",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "inertia",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "Newton’s First Law",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "net force",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "support force",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "weight",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        }
+      ],
+      "misconception_inventory": [
+        "Calling inertia a force",
+        "Assuming motion requires a net forward force",
+        "Confusing no force with zero net force"
+      ],
+      "summary_target": {
+        "id": "U1-S2-SUMMARY-TARGET",
+        "student_explanation_goal": "Use Newton’s First Law to explain why unchanged motion does not require a forward net force, identify common forces on a chosen object, and distinguish no forces from balanced nonzero forces.",
+        "must_reconnect_i_cans": [
+          "U1-S2-IC1",
+          "U1-S2-IC2",
+          "U1-S2-IC3"
+        ]
+      },
+      "build_story": [
+        {
+          "beat_id": "U1-S2-B1",
+          "sequence": 1,
+          "title": "Unchanged motion does not need a forward net force",
+          "instructional_purpose": "Start from everyday motion/support visuals and develop Newton’s First Law in everyday language: zero net force means velocity does not change.",
+          "target_i_can_ids": [
+            "U1-S2-IC1"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S2-EX-1"
+              ],
+              "bank_your_turns": [
+                "U1-S2-YTI-1"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-D35C05FFAEBD",
+              "rel_path": "images/unit1/PHYS-D35C05FFAEBD__u1_2_from_ch_2_1_support_forces_book_spring.png"
+            },
+            {
+              "asset_id": "PHYS-0DD1FEF3DC24",
+              "rel_path": "images/unit1/PHYS-0DD1FEF3DC24__u1_2_from_ch_2_hc_man_on_scale_two_panel.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S2-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S2-EX-1",
+            "your_turn_id": "U1-S2-YTI-1",
+            "i_can_id": "U1-S2-IC1",
+            "evidence_job": "apply Newton First Law to a motion-change prediction",
+            "representation_mode": "motion_description"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S2-B2",
+          "sequence": 2,
+          "title": "Inertia is a property, not a hidden force",
+          "instructional_purpose": "Use the tablecloth and coin-card phenomena image-first. Explicitly contrast the useful property-of-matter explanation with the common “inertia force” error.",
+          "target_i_can_ids": [
+            "U1-S2-IC2"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S2-EX-2"
+              ],
+              "bank_your_turns": [
+                "U1-S2-YTI-2"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-2F0113E90AE6",
+              "rel_path": "images/unit1/PHYS-2F0113E90AE6__u1_2_from_ch_2_aa_tablecloth_pull.png"
+            },
+            {
+              "asset_id": "PHYS-81925494FB25",
+              "rel_path": "images/unit1/PHYS-81925494FB25__u1_2_from_ch_2_10_coin_card_inertia_glass.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S2-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S2-EX-2",
+            "your_turn_id": "U1-S2-YTI-2",
+            "i_can_id": "U1-S2-IC2",
+            "evidence_job": "diagnose inertia-as-force reasoning and replace it with property-of-matter reasoning",
+            "representation_mode": "direct_text"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S2-B3",
+          "sequence": 3,
+          "title": "Many forces can act while net force is zero",
+          "instructional_purpose": "Use supported-object visuals to identify weight/support/tension on one chosen object and distinguish no forces from balanced nonzero forces.",
+          "target_i_can_ids": [
+            "U1-S2-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S2-EX-3"
+              ],
+              "bank_your_turns": [
+                "U1-S2-YTI-3"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-F51307EAD183",
+              "rel_path": "images/unit1/PHYS-F51307EAD183__u1_2_from_ch_2_13_ball_supported_by_two_strings.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S2-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S2-EX-3",
+            "your_turn_id": "U1-S2-YTI-3",
+            "i_can_id": "U1-S2-IC3",
+            "evidence_job": "identify support force and weight on one chosen object from a force model",
+            "representation_mode": "force_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S2-B4",
+          "sequence": 4,
+          "title": "Connect a force model to the motion conclusion",
+          "instructional_purpose": "Use interaction/support comparisons to decide whether the chosen object’s net force is zero and what Newton’s First Law predicts.",
+          "target_i_can_ids": [
+            "U1-S2-IC1",
+            "U1-S2-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S2-EX-4"
+              ],
+              "bank_your_turns": [
+                "U1-S2-YTI-4"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-0809D0AA5ADE",
+              "rel_path": "images/unit1/PHYS-0809D0AA5ADE__u1_2_from_ch_2_17_hammer_nail_force_interaction.png"
+            },
+            {
+              "asset_id": "PHYS-E3A5AE53C614",
+              "rel_path": "images/unit1/PHYS-E3A5AE53C614__u1_2_from_ch_2_15_scaffold_support_four_panel.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S2-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S2-EX-4",
+            "your_turn_id": "U1-S2-YTI-4",
+            "i_can_id": "U1-S2-IC3",
+            "evidence_job": "distinguish no forces from balanced nonzero forces by connecting a diagram to motion",
+            "representation_mode": "force_diagram_motion"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S2-B5",
+          "sequence": 5,
+          "title": "Synthesis: force, net force, and change in motion",
+          "instructional_purpose": "Require students to name the chosen object, identify its forces, decide the net force, and then predict whether velocity remains unchanged or changes.",
+          "target_i_can_ids": [
+            "U1-S2-IC1",
+            "U1-S2-IC2",
+            "U1-S2-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "synthesis passage that reconnects the section representations to the exact I-can targets without becoming a bullet-only recap",
+            "processing_route": {
+              "bank_examples": [],
+              "bank_your_turns": [],
+              "stop_and_discuss": [
+                "U1-S2-SD-1"
+              ]
+            }
+          },
+          "visuals": [],
+          "processing_anchor": {
+            "bank_examples": [],
+            "bank_your_turns": [],
+            "stop_and_discuss": [
+              "U1-S2-SD-1"
+            ]
+          },
+          "stop_and_discuss": {
+            "id": "U1-S2-SD-1",
+            "prompt_intent": "Give a motion statement with multiple forces and ask students to distinguish individual forces from net force and predict whether velocity changes."
+          },
+          "transition_rationale": "The synthesis discussion makes students process the section’s explanatory throughline before vocabulary is consolidated and the final summary target is written."
+        }
+      ],
+      "image_plan": [
+        {
+          "asset_id": "PHYS-D35C05FFAEBD",
+          "rel_path": "images/unit1/PHYS-D35C05FFAEBD__u1_2_from_ch_2_1_support_forces_book_spring.png",
+          "label": "Book/spring support-force figure",
+          "instructional_use": "Use to identify support force and weight on a chosen object and to separate individual forces from net force.",
+          "placement": {
+            "beat_id": "U1-S2-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-0DD1FEF3DC24",
+          "rel_path": "images/unit1/PHYS-0DD1FEF3DC24__u1_2_from_ch_2_hc_man_on_scale_two_panel.png",
+          "label": "Person on scale, two-panel figure",
+          "instructional_use": "Use to discuss interactions/support forces and what a force reading does and does not imply about motion.",
+          "placement": {
+            "beat_id": "U1-S2-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-2F0113E90AE6",
+          "rel_path": "images/unit1/PHYS-2F0113E90AE6__u1_2_from_ch_2_aa_tablecloth_pull.png",
+          "label": "Tablecloth-pull inertia figure",
+          "instructional_use": "Image-first inertia phenomenon: motion tends to remain unchanged unless a net force changes it.",
+          "placement": {
+            "beat_id": "U1-S2-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-81925494FB25",
+          "rel_path": "images/unit1/PHYS-81925494FB25__u1_2_from_ch_2_10_coin_card_inertia_glass.png",
+          "label": "Coin-card-glass inertia figure",
+          "instructional_use": "Use as a second inertia transfer case and explicitly reject “inertia force” language.",
+          "placement": {
+            "beat_id": "U1-S2-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-F51307EAD183",
+          "rel_path": "images/unit1/PHYS-F51307EAD183__u1_2_from_ch_2_13_ball_supported_by_two_strings.png",
+          "label": "Ball supported by two strings",
+          "instructional_use": "Use to show several forces can act while the net force is zero.",
+          "placement": {
+            "beat_id": "U1-S2-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-0809D0AA5ADE",
+          "rel_path": "images/unit1/PHYS-0809D0AA5ADE__u1_2_from_ch_2_17_hammer_nail_force_interaction.png",
+          "label": "Hammer-nail force interaction",
+          "instructional_use": "Use to separate the existence of an interaction force from the net-force/motion conclusion for one chosen object.",
+          "placement": {
+            "beat_id": "U1-S2-B4",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-E3A5AE53C614",
+          "rel_path": "images/unit1/PHYS-E3A5AE53C614__u1_2_from_ch_2_15_scaffold_support_four_panel.png",
+          "label": "Scaffold support, four panels",
+          "instructional_use": "Use for a multi-panel comparison of support-force situations and unchanged/changed motion reasoning.",
+          "placement": {
+            "beat_id": "U1-S2-B4",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S2-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S2-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        }
+      ],
+      "generated_representation_needs": [],
+      "bank_anchors": {
+        "source_file": "banks/unit1/unit1_mapping.csv",
+        "what_to_call_out": {
+          "id": "U1-S2-WTC-1",
+          "i_can_id": "U1-S2-IC3",
+          "evidence_job": "navigate a multipart force/motion task: parse the chosen object, read a shared force diagram, identify dependencies, plan the force reasoning, and justify the motion conclusion",
+          "representation_mode": "force_diagram_motion"
+        },
+        "example_your_turn_pairs": [
+          {
+            "example_id": "U1-S2-EX-1",
+            "your_turn_id": "U1-S2-YTI-1",
+            "i_can_id": "U1-S2-IC1",
+            "evidence_job": "apply Newton First Law to a motion-change prediction",
+            "representation_mode": "motion_description"
+          },
+          {
+            "example_id": "U1-S2-EX-2",
+            "your_turn_id": "U1-S2-YTI-2",
+            "i_can_id": "U1-S2-IC2",
+            "evidence_job": "diagnose inertia-as-force reasoning and replace it with property-of-matter reasoning",
+            "representation_mode": "direct_text"
+          },
+          {
+            "example_id": "U1-S2-EX-3",
+            "your_turn_id": "U1-S2-YTI-3",
+            "i_can_id": "U1-S2-IC3",
+            "evidence_job": "identify support force and weight on one chosen object from a force model",
+            "representation_mode": "force_diagram"
+          },
+          {
+            "example_id": "U1-S2-EX-4",
+            "your_turn_id": "U1-S2-YTI-4",
+            "i_can_id": "U1-S2-IC3",
+            "evidence_job": "distinguish no forces from balanced nonzero forces by connecting a diagram to motion",
+            "representation_mode": "force_diagram_motion"
+          }
+        ]
+      },
+      "section_sequence": [
+        {
+          "type": "story_beat",
+          "id": "U1-S2-B1"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S2-B2"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S2-B3"
+        },
+        {
+          "type": "what_to_call_out",
+          "id": "U1-S2-WTC-1",
+          "placement": "after Beat 3, before the final canonical Example/Your Turn and synthesis; preserve Bank FRQ-navigation function"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S2-B4"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S2-B5"
+        },
+        {
+          "type": "vocabulary_definition_targets",
+          "id": "U1-S2-VOCAB",
+          "placement_rule": "immediately before summary target"
+        },
+        {
+          "type": "summary_target",
+          "id": "U1-S2-SUMMARY-TARGET"
+        }
+      ],
+      "section_completion_check": {
+        "all_exact_i_cans_developed": true,
+        "all_exact_i_cans_checked": true,
+        "four_canonical_example_your_turn_pairs_placed_once": true,
+        "wtc_preserved": true,
+        "all_planned_reading_passages_have_processing_route": true,
+        "all_selected_visuals_have_processing_route": true,
+        "vocabulary_immediately_before_summary": true
+      }
+    },
+    {
+      "section_id": "1.3",
+      "section_number": 3,
+      "title": "Net Force and Vectors",
+      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
+      "i_can_targets": [
+        {
+          "i_can_id": "U1-S3-IC1",
+          "i_can": "I can explain why force is a vector quantity.",
+          "developed_in": [
+            "U1-S3-B1",
+            "U1-S3-B5"
+          ],
+          "checked_in": [
+            "U1-S3-EX-1",
+            "U1-S3-YTI-1",
+            "U1-S3-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S3-EX-1",
+            "U1-S3-YTI-1"
+          ]
+        },
+        {
+          "i_can_id": "U1-S3-IC2",
+          "i_can": "I can combine forces acting in the same direction or opposite directions.",
+          "developed_in": [
+            "U1-S3-B2",
+            "U1-S3-B4",
+            "U1-S3-B5"
+          ],
+          "checked_in": [
+            "U1-S3-EX-2",
+            "U1-S3-YTI-2",
+            "U1-S3-EX-4",
+            "U1-S3-YTI-4",
+            "U1-S3-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S3-EX-2",
+            "U1-S3-YTI-2",
+            "U1-S3-EX-4",
+            "U1-S3-YTI-4"
+          ]
+        },
+        {
+          "i_can_id": "U1-S3-IC3",
+          "i_can": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction.",
+          "developed_in": [
+            "U1-S3-B3",
+            "U1-S3-B4",
+            "U1-S3-B5"
+          ],
+          "checked_in": [
+            "U1-S3-EX-3",
+            "U1-S3-YTI-3",
+            "U1-S3-WTC-1",
+            "U1-S3-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S3-EX-3",
+            "U1-S3-YTI-3",
+            "U1-S3-WTC-1"
+          ]
+        }
+      ],
+      "vocabulary_definition_targets": [
+        {
+          "term": "vector",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "magnitude",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "direction",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "resultant",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "net force",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        }
+      ],
+      "misconception_inventory": [
+        "Adding vector magnitudes without direction",
+        "Treating arrow length as decorative",
+        "Reversing resultant direction"
+      ],
+      "summary_target": {
+        "id": "U1-S3-SUMMARY-TARGET",
+        "student_explanation_goal": "Explain why force must include magnitude and direction, combine same-line forces with direction preserved, and read a vector diagram to identify the direction and relative size of the resultant/net force.",
+        "must_reconnect_i_cans": [
+          "U1-S3-IC1",
+          "U1-S3-IC2",
+          "U1-S3-IC3"
+        ]
+      },
+      "build_story": [
+        {
+          "beat_id": "U1-S3-B1",
+          "sequence": 1,
+          "title": "Force arrows carry magnitude and direction",
+          "instructional_purpose": "Use vector visuals to establish that arrow direction and length are information, not decoration.",
+          "target_i_can_ids": [
+            "U1-S3-IC1"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S3-EX-1"
+              ],
+              "bank_your_turns": [
+                "U1-S3-YTI-1"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-F1137C742CAA",
+              "rel_path": "images/unit1/PHYS-F1137C742CAA__u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png"
+            },
+            {
+              "asset_id": "PHYS-ECA638594CC9",
+              "rel_path": "images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S3-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S3-EX-1",
+            "your_turn_id": "U1-S3-YTI-1",
+            "i_can_id": "U1-S3-IC1",
+            "evidence_job": "interpret magnitude and direction as inseparable features of a force vector",
+            "representation_mode": "vector_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S3-B2",
+          "sequence": 2,
+          "title": "Combine same-line forces without losing direction",
+          "instructional_purpose": "Move to one-dimensional signed/directed sums using the applied-forces table. Keep the resultant tied to a physical direction.",
+          "target_i_can_ids": [
+            "U1-S3-IC2"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S3-EX-2"
+              ],
+              "bank_your_turns": [
+                "U1-S3-YTI-2"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-5C23E8EEAEA8",
+              "rel_path": "images/unit1/PHYS-5C23E8EEAEA8__u1_2_from_ch_2_6_net_force_applied_forces_table.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S3-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S3-EX-2",
+            "your_turn_id": "U1-S3-YTI-2",
+            "i_can_id": "U1-S3-IC2",
+            "evidence_job": "combine same/opposite direction forces to determine signed/directed net force",
+            "representation_mode": "vector_line"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S3-B3",
+          "sequence": 3,
+          "title": "Read the resultant from a scaled vector model",
+          "instructional_purpose": "Have students translate between arrow representation, magnitude/direction language, and the single resultant/net-force idea.",
+          "target_i_can_ids": [
+            "U1-S3-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S3-EX-3"
+              ],
+              "bank_your_turns": [
+                "U1-S3-YTI-3"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-2EC4ABF93A6F",
+              "rel_path": "images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S3-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S3-EX-3",
+            "your_turn_id": "U1-S3-YTI-3",
+            "i_can_id": "U1-S3-IC3",
+            "evidence_job": "read a scaled vector diagram to determine resultant magnitude and direction",
+            "representation_mode": "vector_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S3-B4",
+          "sequence": 4,
+          "title": "Reason backward from a desired resultant",
+          "instructional_purpose": "Use a target-resultant/missing-force structure. Include only familiar/easy geometry as an extension; do not introduce systematic component decomposition.",
+          "target_i_can_ids": [
+            "U1-S3-IC2",
+            "U1-S3-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S3-EX-4"
+              ],
+              "bank_your_turns": [
+                "U1-S3-YTI-4"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-15C8D0E3F482",
+              "rel_path": "images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S3-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S3-EX-4",
+            "your_turn_id": "U1-S3-YTI-4",
+            "i_can_id": "U1-S3-IC2",
+            "evidence_job": "reason backward from a target resultant to a missing force",
+            "representation_mode": "vector_line"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S3-B5",
+          "sequence": 5,
+          "title": "Synthesis: one net-force vector represents the combined effect",
+          "instructional_purpose": "Close by asking students to explain how magnitude and direction survive the combination process and what the resultant says about the force situation.",
+          "target_i_can_ids": [
+            "U1-S3-IC1",
+            "U1-S3-IC2",
+            "U1-S3-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "synthesis passage that reconnects the section representations to the exact I-can targets without becoming a bullet-only recap",
+            "processing_route": {
+              "bank_examples": [],
+              "bank_your_turns": [],
+              "stop_and_discuss": [
+                "U1-S3-SD-1"
+              ]
+            }
+          },
+          "visuals": [],
+          "processing_anchor": {
+            "bank_examples": [],
+            "bank_your_turns": [],
+            "stop_and_discuss": [
+              "U1-S3-SD-1"
+            ]
+          },
+          "stop_and_discuss": {
+            "id": "U1-S3-SD-1",
+            "prompt_intent": "Show two short vector combinations and ask students to justify which resultant arrow is consistent with both magnitude and direction."
+          },
+          "transition_rationale": "The synthesis discussion makes students process the section’s explanatory throughline before vocabulary is consolidated and the final summary target is written."
+        }
+      ],
+      "image_plan": [
+        {
+          "asset_id": "PHYS-F1137C742CAA",
+          "rel_path": "images/unit1/PHYS-F1137C742CAA__u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png",
+          "label": "30 N–40 N–50 N resultant figure",
+          "instructional_use": "Use as a simple two-dimensional resultant boundary example; focus on arrow meaning and resultant, not systematic component methods.",
+          "placement": {
+            "beat_id": "U1-S3-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S3-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-ECA638594CC9",
+          "rel_path": "images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "label": "Right-angle vector addition figure",
+          "instructional_use": "Use qualitatively to show that a vector result depends on both magnitude and direction.",
+          "placement": {
+            "beat_id": "U1-S3-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S3-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-5C23E8EEAEA8",
+          "rel_path": "images/unit1/PHYS-5C23E8EEAEA8__u1_2_from_ch_2_6_net_force_applied_forces_table.png",
+          "label": "Applied-forces/net-force table",
+          "instructional_use": "Use to formalize same/opposite-direction combination while preserving sign/direction.",
+          "placement": {
+            "beat_id": "U1-S3-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S3-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-2EC4ABF93A6F",
+          "rel_path": "images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "label": "Equal perpendicular vectors figure",
+          "instructional_use": "Use as an easy-geometry extension after one-dimensional mastery; keep within the course boundary.",
+          "placement": {
+            "beat_id": "U1-S3-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S3-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-15C8D0E3F482",
+          "rel_path": "images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "label": "Girl on rings, three positions",
+          "instructional_use": "Use to compare force-arrow directions/relative magnitudes across positions without introducing full component decomposition.",
+          "placement": {
+            "beat_id": "U1-S3-B4",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S3-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S3-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        }
+      ],
+      "generated_representation_needs": [],
+      "bank_anchors": {
+        "source_file": "banks/unit1/unit1_mapping.csv",
+        "what_to_call_out": {
+          "id": "U1-S3-WTC-1",
+          "i_can_id": "U1-S3-IC3",
+          "evidence_job": "navigate a multipart vector task: interpret scaled arrows, plan a resultant method, carry a short analysis, and justify a comparison from the shared vector model",
+          "representation_mode": "vector_diagram"
+        },
+        "example_your_turn_pairs": [
+          {
+            "example_id": "U1-S3-EX-1",
+            "your_turn_id": "U1-S3-YTI-1",
+            "i_can_id": "U1-S3-IC1",
+            "evidence_job": "interpret magnitude and direction as inseparable features of a force vector",
+            "representation_mode": "vector_diagram"
+          },
+          {
+            "example_id": "U1-S3-EX-2",
+            "your_turn_id": "U1-S3-YTI-2",
+            "i_can_id": "U1-S3-IC2",
+            "evidence_job": "combine same/opposite direction forces to determine signed/directed net force",
+            "representation_mode": "vector_line"
+          },
+          {
+            "example_id": "U1-S3-EX-3",
+            "your_turn_id": "U1-S3-YTI-3",
+            "i_can_id": "U1-S3-IC3",
+            "evidence_job": "read a scaled vector diagram to determine resultant magnitude and direction",
+            "representation_mode": "vector_diagram"
+          },
+          {
+            "example_id": "U1-S3-EX-4",
+            "your_turn_id": "U1-S3-YTI-4",
+            "i_can_id": "U1-S3-IC2",
+            "evidence_job": "reason backward from a target resultant to a missing force",
+            "representation_mode": "vector_line"
+          }
+        ]
+      },
+      "section_sequence": [
+        {
+          "type": "story_beat",
+          "id": "U1-S3-B1"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S3-B2"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S3-B3"
+        },
+        {
+          "type": "what_to_call_out",
+          "id": "U1-S3-WTC-1",
+          "placement": "after Beat 3, before the final canonical Example/Your Turn and synthesis; preserve Bank FRQ-navigation function"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S3-B4"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S3-B5"
+        },
+        {
+          "type": "vocabulary_definition_targets",
+          "id": "U1-S3-VOCAB",
+          "placement_rule": "immediately before summary target"
+        },
+        {
+          "type": "summary_target",
+          "id": "U1-S3-SUMMARY-TARGET"
+        }
+      ],
+      "section_completion_check": {
+        "all_exact_i_cans_developed": true,
+        "all_exact_i_cans_checked": true,
+        "four_canonical_example_your_turn_pairs_placed_once": true,
+        "wtc_preserved": true,
+        "all_planned_reading_passages_have_processing_route": true,
+        "all_selected_visuals_have_processing_route": true,
+        "vocabulary_immediately_before_summary": true
+      }
+    },
+    {
+      "section_id": "1.4",
+      "section_number": 4,
+      "title": "Equilibrium and Balanced Motion",
+      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
+      "i_can_targets": [
+        {
+          "i_can_id": "U1-S4-IC1",
+          "i_can": "I can recognize static equilibrium and dynamic equilibrium.",
+          "developed_in": [
+            "U1-S4-B1",
+            "U1-S4-B4",
+            "U1-S4-B5"
+          ],
+          "checked_in": [
+            "U1-S4-EX-1",
+            "U1-S4-YTI-1",
+            "U1-S4-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S4-EX-1",
+            "U1-S4-YTI-1"
+          ]
+        },
+        {
+          "i_can_id": "U1-S4-IC2",
+          "i_can": "I can explain why an object at rest can still have forces acting on it.",
+          "developed_in": [
+            "U1-S4-B2",
+            "U1-S4-B5"
+          ],
+          "checked_in": [
+            "U1-S4-EX-2",
+            "U1-S4-YTI-2",
+            "U1-S4-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S4-EX-2",
+            "U1-S4-YTI-2"
+          ]
+        },
+        {
+          "i_can_id": "U1-S4-IC3",
+          "i_can": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces.",
+          "developed_in": [
+            "U1-S4-B3",
+            "U1-S4-B4",
+            "U1-S4-B5"
+          ],
+          "checked_in": [
+            "U1-S4-EX-3",
+            "U1-S4-YTI-3",
+            "U1-S4-EX-4",
+            "U1-S4-YTI-4",
+            "U1-S4-WTC-1",
+            "U1-S4-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S4-EX-3",
+            "U1-S4-YTI-3",
+            "U1-S4-EX-4",
+            "U1-S4-YTI-4",
+            "U1-S4-WTC-1"
+          ]
+        }
+      ],
+      "vocabulary_definition_targets": [
+        {
+          "term": "mechanical equilibrium",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "static equilibrium",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "dynamic equilibrium",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "balanced forces",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "constant velocity",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        }
+      ],
+      "misconception_inventory": [
+        "Equating equilibrium with rest only",
+        "Assuming constant speed always means equilibrium when direction changes",
+        "Assuming forces disappear at equilibrium"
+      ],
+      "summary_target": {
+        "id": "U1-S4-SUMMARY-TARGET",
+        "student_explanation_goal": "Decide whether a system is in mechanical equilibrium by using zero net force, distinguish static from dynamic equilibrium, and justify how balanced forces can accompany either rest or constant straight-line motion.",
+        "must_reconnect_i_cans": [
+          "U1-S4-IC1",
+          "U1-S4-IC2",
+          "U1-S4-IC3"
+        ]
+      },
+      "build_story": [
+        {
+          "beat_id": "U1-S4-B1",
+          "sequence": 1,
+          "title": "Equilibrium can be static or dynamic",
+          "instructional_purpose": "Start with contrasting motion descriptions and force visuals. Define mechanical equilibrium through zero net force, then distinguish rest from constant straight-line motion.",
+          "target_i_can_ids": [
+            "U1-S4-IC1"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S4-EX-1"
+              ],
+              "bank_your_turns": [
+                "U1-S4-YTI-1"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-B094215EA3FC",
+              "rel_path": "images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S4-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S4-EX-1",
+            "your_turn_id": "U1-S4-YTI-1",
+            "i_can_id": "U1-S4-IC1",
+            "evidence_job": "classify static versus dynamic equilibrium from motion and force evidence",
+            "representation_mode": "motion_description"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S4-B2",
+          "sequence": 2,
+          "title": "Rest can include real, nonzero forces",
+          "instructional_purpose": "Use the scaffold/rings force diagrams to make balanced nonzero forces visible and reject the idea that forces disappear at rest.",
+          "target_i_can_ids": [
+            "U1-S4-IC2"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S4-EX-2"
+              ],
+              "bank_your_turns": [
+                "U1-S4-YTI-2"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-B6D46ACCB666",
+              "rel_path": "images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S4-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S4-EX-2",
+            "your_turn_id": "U1-S4-YTI-2",
+            "i_can_id": "U1-S4-IC2",
+            "evidence_job": "explain why a resting object can have balanced nonzero forces",
+            "representation_mode": "force_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S4-B3",
+          "sequence": 3,
+          "title": "Use the equilibrium rule to find a missing force",
+          "instructional_purpose": "Develop ΣF=0 as a reasoning statement. Check upward/downward and left/right balance and connect the result to unchanged velocity.",
+          "target_i_can_ids": [
+            "U1-S4-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S4-EX-3"
+              ],
+              "bank_your_turns": [
+                "U1-S4-YTI-3"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-052FC46E3600",
+              "rel_path": "images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S4-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S4-EX-3",
+            "your_turn_id": "U1-S4-YTI-3",
+            "i_can_id": "U1-S4-IC3",
+            "evidence_job": "use Sigma F=0 to infer a missing balancing force and interpret unchanged motion",
+            "representation_mode": "force_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S4-B4",
+          "sequence": 4,
+          "title": "Constant speed is not enough unless direction is also unchanged",
+          "instructional_purpose": "Use a representation-consistency check: dynamic equilibrium requires constant velocity (straight-line direction as well as speed).",
+          "target_i_can_ids": [
+            "U1-S4-IC1",
+            "U1-S4-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S4-EX-4"
+              ],
+              "bank_your_turns": [
+                "U1-S4-YTI-4"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S4-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S4-EX-4",
+            "your_turn_id": "U1-S4-YTI-4",
+            "i_can_id": "U1-S4-IC3",
+            "evidence_job": "test whether constant-speed straight-line motion is consistent with equilibrium",
+            "representation_mode": "force_diagram_motion"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S4-B5",
+          "sequence": 5,
+          "title": "Synthesis: test the whole system for equilibrium",
+          "instructional_purpose": "Require a two-part justification: the force balance is zero and the motion evidence is consistent with rest or constant straight-line motion.",
+          "target_i_can_ids": [
+            "U1-S4-IC1",
+            "U1-S4-IC2",
+            "U1-S4-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "synthesis passage that reconnects the section representations to the exact I-can targets without becoming a bullet-only recap",
+            "processing_route": {
+              "bank_examples": [],
+              "bank_your_turns": [],
+              "stop_and_discuss": [
+                "U1-S4-SD-1"
+              ]
+            }
+          },
+          "visuals": [],
+          "processing_anchor": {
+            "bank_examples": [],
+            "bank_your_turns": [],
+            "stop_and_discuss": [
+              "U1-S4-SD-1"
+            ]
+          },
+          "stop_and_discuss": {
+            "id": "U1-S4-SD-1",
+            "prompt_intent": "Compare a resting case and a constant-straight-line-motion case; ask what evidence is needed to call each one equilibrium."
+          },
+          "transition_rationale": "The synthesis discussion makes students process the section’s explanatory throughline before vocabulary is consolidated and the final summary target is written."
+        }
+      ],
+      "image_plan": [
+        {
+          "asset_id": "PHYS-B094215EA3FC",
+          "rel_path": "images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
+          "label": "Girl on rings, two tension positions",
+          "instructional_use": "Use to reason about balanced forces and changing tension direction/magnitude in equilibrium situations.",
+          "placement": {
+            "beat_id": "U1-S4-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S4-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-B6D46ACCB666",
+          "rel_path": "images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "label": "Scaffold equilibrium force diagram",
+          "instructional_use": "Primary equilibrium-rule visual for ΣF = 0 and balancing-force reasoning.",
+          "placement": {
+            "beat_id": "U1-S4-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S4-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-052FC46E3600",
+          "rel_path": "images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
+          "label": "Scaffold positions with 500 N, 170 N, 0 N",
+          "instructional_use": "Use as a multi-case equilibrium check and missing-force interpretation.",
+          "placement": {
+            "beat_id": "U1-S4-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S4-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S4-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        }
+      ],
+      "generated_representation_needs": [],
+      "bank_anchors": {
+        "source_file": "banks/unit1/unit1_mapping.csv",
+        "what_to_call_out": {
+          "id": "U1-S4-WTC-1",
+          "i_can_id": "U1-S4-IC3",
+          "evidence_job": "navigate a multipart equilibrium task: extract givens from a shared model, identify a balance relationship, analyze a missing force, and justify the motion state",
+          "representation_mode": "force_diagram_table"
+        },
+        "example_your_turn_pairs": [
+          {
+            "example_id": "U1-S4-EX-1",
+            "your_turn_id": "U1-S4-YTI-1",
+            "i_can_id": "U1-S4-IC1",
+            "evidence_job": "classify static versus dynamic equilibrium from motion and force evidence",
+            "representation_mode": "motion_description"
+          },
+          {
+            "example_id": "U1-S4-EX-2",
+            "your_turn_id": "U1-S4-YTI-2",
+            "i_can_id": "U1-S4-IC2",
+            "evidence_job": "explain why a resting object can have balanced nonzero forces",
+            "representation_mode": "force_diagram"
+          },
+          {
+            "example_id": "U1-S4-EX-3",
+            "your_turn_id": "U1-S4-YTI-3",
+            "i_can_id": "U1-S4-IC3",
+            "evidence_job": "use Sigma F=0 to infer a missing balancing force and interpret unchanged motion",
+            "representation_mode": "force_diagram"
+          },
+          {
+            "example_id": "U1-S4-EX-4",
+            "your_turn_id": "U1-S4-YTI-4",
+            "i_can_id": "U1-S4-IC3",
+            "evidence_job": "test whether constant-speed straight-line motion is consistent with equilibrium",
+            "representation_mode": "force_diagram_motion"
+          }
+        ]
+      },
+      "section_sequence": [
+        {
+          "type": "story_beat",
+          "id": "U1-S4-B1"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S4-B2"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S4-B3"
+        },
+        {
+          "type": "what_to_call_out",
+          "id": "U1-S4-WTC-1",
+          "placement": "after Beat 3, before the final canonical Example/Your Turn and synthesis; preserve Bank FRQ-navigation function"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S4-B4"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S4-B5"
+        },
+        {
+          "type": "vocabulary_definition_targets",
+          "id": "U1-S4-VOCAB",
+          "placement_rule": "immediately before summary target"
+        },
+        {
+          "type": "summary_target",
+          "id": "U1-S4-SUMMARY-TARGET"
+        }
+      ],
+      "section_completion_check": {
+        "all_exact_i_cans_developed": true,
+        "all_exact_i_cans_checked": true,
+        "four_canonical_example_your_turn_pairs_placed_once": true,
+        "wtc_preserved": true,
+        "all_planned_reading_passages_have_processing_route": true,
+        "all_selected_visuals_have_processing_route": true,
+        "vocabulary_immediately_before_summary": true
+      }
+    },
+    {
+      "section_id": "1.5",
+      "section_number": 5,
+      "title": "Modeling Forces in the Real World",
+      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
+      "i_can_targets": [
+        {
+          "i_can_id": "U1-S5-IC1",
+          "i_can": "I can draw a force diagram for an object in a real-world situation.",
+          "developed_in": [
+            "U1-S5-B1",
+            "U1-S5-B2",
+            "U1-S5-B4",
+            "U1-S5-B5"
+          ],
+          "checked_in": [
+            "U1-S5-EX-1",
+            "U1-S5-YTI-1",
+            "U1-S5-EX-4",
+            "U1-S5-YTI-4",
+            "U1-S5-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S5-EX-1",
+            "U1-S5-YTI-1",
+            "U1-S5-EX-4",
+            "U1-S5-YTI-4"
+          ]
+        },
+        {
+          "i_can_id": "U1-S5-IC2",
+          "i_can": "I can decide whether the forces are balanced or unbalanced.",
+          "developed_in": [
+            "U1-S5-B2",
+            "U1-S5-B3",
+            "U1-S5-B5"
+          ],
+          "checked_in": [
+            "U1-S5-EX-2",
+            "U1-S5-YTI-2",
+            "U1-S5-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S5-EX-2",
+            "U1-S5-YTI-2"
+          ]
+        },
+        {
+          "i_can_id": "U1-S5-IC3",
+          "i_can": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary.",
+          "developed_in": [
+            "U1-S5-B4",
+            "U1-S5-B5"
+          ],
+          "checked_in": [
+            "U1-S5-EX-3",
+            "U1-S5-YTI-3",
+            "U1-S5-WTC-1",
+            "U1-S5-SUMMARY-TARGET"
+          ],
+          "seen_in_bank": [
+            "U1-S5-EX-3",
+            "U1-S5-YTI-3",
+            "U1-S5-WTC-1"
+          ]
+        }
+      ],
+      "vocabulary_definition_targets": [
+        {
+          "term": "force model",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "system",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "interaction",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "net force",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "equilibrium",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        },
+        {
+          "term": "evidence",
+          "definition_intent": "Define in context during the story, then consolidate a precise student-usable meaning here immediately before the Summary."
+        }
+      ],
+      "misconception_inventory": [
+        "Including forces that act on other objects",
+        "Omitting support/weight",
+        "Matching a force diagram to the wrong motion description"
+      ],
+      "summary_target": {
+        "id": "U1-S5-SUMMARY-TARGET",
+        "student_explanation_goal": "Build and critique a force model for one chosen object, use the diagram to decide whether forces are balanced, and connect the resulting net force to what should happen to the object’s motion.",
+        "must_reconnect_i_cans": [
+          "U1-S5-IC1",
+          "U1-S5-IC2",
+          "U1-S5-IC3"
+        ]
+      },
+      "build_story": [
+        {
+          "beat_id": "U1-S5-B1",
+          "sequence": 1,
+          "title": "Choose the system before drawing forces",
+          "instructional_purpose": "Use familiar book/basket scenes to make the selected object explicit, then identify only forces acting on that object.",
+          "target_i_can_ids": [
+            "U1-S5-IC1"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S5-EX-1"
+              ],
+              "bank_your_turns": [
+                "U1-S5-YTI-1"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-6B7B9CF83824",
+              "rel_path": "images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
+            },
+            {
+              "asset_id": "PHYS-EAE46BC4363D",
+              "rel_path": "images/unit1/PHYS-EAE46BC4363D__unit1-plant-basket-forces.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S5-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S5-EX-1",
+            "your_turn_id": "U1-S5-YTI-1",
+            "i_can_id": "U1-S5-IC1",
+            "evidence_job": "construct a force diagram after explicitly defining the modeled object/system",
+            "representation_mode": "student_constructed_force_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S5-B2",
+          "sequence": 2,
+          "title": "A force diagram is a model, not a motion sketch",
+          "instructional_purpose": "Build diagram conventions from opposing-force/scale visuals: object-centered arrows, direction and relative size, force labels, and no motion arrows masquerading as forces.",
+          "target_i_can_ids": [
+            "U1-S5-IC1",
+            "U1-S5-IC2"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S5-EX-2"
+              ],
+              "bank_your_turns": [
+                "U1-S5-YTI-2"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-70800F1157C9",
+              "rel_path": "images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png"
+            },
+            {
+              "asset_id": "PHYS-DAC530DEBC21",
+              "rel_path": "images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S5-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S5-EX-2",
+            "your_turn_id": "U1-S5-YTI-2",
+            "i_can_id": "U1-S5-IC2",
+            "evidence_job": "classify a real-world force model as balanced or unbalanced",
+            "representation_mode": "force_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S5-B3",
+          "sequence": 3,
+          "title": "Use the model to decide balanced or unbalanced",
+          "instructional_purpose": "Read the diagram as evidence: combine forces to decide the net force and classify the situation.",
+          "target_i_can_ids": [
+            "U1-S5-IC2"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S5-EX-3"
+              ],
+              "bank_your_turns": [
+                "U1-S5-YTI-3"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-9C32901B2ABF",
+              "rel_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
+            },
+            {
+              "asset_id": "PHYS-AA6B41E5091B",
+              "rel_path": "images/unit1/PHYS-AA6B41E5091B__unit1-hanging-signs.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S5-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S5-EX-3",
+            "your_turn_id": "U1-S5-YTI-3",
+            "i_can_id": "U1-S5-IC3",
+            "evidence_job": "connect net-force direction to a motion-change prediction",
+            "representation_mode": "force_diagram_motion"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S5-B4",
+          "sequence": 4,
+          "title": "Critique and revise a flawed model",
+          "instructional_purpose": "Use the flawed-cart and representation-mismatch figures as answer-bearing critique objects; identify the flaw, revise the model, then connect the corrected net force to motion change.",
+          "target_i_can_ids": [
+            "U1-S5-IC1",
+            "U1-S5-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "develop concept in accessible grade-10 prose; define terms in context and connect words to representations",
+            "processing_route": {
+              "bank_examples": [
+                "U1-S5-EX-4"
+              ],
+              "bank_your_turns": [
+                "U1-S5-YTI-4"
+              ],
+              "stop_and_discuss": []
+            }
+          },
+          "visuals": [
+            {
+              "asset_id": "PHYS-CE653198C2C5",
+              "rel_path": "images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png"
+            },
+            {
+              "asset_id": "PHYS-DBC68196705B",
+              "rel_path": "images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png"
+            }
+          ],
+          "processing_anchor": {
+            "bank_examples": [
+              "U1-S5-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "bank_pair": {
+            "example_id": "U1-S5-EX-4",
+            "your_turn_id": "U1-S5-YTI-4",
+            "i_can_id": "U1-S5-IC1",
+            "evidence_job": "critique and revise a flawed force model for one selected object",
+            "representation_mode": "flawed_force_diagram"
+          },
+          "transition_rationale": "The Your Turn immediately follows the canonical Example so students process the same evidence job independently before the story advances."
+        },
+        {
+          "beat_id": "U1-S5-B5",
+          "sequence": 5,
+          "title": "Synthesis: model → net force → motion claim",
+          "instructional_purpose": "Close with a fresh scenario in which students define the system, sketch/inspect forces, decide the net force, and defend the resulting motion claim with physics vocabulary.",
+          "target_i_can_ids": [
+            "U1-S5-IC1",
+            "U1-S5-IC2",
+            "U1-S5-IC3"
+          ],
+          "reading_plan": {
+            "developed_explanatory_passage": true,
+            "planned_role": "synthesis passage that reconnects the section representations to the exact I-can targets without becoming a bullet-only recap",
+            "processing_route": {
+              "bank_examples": [],
+              "bank_your_turns": [],
+              "stop_and_discuss": [
+                "U1-S5-SD-1"
+              ]
+            }
+          },
+          "visuals": [],
+          "processing_anchor": {
+            "bank_examples": [],
+            "bank_your_turns": [],
+            "stop_and_discuss": [
+              "U1-S5-SD-1"
+            ]
+          },
+          "stop_and_discuss": {
+            "id": "U1-S5-SD-1",
+            "prompt_intent": "Present a compact real-world force-model claim and ask students to identify the system, test the diagram for balance, and revise any inconsistent motion explanation."
+          },
+          "transition_rationale": "The synthesis discussion makes students process the section’s explanatory throughline before vocabulary is consolidated and the final summary target is written."
+        }
+      ],
+      "image_plan": [
+        {
+          "asset_id": "PHYS-6B7B9CF83824",
+          "rel_path": "images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
+          "label": "Book on table with 100 N up/down arrows",
+          "instructional_use": "Use as a clean force-model example for one chosen object and balanced vertical forces.",
+          "placement": {
+            "beat_id": "U1-S5-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-EAE46BC4363D",
+          "rel_path": "images/unit1/PHYS-EAE46BC4363D__unit1-plant-basket-forces.png",
+          "label": "Hanging plant basket force arrows",
+          "instructional_use": "Use for force identification and equilibrium evidence in a familiar system.",
+          "placement": {
+            "beat_id": "U1-S5-B1",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-1"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-1"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-70800F1157C9",
+          "rel_path": "images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+          "label": "Opposing 500 N forces",
+          "instructional_use": "Use as a compact balanced-force diagnostic and net-force check.",
+          "placement": {
+            "beat_id": "U1-S5-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-DAC530DEBC21",
+          "rel_path": "images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+          "label": "Spring-scale forces labeled 8 N and 6 N",
+          "instructional_use": "Use to connect a force diagram to a nonzero net force and predict motion change.",
+          "placement": {
+            "beat_id": "U1-S5-B2",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-2"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-2"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-9C32901B2ABF",
+          "rel_path": "images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+          "label": "Box pushed right at constant speed",
+          "instructional_use": "Use to connect constant straight-line motion with a balanced/net-zero force model.",
+          "placement": {
+            "beat_id": "U1-S5-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-AA6B41E5091B",
+          "rel_path": "images/unit1/PHYS-AA6B41E5091B__unit1-hanging-signs.png",
+          "label": "Two hanging signs, centered and offset",
+          "instructional_use": "Use to compare how geometry/direction changes a model while equilibrium can still hold.",
+          "placement": {
+            "beat_id": "U1-S5-B3",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-3"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-3"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-CE653198C2C5",
+          "rel_path": "images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+          "label": "Flawed cart force diagram",
+          "instructional_use": "Use for explicit force-model critique and revision; preserve the flaw as the instructional object.",
+          "placement": {
+            "beat_id": "U1-S5-B4",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        },
+        {
+          "asset_id": "PHYS-DBC68196705B",
+          "rel_path": "images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+          "label": "Force-diagram representation mismatch",
+          "instructional_use": "Use for model/evidence consistency critique and revision.",
+          "placement": {
+            "beat_id": "U1-S5-B4",
+            "cadence": "image-first or image-adjacent where the visual carries the phenomenon/model"
+          },
+          "processing_route": {
+            "bank_examples": [
+              "U1-S5-EX-4"
+            ],
+            "bank_your_turns": [
+              "U1-S5-YTI-4"
+            ],
+            "stop_and_discuss": []
+          },
+          "integrity": {
+            "catalog_verified": true,
+            "path_verified_at_pinned_commit": true,
+            "no_guessed_path": true
+          }
+        }
+      ],
+      "generated_representation_needs": [
+        {
+          "need_id": "U1-S5-GEN-FBD-SCAFFOLD-1",
+          "schema_version": "generated-representation-need/1.0",
+          "type": "answer-neutral force-diagram construction scaffold",
+          "purpose": "Provide a reusable blank system/object boundary and labeling area for the student to construct—not copy—a force diagram after studying canonical examples.",
+          "why_toolkit_asset_is_not_substituted": "The need is an answer-neutral construction scaffold, not a source figure. Reusing an exact source diagram would pre-fill the model and weaken the construction task.",
+          "constraints": [
+            "Do not pre-draw solution force arrows",
+            "Do not include answer-bearing magnitudes or directions",
+            "Keep object/system selection explicit",
+            "Use simple SVG/CSS or a generated neutral diagram in Stage 4B",
+            "Keep visual accessible and color-independent"
+          ],
+          "planned_placement": "U1-S5-B1 and/or U1-S5-B5"
+        }
+      ],
+      "bank_anchors": {
+        "source_file": "banks/unit1/unit1_mapping.csv",
+        "what_to_call_out": {
+          "id": "U1-S5-WTC-1",
+          "i_can_id": "U1-S5-IC3",
+          "evidence_job": "navigate a multipart model-critique task: identify the system, inspect a shared flawed model/evidence set, plan a revision, and defend the revised motion explanation",
+          "representation_mode": "flawed_force_diagram_motion"
+        },
+        "example_your_turn_pairs": [
+          {
+            "example_id": "U1-S5-EX-1",
+            "your_turn_id": "U1-S5-YTI-1",
+            "i_can_id": "U1-S5-IC1",
+            "evidence_job": "construct a force diagram after explicitly defining the modeled object/system",
+            "representation_mode": "student_constructed_force_diagram"
+          },
+          {
+            "example_id": "U1-S5-EX-2",
+            "your_turn_id": "U1-S5-YTI-2",
+            "i_can_id": "U1-S5-IC2",
+            "evidence_job": "classify a real-world force model as balanced or unbalanced",
+            "representation_mode": "force_diagram"
+          },
+          {
+            "example_id": "U1-S5-EX-3",
+            "your_turn_id": "U1-S5-YTI-3",
+            "i_can_id": "U1-S5-IC3",
+            "evidence_job": "connect net-force direction to a motion-change prediction",
+            "representation_mode": "force_diagram_motion"
+          },
+          {
+            "example_id": "U1-S5-EX-4",
+            "your_turn_id": "U1-S5-YTI-4",
+            "i_can_id": "U1-S5-IC1",
+            "evidence_job": "critique and revise a flawed force model for one selected object",
+            "representation_mode": "flawed_force_diagram"
+          }
+        ]
+      },
+      "section_sequence": [
+        {
+          "type": "story_beat",
+          "id": "U1-S5-B1"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S5-B2"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S5-B3"
+        },
+        {
+          "type": "what_to_call_out",
+          "id": "U1-S5-WTC-1",
+          "placement": "after Beat 3, before the final canonical Example/Your Turn and synthesis; preserve Bank FRQ-navigation function"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S5-B4"
+        },
+        {
+          "type": "story_beat",
+          "id": "U1-S5-B5"
+        },
+        {
+          "type": "vocabulary_definition_targets",
+          "id": "U1-S5-VOCAB",
+          "placement_rule": "immediately before summary target"
+        },
+        {
+          "type": "summary_target",
+          "id": "U1-S5-SUMMARY-TARGET"
+        }
+      ],
+      "section_completion_check": {
+        "all_exact_i_cans_developed": true,
+        "all_exact_i_cans_checked": true,
+        "four_canonical_example_your_turn_pairs_placed_once": true,
+        "wtc_preserved": true,
+        "all_planned_reading_passages_have_processing_route": true,
+        "all_selected_visuals_have_processing_route": true,
+        "vocabulary_immediately_before_summary": true
+      }
+    }
+  ],
+  "generated_representation_schema_version": "generated-representation-need/1.0",
+  "generated_representation_need_count": 1,
+  "counts": {
+    "sections": 5,
+    "i_cans": 15,
+    "examples": 20,
+    "your_turns": 20,
+    "what_to_call_out": 5,
+    "selected_images": 29
+  }
+}

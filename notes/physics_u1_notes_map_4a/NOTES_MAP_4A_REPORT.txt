@@ -1,0 +1,94 @@
+STAGE 4A NOTES MAP VALIDATION REPORT
+Course: Physics / Conceptual Physics
+Unit: 1 — Forces, Motion, and Equilibrium
+
+System authority: tnezki/memories@2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341
+Course Bank authority: tnezki/physics@b98a142938d5280a57896b38b87393b2bd04f33f
+Authoritative Bank path: banks/unit1
+Framework authority: frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html
+Map JSON: unit1_notes_map.json
+Map JSON SHA-256: b3441d85b997dfb3768f71d8bbfc26bf871a51eba9271e8b6568fade6db80df6
+Image toolkit fingerprint: physics-notes-image-toolkit-v1|repo=tnezki/memories@2f1c064b673c8b8fafab4e0cdf23ae7ff5a84341|catalog_git_blob_sha1=8ccbdab8a7abc90aa7f1f021ac0e84ec920f428d|version_manifest_git_blob_sha1=f9028f17730383366f54307157597664aed58a1d
+Selected image count: 29
+Generated representation need count: 1
+
+VALIDATION GATES
+[PASS] target coverage: section titles/count
+[PASS] target coverage: exact I-can wording/count — 15 targets
+[PASS] developed coverage
+[PASS] checked coverage
+[PASS] EX once-only coverage
+[PASS] YTI once-only coverage
+[PASS] EX↔YTI pairing
+[PASS] WTC mapping
+[PASS] story-processing gate U1-S1-B1
+[PASS] story-processing gate U1-S1-B2
+[PASS] story-processing gate U1-S1-B3
+[PASS] story-processing gate U1-S1-B4
+[PASS] story-processing gate U1-S1-B5
+[PASS] vocabulary-before-summary 1.1
+[PASS] story-processing gate U1-S2-B1
+[PASS] story-processing gate U1-S2-B2
+[PASS] story-processing gate U1-S2-B3
+[PASS] story-processing gate U1-S2-B4
+[PASS] story-processing gate U1-S2-B5
+[PASS] vocabulary-before-summary 1.2
+[PASS] story-processing gate U1-S3-B1
+[PASS] story-processing gate U1-S3-B2
+[PASS] story-processing gate U1-S3-B3
+[PASS] story-processing gate U1-S3-B4
+[PASS] story-processing gate U1-S3-B5
+[PASS] vocabulary-before-summary 1.3
+[PASS] story-processing gate U1-S4-B1
+[PASS] story-processing gate U1-S4-B2
+[PASS] story-processing gate U1-S4-B3
+[PASS] story-processing gate U1-S4-B4
+[PASS] story-processing gate U1-S4-B5
+[PASS] vocabulary-before-summary 1.4
+[PASS] story-processing gate U1-S5-B1
+[PASS] story-processing gate U1-S5-B2
+[PASS] story-processing gate U1-S5-B3
+[PASS] story-processing gate U1-S5-B4
+[PASS] story-processing gate U1-S5-B5
+[PASS] vocabulary-before-summary 1.5
+[PASS] image selected count — 29
+[PASS] image unique asset ids
+[PASS] image catalog/path integrity
+[PASS] image processing routes
+[PASS] stale input/toolkit identity
+[PASS] generated representation count
+[PASS] HTML embedded final selection JSON exists
+[PASS] HTML embedded selection count
+[PASS] HTML embedded asset/path integrity
+
+BANK ANCHOR SUMMARY
+- Canonical Notes Examples placed exactly once: 20/20
+- Canonical Your Turns placed exactly once: 20/20
+- Deliberate EX↔YTI pair semantics preserved: 20/20
+- What to Call Out anchors mapped once with original FRQ-navigation function: 5/5
+- Stage 3E audit status on all mapped anchor rows: PASS
+
+FRAMEWORK / TARGET SUMMARY
+- Sections: 5/5 exact titles from the original Unit 1 Assessment Plan
+- I-can statements: 15/15 exact current wording
+- Every I-can has at least one developed_in location and at least one checked_in route
+- Vocabulary definition targets are positioned immediately before each Summary target
+
+STORY / PROCESSING SUMMARY
+- Five planned story beats per section; 25 total developed-reading beats
+- Every developed-reading beat routes to a Bank Example/Your Turn pair or a Stop & Discuss
+- Every selected visual has an explicit processing route
+- Map remains a construction roadmap; final Stage 4B notes prose is not written here
+
+IMAGE INTEGRITY SUMMARY
+- 29 current Unit 1 toolkit assets selected with explicit asset_id + rel_path
+- Paths were resolved against the pinned toolkit/catalog; no guessed path is used
+- unit1-sled-same-direction.png is intentionally not selected because it lacks a current canonical toolkit asset/path at the pinned commit
+- HTML contains the required embedded final selection JSON block
+
+STALE INPUT / TOOLKIT IDENTITY
+- PASS. System, Framework, Bank, Stage 3E handoff, PM, conditioning files, and toolkit were resolved at the request-pinned commits.
+
+CONCLUSION
+Ready for Stage 4B. The Notes Map is target-complete, Bank-anchor-complete, image-resolved, processing-complete, and hash-addressed for downstream verification.
+STATUS: PASS
