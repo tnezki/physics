@@ -1,44 +1,59 @@
-Physics Unit 1 Notes Build Report
-===============================
-Status: COMPLETE — FINAL QA PASS
-System pin: tnezki/memories@3bed37dfd54ed793b4907fc1adf41e1e14f985e0
-Course pin: tnezki/physics@9293a63f754247d38aa3fc67b9af1905295ffaf3
-Textbook pin: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
+PHYSICS UNIT 1 NOTES BUILD REPORT
+=================================
 
-Build scope
------------
-Five student Notes artifacts and five matching teacher copies were authored for Sections 1.1–1.5. Each section contains the exact current Learning Target and I-can statements, one canonical WTC, all four complete canonical Example → You Try It pairs, source-grounded reading, Vocabulary Preview, skim, one close-reading directions block, vocabulary definitions, Summary, What I Figured Out, and Common Mistakes.
+Build mode: single-pass Notes (no separate Notes Map)
+System pin: tnezki/memories@090a209f0e35dc0a6a4797e6d9acfa7d2a5acfa8
+Course pin: tnezki/physics@c42c56e5041542c49c4649eafde50fa1a4c99776
+Textbook pin resolved at job start: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
 
-Source modes
-------------
-1.1 textbook_partial_gap — declared Chapter 1 source ends at an explicit gap; available source preserved and a minimal Framework bridge completes required distinctions.
-1.2 textbook_direct — declared 2.3/2.6 source used.
-1.3 textbook_direct — declared 2.4 source used; omitted textbook figures without captured assets were not recreated.
-1.4 textbook_partial_gap — declared source explicitly says 2.7 unavailable; 2.5 preserved and a minimal Framework bridge supplies static/dynamic equilibrium language.
-1.5 framework_synthesis — declared source explicitly identifies the section as synthesis/application with no corresponding textbook passage.
+Canonical Bank
+--------------
+- banks/unit1/BANK_MANIFEST.json
+- status: COMPLETE
+- ready_for_downstream: true
+- Bank Notes route: notes/section_<section-id>.json
+- downstream_contracts.notes_route: absent
+- compatibility: PASS — legacy-compatible route accepted because BANK_MANIFEST.paths.notes is valid
+- ITEM_INDEX route/identity check: PASS
+- Unit Notes anchors used: 5 WTC, 20 Examples, 20 You Try Its
 
-Bank routing
-------------
-BANK_MANIFEST is COMPLETE and ready_for_downstream=true. The explicit downstream_contracts.notes_route handshake is absent, but BANK_MANIFEST.paths.notes is valid. The current Notes PM therefore permits this build as legacy-compatible.
+Section/source summary
+----------------------
+- 1.1 Thinking Like a Physicist: textbook_direct; declared source 1.1, 1.2; 6 source-spine figure references
+- 1.2 Forces and Newton’s First Law: textbook_direct; declared source 2.3, 2.6; 7 source-spine figure references
+- 1.3 Net Force and Vectors: textbook_direct; declared source 2.4; 5 source-spine figure references
+- 1.4 Equilibrium and Balanced Motion: textbook_direct; declared source 2.5, 2.7; 3 source-spine figure references
+- 1.5 Modeling Forces in the Real World: framework_synthesis; declared 2.3–2.7 synthesis; 15 source-spine figure references
 
-Visuals
--------
-All usable instructional source figures available in each declared source file are referenced from the canonical Physics Notes Image Toolkit in source order. Bank-required figures are rendered from their canonical toolkit routes. Student-constructed force-diagram evidence jobs use blank answer surfaces and do not pre-render solution arrows.
+Every section contains exactly 1 canonical WTC and 4 complete canonical Example/YTI pairs.
+Source images are referenced in place from resources/Physics_Notes_Image_Toolkit/; no image binaries are duplicated in the package.
+Source-image order and the normal 4-inch display-height contract were verified.
 
-CSS / structure
+Pacing judgment
 ---------------
-Artifacts link exactly ../../css/base.css followed by ../../css/notes.css. No third linked stylesheet is used. Student workspaces use deployed Notes classes. Teacher copies retain the same sequence and are normalized to natural-flow workspace behavior by the declared fix_notes_layout_contract tool.
+Each student section is condensed for an approximately 30–40 minute Notes block including WTC annotation, skim, close reading, figures, processing, four canonical Example/YTI pairs, and close. Source prose is summarized rather than copied wholesale.
 
-QA
---
-Final QA: PASS
-- 10 HTML artifacts present: 5 student + 5 teacher.
-- Exactly one canonical WTC and four complete canonical Example → You Try It pairs per section.
-- Canonical Bank IDs, I-can metadata, pair IDs, question-structure IDs, and required representation routes are present once in each artifact.
-- Source-reading figures appear once in declared source order; bank-required representations remain distinct.
-- Opening/read/close sequence and exact skim directions pass structural audit.
-- Linked stylesheet contract passes: ../../css/base.css then ../../css/notes.css, with no third linked stylesheet.
-- Declared fix_notes_layout_contract.py checked all 10 files, normalized all 5 teacher copies, and passed the visible escaped-whitespace audit.
-- No Exit Check element is present.
-- Representative student/teacher render sanity checks completed with temporary local stand-ins for externally referenced deployment assets; no malformed document structure was observed.
-- A Bank identity audit caught and corrected Section 1.1 assembly paraphrases before delivery; final canonical prompts/answers/solutions use the pinned Bank wording.
+Teacher-copy repair caught during frozen QA
+-------------------------------------------
+The final vocabulary-emphasis refresh left structured teacher guides out of the refreshed teacher files because of serialization/regeneration order.
+Repair: regenerated each teacher copy from its finalized student structure and restored structured Answer / Teacher Moves / Student Moves / Listen For support after every canonical WTC, Example, and YTI.
+Result: 45 teacher-support blocks restored. Student-facing prompts, IDs, I-can identity, question structures, representations, answers, and solutions were not changed.
+
+Frozen QA
+---------
+PASS — 0 structural/content-contract issues after repair.
+- 10 HTML files checked by the declared Notes layout finalizer.
+- 0 files changed by the finalizer.
+- visible escaped-whitespace audit: PASS.
+- title/target, vocabulary sort, WTC, skim, close-reading box, I-can compartments, formula blocks, Stop and Discuss, Example/YTI task shells, close order, and CSS-link order: PASS.
+- exact canonical task IDs/pair IDs/I-can metadata: PASS.
+- source-image count/order and <=4in source-figure height: PASS.
+- student answer leakage: PASS.
+- teacher natural-flow behavior and 45 structured task-guide blocks: PASS.
+- teacher task prompts match student task prompts: PASS.
+- MathJax delimiter balance and selected-response choice counts: PASS.
+
+Material warnings
+-----------------
+- Bank uses the permitted legacy-compatible Notes route because explicit downstream_contracts.notes_route is absent.
+- Section 1.5 is Framework-declared synthesis, not direct textbook extraction.

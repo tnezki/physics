@@ -1,265 +1,165 @@
 {
-  "schema": "notes-build-handoff/1.0",
+  "schema": "notes-build-handoff/2.0",
   "course": "Physics",
   "unit": 1,
-  "status": "COMPLETE",
-  "pins": {
-    "system_repo": "tnezki/memories",
-    "system_commit": "3bed37dfd54ed793b4907fc1adf41e1e14f985e0",
-    "course_repo": "tnezki/physics",
-    "course_commit": "9293a63f754247d38aa3fc67b9af1905295ffaf3",
-    "textbook_repo": "tnezki/textbooks",
-    "textbook_commit": "647aad6b6c25e74dbd8162d8536782fb5030ae9b"
+  "workflow": "single_pass_notes",
+  "system": {
+    "repository": "tnezki/memories",
+    "commit": "090a209f0e35dc0a6a4797e6d9acfa7d2a5acfa8",
+    "pm": "pms_build/notes.txt"
   },
-  "authorities": {
-    "philosophy": "Curriculum_Philosophy.txt",
-    "runtime": "SYSTEM_RUNTIME_CONTRACT.txt",
-    "build_pm": "pms_build/notes.txt",
-    "shared_pm": "pms_shared/notes_base/PM.txt",
-    "framework_manifest": "frameworks/Physics/MANIFEST.json",
-    "framework": "frameworks/Physics/FRAMEWORK.txt",
-    "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
-    "notes_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/notes_course_profile.json",
-    "visual_contract": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/contracts/notes_visual_contract.json",
-    "bank_manifest": "banks/unit1/BANK_MANIFEST.json",
-    "bank_index": "banks/unit1/ITEM_INDEX.json"
+  "course_repository": {
+    "repository": "tnezki/physics",
+    "commit": "c42c56e5041542c49c4649eafde50fa1a4c99776"
   },
-  "bank_compatibility": {
+  "textbook_source": {
+    "repository": "tnezki/textbooks",
+    "commit": "647aad6b6c25e74dbd8162d8536782fb5030ae9b",
+    "root": "physics"
+  },
+  "bank": {
+    "manifest_path": "banks/unit1/BANK_MANIFEST.json",
+    "manifest_blob_sha": "839b1b1aa351e00f9cfd18a72d317136f06249c0",
+    "status": "COMPLETE",
     "ready_for_downstream": true,
-    "paths_notes": "notes/section_<section-id>.json",
-    "downstream_contracts_notes_route_present": false,
-    "mode": "legacy-compatible per current Notes PM because a valid paths.notes route exists"
+    "notes_route": "notes/section_<section-id>.json",
+    "notes_route_compatibility": "legacy-compatible",
+    "accepted_map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451"
   },
-  "sections": {
-    "1.1": {
+  "sections": [
+    {
+      "section_id": "1.1",
       "title": "Thinking Like a Physicist",
-      "source_mode": "textbook_partial_gap",
-      "source_note": "The declared section preserves the usable Chapter 1 source and explicitly ends at a source gap. The build condenses the available source, then uses a minimal Framework bridge to complete the current vocabulary distinctions without inventing missing textbook prose.",
-      "source_file": "physics/units/unit1/section_1_1.html",
-      "learning_target": "Students will explain how physics uses observation, measurement, evidence, models, and testable claims to understand the natural world.",
-      "i_cans": [
-        {
-          "id": "U1-S1-IC1",
-          "text": "I can distinguish between an observation, inference, hypothesis, law, and theory."
-        },
-        {
-          "id": "U1-S1-IC2",
-          "text": "I can explain why a claim must be testable to be scientific."
-        },
-        {
-          "id": "U1-S1-IC3",
-          "text": "I can use evidence from a short scenario to decide whether a physics explanation is supported and explain why formulas in physics are guides for thinking, not just tools for calculation."
-        }
-      ],
-      "canonical_bank_ids": [
-        "U1-S1-WTC-01",
-        "U1-S1-NOTES-EXAMPLE-P1",
-        "U1-S1-NOTES-YTI-P1",
-        "U1-S1-NOTES-EXAMPLE-P2",
-        "U1-S1-NOTES-YTI-P2",
-        "U1-S1-NOTES-EXAMPLE-P3",
-        "U1-S1-NOTES-YTI-P3",
-        "U1-S1-NOTES-EXAMPLE-P4",
-        "U1-S1-NOTES-YTI-P4"
-      ],
-      "source_image_ids": [
-        "PHYS-89A1BA54AF31",
-        "PHYS-E86B1795CA98",
-        "PHYS-CA9D2E2A037E",
-        "PHYS-8B222CED52FE",
-        "PHYS-9A96F2D9C368",
-        "PHYS-5DA25DB5B295"
-      ],
-      "student_artifact": "u1_1_notes/u1_1_notes.html",
-      "teacher_artifact": "u1_1_notes/u1_1_notes_teacher.html"
+      "source_mode": "textbook_direct",
+      "textbook_sections": "1.1, 1.2",
+      "canonical_wtc": "U1-S1-WTC-01",
+      "canonical_example_count": 4,
+      "canonical_yti_count": 4,
+      "source_image_count": 6,
+      "student_file": "u1_1_notes/u1_1_notes.html",
+      "teacher_file": "u1_1_notes/u1_1_notes_teacher.html",
+      "student_word_count_including_tasks_and_close": 1475
     },
-    "1.2": {
+    {
+      "section_id": "1.2",
       "title": "Forces and Newton’s First Law",
       "source_mode": "textbook_direct",
-      "source_note": "The declared textbook section contains the usable 2.3 and 2.6 source passages and seven instructional source figures.",
-      "source_file": "physics/units/unit1/section_1_2.html",
-      "learning_target": "Students will explain Newton’s First Law and use the idea of inertia to predict whether an object’s motion will stay the same or change.",
-      "i_cans": [
-        {
-          "id": "U1-S2-IC1",
-          "text": "I can state Newton’s First Law in everyday language."
-        },
-        {
-          "id": "U1-S2-IC2",
-          "text": "I can explain that inertia is a property of matter, not a force."
-        },
-        {
-          "id": "U1-S2-IC3",
-          "text": "I can distinguish between “no forces acting” and “no net force acting.” and identify support force, weight, and other common forces in simple situations."
-        }
-      ],
-      "canonical_bank_ids": [
-        "U1-S2-WTC-01",
-        "U1-S2-NOTES-EXAMPLE-P1",
-        "U1-S2-NOTES-YTI-P1",
-        "U1-S2-NOTES-EXAMPLE-P2",
-        "U1-S2-NOTES-YTI-P2",
-        "U1-S2-NOTES-EXAMPLE-P3",
-        "U1-S2-NOTES-YTI-P3",
-        "U1-S2-NOTES-EXAMPLE-P4",
-        "U1-S2-NOTES-YTI-P4"
-      ],
-      "source_image_ids": [
-        "PHYS-EBDB211E5BE1",
-        "PHYS-B74B7F006560",
-        "PHYS-54FB729D388D",
-        "PHYS-1748C659E939",
-        "PHYS-33C49CFE6A49",
-        "PHYS-5CA1F965D292",
-        "PHYS-7264DA39607E"
-      ],
-      "student_artifact": "u1_2_notes/u1_2_notes.html",
-      "teacher_artifact": "u1_2_notes/u1_2_notes_teacher.html"
+      "textbook_sections": "2.3, 2.6",
+      "canonical_wtc": "U1-S2-WTC-01",
+      "canonical_example_count": 4,
+      "canonical_yti_count": 4,
+      "source_image_count": 7,
+      "student_file": "u1_2_notes/u1_2_notes.html",
+      "teacher_file": "u1_2_notes/u1_2_notes_teacher.html",
+      "student_word_count_including_tasks_and_close": 1347
     },
-    "1.3": {
+    {
+      "section_id": "1.3",
       "title": "Net Force and Vectors",
       "source_mode": "textbook_direct",
-      "source_note": "The declared textbook section contains the usable 2.4 source passage and five instructional source figures; omitted source figures with no captured image are not recreated.",
-      "source_file": "physics/units/unit1/section_1_3.html",
-      "learning_target": "Students will represent forces as vectors and determine the direction and relative size of the net force in one-dimensional and simple two-dimensional situations.",
-      "i_cans": [
-        {
-          "id": "U1-S3-IC1",
-          "text": "I can explain why force is a vector quantity."
-        },
-        {
-          "id": "U1-S3-IC2",
-          "text": "I can combine forces acting in the same direction or opposite directions."
-        },
-        {
-          "id": "U1-S3-IC3",
-          "text": "I can identify the resultant force from a simple vector diagram and use arrow length and direction to compare force strength and direction."
-        }
-      ],
-      "canonical_bank_ids": [
-        "U1-S3-WTC-01",
-        "U1-S3-NOTES-EXAMPLE-P1",
-        "U1-S3-NOTES-YTI-P1",
-        "U1-S3-NOTES-EXAMPLE-P2",
-        "U1-S3-NOTES-YTI-P2",
-        "U1-S3-NOTES-EXAMPLE-P3",
-        "U1-S3-NOTES-YTI-P3",
-        "U1-S3-NOTES-EXAMPLE-P4",
-        "U1-S3-NOTES-YTI-P4"
-      ],
-      "source_image_ids": [
-        "PHYS-5C23E8EEAEA8",
-        "PHYS-ECA638594CC9",
-        "PHYS-2EC4ABF93A6F",
-        "PHYS-F1137C742CAA",
-        "PHYS-15C8D0E3F482"
-      ],
-      "student_artifact": "u1_3_notes/u1_3_notes.html",
-      "teacher_artifact": "u1_3_notes/u1_3_notes_teacher.html"
+      "textbook_sections": "2.4",
+      "canonical_wtc": "U1-S3-WTC-01",
+      "canonical_example_count": 4,
+      "canonical_yti_count": 4,
+      "source_image_count": 5,
+      "student_file": "u1_3_notes/u1_3_notes.html",
+      "teacher_file": "u1_3_notes/u1_3_notes_teacher.html",
+      "student_word_count_including_tasks_and_close": 1214
     },
-    "1.4": {
+    {
+      "section_id": "1.4",
       "title": "Equilibrium and Balanced Motion",
-      "source_mode": "textbook_partial_gap",
-      "source_note": "The declared source explicitly says subsection 2.7 was unavailable. The build preserves the available 2.5 equilibrium source and uses a minimal Framework bridge for static versus dynamic equilibrium and constant-velocity language.",
-      "source_file": "physics/units/unit1/section_1_4.html",
-      "learning_target": "Students will determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.",
-      "i_cans": [
-        {
-          "id": "U1-S4-IC1",
-          "text": "I can recognize static equilibrium and dynamic equilibrium."
-        },
-        {
-          "id": "U1-S4-IC2",
-          "text": "I can explain why an object at rest can still have forces acting on it."
-        },
-        {
-          "id": "U1-S4-IC3",
-          "text": "I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces."
-        }
-      ],
-      "canonical_bank_ids": [
-        "U1-S4-WTC-01",
-        "U1-S4-NOTES-EXAMPLE-P1",
-        "U1-S4-NOTES-YTI-P1",
-        "U1-S4-NOTES-EXAMPLE-P2",
-        "U1-S4-NOTES-YTI-P2",
-        "U1-S4-NOTES-EXAMPLE-P3",
-        "U1-S4-NOTES-YTI-P3",
-        "U1-S4-NOTES-EXAMPLE-P4",
-        "U1-S4-NOTES-YTI-P4"
-      ],
-      "source_image_ids": [
-        "PHYS-B6D46ACCB666",
-        "PHYS-B094215EA3FC",
-        "PHYS-052FC46E3600"
-      ],
-      "student_artifact": "u1_4_notes/u1_4_notes.html",
-      "teacher_artifact": "u1_4_notes/u1_4_notes_teacher.html"
+      "source_mode": "textbook_direct",
+      "textbook_sections": "2.5, 2.7",
+      "canonical_wtc": "U1-S4-WTC-01",
+      "canonical_example_count": 4,
+      "canonical_yti_count": 4,
+      "source_image_count": 3,
+      "student_file": "u1_4_notes/u1_4_notes.html",
+      "teacher_file": "u1_4_notes/u1_4_notes_teacher.html",
+      "student_word_count_including_tasks_and_close": 1306
     },
-    "1.5": {
+    {
+      "section_id": "1.5",
       "title": "Modeling Forces in the Real World",
       "source_mode": "framework_synthesis",
-      "source_note": "The declared textbook section explicitly identifies itself as a synthesis/application section with no corresponding textbook passage. The build therefore uses the Framework targets and the declared synthesis text, with no invented source figures.",
-      "source_file": "physics/units/unit1/section_1_5.html",
-      "learning_target": "Students will create and critique force models for real-world situations involving inertia, support force, net force, and equilibrium.",
-      "i_cans": [
-        {
-          "id": "U1-S5-IC1",
-          "text": "I can draw a force diagram for an object in a real-world situation."
-        },
-        {
-          "id": "U1-S5-IC2",
-          "text": "I can decide whether the forces are balanced or unbalanced."
-        },
-        {
-          "id": "U1-S5-IC3",
-          "text": "I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary."
-        }
-      ],
-      "canonical_bank_ids": [
-        "U1-S5-WTC-01",
-        "U1-S5-NOTES-EXAMPLE-P1",
-        "U1-S5-NOTES-YTI-P1",
-        "U1-S5-NOTES-EXAMPLE-P2",
-        "U1-S5-NOTES-YTI-P2",
-        "U1-S5-NOTES-EXAMPLE-P3",
-        "U1-S5-NOTES-YTI-P3",
-        "U1-S5-NOTES-EXAMPLE-P4",
-        "U1-S5-NOTES-YTI-P4"
-      ],
-      "source_image_ids": [],
-      "student_artifact": "u1_5_notes/u1_5_notes.html",
-      "teacher_artifact": "u1_5_notes/u1_5_notes_teacher.html"
+      "textbook_sections": "2.3–2.7 synthesis",
+      "canonical_wtc": "U1-S5-WTC-01",
+      "canonical_example_count": 4,
+      "canonical_yti_count": 4,
+      "source_image_count": 15,
+      "student_file": "u1_5_notes/u1_5_notes.html",
+      "teacher_file": "u1_5_notes/u1_5_notes_teacher.html",
+      "student_word_count_including_tasks_and_close": 1535
     }
-  },
+  ],
   "qa": {
     "status": "PASS",
-    "html_artifact_count": 10,
-    "student_artifact_count": 5,
-    "teacher_artifact_count": 5,
-    "canonical_bank_records_per_section": 9,
-    "canonical_pairs_per_section": 4,
-    "canonical_wtc_per_section": 1,
-    "stylesheet_contract": [
-      "../../css/base.css",
-      "../../css/notes.css"
-    ],
-    "layout_normalizer": "Tools/fix_notes_layout_contract.py",
-    "layout_normalizer_result": "Checked 10 HTML files; normalized 5 teacher copies; visible escaped-whitespace audit PASS.",
-    "structural_audit": "PASS — required opening/read/close order, WTC count, pair IDs, source-image order, metadata, and no exit-check element verified.",
-    "bank_identity_audit": "PASS — canonical IDs preserved; manual drift detected during assembly in Section 1.1 was corrected against the pinned Bank before packaging.",
-    "render_sanity": "PASS — representative student and teacher HTML were locally rendered with temporary stand-ins for externally referenced deployment assets; no malformed document structure was observed."
+    "frozen_structural_qa_issue_count": 0,
+    "declared_layout_finalizer": {
+      "path": "Tools/fix_notes_layout_contract.py",
+      "blob_sha": "22b1c448ff9d88224dd25a44c79e24b1288c683d",
+      "html_files_checked": 10,
+      "files_changed_on_final_audit": 0,
+      "visible_escaped_whitespace": "PASS"
+    },
+    "canonical_wtc_count": 5,
+    "canonical_example_count": 20,
+    "canonical_yti_count": 20,
+    "teacher_support_block_count": 45,
+    "student_source_spine_figure_count": 36,
+    "student_bank_representation_occurrence_count": 23
   },
-  "artifact_sha256": {
-    "u1_1_notes/u1_1_notes.html": "30ae9e5422eda348df133834878c85d58935cbc6b4a21ae05783ce925da0a315",
-    "u1_1_notes/u1_1_notes_teacher.html": "33ae3ae1fda2f46599c64922ff6148bd1b2c6e96b5f898250a75cca91ebf8216",
-    "u1_2_notes/u1_2_notes.html": "9be7fd5a47680849e9c8ad33ce86a70089d26702f746193c4c0fa449c1555076",
-    "u1_2_notes/u1_2_notes_teacher.html": "6ee948b7a579346666e93e996a7d5096f27f6d28fff17f5b20c7e3015d11ed5a",
-    "u1_3_notes/u1_3_notes.html": "c1eb73248ef8fd8b4c430c72e4d3ca5a1ccd6fe5ab3cd50440059f30ff6bd7be",
-    "u1_3_notes/u1_3_notes_teacher.html": "ead737ac07203177db839612494471b382605b5030d05cede4850e168a419c9a",
-    "u1_4_notes/u1_4_notes.html": "b3fb1b08b7c6d4af95364342f989fa8e7791fce3fab54c7e875a82992a77434a",
-    "u1_4_notes/u1_4_notes_teacher.html": "84e9aa37e01e88e2e9695d1f65f261726db74d27dab5d3440200ca8e3df14482",
-    "u1_5_notes/u1_5_notes.html": "04eb2f3571b9bbee109d82391a4fb0be61b8a0573be588149d8922b122fda82a",
-    "u1_5_notes/u1_5_notes_teacher.html": "08b5b02a6e629a38ebdc3de45a3791cc3caf9679d242c7c84f45b22cfc46e061"
-  }
+  "artifacts": [
+    {
+      "path": "u1_1_notes/u1_1_notes.html",
+      "sha256": "b8efe132864ab3cf1888e897ed96d98f4a884baff708f9d7fc4ee86278e2c200",
+      "bytes": 21708
+    },
+    {
+      "path": "u1_1_notes/u1_1_notes_teacher.html",
+      "sha256": "0af4860df7577201845f46a2a562c1b86ba83244d5ade1e7bb5f02e13f961d6b",
+      "bytes": 30055
+    },
+    {
+      "path": "u1_2_notes/u1_2_notes.html",
+      "sha256": "d6ffb22b32680409b171160cc104253f6eca305944582afd6550b43a2d5da3c5",
+      "bytes": 21389
+    },
+    {
+      "path": "u1_2_notes/u1_2_notes_teacher.html",
+      "sha256": "d1ffaeb4a53955c48141074f038ebe1133b6f26da4e6a70d63695d464c5818cc",
+      "bytes": 28906
+    },
+    {
+      "path": "u1_3_notes/u1_3_notes.html",
+      "sha256": "dd400e8725adafe17aa77146f5db87695a7d192958a8dc8b141a45d3e851c53d",
+      "bytes": 22132
+    },
+    {
+      "path": "u1_3_notes/u1_3_notes_teacher.html",
+      "sha256": "5a72d7569b9e30664b0f8e91f0e7726901fa73de8d798ca789cbd1d58b704349",
+      "bytes": 29726
+    },
+    {
+      "path": "u1_4_notes/u1_4_notes.html",
+      "sha256": "8414674220c94447b2248c165722571c09fafa4c79011418b2e3413f9f53ee4b",
+      "bytes": 20282
+    },
+    {
+      "path": "u1_4_notes/u1_4_notes_teacher.html",
+      "sha256": "bc91ea8ddd4cbfb9e8dc41c96c2204f9afbba8edde692654cc3d02231fd8fdd8",
+      "bytes": 27720
+    },
+    {
+      "path": "u1_5_notes/u1_5_notes.html",
+      "sha256": "9062bab14f16c68e7b6f1c3248092d9413c0d4e28d667fec11286b6f2228b633",
+      "bytes": 25298
+    },
+    {
+      "path": "u1_5_notes/u1_5_notes_teacher.html",
+      "sha256": "e925798508de27da46f0fc3c63132f07d944b785af7ab8717fe3e0a761ed42b7",
+      "bytes": 34091
+    }
+  ]
 }
