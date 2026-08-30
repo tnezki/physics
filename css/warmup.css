@@ -424,5 +424,37 @@ table.values th {
 
 /* Diamond Problems: intentionally 75% of the normal Warm-Up figure cap. */
 .warmup-figure img[src$="_diamond.png"] {
-    max-width: 2.55in;
+    max-width: 2in;
+}
+/* Warm-Up figure height cap — append to the end of physics/css/warmup.css
+   Notability/iPad safety: keep figures inside the fixed-height problem cards
+   while preserving aspect ratio and allowing students to zoom as needed. */
+
+.warmup-figure img,
+.problem-body div img {
+    max-height: 1.9in;
+    width: auto;
+    height: auto;
+}
+
+.warmup-figure svg,
+.problem-body svg {
+    max-width: 3.4in;
+    max-height: 1.9in;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.warmup-figure img,
+.problem-body img,
+.warmup-figure svg,
+.problem-body svg {
+    max-width: 3.4in;
+    max-height: 1.9in;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 7px auto;
 }
