@@ -1,461 +1,184 @@
 {
-  "schema": "physics-notes-image-use/1.0",
-  "course": "Physics",
+  "schema": "notes-image-use/1.0",
   "unit": 1,
-  "asset_policy": "Reference course-owned Physics Notes Image Toolkit assets in place; do not duplicate binaries in Notes section folders.",
+  "textbook_commit": "647aad6b6c25e74dbd8162d8536782fb5030ae9b",
   "sections": {
     "1.1": {
-      "source_images": [
+      "source_mode": "textbook_direct",
+      "source_file": "physics/units/unit1/section_1_1.html",
+      "textbook_source_images": [
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-89A1BA54AF31",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_1/u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_1/u1_1_from_ch_1_1_eratosthenes_earth_measurement.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-E86B1795CA98",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-E86B1795CA98__u1_1_from_ch_1_2_lunar_eclipse_earth_shadow.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_1/u1_1_from_ch_1_2_lunar_eclipse_earth_shadow.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_1/u1_1_from_ch_1_2_lunar_eclipse_earth_shadow.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-CA9D2E2A037E",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CA9D2E2A037E__u1_1_from_ch_1_3_sun_earth_moon_scale_diagram.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_1/u1_1_from_ch_1_3_sun_earth_moon_scale_diagram.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_1/u1_1_from_ch_1_3_sun_earth_moon_scale_diagram.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-8B222CED52FE",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-8B222CED52FE__u1_1_from_ch_1_4_coin_moon_distance_ratio.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_1/u1_1_from_ch_1_4_coin_moon_distance_ratio.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_1/u1_1_from_ch_1_4_coin_moon_distance_ratio.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-9A96F2D9C368",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9A96F2D9C368__u1_1_from_ch_1_5_half_moon_sun_distance_geometry.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_1/u1_1_from_ch_1_5_half_moon_sun_distance_geometry.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_1/u1_1_from_ch_1_5_half_moon_sun_distance_geometry.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-5DA25DB5B295",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-5DA25DB5B295__u1_1_from_ch_1_6_sun_diameter_measurement.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_1/u1_1_from_ch_1_6_sun_diameter_measurement.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_1/u1_1_from_ch_1_6_sun_diameter_measurement.png"
         }
       ],
-      "canonical_bank_image_occurrences": [
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S1-WTC-01",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        }
+      "textbook_image_count": 6,
+      "bank_representation_uses": [
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-89A1BA54AF31__u1_1_from_ch_1_1_eratosthenes_earth_measurement.png"
       ],
-      "all_rendered_occurrences": 7,
-      "source_order_verified": true
+      "unique_bank_representation_count": 1
     },
     "1.2": {
-      "source_images": [
+      "source_mode": "textbook_direct",
+      "source_file": "physics/units/unit1/section_1_2.html",
+      "textbook_source_images": [
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-EBDB211E5BE1",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-EBDB211E5BE1__u1_2_from_ch_2_4a_inertia_tablecloth_pull.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_2_from_ch_2_4a_inertia_tablecloth_pull.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_2_from_ch_2_4a_inertia_tablecloth_pull.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-B74B7F006560",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B74B7F006560__u1_2_from_ch_2_4b_inertia_coin_card_glass.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_2_from_ch_2_4b_inertia_coin_card_glass.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_2_from_ch_2_4b_inertia_coin_card_glass.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-54FB729D388D",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-54FB729D388D__u1_2_from_ch_2_4d_inertia_hammer_on_nail.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_2_from_ch_2_4d_inertia_hammer_on_nail.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_2_from_ch_2_4d_inertia_hammer_on_nail.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-1748C659E939",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-1748C659E939__u1_2_from_ch_2_4c_inertia_ball_between_strings.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_2_from_ch_2_4c_inertia_ball_between_strings.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_2_from_ch_2_4c_inertia_ball_between_strings.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-33C49CFE6A49",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-33C49CFE6A49__u1_4_from_ch_2_pp_equilibrium_scaffold_four_panel.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_4_from_ch_2_pp_equilibrium_scaffold_four_panel.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_4_from_ch_2_pp_equilibrium_scaffold_four_panel.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-5CA1F965D292",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-5CA1F965D292__u1_2_from_ch_2_15_support_force_book_and_spring.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_2_from_ch_2_15_support_force_book_and_spring.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_2_from_ch_2_15_support_force_book_and_spring.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-7264DA39607E",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-7264DA39607E__u1_2_from_ch_2_16_man_on_scale_support_force.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_2/u1_2_from_ch_2_16_man_on_scale_support_force.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_2/u1_2_from_ch_2_16_man_on_scale_support_force.png"
         }
       ],
-      "canonical_bank_image_occurrences": [
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S2-WTC-01",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S2-NOTES-EXAMPLE-P3",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S2-NOTES-YTI-P3",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S2-NOTES-EXAMPLE-P4",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S2-NOTES-YTI-P4",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        }
+      "textbook_image_count": 7,
+      "bank_representation_uses": [
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-6B7B9CF83824__unit1-book-table-forces.png"
       ],
-      "all_rendered_occurrences": 12,
-      "source_order_verified": true
+      "unique_bank_representation_count": 3
     },
     "1.3": {
-      "source_images": [
+      "source_mode": "textbook_direct",
+      "source_file": "physics/units/unit1/section_1_3.html",
+      "textbook_source_images": [
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-5C23E8EEAEA8",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-5C23E8EEAEA8__u1_2_from_ch_2_6_net_force_applied_forces_table.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_3/u1_2_from_ch_2_6_net_force_applied_forces_table.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_3/u1_2_from_ch_2_6_net_force_applied_forces_table.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-ECA638594CC9",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_3/u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_3/u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-2EC4ABF93A6F",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_3/u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_3/u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-F1137C742CAA",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-F1137C742CAA__u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_3/u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_3/u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-15C8D0E3F482",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_3/u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_3/u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png"
         }
       ],
-      "canonical_bank_image_occurrences": [
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-WTC-01",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-EXAMPLE-P1",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-YTI-P1",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-EXAMPLE-P2",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-YTI-P2",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-EXAMPLE-P3",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-YTI-P3",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-EXAMPLE-P4",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S3-NOTES-YTI-P4",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        }
+      "textbook_image_count": 5,
+      "bank_representation_uses": [
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png"
       ],
-      "all_rendered_occurrences": 14,
-      "source_order_verified": true
+      "unique_bank_representation_count": 4
     },
     "1.4": {
-      "source_images": [
+      "source_mode": "textbook_partial_gap",
+      "source_file": "physics/units/unit1/section_1_4.html",
+      "textbook_source_images": [
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-B6D46ACCB666",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_4/u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_4/u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-B094215EA3FC",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_4/u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_4/u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png"
         },
         {
-          "role": "source_spine",
-          "asset_id": "PHYS-052FC46E3600",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
-          "max_display_height": "4in",
-          "source_mode": "textbook_direct"
+          "path": "images_1_4/u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
+          "delivery": "reference_in_place",
+          "url": "https://raw.githubusercontent.com/tnezki/textbooks/647aad6b6c25e74dbd8162d8536782fb5030ae9b/physics/units/unit1/images_1_4/u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png"
         }
       ],
-      "canonical_bank_image_occurrences": [
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S4-WTC-01",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S4-NOTES-EXAMPLE-P2",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S4-NOTES-YTI-P2",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S4-NOTES-EXAMPLE-P4",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S4-NOTES-YTI-P4",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        }
+      "textbook_image_count": 3,
+      "bank_representation_uses": [
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DAC530DEBC21__unit1-scale-forces.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
       ],
-      "all_rendered_occurrences": 8,
-      "source_order_verified": true
+      "unique_bank_representation_count": 4
     },
     "1.5": {
-      "source_images": [
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-EBDB211E5BE1",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-EBDB211E5BE1__u1_2_from_ch_2_4a_inertia_tablecloth_pull.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-B74B7F006560",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B74B7F006560__u1_2_from_ch_2_4b_inertia_coin_card_glass.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-54FB729D388D",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-54FB729D388D__u1_2_from_ch_2_4d_inertia_hammer_on_nail.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-1748C659E939",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-1748C659E939__u1_2_from_ch_2_4c_inertia_ball_between_strings.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-33C49CFE6A49",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-33C49CFE6A49__u1_4_from_ch_2_pp_equilibrium_scaffold_four_panel.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-5CA1F965D292",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-5CA1F965D292__u1_2_from_ch_2_15_support_force_book_and_spring.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-7264DA39607E",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-7264DA39607E__u1_2_from_ch_2_16_man_on_scale_support_force.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-5C23E8EEAEA8",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-5C23E8EEAEA8__u1_2_from_ch_2_6_net_force_applied_forces_table.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-ECA638594CC9",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-ECA638594CC9__u1_3_from_ch_2_8_vector_addition_right_angle_components.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-2EC4ABF93A6F",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-2EC4ABF93A6F__u1_3_from_ch_2_9_perpendicular_vectors_45_degrees_sqrt2.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-F1137C742CAA",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-F1137C742CAA__u1_3_from_ch_2_10_resultant_30N_40N_50N_forces.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-15C8D0E3F482",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-15C8D0E3F482__u1_4_from_ch_2_11_girl_on_rings_three_positions_abc.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-B6D46ACCB666",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-B094215EA3FC",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B094215EA3FC__u1_4_from_ch_2_12_girl_on_rings_two_positions_tension.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        },
-        {
-          "role": "source_spine",
-          "asset_id": "PHYS-052FC46E3600",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-052FC46E3600__u1_4_from_ch_2_pp_scaffold_positions_500N_170N_0N.png",
-          "max_display_height": "4in",
-          "source_mode": "framework_synthesis"
-        }
+      "source_mode": "framework_synthesis",
+      "source_file": "physics/units/unit1/section_1_5.html",
+      "textbook_source_images": [],
+      "textbook_image_count": 0,
+      "bank_representation_uses": [
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
+        "../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png"
       ],
-      "canonical_bank_image_occurrences": [
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S5-WTC-01",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S5-NOTES-EXAMPLE-P2",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        },
-        {
-          "role": "canonical_bank_representation",
-          "item_id": "U1-S5-NOTES-YTI-P2",
-          "path": "resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png",
-          "max_display_height": "4in",
-          "answer_neutrality": "student-facing canonical representation; no teacher answer content appears in the student figure"
-        }
-      ],
-      "all_rendered_occurrences": 18,
-      "source_order_verified": true
+      "unique_bank_representation_count": 3
     }
   }
 }

@@ -1,165 +1,100 @@
 {
-  "schema": "notes-build-handoff/2.0",
+  "schema": "notes-build-handoff/1.0",
   "course": "Physics",
   "unit": 1,
-  "workflow": "single_pass_notes",
+  "status": "PASS",
   "system": {
-    "repository": "tnezki/memories",
-    "commit": "090a209f0e35dc0a6a4797e6d9acfa7d2a5acfa8",
-    "pm": "pms_build/notes.txt"
+    "repo": "tnezki/memories",
+    "commit": "6bfe75041fa5e4b6edacfa8f57447cecaa7d671d"
   },
-  "course_repository": {
-    "repository": "tnezki/physics",
-    "commit": "c42c56e5041542c49c4649eafde50fa1a4c99776"
+  "course_repo": {
+    "repo": "tnezki/physics",
+    "commit": "0bf79d7d99860f0e370a6d3b7f07dbf1433cabc0"
   },
-  "textbook_source": {
-    "repository": "tnezki/textbooks",
-    "commit": "647aad6b6c25e74dbd8162d8536782fb5030ae9b",
-    "root": "physics"
+  "textbook": {
+    "repo": "tnezki/textbooks",
+    "commit": "647aad6b6c25e74dbd8162d8536782fb5030ae9b"
   },
   "bank": {
-    "manifest_path": "banks/unit1/BANK_MANIFEST.json",
-    "manifest_blob_sha": "839b1b1aa351e00f9cfd18a72d317136f06249c0",
+    "manifest": "banks/unit1/BANK_MANIFEST.json",
     "status": "COMPLETE",
     "ready_for_downstream": true,
-    "notes_route": "notes/section_<section-id>.json",
-    "notes_route_compatibility": "legacy-compatible",
-    "accepted_map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451"
+    "notes_route": "banks/unit1/notes/section_<section-id>.json",
+    "downstream_route_handshake": "legacy-compatible (explicit downstream_contracts.notes_route absent; canonical paths.notes present)"
   },
-  "sections": [
-    {
-      "section_id": "1.1",
-      "title": "Thinking Like a Physicist",
+  "sections": {
+    "1.1": {
+      "student": "u1_1_notes/u1_1_notes.html",
+      "teacher": "u1_1_notes/u1_1_notes_teacher.html",
       "source_mode": "textbook_direct",
-      "textbook_sections": "1.1, 1.2",
-      "canonical_wtc": "U1-S1-WTC-01",
-      "canonical_example_count": 4,
-      "canonical_yti_count": 4,
-      "source_image_count": 6,
-      "student_file": "u1_1_notes/u1_1_notes.html",
-      "teacher_file": "u1_1_notes/u1_1_notes_teacher.html",
-      "student_word_count_including_tasks_and_close": 1475
+      "source_file": "physics/units/unit1/section_1_1.html",
+      "pacing_target": "38–42 min",
+      "canonical_wtc": 1,
+      "canonical_pairs": 4,
+      "source_images": 6
     },
-    {
-      "section_id": "1.2",
-      "title": "Forces and Newton’s First Law",
+    "1.2": {
+      "student": "u1_2_notes/u1_2_notes.html",
+      "teacher": "u1_2_notes/u1_2_notes_teacher.html",
       "source_mode": "textbook_direct",
-      "textbook_sections": "2.3, 2.6",
-      "canonical_wtc": "U1-S2-WTC-01",
-      "canonical_example_count": 4,
-      "canonical_yti_count": 4,
-      "source_image_count": 7,
-      "student_file": "u1_2_notes/u1_2_notes.html",
-      "teacher_file": "u1_2_notes/u1_2_notes_teacher.html",
-      "student_word_count_including_tasks_and_close": 1347
+      "source_file": "physics/units/unit1/section_1_2.html",
+      "pacing_target": "38–42 min",
+      "canonical_wtc": 1,
+      "canonical_pairs": 4,
+      "source_images": 7
     },
-    {
-      "section_id": "1.3",
-      "title": "Net Force and Vectors",
+    "1.3": {
+      "student": "u1_3_notes/u1_3_notes.html",
+      "teacher": "u1_3_notes/u1_3_notes_teacher.html",
       "source_mode": "textbook_direct",
-      "textbook_sections": "2.4",
-      "canonical_wtc": "U1-S3-WTC-01",
-      "canonical_example_count": 4,
-      "canonical_yti_count": 4,
-      "source_image_count": 5,
-      "student_file": "u1_3_notes/u1_3_notes.html",
-      "teacher_file": "u1_3_notes/u1_3_notes_teacher.html",
-      "student_word_count_including_tasks_and_close": 1214
+      "source_file": "physics/units/unit1/section_1_3.html",
+      "pacing_target": "36–40 min",
+      "canonical_wtc": 1,
+      "canonical_pairs": 4,
+      "source_images": 5
     },
-    {
-      "section_id": "1.4",
-      "title": "Equilibrium and Balanced Motion",
-      "source_mode": "textbook_direct",
-      "textbook_sections": "2.5, 2.7",
-      "canonical_wtc": "U1-S4-WTC-01",
-      "canonical_example_count": 4,
-      "canonical_yti_count": 4,
-      "source_image_count": 3,
-      "student_file": "u1_4_notes/u1_4_notes.html",
-      "teacher_file": "u1_4_notes/u1_4_notes_teacher.html",
-      "student_word_count_including_tasks_and_close": 1306
+    "1.4": {
+      "student": "u1_4_notes/u1_4_notes.html",
+      "teacher": "u1_4_notes/u1_4_notes_teacher.html",
+      "source_mode": "textbook_partial_gap",
+      "source_file": "physics/units/unit1/section_1_4.html",
+      "pacing_target": "35–40 min",
+      "canonical_wtc": 1,
+      "canonical_pairs": 4,
+      "source_images": 3
     },
-    {
-      "section_id": "1.5",
-      "title": "Modeling Forces in the Real World",
+    "1.5": {
+      "student": "u1_5_notes/u1_5_notes.html",
+      "teacher": "u1_5_notes/u1_5_notes_teacher.html",
       "source_mode": "framework_synthesis",
-      "textbook_sections": "2.3–2.7 synthesis",
-      "canonical_wtc": "U1-S5-WTC-01",
-      "canonical_example_count": 4,
-      "canonical_yti_count": 4,
-      "source_image_count": 15,
-      "student_file": "u1_5_notes/u1_5_notes.html",
-      "teacher_file": "u1_5_notes/u1_5_notes_teacher.html",
-      "student_word_count_including_tasks_and_close": 1535
+      "source_file": "physics/units/unit1/section_1_5.html",
+      "pacing_target": "34–38 min",
+      "canonical_wtc": 1,
+      "canonical_pairs": 4,
+      "source_images": 0
     }
+  },
+  "counts": {
+    "sections": 5,
+    "student_html": 5,
+    "teacher_html": 5,
+    "canonical_wtc": 5,
+    "canonical_example_yti_pairs": 20,
+    "canonical_examples": 20,
+    "canonical_yti": 20,
+    "textbook_source_images": 21
+  },
+  "warnings": [
+    "Section 1.4 has a documented textbook source gap for expected 2.7; the dynamic-equilibrium bridge is Framework-grounded.",
+    "Section 1.5 is a declared Framework synthesis/application source mode, not a direct textbook passage."
   ],
   "qa": {
-    "status": "PASS",
-    "frozen_structural_qa_issue_count": 0,
-    "declared_layout_finalizer": {
-      "path": "Tools/fix_notes_layout_contract.py",
-      "blob_sha": "22b1c448ff9d88224dd25a44c79e24b1288c683d",
-      "html_files_checked": 10,
-      "files_changed_on_final_audit": 0,
-      "visible_escaped_whitespace": "PASS"
-    },
-    "canonical_wtc_count": 5,
-    "canonical_example_count": 20,
-    "canonical_yti_count": 20,
-    "teacher_support_block_count": 45,
-    "student_source_spine_figure_count": 36,
-    "student_bank_representation_occurrence_count": 23
-  },
-  "artifacts": [
-    {
-      "path": "u1_1_notes/u1_1_notes.html",
-      "sha256": "b8efe132864ab3cf1888e897ed96d98f4a884baff708f9d7fc4ee86278e2c200",
-      "bytes": 21708
-    },
-    {
-      "path": "u1_1_notes/u1_1_notes_teacher.html",
-      "sha256": "0af4860df7577201845f46a2a562c1b86ba83244d5ade1e7bb5f02e13f961d6b",
-      "bytes": 30055
-    },
-    {
-      "path": "u1_2_notes/u1_2_notes.html",
-      "sha256": "d6ffb22b32680409b171160cc104253f6eca305944582afd6550b43a2d5da3c5",
-      "bytes": 21389
-    },
-    {
-      "path": "u1_2_notes/u1_2_notes_teacher.html",
-      "sha256": "d1ffaeb4a53955c48141074f038ebe1133b6f26da4e6a70d63695d464c5818cc",
-      "bytes": 28906
-    },
-    {
-      "path": "u1_3_notes/u1_3_notes.html",
-      "sha256": "dd400e8725adafe17aa77146f5db87695a7d192958a8dc8b141a45d3e851c53d",
-      "bytes": 22132
-    },
-    {
-      "path": "u1_3_notes/u1_3_notes_teacher.html",
-      "sha256": "5a72d7569b9e30664b0f8e91f0e7726901fa73de8d798ca789cbd1d58b704349",
-      "bytes": 29726
-    },
-    {
-      "path": "u1_4_notes/u1_4_notes.html",
-      "sha256": "8414674220c94447b2248c165722571c09fafa4c79011418b2e3413f9f53ee4b",
-      "bytes": 20282
-    },
-    {
-      "path": "u1_4_notes/u1_4_notes_teacher.html",
-      "sha256": "bc91ea8ddd4cbfb9e8dc41c96c2204f9afbba8edde692654cc3d02231fd8fdd8",
-      "bytes": 27720
-    },
-    {
-      "path": "u1_5_notes/u1_5_notes.html",
-      "sha256": "9062bab14f16c68e7b6f1c3248092d9413c0d4e28d667fec11286b6f2228b633",
-      "bytes": 25298
-    },
-    {
-      "path": "u1_5_notes/u1_5_notes_teacher.html",
-      "sha256": "e925798508de27da46f0fc3c63132f07d944b785af7ab8717fe3e0a761ed42b7",
-      "bytes": 34091
-    }
-  ]
+    "static_contract": "PASS",
+    "layout_repair_utility": "PASS (10 HTML checked; 0 fixed; escaped-whitespace PASS)",
+    "render_layout": "PASS (10 HTML rendered with representative deployed-shell CSS and local image placeholders)",
+    "student_teacher_parity": "PASS",
+    "answer_leakage": "PASS",
+    "source_image_presence": "PASS",
+    "canonical_anchor_counts": "PASS"
+  }
 }

@@ -1,59 +1,52 @@
 PHYSICS UNIT 1 NOTES BUILD REPORT
-=================================
 
-Build mode: single-pass Notes (no separate Notes Map)
-System pin: tnezki/memories@090a209f0e35dc0a6a4797e6d9acfa7d2a5acfa8
-Course pin: tnezki/physics@c42c56e5041542c49c4649eafde50fa1a4c99776
-Textbook pin resolved at job start: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
+STATUS: PASS
 
-Canonical Bank
---------------
-- banks/unit1/BANK_MANIFEST.json
-- status: COMPLETE
-- ready_for_downstream: true
-- Bank Notes route: notes/section_<section-id>.json
-- downstream_contracts.notes_route: absent
-- compatibility: PASS — legacy-compatible route accepted because BANK_MANIFEST.paths.notes is valid
-- ITEM_INDEX route/identity check: PASS
-- Unit Notes anchors used: 5 WTC, 20 Examples, 20 You Try Its
+Pinned snapshots
+- System: tnezki/memories@6bfe75041fa5e4b6edacfa8f57447cecaa7d671d
+- Course: tnezki/physics@0bf79d7d99860f0e370a6d3b7f07dbf1433cabc0
+- Textbook: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
 
-Section/source summary
-----------------------
-- 1.1 Thinking Like a Physicist: textbook_direct; declared source 1.1, 1.2; 6 source-spine figure references
-- 1.2 Forces and Newton’s First Law: textbook_direct; declared source 2.3, 2.6; 7 source-spine figure references
-- 1.3 Net Force and Vectors: textbook_direct; declared source 2.4; 5 source-spine figure references
-- 1.4 Equilibrium and Balanced Motion: textbook_direct; declared source 2.5, 2.7; 3 source-spine figure references
-- 1.5 Modeling Forces in the Real World: framework_synthesis; declared 2.3–2.7 synthesis; 15 source-spine figure references
+Bank
+- banks/unit1/BANK_MANIFEST.json: COMPLETE; ready_for_downstream=true; qa_status=PASS
+- Canonical Notes route: banks/unit1/notes/section_<section-id>.json
+- Compatibility: legacy-compatible because explicit downstream_contracts.notes_route is absent while BANK_MANIFEST.paths.notes is valid.
+- Canonical anchors used: 5 WTC, 20 Examples, 20 YTIs, 20 complete pairs.
 
-Every section contains exactly 1 canonical WTC and 4 complete canonical Example/YTI pairs.
-Source images are referenced in place from resources/Physics_Notes_Image_Toolkit/; no image binaries are duplicated in the package.
-Source-image order and the normal 4-inch display-height contract were verified.
+Resolved canonical Notes slices
+- banks/unit1/notes/section_1.1.json
+- banks/unit1/notes/section_1.2.json
+- banks/unit1/notes/section_1.3.json
+- banks/unit1/notes/section_1.4.json
+- banks/unit1/notes/section_1.5.json
 
-Pacing judgment
----------------
-Each student section is condensed for an approximately 30–40 minute Notes block including WTC annotation, skim, close reading, figures, processing, four canonical Example/YTI pairs, and close. Source prose is summarized rather than copied wholesale.
+Sections
+- 1.1 Thinking Like a Physicist: textbook_direct; source physics/units/unit1/section_1_1.html; source images 6; target pacing 38–42 min.
+- 1.2 Forces and Newton’s First Law: textbook_direct; source physics/units/unit1/section_1_2.html; source images 7; target pacing 38–42 min.
+- 1.3 Net Force and Vectors: textbook_direct; source physics/units/unit1/section_1_3.html; source images 5; target pacing 36–40 min.
+- 1.4 Equilibrium and Balanced Motion: textbook_partial_gap; source physics/units/unit1/section_1_4.html; source images 3; target pacing 35–40 min.
+- 1.5 Modeling Forces in the Real World: framework_synthesis; source physics/units/unit1/section_1_5.html; source images 0; target pacing 34–38 min.
 
-Teacher-copy repair caught during frozen QA
--------------------------------------------
-The final vocabulary-emphasis refresh left structured teacher guides out of the refreshed teacher files because of serialization/regeneration order.
-Repair: regenerated each teacher copy from its finalized student structure and restored structured Answer / Teacher Moves / Student Moves / Listen For support after every canonical WTC, Example, and YTI.
-Result: 45 teacher-support blocks restored. Student-facing prompts, IDs, I-can identity, question structures, representations, answers, and solutions were not changed.
+Image use
+- Textbook instructional source images referenced in source order: 21.
+- Bank/toolkit representations are referenced in place; toolkit binaries are not duplicated in the handoff ZIP.
+- Textbook figures are referenced by commit-pinned raw source URLs and recorded in IMAGE_USE_MANIFEST.json.
 
-Frozen QA
----------
-PASS — 0 structural/content-contract issues after repair.
-- 10 HTML files checked by the declared Notes layout finalizer.
-- 0 files changed by the finalizer.
-- visible escaped-whitespace audit: PASS.
-- title/target, vocabulary sort, WTC, skim, close-reading box, I-can compartments, formula blocks, Stop and Discuss, Example/YTI task shells, close order, and CSS-link order: PASS.
-- exact canonical task IDs/pair IDs/I-can metadata: PASS.
-- source-image count/order and <=4in source-figure height: PASS.
-- student answer leakage: PASS.
-- teacher natural-flow behavior and 45 structured task-guide blocks: PASS.
-- teacher task prompts match student task prompts: PASS.
-- MathJax delimiter balance and selected-response choice counts: PASS.
+Source-mode warnings
+- 1.4: expected textbook 2.7 source is absent in the declared source; dynamic-equilibrium/constant-velocity bridge is minimum Framework-grounded synthesis.
+- 1.5: declared framework_synthesis section; no fake textbook continuation was written.
 
-Material warnings
------------------
-- Bank uses the permitted legacy-compatible Notes route because explicit downstream_contracts.notes_route is absent.
-- Section 1.5 is Framework-declared synthesis, not direct textbook extraction.
+Authoring contract
+- Exact Learning Targets and exact Framework I-can statements retained.
+- Every exact I-can heads at least one major reading block.
+- Established Notes shells used for title, objectives, vocabulary preview, WTC, skim, close-reading directions, I-can reading, Stop and Discuss, Formula/Relationship, Example/YTI, and workspaces.
+- CSS references are exactly ../../css/base.css then ../../css/notes.css.
+- Teacher copies use the same sequence and release fixed workspace height for browser-only natural flow.
+- No Notes Map artifact was generated.
+
+Final QA
+- fix_notes_layout_contract.py: PASS; 10 HTML checked; 0 files changed; visible escaped-whitespace audit PASS.
+- Static contract QA: PASS across all 10 HTML files.
+- Render/layout QA: PASS across all 10 HTML files using the deployed shell geometry with local image placeholders; no invalid high-risk layout fragments detected.
+- Student/teacher parity, canonical anchor counts, exact I-can heading IDs, source-image presence, CSS-link order, and student answer-leakage checks: PASS.
+- Repairs beyond ordinary first authoring: none; NOTES_CHANGE_LOG.txt was therefore not created.
