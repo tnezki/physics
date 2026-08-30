@@ -1,0 +1,34 @@
+{
+  "schema": "physics-bank-v2-stage-3a-build-provenance/blocked-1.0",
+  "course": "Physics",
+  "unit": 2,
+  "requested_workflow": "bank_stage_3a",
+  "requested_job_label": "3b — Build Bank Instructional Core",
+  "result": "BLOCKED_PRE_AUTHORING",
+  "fail_closed": true,
+  "request_package": {
+    "filename": "physics_u2_bank_stage_3a_REQUEST.zip",
+    "sha256": "f54e234ad886a5a789d26399892a338a482cc34b731e500349484e67a9455ad7"
+  },
+  "pins": {
+    "system": "tnezki/memories@3bea450233538d8ea830192c06d3d695b043bbb1",
+    "course": "tnezki/physics@ac1c9a919920d6ed900eb2a3986f1dd8af098bcc"
+  },
+  "accepted_map": {
+    "path": "banks/unit2_bank_map/MAP_MANIFEST.json",
+    "map_fingerprint": "bfbd913fd2246473df4e96040d284ea1eecb7de37ad08ac8ad88e0a80dcdf3c8",
+    "observed_nested_statuses": {
+      "question_design.status": "PASS",
+      "qa.status": "PASS"
+    },
+    "observed_top_level_status": null
+  },
+  "validator_contract": {
+    "path": "Tools/qa_bank_3a_contract.py",
+    "required_condition": "MAP_MANIFEST.status == 'PASS'",
+    "failure_code": "MAP_MANIFEST_NOT_PASS"
+  },
+  "authored_record_count": 0,
+  "planned_stage_3a_record_count": 135,
+  "reason": "The required validator rejects the pinned accepted map before authored content can earn PASS. Altering the pinned map or validator would violate the request and runtime pinning/fail-closed contract."
+}

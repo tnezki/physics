@@ -1,0 +1,45 @@
+PHYSICS UNIT 2 — BANK STAGE 3A REPORT
+STATUS: BLOCKED_PRE_AUTHORING (FAIL CLOSED)
+
+REQUEST
+- Workflow: bank_stage_3a
+- Job: 3b — Build Bank Instructional Core
+- System pin: tnezki/memories@3bea450233538d8ea830192c06d3d695b043bbb1
+- Course pin: tnezki/physics@ac1c9a919920d6ed900eb2a3986f1dd8af098bcc
+- Request package SHA-256: f54e234ad886a5a789d26399892a338a482cc34b731e500349484e67a9455ad7
+
+ACCEPTED MAP IDENTITY
+- Path: banks/unit2_bank_map/MAP_MANIFEST.json
+- Fingerprint: bfbd913fd2246473df4e96040d284ea1eecb7de37ad08ac8ad88e0a80dcdf3c8
+- Planned Stage 3A exact-content records: 135
+- MAP_MANIFEST question_design.status: PASS
+- MAP_MANIFEST qa.status: PASS
+- MAP_MANIFEST top-level status: MISSING
+
+HARD BLOCKER
+The registered validator at Tools/qa_bank_3a_contract.py requires the top-level
+MAP_MANIFEST field `status` to equal `PASS`. The pinned accepted Unit 2 map does
+not contain that top-level field. Therefore the validator's manifest check will
+emit MAP_MANIFEST_NOT_PASS and return a nonzero result regardless of the quality
+of authored Stage 3A content.
+
+FAIL-CLOSED ACTION
+No instructional-core records were authored and Stage 3A was not marked complete.
+Changing the pinned MAP_MANIFEST or changing the pinned validator locally would
+violate the request's exact-commit and no-substitution rules.
+
+REMEDIATION
+At a new canonical commit, make the map/validator contract consistent, for example
+by either:
+1. adding a canonical top-level `status: PASS` to the accepted MAP_MANIFEST after
+   its QA has passed, or
+2. updating the registered Stage 3A validator to recognize the accepted nested
+   PASS status used by the map manifest.
+Then issue a new Stage 3A request pinned to the corrected canonical commit(s).
+
+HANDOFF CONTENTS
+- BANK_MANIFEST.json — BUILDING, ready=false, 3A blocked
+- ITEM_INDEX.json — empty by design; no invalid authored records
+- provenance/3a_build.json — pinned provenance and blocker
+- provenance/3a_contract_qa.json — deterministic blocker record
+- provenance/3a_report.txt — this report
