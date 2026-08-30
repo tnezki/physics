@@ -1,0 +1,22 @@
+{
+  "schema": "physics-bank-v2-stage-3b-build-provenance/blocked-1.0",
+  "course": "Physics",
+  "unit": 2,
+  "requested_workflow": "bank_stage_3b",
+  "requested_job_label": "3c — Build Bank Practice Families",
+  "result": "BLOCKED_PRE_AUTHORING",
+  "fail_closed": true,
+  "request_package": {
+    "filename": "physics_u2_bank_stage_3b_REQUEST.zip",
+    "sha256": "d4614544b913d7ac4ee74164af3b226cbe4b5bbf65c5d6a575cafc746598fd51"
+  },
+  "pins": {
+    "system": "tnezki/memories@3bea450233538d8ea830192c06d3d695b043bbb1",
+    "course": "tnezki/physics@79a3006d17b74312c36717c2a19dd26b7ad75797"
+  },
+  "pm": "pms_build/bank_practice_families.txt",
+  "entry_precheck": "provenance/3b_entry_precheck.json",
+  "practice_records_authored": 0,
+  "bank_content_mutated": false,
+  "reason": "Stage 3B requires Stage 3A complete and a passing 3A deterministic contract before any Practice family is authored. The exact pinned course commit is a fail-closed Stage 3A snapshot with zero authored instructional-core records, so Stage 3B authoring is prohibited."
+}
