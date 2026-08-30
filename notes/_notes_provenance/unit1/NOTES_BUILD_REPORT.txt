@@ -1,0 +1,44 @@
+Physics Unit 1 Notes Build Report
+===============================
+Status: COMPLETE — FINAL QA PASS
+System pin: tnezki/memories@3bed37dfd54ed793b4907fc1adf41e1e14f985e0
+Course pin: tnezki/physics@9293a63f754247d38aa3fc67b9af1905295ffaf3
+Textbook pin: tnezki/textbooks@647aad6b6c25e74dbd8162d8536782fb5030ae9b
+
+Build scope
+-----------
+Five student Notes artifacts and five matching teacher copies were authored for Sections 1.1–1.5. Each section contains the exact current Learning Target and I-can statements, one canonical WTC, all four complete canonical Example → You Try It pairs, source-grounded reading, Vocabulary Preview, skim, one close-reading directions block, vocabulary definitions, Summary, What I Figured Out, and Common Mistakes.
+
+Source modes
+------------
+1.1 textbook_partial_gap — declared Chapter 1 source ends at an explicit gap; available source preserved and a minimal Framework bridge completes required distinctions.
+1.2 textbook_direct — declared 2.3/2.6 source used.
+1.3 textbook_direct — declared 2.4 source used; omitted textbook figures without captured assets were not recreated.
+1.4 textbook_partial_gap — declared source explicitly says 2.7 unavailable; 2.5 preserved and a minimal Framework bridge supplies static/dynamic equilibrium language.
+1.5 framework_synthesis — declared source explicitly identifies the section as synthesis/application with no corresponding textbook passage.
+
+Bank routing
+------------
+BANK_MANIFEST is COMPLETE and ready_for_downstream=true. The explicit downstream_contracts.notes_route handshake is absent, but BANK_MANIFEST.paths.notes is valid. The current Notes PM therefore permits this build as legacy-compatible.
+
+Visuals
+-------
+All usable instructional source figures available in each declared source file are referenced from the canonical Physics Notes Image Toolkit in source order. Bank-required figures are rendered from their canonical toolkit routes. Student-constructed force-diagram evidence jobs use blank answer surfaces and do not pre-render solution arrows.
+
+CSS / structure
+---------------
+Artifacts link exactly ../../css/base.css followed by ../../css/notes.css. No third linked stylesheet is used. Student workspaces use deployed Notes classes. Teacher copies retain the same sequence and are normalized to natural-flow workspace behavior by the declared fix_notes_layout_contract tool.
+
+QA
+--
+Final QA: PASS
+- 10 HTML artifacts present: 5 student + 5 teacher.
+- Exactly one canonical WTC and four complete canonical Example → You Try It pairs per section.
+- Canonical Bank IDs, I-can metadata, pair IDs, question-structure IDs, and required representation routes are present once in each artifact.
+- Source-reading figures appear once in declared source order; bank-required representations remain distinct.
+- Opening/read/close sequence and exact skim directions pass structural audit.
+- Linked stylesheet contract passes: ../../css/base.css then ../../css/notes.css, with no third linked stylesheet.
+- Declared fix_notes_layout_contract.py checked all 10 files, normalized all 5 teacher copies, and passed the visible escaped-whitespace audit.
+- No Exit Check element is present.
+- Representative student/teacher render sanity checks completed with temporary local stand-ins for externally referenced deployment assets; no malformed document structure was observed.
+- A Bank identity audit caught and corrected Section 1.1 assembly paraphrases before delivery; final canonical prompts/answers/solutions use the pinned Bank wording.

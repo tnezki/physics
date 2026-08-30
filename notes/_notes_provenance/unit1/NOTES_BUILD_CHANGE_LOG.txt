@@ -1,0 +1,12 @@
+Physics Unit 1 Notes Build Change Log
+=====================================
+
+Final pre-delivery repairs
+--------------------------
+1. Corrected Section 1.1 WTC answer/solution and Example/YTI P2–P4 wording to the exact canonical Bank-v2 records at tnezki/physics@9293a63f754247d38aa3fc67b9af1905295ffaf3. No Bank IDs, pair IDs, I-can mappings, question-structure IDs, or representation routes changed.
+2. Added explicit WTC destination metadata (`data-destination="WTC"`) without altering canonical instructional content.
+3. Standardized the close heading to `Vocabulary Definitions` and removed teacher-guidance wording that could be mistaken for an Exit Check reference.
+4. Ran the declared `Tools/fix_notes_layout_contract.py`; it normalized the five teacher copies to natural-flow workspace behavior and passed the visible escaped-whitespace audit.
+5. Re-ran structural QA after normalization; all checks passed.
+
+No source substitutions, Bank re-authoring, or extra curriculum artifacts were introduced.
