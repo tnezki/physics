@@ -1,0 +1,2705 @@
+{
+  "schema": "physics-bank-v2-practice/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "section": "2.3",
+  "records": [
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_CLAIM_EVALUATION",
+      "slot_id": "PRACTICE-U2_S3_IC1_CLAIM_EVALUATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_CLAIM_EVALUATION",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_CLAIM_EVALUATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 0 m/s to 2 m/s in 2 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 0 m/s to 2 m/s in 2 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "1 m/s²",
+      "solution_text": "a = Δv/Δt = (2 − 0) m/s / 2 s = 1 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (2 − 0) m/s / 2 s = 1 m/s².</p>",
+      "family_id": "U2_S3_IC1_CLAIM_EVALUATION",
+      "parallel_family": "U2_S3_IC1_CLAIM_EVALUATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "foundational",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_SCENARIO_CLASSIFICATION",
+      "slot_id": "PRACTICE-U2_S3_IC1_SCENARIO_CLASSIFICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_SCENARIO_CLASSIFICATION",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_SCENARIO_CLASSIFICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 1 m/s to 7 m/s in 3 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 1 m/s to 7 m/s in 3 s. Calculate its average acceleration.</p><ol class=\"choices\" type=\"A\"><li>6 m/s²</li><li>18 m/s²</li><li>2.5 m/s²</li><li>2 m/s²</li></ol>",
+      "choices": [
+        "6 m/s²",
+        "18 m/s²",
+        "2.5 m/s²",
+        "2 m/s²"
+      ],
+      "correct_choice": 3,
+      "answer": "2 m/s²",
+      "solution_text": "a = Δv/Δt = (7 − 1) m/s / 3 s = 2 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (7 − 1) m/s / 3 s = 2 m/s².</p>",
+      "family_id": "U2_S3_IC1_SCENARIO_CLASSIFICATION",
+      "parallel_family": "U2_S3_IC1_SCENARIO_CLASSIFICATION",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_COMPARE_CASES",
+      "slot_id": "PRACTICE-U2_S3_IC1_COMPARE_CASES",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_COMPARE_CASES",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_COMPARE_CASES",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 2 m/s to 14 m/s in 4 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 2 m/s to 14 m/s in 4 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "3 m/s²",
+      "solution_text": "a = Δv/Δt = (14 − 2) m/s / 4 s = 3 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (14 − 2) m/s / 4 s = 3 m/s².</p>",
+      "family_id": "U2_S3_IC1_COMPARE_CASES",
+      "parallel_family": "U2_S3_IC1_COMPARE_CASES",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_ERROR_CRITIQUE",
+      "slot_id": "PRACTICE-U2_S3_IC1_ERROR_CRITIQUE",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_ERROR_CRITIQUE",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_ERROR_CRITIQUE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 3 m/s to 23 m/s in 5 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 3 m/s to 23 m/s in 5 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "4 m/s²",
+      "solution_text": "a = Δv/Δt = (23 − 3) m/s / 5 s = 4 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (23 − 3) m/s / 5 s = 4 m/s².</p>",
+      "family_id": "U2_S3_IC1_ERROR_CRITIQUE",
+      "parallel_family": "U2_S3_IC1_ERROR_CRITIQUE",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_REPRESENTATION_MATCH",
+      "slot_id": "PRACTICE-U2_S3_IC1_REPRESENTATION_MATCH",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_REPRESENTATION_MATCH",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_REPRESENTATION_MATCH",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 4 m/s to 10 m/s in 6 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 4 m/s to 10 m/s in 6 s. Calculate its average acceleration.</p><ol class=\"choices\" type=\"A\"><li>1 m/s²</li><li>6 m/s²</li><li>36 m/s²</li><li>1.5 m/s²</li></ol>",
+      "choices": [
+        "1 m/s²",
+        "6 m/s²",
+        "36 m/s²",
+        "1.5 m/s²"
+      ],
+      "correct_choice": 0,
+      "answer": "1 m/s²",
+      "solution_text": "a = Δv/Δt = (10 − 4) m/s / 6 s = 1 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (10 − 4) m/s / 6 s = 1 m/s².</p>",
+      "family_id": "U2_S3_IC1_REPRESENTATION_MATCH",
+      "parallel_family": "U2_S3_IC1_REPRESENTATION_MATCH",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_DATA_INTERPRET",
+      "slot_id": "PRACTICE-U2_S3_IC1_DATA_INTERPRET",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "table",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_DATA_INTERPRET",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "table",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "semantic_html_table"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_DATA_INTERPRET",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 0 m/s to 4 m/s in 2 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 0 m/s to 4 m/s in 2 s. Calculate its average acceleration.</p><table class=\"values\"><thead><tr><th>Time</th><th>Velocity</th></tr></thead><tbody><tr><td>0 s</td><td>0 m/s</td></tr><tr><td>2 s</td><td>4 m/s</td></tr></tbody></table>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "2 m/s²",
+      "solution_text": "a = Δv/Δt = (4 − 0) m/s / 2 s = 2 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (4 − 0) m/s / 2 s = 2 m/s².</p>",
+      "table": {
+        "headers": [
+          "Time",
+          "Velocity"
+        ],
+        "rows": [
+          [
+            "0 s",
+            "0 m/s"
+          ],
+          [
+            "2 s",
+            "4 m/s"
+          ]
+        ]
+      },
+      "family_id": "U2_S3_IC1_DATA_INTERPRET",
+      "parallel_family": "U2_S3_IC1_DATA_INTERPRET",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_CORE_APPLICATION",
+      "slot_id": "PRACTICE-U2_S3_IC1_CORE_APPLICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_CORE_APPLICATION",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_CORE_APPLICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 1 m/s to 10 m/s in 3 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 1 m/s to 10 m/s in 3 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "3 m/s²",
+      "solution_text": "a = Δv/Δt = (10 − 1) m/s / 3 s = 3 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (10 − 1) m/s / 3 s = 3 m/s².</p>",
+      "family_id": "U2_S3_IC1_CORE_APPLICATION",
+      "parallel_family": "U2_S3_IC1_CORE_APPLICATION",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_TRANSFER_APPLICATION",
+      "slot_id": "PRACTICE-U2_S3_IC1_TRANSFER_APPLICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_TRANSFER_APPLICATION",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_TRANSFER_APPLICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 2 m/s to 18 m/s in 4 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 2 m/s to 18 m/s in 4 s. Calculate its average acceleration.</p><ol class=\"choices\" type=\"A\"><li>4.5 m/s²</li><li>4 m/s²</li><li>16 m/s²</li><li>64 m/s²</li></ol>",
+      "choices": [
+        "4.5 m/s²",
+        "4 m/s²",
+        "16 m/s²",
+        "64 m/s²"
+      ],
+      "correct_choice": 1,
+      "answer": "4 m/s²",
+      "solution_text": "a = Δv/Δt = (18 − 2) m/s / 4 s = 4 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (18 − 2) m/s / 4 s = 4 m/s².</p>",
+      "family_id": "U2_S3_IC1_TRANSFER_APPLICATION",
+      "parallel_family": "U2_S3_IC1_TRANSFER_APPLICATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_MULTISTEP_REASONING",
+      "slot_id": "PRACTICE-U2_S3_IC1_MULTISTEP_REASONING",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "table",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_MULTISTEP_REASONING",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "table",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "semantic_html_table"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_MULTISTEP_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 3 m/s to 8 m/s in 5 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 3 m/s to 8 m/s in 5 s. Calculate its average acceleration.</p><table class=\"values\"><thead><tr><th>Time</th><th>Velocity</th></tr></thead><tbody><tr><td>0 s</td><td>3 m/s</td></tr><tr><td>5 s</td><td>8 m/s</td></tr></tbody></table>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "1 m/s²",
+      "solution_text": "a = Δv/Δt = (8 − 3) m/s / 5 s = 1 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (8 − 3) m/s / 5 s = 1 m/s².</p>",
+      "table": {
+        "headers": [
+          "Time",
+          "Velocity"
+        ],
+        "rows": [
+          [
+            "0 s",
+            "3 m/s"
+          ],
+          [
+            "5 s",
+            "8 m/s"
+          ]
+        ]
+      },
+      "family_id": "U2_S3_IC1_MULTISTEP_REASONING",
+      "parallel_family": "U2_S3_IC1_MULTISTEP_REASONING",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "stretch",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC1_ALTERNATE_EVIDENCE",
+      "slot_id": "PRACTICE-U2_S3_IC1_ALTERNATE_EVIDENCE",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC1_ALTERNATE_EVIDENCE",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC1_ALTERNATE_EVIDENCE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 4 m/s to 16 m/s in 6 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 4 m/s to 16 m/s in 6 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "2 m/s²",
+      "solution_text": "a = Δv/Δt = (16 − 4) m/s / 6 s = 2 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (16 − 4) m/s / 6 s = 2 m/s².</p>",
+      "family_id": "U2_S3_IC1_ALTERNATE_EVIDENCE",
+      "parallel_family": "U2_S3_IC1_ALTERNATE_EVIDENCE",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC1",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_CLAIM_EVALUATION",
+      "slot_id": "PRACTICE-U2_S3_IC2_CLAIM_EVALUATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_CLAIM_EVALUATION",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_CLAIM_EVALUATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_CLAIM_EVALUATION",
+      "parallel_family": "U2_S3_IC2_CLAIM_EVALUATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "foundational",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_SCENARIO_CLASSIFICATION",
+      "slot_id": "PRACTICE-U2_S3_IC2_SCENARIO_CLASSIFICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_SCENARIO_CLASSIFICATION",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_SCENARIO_CLASSIFICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p><ol class=\"choices\" type=\"A\"><li>Velocity and acceleration are both east because the skateboarder is moving east.</li><li>Velocity is west and acceleration is east because slowing reverses velocity instantly.</li><li>Acceleration is zero whenever speed decreases.</li><li>Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.</li></ol>",
+      "choices": [
+        "Velocity and acceleration are both east because the skateboarder is moving east.",
+        "Velocity is west and acceleration is east because slowing reverses velocity instantly.",
+        "Acceleration is zero whenever speed decreases.",
+        "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed."
+      ],
+      "correct_choice": 3,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_SCENARIO_CLASSIFICATION",
+      "parallel_family": "U2_S3_IC2_SCENARIO_CLASSIFICATION",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_COMPARE_CASES",
+      "slot_id": "PRACTICE-U2_S3_IC2_COMPARE_CASES",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_COMPARE_CASES",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_COMPARE_CASES",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_COMPARE_CASES",
+      "parallel_family": "U2_S3_IC2_COMPARE_CASES",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_ERROR_CRITIQUE",
+      "slot_id": "PRACTICE-U2_S3_IC2_ERROR_CRITIQUE",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_ERROR_CRITIQUE",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_ERROR_CRITIQUE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_ERROR_CRITIQUE",
+      "parallel_family": "U2_S3_IC2_ERROR_CRITIQUE",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_REPRESENTATION_MATCH",
+      "slot_id": "PRACTICE-U2_S3_IC2_REPRESENTATION_MATCH",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_REPRESENTATION_MATCH",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_REPRESENTATION_MATCH",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p><ol class=\"choices\" type=\"A\"><li>Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.</li><li>Velocity and acceleration are both east because the skateboarder is moving east.</li><li>Velocity is west and acceleration is east because slowing reverses velocity instantly.</li><li>Acceleration is zero whenever speed decreases.</li></ol>",
+      "choices": [
+        "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+        "Velocity and acceleration are both east because the skateboarder is moving east.",
+        "Velocity is west and acceleration is east because slowing reverses velocity instantly.",
+        "Acceleration is zero whenever speed decreases."
+      ],
+      "correct_choice": 0,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_REPRESENTATION_MATCH",
+      "parallel_family": "U2_S3_IC2_REPRESENTATION_MATCH",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_DATA_INTERPRET",
+      "slot_id": "PRACTICE-U2_S3_IC2_DATA_INTERPRET",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_DATA_INTERPRET",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_DATA_INTERPRET",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_DATA_INTERPRET",
+      "parallel_family": "U2_S3_IC2_DATA_INTERPRET",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_CORE_APPLICATION",
+      "slot_id": "PRACTICE-U2_S3_IC2_CORE_APPLICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_CORE_APPLICATION",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_CORE_APPLICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_CORE_APPLICATION",
+      "parallel_family": "U2_S3_IC2_CORE_APPLICATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_TRANSFER_APPLICATION",
+      "slot_id": "PRACTICE-U2_S3_IC2_TRANSFER_APPLICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_TRANSFER_APPLICATION",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_TRANSFER_APPLICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p><ol class=\"choices\" type=\"A\"><li>Acceleration is zero whenever speed decreases.</li><li>Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.</li><li>Velocity and acceleration are both east because the skateboarder is moving east.</li><li>Velocity is west and acceleration is east because slowing reverses velocity instantly.</li></ol>",
+      "choices": [
+        "Acceleration is zero whenever speed decreases.",
+        "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+        "Velocity and acceleration are both east because the skateboarder is moving east.",
+        "Velocity is west and acceleration is east because slowing reverses velocity instantly."
+      ],
+      "correct_choice": 1,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_TRANSFER_APPLICATION",
+      "parallel_family": "U2_S3_IC2_TRANSFER_APPLICATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_MULTISTEP_REASONING",
+      "slot_id": "PRACTICE-U2_S3_IC2_MULTISTEP_REASONING",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_MULTISTEP_REASONING",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_MULTISTEP_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_MULTISTEP_REASONING",
+      "parallel_family": "U2_S3_IC2_MULTISTEP_REASONING",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "stretch",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC2_ALTERNATE_EVIDENCE",
+      "slot_id": "PRACTICE-U2_S3_IC2_ALTERNATE_EVIDENCE",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC2_ALTERNATE_EVIDENCE",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC2_ALTERNATE_EVIDENCE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_ALTERNATE_EVIDENCE",
+      "parallel_family": "U2_S3_IC2_ALTERNATE_EVIDENCE",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC2",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_CLAIM_EVALUATION",
+      "slot_id": "PRACTICE-U2_S3_IC3_CLAIM_EVALUATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_CLAIM_EVALUATION",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_CLAIM_EVALUATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_5810f92455.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "positive acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_5810f92455.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_CLAIM_EVALUATION",
+      "parallel_family": "U2_S3_IC3_CLAIM_EVALUATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "foundational",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_SCENARIO_CLASSIFICATION",
+      "slot_id": "PRACTICE-U2_S3_IC3_SCENARIO_CLASSIFICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_SCENARIO_CLASSIFICATION",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_SCENARIO_CLASSIFICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><ol class=\"choices\" type=\"A\"><li>zero acceleration because velocity is shown on the vertical axis</li><li>positive acceleration</li><li>acceleration cannot be determined from a velocity–time graph</li><li>negative acceleration</li></ol><figure><img src=\"figures/graph_c04e3e12e1.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": [
+        "zero acceleration because velocity is shown on the vertical axis",
+        "positive acceleration",
+        "acceleration cannot be determined from a velocity–time graph",
+        "negative acceleration"
+      ],
+      "correct_choice": 3,
+      "answer": "negative acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope -2 m/s², so the acceleration is negative acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope -2 m/s², so the acceleration is negative acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_c04e3e12e1.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 10,
+        "a": -2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_SCENARIO_CLASSIFICATION",
+      "parallel_family": "U2_S3_IC3_SCENARIO_CLASSIFICATION",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_COMPARE_CASES",
+      "slot_id": "PRACTICE-U2_S3_IC3_COMPARE_CASES",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_COMPARE_CASES",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_COMPARE_CASES",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_31e3018966.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "zero acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_31e3018966.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 0,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_COMPARE_CASES",
+      "parallel_family": "U2_S3_IC3_COMPARE_CASES",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_ERROR_CRITIQUE",
+      "slot_id": "PRACTICE-U2_S3_IC3_ERROR_CRITIQUE",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_ERROR_CRITIQUE",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_ERROR_CRITIQUE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_c2f68c85f4.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "positive acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_c2f68c85f4.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_ERROR_CRITIQUE",
+      "parallel_family": "U2_S3_IC3_ERROR_CRITIQUE",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_REPRESENTATION_MATCH",
+      "slot_id": "PRACTICE-U2_S3_IC3_REPRESENTATION_MATCH",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_REPRESENTATION_MATCH",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_REPRESENTATION_MATCH",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><ol class=\"choices\" type=\"A\"><li>negative acceleration</li><li>zero acceleration because velocity is shown on the vertical axis</li><li>positive acceleration</li><li>acceleration cannot be determined from a velocity–time graph</li></ol><figure><img src=\"figures/graph_ba43d204b5.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": [
+        "negative acceleration",
+        "zero acceleration because velocity is shown on the vertical axis",
+        "positive acceleration",
+        "acceleration cannot be determined from a velocity–time graph"
+      ],
+      "correct_choice": 0,
+      "answer": "negative acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope -2 m/s², so the acceleration is negative acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope -2 m/s², so the acceleration is negative acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_ba43d204b5.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 10,
+        "a": -2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_REPRESENTATION_MATCH",
+      "parallel_family": "U2_S3_IC3_REPRESENTATION_MATCH",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_DATA_INTERPRET",
+      "slot_id": "PRACTICE-U2_S3_IC3_DATA_INTERPRET",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_DATA_INTERPRET",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_DATA_INTERPRET",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_b08c81141a.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "zero acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_b08c81141a.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 0,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_DATA_INTERPRET",
+      "parallel_family": "U2_S3_IC3_DATA_INTERPRET",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_CORE_APPLICATION",
+      "slot_id": "PRACTICE-U2_S3_IC3_CORE_APPLICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_CORE_APPLICATION",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_CORE_APPLICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_34e059dd0d.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "positive acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_34e059dd0d.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_CORE_APPLICATION",
+      "parallel_family": "U2_S3_IC3_CORE_APPLICATION",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_TRANSFER_APPLICATION",
+      "slot_id": "PRACTICE-U2_S3_IC3_TRANSFER_APPLICATION",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_TRANSFER_APPLICATION",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_TRANSFER_APPLICATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><ol class=\"choices\" type=\"A\"><li>acceleration cannot be determined from a velocity–time graph</li><li>negative acceleration</li><li>zero acceleration because velocity is shown on the vertical axis</li><li>positive acceleration</li></ol><figure><img src=\"figures/graph_d7a39f14cc.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": [
+        "acceleration cannot be determined from a velocity–time graph",
+        "negative acceleration",
+        "zero acceleration because velocity is shown on the vertical axis",
+        "positive acceleration"
+      ],
+      "correct_choice": 1,
+      "answer": "negative acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope -2 m/s², so the acceleration is negative acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope -2 m/s², so the acceleration is negative acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_d7a39f14cc.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 10,
+        "a": -2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_TRANSFER_APPLICATION",
+      "parallel_family": "U2_S3_IC3_TRANSFER_APPLICATION",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_MULTISTEP_REASONING",
+      "slot_id": "PRACTICE-U2_S3_IC3_MULTISTEP_REASONING",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_MULTISTEP_REASONING",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_MULTISTEP_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_c7b8fd6fee.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "zero acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_c7b8fd6fee.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 0,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_MULTISTEP_REASONING",
+      "parallel_family": "U2_S3_IC3_MULTISTEP_REASONING",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "stretch",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    },
+    {
+      "record_id": "PRACTICE-U2_S3_IC3_ALTERNATE_EVIDENCE",
+      "slot_id": "PRACTICE-U2_S3_IC3_ALTERNATE_EVIDENCE",
+      "record_mode": "family_seed",
+      "destination": "PRACTICE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "nonsecure",
+      "security_role": "nonsecure",
+      "question_design": {
+        "design_slot_id": "PRACTICE-U2_S3_IC3_ALTERNATE_EVIDENCE",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "PRACTICE-U2_S3_IC3_ALTERNATE_EVIDENCE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_d3b36a8f1b.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "positive acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_d3b36a8f1b.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_ALTERNATE_EVIDENCE",
+      "parallel_family": "U2_S3_IC3_ALTERNATE_EVIDENCE",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped",
+        "wording profile when natural"
+      ],
+      "required_variations": [
+        "Change at least one semantic evidence axis beyond names/nouns; preserve the tested reasoning and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "question/version-number-only change",
+        "change of primary I-can",
+        "change of evidence job",
+        "change of required representation behavior",
+        "reuse of an exposed finished prompt or distinctive exposed stimulus"
+      ],
+      "representation_variation_rule": "Vary only representation parameters permitted by the evidence job; preserve answer-neutrality and never replace a required representation with prose.",
+      "selection_tags": [
+        "2.3",
+        "practice",
+        "U2-S3-IC3",
+        "practice_pool",
+        "all_practice_sets_eligible"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "physics-bank-v2-manifest/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "unit_title": "Motion and Kinematics",
+  "request_unit_title": "Linear Motion",
+  "status": "COMPLETE",
+  "ready_for_downstream": true,
+  "pending": [],
+  "next_phase": null,
+  "completed": [
+    "3A_instructional_core",
+    "3B_practice_families",
+    "3C_assessment_families"
+  ],
+  "producer_stage": "3b_complete_bank",
+  "selected_pm": "pms_build/bank_complete.txt",
+  "system_commit": "3587155c9c4ff9ca4e66863bed907b6cb0cb3edf",
+  "course_commit": "c555ea42a1cac3cd6c81033e6af2c94aa8907262",
+  "profile_identity": {
+    "name": "Conceptual Physics Bank v2 Course Profile",
+    "version": "v1.3",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json"
+  },
+  "accepted_bank_map": {
+    "path": "banks/unit2_bank_map/MAP_MANIFEST.json",
+    "course_commit": "c555ea42a1cac3cd6c81033e6af2c94aa8907262",
+    "fingerprint": "7a44782459b2d11bb3d71fe39a60cc932bc04e5f0d9efbb313aec125bdeb14c5",
+    "status": "PASS",
+    "question_design_status": "PASS",
+    "qa_status": "PASS",
+    "transport_rule": "direct pinned repository read accepted; byte-for-byte local materialization not required"
+  },
+  "counts": {
+    "total_records": 365,
+    "exact_content": 135,
+    "family_seed": 230,
+    "wtc": 5,
+    "example_yti_records": 40,
+    "practice_families": 150,
+    "cyu": 30,
+    "warmup": 60,
+    "exit_families": 40,
+    "summative_families": 40
+  },
+  "paths": {
+    "item_index": "ITEM_INDEX.json",
+    "notes": "notes/",
+    "cyu": "cyu/",
+    "warmups": "warmups/",
+    "practice": "practice/",
+    "exit": "exit/",
+    "summative": "summative/",
+    "teacher_bank_html": "unit2.html",
+    "qa": "BANK_QA_FINAL.json",
+    "question_design": "QUESTION_DESIGN_FINAL.json",
+    "provenance": "provenance/"
+  },
+  "downstream_contracts": {
+    "notes_route": {
+      "schema": "bank-notes-route/1.0",
+      "route_field": "paths.notes",
+      "route_template": "notes/",
+      "producer_stage": "3b_complete_bank"
+    }
+  },
+  "representation_routes": {
+    "graph": {
+      "tool": "graph_tool",
+      "registered_path": "Tools/~graph_tool_v12.py",
+      "function": "make_context_graph"
+    },
+    "small_table": {
+      "route": "semantic_html_table",
+      "required_markup": "<table class=\"values\">"
+    },
+    "student_constructed_vectors_models": {
+      "route": "blank_html_css_response_surface",
+      "answer_neutral": true
+    }
+  },
+  "validator_execution": {
+    "qa_bank_3a_contract": "NOT_RUN_TRANSPORT_LIMITATION",
+    "qa_bank_3b_contract": "NOT_RUN_TRANSPORT_LIMITATION"
+  },
+  "direct_reconciliation": {
+    "phase_a_exact_instructional": "PASS",
+    "practice": "PASS",
+    "secure_assessment": "PASS",
+    "item_index": "PASS",
+    "final_canonical_qa": "PASS"
+  },
+  "qa_status": "PASS",
+  "bank_fingerprint_recipe": "SHA-256 over ordered [relative_path NUL file_sha256 NUL] for all canonical authored files except BANK_MANIFEST.json.",
+  "bank_fingerprint": "c0cf629a996073d93c8d2a8d10651cb080de10d6235b0a10a912a9dc628bd663",
+  "file_count_excluding_manifest": 82
+}

@@ -1,0 +1,780 @@
+{
+  "schema": "physics-bank-v2-exit/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "section": "2.4",
+  "records": [
+    {
+      "record_id": "EXIT-U2_S4_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S4_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC1",
+      "primary_i_can": "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.",
+      "student_html": "<p>Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.</p><ol class=\"choices\" type=\"A\"><li>The heavier object arrives first because gravity gives it a larger acceleration.</li><li>The lighter object arrives first because it has less inertia.</li><li>Neither accelerates because a vacuum removes gravity.</li><li>They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.</li></ol>",
+      "choices": [
+        "The heavier object arrives first because gravity gives it a larger acceleration.",
+        "The lighter object arrives first because it has less inertia.",
+        "Neither accelerates because a vacuum removes gravity.",
+        "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g."
+      ],
+      "correct_choice": 3,
+      "answer": "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.",
+      "solution_text": "In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.",
+      "solution_html": "<p>In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.</p>",
+      "family_id": "U2_S4_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S4_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S4_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use g ≈ 10 m/s² to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 3 s.",
+      "student_html": "<p>Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 3 s.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "30 m/s downward",
+      "solution_text": "Speed gained = g t = (10 m/s²)(3 s) = 30 m/s. Direction is downward.",
+      "solution_html": "<p>Speed gained = g t = (10 m/s²)(3 s) = 30 m/s. Direction is downward.</p>",
+      "family_id": "U2_S4_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S4_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC2",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S4_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+      "structure_id": "QUANT-PATTERN-COMPARE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 1 s and 2 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.",
+      "student_html": "<p>For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 1 s and 2 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.</p><ol class=\"choices\" type=\"A\"><li>Distance is proportional to 1/t².</li><li>After 1 s: 5 m; after 2 s: 20 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.</li><li>Distance increases by the same amount each second because acceleration is constant.</li><li>The filter follows exactly the same t² pattern because all falling objects are always in free fall.</li></ol>",
+      "choices": [
+        "Distance is proportional to 1/t².",
+        "After 1 s: 5 m; after 2 s: 20 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.",
+        "Distance increases by the same amount each second because acceleration is constant.",
+        "The filter follows exactly the same t² pattern because all falling objects are always in free fall."
+      ],
+      "correct_choice": 1,
+      "answer": "After 1 s: 5 m; after 2 s: 20 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.",
+      "solution_text": "d=5t² gives 5 m and 20 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.",
+      "solution_html": "<p>d=5t² gives 5 m and 20 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.</p>",
+      "family_id": "U2_S4_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S4_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC1_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S4_IC1_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC1",
+      "primary_i_can": "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC1_EXIT_CORE_REASONING",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC1_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.",
+      "student_html": "<p>Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.",
+      "solution_text": "In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.",
+      "solution_html": "<p>In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.</p>",
+      "family_id": "U2_S4_IC1_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S4_IC1_EXIT_CORE_REASONING",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC2_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S4_IC2_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use g ≈ 10 m/s² to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC2_EXIT_CORE_REASONING",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC2_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 1 s.",
+      "student_html": "<p>Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 1 s.</p><ol class=\"choices\" type=\"A\"><li>11 m/s downward</li><li>5 m/s downward</li><li>10 m/s upward</li><li>10 m/s downward</li></ol>",
+      "choices": [
+        "11 m/s downward",
+        "5 m/s downward",
+        "10 m/s upward",
+        "10 m/s downward"
+      ],
+      "correct_choice": 3,
+      "answer": "10 m/s downward",
+      "solution_text": "Speed gained = g t = (10 m/s²)(1 s) = 10 m/s. Direction is downward.",
+      "solution_html": "<p>Speed gained = g t = (10 m/s²)(1 s) = 10 m/s. Direction is downward.</p>",
+      "family_id": "U2_S4_IC2_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S4_IC2_EXIT_CORE_REASONING",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC2",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC3_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S4_IC3_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+      "structure_id": "QUANT-PATTERN-COMPARE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC3_EXIT_CORE_REASONING",
+        "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC3_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 1 s and 2 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.",
+      "student_html": "<p>For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 1 s and 2 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "After 1 s: 5 m; after 2 s: 20 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.",
+      "solution_text": "d=5t² gives 5 m and 20 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.",
+      "solution_html": "<p>d=5t² gives 5 m and 20 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.</p>",
+      "family_id": "U2_S4_IC3_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S4_IC3_EXIT_CORE_REASONING",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "slot_id": "EXIT-U2_S4_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC1",
+      "primary_i_can": "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC1_EXIT_DATA_OR_REPRESENTATION",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.",
+      "student_html": "<p>Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.</p><ol class=\"choices\" type=\"A\"><li>Neither accelerates because a vacuum removes gravity.</li><li>They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.</li><li>The heavier object arrives first because gravity gives it a larger acceleration.</li><li>The lighter object arrives first because it has less inertia.</li></ol>",
+      "choices": [
+        "Neither accelerates because a vacuum removes gravity.",
+        "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.",
+        "The heavier object arrives first because gravity gives it a larger acceleration.",
+        "The lighter object arrives first because it has less inertia."
+      ],
+      "correct_choice": 1,
+      "answer": "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.",
+      "solution_text": "In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.",
+      "solution_html": "<p>In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.</p>",
+      "family_id": "U2_S4_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "parallel_family": "U2_S4_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S4_IC3_EXIT_TRANSFER",
+      "slot_id": "EXIT-U2_S4_IC3_EXIT_TRANSFER",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.4",
+      "section_scope": "2.4",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+      "structure_id": "QUANT-PATTERN-COMPARE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S4_IC3_EXIT_TRANSFER",
+        "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S4_IC3_EXIT_TRANSFER",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 3 s and 4 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.",
+      "student_html": "<p>For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 3 s and 4 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "After 3 s: 45 m; after 4 s: 80 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.",
+      "solution_text": "d=5t² gives 45 m and 80 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.",
+      "solution_html": "<p>d=5t² gives 45 m and 80 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.</p>",
+      "family_id": "U2_S4_IC3_EXIT_TRANSFER",
+      "parallel_family": "U2_S4_IC3_EXIT_TRANSFER",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.4",
+        "exit",
+        "U2-S4-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "schema": "physics-bank-v2-notes/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "section": "2.3",
+  "records": [
+    {
+      "record_id": "U2-2S3-WTC",
+      "slot_id": "U2-2S3-WTC",
+      "record_mode": "exact_content",
+      "destination": "WTC",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Practice FRQ decomposition/navigation using one shared stimulus, connected labeled parts, and an explicit carry-forward of earlier information.",
+      "student_action": "Use the shared stimulus across connected parts, identify what each part needs, and carry an earlier result or interpretation into a later part.",
+      "intended_reasoning": "Practice FRQ decomposition/navigation using one shared stimulus, connected labeled parts, and an explicit carry-forward of earlier information.",
+      "question_structure_id": "PROC-MULTISTEP-CHAIN-01",
+      "structure_id": "PROC-MULTISTEP-CHAIN-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_response_plus_shared_text",
+      "representation_need": "required",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-WTC",
+        "question_structure_id": "PROC-MULTISTEP-CHAIN-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_response_plus_shared_text",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "student_constructed"
+      },
+      "source_map_record_id": "U2-2S3-WTC",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "wtc_frq": true,
+      "coverage_role": "wtc_frq_practice",
+      "coverage_counts_toward_unit_i_can_floor": false,
+      "shared_stimulus": "A cart changes velocity from 2 m/s east to 10 m/s east in 4 s, then later turns while keeping the same speed.",
+      "parts": [
+        "(a) Identify the initial velocity, final velocity, and time for the first interval.",
+        "(b) Calculate the acceleration for the first interval.",
+        "(c) Carry your result from (b) forward to describe what the positive sign means in the chosen east-positive frame.",
+        "(d) Explain why the later turn is also acceleration even if speed stays constant."
+      ],
+      "student_text": "A cart changes velocity from 2 m/s east to 10 m/s east in 4 s, then later turns while keeping the same speed.\n(a) Identify the initial velocity, final velocity, and time for the first interval.\n(b) Calculate the acceleration for the first interval.\n(c) Carry your result from (b) forward to describe what the positive sign means in the chosen east-positive frame.\n(d) Explain why the later turn is also acceleration even if speed stays constant.",
+      "student_html": "<div class=\"shared-stimulus\"><p>A cart changes velocity from 2 m/s east to 10 m/s east in 4 s, then later turns while keeping the same speed.</p></div><ol type=\"a\"><li>Identify the initial velocity, final velocity, and time for the first interval.</li><li>Calculate the acceleration for the first interval.</li><li>Carry your result from (b) forward to describe what the positive sign means in the chosen east-positive frame.</li><li>Explain why the later turn is also acceleration even if speed stays constant.</li></ol><div class=\"response-surface work-surface\" aria-label=\"student response surface\"><span>Show your reasoning here.</span></div>",
+      "answer": "2 m/s, 10 m/s, 4 s; +2 m/s²; velocity becomes more positive/eastward; a direction change changes velocity.",
+      "solution_text": "2 m/s, 10 m/s, 4 s; +2 m/s²; velocity becomes more positive/eastward; a direction change changes velocity.",
+      "solution_html": "<p>2 m/s, 10 m/s, 4 s; +2 m/s²; velocity becomes more positive/eastward; a direction change changes velocity.</p>",
+      "part_count": 4,
+      "dependency_chain": [
+        "part a establishes information",
+        "part b uses shared stimulus",
+        "part c carries forward earlier result",
+        "part d integrates shared stimulus and earlier work"
+      ],
+      "decomposition_move_plan": [
+        "identify_givens_and_asks",
+        "read_or_annotate_representation",
+        "identify_dependency_or_carry_forward",
+        "communicate_reasoning"
+      ]
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-EXAMPLE",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-EXAMPLE",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-EXAMPLE",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-EXAMPLE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 1 m/s to 7 m/s in 3 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 1 m/s to 7 m/s in 3 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "2 m/s²",
+      "solution_text": "a = Δv/Δt = (7 − 1) m/s / 3 s = 2 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (7 − 1) m/s / 3 s = 2 m/s².</p>",
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC1-CORE",
+      "pair_role": "example",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "worked_model"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-YTI",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-YTI",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-YTI",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC1-CORE-YTI",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 1 m/s to 13 m/s in 3 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 1 m/s to 13 m/s in 3 s. Calculate its average acceleration.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "4 m/s²",
+      "solution_text": "a = Δv/Δt = (13 − 1) m/s / 3 s = 4 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (13 − 1) m/s / 3 s = 4 m/s².</p>",
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC1-CORE",
+      "pair_role": "yti",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "parallel_application"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-EXAMPLE",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-EXAMPLE",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-EXAMPLE",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-EXAMPLE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC2-CORE",
+      "pair_role": "example",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "worked_model"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-YTI",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-YTI",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-YTI",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC2-CORE-YTI",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC2-CORE",
+      "pair_role": "yti",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "parallel_application"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-EXAMPLE",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-EXAMPLE",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-EXAMPLE",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-EXAMPLE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_7cc78705d0.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "positive acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 2 m/s², so the acceleration is positive acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_7cc78705d0.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 2,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC3-CORE",
+      "pair_role": "example",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "worked_model"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-YTI",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-YTI",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-YTI",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC3-CORE-YTI",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><figure><img src=\"figures/graph_c66268c561.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "zero acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_c66268c561.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 0,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC3-CORE",
+      "pair_role": "yti",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "parallel_application"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-EXAMPLE",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-EXAMPLE",
+      "record_mode": "exact_content",
+      "destination": "EXAMPLE",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "table",
+      "representation_need": "required",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-EXAMPLE",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "table",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "semantic_html_table"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-EXAMPLE",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 4 m/s to 10 m/s in 6 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 4 m/s to 10 m/s in 6 s. Calculate its average acceleration.</p><table class=\"values\"><thead><tr><th>Time</th><th>Velocity</th></tr></thead><tbody><tr><td>0 s</td><td>4 m/s</td></tr><tr><td>6 s</td><td>10 m/s</td></tr></tbody></table>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "1 m/s²",
+      "solution_text": "a = Δv/Δt = (10 − 4) m/s / 6 s = 1 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (10 − 4) m/s / 6 s = 1 m/s².</p>",
+      "table": {
+        "headers": [
+          "Time",
+          "Velocity"
+        ],
+        "rows": [
+          [
+            "0 s",
+            "4 m/s"
+          ],
+          [
+            "6 s",
+            "10 m/s"
+          ]
+        ]
+      },
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH",
+      "pair_role": "example",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "worked_model"
+    },
+    {
+      "record_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-YTI",
+      "slot_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-YTI",
+      "record_mode": "exact_content",
+      "destination": "YTI",
+      "section": "2.3",
+      "section_scope": "2.3",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "table",
+      "representation_need": "required",
+      "security_level": "instructional_exposed",
+      "security_role": "instructional_exposed",
+      "question_design": {
+        "design_slot_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-YTI",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "table",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "semantic_html_table"
+      },
+      "source_map_record_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH-YTI",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 4 m/s to 22 m/s in 6 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 4 m/s to 22 m/s in 6 s. Calculate its average acceleration.</p><table class=\"values\"><thead><tr><th>Time</th><th>Velocity</th></tr></thead><tbody><tr><td>0 s</td><td>4 m/s</td></tr><tr><td>6 s</td><td>22 m/s</td></tr></tbody></table>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "3 m/s²",
+      "solution_text": "a = Δv/Δt = (22 − 4) m/s / 6 s = 3 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (22 − 4) m/s / 6 s = 3 m/s².</p>",
+      "table": {
+        "headers": [
+          "Time",
+          "Velocity"
+        ],
+        "rows": [
+          [
+            "0 s",
+            "4 m/s"
+          ],
+          [
+            "6 s",
+            "22 m/s"
+          ]
+        ]
+      },
+      "pair_id": "U2-2S3-PAIR-U2_S3_IC1-ENRICH",
+      "pair_role": "yti",
+      "pair_contract": {
+        "same_primary_i_can": true,
+        "same_evidence_job": true,
+        "same_question_structure": true,
+        "yti_requires_meaningful_change": true
+      },
+      "modeling_role": "parallel_application"
+    }
+  ]
+}

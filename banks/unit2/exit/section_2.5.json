@@ -1,0 +1,819 @@
+{
+  "schema": "physics-bank-v2-exit/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "section": "2.5",
+  "records": [
+    {
+      "record_id": "EXIT-U2_S5_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S5_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC1",
+      "primary_i_can": "I can represent velocity with arrows that show both speed and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Which velocity vector correctly represents motion down at 8 m/s if the reference arrow for 8 m/s has the stated scale?",
+      "student_html": "<p>Which velocity vector correctly represents motion down at 8 m/s if the reference arrow for 8 m/s has the stated scale?</p><ol class=\"choices\" type=\"A\"><li>a dot with no direction</li><li>an arrow pointing down with the correct scaled length</li><li>an arrow pointing opposite down with the correct length</li><li>an arrow pointing down with zero length</li></ol><div class=\"response-surface vector-surface\" aria-label=\"student response surface\"><span>Draw the requested vector(s) here.</span></div>",
+      "choices": [
+        "a dot with no direction",
+        "an arrow pointing down with the correct scaled length",
+        "an arrow pointing opposite down with the correct length",
+        "an arrow pointing down with zero length"
+      ],
+      "correct_choice": 1,
+      "answer": "An arrow pointing down with a length representing 8 m/s.",
+      "solution_text": "A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.",
+      "solution_html": "<p>A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.</p>",
+      "family_id": "U2_S5_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S5_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S5_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC2",
+      "primary_i_can": "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "REPRESENTATION-COMPARE-01",
+      "structure_id": "REPRESENTATION-COMPARE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_response_plus_shared_text",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "REPRESENTATION-COMPARE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_response_plus_shared_text",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "student_constructed"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.",
+      "student_html": "<p>Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.</p><div class=\"response-surface work-surface\" aria-label=\"student response surface\"><span>Show your reasoning here.</span></div>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.",
+      "solution_text": "Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.",
+      "solution_html": "<p>Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.</p>",
+      "family_id": "U2_S5_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S5_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC2",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S5_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.",
+      "student_html": "<p>A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.</p><ol class=\"choices\" type=\"A\"><li>The object is climbing a physical hill because the line rises.</li><li>The object is accelerating because position increases.</li><li>The object is at rest because the line is straight.</li><li>The object moves in the positive direction at constant velocity 2 m/s. The graph height represents position, not physical height above the ground.</li></ol><figure><img src=\"figures/graph_7318c058f0.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": [
+        "The object is climbing a physical hill because the line rises.",
+        "The object is accelerating because position increases.",
+        "The object is at rest because the line is straight.",
+        "The object moves in the positive direction at constant velocity 2 m/s. The graph height represents position, not physical height above the ground."
+      ],
+      "correct_choice": 3,
+      "answer": "The object moves in the positive direction at constant velocity 2 m/s. The graph height represents position, not physical height above the ground.",
+      "solution_text": "The straight-line position–time graph has constant slope 2 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.",
+      "solution_html": "<p>The straight-line position–time graph has constant slope 2 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.</p>",
+      "figure_refs": [
+        "figures/graph_7318c058f0.png"
+      ],
+      "graph_spec": {
+        "kind": "position_time",
+        "x0": 0,
+        "v": 2,
+        "tmax": 6,
+        "xlabel": "Time (s)",
+        "ylabel": "Position (m)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S5_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S5_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC1_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S5_IC1_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC1",
+      "primary_i_can": "I can represent velocity with arrows that show both speed and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_velocity_vector",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC1_EXIT_CORE_REASONING",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_velocity_vector",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "student_constructed"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC1_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Construct a velocity vector for an object moving up at 4 m/s. Use arrow direction for motion direction and arrow length to represent speed.",
+      "student_html": "<p>Construct a velocity vector for an object moving up at 4 m/s. Use arrow direction for motion direction and arrow length to represent speed.</p><div class=\"response-surface vector-surface\" aria-label=\"student response surface\"><span>Draw the requested vector(s) here.</span></div>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "An arrow pointing up with a length representing 4 m/s.",
+      "solution_text": "A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.",
+      "solution_html": "<p>A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.</p>",
+      "family_id": "U2_S5_IC1_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S5_IC1_EXIT_CORE_REASONING",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC2_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S5_IC2_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC2",
+      "primary_i_can": "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "REPRESENTATION-COMPARE-01",
+      "structure_id": "REPRESENTATION-COMPARE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC2_EXIT_CORE_REASONING",
+        "question_structure_id": "REPRESENTATION-COMPARE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC2_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.",
+      "student_html": "<p>Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.</p><ol class=\"choices\" type=\"A\"><li>Yes only if the arrow lengths also change.</li><li>Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.</li><li>No; equal arrow lengths guarantee equal velocity.</li><li>No; direction is not part of velocity.</li></ol><div class=\"response-surface work-surface\" aria-label=\"student response surface\"><span>Show your reasoning here.</span></div>",
+      "choices": [
+        "Yes only if the arrow lengths also change.",
+        "Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.",
+        "No; equal arrow lengths guarantee equal velocity.",
+        "No; direction is not part of velocity."
+      ],
+      "correct_choice": 1,
+      "answer": "Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.",
+      "solution_text": "Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.",
+      "solution_html": "<p>Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.</p>",
+      "family_id": "U2_S5_IC2_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S5_IC2_EXIT_CORE_REASONING",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC2",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC3_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S5_IC3_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC3_EXIT_CORE_REASONING",
+        "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC3_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.",
+      "student_html": "<p>A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.</p><figure><img src=\"figures/graph_3636b83be0.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "The object moves in the positive direction at constant velocity 1 m/s. The graph height represents position, not physical height above the ground.",
+      "solution_text": "The straight-line position–time graph has constant slope 1 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.",
+      "solution_html": "<p>The straight-line position–time graph has constant slope 1 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.</p>",
+      "figure_refs": [
+        "figures/graph_3636b83be0.png"
+      ],
+      "graph_spec": {
+        "kind": "position_time",
+        "x0": 0,
+        "v": 1,
+        "tmax": 6,
+        "xlabel": "Time (s)",
+        "ylabel": "Position (m)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S5_IC3_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S5_IC3_EXIT_CORE_REASONING",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "slot_id": "EXIT-U2_S5_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC1",
+      "primary_i_can": "I can represent velocity with arrows that show both speed and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC1_EXIT_DATA_OR_REPRESENTATION",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Which velocity vector correctly represents motion left at 7 m/s if the reference arrow for 7 m/s has the stated scale?",
+      "student_html": "<p>Which velocity vector correctly represents motion left at 7 m/s if the reference arrow for 7 m/s has the stated scale?</p><ol class=\"choices\" type=\"A\"><li>an arrow pointing opposite left with the correct length</li><li>an arrow pointing left with zero length</li><li>a dot with no direction</li><li>an arrow pointing left with the correct scaled length</li></ol><div class=\"response-surface vector-surface\" aria-label=\"student response surface\"><span>Draw the requested vector(s) here.</span></div>",
+      "choices": [
+        "an arrow pointing opposite left with the correct length",
+        "an arrow pointing left with zero length",
+        "a dot with no direction",
+        "an arrow pointing left with the correct scaled length"
+      ],
+      "correct_choice": 3,
+      "answer": "An arrow pointing left with a length representing 7 m/s.",
+      "solution_text": "A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.",
+      "solution_html": "<p>A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.</p>",
+      "family_id": "U2_S5_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "parallel_family": "U2_S5_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S5_IC3_EXIT_TRANSFER",
+      "slot_id": "EXIT-U2_S5_IC3_EXIT_TRANSFER",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.5",
+      "section_scope": "2.5",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S5_IC3_EXIT_TRANSFER",
+        "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "EXIT-U2_S5_IC3_EXIT_TRANSFER",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.",
+      "student_html": "<p>A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.</p><figure><img src=\"figures/graph_6a76203b42.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "The object moves in the positive direction at constant velocity 3 m/s. The graph height represents position, not physical height above the ground.",
+      "solution_text": "The straight-line position–time graph has constant slope 3 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.",
+      "solution_html": "<p>The straight-line position–time graph has constant slope 3 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.</p>",
+      "figure_refs": [
+        "figures/graph_6a76203b42.png"
+      ],
+      "graph_spec": {
+        "kind": "position_time",
+        "x0": 0,
+        "v": 3,
+        "tmax": 6,
+        "xlabel": "Time (s)",
+        "ylabel": "Position (m)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S5_IC3_EXIT_TRANSFER",
+      "parallel_family": "U2_S5_IC3_EXIT_TRANSFER",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.5",
+        "exit",
+        "U2-S5-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    }
+  ]
+}

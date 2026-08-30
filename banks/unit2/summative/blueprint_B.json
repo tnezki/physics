@@ -1,0 +1,2018 @@
+{
+  "schema": "physics-bank-v2-summative-blueprint/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "blueprint": "B",
+  "forms": [
+    "V5",
+    "V6"
+  ],
+  "records": [
+    {
+      "record_id": "SUMM-U2_S1_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S1_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC1",
+      "primary_i_can": "I can explain why an object can be moving relative to one reference frame but not another.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S1_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S1_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S1-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Kai walks toward the front of a train moving east at 9 m/s. Kai walks at 1 m/s relative to the train. Explain how Kai can be moving relative to the ground while also being described using a different motion relative to the train.",
+      "student_html": "<p>Kai walks toward the front of a train moving east at 9 m/s. Kai walks at 1 m/s relative to the train. Explain how Kai can be moving relative to the ground while also being described using a different motion relative to the train.</p><ol class=\"choices\" type=\"A\"><li>Kai must have the same velocity in every reference frame.</li><li>Kai is at rest relative to the ground because the train is the only valid frame.</li><li>Reference frames change the object’s mass, which changes its motion.</li><li>Relative to the train, Kai moves east at 1 m/s; relative to the ground, Kai moves east at 10 m/s. Motion depends on the chosen reference frame.</li></ol>",
+      "choices": [
+        "Kai must have the same velocity in every reference frame.",
+        "Kai is at rest relative to the ground because the train is the only valid frame.",
+        "Reference frames change the object’s mass, which changes its motion.",
+        "Relative to the train, Kai moves east at 1 m/s; relative to the ground, Kai moves east at 10 m/s. Motion depends on the chosen reference frame."
+      ],
+      "correct_choice": 3,
+      "answer": "Relative to the train, Kai moves east at 1 m/s; relative to the ground, Kai moves east at 10 m/s. Motion depends on the chosen reference frame.",
+      "solution_text": "Use one reference frame at a time. The train-frame motion is the walking speed; the ground-frame motion combines the train motion and walking motion because both are east.",
+      "solution_html": "<p>Use one reference frame at a time. The train-frame motion is the walking speed; the ground-frame motion combines the train motion and walking motion because both are east.</p>",
+      "family_id": "U2_S1_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S1_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S1-IC1",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 1,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S1_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S1_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC2",
+      "primary_i_can": "I can identify the reference frame used in a motion description.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S1_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S1_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S1-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A motion description says, “The backpack remains beside Sam on the seat while trees move backward past the window.” Identify the reference frame used when the backpack is described as remaining beside Sam, and cite the cue.",
+      "student_html": "<p>A motion description says, “The backpack remains beside Sam on the seat while trees move backward past the window.” Identify the reference frame used when the backpack is described as remaining beside Sam, and cite the cue.</p><ol class=\"choices\" type=\"A\"><li>the backpack itself only</li><li>no reference frame is needed</li><li>the vehicle/passenger frame</li><li>the trees outside</li></ol>",
+      "choices": [
+        "the backpack itself only",
+        "no reference frame is needed",
+        "the vehicle/passenger frame",
+        "the trees outside"
+      ],
+      "correct_choice": 2,
+      "answer": "The vehicle/passenger frame; the backpack stays at a fixed position relative to the passenger/seat.",
+      "solution_text": "A reference frame is the object or coordinate system used to judge position and motion. “Beside the passenger on the seat” fixes the backpack relative to the vehicle.",
+      "solution_html": "<p>A reference frame is the object or coordinate system used to judge position and motion. “Beside the passenger on the seat” fixes the backpack relative to the vehicle.</p>",
+      "family_id": "U2_S1_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S1_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S1-IC2",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 2,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S1_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S1_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC3",
+      "primary_i_can": "I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S1_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S1_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S1-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A passenger on a bus says a phone on the seat is at rest. A person on the sidewalk says the phone is moving east with the bus. Compare the two descriptions and explain why using Earth’s surface is convenient for ordinary travel descriptions.",
+      "student_html": "<p>A passenger on a bus says a phone on the seat is at rest. A person on the sidewalk says the phone is moving east with the bus. Compare the two descriptions and explain why using Earth’s surface is convenient for ordinary travel descriptions.</p><ol class=\"choices\" type=\"A\"><li>Both must measure zero velocity because the phone is not sliding.</li><li>Both descriptions can be correct because they use different reference frames. The phone is at rest in the bus frame and moving in the Earth/sidewalk frame. Earth’s surface is a convenient shared everyday frame.</li><li>Only the passenger can be correct because the phone is touching the seat.</li><li>Only the sidewalk observer can be correct because Earth is the unique true frame.</li></ol>",
+      "choices": [
+        "Both must measure zero velocity because the phone is not sliding.",
+        "Both descriptions can be correct because they use different reference frames. The phone is at rest in the bus frame and moving in the Earth/sidewalk frame. Earth’s surface is a convenient shared everyday frame.",
+        "Only the passenger can be correct because the phone is touching the seat.",
+        "Only the sidewalk observer can be correct because Earth is the unique true frame."
+      ],
+      "correct_choice": 1,
+      "answer": "Both descriptions can be correct because they use different reference frames. The phone is at rest in the bus frame and moving in the Earth/sidewalk frame. Earth’s surface is a convenient shared everyday frame.",
+      "solution_text": "Motion is relative. Changing the frame changes the measured position/velocity, not the physical object. Earth’s surface is commonly used because it is stable and shared for everyday locations.",
+      "solution_html": "<p>Motion is relative. Changing the frame changes the measured position/velocity, not the physical object. Earth’s surface is commonly used because it is stable and shared for everyday locations.</p>",
+      "family_id": "U2_S1_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S1_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S1-IC3",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 3,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S2_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S2_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S2_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S2_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart travels a total distance of 110 m in 5 s. Calculate its average speed.",
+      "student_html": "<p>A cart travels a total distance of 110 m in 5 s. Calculate its average speed.</p><ol class=\"choices\" type=\"A\"><li>22 m/s</li><li>0.05 m/s</li><li>550 m/s</li><li>57.5 m/s</li></ol>",
+      "choices": [
+        "22 m/s",
+        "0.05 m/s",
+        "550 m/s",
+        "57.5 m/s"
+      ],
+      "correct_choice": 0,
+      "answer": "22 m/s",
+      "solution_text": "Average speed = total distance / total time = 110 m / 5 s = 22 m/s.",
+      "solution_html": "<p>Average speed = total distance / total time = 110 m / 5 s = 22 m/s.</p>",
+      "family_id": "U2_S2_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S2_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S2-IC1",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 4,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S2_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S2_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC2",
+      "primary_i_can": "I can distinguish instantaneous speed from average speed.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S2_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S2_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "On a soccer field, a rider’s speedometer reads 18 m/s at one instant. The rider’s average speed over the entire trip is 8 m/s. Explain what each value describes.",
+      "student_html": "<p>On a soccer field, a rider’s speedometer reads 18 m/s at one instant. The rider’s average speed over the entire trip is 8 m/s. Explain what each value describes.</p><ol class=\"choices\" type=\"A\"><li>Both values are instantaneous because both use m/s.</li><li>Both values are average because every speed is averaged over time.</li><li>The larger value is average and the smaller value is instantaneous by definition.</li><li>18 m/s is instantaneous speed at that moment; 8 m/s is total distance divided by total trip time.</li></ol>",
+      "choices": [
+        "Both values are instantaneous because both use m/s.",
+        "Both values are average because every speed is averaged over time.",
+        "The larger value is average and the smaller value is instantaneous by definition.",
+        "18 m/s is instantaneous speed at that moment; 8 m/s is total distance divided by total trip time."
+      ],
+      "correct_choice": 3,
+      "answer": "18 m/s is instantaneous speed at that moment; 8 m/s is total distance divided by total trip time.",
+      "solution_text": "Instantaneous speed describes one moment. Average speed combines the whole interval: total distance divided by total elapsed time.",
+      "solution_html": "<p>Instantaneous speed describes one moment. Average speed combines the whole interval: total distance divided by total elapsed time.</p>",
+      "family_id": "U2_S2_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S2_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S2-IC2",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 5,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S2_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S2_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S2_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S2_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A robot moves at a constant speed of 6 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.",
+      "student_html": "<p>A robot moves at a constant speed of 6 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.</p><ol class=\"choices\" type=\"A\"><li>The speed changes but the velocity does not.</li><li>Velocity has no direction, so only position changes.</li><li>The speed remains 6 m/s, but the velocity changes because its direction changes from east to north.</li><li>Both speed and velocity remain constant because the speedometer value is unchanged.</li></ol>",
+      "choices": [
+        "The speed changes but the velocity does not.",
+        "Velocity has no direction, so only position changes.",
+        "The speed remains 6 m/s, but the velocity changes because its direction changes from east to north.",
+        "Both speed and velocity remain constant because the speedometer value is unchanged."
+      ],
+      "correct_choice": 2,
+      "answer": "The speed remains 6 m/s, but the velocity changes because its direction changes from east to north.",
+      "solution_text": "Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.",
+      "solution_html": "<p>Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.</p>",
+      "family_id": "U2_S2_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S2_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S2-IC3",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 6,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S3_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S3_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S3_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S3_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart’s velocity changes from 2 m/s to 18 m/s in 4 s. Calculate its average acceleration.",
+      "student_html": "<p>A cart’s velocity changes from 2 m/s to 18 m/s in 4 s. Calculate its average acceleration.</p><ol class=\"choices\" type=\"A\"><li>4.5 m/s²</li><li>4 m/s²</li><li>16 m/s²</li><li>64 m/s²</li></ol>",
+      "choices": [
+        "4.5 m/s²",
+        "4 m/s²",
+        "16 m/s²",
+        "64 m/s²"
+      ],
+      "correct_choice": 1,
+      "answer": "4 m/s²",
+      "solution_text": "a = Δv/Δt = (18 − 2) m/s / 4 s = 4 m/s².",
+      "solution_html": "<p>a = Δv/Δt = (18 − 2) m/s / 4 s = 4 m/s².</p>",
+      "family_id": "U2_S3_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S3_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S3-IC1",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 7,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S3_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S3_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S3_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S3_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p><ol class=\"choices\" type=\"A\"><li>Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.</li><li>Velocity and acceleration are both east because the skateboarder is moving east.</li><li>Velocity is west and acceleration is east because slowing reverses velocity instantly.</li><li>Acceleration is zero whenever speed decreases.</li></ol>",
+      "choices": [
+        "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+        "Velocity and acceleration are both east because the skateboarder is moving east.",
+        "Velocity is west and acceleration is east because slowing reverses velocity instantly.",
+        "Acceleration is zero whenever speed decreases."
+      ],
+      "correct_choice": 0,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S3_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S3-IC2",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 8,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S3_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S3_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "structure_id": "GRAPH-INTERPRET-SLOPE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S3_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "GRAPH-INTERPRET-SLOPE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "SUMM-U2_S3_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.",
+      "student_html": "<p>Use the velocity–time graph to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><ol class=\"choices\" type=\"A\"><li>zero acceleration because velocity is shown on the vertical axis</li><li>negative acceleration</li><li>acceleration cannot be determined from a velocity–time graph</li><li>zero acceleration</li></ol><figure><img src=\"figures/graph_1c6eb5131c.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": [
+        "zero acceleration because velocity is shown on the vertical axis",
+        "negative acceleration",
+        "acceleration cannot be determined from a velocity–time graph",
+        "zero acceleration"
+      ],
+      "correct_choice": 3,
+      "answer": "zero acceleration",
+      "solution_text": "The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.",
+      "solution_html": "<p>The slope of a velocity–time graph equals acceleration. This graph has slope 0 m/s², so the acceleration is zero acceleration.</p>",
+      "figure_refs": [
+        "figures/graph_1c6eb5131c.png"
+      ],
+      "graph_spec": {
+        "kind": "velocity_time",
+        "v0": 2,
+        "a": 0,
+        "tmax": 5,
+        "xlabel": "Time (s)",
+        "ylabel": "Velocity (m/s)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S3_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S3_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S3-IC3",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 9,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S4_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S4_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC1",
+      "primary_i_can": "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S4_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S4_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.",
+      "student_html": "<p>Two compact objects of different masses are released together in a vacuum chamber near Earth. Predict which reaches the floor first and explain using the meaning of free fall.</p><ol class=\"choices\" type=\"A\"><li>The lighter object arrives first because it has less inertia.</li><li>Neither accelerates because a vacuum removes gravity.</li><li>They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.</li><li>The heavier object arrives first because gravity gives it a larger acceleration.</li></ol>",
+      "choices": [
+        "The lighter object arrives first because it has less inertia.",
+        "Neither accelerates because a vacuum removes gravity.",
+        "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.",
+        "The heavier object arrives first because gravity gives it a larger acceleration."
+      ],
+      "correct_choice": 2,
+      "answer": "They reach the floor together if released from the same height with the same initial velocity. With air resistance ignored, both have the same downward acceleration g.",
+      "solution_text": "In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.",
+      "solution_html": "<p>In ideal free fall, gravity is the only significant force and all objects near Earth share the same gravitational acceleration regardless of mass.</p>",
+      "family_id": "U2_S4_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S4_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S4-IC1",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 10,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S4_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S4_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use g ≈ 10 m/s² to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S4_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S4_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 2 s.",
+      "student_html": "<p>Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 2 s.</p><ol class=\"choices\" type=\"A\"><li>20 m/s upward</li><li>20 m/s downward</li><li>12 m/s downward</li><li>10 m/s downward</li></ol>",
+      "choices": [
+        "20 m/s upward",
+        "20 m/s downward",
+        "12 m/s downward",
+        "10 m/s downward"
+      ],
+      "correct_choice": 1,
+      "answer": "20 m/s downward",
+      "solution_text": "Speed gained = g t = (10 m/s²)(2 s) = 20 m/s. Direction is downward.",
+      "solution_html": "<p>Speed gained = g t = (10 m/s²)(2 s) = 20 m/s. Direction is downward.</p>",
+      "family_id": "U2_S4_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S4_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S4-IC2",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 11,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S4_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S4_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+      "structure_id": "QUANT-PATTERN-COMPARE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S4_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "QUANT-PATTERN-COMPARE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S4_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 3 s and 4 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.",
+      "student_html": "<p>For ideal free fall from rest, use d = ½gt² with g ≈ 10 m/s². Compare the total distance fallen after 3 s and 4 s. Then explain why a coffee filter falling at terminal speed would not follow this same pattern.</p><ol class=\"choices\" type=\"A\"><li>After 3 s: 45 m; after 4 s: 80 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.</li><li>Distance increases by the same amount each second because acceleration is constant.</li><li>The filter follows exactly the same t² pattern because all falling objects are always in free fall.</li><li>Distance is proportional to 1/t².</li></ol>",
+      "choices": [
+        "After 3 s: 45 m; after 4 s: 80 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.",
+        "Distance increases by the same amount each second because acceleration is constant.",
+        "The filter follows exactly the same t² pattern because all falling objects are always in free fall.",
+        "Distance is proportional to 1/t²."
+      ],
+      "correct_choice": 0,
+      "answer": "After 3 s: 45 m; after 4 s: 80 m. The ideal distance grows with t². A filter with significant air resistance is not in ideal free fall and can reach nearly constant speed.",
+      "solution_text": "d=5t² gives 45 m and 80 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.",
+      "solution_html": "<p>d=5t² gives 45 m and 80 m. Significant air resistance changes the acceleration, so the ideal free-fall model no longer applies.</p>",
+      "family_id": "U2_S4_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S4_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S4-IC3",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 12,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S5_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S5_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC1",
+      "primary_i_can": "I can represent velocity with arrows that show both speed and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S5_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S5_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Which velocity vector correctly represents motion left at 2 m/s if the reference arrow for 2 m/s has the stated scale?",
+      "student_html": "<p>Which velocity vector correctly represents motion left at 2 m/s if the reference arrow for 2 m/s has the stated scale?</p><ol class=\"choices\" type=\"A\"><li>an arrow pointing opposite left with the correct length</li><li>an arrow pointing left with zero length</li><li>a dot with no direction</li><li>an arrow pointing left with the correct scaled length</li></ol><div class=\"response-surface vector-surface\" aria-label=\"student response surface\"><span>Draw the requested vector(s) here.</span></div>",
+      "choices": [
+        "an arrow pointing opposite left with the correct length",
+        "an arrow pointing left with zero length",
+        "a dot with no direction",
+        "an arrow pointing left with the correct scaled length"
+      ],
+      "correct_choice": 3,
+      "answer": "An arrow pointing left with a length representing 2 m/s.",
+      "solution_text": "A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.",
+      "solution_html": "<p>A velocity vector must encode both magnitude and direction: orientation gives direction and length represents speed.</p>",
+      "family_id": "U2_S5_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S5_IC1_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S5-IC1",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 13,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S5_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S5_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC2",
+      "primary_i_can": "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "REPRESENTATION-COMPARE-01",
+      "structure_id": "REPRESENTATION-COMPARE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S5_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "REPRESENTATION-COMPARE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S5_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.",
+      "student_html": "<p>Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.</p><ol class=\"choices\" type=\"A\"><li>No; direction is not part of velocity.</li><li>Yes only if the arrow lengths also change.</li><li>Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.</li><li>No; equal arrow lengths guarantee equal velocity.</li></ol><div class=\"response-surface work-surface\" aria-label=\"student response surface\"><span>Show your reasoning here.</span></div>",
+      "choices": [
+        "No; direction is not part of velocity.",
+        "Yes only if the arrow lengths also change.",
+        "Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.",
+        "No; equal arrow lengths guarantee equal velocity."
+      ],
+      "correct_choice": 2,
+      "answer": "Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.",
+      "solution_text": "Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.",
+      "solution_html": "<p>Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.</p>",
+      "family_id": "U2_S5_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S5_IC2_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S5-IC2",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 14,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S5_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "slot_id": "SUMM-U2_S5_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "graph",
+      "representation_need": "required",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S5_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+        "question_structure_id": "GRAPH-TRANSLATE-CRITIQUE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "graph",
+        "representation_need": "required",
+        "tool": "graph_tool",
+        "render_route": "registered_graph_tool"
+      },
+      "source_map_record_id": "SUMM-U2_S5_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.",
+      "student_html": "<p>A position–time graph is shown. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.</p><ol class=\"choices\" type=\"A\"><li>The object is at rest because the line is straight.</li><li>The object moves in the positive direction at constant velocity 4 m/s. The graph height represents position, not physical height above the ground.</li><li>The object is climbing a physical hill because the line rises.</li><li>The object is accelerating because position increases.</li></ol><figure><img src=\"figures/graph_a62be5b10b.png\" alt=\"Motion graph with labeled axes\"><figcaption>Use the graph as evidence.</figcaption></figure>",
+      "choices": [
+        "The object is at rest because the line is straight.",
+        "The object moves in the positive direction at constant velocity 4 m/s. The graph height represents position, not physical height above the ground.",
+        "The object is climbing a physical hill because the line rises.",
+        "The object is accelerating because position increases."
+      ],
+      "correct_choice": 1,
+      "answer": "The object moves in the positive direction at constant velocity 4 m/s. The graph height represents position, not physical height above the ground.",
+      "solution_text": "The straight-line position–time graph has constant slope 4 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.",
+      "solution_html": "<p>The straight-line position–time graph has constant slope 4 m/s, so velocity is constant. The vertical axis is position, so it should not be read as a picture of a hill.</p>",
+      "figure_refs": [
+        "figures/graph_a62be5b10b.png"
+      ],
+      "graph_spec": {
+        "kind": "position_time",
+        "x0": 0,
+        "v": 4,
+        "tmax": 6,
+        "xlabel": "Time (s)",
+        "ylabel": "Position (m)",
+        "generator": "graph_tool",
+        "function": "make_context_graph"
+      },
+      "family_id": "U2_S5_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "parallel_family": "U2_S5_IC3_SUMM_CONCEPT_APPLICATION_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S5-IC3",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 15,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S1_IC3_SUMM_HIGH_LEVERAGE_BPB",
+      "slot_id": "SUMM-U2_S1_IC3_SUMM_HIGH_LEVERAGE_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC3",
+      "primary_i_can": "I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S1_IC3_SUMM_HIGH_LEVERAGE_BPB",
+        "question_structure_id": "VOCAB-TERM-TO-CONCEPT-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S1_IC3_SUMM_HIGH_LEVERAGE_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S1-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A passenger on a bus says a phone on the seat is at rest. A person on the sidewalk says the phone is moving east with the bus. Compare the two descriptions and explain why using Earth’s surface is convenient for ordinary travel descriptions.",
+      "student_html": "<p>A passenger on a bus says a phone on the seat is at rest. A person on the sidewalk says the phone is moving east with the bus. Compare the two descriptions and explain why using Earth’s surface is convenient for ordinary travel descriptions.</p><ol class=\"choices\" type=\"A\"><li>Both descriptions can be correct because they use different reference frames. The phone is at rest in the bus frame and moving in the Earth/sidewalk frame. Earth’s surface is a convenient shared everyday frame.</li><li>Only the passenger can be correct because the phone is touching the seat.</li><li>Only the sidewalk observer can be correct because Earth is the unique true frame.</li><li>Both must measure zero velocity because the phone is not sliding.</li></ol>",
+      "choices": [
+        "Both descriptions can be correct because they use different reference frames. The phone is at rest in the bus frame and moving in the Earth/sidewalk frame. Earth’s surface is a convenient shared everyday frame.",
+        "Only the passenger can be correct because the phone is touching the seat.",
+        "Only the sidewalk observer can be correct because Earth is the unique true frame.",
+        "Both must measure zero velocity because the phone is not sliding."
+      ],
+      "correct_choice": 0,
+      "answer": "Both descriptions can be correct because they use different reference frames. The phone is at rest in the bus frame and moving in the Earth/sidewalk frame. Earth’s surface is a convenient shared everyday frame.",
+      "solution_text": "Motion is relative. Changing the frame changes the measured position/velocity, not the physical object. Earth’s surface is commonly used because it is stable and shared for everyday locations.",
+      "solution_html": "<p>Motion is relative. Changing the frame changes the measured position/velocity, not the physical object. Earth’s surface is commonly used because it is stable and shared for everyday locations.</p>",
+      "family_id": "U2_S1_IC3_SUMM_HIGH_LEVERAGE_BPB",
+      "parallel_family": "U2_S1_IC3_SUMM_HIGH_LEVERAGE_BPB",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S1-IC3",
+        "secure",
+        "blueprint_B",
+        "selected_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 16,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S2_IC3_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "slot_id": "SUMM-U2_S2_IC3_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S2_IC3_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S2_IC3_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A robot moves at a constant speed of 5 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.",
+      "student_html": "<p>A robot moves at a constant speed of 5 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "The speed remains 5 m/s, but the velocity changes because its direction changes from east to north.",
+      "solution_text": "Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.",
+      "solution_html": "<p>Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.</p>",
+      "family_id": "U2_S2_IC3_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "parallel_family": "U2_S2_IC3_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S2-IC3",
+        "secure",
+        "blueprint_B",
+        "constructed_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 17,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S3_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "slot_id": "SUMM-U2_S3_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S3_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S3_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S3-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.",
+      "student_html": "<p>A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Velocity is east; acceleration is west. Acceleration is any change in velocity, including a decrease in speed.",
+      "solution_text": "To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.",
+      "solution_html": "<p>To slow an object moving east, acceleration must point opposite the velocity. A change in velocity magnitude is acceleration.</p>",
+      "family_id": "U2_S3_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "parallel_family": "U2_S3_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S3-IC2",
+        "secure",
+        "blueprint_B",
+        "constructed_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 18,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S4_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "slot_id": "SUMM-U2_S4_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use g ≈ 10 m/s² to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "student_action": "Identify the relevant values, apply the appropriate relationship, report units, and interpret the result in context.",
+      "intended_reasoning": "Use the target relationship with physically meaningful data, units, and interpretation to determine the requested motion quantity.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S4_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "SUMM-U2_S4_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S4-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 5 s.",
+      "student_html": "<p>Ignoring air resistance, an object is dropped from rest. Using g ≈ 10 m/s², determine the speed it has gained after 5 s.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "50 m/s downward",
+      "solution_text": "Speed gained = g t = (10 m/s²)(5 s) = 50 m/s. Direction is downward.",
+      "solution_html": "<p>Speed gained = g t = (10 m/s²)(5 s) = 50 m/s. Direction is downward.</p>",
+      "family_id": "U2_S4_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "parallel_family": "U2_S4_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S4-IC2",
+        "secure",
+        "blueprint_B",
+        "constructed_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 19,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    },
+    {
+      "record_id": "SUMM-U2_S5_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "slot_id": "SUMM-U2_S5_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "record_mode": "family_seed",
+      "destination": "SUMMATIVE",
+      "section": "UNIT",
+      "section_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC2",
+      "primary_i_can": "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "REPRESENTATION-COMPARE-01",
+      "structure_id": "REPRESENTATION-COMPARE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_response_plus_shared_text",
+      "representation_need": "required",
+      "security_level": "secure",
+      "security_role": "secure",
+      "question_design": {
+        "design_slot_id": "SUMM-U2_S5_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+        "question_structure_id": "REPRESENTATION-COMPARE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "student_constructed_response_plus_shared_text",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "student_constructed"
+      },
+      "source_map_record_id": "SUMM-U2_S5_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S5-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.",
+      "student_html": "<p>Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.</p><div class=\"response-surface work-surface\" aria-label=\"student response surface\"><span>Show your reasoning here.</span></div>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "Yes. The speed magnitude can be the same, but the direction changes from east to north, so velocity changes.",
+      "solution_text": "Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.",
+      "solution_html": "<p>Velocity vectors are equal only when both magnitude and direction are equal. Changing direction changes velocity.</p>",
+      "family_id": "U2_S5_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "parallel_family": "U2_S5_IC2_SUMM_CONSTRUCTED_EVIDENCE_BPB",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "transfer",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Each secure form instance changes a meaningful stimulus/data/context axis while preserving family evidence and comparable difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "reuse of exposed instructional prompt/stimulus",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure forms.",
+      "selection_tags": [
+        "UNIT",
+        "summative",
+        "U2-S5-IC2",
+        "secure",
+        "blueprint_B",
+        "constructed_response"
+      ],
+      "blueprint": "B",
+      "blueprint_position": 20,
+      "secure_instance_contract": {
+        "forms": [
+          "V5",
+          "V6"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true,
+        "blueprint_role": "alternate/makeup"
+      }
+    }
+  ]
+}

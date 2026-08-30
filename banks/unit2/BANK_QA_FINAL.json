@@ -1,0 +1,191 @@
+{
+  "schema": "physics-bank-v2-final-qa/1.0",
+  "unit": 2,
+  "status": "PASS",
+  "accepted_map_fingerprint": "7a44782459b2d11bb3d71fe39a60cc932bc04e5f0d9efbb313aec125bdeb14c5",
+  "checks": [
+    {
+      "check": "total_record_count",
+      "status": "PASS",
+      "detail": "365 / 365"
+    },
+    {
+      "check": "count_WTC",
+      "status": "PASS",
+      "detail": "5 / 5"
+    },
+    {
+      "check": "count_EXAMPLE",
+      "status": "PASS",
+      "detail": "20 / 20"
+    },
+    {
+      "check": "count_YTI",
+      "status": "PASS",
+      "detail": "20 / 20"
+    },
+    {
+      "check": "count_CYU",
+      "status": "PASS",
+      "detail": "30 / 30"
+    },
+    {
+      "check": "count_WARM_UP",
+      "status": "PASS",
+      "detail": "60 / 60"
+    },
+    {
+      "check": "count_PRACTICE",
+      "status": "PASS",
+      "detail": "150 / 150"
+    },
+    {
+      "check": "count_EXIT",
+      "status": "PASS",
+      "detail": "40 / 40"
+    },
+    {
+      "check": "count_SUMMATIVE",
+      "status": "PASS",
+      "detail": "40 / 40"
+    },
+    {
+      "check": "unique_record_ids",
+      "status": "PASS",
+      "detail": "365 unique"
+    },
+    {
+      "check": "item_index_count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exact_content_count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "family_seed_count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all_prompts_complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "all_answers_complete",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "selected_response_integrity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "semantic_tables",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "graph_assets_resolve",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "graph_routes_declared",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "constructed_representation_surface",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "i_can_text_current",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "practice_per_section",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "exit_per_section",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "cyu_per_section",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "warmup_per_section",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "notes_per_section",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "summative_blueprint_sizes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "summative_response_mix",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "summative_each_blueprint_covers_all_15_ic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "secure_no_instructional_duplicate_ids",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "family_transform_contracts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "no_placeholder_markers",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "domains": {
+    "coverage_counts": "PASS",
+    "alignment": "PASS",
+    "content_correctness": "PASS",
+    "selected_response": "PASS",
+    "representations": "PASS",
+    "variety": "PASS",
+    "security": "PASS",
+    "downstream": "PASS",
+    "core_boundary": "PASS"
+  },
+  "validator_execution": {
+    "qa_bank_3a_contract": "NOT_RUN_TRANSPORT_LIMITATION",
+    "qa_bank_3b_contract": "NOT_RUN_TRANSPORT_LIMITATION"
+  },
+  "direct_reconciliation": {
+    "phase_a_exact_instructional": "PASS",
+    "practice": "PASS",
+    "secure_assessment": "PASS",
+    "item_index": "PASS",
+    "final_canonical_qa": "PASS"
+  },
+  "note": "Legacy registered validators require locally materialized canonical repository inputs. The accepted Map was consumed directly at the pinned commit as allowed by the current bank_complete PM; direct reconciliation and final canonical QA were performed on the fresh staged Bank."
+}

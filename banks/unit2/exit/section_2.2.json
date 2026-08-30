@@ -1,0 +1,812 @@
+{
+  "schema": "physics-bank-v2-exit/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "section": "2.2",
+  "records": [
+    {
+      "record_id": "EXIT-U2_S2_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S2_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart travels a total distance of 90 m in 8 s. Calculate its average speed.",
+      "student_html": "<p>A cart travels a total distance of 90 m in 8 s. Calculate its average speed.</p><ol class=\"choices\" type=\"A\"><li>0.09 m/s</li><li>720 m/s</li><li>49 m/s</li><li>11.25 m/s</li></ol>",
+      "choices": [
+        "0.09 m/s",
+        "720 m/s",
+        "49 m/s",
+        "11.25 m/s"
+      ],
+      "correct_choice": 3,
+      "answer": "11.25 m/s",
+      "solution_text": "Average speed = total distance / total time = 90 m / 8 s = 11.25 m/s.",
+      "solution_html": "<p>Average speed = total distance / total time = 90 m / 8 s = 11.25 m/s.</p>",
+      "family_id": "U2_S2_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S2_IC1_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S2_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC2",
+      "primary_i_can": "I can distinguish instantaneous speed from average speed.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "On a elevator lobby, a rider’s speedometer reads 16 m/s at one instant. The rider’s average speed over the entire trip is 10 m/s. Explain what each value describes.",
+      "student_html": "<p>On a elevator lobby, a rider’s speedometer reads 16 m/s at one instant. The rider’s average speed over the entire trip is 10 m/s. Explain what each value describes.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "16 m/s is instantaneous speed at that moment; 10 m/s is total distance divided by total trip time.",
+      "solution_text": "Instantaneous speed describes one moment. Average speed combines the whole interval: total distance divided by total elapsed time.",
+      "solution_html": "<p>Instantaneous speed describes one moment. Average speed combines the whole interval: total distance divided by total elapsed time.</p>",
+      "family_id": "U2_S2_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S2_IC2_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC2",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "slot_id": "EXIT-U2_S2_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A robot moves at a constant speed of 9 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.",
+      "student_html": "<p>A robot moves at a constant speed of 9 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.</p><ol class=\"choices\" type=\"A\"><li>Velocity has no direction, so only position changes.</li><li>The speed remains 9 m/s, but the velocity changes because its direction changes from east to north.</li><li>Both speed and velocity remain constant because the speedometer value is unchanged.</li><li>The speed changes but the velocity does not.</li></ol>",
+      "choices": [
+        "Velocity has no direction, so only position changes.",
+        "The speed remains 9 m/s, but the velocity changes because its direction changes from east to north.",
+        "Both speed and velocity remain constant because the speedometer value is unchanged.",
+        "The speed changes but the velocity does not."
+      ],
+      "correct_choice": 1,
+      "answer": "The speed remains 9 m/s, but the velocity changes because its direction changes from east to north.",
+      "solution_text": "Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.",
+      "solution_html": "<p>Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.</p>",
+      "family_id": "U2_S2_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "parallel_family": "U2_S2_IC3_EXIT_ALTERNATE_EVIDENCE_CLASSIFY",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC1_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S2_IC1_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "student_action": "Use the supplied data/representation or construct the requested representation, then explain the motion evidence it shows.",
+      "intended_reasoning": "Interpret, construct, compare, or critique a motion representation while preserving the physical quantities and relationships in the target.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "table",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC1_EXIT_CORE_REASONING",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "table",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "semantic_html_table"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC1_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart travels a total distance of 120 m in 5 s. Calculate its average speed.",
+      "student_html": "<p>A cart travels a total distance of 120 m in 5 s. Calculate its average speed.</p><table class=\"values\"><thead><tr><th>Quantity</th><th>Value</th></tr></thead><tbody><tr><td>Total distance</td><td>120 m</td></tr><tr><td>Total time</td><td>5 s</td></tr></tbody></table>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "24 m/s",
+      "solution_text": "Average speed = total distance / total time = 120 m / 5 s = 24 m/s.",
+      "solution_html": "<p>Average speed = total distance / total time = 120 m / 5 s = 24 m/s.</p>",
+      "table": {
+        "headers": [
+          "Quantity",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Total distance",
+            "120 m"
+          ],
+          [
+            "Total time",
+            "5 s"
+          ]
+        ]
+      },
+      "family_id": "U2_S2_IC1_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S2_IC1_EXIT_CORE_REASONING",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC2_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S2_IC2_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC2",
+      "primary_i_can": "I can distinguish instantaneous speed from average speed.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC2_EXIT_CORE_REASONING",
+        "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+        "response_mode": "selected_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC2_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC2",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "On a soccer field, a rider’s speedometer reads 12 m/s at one instant. The rider’s average speed over the entire trip is 8 m/s. Explain what each value describes.",
+      "student_html": "<p>On a soccer field, a rider’s speedometer reads 12 m/s at one instant. The rider’s average speed over the entire trip is 8 m/s. Explain what each value describes.</p><ol class=\"choices\" type=\"A\"><li>Both values are instantaneous because both use m/s.</li><li>Both values are average because every speed is averaged over time.</li><li>The larger value is average and the smaller value is instantaneous by definition.</li><li>12 m/s is instantaneous speed at that moment; 8 m/s is total distance divided by total trip time.</li></ol>",
+      "choices": [
+        "Both values are instantaneous because both use m/s.",
+        "Both values are average because every speed is averaged over time.",
+        "The larger value is average and the smaller value is instantaneous by definition.",
+        "12 m/s is instantaneous speed at that moment; 8 m/s is total distance divided by total trip time."
+      ],
+      "correct_choice": 3,
+      "answer": "12 m/s is instantaneous speed at that moment; 8 m/s is total distance divided by total trip time.",
+      "solution_text": "Instantaneous speed describes one moment. Average speed combines the whole interval: total distance divided by total elapsed time.",
+      "solution_html": "<p>Instantaneous speed describes one moment. Average speed combines the whole interval: total distance divided by total elapsed time.</p>",
+      "family_id": "U2_S2_IC2_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S2_IC2_EXIT_CORE_REASONING",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC2",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC3_EXIT_CORE_REASONING",
+      "slot_id": "EXIT-U2_S2_IC3_EXIT_CORE_REASONING",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC3_EXIT_CORE_REASONING",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC3_EXIT_CORE_REASONING",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A robot moves at a constant speed of 6 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.",
+      "student_html": "<p>A robot moves at a constant speed of 6 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "The speed remains 6 m/s, but the velocity changes because its direction changes from east to north.",
+      "solution_text": "Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.",
+      "solution_html": "<p>Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.</p>",
+      "family_id": "U2_S2_IC3_EXIT_CORE_REASONING",
+      "parallel_family": "U2_S2_IC3_EXIT_CORE_REASONING",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "slot_id": "EXIT-U2_S2_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "student_action": "Read the evidence and select the physically consistent answer; distractors represent target-specific misconceptions.",
+      "intended_reasoning": "Discriminate among candidate descriptions or results to identify the one consistent with the target and the scenario evidence.",
+      "question_structure_id": "QUANT-RATE-SOLVE-01",
+      "structure_id": "QUANT-RATE-SOLVE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "table",
+      "representation_need": "required",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC1_EXIT_DATA_OR_REPRESENTATION",
+        "question_structure_id": "QUANT-RATE-SOLVE-01",
+        "response_mode": "selected_response",
+        "representation_mode": "table",
+        "representation_need": "required",
+        "tool": null,
+        "render_route": "semantic_html_table"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC1",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A cart travels a total distance of 80 m in 8 s. Calculate its average speed.",
+      "student_html": "<p>A cart travels a total distance of 80 m in 8 s. Calculate its average speed.</p><ol class=\"choices\" type=\"A\"><li>44 m/s</li><li>10 m/s</li><li>0.10 m/s</li><li>640 m/s</li></ol><table class=\"values\"><thead><tr><th>Quantity</th><th>Value</th></tr></thead><tbody><tr><td>Total distance</td><td>80 m</td></tr><tr><td>Total time</td><td>8 s</td></tr></tbody></table>",
+      "choices": [
+        "44 m/s",
+        "10 m/s",
+        "0.10 m/s",
+        "640 m/s"
+      ],
+      "correct_choice": 1,
+      "answer": "10 m/s",
+      "solution_text": "Average speed = total distance / total time = 80 m / 8 s = 10 m/s.",
+      "solution_html": "<p>Average speed = total distance / total time = 80 m / 8 s = 10 m/s.</p>",
+      "table": {
+        "headers": [
+          "Quantity",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Total distance",
+            "80 m"
+          ],
+          [
+            "Total time",
+            "8 s"
+          ]
+        ]
+      },
+      "family_id": "U2_S2_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "parallel_family": "U2_S2_IC1_EXIT_DATA_OR_REPRESENTATION",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC1",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    },
+    {
+      "record_id": "EXIT-U2_S2_IC3_EXIT_TRANSFER",
+      "slot_id": "EXIT-U2_S2_IC3_EXIT_TRANSFER",
+      "record_mode": "family_seed",
+      "destination": "EXIT",
+      "section": "2.2",
+      "section_scope": "2.2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "student_action": "Use the scenario evidence to make a physics claim and explain why it is consistent with the target.",
+      "intended_reasoning": "Explain, compare, or justify the target idea using the scenario evidence without changing the stated frame, quantity, or representation.",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "optional",
+      "security_level": "formative_secure",
+      "security_role": "formative_secure",
+      "question_design": {
+        "design_slot_id": "EXIT-U2_S2_IC3_EXIT_TRANSFER",
+        "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+        "response_mode": "constructed_response",
+        "representation_mode": "direct_text",
+        "representation_need": "optional",
+        "tool": null,
+        "render_route": "direct_text"
+      },
+      "source_map_record_id": "EXIT-U2_S2_IC3_EXIT_TRANSFER",
+      "source_basis": [
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+        "tnezki/memories@3587155c9c4ff9ca4e66863bed907b6cb0cb3edf:frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/i_can_index.json:U2-S2-IC3",
+        "tnezki/physics@c555ea42a1cac3cd6c81033e6af2c94aa8907262:banks/unit2_bank_map/MAP_MANIFEST.json"
+      ],
+      "student_text": "A robot moves at a constant speed of 8 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.",
+      "student_html": "<p>A robot moves at a constant speed of 8 m/s. At first it moves east, then it turns and moves north while keeping the same speed. Compare its speed and velocity before and after the turn.</p>",
+      "choices": null,
+      "correct_choice": null,
+      "answer": "The speed remains 8 m/s, but the velocity changes because its direction changes from east to north.",
+      "solution_text": "Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.",
+      "solution_html": "<p>Velocity includes magnitude and direction. A direction change changes velocity even when the speed stays constant.</p>",
+      "family_id": "U2_S2_IC3_EXIT_TRANSFER",
+      "parallel_family": "U2_S2_IC3_EXIT_TRANSFER",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "core",
+      "locked_elements": [
+        "primary_i_can",
+        "evidence_job",
+        "question_structure",
+        "response_mode",
+        "required_representation_behavior",
+        "intended_reasoning",
+        "approximate_difficulty"
+      ],
+      "allowed_variations": [
+        "physical context/phenomenon",
+        "values/units when relevant",
+        "scenario evidence",
+        "misconception/error target",
+        "representation parameters when mapped"
+      ],
+      "required_variations": [
+        "Secure forms A/B/C must use genuinely fresh stimulus/context/data while preserving family evidence and approximate difficulty."
+      ],
+      "forbidden_variations": [
+        "noun/name-only clone",
+        "exposed prompt reuse",
+        "change of primary I-can",
+        "change of evidence job",
+        "difficulty drift beyond comparable range"
+      ],
+      "representation_variation_rule": "Preserve mapped representation behavior and answer-neutrality across secure instances.",
+      "selection_tags": [
+        "2.2",
+        "exit",
+        "U2-S2-IC3",
+        "secure",
+        "exit_pool",
+        "formative_secure",
+        "coverage_candidate"
+      ],
+      "secure_instance_contract": {
+        "forms": [
+          "A",
+          "B",
+          "C"
+        ],
+        "same_family_evidence": true,
+        "fresh_stimulus_required": true,
+        "exposed_prompt_reuse_forbidden": true,
+        "approximate_difficulty_preserved": true
+      }
+    }
+  ]
+}
