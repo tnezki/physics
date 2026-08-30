@@ -1,0 +1,49 @@
+UNIT 2 BANK MAP REPORT
+======================
+Course: Physics
+Unit: 2 — Motion and Kinematics
+Profile: Conceptual Physics Bank v2 Course Profile v1.3
+Memories snapshot: tnezki/memories@3bea450233538d8ea830192c06d3d695b043bbb1
+Course snapshot: tnezki/physics@a9f395aa14be765705aa2ee6aef037006eccf47b
+Map fingerprint: bfbd913fd2246473df4e96040d284ea1eecb7de37ad08ac8ad88e0a80dcdf3c8
+
+QUESTION-DESIGN STATUS
+----------------------
+PASS — 15 exact Unit 2 I-cans have evidence jobs, content modes, structure choices, avoid rules, representations/tools, and parallel variation axes. All 365 destination records resolve to executable design slots. No final prompt/choice/answer/solution prose is authored in this map.
+
+WTC ROUTES
+----------
+5 WTCs (one per section), all coverage_role=wtc_frq_practice. Each uses one shared stimulus, 4 connected parts, an explicit decomposition_move_plan, and at least one carry-forward dependency. Routes: semantic compact tables, graph_tool motion graph, table + student-constructed velocity-vector surface, and prior-Unit table evidence.
+
+COUNTS
+------
+Exact-content records: 135 (5 WTC + 40 Example/YTI + 30 CYU + 60 Warm-Up)
+Family-seed records: 230 (150 Practice + 40 Exit + 40 Summative)
+Total mapped records: 365
+Practice weighting signatures by section: 2.1=(11, 7, 12); 2.2=(13, 7, 10); 2.3=(12, 7, 11); 2.4=(7, 10, 13); 2.5=(10, 8, 12)
+
+REPRESENTATION / TOOL ROUTES
+----------------------------
+Representation-mode counts: {'semantic_data_table': 53, 'context_motion_graph': 43, 'table_plus_student_constructed_velocity_vectors': 1, 'direct_text': 140, 'equation_relationship': 82, 'student_constructed_velocity_vectors': 39, 'student_constructed_motion_diagram': 5, 'mixed_table_graph': 2}
+Tool counts: {'none': 320, 'graph_tool': 45}
+Graphs: registered graph_tool only, exact pinned path Tools/~graph_tool_v12.py.
+Small data tables: semantic HTML <table class="values">.
+Velocity vectors/motion diagrams: student-constructed blank response surfaces; no generic diagram route alias and no completed answer diagram.
+
+DETERMINISTIC BLUEPRINT FEASIBILITY
+-----------------------------------
+Practice: each 30-family section pool can select 24 while preserving all three section I-cans; constraints precede stable-hash tie-break and set keys rotate omissions only when constraints allow.
+Exit: each section has an explicit feasible 4-family reference blueprint covering all three exact section I-cans; A/B/C are secure instances of the same selected family IDs.
+Summative: Blueprint A and Blueprint B each contain exactly 20 families, cover all 15 exact Unit I-cans, and contain 16 selected-response + 4 constructed-response families. A/B family IDs are disjoint in this map, making the V5/V6 alternate blueprint materially distinct without weakening coverage.
+Stable key recipe: course|unit|section-or-unit|destination|form-or-set|bank_fingerprint
+
+QA
+--
+PASS — integrated structural/executable audit completed.
+Checks executed: 2891
+No generic diagram placeholders; no pseudo-tables; no improvised graphs; no construction evidence mislabeled as selected-response; selected-response records include a 4-choice/distractor contract; all required destination coverage floors and secure blueprint counts are feasible.
+
+OUTPUT
+------
+unit2_bank_map.zip (transport only)
+Canonical expanded destination after sync: banks/unit2_bank_map/

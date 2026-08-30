@@ -1,0 +1,3793 @@
+{
+  "schema": "physics-bank-v2-summative-map/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "inventory_contract": {
+    "family_pool_per_unit": 40,
+    "form_size": 20,
+    "selected_response_per_form": 16,
+    "constructed_response_per_form": 4,
+    "forms": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ]
+  },
+  "blueprints": {
+    "A": {
+      "forms": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "family_ids": [
+        "family::u2-s1-ic1::summative::relative-frame-status",
+        "family::u2-s1-ic2::summative::reference-frame-identification",
+        "family::u2-s1-ic3::summative::viewpoint-explanation",
+        "family::u2-s2-ic1::summative::average-speed-direct",
+        "family::u2-s2-ic2::summative::instantaneous-average-distinction",
+        "family::u2-s2-ic3::summative::velocity-direction-classification",
+        "family::u2-s3-ic1::summative::acceleration-direct",
+        "family::u2-s3-ic2::summative::velocity-change-concept",
+        "family::u2-s3-ic3::summative::acceleration-sign-graph",
+        "family::u2-s4-ic1::summative::ideal-equal-acceleration",
+        "family::u2-s4-ic2::summative::freefall-speed-gain",
+        "family::u2-s4-ic3::summative::distance-pattern-table",
+        "family::u2-s5-ic1::summative::velocity-vector-construction",
+        "family::u2-s5-ic2::summative::velocity-vector-change",
+        "family::u2-s5-ic3::summative::multi-representation-critique",
+        "family::u2-s2-ic1::summative::average-speed-inverse",
+        "family::u2-s3-ic1::summative::acceleration-table",
+        "family::u2-s3-ic3::summative::multi-interval-motion-graph",
+        "family::u2-s4-ic3::summative::ideal-vs-air-model",
+        "family::u2-s5-ic3::summative::graph-description-match"
+      ],
+      "rule": "same-day parallel secure instances of this exact 20-family evidence blueprint"
+    },
+    "B": {
+      "forms": [
+        "V5",
+        "V6"
+      ],
+      "family_ids": [
+        "family::u2-s1-ic1::summative::relative-motion-mechanism",
+        "family::u2-s1-ic2::summative::implicit-frame-identification",
+        "family::u2-s1-ic3::summative::paired-viewpoint-consistency",
+        "family::u2-s2-ic1::summative::trip-table-speed",
+        "family::u2-s2-ic2::summative::speedometer-trip-distinction",
+        "family::u2-s2-ic3::summative::constant-speed-turning",
+        "family::u2-s3-ic1::summative::acceleration-inverse-time",
+        "family::u2-s3-ic2::summative::direction-change-acceleration",
+        "family::u2-s3-ic3::summative::velocity-table-acceleration-sign",
+        "family::u2-s4-ic1::summative::equal-g-explanation",
+        "family::u2-s4-ic2::summative::freefall-time-inverse",
+        "family::u2-s4-ic3::summative::distance-interval-comparison",
+        "family::u2-s5-ic1::summative::velocity-vector-scale",
+        "family::u2-s5-ic2::summative::velocity-vector-turn",
+        "family::u2-s5-ic3::summative::graph-model-critique",
+        "family::u2-s1-ic3::summative::earth-reference-transfer",
+        "family::u2-s2-ic3::summative::velocity-vs-speed-claim",
+        "family::u2-s3-ic2::summative::slowing-vs-acceleration",
+        "family::u2-s4-ic2::summative::g-interpretation",
+        "family::u2-s5-ic3::summative::table-graph-consistency"
+      ],
+      "rule": "materially alternate/makeup secure instances of this exact 20-family blueprint"
+    }
+  },
+  "blueprint_overlap_rule": "A and B are intentionally disjoint in family IDs for this Unit 2 map; both still cover every exact Unit I-can. This stronger alternation is feasible without weakening coverage.",
+  "answer_position_rule": "selected-response answer-position scrambling occurs downstream after secure content is fixed",
+  "records": [
+    {
+      "record_id": "SUM-U2-S1-IC1-relative-frame-status",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC1",
+      "primary_i_can": "I can explain why an object can be moving relative to one reference frame but not another.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain how the same object can have different motion status relative to different stated reference frames",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S1-IC1-relative-frame-status",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s1-ic1::summative::relative-frame-status",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "observer/reference frame",
+        "object motion status",
+        "direction of comparison",
+        "claim truth conditions",
+        "wording profile",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC1",
+        "summative",
+        "relative-frame-status"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S1-IC2-reference-frame-identification",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC2",
+      "primary_i_can": "I can identify the reference frame used in a motion description.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "identify the explicitly or implicitly used reference frame in a motion description",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S1-IC2-reference-frame-identification",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s1-ic2::summative::reference-frame-identification",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "frame explicitness",
+        "observer identity",
+        "object described",
+        "selected vs constructed response",
+        "distractor misconception",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC2",
+        "summative",
+        "reference-frame-identification"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S1-IC3-viewpoint-explanation",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC3",
+      "primary_i_can": "I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "compare two internally consistent motion descriptions from different viewpoints and explain why Earth is the ordinary everyday reference",
+      "student_action": "explain the secure phenomenon/evidence in a constructed response using the exact target",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S1-IC3-viewpoint-explanation",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s1-ic3::summative::viewpoint-explanation",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "explain the secure phenomenon/evidence in a constructed response using the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "two viewpoints",
+        "Earth vs moving frame",
+        "motion direction",
+        "evidence set",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC3",
+        "summative",
+        "viewpoint-explanation"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC1-average-speed-direct",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "calculate and interpret average speed from a physical trip using distance and elapsed time",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S2-IC1-average-speed-direct",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic1::summative::average-speed-direct",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "unknown quantity",
+        "trip context",
+        "values and compatible units",
+        "table vs prose givens",
+        "dependency path",
+        "reasonableness error",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC1",
+        "summative",
+        "average-speed-direct"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC2-instantaneous-average-distinction",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC2",
+      "primary_i_can": "I can distinguish instantaneous speed from average speed.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "distinguish a momentary speed reading from average speed over an interval and justify the distinction",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S2-IC2-instantaneous-average-distinction",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic2::summative::instantaneous-average-distinction",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "moment vs interval",
+        "data completeness",
+        "claim misconception",
+        "context",
+        "response mode",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC2",
+        "summative",
+        "instantaneous-average-distinction"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC3-velocity-direction-classification",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use magnitude and direction to distinguish speed from velocity and classify constant speed, constant velocity, or changing velocity",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S2-IC3-velocity-direction-classification",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic3::summative::velocity-direction-classification",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "direction change",
+        "magnitude change",
+        "constant magnitude with changing direction",
+        "comparison set",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC3",
+        "summative",
+        "velocity-direction-classification"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC1-acceleration-direct",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "calculate acceleration from a change in velocity over elapsed time and interpret the sign/value in the physical situation",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S3-IC1-acceleration-direct",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic1::summative::acceleration-direct",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "initial/final velocity",
+        "unknown quantity",
+        "time interval",
+        "table vs graph evidence",
+        "dependency path",
+        "sign convention",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC1",
+        "summative",
+        "acceleration-direct"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC2-velocity-change-concept",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain why any change in velocity—magnitude or direction—constitutes acceleration",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S3-IC2-velocity-change-concept",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic2::summative::velocity-change-concept",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "speeding up",
+        "slowing down",
+        "direction-only change",
+        "combined change",
+        "claim misconception",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC2",
+        "summative",
+        "velocity-change-concept"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC3-acceleration-sign-graph",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "infer acceleration sign/state from a motion situation or actual motion graph and connect graph features to velocity/acceleration",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "context_motion_graph",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S3-IC3-acceleration-sign-graph",
+      "tool": "graph_tool",
+      "render_contract": {
+        "route_type": "registered_tool",
+        "tool_key": "graph_tool",
+        "repository": "tnezki/memories",
+        "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+        "canonical_path": "Tools/~graph_tool_v12.py",
+        "function": "make_context_graph",
+        "parameter_contract": {
+          "axis_ranges": "derive from task data; include all evidence-bearing intervals without excessive empty range",
+          "axis_labels": "physical quantity plus units",
+          "functions": "simple continuous motion relationships supported by make_context_graph",
+          "styling": "use registered tool unchanged; no styling overrides"
+        },
+        "answer_neutrality": "render axes and supplied motion evidence only; no answer-bearing annotations or highlighted solution intervals"
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic3::summative::acceleration-sign-graph",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "positive/negative/zero slope",
+        "graph interval",
+        "velocity sign",
+        "table vs graph",
+        "graph-to-description direction",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC3",
+        "summative",
+        "acceleration-sign-graph"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC1-ideal-equal-acceleration",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC1",
+      "primary_i_can": "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain, under the idealized no-air-resistance model, why mass does not change the free-fall acceleration",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S4-IC1-ideal-equal-acceleration",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic1::summative::ideal-equal-acceleration",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "mass contrast",
+        "object pair",
+        "ideal vs air condition",
+        "claim framing",
+        "evidence set",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC1",
+        "summative",
+        "ideal-equal-acceleration"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC2-freefall-speed-gain",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use $g \\approx 10\\text{ m/s}^2$ to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use g approximately 10 m/s^2 to determine speed gained over a stated free-fall time and interpret the result",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S4-IC2-freefall-speed-gain",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic2::summative::freefall-speed-gain",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "unknown speed or time",
+        "fall duration",
+        "table vs prose",
+        "dependency path",
+        "reasonableness error",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC2",
+        "summative",
+        "freefall-speed-gain"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC3-distance-pattern-table",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use ideal free-fall distance patterns across time intervals and distinguish the ideal model from falling with significant air resistance",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S4-IC3-distance-pattern-table",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic3::summative::distance-pattern-table",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "time intervals",
+        "distance ratio",
+        "ideal vs air case",
+        "table cells",
+        "graph/table translation",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC3",
+        "summative",
+        "distance-pattern-table"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC1-velocity-vector-construction",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC1",
+      "primary_i_can": "I can represent velocity with arrows that show both speed and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "construct velocity arrows whose direction and relative length encode direction and speed",
+      "student_action": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_velocity_vectors",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC1-velocity-vector-construction",
+      "tool": null,
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface": "blank_html_css_response_surface",
+        "construction_kind": "velocity_vectors",
+        "requirements": [
+          "adequate blank workspace",
+          "situation/data supplied outside the blank surface",
+          "no completed answer representation",
+          "no answer-bearing vector lengths/directions pre-drawn"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s5-ic1::summative::velocity-vector-construction",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "direction",
+        "relative speed",
+        "number of states",
+        "scale cue",
+        "context",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC1",
+        "summative",
+        "velocity-vector-construction"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC2-velocity-vector-change",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC2",
+      "primary_i_can": "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "compare actual velocity vectors by magnitude and direction to determine whether velocity changes",
+      "student_action": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_velocity_vectors",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC2-velocity-vector-change",
+      "tool": null,
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface": "blank_html_css_response_surface",
+        "construction_kind": "velocity_vectors",
+        "requirements": [
+          "adequate blank workspace",
+          "situation/data supplied outside the blank surface",
+          "no completed answer representation",
+          "no answer-bearing vector lengths/directions pre-drawn"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s5-ic2::summative::velocity-vector-change",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "magnitude change",
+        "direction change",
+        "both change",
+        "unchanged velocity",
+        "comparison sequence",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC2",
+        "summative",
+        "velocity-vector-change"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC3-multi-representation-critique",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "translate among actual motion diagrams/data tables/graphs and written descriptions, then critique and revise an inconsistent motion model using evidence",
+      "student_action": "use both supplied table and graph evidence to critique/revise the motion model in a constructed response",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "mixed_table_graph",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC3-multi-representation-critique",
+      "tool": "graph_tool",
+      "render_contract": {
+        "route_type": "multiple_executable_routes",
+        "render_routes": [
+          {
+            "route_type": "semantic_html_table",
+            "required_markup": "<table class=\"values\">",
+            "html_class": "values",
+            "requirements": [
+              "semantic th/td markup",
+              "headers",
+              "units where applicable",
+              "compact width for small data sets"
+            ]
+          },
+          {
+            "route_type": "registered_tool",
+            "tool_key": "graph_tool",
+            "repository": "tnezki/memories",
+            "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+            "canonical_path": "Tools/~graph_tool_v12.py",
+            "function": "make_context_graph",
+            "parameter_contract": {
+              "axis_ranges": "derive from task data; include all evidence-bearing intervals without excessive empty range",
+              "axis_labels": "physical quantity plus units",
+              "functions": "simple continuous motion relationships supported by make_context_graph",
+              "styling": "use registered tool unchanged; no styling overrides"
+            },
+            "answer_neutrality": "render axes and supplied motion evidence only; no answer-bearing annotations or highlighted solution intervals"
+          }
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s5-ic3::summative::multi-representation-critique",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use both supplied table and graph evidence to critique/revise the motion model in a constructed response",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "representation pair",
+        "direction of translation",
+        "model inconsistency",
+        "graph interval",
+        "data pattern",
+        "revision target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC3",
+        "summative",
+        "multi-representation-critique"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC1-average-speed-inverse",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "calculate and interpret average speed from a physical trip using distance and elapsed time",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S2-IC1-average-speed-inverse",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic1::summative::average-speed-inverse",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "unknown quantity",
+        "trip context",
+        "values and compatible units",
+        "table vs prose givens",
+        "dependency path",
+        "reasonableness error",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC1",
+        "summative",
+        "average-speed-inverse"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC1-acceleration-table",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "calculate acceleration from a change in velocity over elapsed time and interpret the sign/value in the physical situation",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S3-IC1-acceleration-table",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic1::summative::acceleration-table",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "initial/final velocity",
+        "unknown quantity",
+        "time interval",
+        "table vs graph evidence",
+        "dependency path",
+        "sign convention",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC1",
+        "summative",
+        "acceleration-table"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC3-multi-interval-motion-graph",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "infer acceleration sign/state from a motion situation or actual motion graph and connect graph features to velocity/acceleration",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "GRAPH-INFER-BEHAVIOR-01",
+      "response_mode": "selected_response",
+      "representation_mode": "context_motion_graph",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S3-IC3-multi-interval-motion-graph",
+      "tool": "graph_tool",
+      "render_contract": {
+        "route_type": "registered_tool",
+        "tool_key": "graph_tool",
+        "repository": "tnezki/memories",
+        "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+        "canonical_path": "Tools/~graph_tool_v12.py",
+        "function": "make_context_graph",
+        "parameter_contract": {
+          "axis_ranges": "derive from task data; include all evidence-bearing intervals without excessive empty range",
+          "axis_labels": "physical quantity plus units",
+          "functions": "simple continuous motion relationships supported by make_context_graph",
+          "styling": "use registered tool unchanged; no styling overrides"
+        },
+        "answer_neutrality": "render axes and supplied motion evidence only; no answer-bearing annotations or highlighted solution intervals"
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic3::summative::multi-interval-motion-graph",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "positive/negative/zero slope",
+        "graph interval",
+        "velocity sign",
+        "table vs graph",
+        "graph-to-description direction",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC3",
+        "summative",
+        "multi-interval-motion-graph"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC3-ideal-vs-air-model",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use ideal free-fall distance patterns across time intervals and distinguish the ideal model from falling with significant air resistance",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S4-IC3-ideal-vs-air-model",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic3::summative::ideal-vs-air-model",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "time intervals",
+        "distance ratio",
+        "ideal vs air case",
+        "table cells",
+        "graph/table translation",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC3",
+        "summative",
+        "ideal-vs-air-model"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC3-graph-description-match",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "translate among actual motion diagrams/data tables/graphs and written descriptions, then critique and revise an inconsistent motion model using evidence",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "GRAPH-INFER-BEHAVIOR-01",
+      "response_mode": "selected_response",
+      "representation_mode": "context_motion_graph",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC3-graph-description-match",
+      "tool": "graph_tool",
+      "render_contract": {
+        "route_type": "registered_tool",
+        "tool_key": "graph_tool",
+        "repository": "tnezki/memories",
+        "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+        "canonical_path": "Tools/~graph_tool_v12.py",
+        "function": "make_context_graph",
+        "parameter_contract": {
+          "axis_ranges": "derive from task data; include all evidence-bearing intervals without excessive empty range",
+          "axis_labels": "physical quantity plus units",
+          "functions": "simple continuous motion relationships supported by make_context_graph",
+          "styling": "use registered tool unchanged; no styling overrides"
+        },
+        "answer_neutrality": "render axes and supplied motion evidence only; no answer-bearing annotations or highlighted solution intervals"
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s5-ic3::summative::graph-description-match",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "representation pair",
+        "direction of translation",
+        "model inconsistency",
+        "graph interval",
+        "data pattern",
+        "revision target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC3",
+        "summative",
+        "graph-description-match"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S1-IC1-relative-motion-mechanism",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC1",
+      "primary_i_can": "I can explain why an object can be moving relative to one reference frame but not another.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain how the same object can have different motion status relative to different stated reference frames",
+      "student_action": "explain the secure phenomenon/evidence in a constructed response using the exact target",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S1-IC1-relative-motion-mechanism",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s1-ic1::summative::relative-motion-mechanism",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "explain the secure phenomenon/evidence in a constructed response using the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "observer/reference frame",
+        "object motion status",
+        "direction of comparison",
+        "claim truth conditions",
+        "wording profile",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC1",
+        "summative",
+        "relative-motion-mechanism"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S1-IC2-implicit-frame-identification",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC2",
+      "primary_i_can": "I can identify the reference frame used in a motion description.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "identify the explicitly or implicitly used reference frame in a motion description",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "VOCAB-CONCEPT-TO-TERM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S1-IC2-implicit-frame-identification",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s1-ic2::summative::implicit-frame-identification",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "frame explicitness",
+        "observer identity",
+        "object described",
+        "selected vs constructed response",
+        "distractor misconception",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC2",
+        "summative",
+        "implicit-frame-identification"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S1-IC3-paired-viewpoint-consistency",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC3",
+      "primary_i_can": "I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "compare two internally consistent motion descriptions from different viewpoints and explain why Earth is the ordinary everyday reference",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S1-IC3-paired-viewpoint-consistency",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s1-ic3::summative::paired-viewpoint-consistency",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "two viewpoints",
+        "Earth vs moving frame",
+        "motion direction",
+        "evidence set",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC3",
+        "summative",
+        "paired-viewpoint-consistency"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC1-trip-table-speed",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC1",
+      "primary_i_can": "I can calculate average speed from distance and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "calculate and interpret average speed from a physical trip using distance and elapsed time",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S2-IC1-trip-table-speed",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic1::summative::trip-table-speed",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "unknown quantity",
+        "trip context",
+        "values and compatible units",
+        "table vs prose givens",
+        "dependency path",
+        "reasonableness error",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC1",
+        "summative",
+        "trip-table-speed"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC2-speedometer-trip-distinction",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC2",
+      "primary_i_can": "I can distinguish instantaneous speed from average speed.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "distinguish a momentary speed reading from average speed over an interval and justify the distinction",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "ERROR-CRITIQUE-CLAIM-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S2-IC2-speedometer-trip-distinction",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic2::summative::speedometer-trip-distinction",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "moment vs interval",
+        "data completeness",
+        "claim misconception",
+        "context",
+        "response mode",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC2",
+        "summative",
+        "speedometer-trip-distinction"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC3-constant-speed-turning",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use magnitude and direction to distinguish speed from velocity and classify constant speed, constant velocity, or changing velocity",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S2-IC3-constant-speed-turning",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic3::summative::constant-speed-turning",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "direction change",
+        "magnitude change",
+        "constant magnitude with changing direction",
+        "comparison set",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC3",
+        "summative",
+        "constant-speed-turning"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC1-acceleration-inverse-time",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC1",
+      "primary_i_can": "I can calculate acceleration from change in velocity and time.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "calculate acceleration from a change in velocity over elapsed time and interpret the sign/value in the physical situation",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S3-IC1-acceleration-inverse-time",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic1::summative::acceleration-inverse-time",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "initial/final velocity",
+        "unknown quantity",
+        "time interval",
+        "table vs graph evidence",
+        "dependency path",
+        "sign convention",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC1",
+        "summative",
+        "acceleration-inverse-time"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC2-direction-change-acceleration",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain why any change in velocity—magnitude or direction—constitutes acceleration",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S3-IC2-direction-change-acceleration",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic2::summative::direction-change-acceleration",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "speeding up",
+        "slowing down",
+        "direction-only change",
+        "combined change",
+        "claim misconception",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC2",
+        "summative",
+        "direction-change-acceleration"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC3-velocity-table-acceleration-sign",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC3",
+      "primary_i_can": "I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "infer acceleration sign/state from a motion situation or actual motion graph and connect graph features to velocity/acceleration",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPTRANS-GRAPH-TABLE-EQUATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S3-IC3-velocity-table-acceleration-sign",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic3::summative::velocity-table-acceleration-sign",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "positive/negative/zero slope",
+        "graph interval",
+        "velocity sign",
+        "table vs graph",
+        "graph-to-description direction",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC3",
+        "summative",
+        "velocity-table-acceleration-sign"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC1-equal-g-explanation",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC1",
+      "primary_i_can": "I can explain why objects in free fall accelerate at the same rate when air resistance is ignored.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain, under the idealized no-air-resistance model, why mass does not change the free-fall acceleration",
+      "student_action": "explain the secure phenomenon/evidence in a constructed response using the exact target",
+      "question_structure_id": "CER-CLAIM-EVIDENCE-REASONING-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S4-IC1-equal-g-explanation",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s4-ic1::summative::equal-g-explanation",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "explain the secure phenomenon/evidence in a constructed response using the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "mass contrast",
+        "object pair",
+        "ideal vs air condition",
+        "claim framing",
+        "evidence set",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC1",
+        "summative",
+        "equal-g-explanation"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC2-freefall-time-inverse",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use $g \\approx 10\\text{ m/s}^2$ to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use g approximately 10 m/s^2 to determine speed gained over a stated free-fall time and interpret the result",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-INVERSE-VARIABLE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S4-IC2-freefall-time-inverse",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic2::summative::freefall-time-inverse",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "unknown speed or time",
+        "fall duration",
+        "table vs prose",
+        "dependency path",
+        "reasonableness error",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC2",
+        "summative",
+        "freefall-time-inverse"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC3-distance-interval-comparison",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC3",
+      "primary_i_can": "I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use ideal free-fall distance patterns across time intervals and distinguish the ideal model from falling with significant air resistance",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPRESENTATION-READ-THEN-CALCULATE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "semantic_data_table",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S4-IC3-distance-interval-comparison",
+      "tool": null,
+      "render_contract": {
+        "route_type": "semantic_html_table",
+        "required_markup": "<table class=\"values\">",
+        "html_class": "values",
+        "requirements": [
+          "semantic th/td markup",
+          "headers",
+          "units where applicable",
+          "compact width for small data sets"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic3::summative::distance-interval-comparison",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "time intervals",
+        "distance ratio",
+        "ideal vs air case",
+        "table cells",
+        "graph/table translation",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC3",
+        "summative",
+        "distance-interval-comparison"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC1-velocity-vector-scale",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC1",
+      "primary_i_can": "I can represent velocity with arrows that show both speed and direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "construct velocity arrows whose direction and relative length encode direction and speed",
+      "student_action": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_velocity_vectors",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC1-velocity-vector-scale",
+      "tool": null,
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface": "blank_html_css_response_surface",
+        "construction_kind": "velocity_vectors",
+        "requirements": [
+          "adequate blank workspace",
+          "situation/data supplied outside the blank surface",
+          "no completed answer representation",
+          "no answer-bearing vector lengths/directions pre-drawn"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s5-ic1::summative::velocity-vector-scale",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "direction",
+        "relative speed",
+        "number of states",
+        "scale cue",
+        "context",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC1",
+        "summative",
+        "velocity-vector-scale"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC2-velocity-vector-turn",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC2",
+      "primary_i_can": "I can compare velocity vectors to determine whether an object’s velocity is changing.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "compare actual velocity vectors by magnitude and direction to determine whether velocity changes",
+      "student_action": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "constructed_response",
+      "representation_mode": "student_constructed_velocity_vectors",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC2-velocity-vector-turn",
+      "tool": null,
+      "render_contract": {
+        "route_type": "student_constructed",
+        "surface": "blank_html_css_response_surface",
+        "construction_kind": "velocity_vectors",
+        "requirements": [
+          "adequate blank workspace",
+          "situation/data supplied outside the blank surface",
+          "no completed answer representation",
+          "no answer-bearing vector lengths/directions pre-drawn"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "family_id": "family::u2-s5-ic2::summative::velocity-vector-turn",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "construct velocity vectors on a blank response surface and use them as evidence for the exact target",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "magnitude change",
+        "direction change",
+        "both change",
+        "unchanged velocity",
+        "comparison sequence",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC2",
+        "summative",
+        "velocity-vector-turn"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC3-graph-model-critique",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "translate among actual motion diagrams/data tables/graphs and written descriptions, then critique and revise an inconsistent motion model using evidence",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "context_motion_graph",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC3-graph-model-critique",
+      "tool": "graph_tool",
+      "render_contract": {
+        "route_type": "registered_tool",
+        "tool_key": "graph_tool",
+        "repository": "tnezki/memories",
+        "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+        "canonical_path": "Tools/~graph_tool_v12.py",
+        "function": "make_context_graph",
+        "parameter_contract": {
+          "axis_ranges": "derive from task data; include all evidence-bearing intervals without excessive empty range",
+          "axis_labels": "physical quantity plus units",
+          "functions": "simple continuous motion relationships supported by make_context_graph",
+          "styling": "use registered tool unchanged; no styling overrides"
+        },
+        "answer_neutrality": "render axes and supplied motion evidence only; no answer-bearing annotations or highlighted solution intervals"
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s5-ic3::summative::graph-model-critique",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "representation pair",
+        "direction of translation",
+        "model inconsistency",
+        "graph interval",
+        "data pattern",
+        "revision target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC3",
+        "summative",
+        "graph-model-critique"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S1-IC3-earth-reference-transfer",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S1-IC3",
+      "primary_i_can": "I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "compare two internally consistent motion descriptions from different viewpoints and explain why Earth is the ordinary everyday reference",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S1-IC3-earth-reference-transfer",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s1-ic3::summative::earth-reference-transfer",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "two viewpoints",
+        "Earth vs moving frame",
+        "motion direction",
+        "evidence set",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S1-IC3",
+        "summative",
+        "earth-reference-transfer"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S2-IC3-velocity-vs-speed-claim",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S2-IC3",
+      "primary_i_can": "I can explain that velocity includes both speed and direction and compare examples of constant speed, constant velocity, and changing velocity.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use magnitude and direction to distinguish speed from velocity and classify constant speed, constant velocity, or changing velocity",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S2-IC3-velocity-vs-speed-claim",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s2-ic3::summative::velocity-vs-speed-claim",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "direction change",
+        "magnitude change",
+        "constant magnitude with changing direction",
+        "comparison set",
+        "misconception target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S2-IC3",
+        "summative",
+        "velocity-vs-speed-claim"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S3-IC2-slowing-vs-acceleration",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S3-IC2",
+      "primary_i_can": "I can explain that acceleration can involve speeding up, slowing down, or changing direction.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "explain why any change in velocity—magnitude or direction—constitutes acceleration",
+      "student_action": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "question_structure_id": "CER-MECHANISM-EXPLAIN-01",
+      "response_mode": "selected_response",
+      "representation_mode": "direct_text",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S3-IC2-slowing-vs-acceleration",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "not_required",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s3-ic2::summative::slowing-vs-acceleration",
+      "family_type": "conceptual_application",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "identify/classify the secure motion evidence in a way aligned to the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "speeding up",
+        "slowing down",
+        "direction-only change",
+        "combined change",
+        "claim misconception",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S3-IC2",
+        "summative",
+        "slowing-vs-acceleration"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S4-IC2-g-interpretation",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S4-IC2",
+      "primary_i_can": "I can use $g \\approx 10\\text{ m/s}^2$ to determine speed gained during free fall.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "use g approximately 10 m/s^2 to determine speed gained over a stated free-fall time and interpret the result",
+      "student_action": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "question_structure_id": "FORMULA-DIRECT-RELATIONSHIP-01",
+      "response_mode": "selected_response",
+      "representation_mode": "equation_relationship",
+      "representation_need": "direct_or_equation_only",
+      "design_slot_id": "slot::SUM-U2-S4-IC2-g-interpretation",
+      "tool": null,
+      "render_contract": {
+        "route_type": "direct_text_equation",
+        "math_rendering": "MathJax",
+        "requirements": [
+          "student-facing wording carries the evidence job",
+          "no decorative figure"
+        ]
+      },
+      "wording_profile": "context_rich",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s4-ic2::summative::g-interpretation",
+      "family_type": "quantitative_modeling",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "use the supplied physical situation and relationship to calculate or infer the requested quantity, then select the correct result",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "unknown speed or time",
+        "fall duration",
+        "table vs prose",
+        "dependency path",
+        "reasonableness error",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S4-IC2",
+        "summative",
+        "g-interpretation"
+      ]
+    },
+    {
+      "record_id": "SUM-U2-S5-IC3-table-graph-consistency",
+      "record_mode": "family_seed",
+      "destination": "Summative",
+      "section_or_unit_scope": "Unit 2",
+      "primary_i_can_id": "U2-S5-IC3",
+      "primary_i_can": "I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.",
+      "supporting_i_can_ids": [],
+      "evidence_job": "translate among actual motion diagrams/data tables/graphs and written descriptions, then critique and revise an inconsistent motion model using evidence",
+      "student_action": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "question_structure_id": "REPTRANS-GRAPH-TABLE-EQUATION-01",
+      "response_mode": "selected_response",
+      "representation_mode": "mixed_table_graph",
+      "representation_need": "evidence_bearing",
+      "design_slot_id": "slot::SUM-U2-S5-IC3-table-graph-consistency",
+      "tool": "graph_tool",
+      "render_contract": {
+        "route_type": "multiple_executable_routes",
+        "render_routes": [
+          {
+            "route_type": "semantic_html_table",
+            "required_markup": "<table class=\"values\">",
+            "html_class": "values",
+            "requirements": [
+              "semantic th/td markup",
+              "headers",
+              "units where applicable",
+              "compact width for small data sets"
+            ]
+          },
+          {
+            "route_type": "registered_tool",
+            "tool_key": "graph_tool",
+            "repository": "tnezki/memories",
+            "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+            "canonical_path": "Tools/~graph_tool_v12.py",
+            "function": "make_context_graph",
+            "parameter_contract": {
+              "axis_ranges": "derive from task data; include all evidence-bearing intervals without excessive empty range",
+              "axis_labels": "physical quantity plus units",
+              "functions": "simple continuous motion relationships supported by make_context_graph",
+              "styling": "use registered tool unchanged; no styling overrides"
+            },
+            "answer_neutrality": "render axes and supplied motion evidence only; no answer-bearing annotations or highlighted solution intervals"
+          }
+        ]
+      },
+      "wording_profile": "natural_direct",
+      "length_intent": "fit evidence job; WTC may be multipart",
+      "security_level": "secure",
+      "source_basis": [
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+          "role": "exact_unit_scope_and_i_cans"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+          "role": "bank_v2_course_profile_v1.3"
+        },
+        {
+          "repo": "tnezki/memories",
+          "commit": "3bea450233538d8ea830192c06d3d695b043bbb1",
+          "path": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+          "role": "question_structure_authority"
+        }
+      ],
+      "authoring_notes": "Secure family seed; V1-V4 use Blueprint A and V5-V6 use materially alternate Blueprint B. No exposed instructional finished prompts may be reused.",
+      "choice_count": 4,
+      "selection_mode": "single_select",
+      "distractor_basis": "plausible misconception/error tied to the exact evidence job; no arbitrary distractors",
+      "family_id": "family::u2-s5-ic3::summative::table-graph-consistency",
+      "family_type": "vocabulary_representation",
+      "difficulty_intent": "meeting-level secure evidence",
+      "intended_reasoning": "interpret the supplied secure representation and select the conclusion/calculation that matches the exact evidence job",
+      "locked_elements": [
+        "primary_i_can_id",
+        "evidence_job",
+        "question_structure_id",
+        "intended_reasoning",
+        "difficulty_intent",
+        "representation_mode"
+      ],
+      "allowed_variations": [
+        "representation pair",
+        "direction of translation",
+        "model inconsistency",
+        "graph interval",
+        "data pattern",
+        "revision target",
+        "fresh secure physical context/data/representation"
+      ],
+      "required_variations": [
+        "fresh secure stimulus for each form instance",
+        "materially meaningful variation within the locked evidence family",
+        "preserve response demand and approximate difficulty"
+      ],
+      "forbidden_variations": [
+        "reuse exposed instructional finished prompt",
+        "noun-only or number-only change when semantic independence requires more",
+        "change I-can/evidence job/structure",
+        "answer-bearing representation"
+      ],
+      "representation_variation_rule": "If a graph is used, vary graph parameters/data through graph_tool while preserving graph-reading demand. If vector construction is used, preserve blank response surface and change physical motion evidence.",
+      "selection_tags": [
+        "Unit 2",
+        "U2-S5-IC3",
+        "summative",
+        "table-graph-consistency"
+      ]
+    }
+  ]
+}
