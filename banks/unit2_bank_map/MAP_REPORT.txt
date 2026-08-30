@@ -1,0 +1,75 @@
+UNIT 2 BANK MAP REPORT
+======================
+Course: Physics
+Unit: 2 — Motion and Kinematics
+Profile: Conceptual Physics Bank v2 Course Profile v1.3
+Memories snapshot: tnezki/memories@d479d009b54cf37d4a294b2cdd534534b57261c8
+Course snapshot: tnezki/physics@c80569d6dd718420e0b000420476f0f99e494585
+Map fingerprint: 7a44782459b2d11bb3d71fe39a60cc932bc04e5f0d9efbb313aec125bdeb14c5
+
+QUESTION-DESIGN STATUS
+----------------------
+PASS — 15 exact Unit 2 I-cans have explicit evidence jobs, student actions, content modes, structures, avoid rules, representations/tools, and parallel variation axes. All 365 destination records resolve to executable design slots. No final prompt, choice, answer, solution, or finished secure stimulus is authored in this map.
+
+INVENTORY
+---------
+Exact-content slots: 135
+  WTC: 5
+  Notes Example/YTI records: 40 (20 complete pairs)
+  CYU: 30
+  Warm-Up: 60
+Family seeds: 230
+  Practice: 150 (30 per section)
+  Exit: 40 (8 per section)
+  Summative: 40 (Blueprint A 20; Blueprint B 20)
+Total design records: 365
+
+REPRESENTATION / TOOL ROUTES
+----------------------------
+Graph: registered tool key graph_tool -> tnezki/memories@d479d009b54cf37d4a294b2cdd534534b57261c8:Tools/~graph_tool_v12.py, using make_context_graph with canonical styling unchanged.
+Small data table: semantic HTML <table class="values"> with quantity/unit headers.
+Student-constructed velocity vectors, reference-frame sketches, and motion diagrams: blank HTML/CSS response surfaces; answer-neutral; no completed answer representation.
+Direct equations: MathJax relationship rendering with physically coherent situations.
+Generic diagram-route aliases: forbidden.
+
+PRACTICE FEASIBILITY
+--------------------
+PASS — each section has a 30-family evidence-responsive pool; downstream sets select 24 after hard I-can/evidence/representation constraints, then stable deterministic tie-breaking. Section weighting patterns are intentionally different and are justified by the exact I-can evidence plan.
+
+EXIT FEASIBILITY
+----------------
+PASS — each section has 8 formative-secure families with at least two candidates for every exact section I-can. Deterministic selection requires one family per I-can plus one high-leverage/synthesis family. A/B/C are fresh secure instances of the same selected family blueprint.
+
+SUMMATIVE FEASIBILITY
+---------------------
+PASS — Blueprint A and Blueprint B each contain exactly 20 families, exactly 16 selected-response and 4 constructed-response families, and directly sample all 15 exact Unit 2 I-cans. Representation-explicit targets retain actual graph/table/vector/model evidence. Blueprint B is separately tagged as alternate/makeup and uses a different weighted evidence set overall.
+
+WTC FEASIBILITY
+---------------
+PASS — 5 WTCs, one per section. Each has one coherent shared stimulus/representation, four connected labeled-part plans, explicit decomposition moves, and a real carry-forward dependency. coverage_role=wtc_frq_practice; WTC does not satisfy current-Unit I-can floors.
+
+INTEGRATED MAP QA
+-----------------
+PASS — 8997 deterministic contract checks executed with 0 blocking defects, including schema-required parallel-family fields, selected-response evidence honesty, explicit-representation fidelity, family-lock resolution, and blueprint response counts.
+question_design.status = PASS
+qa.status = PASS
+TOP-LEVEL MAP_MANIFEST.status = PASS
+
+FINGERPRINT RECIPE
+------------------
+SHA-256 over ordered sequence [filename NUL exact-file-bytes NUL] for:
+1. unit2_question_design_map.json
+2. notes_map.json
+3. practice_map.json
+4. cyu_map.json
+5. warmup_map.json
+6. exit_map.json
+7. summative_map.json
+MAP_MANIFEST.json is intentionally excluded to avoid self-reference.
+
+DELIVERY
+--------
+Transport: unit2_bank_map.zip
+ZIP root: unit2_bank_map/
+Canonical expanded destination: banks/unit2_bank_map/
+ZIP is transport only and must be extracted before GitHub sync.

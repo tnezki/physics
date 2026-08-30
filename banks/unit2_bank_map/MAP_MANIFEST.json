@@ -1,0 +1,132 @@
+{
+  "schema": "physics-bank-v2-map-manifest/1.0",
+  "course": "Physics",
+  "unit": 2,
+  "unit_title": "Motion and Kinematics",
+  "status": "PASS",
+  "profile_identity": {
+    "name": "Conceptual Physics Bank v2 Course Profile",
+    "version": "v1.3",
+    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
+    "repo": "tnezki/memories",
+    "commit": "d479d009b54cf37d4a294b2cdd534534b57261c8"
+  },
+  "map_fingerprint": "7a44782459b2d11bb3d71fe39a60cc932bc04e5f0d9efbb313aec125bdeb14c5",
+  "map_fingerprint_recipe": "SHA-256 over ordered sequence [filename NUL exact-file-bytes NUL] for unit2_question_design_map.json, notes_map.json, practice_map.json, cyu_map.json, warmup_map.json, exit_map.json, summative_map.json.",
+  "canonical_expanded_location": "banks/unit2_bank_map/",
+  "transport_filename": "unit2_bank_map.zip",
+  "authorities": {
+    "system": {
+      "repo": "tnezki/memories",
+      "commit": "d479d009b54cf37d4a294b2cdd534534b57261c8",
+      "manifest": "SYSTEM_MANIFEST.json"
+    },
+    "course_repo": {
+      "repo": "tnezki/physics",
+      "commit": "c80569d6dd718420e0b000420476f0f99e494585",
+      "role": "canonical expanded artifact destination"
+    },
+    "philosophy": "Curriculum_Philosophy.txt",
+    "runtime_contract": "SYSTEM_RUNTIME_CONTRACT.txt",
+    "framework": "frameworks/Physics/FRAMEWORK.txt",
+    "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit2_assessment_plan/unit2_assessment_plan.html",
+    "question_structure": {
+      "entrypoint": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+      "schema": "_question_structure/contracts/question_design_schema.json",
+      "workflow": "_question_structure/contracts/question_design_workflow.json"
+    },
+    "pm": "pms_build/bank_map.txt",
+    "tools_manifest": "Tools/MANIFEST.json"
+  },
+  "files": [
+    {
+      "path": "unit2_question_design_map.json",
+      "sha256": "59456b559330fdc4077e2df6e2128f748166413dfb4ccaf8137876b8f2a8ea21",
+      "bytes": 2129324
+    },
+    {
+      "path": "notes_map.json",
+      "sha256": "4b4196340811952b0404512b3a4a3f79be9af7d694a8c84410f11ee524be9a57",
+      "bytes": 148682
+    },
+    {
+      "path": "practice_map.json",
+      "sha256": "02b2a7bc3e261fa189b992bbf19e0dbc1d0f3d85daa47ec9da70524fc3193242",
+      "bytes": 830313
+    },
+    {
+      "path": "cyu_map.json",
+      "sha256": "190dc34e5b3dd1b54d29d4a14c167b386311704fb49d37d325d6eb1162284697",
+      "bytes": 87318
+    },
+    {
+      "path": "warmup_map.json",
+      "sha256": "b71a339b29b85c307ee29ecd4b2237de5bc386ac125f96657dc697f6f4088e6d",
+      "bytes": 177171
+    },
+    {
+      "path": "exit_map.json",
+      "sha256": "c2d84d3b9e0088398099791fea6964e77cb9d86f8d76c512e654754a09505d7b",
+      "bytes": 242209
+    },
+    {
+      "path": "summative_map.json",
+      "sha256": "f36459e1a026715d4ac875e10624d5e52cfd5c341e0e873879d0fffb09fae680",
+      "bytes": 248990
+    },
+    {
+      "path": "MAP_REPORT.txt",
+      "sha256": "a9abfd0e9e71b6e5a44fc664537be86d745aa38693e6053feb1de790b3aeb479",
+      "bytes": 3930
+    }
+  ],
+  "counts": {
+    "exact_content": 135,
+    "family_seed": 230,
+    "total_records": 365,
+    "wtc": 5,
+    "example_yti_records": 40,
+    "practice_families": 150,
+    "cyu": 30,
+    "warmup": 60,
+    "exit_families": 40,
+    "summative_families": 40
+  },
+  "question_design": {
+    "status": "PASS",
+    "exact_i_can_count": 15,
+    "design_slot_count": 365
+  },
+  "representation_routes": {
+    "graph": {
+      "tool": "graph_tool",
+      "repo": "tnezki/memories",
+      "commit": "d479d009b54cf37d4a294b2cdd534534b57261c8",
+      "path": "Tools/~graph_tool_v12.py",
+      "function": "make_context_graph"
+    },
+    "small_table": {
+      "route": "semantic_html_table",
+      "required_markup": "<table class=\"values\">"
+    },
+    "student_constructed_vectors_models": {
+      "route": "blank_html_css_response_surface",
+      "answer_neutral": true
+    },
+    "generic_diagram_route_aliases_allowed": false
+  },
+  "deterministic_selection": {
+    "constraints_first": true,
+    "stable_key_recipe": "course|unit|section-or-unit|destination|form-or-set|bank_fingerprint",
+    "practice_selection_feasible": true,
+    "exit_selection_feasible": true,
+    "summative_blueprints_feasible": true
+  },
+  "qa": {
+    "status": "PASS",
+    "checks_executed": 8997,
+    "blocking_defects": 0,
+    "report": "MAP_REPORT.txt"
+  },
+  "storage_rule": "ZIP is transport only; extract before canonical GitHub sync"
+}
