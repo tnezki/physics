@@ -23,6 +23,7 @@
     --text-dark:  #111;
     --muted:      #555;
     --bg:         #fff;
+    --content-media-max-height: 1.9in;
 }
 
 /* ── RESET ──────────────────────────────────────────────────── */
@@ -174,6 +175,24 @@ table.values th,
 .workspace-300 { height: 300px; }
 .workspace-350 { height: 350px; }
 .workspace-400 { height: 400px; }
+
+/* ── CONTENT MEDIA SAFETY CEILING ─────────────────────────────
+   Default for instructional graphs/images across student artifacts.
+   Keep this variable easy to tune during later generic rebuilds. */
+img {
+    max-width: 100%;
+    max-height: var(--content-media-max-height) !important;
+    height: auto;
+    object-fit: contain;
+}
+figure svg,
+.graph-block svg,
+.figure-block svg,
+.diagram svg {
+    max-width: 100%;
+    max-height: var(--content-media-max-height) !important;
+    height: auto;
+}
 
 /* ── PRINT OVERRIDES ────────────────────────────────────────── */
 @media print {

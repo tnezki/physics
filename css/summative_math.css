@@ -11,228 +11,67 @@
   --sm-line: #9aa3ad;
   --sm-light: #d7dce2;
   --sm-panel: #f7f9fc;
+  --content-media-max-height: 1.9in;
 }
 
 @page { size: letter portrait; margin: .42in .48in; }
-
 html, body { background: #fff; }
-body {
-  margin: 0;
-  padding: 0;
-  color: var(--sm-ink);
-  font-size: 11pt;
-  line-height: 1.35;
-}
+body { margin: 0; padding: 0; color: var(--sm-ink); font-size: 11pt; line-height: 1.35; }
+.assessment { max-width: 7.54in; margin: 0 auto; }
+.exam-page { break-after: page; page-break-after: always; }
+.exam-page:last-child { break-after: auto; page-break-after: auto; }
 
-.assessment {
-  max-width: 7.54in;
-  margin: 0 auto;
-}
+.exam-header { border-bottom: 4px solid var(--sm-navy); padding: 0 0 10px; margin: 0 0 12px; }
+.exam-title-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; }
+.exam-title { color: var(--sm-navy); font-size: 19.5pt; font-weight: 900; line-height: 1.05; letter-spacing: -.02em; }
+.exam-form { flex: 0 0 auto; border: 2px solid var(--sm-navy); border-radius: 999px; padding: 4px 11px; color: var(--sm-navy); font-size: 10pt; font-weight: 900; letter-spacing: .04em; }
+.student-row { display: grid; grid-template-columns: 1.4fr .7fr; gap: 18px; margin-top: 13px; font-size: 10.5pt; font-weight: 700; }
+.write-line { display: inline-block; width: calc(100% - 3.4em); min-width: 1.5in; border-bottom: 1px solid #444; transform: translateY(-2px); }
+.exam-directions { margin: 10px 0 0; color: #333; font-size: 9.6pt; line-height: 1.35; }
 
-.exam-page {
-  break-after: page;
-  page-break-after: always;
-}
-.exam-page:last-child {
-  break-after: auto;
-  page-break-after: auto;
-}
+.continuation-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--sm-navy); padding: 0 0 6px; margin-bottom: 10px; color: var(--sm-navy); font-size: 9.5pt; font-weight: 850; }
+.continuation-name { color: #333; font-weight: 650; }
+.continuation-name .mini-line { display: inline-block; width: 1.55in; border-bottom: 1px solid #555; transform: translateY(-2px); }
 
-/* FIRST-PAGE HEADER */
-.exam-header {
-  border-bottom: 4px solid var(--sm-navy);
-  padding: 0 0 10px;
-  margin: 0 0 12px;
-}
-.exam-title-row {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 18px;
-}
-.exam-title {
-  color: var(--sm-navy);
-  font-size: 19.5pt;
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -.02em;
-}
-.exam-form {
-  flex: 0 0 auto;
-  border: 2px solid var(--sm-navy);
-  border-radius: 999px;
-  padding: 4px 11px;
-  color: var(--sm-navy);
-  font-size: 10pt;
-  font-weight: 900;
-  letter-spacing: .04em;
-}
-.student-row {
-  display: grid;
-  grid-template-columns: 1.4fr .7fr;
-  gap: 18px;
-  margin-top: 13px;
-  font-size: 10.5pt;
-  font-weight: 700;
-}
-.write-line {
-  display: inline-block;
-  width: calc(100% - 3.4em);
-  min-width: 1.5in;
-  border-bottom: 1px solid #444;
-  transform: translateY(-2px);
-}
-.exam-directions {
-  margin: 10px 0 0;
-  color: #333;
-  font-size: 9.6pt;
-  line-height: 1.35;
-}
-
-/* CONTINUATION HEADER */
-.continuation-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid var(--sm-navy);
-  padding: 0 0 6px;
-  margin-bottom: 10px;
-  color: var(--sm-navy);
-  font-size: 9.5pt;
-  font-weight: 850;
-}
-.continuation-name {
-  color: #333;
-  font-weight: 650;
-}
-.continuation-name .mini-line {
-  display: inline-block;
-  width: 1.55in;
-  border-bottom: 1px solid #555;
-  transform: translateY(-2px);
-}
-
-/* QUESTIONS */
-.assessment-question {
-  position: relative;
-  border: 1px solid var(--sm-light);
-  border-top: 3px solid var(--sm-navy);
-  border-radius: 8px;
-  padding: 11px 13px 12px;
-  margin: 0 0 11px;
-  overflow: hidden;
-  break-inside: avoid;
-  page-break-inside: avoid;
-  background: #fff;
-}
+.assessment-question { position: relative; border: 1px solid var(--sm-light); border-top: 3px solid var(--sm-navy); border-radius: 8px; padding: 11px 13px 12px; margin: 0 0 11px; overflow: hidden; break-inside: avoid; page-break-inside: avoid; background: #fff; }
 .assessment-question:last-child { margin-bottom: 0; }
-
-.question-head {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-bottom: 6px;
-}
-.question-number {
-  display: inline-grid;
-  place-items: center;
-  min-width: 1.78em;
-  height: 1.78em;
-  padding: 0 .25em;
-  border-radius: 999px;
-  background: var(--sm-navy);
-  color: #fff;
-  font-size: 9.5pt;
-  font-weight: 900;
-}
-.question-prompt {
-  font-size: 11.2pt;
-  font-weight: 600;
-  line-height: 1.38;
-}
+.question-head { display: flex; align-items: center; gap: 9px; margin-bottom: 6px; }
+.question-number { display: inline-grid; place-items: center; min-width: 1.78em; height: 1.78em; padding: 0 .25em; border-radius: 999px; background: var(--sm-navy); color: #fff; font-size: 9.5pt; font-weight: 900; }
+.question-prompt { font-size: 11.2pt; font-weight: 600; line-height: 1.38; }
 .question-prompt > p:first-child { margin-top: 0; }
 .question-prompt > p:last-child { margin-bottom: 0; }
-
-/* Height classes intentionally size evidence/workspace by task demand. */
 .q-compact  { min-height: 2.08in; }
 .q-standard { min-height: 2.72in; }
 .q-large    { min-height: 3.55in; }
 .q-xlarge   { min-height: 4.42in; }
-
-/* Page-specific expansion uses otherwise empty printable space as real student workspace. */
 .exam-page[data-page="3"] #question-7 { min-height: 3.25in; }
 .exam-page[data-page="3"] #question-8 { min-height: 5.45in; }
 .exam-page[data-page="4"] #question-9 { min-height: 4.05in; }
 .exam-page[data-page="4"] #question-10 { min-height: 5.25in; }
 
-/* The remaining blank area INSIDE the problem card is student workspace.
-   No separate answer boxes or labels. */
-
-/* TABLES */
-table.data-table,
-table.values {
-  width: auto;
-  max-width: 100%;
-  margin: 9px auto 5px;
-  border-collapse: collapse;
-  font-size: 10pt;
-}
-table.data-table th,
-table.data-table td,
-table.values th,
-table.values td {
-  min-width: .52in;
-  padding: 5px 10px;
-  border: 1px solid #666;
-  text-align: center;
-  vertical-align: middle;
-}
-table.data-table th,
-table.values th {
-  background: #eef2f7;
-  color: var(--sm-navy);
-  font-weight: 850;
-}
+table.data-table, table.values { width: auto; max-width: 100%; margin: 9px auto 5px; border-collapse: collapse; font-size: 10pt; }
+table.data-table th, table.data-table td, table.values th, table.values td { min-width: .52in; padding: 5px 10px; border: 1px solid #666; text-align: center; vertical-align: middle; }
+table.data-table th, table.values th { background: #eef2f7; color: var(--sm-navy); font-weight: 850; }
 
 /* FIGURES */
-.graph-block,
-.figure-block {
-  margin: 8px auto 4px;
-  text-align: center;
-}
-.question-graph,
-.graph-block img,
-.figure-block img {
+.graph-block,.figure-block { margin: 8px auto 4px; text-align: center; }
+.question-graph,.graph-block img,.figure-block img,.graph-block svg,.figure-block svg {
   display: block;
   width: auto;
   max-width: 2.55in;
-  max-height: 2.15in;
+  max-height: var(--content-media-max-height);
+  height: auto;
   margin: 0 auto;
   border: 0;
   object-fit: contain;
 }
 
-/* Small end mark; avoids a large footer stealing work space. */
-.end-mark {
-  margin-top: 8px;
-  text-align: right;
-  color: var(--sm-muted);
-  font-size: 8.5pt;
-  font-weight: 700;
-}
+.end-mark { margin-top: 8px; text-align: right; color: var(--sm-muted); font-size: 8.5pt; font-weight: 700; }
 
 @media screen {
   body { background: #eef1f5; padding: 24px 0; }
-  .exam-page {
-    width: 8.5in;
-    min-height: 11in;
-    margin: 0 auto 24px;
-    padding: .42in .48in;
-    background: #fff;
-    box-shadow: 0 5px 24px rgba(20,35,55,.12);
-  }
+  .exam-page { width: 8.5in; min-height: 11in; margin: 0 auto 24px; padding: .42in .48in; background: #fff; box-shadow: 0 5px 24px rgba(20,35,55,.12); }
 }
-
 @media print {
   body { font-size: 10.5pt; }
   .assessment { max-width: none; }

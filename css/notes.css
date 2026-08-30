@@ -6,545 +6,120 @@
    ============================================================ */
 :root {
   --notes-graph-max-width: 2.52in;
-  --notes-graph-max-height: 2.52in;
+  --notes-graph-max-height: 1.9in;
   --notes-workspace-height: 2.00in;
   --notes-misc-workspace-height: 9.0in;
   --notes-ican-font-size: 13pt;
   --notes-compact-table-min-width: 2.35in;
   --notes-compact-table-cell-pad-y: 7px;
   --notes-compact-table-cell-pad-x: 12px;
+  --content-media-max-height: 1.9in;
 }
 
-
-/* ── V11 GLOBAL TYPOGRAPHY TEST ──────────────────────────────
-   Test only: reduce the normal Notes reading/question/table text
-   by about 2pt while keeping the existing hierarchy. */
-.container p,
-.container li,
-.container td,
-.container th,
-.container figcaption {
-  font-size: 9pt !important;
-}
-
-.container .h-target,
-.container .h-vocab,
-.container .h-summary,
-.container .h-mistakes {
-  font-size: 18pt !important;
-}
-
-.container .h-example,
-.container .h-yti {
-  font-size: 13pt !important;
-}
+/* ── V11 GLOBAL TYPOGRAPHY TEST ────────────────────────────── */
+.container p,.container li,.container td,.container th,.container figcaption { font-size: 9pt !important; }
+.container .h-target,.container .h-vocab,.container .h-summary,.container .h-mistakes { font-size: 18pt !important; }
+.container .h-example,.container .h-yti { font-size: 13pt !important; }
 
 /* ── TITLE CARD ─────────────────────────────────────────────── */
-.notes-title {
-  border: 4px solid var(--navy, #0b174f) !important;
-  border-radius: 10px !important;
-  background: #f7f9fc !important;
-  padding: 14px 18px 16px 18px !important;
-  margin: 0 0 18px 0 !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.notes-title .title-kicker {
-  color: var(--navy-mid, #315b8a) !important;
-  font-size: 7.5pt !important;
-  font-weight: 800 !important;
-  text-transform: uppercase;
-  letter-spacing: .7px;
-  margin-bottom: 5px !important;
-}
-.notes-title .title-main {
-  color: var(--navy, #0b174f) !important;
-  font-size: 21pt !important;
-  line-height: 1.08 !important;
-  font-weight: 800 !important;
-  margin: 0 0 6px 0 !important;
-}
-.notes-title .title-sub {
-  color: #333 !important;
-  font-size: 10.5pt !important;
-  font-weight: 700 !important;
-  margin: 0 0 7px 0 !important;
-}
-.notes-title .title-quote {
-  color: #555 !important;
-  font-size: 9pt !important;
-  line-height: 1.35 !important;
-  margin: 0 !important;
-}
+.notes-title { border: 4px solid var(--navy, #0b174f) !important; border-radius: 10px !important; background: #f7f9fc !important; padding: 14px 18px 16px 18px !important; margin: 0 0 18px 0 !important; break-inside: avoid-page; page-break-inside: avoid; }
+.notes-title .title-kicker { color: var(--navy-mid, #315b8a) !important; font-size: 7.5pt !important; font-weight: 800 !important; text-transform: uppercase; letter-spacing: .7px; margin-bottom: 5px !important; }
+.notes-title .title-main { color: var(--navy, #0b174f) !important; font-size: 21pt !important; line-height: 1.08 !important; font-weight: 800 !important; margin: 0 0 6px 0 !important; }
+.notes-title .title-sub { color: #333 !important; font-size: 10.5pt !important; font-weight: 700 !important; margin: 0 0 7px 0 !important; }
+.notes-title .title-quote { color: #555 !important; font-size: 9pt !important; line-height: 1.35 !important; margin: 0 !important; }
 
-/* ── WHAT'S TO COME ──────────────────────────────────────────
-   HTML now wraps the COMPLETE WTC: heading + directions +
-   stimulus + questions + 2in workspace. */
-.notes-wtc {
-  margin: 0;
-  padding: 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.notes-wtc > .h-preview {
-  break-after: avoid-page;
-  page-break-after: avoid;
-}
-.notes-wtc .annotation-box,
-.notes-wtc figure,
-.notes-wtc ol,
-.notes-wtc li {
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
+/* ── WHAT'S TO COME ────────────────────────────────────────── */
+.notes-wtc { margin: 0; padding: 0; break-inside: avoid-page; page-break-inside: avoid; }
+.notes-wtc > .h-preview { break-after: avoid-page; page-break-after: avoid; }
+.notes-wtc .annotation-box,.notes-wtc figure,.notes-wtc ol,.notes-wtc li { break-inside: avoid-page; page-break-inside: avoid; }
 
 /* ── I-CAN START ────────────────────────────────────────────── */
-.h-intro.notes-ican-heading {
-  font-size: var(--notes-ican-font-size) !important;
-  line-height: 1.22 !important;
-  padding: 6px 12px !important;
-  margin: 18px 0 10px 0 !important;
-}
-.notes-ican-start {
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
+.h-intro.notes-ican-heading { font-size: var(--notes-ican-font-size) !important; line-height: 1.22 !important; padding: 6px 12px !important; margin: 18px 0 10px 0 !important; }
+.notes-ican-start { break-inside: avoid-page; page-break-inside: avoid; }
 
-/* ── MATH NOTES ───────────────────────────────────────────────
-   Explicit here so the block does not depend on an older
-   notes.css having every newer Math Notes class. */
-.math-notes {
-  margin: 14px 0 16px 0 !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.math-notes-header {
-  display: flex !important;
-  align-items: baseline !important;
-  gap: 10px !important;
-  border: 3px solid var(--navy, #0b174f) !important;
-  border-radius: 8px !important;
-  background: #f5f8fc !important;
-  color: var(--navy, #0b174f) !important;
-  padding: 6px 12px !important;
-  margin: 0 0 8px 0 !important;
-  line-height: 1.25 !important;
-}
-.math-notes-label {
-  font-size: 8.5pt !important;
-  font-weight: 850 !important;
-  text-transform: uppercase;
-  letter-spacing: .6px;
-  white-space: nowrap;
-}
+/* ── MATH NOTES ─────────────────────────────────────────────── */
+.math-notes { margin: 14px 0 16px 0 !important; break-inside: avoid-page; page-break-inside: avoid; }
+.math-notes-header { display: flex !important; align-items: baseline !important; gap: 10px !important; border: 3px solid var(--navy, #0b174f) !important; border-radius: 8px !important; background: #f5f8fc !important; color: var(--navy, #0b174f) !important; padding: 6px 12px !important; margin: 0 0 8px 0 !important; line-height: 1.25 !important; }
+.math-notes-label { font-size: 8.5pt !important; font-weight: 850 !important; text-transform: uppercase; letter-spacing: .6px; white-space: nowrap; }
 .math-notes-label::before { content: "📐 "; }
-.math-notes-title {
-  font-size: 10.5pt !important;
-  font-weight: 800 !important;
-}
-.math-notes-body {
-  padding: 2px 2px 0 2px !important;
-}
-.rep-grid {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 8px !important;
-  margin: 8px 0 !important;
-}
-.rep-card {
-  border: 1px solid #c7d1df !important;
-  border-radius: 6px !important;
-  background: #fbfcfe !important;
-  padding: 9px 10px !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.rep-card strong {
-  color: var(--navy, #0b174f);
-}
+.math-notes-title { font-size: 10.5pt !important; font-weight: 800 !important; }
+.math-notes-body { padding: 2px 2px 0 2px !important; }
+.rep-grid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; margin: 8px 0 !important; }
+.rep-card { border: 1px solid #c7d1df !important; border-radius: 6px !important; background: #fbfcfe !important; padding: 9px 10px !important; break-inside: avoid-page; page-break-inside: avoid; }
+.rep-card strong { color: var(--navy, #0b174f); }
 
-/* ── STOP AND DISCUSS ─────────────────────────────────────────
-   Keep prompt + workspace together and make the discussion cue
-   visually unmistakable without dominating the page. */
-.notes-discuss-task {
-  margin: 14px 0 16px 0;
-  padding: 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.stop-discuss {
-  border: 2px solid #a73737 !important;
-  border-left: 7px solid #a73737 !important;
-  border-radius: 8px !important;
-  background: #fff7f7 !important;
-  color: #333 !important;
-  padding: 11px 14px !important;
-  margin: 0 !important;
-  font-size: 9pt !important;
-  line-height: 1.45 !important;
-}
-.stop-discuss strong {
-  display: block;
-  color: #8d2424 !important;
-  font-size: 9.5pt !important;
-  font-weight: 850 !important;
-  letter-spacing: .15px;
-  margin-bottom: 3px;
-}
-.notes-discuss-task > .notes-ws {
-  margin-top: 8px !important;
-}
+/* ── STOP AND DISCUSS ───────────────────────────────────────── */
+.notes-discuss-task { margin: 14px 0 16px 0; padding: 0; break-inside: avoid-page; page-break-inside: avoid; }
+.stop-discuss { border: 2px solid #a73737 !important; border-left: 7px solid #a73737 !important; border-radius: 8px !important; background: #fff7f7 !important; color: #333 !important; padding: 11px 14px !important; margin: 0 !important; font-size: 9pt !important; line-height: 1.45 !important; }
+.stop-discuss strong { display: block; color: #8d2424 !important; font-size: 9.5pt !important; font-weight: 850 !important; letter-spacing: .15px; margin-bottom: 3px; }
+.notes-discuss-task > .notes-ws { margin-top: 8px !important; }
 
 /* ── GRAPH SIZE ─────────────────────────────────────────────── */
-figure.notes-graph {
-  text-align: center;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-figure.notes-graph img {
-  width: auto !important;
-  max-width: var(--notes-graph-max-width) !important;
-  max-height: var(--notes-graph-max-height) !important;
-  height: auto !important;
-  display: block;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
+figure.notes-graph { text-align: center; break-inside: avoid-page; page-break-inside: avoid; }
+figure.notes-graph img, figure.notes-graph svg { width: auto !important; max-width: var(--notes-graph-max-width) !important; max-height: var(--notes-graph-max-height) !important; height: auto !important; display: block; margin-left: auto !important; margin-right: auto !important; object-fit:contain; }
+/* Fallback for ordinary Notes images that are not in the canonical graph wrapper. */
+.container img:not(.notes-exempt-media) { max-width:100%; max-height:var(--content-media-max-height) !important; height:auto; object-fit:contain; }
 
 /* ── TASK PAGINATION ────────────────────────────────────────── */
-.notes-task {
-  margin: 0;
-  padding: 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.notes-task-content {
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.notes-task-content .h-example,
-.notes-task-content .h-yti {
-  break-after: avoid-page;
-  page-break-after: avoid;
-}
-.notes-task-content table,
-.notes-task-content figure,
-.notes-task-content tr {
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
+.notes-task { margin: 0; padding: 0; break-inside: avoid-page; page-break-inside: avoid; }
+.notes-task-content { break-inside: avoid-page; page-break-inside: avoid; }
+.notes-task-content .h-example,.notes-task-content .h-yti { break-after: avoid-page; page-break-after: avoid; }
+.notes-task-content table,.notes-task-content figure,.notes-task-content tr { break-inside: avoid-page; page-break-inside: avoid; }
+.notes-ws,.notes-task-workspace { height: var(--notes-workspace-height) !important; min-height: var(--notes-workspace-height) !important; }
 
-/* Default writing space: 2in. */
-.notes-ws,
-.notes-task-workspace {
-  height: var(--notes-workspace-height) !important;
-  min-height: var(--notes-workspace-height) !important;
-}
-
-/* ── COMPACT TWO-COLUMN DATA TABLES ─────────────────────────── */
-table.compact-table {
-  width: max-content !important;
-  min-width: var(--notes-compact-table-min-width);
-  max-width: 100% !important;
-  table-layout: fixed !important;
-  margin: 8px auto 10px auto !important;
-}
+table.compact-table { width: max-content !important; min-width: var(--notes-compact-table-min-width); max-width: 100% !important; table-layout: fixed !important; margin: 8px auto 10px auto !important; }
 table.compact-table col.half-col { width: 50%; }
-table.compact-table th,
-table.compact-table td {
-  width: 50%;
-  padding: var(--notes-compact-table-cell-pad-y)
-           var(--notes-compact-table-cell-pad-x) !important;
-  white-space: nowrap;
-  text-align: center;
-}
+table.compact-table th,table.compact-table td { width: 50%; padding: var(--notes-compact-table-cell-pad-y) var(--notes-compact-table-cell-pad-x) !important; white-space: nowrap; text-align: center; }
 
-/* ── SUMMARY / COMMON MISTAKES / MISC PAGE ─────────────────── */
 .h-summary + .summary-list { margin-bottom: 14px; }
-.notes-mistakes-block,
-.mistake-table,
-.mistake-table tr {
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.notes-misc-workspace {
-  height: var(--notes-misc-workspace-height);
-  min-height: var(--notes-misc-workspace-height);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  break-before: page;
-  page-break-before: always;
-}
+.notes-mistakes-block,.mistake-table,.mistake-table tr { break-inside: avoid-page; page-break-inside: avoid; }
+.notes-misc-workspace { height: var(--notes-misc-workspace-height); min-height: var(--notes-misc-workspace-height); margin: 0; padding: 0; border: 0; break-before: page; page-break-before: always; }
 
 @media print {
-  .notes-wtc,
-  .notes-ican-start,
-  .math-notes,
-  .notes-discuss-task,
-  .notes-task,
-  .notes-task-content,
-  .notes-task-content table,
-  .notes-task-content figure,
-  .notes-task-content tr,
-  .notes-mistakes-block,
-  .mistake-table,
-  .mistake-table tr {
-    break-inside: avoid-page !important;
-    page-break-inside: avoid !important;
-  }
-  .notes-ws,
-  .notes-task-workspace {
-    height: var(--notes-workspace-height) !important;
-    min-height: var(--notes-workspace-height) !important;
-  }
-  .notes-misc-workspace {
-    height: var(--notes-misc-workspace-height) !important;
-    min-height: var(--notes-misc-workspace-height) !important;
-  }
+  .notes-wtc,.notes-ican-start,.math-notes,.notes-discuss-task,.notes-task,.notes-task-content,.notes-task-content table,.notes-task-content figure,.notes-task-content tr,.notes-mistakes-block,.mistake-table,.mistake-table tr { break-inside: avoid-page !important; page-break-inside: avoid !important; }
+  .notes-ws,.notes-task-workspace { height: var(--notes-workspace-height) !important; min-height: var(--notes-workspace-height) !important; }
+  .notes-misc-workspace { height: var(--notes-misc-workspace-height) !important; min-height: var(--notes-misc-workspace-height) !important; }
 }
 
+/* ── COMPLETE VOCABULARY PREVIEW WRAPPER ───────────────────── */
+.vocab-preview-section { margin: 14px 0 20px 0; break-inside: avoid-page !important; page-break-inside: avoid !important; }
+.vocab-preview-section > .h-vocab { break-after: avoid-page !important; page-break-after: avoid !important; }
+.vocab-preview-section > .vocab-box { break-inside: avoid-page !important; page-break-inside: avoid !important; }
+@media print { .vocab-preview-section,.vocab-preview-section > .h-vocab,.vocab-preview-section > .vocab-box,.vocab-preview-section .vocab-sort-task,.vocab-preview-section .vocab-sort-table { break-inside: avoid-page !important; page-break-inside: avoid !important; } }
 
-/* ── COMPLETE VOCABULARY PREVIEW WRAPPER ─────────────────────
-   Heading + vocabulary list + sort directions + sort table are
-   one print unit whenever the complete block fits on a page. */
-.vocab-preview-section {
-  margin: 14px 0 20px 0;
-  break-inside: avoid-page !important;
-  page-break-inside: avoid !important;
-}
-.vocab-preview-section > .h-vocab {
-  break-after: avoid-page !important;
-  page-break-after: avoid !important;
-}
-.vocab-preview-section > .vocab-box {
-  break-inside: avoid-page !important;
-  page-break-inside: avoid !important;
-}
+/* ── VOCABULARY SORT ───────────────────────────────────────── */
+.vocab-sort-task { margin: 8px 0 18px 0; break-inside: avoid-page; page-break-inside: avoid; }
+.vocab-sort-directions { margin: 0 0 10px 0 !important; font-size: 9pt !important; line-height: 1.4 !important; }
+.vocab-sort-directions strong { color: var(--navy, #0b174f); font-weight: 850; }
+.vocab-sort-table { width: 100% !important; table-layout: fixed !important; border-collapse: collapse !important; margin: 0 !important; break-inside: avoid-page; page-break-inside: avoid; }
+.vocab-sort-table th,.vocab-sort-table td { width: 33.333% !important; border: 1px solid #777 !important; vertical-align: top !important; }
+.vocab-sort-table th { background: #eaf0f9 !important; color: var(--navy, #0b174f) !important; text-align: left !important; font-size: 9pt !important; font-weight: 850 !important; padding: 10px 12px !important; }
+.vocab-sort-table tr.vocab-sort-space td { height: 2.15in !important; padding: 8px 10px !important; }
 
-@media print {
-  .vocab-preview-section,
-  .vocab-preview-section > .h-vocab,
-  .vocab-preview-section > .vocab-box,
-  .vocab-preview-section .vocab-sort-task,
-  .vocab-preview-section .vocab-sort-table {
-    break-inside: avoid-page !important;
-    page-break-inside: avoid !important;
-  }
-}
+/* ── WTC PREVIEW INSTRUCTIONS ──────────────────────────────── */
+.wtc-instructions { margin: 8px 0 12px 0 !important; padding: 10px 14px !important; border: 2px solid #b7831f !important; border-left: 7px solid #b7831f !important; border-radius: 8px !important; background: #fffaf0 !important; color: #333 !important; break-inside: avoid-page; page-break-inside: avoid; }
+.wtc-instructions p { margin: 0 !important; line-height: 1.4 !important; }
+.wtc-instructions .wtc-do-not-solve { margin: 0 0 4px 0 !important; color: #7a4f00 !important; font-size: 9.5pt !important; font-weight: 900 !important; letter-spacing: .4px !important; }
 
-/* ── VOCABULARY SORT ─────────────────────────────────────────
-   Active prior-knowledge task. Directions + 3-column sort table
-   stay together when the block fits on the next page. */
-.vocab-sort-task {
-  margin: 8px 0 18px 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.vocab-sort-directions {
-  margin: 0 0 10px 0 !important;
-  font-size: 9pt !important;
-  line-height: 1.4 !important;
-}
-.vocab-sort-directions strong {
-  color: var(--navy, #0b174f);
-  font-weight: 850;
-}
-.vocab-sort-table {
-  width: 100% !important;
-  table-layout: fixed !important;
-  border-collapse: collapse !important;
-  margin: 0 !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.vocab-sort-table th,
-.vocab-sort-table td {
-  width: 33.333% !important;
-  border: 1px solid #777 !important;
-  vertical-align: top !important;
-}
-.vocab-sort-table th {
-  background: #eaf0f9 !important;
-  color: var(--navy, #0b174f) !important;
-  text-align: left !important;
-  font-size: 9pt !important;
-  font-weight: 850 !important;
-  padding: 10px 12px !important;
-}
-.vocab-sort-table tr.vocab-sort-space td {
-  height: 2.15in !important;
-  padding: 8px 10px !important;
-}
+/* ── STEP 2: SKIM THE SECTION ──────────────────────────────── */
+.skim-section-task { margin: 16px 0 22px 0; break-inside: avoid-page; page-break-inside: avoid; }
+.skim-section-directions { margin: 0 0 12px 0 !important; font-size: 9pt !important; line-height: 1.4 !important; }
+.skim-section-directions strong { font-weight: 900 !important; }
+.skim-section-table { width: 100% !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 !important; break-inside: avoid-page; page-break-inside: avoid; }
+.skim-section-table th,.skim-section-table td { border: 1px solid #777 !important; vertical-align: top !important; }
+.skim-section-table th { width: 16% !important; background: #eaf0f9 !important; color: var(--navy, #0b174f) !important; text-align: left !important; font-size: 9pt !important; font-weight: 900 !important; padding: 12px 14px !important; }
+.skim-section-table td { height: 1.55in !important; padding: 10px 12px !important; background-color: #fff !important; background-image: repeating-linear-gradient(to bottom,transparent 0,transparent 0.37in,#edf0f5 0.38in,#edf0f5 0.385in) !important; }
+@media print { .skim-section-task,.skim-section-table,.skim-section-table tr { break-inside: avoid-page !important; page-break-inside: avoid !important; } }
 
-/* ── WTC PREVIEW INSTRUCTIONS ────────────────────────────────
-   Visually separate preview/annotation directions from the
-   mathematical questions that follow. */
-.wtc-instructions {
-  margin: 8px 0 12px 0 !important;
-  padding: 10px 14px !important;
-  border: 2px solid #b7831f !important;
-  border-left: 7px solid #b7831f !important;
-  border-radius: 8px !important;
-  background: #fffaf0 !important;
-  color: #333 !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.wtc-instructions p {
-  margin: 0 !important;
-  line-height: 1.4 !important;
-}
-.wtc-instructions .wtc-do-not-solve {
-  margin: 0 0 4px 0 !important;
-  color: #7a4f00 !important;
-  font-size: 9.5pt !important;
-  font-weight: 900 !important;
-  letter-spacing: .4px !important;
-}
+/* ── V8 VISUAL POLISH: WHAT'S TO COME HEADER ──────────────── */
+.notes-wtc > .h-preview { color: var(--navy, #0b174f) !important; background: transparent !important; border: 0 !important; border-left: 7px solid var(--navy, #0b174f) !important; border-radius: 0 !important; padding: 5px 0 5px 14px !important; margin: 18px 0 12px 0 !important; font-size: 20pt !important; line-height: 1.12 !important; font-weight: 900 !important; letter-spacing: 0 !important; }
 
+/* ── V8 CLOSE-READING DIRECTIONS ───────────────────────────── */
+.close-reading-instructions { margin: 16px 0 10px 0 !important; padding: 10px 14px !important; border: 2px solid #2d6a9f !important; border-left: 7px solid #2d6a9f !important; border-radius: 8px !important; background: #f3f8fd !important; color: #263238 !important; break-inside: avoid-page; page-break-inside: avoid; }
+.close-reading-instructions p { margin: 0 !important; line-height: 1.42 !important; font-size: 9pt !important; }
+.close-reading-instructions .close-reading-title { margin: 0 0 4px 0 !important; color: var(--navy, #0b174f) !important; font-size: 9.5pt !important; font-weight: 900 !important; letter-spacing: .35px !important; }
+@media print { .notes-wtc > .h-preview,.close-reading-instructions,.notes-ican-start > .h-intro,.notes-ican-start > .reading-box { break-inside: avoid-page !important; page-break-inside: avoid !important; } }
 
-/* ── STEP 2: SKIM THE SECTION ────────────────────────────────
-   Reading Apprenticeship preview before close reading begins.
-   Left prompt cells are fixed-width; right cells are generous
-   ruled writing areas for Notability annotation. */
-.skim-section-task {
-  margin: 16px 0 22px 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.skim-section-directions {
-  margin: 0 0 12px 0 !important;
-  font-size: 9pt !important;
-  line-height: 1.4 !important;
-}
-.skim-section-directions strong {
-  font-weight: 900 !important;
-}
-.skim-section-table {
-  width: 100% !important;
-  border-collapse: collapse !important;
-  table-layout: fixed !important;
-  margin: 0 !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.skim-section-table th,
-.skim-section-table td {
-  border: 1px solid #777 !important;
-  vertical-align: top !important;
-}
-.skim-section-table th {
-  width: 16% !important;
-  background: #eaf0f9 !important;
-  color: var(--navy, #0b174f) !important;
-  text-align: left !important;
-  font-size: 9pt !important;
-  font-weight: 900 !important;
-  padding: 12px 14px !important;
-}
-.skim-section-table td {
-  height: 1.55in !important;
-  padding: 10px 12px !important;
-  background-color: #fff !important;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent 0.37in,
-    #edf0f5 0.38in,
-    #edf0f5 0.385in
-  ) !important;
-}
-
-@media print {
-  .skim-section-task,
-  .skim-section-table,
-  .skim-section-table tr {
-    break-inside: avoid-page !important;
-    page-break-inside: avoid !important;
-  }
-}
-
-
-/* ── V8 VISUAL POLISH: WHAT'S TO COME HEADER ────────────────
-   Match the strong section header treatment used elsewhere:
-   navy left rule + large navy title, without turning the whole
-   section into a filled card. */
-.notes-wtc > .h-preview {
-  color: var(--navy, #0b174f) !important;
-  background: transparent !important;
-  border: 0 !important;
-  border-left: 7px solid var(--navy, #0b174f) !important;
-  border-radius: 0 !important;
-  padding: 5px 0 5px 14px !important;
-  margin: 18px 0 12px 0 !important;
-  font-size: 20pt !important;
-  line-height: 1.12 !important;
-  font-weight: 900 !important;
-  letter-spacing: 0 !important;
-}
-
-/* ── V8 CLOSE-READING DIRECTIONS ─────────────────────────────
-   Lives INSIDE .notes-ican-start so directions + I Can heading +
-   opening reading travel as one instructional block in print. */
-.close-reading-instructions {
-  margin: 16px 0 10px 0 !important;
-  padding: 10px 14px !important;
-  border: 2px solid #2d6a9f !important;
-  border-left: 7px solid #2d6a9f !important;
-  border-radius: 8px !important;
-  background: #f3f8fd !important;
-  color: #263238 !important;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.close-reading-instructions p {
-  margin: 0 !important;
-  line-height: 1.42 !important;
-  font-size: 9pt !important;
-}
-.close-reading-instructions .close-reading-title {
-  margin: 0 0 4px 0 !important;
-  color: var(--navy, #0b174f) !important;
-  font-size: 9.5pt !important;
-  font-weight: 900 !important;
-  letter-spacing: .35px !important;
-}
-
-@media print {
-  .notes-wtc > .h-preview,
-  .close-reading-instructions,
-  .notes-ican-start > .h-intro,
-  .notes-ican-start > .reading-box {
-    break-inside: avoid-page !important;
-    page-break-inside: avoid !important;
-  }
-}
-
-
-/* ── V9 LET'S GET STARTED SECTION HEADING ───────────────────
-   Section heading for the pre-reading skim activity. It lives
-   inside .skim-section-task so heading + directions + table
-   remain one print unit whenever they fit. */
-.lets-get-started-heading {
-  color: var(--navy, #0b174f) !important;
-  background: transparent !important;
-  border: 0 !important;
-  border-left: 7px solid var(--navy, #0b174f) !important;
-  border-radius: 0 !important;
-  padding: 5px 0 5px 14px !important;
-  margin: 18px 0 12px 0 !important;
-  font-size: 20pt !important;
-  line-height: 1.12 !important;
-  font-weight: 900 !important;
-  letter-spacing: 0 !important;
-  break-after: avoid-page !important;
-  page-break-after: avoid !important;
-}
-
-@media print {
-  .lets-get-started-heading {
-    break-inside: avoid-page !important;
-    page-break-inside: avoid !important;
-  }
-}
+/* ── V9 LET'S GET STARTED SECTION HEADING ─────────────────── */
+.lets-get-started-heading { color: var(--navy, #0b174f) !important; background: transparent !important; border: 0 !important; border-left: 7px solid var(--navy, #0b174f) !important; border-radius: 0 !important; padding: 5px 0 5px 14px !important; margin: 18px 0 12px 0 !important; font-size: 20pt !important; line-height: 1.12 !important; font-weight: 900 !important; letter-spacing: 0 !important; break-after: avoid-page !important; page-break-after: avoid !important; }
+@media print { .lets-get-started-heading { break-inside: avoid-page !important; page-break-inside: avoid !important; } }

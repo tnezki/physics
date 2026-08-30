@@ -12,6 +12,7 @@
   --paper:#ffffff;
   --page:#eef2f6;
   --accent:#e8eef7;
+  --content-media-max-height:1.9in;
 }
 @page{size:letter portrait;margin:.48in .52in}
 *{box-sizing:border-box}
@@ -33,7 +34,8 @@ table{border-collapse:collapse;width:auto;max-width:100%;margin:9px auto;font-si
 th,td{border:1px solid #778493;padding:5px 10px;text-align:center;vertical-align:middle}
 th{background:var(--accent);color:var(--navy);font-weight:800}
 .ps-figure,figure{margin:9px auto;text-align:center;break-inside:avoid;page-break-inside:avoid}
-.ps-figure img,figure img{display:block;max-width:4.5in;max-height:2.6in;width:auto;height:auto;margin:0 auto;border:1px solid var(--line);background:#fff}
+.ps-figure img,figure img{display:block;max-width:4.5in;max-height:var(--content-media-max-height);width:auto;height:auto;margin:0 auto;border:1px solid var(--line);background:#fff}
+.ps-figure svg,figure svg{display:block;max-width:4.5in;max-height:var(--content-media-max-height);width:auto;height:auto;margin:0 auto}
 figcaption{display:none}
 @media screen and (max-width:650px){body{padding:0}.container{border-radius:0;padding:20px 16px}.problem-body{font-size:1rem}}
 @media print{
@@ -47,5 +49,5 @@ figcaption{display:none}
   .problem{padding:.10in .12in;margin-bottom:.11in;border-radius:4px}
   .problem-body{font-size:9.8pt;line-height:1.32}
   .workspace,.workspace.wu-ws-050{height:.45in}
-  .ps-figure img,figure img{max-height:2.2in}
+  .ps-figure img,figure img,.ps-figure svg,figure svg{max-height:var(--content-media-max-height)}
 }

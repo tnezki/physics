@@ -8,6 +8,7 @@
   --warm: #9a5a17;
   --warm-soft: #fff1dc;
   --line: #c9d4dc;
+  --content-media-max-height: 1.9in;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
@@ -31,4 +32,9 @@ p, li { font-size: clamp(27px, 2.8vw, 46px); line-height: 1.25; }
 .controls button.primary { background: var(--accent); color: white; }
 .counter { color: var(--muted); font-size: clamp(16px, 1.4vw, 23px); min-width: 84px; text-align: center; }
 .small { font-size: clamp(19px, 1.8vw, 29px); color: var(--muted); }
+
+/* Shared content-media ceiling. */
+img { max-width: 100%; max-height: var(--content-media-max-height) !important; height: auto; object-fit: contain; }
+figure svg, .figure svg, .graph-block svg, .figure-block svg { max-width: 100%; max-height: var(--content-media-max-height) !important; height: auto; }
+
 @media print { body.demo-screen { overflow: visible; } .demo-deck { width: auto; height: auto; } .demo-slide { display: block !important; height: auto; page-break-after: always; padding: 0; } .slide-card { min-height: 0; box-shadow: none; } .controls { display: none; } }

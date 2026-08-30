@@ -1,79 +1,27 @@
 /* ============================================================
    summative.css — Physics
-   tnezki.github.io/physics/css/summative.css
-   Path from file: ../../css/summative.css
-
    Standalone stylesheet — does NOT depend on base.css.
-   Summative print copies use their own plain black-and-white
-   exam design (Arial, no color), separate from the navy/Segoe UI
-   teaching-material design system in base.css.
-
-   Covers two free-response answer-page layouts found across
-   units 1–8 (both are supported so this one file works for all):
-     - legacy 2x2 grid:      .frgrid / .frbox / .num
-     - current sheet table:  .fr-sheet-page / .fr-sheet-table / .fr-num
-
-   @page margin is set to .5in (not 0): margin at this level is
-   applied by the print engine to every physical sheet, including
-   pages created when content naturally overflows mid-section
-   (e.g. a 16-question test version that runs onto a 2nd or 3rd
-   sheet). Padding on .page only applies once, at the top of that
-   one element — it does NOT repeat on overflow continuation
-   pages, so the page margin has to live here instead.
+   Summative print copies use their own plain black-and-white exam design.
    ============================================================ */
 
+:root { --content-media-max-height: 1.9in; }
 @page { size: letter; margin: .5in; }
-
 * { box-sizing: border-box; }
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111;
-    margin: 0;
-    background: #fff;
-    font-size: 10.5pt;
-    line-height: 1.24;
-}
-
-/* ── PAGE CONTAINER ─────────────────────────────────────────── */
-.page {
-    page-break-after: always;
-    min-height: 10.6in;
-}
-
-/* ── SUMMATIVE QUESTION FLOW CONTRACT ─────────────────────────
-   Assessment question content flows naturally across physical
-   sheets. Generated assessment HTML uses exactly two intentional
-   logical breaks per form: after the final selected-response item
-   and after the final constructed-response prompt. Do not use
-   .page wrappers to chunk question ranges. */
+body { font-family: Arial, Helvetica, sans-serif; color: #111; margin: 0; background: #fff; font-size: 10.5pt; line-height: 1.24; }
+.page { page-break-after: always; min-height: 10.6in; }
 .assessment-flow { min-height: 0; }
 .force-page-break-after { break-after: page; page-break-after: always; }
 .assessment-form { break-after: auto; page-break-after: auto; }
-
-/* ── HEADINGS ───────────────────────────────────────────────── */
 h1 { font-size: 18pt; text-align: center; margin: 0 0 6px 0; }
 h2 { font-size: 14pt; margin: 12px 0 6px; border-bottom: 1.5px solid #111; padding-bottom: 3px; }
 h3 { font-size: 12pt; margin: 9px 0 4px; }
-
-/* ── NAME / VERSION LINE ────────────────────────────────────── */
 .versiontag { text-align: center; font-weight: bold; margin-bottom: 5px; }
 .topline { display: flex; justify-content: space-between; gap: 20px; margin: 4px 0 8px; }
 .nameblank { border-bottom: 1px solid #111; display: inline-block; width: 2.35in; }
-
 .version-picker { display: flex; align-items: center; justify-content: center; gap: .12in; margin: .12in 0 .08in; font-size: 14pt; }
 .version-label { font-weight: 700; margin-right: .04in; }
 .version-bubble { display: inline-flex; align-items: center; justify-content: center; width: .36in; height: .36in; border: 2px solid #111; border-radius: 50%; font-size: 11.5pt; font-weight: 700; line-height: 1; }
-
-/* ── DIRECTIONS BOX ─────────────────────────────────────────── */
-.directions {
-    font-size: 9.2pt;
-    border: 1px solid #555;
-    padding: 6px;
-    margin: 6px 0 9px;
-}
-
-/* ── MULTIPLE CHOICE QUESTIONS ──────────────────────────────── */
+.directions { font-size: 9.2pt; border: 1px solid #555; padding: 6px; margin: 6px 0 9px; }
 .q { break-inside: auto; page-break-inside: auto; min-height: 0; margin: 0 0 6px; }
 .qhead { font-weight: bold; }
 .qhead p { margin: 0 0 2px; }
@@ -81,106 +29,41 @@ h3 { font-size: 12pt; margin: 9px 0 4px; }
 .choices div { padding-left: 2px; }
 .small { font-size: 8.5pt; }
 
-/* ── SVG / IMAGE FIGURES ────────────────────────────────────── */
-.figure { max-width: 3.2in; max-height: 1.05in; display: block; margin: 3px auto; }
-
-
-/* ── TALLER ASSESSMENT FIGURE ──────────────────────────────────
-   Used for compact data graphs that need readable axes/labels.
-   The normal .figure class remains intentionally short for simple
-   schematics and wave diagrams. */
+/* Figures already use tighter limits than the shared 1.9in ceiling. */
+.figure { max-width: 3.2in; max-height: 1.05in; display: block; margin: 3px auto; object-fit:contain; }
 .figure.figure-tall { max-width: 3.35in; max-height: 1.75in; }
+/* Fallback for ordinary assessment images without the canonical .figure class. */
+.q img:not(.figure), .fr img:not(.figure) { max-width:100%; max-height:var(--content-media-max-height); height:auto; object-fit:contain; display:block; margin:3px auto; }
+.q figure svg:not(.figure), .fr figure svg:not(.figure) { max-width:100%; max-height:var(--content-media-max-height); height:auto; display:block; margin:3px auto; }
 
-/* ── FREE RESPONSE PROMPT SECTION (on test copy) ────────────── */
-.fr-section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    margin: 9px 0 6px;
-    border: 2px solid #111;
-    background: #f4f4f4;
-    padding: 6px 8px;
-    font-size: 10pt;
-}
+.fr-section { break-inside: avoid; page-break-inside: avoid; margin: 9px 0 6px; border: 2px solid #111; background: #f4f4f4; padding: 6px 8px; font-size: 10pt; }
 .fr-section-title { font-weight: 700; text-transform: uppercase; letter-spacing: .3px; margin-bottom: 2px; }
 .fr-section p { margin: 0; }
 .fr-section strong { font-weight: 700; }
 .fr { break-inside: auto; page-break-inside: auto; min-height: 0; margin: 7px 0 9px; border-top: 1px solid #aaa; padding-top: 5px; }
-
-/* ── ANSWER KEY TABLE ───────────────────────────────────────── */
 .keytable { width: 100%; border-collapse: collapse; font-size: 9.2pt; margin: 5px 0 10px; }
 .keytable th, .keytable td { border: 1px solid #555; padding: 3px; text-align: center; }
 .frkey { font-size: 8.8pt; }
-
-/* ── BUBBLE ANSWER SHEET ────────────────────────────────────── */
 .answersheet h1 { font-size: 18pt; }
 .printnote { font-style: italic; text-align: center; font-size: 9pt; margin: 0 0 5px; }
 .bubbletop { font-size: 14pt; text-align: center; margin: 6px 0; }
 .sheetgrid { display: grid; grid-template-columns: 1fr 1fr; gap: .35in; margin-top: .18in; }
-.bubble-row {
-    display: grid;
-    grid-template-columns: .35in 1fr;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding: 7px 0;
-    font-size: 15pt;
-}
-.bubbles {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    white-space: nowrap;
-    letter-spacing: 0;
-}
-.bubble-choice {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 15pt;
-    font-weight: 400;
-}
-.bubble {
-    display: inline-block;
-    width: .20in;
-    height: .20in;
-    border: 1.4px solid #111;
-    border-radius: 50%;
-    flex: 0 0 .20in;
-}
-
-/* ── FR WORK PAGE — legacy 2x2 grid (Units 1–3) ──
-     Own full page, back side of the answer sheet. No gap, no
-     all-sides border on .frbox — selective borders on child cells
-     create the cross divider instead. ── */
-.frgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 9.1in;
-    margin-top: .1in;
-}
+.bubble-row { display: grid; grid-template-columns: .35in 1fr; align-items: center; border-bottom: 1px solid #ddd; padding: 7px 0; font-size: 15pt; }
+.bubbles { display: inline-flex; align-items: center; gap: 12px; white-space: nowrap; letter-spacing: 0; }
+.bubble-choice { display: inline-flex; align-items: center; gap: 5px; font-size: 15pt; font-weight: 400; }
+.bubble { display: inline-block; width: .20in; height: .20in; border: 1.4px solid #111; border-radius: 50%; flex: 0 0 .20in; }
+.frgrid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 9.1in; margin-top: .1in; }
 .frbox { padding: 8px; font-size: 14pt; }
 .frbox:nth-child(1) { border-right: 2px solid #111; border-bottom: 2px solid #111; }
 .frbox:nth-child(2) { border-bottom: 2px solid #111; }
 .frbox:nth-child(3) { border-right: 2px solid #111; }
-/* frbox:nth-child(4) — no border; outer page edge serves as boundary */
 .frbox .num { font-weight: bold; font-size: 16pt; }
 .fr-work-header { font-size: 9.5pt; margin: 0; }
-
-/* ── FR ANSWER SHEET — current table layout (Units 4–8) ──
-     Own full page, back side of the answer sheet. Sizing comes
-     from @page margin (above) plus document flow — no fixed
-     width/height/padding here, so it behaves like a normal .page
-     and gets the same per-sheet margin on every printed page. */
-.fr-sheet-page {
-    page-break-before: always;
-    page-break-after: always;
-}
+.fr-sheet-page { page-break-before: always; page-break-after: always; }
 .fr-sheet-header { font-size: 8pt; margin: 0 0 3px 2px; }
 .fr-sheet-table { width: 100%; height: 9.5in; border-collapse: collapse; table-layout: fixed; }
 .fr-sheet-table td { border: 1px solid #111; vertical-align: top; padding: 6px; width: 50%; height: 50%; }
 .fr-num { font-size: 10pt; font-weight: 700; }
-
-/* ── PRINT OVERRIDES ────────────────────────────────────────── */
 @media print {
     .page { min-height: auto; }
     body { font-size: 10.2pt; }

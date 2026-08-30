@@ -20,6 +20,8 @@
     --wu-bg: var(--bg, #ffffff);
     --wu-muted: var(--muted, #5f6b76);
     --wu-ink: #1f2933;
+    --content-media-max-height: 1.9in;
+    --wu-content-media-max-width: 3.4in;
 }
 
 @page { size: 8.5in 11in; margin: .48in .52in; }
@@ -269,7 +271,10 @@ table.values th {
     font-weight: 850;
 }
 
-/* FIGURES */
+/* FIGURES / MEDIA
+   Base visual treatment lives here. The final safety ceiling is intentionally
+   declared near the end of the file so legacy width helpers cannot make a
+   Notability card figure oversized. */
 .warmup-figure {
     margin: 7px auto;
     flex: 0 0 auto;
@@ -277,8 +282,7 @@ table.values th {
 }
 
 .warmup-figure img,
-.problem-body div img {
-    max-width: 3.4in;
+.problem-body img {
     height: auto;
     display: block;
     margin: 0 auto;
@@ -294,7 +298,7 @@ table.values th {
     line-height: 1.25;
 }
 
-/* IMAGE SIZE OVERRIDES */
+/* IMAGE SIZE OVERRIDES — legacy width helpers retained for compatibility. */
 .wu-img-025 img { max-width: .25in; }
 .wu-img-050 img { max-width: .50in; }
 .wu-img-075 img { max-width: .75in; }
@@ -397,11 +401,7 @@ table.values th {
     .warmup-kicker { font-size: 7.5pt; }
     .warmup-subtitle { font-size: 8.5pt; }
 
-    .problem {
-        border-radius: 5px;
-        box-shadow: none;
-        padding: 8px 10px 9px;
-    }
+    .problem { border-radius: 5px; box-shadow: none; padding: 8px 10px 9px; }
 
     .problem-title {
         -webkit-print-color-adjust: exact;
@@ -421,40 +421,23 @@ table.values th {
     }
 }
 
-
-/* Diamond Problems: intentionally 75% of the normal Warm-Up figure cap. */
-.warmup-figure img[src$="_diamond.png"] {
-    max-width: 2in;
-}
-/* Warm-Up figure height cap — append to the end of physics/css/warmup.css
-   Notability/iPad safety: keep figures inside the fixed-height problem cards
-   while preserving aspect ratio and allowing students to zoom as needed. */
-
-.warmup-figure img,
-.problem-body div img {
-    max-height: 1.9in;
-    width: auto;
-    height: auto;
-}
-
-.warmup-figure svg,
-.problem-body svg {
-    max-width: 3.4in;
-    max-height: 1.9in;
-    width: auto;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
+/* CONTENT MEDIA SAFETY CEILING
+   Intentionally last among normal media rules: this bounds oversized legacy
+   width requests while keeping the successful Notability/iPad figure height. */
 .warmup-figure img,
 .problem-body img,
 .warmup-figure svg,
 .problem-body svg {
-    max-width: 3.4in;
-    max-height: 1.9in;
+    max-width: var(--wu-content-media-max-width);
+    max-height: var(--content-media-max-height);
     width: auto;
     height: auto;
     display: block;
     margin: 7px auto;
+    object-fit: contain;
+}
+
+/* Diamond Problems: intentionally smaller than the normal Warm-Up cap. */
+.warmup-figure img[src$="_diamond.png"] {
+    max-width: 2in;
 }

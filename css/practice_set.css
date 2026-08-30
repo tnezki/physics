@@ -6,74 +6,23 @@
    inside each .dok-section, no wrapper grid div. No DOK header
    boxes, no problem numbering/meta labels — problem number is
    inlined as the first character of the question text. Ordinary Practice problems use rounded full borders; CYU keeps its grid contract.
-   Workspace height is set per-problem with a .ws-N utility class
-   (N = pixels tall; ws-10 through ws-960 in steps of 10, plus
-   ws-25 as the starting default — 960px (~10in) is basically a
-   full printable page).
-   Everything currently ships at ws-25; bump individual problems up
-   by hand when a question needs more room.
+   Workspace height is set per-problem with a .ws-N utility class.
    ============================================================ */
 @page { size: 8.5in 11in; margin: .45in; }
-
-h1 {
-  background: transparent;
-  color: var(--navy);
-  font-weight: 900;
-  font-size: 15pt;
-  line-height: 1.2;
-  padding: 0 0 7px 0;
-  margin: 0 0 12px 0;
-  border: 0;
-  border-bottom: 4px solid var(--navy);
-}
-
+:root { --content-media-max-height: 1.9in; }
+h1 { background: transparent; color: var(--navy); font-weight: 900; font-size: 15pt; line-height: 1.2; padding: 0 0 7px 0; margin: 0 0 12px 0; border: 0; border-bottom: 4px solid var(--navy); }
 .dok-section { margin: 0 0 14px 0; }
-
-.problem {
-  padding: 10px 12px;
-  margin: 0 0 12px 0;
-  background: var(--bg);
-  break-inside: avoid;
-  page-break-inside: avoid;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid var(--navy);
-  border-radius: 10px;
-}
+.problem { padding: 10px 12px; margin: 0 0 12px 0; background: var(--bg); break-inside: avoid; page-break-inside: avoid; display: flex; flex-direction: column; border: 2px solid var(--navy); border-radius: 10px; }
 .problem .problem-body { display: flex; flex-direction: column; flex: 1; }
 .problem .workspace:last-child { margin-top: auto; }
-
 .qnum { font-weight: 900; color: var(--navy); }
-
 .problem-body { min-width: 0; }
 .problem-body p { margin: 0 0 5px 0; line-height: 1.28; }
 .problem-body ol, .problem-body ul { margin: 4px 0 5px 1.25em; padding: 0; }
 .problem-body li { margin-bottom: 2px; }
-
-.ps-figure, .ps-diagram {
-  margin: 6px auto 7px auto;
-  text-align: center;
-  break-inside: avoid;
-  page-break-inside: avoid;
-}
-.ps-figure img {
-  max-width: 3.5in;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border: 0;
-  background: #fff;
-}
-.ps-diagram svg {
-  width: 100%;
-  max-width: 4.6in;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  background: #fff;
-}
-
+.ps-figure, .ps-diagram { margin: 6px auto 7px auto; text-align: center; break-inside: avoid; page-break-inside: avoid; }
+.ps-figure img { max-width: 3.5in; max-height: var(--content-media-max-height); width: 100%; height: auto; display: block; margin: 0 auto; border: 0; background: #fff; object-fit: contain; }
+.ps-diagram svg { width: 100%; max-width: 4.6in; max-height: var(--content-media-max-height); height: auto; display: block; margin: 0 auto; background: #fff; }
 .wu-img-250 img { max-width: 2.5in; }
 .wu-img-300 img { max-width: 3in; }
 .wu-img-350 img { max-width: 3.5in; }
@@ -82,7 +31,6 @@ h1 {
 .wu-img-500 img { max-width: 5in; }
 .wu-img-550 img { max-width: 5.5in; }
 .wu-img-600 img { max-width: 6in; }
-
 /* ---- Workspace height utility classes (px) ---- */
 .workspace { background: #fff; margin-top: 3px; border: 0; }
 .ws-10 { height: 10px; }
@@ -184,85 +132,24 @@ h1 {
 .ws-25 { height: 25px; }
 
 /* Backward-compatible helpers for older course files while they are being rebuilt. */
-.section-label {
-  background: var(--blue-light); border: 1px solid #a9b9cf; color: #22354d;
-  font-weight: 800; font-size: 11pt; padding: 8px 12px; margin: 16px 0 10px 0;
-}
-.exit-ticket-label {
-  background: var(--navy); color: #fff; font-weight: 900; font-size: 14pt;
-  padding: 8px 14px; margin: 20px 0 10px 0;
-}
+.section-label { background: var(--blue-light); border: 1px solid #a9b9cf; color: #22354d; font-weight: 800; font-size: 11pt; padding: 8px 12px; margin: 16px 0 10px 0; }
+.exit-ticket-label { background: var(--navy); color: #fff; font-weight: 900; font-size: 14pt; padding: 8px 14px; margin: 20px 0 10px 0; }
 .exit-ticket-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
 .match-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:8px 0; }
 .match-card { border:1px solid #aaa; padding:8px; min-height:56px; }
-/* Notes-style compact two-column data tables. */
-table.values.compact-table {
-  width: max-content !important;
-  min-width: 2.35in;
-  max-width: 100% !important;
-  table-layout: fixed !important;
-  margin: 8px auto 10px auto !important;
-}
+table.values.compact-table { width: max-content !important; min-width: 2.35in; max-width: 100% !important; table-layout: fixed !important; margin: 8px auto 10px auto !important; }
 table.values.compact-table col.half-col { width: 50%; }
-table.values.compact-table th,
-table.values.compact-table td {
-  width: 50%;
-  padding: 7px 12px !important;
-  white-space: nowrap;
-  text-align: center;
-}
-
-/* Captions are not student-facing Practice labels. Keep mathematical labels in the figure itself. */
-.ps-figure figcaption,
-.ps-diagram figcaption { display: none; }
-
-/* Non-compact values tables keep their natural course/base table behavior. */
+table.values.compact-table th, table.values.compact-table td { width: 50%; padding: 7px 12px !important; white-space: nowrap; text-align: center; }
+.ps-figure figcaption, .ps-diagram figcaption { display: none; }
 .lower-alpha { list-style-type: lower-alpha; }
 
-
-/* ---- CHECK YOUR UNDERSTANDING ---------------------------------
-   Six CYU questions render as a 3-row x 2-column table/grid.
-   There is no per-question workspace. A full blank workspace page
-   follows the grid for student work. */
-.cyu-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid #7f8791;
-  border-left: 1px solid #7f8791;
-  margin: 8px 0 0 0;
-  break-inside: avoid-page;
-  page-break-inside: avoid;
-}
-.cyu-grid .problem {
-  margin: 0;
-  padding: 10px 12px;
-  border: 0;
-  border-right: 1px solid #7f8791;
-  border-bottom: 1px solid #7f8791;
-  border-radius: 0;
-  background: #fff;
-  min-width: 0;
-}
+/* ---- CHECK YOUR UNDERSTANDING ---- */
+.cyu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid #7f8791; border-left: 1px solid #7f8791; margin: 8px 0 0 0; break-inside: avoid-page; page-break-inside: avoid; }
+.cyu-grid .problem { margin: 0; padding: 10px 12px; border: 0; border-right: 1px solid #7f8791; border-bottom: 1px solid #7f8791; border-radius: 0; background: #fff; min-width: 0; }
 .cyu-grid .problem-body { display: block; }
 .cyu-grid .workspace { display: none !important; }
-.cyu-grid table.compact-table {
-  min-width: 0;
-  width: min(2.35in, 100%) !important;
-  margin: 5px auto 7px auto !important;
-}
+.cyu-grid table.compact-table { min-width: 0; width: min(2.35in, 100%) !important; margin: 5px auto 7px auto !important; }
 .cyu-grid .ps-figure img { max-width: 2.35in; }
 .cyu-grid .ps-diagram svg { max-width: 2.6in; }
-.cyu-workspace-page {
-  height: 9.25in;
-  min-height: 9.25in;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: #fff;
-  break-before: page;
-  page-break-before: always;
-}
-
-@media print {
-  .problem { padding: 7px 0; }
-}
+.cyu-workspace-page { height: 9.25in; min-height: 9.25in; margin: 0; padding: 0; border: 0; background: #fff; break-before: page; page-break-before: always; }
+@media print { .problem { padding: 7px 0; } }

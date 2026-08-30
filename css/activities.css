@@ -91,9 +91,7 @@
     font-size: 12pt;
     line-height: 1.55;
 }
-.dir-row {
-    margin-bottom: 12px;
-}
+.dir-row { margin-bottom: 12px; }
 .dir-label {
     font-weight: 900;
     color: var(--navy);
@@ -104,12 +102,8 @@
     letter-spacing: .04em;
 }
 .dir-text ol,
-.dir-text ul {
-    margin: 4px 0 4px 22px;
-}
-.dir-text li {
-    margin-bottom: 5px;
-}
+.dir-text ul { margin: 4px 0 4px 22px; }
+.dir-text li { margin-bottom: 5px; }
 .dir-goal {
     margin-top: 14px;
     font-style: italic;
@@ -127,64 +121,21 @@
     min-width: 2.5in;
     flex-shrink: 0;
 }
-.looks-good {
-    background: #f0fdf4;
-    border: 1.5px solid #86efac;
-    border-radius: 8px;
-    padding: 12px 14px;
-}
-.looks-bad {
-    background: #fff1f2;
-    border: 1.5px solid #fca5a5;
-    border-radius: 8px;
-    padding: 12px 14px;
-}
-.looks-header {
-    font-size: 11pt;
-    font-weight: 900;
-    margin-bottom: 8px;
-}
+.looks-good { background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 8px; padding: 12px 14px; }
+.looks-bad { background: #fff1f2; border: 1.5px solid #fca5a5; border-radius: 8px; padding: 12px 14px; }
+.looks-header { font-size: 11pt; font-weight: 900; margin-bottom: 8px; }
 .looks-good .looks-header { color: #15803d; }
 .looks-bad  .looks-header { color: #b91c1c; }
 .looks-good ul,
-.looks-bad  ul {
-    margin-left: 18px;
-    font-size: 11pt;
-    line-height: 1.5;
-}
+.looks-bad  ul { margin-left: 18px; font-size: 11pt; line-height: 1.5; }
 .looks-good li,
-.looks-bad  li {
-    margin-bottom: 5px;
-}
-
+.looks-bad  li { margin-bottom: 5px; }
 
 /* ── QUESTIONS-BEGIN DIVIDER ─────────────────────────────────── */
-.question-divider {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.question-divider-inner {
-    width: 82%;
-    border: 4px solid var(--navy);
-    border-radius: 12px;
-    padding: .7in .55in;
-    background: white;
-}
-.question-divider-kicker {
-    font-size: 14pt;
-    font-weight: 900;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: .18in;
-}
-.question-divider-title {
-    font-size: 34pt;
-    line-height: 1.05;
-    font-weight: 900;
-    color: var(--navy);
-}
+.question-divider { justify-content: center; align-items: center; text-align: center; }
+.question-divider-inner { width: 82%; border: 4px solid var(--navy); border-radius: 12px; padding: .7in .55in; background: white; }
+.question-divider-kicker { font-size: 14pt; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: .18in; }
+.question-divider-title { font-size: 34pt; line-height: 1.05; font-weight: 900; color: var(--navy); }
 .question-divider-rule {
     width: 48%;
     height: 8px;
@@ -195,13 +146,7 @@
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 }
-.question-divider-subtitle {
-    max-width: 6.8in;
-    margin: 0 auto;
-    font-size: 16pt;
-    line-height: 1.4;
-    color: #333;
-}
+.question-divider-subtitle { max-width: 6.8in; margin: 0 auto; font-size: 16pt; line-height: 1.4; color: #333; }
 
 /* ── PROBLEM AND SOLUTION PAGES ──────────────────────────────── */
 /* Large fonts — designed for classroom projection.              */
@@ -221,45 +166,17 @@
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 }
-.prob-num {
-    font-size: 18pt;
-    font-weight: 900;
-    color: var(--navy);
-    margin: 0 0 10px 0;
-    line-height: 1;
-}
-.prob-tag {
-    font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    color: var(--muted);
-    font-weight: 800;
-    margin-bottom: 8px;
-}
-.prob-q {
-    font-size: 14pt;
-    margin: 0 0 14px 0;
-    line-height: 1.2;
-}
+.prob-num { font-size: 18pt; font-weight: 900; color: var(--navy); margin: 0 0 10px 0; line-height: 1; }
+.prob-tag { font-size: 12pt; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 800; margin-bottom: 8px; }
+.prob-q { font-size: 14pt; margin: 0 0 14px 0; line-height: 1.2; }
 /* Figures inside prob-q scale via base.css graph-block classes */
 .prob-q .graph-block { margin: 12px auto; }
-.prob-q .graph-block img { max-width: 5in; max-height: 3.25in; }
+.prob-q .graph-block img { max-width: 5in; max-height: var(--content-media-max-height, 1.9in); }
+.prob-q .graph-block svg { max-width: 5in; max-height: var(--content-media-max-height, 1.9in); height:auto; }
 
-.work {
-    flex: 1;
-    background: white;
-    min-height: 3.5in;
-    margin-top: 8px;
-}
-.solution {
-    font-size: 16pt;
-    margin: 12px 0 8px 0;
-    padding-top: 10px;
-    border-top: 2px solid var(--text-dark);
-    line-height: 1.35;
-}
+.work { flex: 1; background: white; min-height: 3.5in; margin-top: 8px; }
+.solution { font-size: 16pt; margin: 12px 0 8px 0; padding-top: 10px; border-top: 2px solid var(--text-dark); line-height: 1.35; }
 .solution b { color: var(--navy); }
-
 
 /* ── QUESTION / SOLUTION HEADER IDENTIFICATION ───────────────── */
 /* Question pages use a pale green header strip; solution pages use pale red. */
@@ -273,52 +190,14 @@
 
 /* ── EXIT TICKET (standard activities) ───────────────────────── */
 /* 2×2 grid — 4 projected questions, matching PS ET format.      */
-.exit-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    flex: 1;
-}
-.exit-item {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 16pt;
-    background: white;
-    line-height: 1.35;
-}
-.exit-item-label {
-    font-size: 12pt;
-    font-weight: 800;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    margin-bottom: 8px;
-    display: block;
-}
-.exit-key {
-    font-size: 12pt;
-    border-top: 2px solid var(--text-dark);
-    padding-top: 10px;
-    margin-top: 14px;
-    line-height: 1.4;
-}
-.exit-key ol {
-    margin-left: .25in;
-    columns: 2;
-    column-gap: .35in;
-}
-.exit-key li {
-    margin-bottom: 4px;
-    break-inside: avoid;
-}
+.exit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; flex: 1; }
+.exit-item { border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 16pt; background: white; line-height: 1.35; }
+.exit-item-label { font-size: 12pt; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 8px; display: block; }
+.exit-key { font-size: 12pt; border-top: 2px solid var(--text-dark); padding-top: 10px; margin-top: 14px; line-height: 1.4; }
+.exit-key ol { margin-left: .25in; columns: 2; column-gap: .35in; }
+.exit-key li { margin-bottom: 4px; break-inside: avoid; }
 
 /* ── STATIONS — LANDSCAPE LAYOUT ─────────────────────────────── */
-/* PM adds to <head>:                                            */
-/*   <style>@page{size:letter landscape;                         */
-/*   margin:.32in .42in .24in}</style>                          */
-/* Directions page uses .station-page + .stn-dir-page class.    */
-/* Card pages use .station-page. Footer on every page.          */
 .station-page {
     width: 11in;
     min-height: 8.5in;
@@ -330,218 +209,42 @@
     background: white;
     position: relative;
 }
-.station-page:last-child {
-    page-break-after: auto;
-    break-after: auto;
-}
-
-/* Stations directions header — 2-column grid */
-.stn-header {
-    display: grid;
-    grid-template-columns: 1fr 2.5in;
-    gap: .2in;
-    align-items: end;
-    margin-bottom: .08in;
-}
+.station-page:last-child { page-break-after: auto; break-after: auto; }
+.stn-header { display: grid; grid-template-columns: 1fr 2.5in; gap: .2in; align-items: end; margin-bottom: .08in; }
 .stn-header .act-title { font-size: 22pt; }
-.stn-rule {
-    height: 4px;
-    background: var(--navy);
-    margin: .07in 0 .18in;
-    width: 100%;
-}
-
-/* Stations directions body — same layout as standard */
-.stn-dir-body {
-    display: flex;
-    gap: .35in;
-    flex: 1;
-    align-items: flex-start;
-}
+.stn-rule { height: 4px; background: var(--navy); margin: .07in 0 .18in; width: 100%; }
+.stn-dir-body { display: flex; gap: .35in; flex: 1; align-items: flex-start; }
 .stn-dir-body .dir-text { font-size: 11pt; }
 .stn-dir-body .looks-like { min-width: 2.2in; }
 .stn-dir-body .looks-like ul { font-size: 10.5pt; }
-
-/* Station card header — navy bar above each 2×2 grid */
-.station-header {
-    background: var(--navy);
-    color: white;
-    font-size: 12pt;
-    font-weight: 800;
-    padding: .1in .2in;
-    margin-bottom: .12in;
-    border-radius: 4px;
-    line-height: 1.05;
-}
+.station-header { background: var(--navy); color: white; font-size: 12pt; font-weight: 800; padding: .1in .2in; margin-bottom: .12in; border-radius: 4px; line-height: 1.05; }
 .station-header.small { font-size: 12pt; }
-
-/* 2×2 card grid — 4 problems per station page */
-.station-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: .1in .13in;
-    flex: 1;
-}
-.station-card {
-    border: 1.2px solid var(--text-dark);
-    border-radius: 5px;
-    padding: .09in;
-    font-size: 10.2pt;
-    line-height: 1.23;
-    overflow: hidden;
-    background: white;
-}
-.station-card h3 {
-    font-size: 11.5pt;
-    color: var(--navy);
-    margin-bottom: .04in;
-    font-weight: 800;
-}
-.station-card-label {
-    font-size: 8.4pt;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    color: var(--muted);
-    font-weight: 800;
-    margin-bottom: .035in;
-    display: block;
-}
-/* graph-block inside station cards */
+.station-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: .1in .13in; flex: 1; }
+.station-card { border: 1.2px solid var(--text-dark); border-radius: 5px; padding: .09in; font-size: 10.2pt; line-height: 1.23; overflow: hidden; background: white; }
+.station-card h3 { font-size: 11.5pt; color: var(--navy); margin-bottom: .04in; font-weight: 800; }
+.station-card-label { font-size: 8.4pt; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 800; margin-bottom: .035in; display: block; }
 .station-card .graph-block { margin: .04in auto; }
-.station-card .graph-block img {
-    max-width: 100%;
-    max-height: 2.65in;
-    object-fit: contain;
-    border: 0;
-}
-
-/* Station solution list page */
-.station-solutions {
-    font-size: 11pt;
-    line-height: 1.3;
-    flex: 1;
-    overflow: hidden;
-}
-.station-sol-item {
-    border-bottom: 1px solid var(--border-light);
-    padding: .07in 0;
-}
+.station-card .graph-block img { max-width: 100%; max-height: var(--content-media-max-height, 1.9in); object-fit: contain; border: 0; }
+.station-card .graph-block svg { max-width: 100%; max-height: var(--content-media-max-height, 1.9in); height:auto; }
+.station-solutions { font-size: 11pt; line-height: 1.3; flex: 1; overflow: hidden; }
+.station-sol-item { border-bottom: 1px solid var(--border-light); padding: .07in 0; }
 .station-sol-item:last-child { border-bottom: none; }
-.station-sol-item h3 {
-    font-size: 12pt;
-    color: var(--navy);
-    margin-bottom: .025in;
-    font-weight: 800;
-}
-.station-sol-q {
-    font-size: 10.5pt;
-    color: #333;
-    margin-bottom: .035in;
-}
-
-/* Stations exit ticket — compact 2×2 */
-.stn-exit-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    flex: 1;
-}
-.stn-exit-item {
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: .08in .1in;
-    font-size: 12pt;
-    line-height: 1.3;
-    background: white;
-}
-.stn-exit-label {
-    font-size: 8pt;
-    color: var(--muted);
-    font-weight: 800;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    margin-bottom: .03in;
-    display: block;
-}
-.stn-exit-key {
-    font-size: 12pt;
-    border-top: 2px solid var(--text-dark);
-    padding-top: .06in;
-    margin-top: .08in;
-    line-height: 1.4;
-}
-.stn-exit-key ol {
-    margin-left: .22in;
-    columns: 2;
-    column-gap: .35in;
-}
-
-/* Print helper note — copy count reminder */
-.copy-note {
-    position: absolute;
-    right: .42in;
-    top: .35in;
-    font-size: 9.5pt;
-    font-weight: 800;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: .05em;
-}
-
-/* Page footer on all station pages */
-.page-footer {
-    padding-top: .08in;
-    display: flex;
-    justify-content: space-between;
-    font-size: 8pt;
-    color: var(--text-dark);
-    margin-top: auto;
-    border-top: 1px solid var(--border-light);
-}
+.station-sol-item h3 { font-size: 12pt; color: var(--navy); margin-bottom: .025in; font-weight: 800; }
+.station-sol-q { font-size: 10.5pt; color: #333; margin-bottom: .035in; }
+.stn-exit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex: 1; }
+.stn-exit-item { border: 1px solid var(--border); border-radius: 6px; padding: .08in .1in; font-size: 12pt; line-height: 1.3; background: white; }
+.stn-exit-label { font-size: 8pt; color: var(--muted); font-weight: 800; letter-spacing: .04em; text-transform: uppercase; margin-bottom: .03in; display: block; }
+.stn-exit-key { font-size: 12pt; border-top: 2px solid var(--text-dark); padding-top: .06in; margin-top: .08in; line-height: 1.4; }
+.stn-exit-key ol { margin-left: .22in; columns: 2; column-gap: .35in; }
+.copy-note { position: absolute; right: .42in; top: .35in; font-size: 9.5pt; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.page-footer { padding-top: .08in; display: flex; justify-content: space-between; font-size: 8pt; color: var(--text-dark); margin-top: auto; border-top: 1px solid var(--border-light); }
 
 /* ── TARSIA (work in progress) ───────────────────────────────── */
-/* Printable matching pair list for pasting into the generator.  */
-/* Generator: https://tnezki.github.io/pc/structures/            */
-/*   activity_templates/tarsia_generator/tarsia_generator.html   */
-.tarsia-intro {
-    font-size: 12pt;
-    margin-bottom: 16px;
-    padding: 10px 14px;
-    background: var(--blue-bg);
-    border: 1px solid var(--border-light);
-    border-radius: 6px;
-}
+.tarsia-intro { font-size: 12pt; margin-bottom: 16px; padding: 10px 14px; background: var(--blue-bg); border: 1px solid var(--border-light); border-radius: 6px; }
 .tarsia-intro a { color: var(--navy); font-weight: 800; }
-
-.tarsia-pairs {
-    margin: 12px 0;
-    border: 1px solid var(--border-light);
-    border-radius: 6px;
-    overflow: hidden;
-}
-.tarsia-pair-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    background: var(--blue-light);
-    font-size: 10pt;
-    font-weight: 800;
-    color: var(--navy);
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    padding: 6px 14px;
-    border-bottom: 2px solid var(--border);
-}
-.tarsia-pair {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    border-top: 1px solid var(--border-light);
-    padding: 8px 14px;
-    font-size: 13pt;
-    line-height: 1.4;
-}
+.tarsia-pairs { margin: 12px 0; border: 1px solid var(--border-light); border-radius: 6px; overflow: hidden; }
+.tarsia-pair-header { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--blue-light); font-size: 10pt; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: .04em; padding: 6px 14px; border-bottom: 2px solid var(--border); }
+.tarsia-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--border-light); padding: 8px 14px; font-size: 13pt; line-height: 1.4; }
 .tarsia-pair:first-of-type { border-top: none; }
 .tarsia-pair:nth-child(even) { background: var(--blue-bg); }
 .tarsia-q { font-weight: 700; color: var(--navy); }
@@ -560,59 +263,35 @@
    These rules can be folded into activities.css for future builds.
    ============================================================ */
 .exit-no-work .exit-grid,
-.exit-ticket-page .exit-grid {
-    flex: 0 0 auto;
-    align-items: start;
-    grid-auto-rows: auto;
-}
+.exit-ticket-page .exit-grid { flex: 0 0 auto; align-items: start; grid-auto-rows: auto; }
 .exit-no-work .problem,
 .exit-no-work .problem-body,
 .exit-no-work .exit-item,
 .exit-no-work .stn-exit-item,
 .exit-ticket-page .problem,
-.exit-ticket-page .problem-body {
-    min-height: 0;
-    height: auto;
-    margin-bottom: 0;
-}
+.exit-ticket-page .problem-body { min-height: 0; height: auto; margin-bottom: 0; }
 .exit-no-work .workspace,
 .exit-no-work .work,
 .exit-ticket-page .workspace,
-.exit-ticket-page .work {
-    display: none;
-    min-height: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-}
+.exit-ticket-page .work { display: none; min-height: 0; height: 0; margin: 0; padding: 0; }
 .exit-no-work .problem-body::after,
 .exit-no-work .exit-item::after,
 .exit-ticket-page .problem-body::after,
-.exit-ticket-page .exit-item::after {
-    content: none;
-    display: none;
-}
+.exit-ticket-page .exit-item::after { content: none; display: none; }
 .prob-q .graph-block img,
 .prob-q .ps-figure img {
     max-width: 5.69in;
-    max-height: 3.68in;
+    max-height: var(--content-media-max-height, 1.9in);
     object-fit: contain;
 }
+.prob-q .graph-block svg,
+.prob-q .ps-figure svg {
+    max-width: 5.69in;
+    max-height: var(--content-media-max-height, 1.9in);
+    height: auto;
+}
 .prob-q .graph-block,
-.prob-q .ps-figure {
-    margin: 8px auto;
-    text-align: center;
-}
+.prob-q .ps-figure { margin: 8px auto; text-align: center; }
 .tarsia-editor-page { min-height: 9.3in; }
-.tarsia-editor-page .teacher-note {
-    font-size: 12pt;
-    line-height: 1.25;
-    margin: 6px 0 8px 0;
-}
-.tarsia-frame {
-    width: 100%;
-    height: 7.35in;
-    border: 1px solid #9ca3af;
-    display: block;
-    background: white;
-}
+.tarsia-editor-page .teacher-note { font-size: 12pt; line-height: 1.25; margin: 6px 0 8px 0; }
+.tarsia-frame { width: 100%; height: 7.35in; border: 1px solid #9ca3af; display: block; background: white; }
