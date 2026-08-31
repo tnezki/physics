@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>STEM I Welcome + Long Span Mini Challenge</title>
+<style>
+  :root{
+    --navy:#0f2747;
+    --blue:#1f5f9d;
+    --blue-2:#2e78b8;
+    --ink:#18212f;
+    --muted:#5b6573;
+    --line:#d8dee7;
+    --line-dark:#aeb8c6;
+    --paper:#ffffff;
+    --surface:#f5f7fa;
+    --surface-2:#eef2f6;
+    --shadow:0 18px 46px rgba(15,39,71,.12);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#e9edf2;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  body{min-height:100vh}
+
+  /* ---------- Projector ---------- */
+  .projector-shell{min-height:100vh;display:flex;flex-direction:column}
+  .projector-toolbar{
+    position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+    gap:12px;padding:10px 18px;background:#111827;color:#fff;border-bottom:1px solid #273449
+  }
+  .toolbar-title{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}
+  button{border:1px solid transparent;border-radius:7px;padding:10px 14px;font-size:14px;font-weight:700;cursor:pointer}
+  .btn-light{background:#fff;color:#172033;border-color:#d7dde7}
+  .btn-blue{background:var(--blue);color:#fff}
+  .btn-green{background:#fff;color:#172033;border-color:#d7dde7}
+  .btn-ghost{background:#273449;color:#fff;border-color:#39475d}
+  .btn-ghost:disabled{opacity:.4;cursor:not-allowed}
+
+  .slide-stage{flex:1;display:grid;place-items:center;padding:24px}
+  .slide{
+    display:none;width:min(1500px,96vw);min-height:calc(100vh - 110px);background:var(--paper);
+    border-radius:12px;box-shadow:var(--shadow);overflow:hidden;border:1px solid #dfe4eb
+  }
+  .slide.active{display:flex;flex-direction:column}
+  .slide-header{padding:28px 42px 24px;background:var(--navy);color:#fff;border-bottom:5px solid var(--blue-2)}
+  .slide-header h1{font-size:clamp(32px,3.6vw,54px);margin:0 0 5px;line-height:1.05;letter-spacing:-.02em}
+  .slide-header p{font-size:clamp(17px,1.7vw,25px);margin:0;color:#d9e4f0}
+  .slide-body{padding:36px 46px 42px;display:flex;flex:1;flex-direction:column;justify-content:center;gap:24px}
+  .hero-center{text-align:center;align-items:center}
+  .hero-title{font-size:clamp(46px,5.6vw,82px);font-weight:800;line-height:1;color:var(--navy);margin:0;letter-spacing:-.035em}
+  .hero-sub{font-size:clamp(21px,2.1vw,32px);font-weight:700;color:var(--blue);margin:0}
+  .hero-line{font-size:clamp(20px,1.9vw,29px);max-width:1080px;margin:8px auto 0;line-height:1.4;color:#354052}
+
+  .callout{border:1px solid var(--line-dark);border-left:6px solid var(--blue);background:#fff;border-radius:8px;padding:19px 22px;text-align:left}
+  .callout h2{margin:0 0 7px;color:var(--navy);font-size:clamp(23px,2.1vw,32px)}
+  .callout p{margin:0;font-size:clamp(18px,1.7vw,26px);line-height:1.4;color:#354052}
+
+  .rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .rule-card,.process-card,.mindset-card,.challenge-card{
+    border:1px solid var(--line);background:#fff;border-radius:8px;padding:18px 20px
+  }
+  .rule-card{border-left:5px solid var(--blue)}
+  .rule-card h3,.mindset-card h3,.challenge-card h3{font-size:clamp(22px,1.85vw,31px);margin:0 0 7px;color:var(--navy)}
+  .rule-card p,.mindset-card p,.challenge-card p{font-size:clamp(17px,1.5vw,24px);line-height:1.35;margin:0;color:#3f4a5b}
+
+  .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .process-card{text-align:center;padding:17px 12px;background:var(--surface);border-top:4px solid var(--blue)}
+  .step-num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;margin:0 auto 8px;background:var(--navy);color:#fff;font-weight:800;font-size:18px}
+  .process-card strong{display:block;font-size:clamp(17px,1.42vw,23px);color:var(--navy)}
+  .process-card span{display:block;margin-top:4px;color:var(--muted);font-size:clamp(14px,1.05vw,17px)}
+
+  .mindset-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .mindset-card{border-top:4px solid var(--blue);background:var(--surface)}
+
+  .challenge-title{font-size:clamp(42px,4.8vw,70px);font-weight:800;text-align:center;color:var(--navy);margin:0;letter-spacing:-.03em}
+  .challenge-goal{font-size:clamp(22px,2.15vw,34px);text-align:center;line-height:1.35;max-width:1180px;margin:0 auto;color:#2d3748}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .challenge-card{background:var(--surface);border-left:5px solid var(--blue)}
+  .challenge-card.blue,.challenge-card.green,.challenge-card.gold,.challenge-card.purple{background:var(--surface);border-left-color:var(--blue)}
+  .big-list{margin:8px 0 0;padding-left:26px;font-size:clamp(17px,1.5vw,24px);line-height:1.45;color:#344054}
+  .budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .budget-box{border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:8px;padding:22px;text-align:center;background:#fff}
+  .budget-box .qty{font-size:clamp(38px,3.8vw,60px);font-weight:800;color:var(--navy);line-height:1}
+  .budget-box .label{font-size:clamp(17px,1.55vw,24px);font-weight:700;margin-top:7px;color:#384354}
+  .budget-note{text-align:center;font-size:clamp(16px,1.35vw,21px);color:#4b5565}
+  .day-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .day-card{border-radius:8px;padding:20px;border:1px solid var(--line);border-top:4px solid var(--blue);background:#fff}
+  .day-card h3{margin:0 0 10px;color:var(--navy);font-size:clamp(22px,1.85vw,30px)}
+  .day-card ol{margin:0;padding-left:22px;font-size:clamp(16px,1.3vw,21px);line-height:1.48;color:#394456}
+  .slide-footer{padding:10px 18px;text-align:center;color:#6b7280;font-weight:600;font-size:13px;border-top:1px solid #edf0f4}
+
+  /* ---------- Printable challenge packet ---------- */
+  .print-packet{display:none}
+  .print-page{background:#fff;color:#000;position:relative;font-family:Arial,Helvetica,sans-serif}
+  .print-head{background:#fff;color:#000;padding:0 0 10px;border-radius:0;margin-bottom:12px;border-bottom:2px solid #000}
+  .print-head h1{margin:0;font-size:26px}
+  .print-head p{margin:3px 0 0;font-size:14px}
+  .print-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .box{border:1.4px solid #000;border-radius:0;padding:11px;margin-bottom:11px;break-inside:avoid;background:#fff !important;color:#000 !important}
+  .box h2,.box h3{margin:0 0 7px;color:#000}
+  .box h2{font-size:19px}.box h3{font-size:16px}
+  .box p,.box li{font-size:12.5px;line-height:1.3}
+  .box ul,.box ol{margin:5px 0 0;padding-left:20px}
+  .gold-box,.green-box,.blue-box,.purple-box{background:#fff !important;border-color:#000 !important}
+  .student-line{display:flex;gap:12px;margin:0 0 12px}
+  .student-line > div{flex:1;border-bottom:1px solid #000;padding:2px 0 5px;font-size:13px}
+  .write-lines{height:72px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 23px,#777 24px)}
+  .write-lines.tall{height:130px}
+  .sketch-box{height:230px;border:1.5px solid #000;border-radius:0;background:none}
+  .sketch-box.small{height:145px}
+  table{border-collapse:collapse;width:100%;font-size:12px}
+  th,td{border:1px solid #000;padding:7px;vertical-align:top;background:#fff !important;color:#000 !important}
+  th{font-weight:700}
+  .blank-cell{height:40px}
+  .checklist{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px;font-size:13px}
+  .checklist span::before{content:"□ ";font-size:16px}
+  .print-footer{position:absolute;bottom:0;left:0;right:0;font-size:10px;color:#000;text-align:center}
+
+  @media (max-width:900px){
+    .rule-grid,.split,.mindset-grid,.day-grid{grid-template-columns:1fr}
+    .process-grid{grid-template-columns:1fr 1fr}
+    .budget-grid{grid-template-columns:1fr}
+    .slide{min-height:auto}
+  }
+
+  @media print{
+    @page{size:letter;margin:.35in}
+    *{-webkit-print-color-adjust:economy !important;print-color-adjust:economy !important}
+    html,body{background:#fff !important;color:#000 !important}
+    .projector-shell{display:none !important}
+    .print-packet{display:block !important}
+    .print-page{display:block;width:7.8in;height:10.25in;margin:0 auto;padding:0;page-break-after:always;overflow:hidden;background:#fff !important;color:#000 !important}
+    .print-page:last-child{page-break-after:auto}
+    .print-head,.box,th,td,.sketch-box{background:#fff !important;color:#000 !important;box-shadow:none !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="projector-shell" id="projectorShell">
+  <div class="projector-toolbar">
+    <div class="toolbar-title">STEM I • First Day</div>
+    <div class="toolbar-actions">
+      <button class="btn-ghost" id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+      <button class="btn-ghost" id="nextBtn" onclick="changeSlide(1)">Next →</button>
+      <button class="btn-green" onclick="printPacket()">Print Challenge + Record Sheet</button>
+    </div>
+  </div>
+
+  <main class="slide-stage">
+    <section class="slide active">
+      <div class="slide-header"><h1>Welcome to STEM I</h1><p>Engineering Design &amp; Innovation</p></div>
+      <div class="slide-body hero-center">
+        <div style="font-size:18px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#5b6573">Design • Build • Test • Improve</div>
+        <h2 class="hero-title">Welcome, Engineers.</h2>
+        <p class="hero-sub">Mr. Nezki</p>
+        <p class="hero-line">In this room, we will learn by <strong>designing, building, testing, noticing what happens, and making things better.</strong></p>
+        <div class="callout" style="max-width:1050px;width:100%;text-align:left">
+          <h2>Today’s Goal</h2>
+          <p>Learn how we work in STEM, meet the Engineering Design Process, and use it in a short hands-on design problem.</p>
+        </div>
+      </div>
+      <div class="slide-footer">Use ← / → or the buttons above to move through the projector pages.</div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>How We Work in STEM</h1><p>The habits that make engineering possible</p></div>
+      <div class="slide-body">
+        <div class="callout"><h2>The Foundation of Great Engineering</h2><p>We need a room where people can think, build, test, ask questions, and improve safely.</p></div>
+        <div class="rule-grid">
+          <div class="rule-card"><h3>Be Ready</h3><p>Be on time, have what you need, and get started when class begins.</p></div>
+          <div class="rule-card"><h3>Be Respectful</h3><p>Respect people, ideas, materials, tools, and the learning happening around you.</p></div>
+          <div class="rule-card"><h3>Be Safe</h3><p>Follow directions and use materials and equipment the way they are intended.</p></div>
+          <div class="rule-card"><h3>Be Involved</h3><p>Think, build, test, record, and contribute. Engineering is something you do.</p></div>
+          <div class="rule-card" style="grid-column:1/-1"><h3>Be Curious &amp; Persistent</h3><p>Ask questions. Try ideas. Expect some things not to work. Use what you learn to make the next attempt better.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>The Engineering Design Process</h1><p>A classroom roadmap for solving problems</p></div>
+      <div class="slide-body">
+        <div class="process-grid">
+          <div class="process-card"><div class="step-num">1</div><strong>Identify the Problem</strong><span>What needs to be solved?</span></div>
+          <div class="process-card"><div class="step-num">2</div><strong>Research</strong><span>What do we already know?</span></div>
+          <div class="process-card"><div class="step-num">3</div><strong>Requirements</strong><span>What must it do? What are the limits?</span></div>
+          <div class="process-card"><div class="step-num">4</div><strong>Brainstorm Ideas</strong><span>Generate more than one possibility.</span></div>
+          <div class="process-card"><div class="step-num">5</div><strong>Choose a Solution</strong><span>Pick a promising direction.</span></div>
+          <div class="process-card"><div class="step-num">6</div><strong>Build a Prototype</strong><span>Turn the idea into something testable.</span></div>
+          <div class="process-card"><div class="step-num">7</div><strong>Test It Out</strong><span>Collect evidence about performance.</span></div>
+          <div class="process-card"><div class="step-num">8</div><strong>Make It Better</strong><span>Change the design using what you learned.</span></div>
+          <div class="process-card"><div class="step-num">9</div><strong>Share Results</strong><span>Record and explain what you learned.</span></div>
+        </div>
+        <div class="callout"><h2>The important part: it loops.</h2><p>Testing is not the end. A test gives you information. Engineers use that information to revise the design and test again.</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Engineering Mindset</h1><p>How to think when the answer is not obvious</p></div>
+      <div class="slide-body">
+        <div class="mindset-grid">
+          <div class="mindset-card"><h3>Test Ideas</h3><p>Do not argue forever about what might work. Build something testable and collect evidence.</p></div>
+          <div class="mindset-card"><h3>Failure Gives Information</h3><p>A weak joint, a bend, or a collapse can tell you exactly what needs attention.</p></div>
+          <div class="mindset-card"><h3>Record Your Thinking</h3><p>A quick sketch, measurement, or note helps you make a smarter second version.</p></div>
+          <div class="mindset-card"><h3>Improve One Thing at a Time</h3><p>Make purposeful changes so you can tell what actually helped.</p></div>
+        </div>
+        <div class="callout"><h2>First tries do not need to be perfect.</h2><p>The goal is to learn enough from the first version that the next version is better.</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Mini Challenge: Long Span</h1><p>Design • Build • Test • Improve</p></div>
+      <div class="slide-body hero-center">
+        <h2 class="challenge-title">Span the Greatest Distance.</h2>
+        <p class="challenge-goal">Design and build a <strong>free-standing spanning structure</strong> that reaches across the <strong>greatest unsupported distance</strong> while supporting a teacher-provided hanging load.</p>
+        <div class="split" style="width:100%">
+          <div class="challenge-card blue"><h3>Success</h3><p>Your structure must remain free-standing and support the teacher-provided hanging load for <strong>10 seconds</strong> across the greatest possible clear span.</p></div>
+          <div class="challenge-card green"><h3>The Test</h3><p>The teacher provides the hanging load. The supports are moved farther apart to determine the greatest clear span your structure can hold successfully.</p></div>
+        </div>
+        <div class="callout" style="width:100%;text-align:left"><h2>Engineering focus</h2><p>Structure • joints • bending • bracing • load paths • efficient use of limited materials</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Material Budget &amp; Rules</h1><p>Limited materials force design decisions</p></div>
+      <div class="slide-body">
+        <div class="budget-grid">
+          <div class="budget-box"><div class="qty">50</div><div class="label">7-inch cocktail straws</div></div>
+          <div class="budget-box"><div class="qty">30</div><div class="label">toothpicks</div></div>
+          <div class="budget-box"><div class="qty">36 in</div><div class="label">masking tape</div></div>
+        </div>
+        <div class="split">
+          <div class="challenge-card gold">
+            <h3>Requirements</h3>
+            <ul class="big-list">
+              <li>Goal: create the <strong>greatest clear unsupported span</strong></li>
+              <li>Span is measured between the inside edges of the two supports</li>
+              <li>Structure may rest on the test supports but cannot be taped or attached to them</li>
+              <li>Nothing may touch the floor, wall, chair, or another support</li>
+              <li>Teacher-provided load must hang near the center of the span</li>
+            </ul>
+          </div>
+          <div class="challenge-card purple">
+            <h3>Performance</h3>
+            <ul class="big-list">
+              <li>Primary result: <strong>greatest clear span held for 10 seconds</strong></li>
+              <li>Tiebreaker: <strong>fewer materials used</strong></li>
+              <li>The same teacher-provided hanging load is used for every test</li>
+              <li>You may use less than the full budget</li>
+            </ul>
+          </div>
+        </div>
+        <p class="budget-note"><strong>Important:</strong> Tape is part of the structure. It may connect or reinforce materials, but it may not anchor the structure to the test supports.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Three-Day Engineering Sprint</h1><p>Design, test, learn, and improve</p></div>
+      <div class="slide-body">
+        <div class="day-grid">
+          <div class="day-card">
+            <h3>Day 1 — Design &amp; Start Building</h3>
+            <ol>
+              <li>Identify the problem and requirements.</li>
+              <li>Sketch at least two possible spanning-structure ideas.</li>
+              <li>Choose one and explain why.</li>
+              <li>Begin prototype construction.</li>
+            </ol>
+          </div>
+          <div class="day-card">
+            <h3>Day 2 — Build &amp; Test</h3>
+            <ol>
+              <li>Finish the first prototype.</li>
+              <li>Complete the first load test.</li>
+              <li>Record maximum successful span and where failure began.</li>
+              <li>Plan one purposeful improvement.</li>
+            </ol>
+          </div>
+          <div class="day-card">
+            <h3>Day 3 — Improve &amp; Retest</h3>
+            <ol>
+              <li>Revise the structure using test evidence.</li>
+              <li>Complete the final load test.</li>
+              <li>Compare Version 1 and Version 2.</li>
+              <li>Record what changed and what you learned.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="callout"><h2>Ready for the record sheet?</h2><p>Use the <strong>Print Challenge + Record Sheet</strong> button at the top. Only the student packet will print — not these projector pages.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- PRINT-ONLY STUDENT PACKET -->
+<section class="print-packet" id="printPacket">
+  <article class="print-page">
+    <div class="print-head"><h1>Long Span Mini Challenge</h1><p>Engineering Design Process in Action • Challenge Sheet</p></div>
+    <div class="student-line"><div>Name:</div><div>Class:</div><div>Date:</div></div>
+
+    <div class="box gold-box">
+      <h2>The Challenge</h2>
+      <p><strong>Design and build a free-standing spanning structure that reaches across the greatest unsupported distance while supporting a teacher-provided hanging load.</strong></p>
+    </div>
+
+    <div class="print-row">
+      <div class="box blue-box">
+        <h3>Material Budget</h3>
+        <ul>
+          <li>Maximum <strong>50</strong> cocktail straws (about 7 in each)</li>
+          <li>Maximum <strong>30</strong> toothpicks</li>
+          <li>Maximum <strong>36 inches</strong> masking tape</li>
+          <li>Teacher provides the hanging load; the same load is used for every test</li>
+        </ul>
+        <p><strong>You may use less than the maximum.</strong></p>
+      </div>
+      <div class="box green-box">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Create the greatest clear unsupported span possible.</li>
+          <li>Span is measured between the inside edges of the two supports.</li>
+          <li>Structure must be free-standing.</li>
+          <li>Do not tape the structure to the supports.</li>
+          <li>Nothing may touch the floor, wall, chair, or another support.</li>
+          <li>The teacher-provided load must hang near the center of the span.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box purple-box">
+      <h3>Testing Procedure</h3>
+      <ol>
+        <li>Place the completed structure across the two test supports.</li>
+        <li>Teacher attaches the provided hanging load near the center of the span.</li>
+        <li>Begin at a reasonable clear span between supports and measure the clear distance.</li>
+        <li>If the load is held for <strong>10 seconds</strong>, move the supports farther apart and test again.</li>
+        <li>Record the greatest successful clear span and what happened at failure.</li>
+        <li>Improve the design and repeat the same test.</li>
+      </ol>
+    </div>
+
+    <div class="box">
+      <h3>Success Measure</h3>
+      <p><strong>Primary:</strong> Greatest clear span that supports the hanging load for 10 seconds. &nbsp;&nbsp; <strong>Tiebreaker:</strong> Fewer materials used.</p>
+    </div>
+
+    <div class="box">
+      <h3>Engineering Design Process</h3>
+      <div class="checklist">
+        <span>Identify the Problem</span><span>Research</span><span>Requirements</span><span>Brainstorm Ideas</span><span>Choose a Solution</span><span>Build a Prototype</span><span>Test It Out</span><span>Make It Better</span><span>Share Results</span>
+      </div>
+    </div>
+    <div class="print-footer">STEM I • Long Span Mini Challenge • Challenge Sheet</div>
+  </article>
+
+  <article class="print-page">
+    <div class="print-head"><h1>Long Span Record Sheet — Day 1</h1><p>Identify • Brainstorm • Choose • Build</p></div>
+    <div class="student-line"><div>Name:</div><div>Class:</div><div>Date:</div></div>
+
+    <div class="box blue-box">
+      <h3>1. Identify the Problem</h3>
+      <p>Restate the engineering problem in your own words. What does your structure need to accomplish?</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box green-box">
+      <h3>2–3. What Should We Think About?</h3>
+      <p>Before building, write or sketch a few things you think could affect span and strength. Consider shape, joints, bending, bracing, and how the hanging load will travel through the structure.</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="print-row">
+      <div class="box">
+        <h3>4. Brainstorm Idea A</h3>
+        <div class="sketch-box small"></div>
+      </div>
+      <div class="box">
+        <h3>4. Brainstorm Idea B</h3>
+        <div class="sketch-box small"></div>
+      </div>
+    </div>
+
+    <div class="box gold-box">
+      <h3>5. Choose a Solution</h3>
+      <p>Which idea will you build first, and why do you think it is the better starting point?</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box">
+      <h3>6. Prototype Plan — Final Sketch Before Building</h3>
+      <div class="sketch-box"></div>
+    </div>
+    <div class="print-footer">STEM I • Long Span Mini Challenge • Day 1 Record Sheet</div>
+  </article>
+
+  <article class="print-page">
+    <div class="print-head"><h1>Long Span Record Sheet — Days 2 &amp; 3</h1><p>Test • Analyze • Improve • Retest</p></div>
+    <div class="student-line"><div>Name:</div><div>Class:</div><div>Date:</div></div>
+
+    <div class="box blue-box">
+      <h3>7. Version 1 Test</h3>
+      <table>
+        <tr><th>Maximum successful span</th><th>Straws used</th><th>Toothpicks used</th><th>Tape used</th></tr>
+        <tr><td class="blank-cell"></td><td></td><td></td><td></td></tr>
+      </table>
+      <p><strong>What happened first as the structure began to fail?</strong></p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box gold-box">
+      <h3>8. Make It Better</h3>
+      <p>Choose one or two specific changes based on the first test. Explain what you will change and why you think it will help.</p>
+      <div class="write-lines"></div>
+      <p><strong>Improvement sketch:</strong></p>
+      <div class="sketch-box small"></div>
+    </div>
+
+    <div class="box green-box">
+      <h3>7. Version 2 Test</h3>
+      <table>
+        <tr><th>Maximum successful span</th><th>Straws used</th><th>Toothpicks used</th><th>Tape used</th></tr>
+        <tr><td class="blank-cell"></td><td></td><td></td><td></td></tr>
+      </table>
+    </div>
+
+    <div class="box purple-box">
+      <h3>9. What Did You Learn?</h3>
+      <p><strong>Did Version 2 improve? What evidence supports your answer?</strong></p>
+      <div class="write-lines"></div>
+      <p><strong>If you had one more redesign, what would you change next?</strong></p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box">
+      <h3>Final Comparison</h3>
+      <table>
+        <tr><th></th><th>Version 1</th><th>Version 2</th></tr>
+        <tr><td><strong>Clear span</strong></td><td class="blank-cell"></td><td></td></tr>
+        <tr><td><strong>Best feature</strong></td><td class="blank-cell"></td><td></td></tr>
+        <tr><td><strong>Main weakness</strong></td><td class="blank-cell"></td><td></td></tr>
+      </table>
+    </div>
+    <div class="print-footer">STEM I • Long Span Mini Challenge • Days 2–3 Record Sheet</div>
+  </article>
+</section>
+
+<script>
+  let currentSlide = 0;
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  function showSlide(index){
+    currentSlide = Math.max(0, Math.min(index, slides.length - 1));
+    slides.forEach((s,i)=>s.classList.toggle('active', i === currentSlide));
+    document.getElementById('prevBtn').disabled = currentSlide === 0;
+    document.getElementById('nextBtn').disabled = currentSlide === slides.length - 1;
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  function changeSlide(delta){showSlide(currentSlide + delta)}
+  function printPacket(){window.print()}
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){changeSlide(1)}
+    if(e.key === 'ArrowLeft' || e.key === 'PageUp'){changeSlide(-1)}
+    if(e.key.toLowerCase() === 'p' && (e.ctrlKey || e.metaKey)) return;
+  });
+  showSlide(0);
+</script>
+</body>
+</html>
