@@ -96,26 +96,43 @@
   .print-head{background:#fff;color:#000;padding:0 0 10px;border-radius:0;margin-bottom:12px;border-bottom:2px solid #000}
   .print-head h1{margin:0;font-size:26px}
   .print-head p{margin:3px 0 0;font-size:14px}
+
+  .day1-head{border-bottom:0;margin-bottom:10px;padding-bottom:0}
+  .day1-head h1{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+  .name-blank{font-size:14px;font-weight:400;white-space:nowrap}
   .print-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .box{border:1.4px solid #000;border-radius:0;padding:11px;margin-bottom:11px;break-inside:avoid;background:#fff !important;color:#000 !important}
-  .box h2,.box h3{margin:0 0 7px;color:#000}
+  .box{border:1.4px solid #000;border-radius:0;padding:9px 10px;margin-bottom:8px;break-inside:avoid;background:#fff !important;color:#000 !important}
+  .box h2,.box h3{margin:0 0 5px;color:#000}
   .box h2{font-size:19px}.box h3{font-size:16px}
-  .box p,.box li{font-size:12.5px;line-height:1.3}
-  .box ul,.box ol{margin:5px 0 0;padding-left:20px}
+  .box p,.box li{font-size:12px;line-height:1.25}
+  .box ul,.box ol{margin:4px 0 0;padding-left:19px}
   .gold-box,.green-box,.blue-box,.purple-box{background:#fff !important;border-color:#000 !important}
   .student-line{display:flex;gap:12px;margin:0 0 12px}
   .student-line > div{flex:1;border-bottom:1px solid #000;padding:2px 0 5px;font-size:13px}
-  .write-lines{height:72px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 23px,#777 24px)}
-  .write-lines.tall{height:130px}
-  .sketch-box{height:230px;border:1.5px solid #000;border-radius:0;background:none}
-  .sketch-box.small{height:145px}
+  .write-lines{height:54px;background:none}
+  .write-lines.tall{height:110px}
+  .sketch-box{height:190px;border:1.5px solid #000;border-radius:0;background:none}
+  .sketch-box.small{height:120px}
   table{border-collapse:collapse;width:100%;font-size:12px}
   th,td{border:1px solid #000;padding:7px;vertical-align:top;background:#fff !important;color:#000 !important}
   th{font-weight:700}
-  .blank-cell{height:40px}
+  .blank-cell{height:32px}
   .checklist{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px;font-size:13px}
   .checklist span::before{content:"□ ";font-size:16px}
   .print-footer{position:absolute;bottom:0;left:0;right:0;font-size:10px;color:#000;text-align:center}
+
+  /* Days 2-3 record sheet: compact, balanced one-page print layout */
+  .days23-page .box{padding:7px 9px;margin-bottom:6px}
+  .days23-page .box h3{margin-bottom:4px}
+  .days23-page .box p{margin:4px 0}
+  .days23-page .write-lines{height:38px}
+  .days23-page .improve-grid,.days23-page .learn-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .days23-page .workspace-label{font-size:12px;font-weight:700;margin:4px 0 5px}
+  .days23-page .sketch-box.small{height:330px}
+  .days23-page table{font-size:11px}
+  .days23-page th,.days23-page td{padding:5px}
+  .days23-page .blank-cell{height:26px}
+  .days23-page .final-comparison td{height:24px}
 
   @media (max-width:900px){
     .rule-grid,.split,.mindset-grid,.day-grid{grid-template-columns:1fr}
@@ -130,7 +147,7 @@
     html,body{background:#fff !important;color:#000 !important}
     .projector-shell{display:none !important}
     .print-packet{display:block !important}
-    .print-page{display:block;width:7.8in;height:10.25in;margin:0 auto;padding:0;page-break-after:always;overflow:hidden;background:#fff !important;color:#000 !important}
+    .print-page{display:block;width:7.8in;height:10.3in;margin:0 auto;padding:0;page-break-after:always;overflow:hidden;background:#fff !important;color:#000 !important}
     .print-page:last-child{page-break-after:auto}
     .print-head,.box,th,td,.sketch-box{background:#fff !important;color:#000 !important;box-shadow:none !important}
   }
@@ -355,8 +372,7 @@
   </article>
 
   <article class="print-page">
-    <div class="print-head"><h1>Long Span Record Sheet — Day 1</h1><p>Identify • Brainstorm • Choose • Build</p></div>
-    <div class="student-line"><div>Name:</div><div>Class:</div><div>Date:</div></div>
+    <div class="print-head day1-head"><h1>Long Span Record Sheet — Day 1 <span class="name-blank">Name: __________________________</span></h1></div>
 
     <div class="box blue-box">
       <h3>1. Identify the Problem</h3>
@@ -394,10 +410,7 @@
     <div class="print-footer">STEM I • Long Span Mini Challenge • Day 1 Record Sheet</div>
   </article>
 
-  <article class="print-page">
-    <div class="print-head"><h1>Long Span Record Sheet — Days 2 &amp; 3</h1><p>Test • Analyze • Improve • Retest</p></div>
-    <div class="student-line"><div>Name:</div><div>Class:</div><div>Date:</div></div>
-
+  <article class="print-page days23-page">
     <div class="box blue-box">
       <h3>7. Version 1 Test</h3>
       <table>
@@ -411,9 +424,16 @@
     <div class="box gold-box">
       <h3>8. Make It Better</h3>
       <p>Choose one or two specific changes based on the first test. Explain what you will change and why you think it will help.</p>
-      <div class="write-lines"></div>
-      <p><strong>Improvement sketch:</strong></p>
-      <div class="sketch-box small"></div>
+      <div class="improve-grid">
+        <div>
+          <div class="workspace-label">Changes I will make and why:</div>
+          <div class="write-lines"></div>
+        </div>
+        <div>
+          <div class="workspace-label">Improvement sketch:</div>
+          <div class="sketch-box small"></div>
+        </div>
+      </div>
     </div>
 
     <div class="box green-box">
@@ -426,19 +446,25 @@
 
     <div class="box purple-box">
       <h3>9. What Did You Learn?</h3>
-      <p><strong>Did Version 2 improve? What evidence supports your answer?</strong></p>
-      <div class="write-lines"></div>
-      <p><strong>If you had one more redesign, what would you change next?</strong></p>
-      <div class="write-lines"></div>
+      <div class="learn-grid">
+        <div>
+          <p><strong>Did Version 2 improve? What evidence supports your answer?</strong></p>
+          <div class="write-lines"></div>
+        </div>
+        <div>
+          <p><strong>If you had one more redesign, what would you change next?</strong></p>
+          <div class="write-lines"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="box">
+    <div class="box final-comparison">
       <h3>Final Comparison</h3>
       <table>
         <tr><th></th><th>Version 1</th><th>Version 2</th></tr>
-        <tr><td><strong>Clear span</strong></td><td class="blank-cell"></td><td></td></tr>
-        <tr><td><strong>Best feature</strong></td><td class="blank-cell"></td><td></td></tr>
-        <tr><td><strong>Main weakness</strong></td><td class="blank-cell"></td><td></td></tr>
+        <tr><td><strong>Clear span</strong></td><td></td><td></td></tr>
+        <tr><td><strong>Best feature</strong></td><td></td><td></td></tr>
+        <tr><td><strong>Main weakness</strong></td><td></td><td></td></tr>
       </table>
     </div>
     <div class="print-footer">STEM I • Long Span Mini Challenge • Days 2–3 Record Sheet</div>
