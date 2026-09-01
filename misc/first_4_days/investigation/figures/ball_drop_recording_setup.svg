@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" role="img" aria-labelledby="title desc">
+  <title id="title">Ball drop recording setup</title>
+  <desc id="desc">A side-view schematic showing a ball drop beside a known-length reference, bleachers to the left, and a student pair recording from a stationary ground-level camera position.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#173f68"/>
+    </marker>
+  </defs>
+  <rect width="760" height="260" fill="#ffffff"/>
+  <line x1="35" y1="222" x2="730" y2="222" stroke="#657781" stroke-width="2"/>
+
+  <!-- bleachers -->
+  <g fill="#eef3f6" stroke="#7f909a" stroke-width="2">
+    <rect x="45" y="178" width="180" height="22"/>
+    <rect x="70" y="150" width="155" height="22"/>
+    <rect x="95" y="122" width="130" height="22"/>
+    <rect x="120" y="94" width="105" height="22"/>
+  </g>
+  <text x="122" y="82" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#173f68">bleachers / drop area</text>
+
+  <!-- teacher/person -->
+  <circle cx="235" cy="72" r="10" fill="#d7e5ee" stroke="#173f68" stroke-width="2"/>
+  <line x1="235" y1="82" x2="235" y2="120" stroke="#173f68" stroke-width="3"/>
+  <line x1="235" y1="92" x2="254" y2="103" stroke="#173f68" stroke-width="3"/>
+  <line x1="235" y1="119" x2="225" y2="143" stroke="#173f68" stroke-width="3"/>
+  <line x1="235" y1="119" x2="245" y2="143" stroke="#173f68" stroke-width="3"/>
+
+  <!-- reference -->
+  <rect x="285" y="68" width="16" height="150" rx="2" fill="#fff8dc" stroke="#173f68" stroke-width="2"/>
+  <g stroke="#173f68" stroke-width="1">
+    <line x1="285" y1="88" x2="296" y2="88"/><line x1="285" y1="108" x2="296" y2="108"/>
+    <line x1="285" y1="128" x2="296" y2="128"/><line x1="285" y1="148" x2="296" y2="148"/>
+    <line x1="285" y1="168" x2="296" y2="168"/><line x1="285" y1="188" x2="296" y2="188"/>
+  </g>
+  <text x="293" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#173f68">known length</text>
+
+  <!-- drop path -->
+  <circle cx="342" cy="82" r="12" fill="#edf5fa" stroke="#173f68" stroke-width="2"/>
+  <line x1="342" y1="98" x2="342" y2="198" stroke="#173f68" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arrow)"/>
+  <text x="365" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#173f68">ball path</text>
+
+  <!-- camera -->
+  <g transform="translate(535,145)">
+    <rect x="0" y="0" width="74" height="46" rx="5" fill="#eef3f6" stroke="#173f68" stroke-width="2"/>
+    <circle cx="28" cy="23" r="12" fill="#ffffff" stroke="#173f68" stroke-width="2"/>
+    <rect x="74" y="10" width="17" height="26" fill="#eef3f6" stroke="#173f68" stroke-width="2"/>
+    <line x1="36" y1="46" x2="25" y2="77" stroke="#173f68" stroke-width="3"/>
+    <line x1="36" y1="46" x2="48" y2="77" stroke="#173f68" stroke-width="3"/>
+  </g>
+
+  <!-- recording direction -->
+  <line x1="530" y1="165" x2="382" y2="136" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="562" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#173f68">pair records from</text>
+  <text x="562" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#173f68">designated ground area</text>
+
+  <!-- callouts -->
+  <rect x="415" y="30" width="305" height="76" rx="8" fill="#f6f8fa" stroke="#cbd6de"/>
+  <text x="430" y="53" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#173f68">Aim for a measurable clip:</text>
+  <text x="430" y="73" font-family="Arial, sans-serif" font-size="13" fill="#17232c">• keep camera still</text>
+  <text x="430" y="91" font-family="Arial, sans-serif" font-size="13" fill="#17232c">• keep full reference + useful drop path in frame</text>
+
+  <text x="293" y="241" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.5" fill="#5a6872">Keep the reference close to the ball’s motion plane.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210" role="img" aria-labelledby="title desc">
+  <title id="title">Consistent tracking point across frames</title>
+  <desc id="desc">Three generic video-frame boxes show a ball at different positions. In each frame, a crosshair marks the same relative point at the center of the ball.</desc>
+  <rect width="720" height="210" fill="#ffffff"/>
+  <text x="360" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#173f68">Track the same relative point on the ball each time</text>
+
+
+
+  <g fill="#f6f8fa" stroke="#9fb1bd" stroke-width="2">
+    <rect x="35" y="42" width="180" height="125" rx="6"/>
+    <rect x="270" y="42" width="180" height="125" rx="6"/>
+    <rect x="505" y="42" width="180" height="125" rx="6"/>
+  </g>
+
+  <g fill="#edf5fa" stroke="#173f68" stroke-width="2">
+    <circle cx="120" cy="80" r="24"/>
+    <circle cx="365" cy="108" r="24"/>
+    <circle cx="590" cy="137" r="24"/>
+  </g>
+
+  <g stroke="#b3261e" stroke-width="2.5">
+    <line x1="107" y1="80" x2="133" y2="80"/><line x1="120" y1="67" x2="120" y2="93"/>
+    <line x1="352" y1="108" x2="378" y2="108"/><line x1="365" y1="95" x2="365" y2="121"/>
+    <line x1="577" y1="137" x2="603" y2="137"/><line x1="590" y1="124" x2="590" y2="150"/>
+  </g>
+
+  <text x="360" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="13.5" font-weight="700" fill="#173f68">Same point → cleaner position data</text>
+</svg>

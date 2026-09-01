@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="../../../css/investigation.css">
 </head>
 <body>
+
 <main class="student-page">
   <header class="investigation-header">
     <div class="eyebrow">Physics · First 4 Days · Investigation</div>
     <h1>Ball Drop Video Analysis: Build a CER from Data</h1>
-    <p class="subtitle">Track a falling ball in Vernier Video Analysis, compare equal-time intervals, and use your measurements as evidence.</p>
+    <p class="subtitle">Record a usable ball-drop video, analyze your own measurements, and turn those measurements into evidence.</p>
     <div class="meta-line">Names: ____________________________ &nbsp;&nbsp; ____________________________</div>
   </header>
 
@@ -23,28 +24,75 @@
       <div class="task-title"><span class="task-num">1</span><h3>Predict before measuring</h3></div>
       <p class="prompt">What happens to the ball’s speed while it falls?</p>
       <p>Write a prediction and one reason for your thinking. Your prediction is not evidence yet.</p>
-      <div class="workspace" style="--ws:.65in"></div>
+      <div class="workspace" style="--ws:.58in"></div>
     </div>
   </section>
 
   <section class="phase">
-    <div class="phase-label">Video Analysis Setup</div>
-    <ol class="directions">
-      <li>Open Vernier Video Analysis and import the teacher-provided ball-drop video.</li>
-      <li>Set the scale using the known-length object visible in the video.</li>
-      <li>Set an origin and choose one consistent point on the ball to track.</li>
-      <li>Mark that same point at every frame, or at the same fixed frame step, so your time intervals stay consistent.</li>
-      <li>Display the vertical position–time data. Keep the app’s vertical sign convention; either direction convention can work.</li>
-    </ol>
-    <div class="checkpoint"><strong>Quality check:</strong> Compare your first two or three marked points with your partner. Are you clicking the same place on the ball and using a consistent frame step?</div>
+    <div class="phase-label">Outside — Capture the Data Source</div>
+    <p class="prompt">Your pair will record several drops. The goal is not the most dramatic video — it is a video that can be measured.</p>
+
+    <figure class="figure">
+      <img src="figures/ball_drop_recording_setup.svg" alt="Side-view setup for recording a ball drop with a visible known-length reference and a stationary camera.">
+    </figure>
+
+    <div class="task">
+      <div class="task-title"><span class="task-num">2</span><h3>Record 2–3 usable takes</h3></div>
+      <ul>
+        <li>Stay in the designated recording area and follow teacher directions around the bleachers.</li>
+        <li>Keep the camera still and face the motion from the side as closely as practical.</li>
+        <li>Keep the ball’s full drop path in the frame.</li>
+        <li>Keep the known-length reference visible and close to the ball’s motion plane.</li>
+        <li>Start recording before release and keep recording through the end of the drop.</li>
+        <li>Record more than one take so your pair can choose the clearest clip indoors.</li>
+      </ul>
+      <p><strong>Pair check:</strong> Before leaving, can you clearly see both the ball and the full reference length in at least one clip?</p>
+    </div>
   </section>
 
   <section class="phase">
+    <div class="phase-label">Inside — Vernier Walk-Through</div>
+    <p class="prompt">Follow the teacher demonstration one move at a time. Do the same move on your pair’s best clip before going on.</p>
+
+    <ol class="directions">
+      <li><strong>Choose your clip.</strong> Import the clearest take into Vernier Video Analysis.</li>
+      <li><strong>Set the scale.</strong> Use the visible known-length reference.</li>
+      <li><strong>Set the origin.</strong> Choose a sensible vertical direction and keep that sign convention.</li>
+      <li><strong>Choose one tracking point.</strong> Use the same relative point on the ball every time.</li>
+      <li><strong>Track with a consistent frame step.</strong> Mark every frame, or use the same fixed step throughout.</li>
+      <li><strong>Display the vertical position–time data.</strong> Do not decide the CER from the graph alone; you will use measured interval comparisons.</li>
+    </ol>
+
+    <figure class="figure compact">
+      <img src="figures/tracking_point_consistency.svg" alt="Three example video frames showing the same relative point on the ball marked consistently in each frame.">
+    </figure>
+
+    <div class="checkpoint"><strong>Quality check:</strong> Compare your first three marked frames with your partner. Are you clicking the same relative point on the ball and using a consistent frame step?</div>
+  </section>
+
+  <p class="footer-note">Page 1 · Record → calibrate → track</p>
+</main>
+
+<main class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">Physics · First 4 Days · Investigation</div>
+    <h1>Turn Measurements into Evidence</h1>
+    <p class="subtitle">Use fair interval comparisons first. Then write the CER.</p>
+    <div class="meta-line">Names: ____________________________ &nbsp;&nbsp; ____________________________</div>
+  </header>
+
+  <section class="phase">
     <div class="phase-label">Collect Data</div>
-    <p class="prompt">Record at least eight consecutive tracked points. In the last column, record how far the ball moved between points. Ignore the +/− sign there and record a positive distance.</p>
+    <p class="prompt">Record eight consecutive tracked points. In the last column, record how far the ball moved between points. Record a positive distance there even if your position coordinates are negative.</p>
+
     <table class="data-table">
       <thead>
-        <tr><th>Point</th><th>Time (s)</th><th>Vertical position (m)</th><th>Distance moved since previous point (m)</th></tr>
+        <tr>
+          <th>Point</th>
+          <th>Time (s)</th>
+          <th>Vertical position (m)</th>
+          <th>Distance moved since previous point (m)</th>
+        </tr>
       </thead>
       <tbody>
         <tr><td>1</td><td></td><td></td><td>—</td></tr>
@@ -61,16 +109,17 @@
 
   <section class="phase">
     <div class="phase-label">Turn Data into Evidence</div>
+
     <div class="task">
-      <div class="task-title"><span class="task-num">2</span><h3>Check the time intervals</h3></div>
-      <p class="prompt">Look at the time column. Are consecutive time intervals equal or nearly equal?</p>
-      <p>If not, choose two intervals below that have about the same duration.</p>
-      <div class="workspace" style="--ws:.42in"></div>
+      <div class="task-title"><span class="task-num">3</span><h3>Make the comparison fair</h3></div>
+      <p class="prompt">Check the time column. Are consecutive intervals equal or nearly equal?</p>
+      <p>If they are not, choose an early interval and a later interval that lasted about the same amount of time.</p>
+      <div class="workspace" style="--ws:.38in"></div>
     </div>
 
     <div class="task">
-      <div class="task-title"><span class="task-num">3</span><h3>Compare an early interval with a later interval</h3></div>
-      <p class="prompt">Choose one early interval and one later interval with equal or nearly equal durations. Record the measurements you will use as evidence.</p>
+      <div class="task-title"><span class="task-num">4</span><h3>Choose the measurements that matter</h3></div>
+      <p class="prompt">Record one early interval and one later interval with equal or nearly equal durations.</p>
       <table class="data-table">
         <thead>
           <tr><th>Interval</th><th>Time change (s)</th><th>Distance moved (m)</th></tr>
@@ -80,8 +129,20 @@
           <tr><td>Later: Point ____ to ____</td><td></td><td></td></tr>
         </tbody>
       </table>
-      <p><strong>What pattern do you notice?</strong> During about the same amount of time, does the ball move the same distance, a greater distance, or a smaller distance later in the fall?</p>
-      <div class="workspace" style="--ws:.55in"></div>
+      <p><strong>What do the measurements show?</strong> During about the same amount of time, compare how far the ball moved in the two intervals.</p>
+      <div class="workspace" style="--ws:.52in"></div>
+    </div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-label">Hint Ladder</div>
+    <div class="checkpoint">
+      <strong>Use a hint only if your pair is stuck.</strong><br>
+      Ask the teacher for:
+      <strong>Hint A</strong> — Vernier setup ·
+      <strong>Hint B</strong> — tracking ·
+      <strong>Hint C</strong> — choosing evidence ·
+      <strong>Hint D</strong> — reasoning
     </div>
   </section>
 
@@ -90,18 +151,19 @@
     <h2>Explain the motion</h2>
 
     <p><strong>Claim:</strong> Answer the question: What happens to the ball’s speed while it falls?</p>
-    <div class="workspace" style="--ws:.55in"></div>
+    <div class="workspace" style="--ws:.50in"></div>
 
-    <p><strong>Evidence:</strong> Use the two interval comparisons above. Include specific measured values.</p>
-    <div class="workspace" style="--ws:.85in"></div>
+    <p><strong>Evidence:</strong> Use the interval comparison above. Include specific measured values from your own video.</p>
+    <div class="workspace" style="--ws:.78in"></div>
 
-    <p><strong>Reasoning:</strong> Explain why your evidence supports your claim. Connect <em>distance moved during equal time intervals</em> to speed.</p>
-    <div class="workspace" style="--ws:1.0in"></div>
+    <p><strong>Reasoning:</strong> Explain why those measurements support your claim. Connect distance moved during equal time intervals to speed.</p>
+    <div class="workspace" style="--ws:.92in"></div>
   </section>
 
-  <div class="checkpoint"><strong>Partner check before you finish:</strong> Point to the exact numbers in your evidence, then read your reasoning aloud. Does the reasoning explain why those numbers support the claim?</div>
+  <div class="checkpoint"><strong>Partner check:</strong> Point to the exact numbers in your evidence. Then read the reasoning aloud. Does the reasoning explain why those numbers support the claim instead of just repeating the claim?</div>
 
-  <p class="footer-note">Claim = answer · Evidence = measured data · Reasoning = why the data support the answer</p>
+  <p class="footer-note">Page 2 · Measure → compare → CER</p>
 </main>
+
 </body>
 </html>
