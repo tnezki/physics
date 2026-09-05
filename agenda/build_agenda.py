@@ -24,18 +24,23 @@ DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 MARKER_COLS = [2, 4, 6, 8, 10]   # B, D, F, H, J
 CONTENT_COLS = [3, 5, 7, 9, 11]  # C, E, G, I, K
 
+# Keep this list in sync with the Phy Resources sheet.
 RESOURCE_LINKS = [
     ('Overview', 'https://docs.google.com/document/d/1rrToxZ84-VGe-75JeIofcH6FXqdCFiE-MNlwDZNvMs4/edit?usp=sharing'),
+    ('Website', 'https://tnezki.github.io/physics/'),
     ('Agenda', 'https://tnezki.github.io/physics/agenda/index.html'),
-    ('Web Site', 'https://tnezki.github.io/physics/'),
     ('Textbook', 'https://tnezki.github.io/textbooks/phy/index.html'),
     ('Formula Sheet', 'https://tnezki.github.io/physics/misc/formula_sheet.html'),
     ('Printables', 'https://tnezki.github.io/physics/misc/printables/aaagallery_index.html'),
-    ('Vernier', 'https://videoanalysis.app/'),
-    ('Vernier Hints', 'https://docs.google.com/document/d/1GihYf2MAXI7G2eIRL6x_J330focOVzB3dFdayrFiMR0/edit?usp=sharing'),
-    ('Upload Spot', 'https://drive.google.com/drive/folders/1wxxAxIxJ9yU5goiVNriIVpmiEJmE7SX2'),
     ('Desmos', 'https://www.desmos.com/calculator'),
     ('Canvas', 'https://mariners.instructure.com/'),
+    ('Upload Spot', 'https://drive.google.com/drive/folders/1wxxAxIxJ9yU5goiVNriIVpmiEJmE7SX2?usp=drive_link'),
+    ('PhET', 'https://phet.colorado.edu/en/simulations/filter?subjects=physics'),
+    ('oPhysics', 'https://ophysics.com/index.html'),
+    ('Walter F', 'https://www.walter-fendt.de/html5/phen/'),
+    ('Falsted', 'https://www.falstad.com//mathphysics.html'),
+    ('Lewin Videos', 'https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw'),
+    ('Hewitt Videos', 'https://conceptual.academy/'),
 ]
 
 
