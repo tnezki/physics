@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>STEM I Welcome + Slowest Marble Mini Challenge</title>
+<style>
+  :root{
+    --navy:#0f2747;
+    --blue:#1f5f9d;
+    --blue-2:#2e78b8;
+    --ink:#18212f;
+    --muted:#5b6573;
+    --line:#d8dee7;
+    --line-dark:#aeb8c6;
+    --paper:#ffffff;
+    --surface:#f5f7fa;
+    --surface-2:#eef2f6;
+    --shadow:0 18px 46px rgba(15,39,71,.12);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#e9edf2;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+  body{min-height:100vh}
+
+  /* ---------- Projector ---------- */
+  .projector-shell{min-height:100vh;display:flex;flex-direction:column}
+  .projector-toolbar{
+    position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+    gap:12px;padding:10px 18px;background:#111827;color:#fff;border-bottom:1px solid #273449
+  }
+  .toolbar-title{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}
+  button{border:1px solid transparent;border-radius:7px;padding:10px 14px;font-size:14px;font-weight:700;cursor:pointer}
+  .btn-light{background:#fff;color:#172033;border-color:#d7dde7}
+  .btn-blue{background:var(--blue);color:#fff}
+  .btn-green{background:#fff;color:#172033;border-color:#d7dde7}
+  .btn-ghost{background:#273449;color:#fff;border-color:#39475d}
+  .btn-ghost:disabled{opacity:.4;cursor:not-allowed}
+
+  .slide-stage{flex:1;display:grid;place-items:center;padding:24px}
+  .slide{
+    display:none;width:min(1500px,96vw);min-height:calc(100vh - 110px);background:var(--paper);
+    border-radius:12px;box-shadow:var(--shadow);overflow:hidden;border:1px solid #dfe4eb
+  }
+  .slide.active{display:flex;flex-direction:column}
+  .slide-header{padding:28px 42px 24px;background:var(--navy);color:#fff;border-bottom:5px solid var(--blue-2)}
+  .slide-header h1{font-size:clamp(32px,3.6vw,54px);margin:0 0 5px;line-height:1.05;letter-spacing:-.02em}
+  .slide-header p{font-size:clamp(17px,1.7vw,25px);margin:0;color:#d9e4f0}
+  .slide-body{padding:36px 46px 42px;display:flex;flex:1;flex-direction:column;justify-content:center;gap:24px}
+  .hero-center{text-align:center;align-items:center}
+  .hero-title{font-size:clamp(46px,5.6vw,82px);font-weight:800;line-height:1;color:var(--navy);margin:0;letter-spacing:-.035em}
+  .hero-sub{font-size:clamp(21px,2.1vw,32px);font-weight:700;color:var(--blue);margin:0}
+  .hero-line{font-size:clamp(20px,1.9vw,29px);max-width:1080px;margin:8px auto 0;line-height:1.4;color:#354052}
+
+  .callout{border:1px solid var(--line-dark);border-left:6px solid var(--blue);background:#fff;border-radius:8px;padding:19px 22px;text-align:left}
+  .callout h2{margin:0 0 7px;color:var(--navy);font-size:clamp(23px,2.1vw,32px)}
+  .callout p{margin:0;font-size:clamp(18px,1.7vw,26px);line-height:1.4;color:#354052}
+
+  .rule-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .rule-card,.process-card,.mindset-card,.challenge-card{
+    border:1px solid var(--line);background:#fff;border-radius:8px;padding:18px 20px
+  }
+  .rule-card{border-left:5px solid var(--blue)}
+  .rule-card h3,.mindset-card h3,.challenge-card h3{font-size:clamp(22px,1.85vw,31px);margin:0 0 7px;color:var(--navy)}
+  .rule-card p,.mindset-card p,.challenge-card p{font-size:clamp(17px,1.5vw,24px);line-height:1.35;margin:0;color:#3f4a5b}
+
+  .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .process-card{text-align:center;padding:17px 12px;background:var(--surface);border-top:4px solid var(--blue)}
+  .step-num{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;margin:0 auto 8px;background:var(--navy);color:#fff;font-weight:800;font-size:18px}
+  .process-card strong{display:block;font-size:clamp(17px,1.42vw,23px);color:var(--navy)}
+  .process-card span{display:block;margin-top:4px;color:var(--muted);font-size:clamp(14px,1.05vw,17px)}
+
+  .mindset-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .mindset-card{border-top:4px solid var(--blue);background:var(--surface)}
+
+  .challenge-title{font-size:clamp(42px,4.8vw,70px);font-weight:800;text-align:center;color:var(--navy);margin:0;letter-spacing:-.03em}
+  .challenge-goal{font-size:clamp(22px,2.15vw,34px);text-align:center;line-height:1.35;max-width:1180px;margin:0 auto;color:#2d3748}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .challenge-card{background:var(--surface);border-left:5px solid var(--blue)}
+  .challenge-card.blue,.challenge-card.green,.challenge-card.gold,.challenge-card.purple{background:var(--surface);border-left-color:var(--blue)}
+  .big-list{margin:8px 0 0;padding-left:26px;font-size:clamp(17px,1.5vw,24px);line-height:1.45;color:#344054}
+  .budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .budget-box{border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:8px;padding:22px;text-align:center;background:#fff}
+  .budget-box .qty{font-size:clamp(34px,3.5vw,56px);font-weight:800;color:var(--navy);line-height:1}
+  .budget-box .label{font-size:clamp(17px,1.55vw,24px);font-weight:700;margin-top:7px;color:#384354}
+  .budget-note{text-align:center;font-size:clamp(16px,1.35vw,21px);color:#4b5565}
+  .day-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .day-card{border-radius:8px;padding:20px;border:1px solid var(--line);border-top:4px solid var(--blue);background:#fff}
+  .day-card h3{margin:0 0 10px;color:var(--navy);font-size:clamp(22px,1.85vw,30px)}
+  .day-card ol{margin:0;padding-left:22px;font-size:clamp(16px,1.3vw,21px);line-height:1.48;color:#394456}
+  .slide-footer{padding:10px 18px;text-align:center;color:#6b7280;font-weight:600;font-size:13px;border-top:1px solid #edf0f4}
+
+  /* ---------- Printable challenge packet ---------- */
+  .print-packet{display:none}
+  .print-page{background:#fff;color:#000;position:relative;font-family:Arial,Helvetica,sans-serif}
+  .print-head{background:#fff;color:#000;padding:0 0 10px;border-radius:0;margin-bottom:12px;border-bottom:2px solid #000}
+  .print-head h1{margin:0;font-size:26px}
+  .print-head p{margin:3px 0 0;font-size:14px}
+
+  .day1-head{border-bottom:0;margin-bottom:10px;padding-bottom:0}
+  .day1-head h1{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+  .name-blank{font-size:14px;font-weight:400;white-space:nowrap}
+  .print-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .box{border:1.4px solid #000;border-radius:0;padding:9px 10px;margin-bottom:8px;break-inside:avoid;background:#fff !important;color:#000 !important}
+  .box h2,.box h3{margin:0 0 5px;color:#000}
+  .box h2{font-size:19px}.box h3{font-size:16px}
+  .box p,.box li{font-size:12px;line-height:1.25}
+  .box ul,.box ol{margin:4px 0 0;padding-left:19px}
+  .gold-box,.green-box,.blue-box,.purple-box{background:#fff !important;border-color:#000 !important}
+  .student-line{display:flex;gap:12px;margin:0 0 12px}
+  .student-line > div{flex:1;border-bottom:1px solid #000;padding:2px 0 5px;font-size:13px}
+  .write-lines{height:54px;background:none}
+  .write-lines.tall{height:110px}
+  .sketch-box{height:190px;border:1.5px solid #000;border-radius:0;background:none}
+  .sketch-box.small{height:120px}
+  table{border-collapse:collapse;width:100%;font-size:12px}
+  th,td{border:1px solid #000;padding:7px;vertical-align:top;background:#fff !important;color:#000 !important}
+  th{font-weight:700}
+  .blank-cell{height:32px}
+  .checklist{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px;font-size:13px}
+  .checklist span::before{content:"□ ";font-size:16px}
+  .print-footer{position:absolute;bottom:0;left:0;right:0;font-size:10px;color:#000;text-align:center}
+
+  /* Days 2-3 record sheet: compact, balanced one-page print layout */
+  .days23-page .box{padding:7px 9px;margin-bottom:6px}
+  .days23-page .box h3{margin-bottom:4px}
+  .days23-page .box p{margin:4px 0}
+  .days23-page .write-lines{height:28px}
+  .days23-page .improve-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:10px}
+  .days23-page .improve-grid .write-lines{height:82px}
+  .days23-page .workspace-label{font-size:11px;font-weight:700;margin:3px 0 4px}
+  .days23-page .sketch-box.small{height:82px}
+  .days23-page table{font-size:10.5px}
+  .days23-page th,.days23-page td{padding:4px}
+  .days23-page .blank-cell{height:19px}
+  .days23-page .trial-table th:nth-child(1){width:9%}
+  .days23-page .trial-table th:nth-child(2){width:19%}
+  .days23-page .trial-table th:nth-child(3){width:19%}
+  .days23-page .reflection-box{padding-bottom:5px}
+  .days23-page .reflection-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:14px;row-gap:2px}
+  .days23-page .reflection-grid p{font-size:10.5px;line-height:1.18;margin:2px 0 2px}
+  .days23-page .reflection-answer{height:27px}
+  .days23-page .final-comparison td{height:19px}
+
+  @media (max-width:900px){
+    .rule-grid,.split,.mindset-grid,.day-grid{grid-template-columns:1fr}
+    .process-grid{grid-template-columns:1fr 1fr}
+    .budget-grid{grid-template-columns:1fr}
+    .slide{min-height:auto}
+  }
+
+  @media print{
+    @page{size:letter;margin:.35in}
+    *{-webkit-print-color-adjust:economy !important;print-color-adjust:economy !important}
+    html,body{background:#fff !important;color:#000 !important}
+    .projector-shell{display:none !important}
+    .print-packet{display:block !important}
+    .print-page{display:block;width:7.8in;height:10.3in;margin:0 auto;padding:0;page-break-after:always;overflow:hidden;background:#fff !important;color:#000 !important}
+    .print-page:last-child{page-break-after:auto}
+    .print-head,.box,th,td,.sketch-box{background:#fff !important;color:#000 !important;box-shadow:none !important}
+  }
+</style>
+</head>
+<body>
+
+<div class="projector-shell" id="projectorShell">
+  <div class="projector-toolbar">
+    <div class="toolbar-title">STEM I • First Day</div>
+    <div class="toolbar-actions">
+      <button class="btn-ghost" id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+      <button class="btn-ghost" id="nextBtn" onclick="changeSlide(1)">Next →</button>
+      <button class="btn-green" onclick="printPacket()">Print Challenge + Record Sheet</button>
+    </div>
+  </div>
+
+  <main class="slide-stage">
+    <section class="slide active">
+      <div class="slide-header"><h1>Welcome to STEM I</h1><p>Engineering Design &amp; Innovation</p></div>
+      <div class="slide-body hero-center">
+        <div style="font-size:18px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#5b6573">Design • Build • Test • Improve</div>
+        <h2 class="hero-title">Welcome, Engineers.</h2>
+        <p class="hero-sub">Mr. Nezki</p>
+        <p class="hero-line">In this room, we will learn by <strong>designing, building, testing, noticing what happens, and making things better.</strong></p>
+        <div class="callout" style="max-width:1050px;width:100%;text-align:left">
+          <h2>Today’s Goal</h2>
+          <p>Learn how we work in STEM, meet the Engineering Design Process, and use it in a short hands-on design problem.</p>
+        </div>
+      </div>
+      <div class="slide-footer">Use ← / → or the buttons above to move through the projector pages.</div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>How We Work in STEM</h1><p>The habits that make engineering possible</p></div>
+      <div class="slide-body">
+        <div class="callout"><h2>The Foundation of Great Engineering</h2><p>We need a room where people can think, build, test, ask questions, and improve safely.</p></div>
+        <div class="rule-grid">
+          <div class="rule-card"><h3>Be Ready</h3><p>Be on time, have what you need, and get started when class begins.</p></div>
+          <div class="rule-card"><h3>Be Respectful</h3><p>Respect people, ideas, materials, tools, and the learning happening around you.</p></div>
+          <div class="rule-card"><h3>Be Safe</h3><p>Follow directions and use materials and equipment the way they are intended.</p></div>
+          <div class="rule-card"><h3>Be Involved</h3><p>Think, build, test, record, and contribute. Engineering is something you do.</p></div>
+          <div class="rule-card" style="grid-column:1/-1"><h3>Be Curious &amp; Persistent</h3><p>Ask questions. Try ideas. Expect some things not to work. Use what you learn to make the next attempt better.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>The Engineering Design Process</h1><p>A classroom roadmap for solving problems</p></div>
+      <div class="slide-body">
+        <div class="process-grid">
+          <div class="process-card"><div class="step-num">1</div><strong>Identify the Problem</strong><span>What needs to be solved?</span></div>
+          <div class="process-card"><div class="step-num">2</div><strong>Research</strong><span>What do we already know?</span></div>
+          <div class="process-card"><div class="step-num">3</div><strong>Requirements</strong><span>What must it do? What are the limits?</span></div>
+          <div class="process-card"><div class="step-num">4</div><strong>Brainstorm Ideas</strong><span>Generate more than one possibility.</span></div>
+          <div class="process-card"><div class="step-num">5</div><strong>Choose a Solution</strong><span>Pick a promising direction.</span></div>
+          <div class="process-card"><div class="step-num">6</div><strong>Build a Prototype</strong><span>Turn the idea into something testable.</span></div>
+          <div class="process-card"><div class="step-num">7</div><strong>Test It Out</strong><span>Collect evidence about performance.</span></div>
+          <div class="process-card"><div class="step-num">8</div><strong>Make It Better</strong><span>Change the design using what you learned.</span></div>
+          <div class="process-card"><div class="step-num">9</div><strong>Share Results</strong><span>Record and explain what you learned.</span></div>
+        </div>
+        <div class="callout"><h2>The important part: it loops.</h2><p>Testing is not the end. A test gives you information. Engineers use that information to revise the design and test again.</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Engineering Mindset</h1><p>How to think when the answer is not obvious</p></div>
+      <div class="slide-body">
+        <div class="mindset-grid">
+          <div class="mindset-card"><h3>Test Ideas</h3><p>Do not argue forever about what might work. Build something testable and collect evidence.</p></div>
+          <div class="mindset-card"><h3>Failure Gives Information</h3><p>A weak joint, a bend, or a collapse can tell you exactly what needs attention.</p></div>
+          <div class="mindset-card"><h3>Record Your Thinking</h3><p>A quick sketch, measurement, or note helps you make a smarter second version.</p></div>
+          <div class="mindset-card"><h3>Improve One Thing at a Time</h3><p>Make purposeful changes so you can tell what actually helped.</p></div>
+        </div>
+        <div class="callout"><h2>First tries do not need to be perfect.</h2><p>The goal is to learn enough from the first version that the next version is better.</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Mini Challenge: Slowest Marble</h1><p>Design • Build • Test • Improve</p></div>
+      <div class="slide-body hero-center">
+        <h2 class="challenge-title">Make the Marble Take the Longest Time.</h2>
+        <p class="challenge-goal">Design and build a <strong>free-standing cardboard structure</strong> that makes a marble take as long as possible to travel from the <strong>designated start</strong> to the <strong>finish</strong> using only gravity.</p>
+        <div class="split" style="width:100%">
+          <div class="challenge-card blue"><h3>Success</h3><p>The marble must move continuously, stay on the designed path, remain untouched after release, and reach the finish.</p></div>
+          <div class="challenge-card green"><h3>The Test</h3><p>Each version gets <strong>3 official trials</strong> with the same teacher-provided marble. Time begins at release and ends when the marble crosses the finish. Your <strong>longest successful run</strong> is your score.</p></div>
+        </div>
+        <div class="callout" style="width:100%;text-align:left"><h2>Engineering focus</h2><p>Path design • motion • reliability • testing • evidence • iteration</p></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Material Budget &amp; Rules</h1><p>Use the limits to drive your design decisions</p></div>
+      <div class="slide-body">
+        <div class="budget-grid">
+          <div class="budget-box"><div class="qty">Unlimited</div><div class="label">cardboard</div></div>
+          <div class="budget-box"><div class="qty">48 in</div><div class="label">masking tape in the final structure</div></div>
+          <div class="budget-box"><div class="qty">1</div><div class="label">standard teacher-provided marble</div></div>
+        </div>
+        <div class="split">
+          <div class="challenge-card gold">
+            <h3>Requirements</h3>
+            <ul class="big-list">
+              <li>Entire structure must stay within a <strong>12 in × 12 in base area</strong></li>
+              <li>Maximum height: <strong>36 inches</strong></li>
+              <li>Structure must be free-standing</li>
+              <li>Only cardboard and masking tape may be part of the final structure</li>
+              <li>After release, the marble may move only because of gravity</li>
+              <li>No touching, blowing, shaking, tilting, or other interaction after release</li>
+            </ul>
+          </div>
+          <div class="challenge-card purple">
+            <h3>Performance</h3>
+            <ul class="big-list">
+              <li>The marble must remain <strong>continuously in motion</strong></li>
+              <li>The marble must stay on the designed path and reach the finish</li>
+              <li>Complete <strong>3 official trials</strong> for each version</li>
+              <li>Primary result: <strong>longest successful travel time</strong></li>
+              <li>The same teacher-provided marble is used for every official test</li>
+            </ul>
+          </div>
+        </div>
+        <p class="budget-note"><strong>Important:</strong> Cardboard is unlimited and may be reused. The 48-inch tape limit applies to the <strong>final structure</strong>, not cumulatively across all three days.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-header"><h1>Three-Day Engineering Sprint</h1><p>Design, test, learn, and improve</p></div>
+      <div class="slide-body">
+        <div class="day-grid">
+          <div class="day-card">
+            <h3>Day 1 — Design &amp; Start Building</h3>
+            <ol>
+              <li>Identify the problem and requirements.</li>
+              <li>Sketch at least two genuinely different path ideas.</li>
+              <li>Choose one and explain why it is a promising starting point.</li>
+              <li>Build and test enough of Version 1 to learn whether the basic idea works.</li>
+            </ol>
+          </div>
+          <div class="day-card">
+            <h3>Day 2 — Build, Test &amp; Learn</h3>
+            <ol>
+              <li>Finish Version 1.</li>
+              <li>Complete 3 official trials.</li>
+              <li>Record your best successful time and what you notice about the run.</li>
+              <li>Plan one or two evidence-based improvements and begin Version 2.</li>
+            </ol>
+          </div>
+          <div class="day-card">
+            <h3>Day 3 — Improve &amp; Retest</h3>
+            <ol>
+              <li>Finish the redesign using Day 2 evidence.</li>
+              <li>Complete 3 final official trials.</li>
+              <li>Compare Version 1 and Version 2 and calculate your improvement.</li>
+              <li>Share your result and what you learned.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="callout"><h2>Ready for the record sheet?</h2><p>Use the <strong>Print Challenge + Record Sheet</strong> button at the top. Only the student packet will print — not these projector pages.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- PRINT-ONLY STUDENT PACKET -->
+<section class="print-packet" id="printPacket">
+  <article class="print-page">
+    <div class="print-head"><h1>Slowest Marble Mini Challenge</h1><p>Engineering Design Process in Action • Challenge Sheet</p></div>
+    <div class="student-line"><div>Name:</div><div>Class:</div><div>Date:</div></div>
+
+    <div class="box gold-box">
+      <h2>The Challenge</h2>
+      <p><strong>Design and build a free-standing cardboard structure that makes a marble take as long as possible to travel from the designated start to the finish using only gravity.</strong></p>
+    </div>
+
+    <div class="print-row">
+      <div class="box blue-box">
+        <h3>Material Budget</h3>
+        <ul>
+          <li><strong>Unlimited cardboard</strong></li>
+          <li>Maximum <strong>48 inches of masking tape</strong> in the final structure</li>
+          <li>One standard teacher-provided marble for official tests</li>
+          <li>No other materials may be part of the final structure</li>
+        </ul>
+        <p><strong>Cardboard may be reused during redesign.</strong></p>
+      </div>
+      <div class="box green-box">
+        <h3>Requirements</h3>
+        <ul>
+          <li>Entire structure stays within a <strong>12 in × 12 in base area</strong>.</li>
+          <li>Maximum height is <strong>36 inches</strong>.</li>
+          <li>Structure must be free-standing.</li>
+          <li>After release, the marble moves only because of gravity.</li>
+          <li>No touching, blowing, shaking, tilting, or other interaction after release.</li>
+          <li>The marble must stay on the designed path, keep moving, and reach the finish.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box purple-box">
+      <h3>Testing Procedure</h3>
+      <ol>
+        <li>Verify that the completed structure meets the base, height, material, and tape limits.</li>
+        <li>Place the teacher-provided marble at the designated starting point.</li>
+        <li>Release the marble without giving it a push.</li>
+        <li>Time the run from release until the marble crosses the designated finish.</li>
+        <li>A trial counts only if the marble moves continuously, stays on the designed path, remains untouched, and reaches the finish.</li>
+        <li>Complete <strong>3 official trials</strong>. Record the <strong>longest successful time</strong> as the version score.</li>
+        <li>Use what you learned to improve the design, then repeat the same test for Version 2.</li>
+      </ol>
+    </div>
+
+    <div class="box">
+      <h3>Success Measure</h3>
+      <p><strong>Primary:</strong> Longest successful travel time. &nbsp;&nbsp; <strong>Also track:</strong> Improvement from Version 1 to Version 2.</p>
+    </div>
+
+    <div class="box">
+      <h3>Engineering Design Process</h3>
+      <div class="checklist">
+        <span>Identify the Problem</span><span>Research</span><span>Requirements</span><span>Brainstorm Ideas</span><span>Choose a Solution</span><span>Build a Prototype</span><span>Test It Out</span><span>Make It Better</span><span>Share Results</span>
+      </div>
+    </div>
+    <div class="print-footer">STEM I • Slowest Marble Mini Challenge • Challenge Sheet</div>
+  </article>
+
+  <article class="print-page">
+    <div class="print-head day1-head"><h1>Slowest Marble Record Sheet — Day 1 <span class="name-blank">Name: __________________________</span></h1></div>
+
+    <div class="box blue-box">
+      <h3>1. Identify the Problem</h3>
+      <p>Restate the engineering problem in your own words. What does your structure need to accomplish?</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box green-box">
+      <h3>2–3. What Should We Think About?</h3>
+      <p>Before building, write or sketch a few things you think could affect travel time and reliable motion. What could help the marble keep moving? What could cause a run to fail?</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="print-row">
+      <div class="box">
+        <h3>4. Brainstorm Idea A</h3>
+        <div class="sketch-box small"></div>
+      </div>
+      <div class="box">
+        <h3>4. Brainstorm Idea B</h3>
+        <div class="sketch-box small"></div>
+      </div>
+    </div>
+
+    <div class="box gold-box">
+      <h3>5. Choose a Solution</h3>
+      <p>Which idea will you build first, and why do you think it is the better starting point?</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box">
+      <h3>6. Prototype Plan — Final Sketch Before Building</h3>
+      <div class="sketch-box"></div>
+    </div>
+    <div class="print-footer">STEM I • Slowest Marble Mini Challenge • Day 1 Record Sheet</div>
+  </article>
+
+  <article class="print-page days23-page">
+    <div class="print-head day1-head"><h1>Slowest Marble — Days 2–3 <span class="name-blank">Name: __________________________</span></h1></div>
+    <div class="box blue-box">
+      <h3>7. Version 1 Test — Day 2</h3>
+      <table class="trial-table">
+        <tr><th>Trial</th><th>Travel time</th><th>Successful?</th><th>What happened?</th></tr>
+        <tr><td>1</td><td class="blank-cell"></td><td></td><td></td></tr>
+        <tr><td>2</td><td class="blank-cell"></td><td></td><td></td></tr>
+        <tr><td>3</td><td class="blank-cell"></td><td></td><td></td></tr>
+      </table>
+      <p><strong>Version 1 score — longest successful time:</strong> ____________________</p>
+      <p><strong>Evidence check:</strong> Where was the marble fastest? Where was it slowest? Where did the run nearly fail?</p>
+      <div class="write-lines"></div>
+    </div>
+
+    <div class="box gold-box">
+      <h3>8. Make It Better</h3>
+      <p>Choose one or two specific changes based on Version 1 evidence. Explain what you will change and why you think it will help.</p>
+      <div class="improve-grid">
+        <div>
+          <div class="workspace-label">Changes I will make and why:</div>
+          <div class="write-lines"></div>
+        </div>
+        <div>
+          <div class="workspace-label">Improvement sketch:</div>
+          <div class="sketch-box small"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box green-box">
+      <h3>7. Version 2 Test — Day 3</h3>
+      <table class="trial-table">
+        <tr><th>Trial</th><th>Travel time</th><th>Successful?</th><th>What happened?</th></tr>
+        <tr><td>1</td><td class="blank-cell"></td><td></td><td></td></tr>
+        <tr><td>2</td><td class="blank-cell"></td><td></td><td></td></tr>
+        <tr><td>3</td><td class="blank-cell"></td><td></td><td></td></tr>
+      </table>
+      <p><strong>Version 2 score — longest successful time:</strong> ____________________</p>
+      <p><strong>Improvement:</strong> Version 2 score − Version 1 score = ____________________</p>
+    </div>
+
+    <div class="box purple-box reflection-box">
+      <h3>9. What Did You Learn?</h3>
+      <div class="reflection-grid">
+        <div><p><strong>1.</strong> What feature of your final structure had the greatest effect on travel time? What evidence supports your answer?</p><div class="reflection-answer"></div></div>
+        <div><p><strong>2.</strong> Why do you think the marble was faster in some parts of the run and slower in others?</p><div class="reflection-answer"></div></div>
+        <div><p><strong>3.</strong> What was the most important problem you discovered in Version 1?</p><div class="reflection-answer"></div></div>
+        <div><p><strong>4.</strong> What change did you make for Version 2? Did it produce the result you expected?</p><div class="reflection-answer"></div></div>
+        <div><p><strong>5.</strong> What did another team do differently that you think was effective?</p><div class="reflection-answer"></div></div>
+        <div><p><strong>6.</strong> If you had one more redesign, what would you change next and why?</p><div class="reflection-answer"></div></div>
+      </div>
+    </div>
+
+    <div class="box final-comparison">
+      <h3>Final Comparison</h3>
+      <table>
+        <tr><th></th><th>Version 1</th><th>Version 2</th></tr>
+        <tr><td><strong>Best successful time</strong></td><td></td><td></td></tr>
+        <tr><td><strong>Most effective feature</strong></td><td></td><td></td></tr>
+        <tr><td><strong>Main weakness / problem</strong></td><td></td><td></td></tr>
+      </table>
+    </div>
+    <div class="print-footer">STEM I • Slowest Marble Mini Challenge • Days 2–3 Record Sheet</div>
+  </article>
+</section>
+<script>
+  let currentSlide = 0;
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  function showSlide(index){
+    currentSlide = Math.max(0, Math.min(index, slides.length - 1));
+    slides.forEach((s,i)=>s.classList.toggle('active', i === currentSlide));
+    document.getElementById('prevBtn').disabled = currentSlide === 0;
+    document.getElementById('nextBtn').disabled = currentSlide === slides.length - 1;
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  function changeSlide(delta){showSlide(currentSlide + delta)}
+  function printPacket(){window.print()}
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){changeSlide(1)}
+    if(e.key === 'ArrowLeft' || e.key === 'PageUp'){changeSlide(-1)}
+    if(e.key.toLowerCase() === 'p' && (e.ctrlKey || e.metaKey)) return;
+  });
+  showSlide(0);
+</script>
+</body>
+</html>
