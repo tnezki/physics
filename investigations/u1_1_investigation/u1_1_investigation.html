@@ -1,85 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>U1.1 Investigation - Bouncy Ball Evidence & Models</title>
-<link rel="stylesheet" href="../../css/investigation.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Physics 1.1 Investigation - Bouncy Ball Relationships</title>
+<style>
+:root{
+  --ink:#151515;--muted:#5b6470;--line:#cfd5dc;--soft:#f5f7f9;--accent:#1f5f8b;--accent2:#eaf3f9;
+  --claim:#fff7e6;--claimline:#d39a2c;--cer:#eef7ee;--cerline:#6e9c6e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#e9edf1;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.28}
+.print-bar{position:sticky;top:0;z-index:10;background:#17212b;color:#fff;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:center;box-shadow:0 2px 8px #0002}
+.print-bar button{border:0;border-radius:7px;padding:9px 14px;font-weight:700;cursor:pointer;background:#fff;color:#17212b}
+.print-bar span{font-size:13px;opacity:.9}
+.sheet{width:8.5in;min-height:11in;margin:18px auto;background:#fff;padding:.34in .45in .35in;box-shadow:0 3px 16px #0002;position:relative;page-break-after:always}
+.sheet:last-of-type{page-break-after:auto}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--accent);margin-bottom:3px}
+h1{font-size:24px;line-height:1.05;margin:0 0 4px}
+.subtitle{font-size:13px;color:var(--muted);margin:0 0 7px}
+.name-line{display:flex;gap:22px;font-size:13px;margin:5px 0 7px}.name-line div{flex:1;border-bottom:1px solid #777;height:20px}
+.target,.question,.note-box,.claim-box,.cer-box,.check{border-radius:8px;padding:7px 9px;margin:6px 0}
+.target{background:var(--accent2);border-left:5px solid var(--accent)}
+.question{font-weight:700;border:1px solid #b8c8d5;background:#f8fbfd}
+.claim-box{background:var(--claim);border-left:5px solid var(--claimline)}
+.note-box{background:#f6f6f6;border:1px solid #ddd}
+.cer-box{background:var(--cer);border-left:5px solid var(--cerline)}
+.check{background:#f7fafc;border:1px solid #ccd7e1}
+h2{font-size:17px;margin:10px 0 5px;padding-bottom:3px;border-bottom:2px solid #d9e1e7}
+h3{font-size:14px;margin:7px 0 4px}
+p{margin:2px 0 5px}
+ol,ul{margin:2px 0 6px 20px;padding:0}li{margin:2px 0}
+.choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:5px 0}
+.choice{border:1px solid #aeb7bf;border-radius:6px;padding:5px;text-align:center;font-weight:700;background:#fff}
+.workspace{border:1px solid #aeb7bf;border-radius:7px;min-height:var(--h,62px);margin:4px 0 6px;background:linear-gradient(#fff,#fff)}
+.workspace.lines{background:repeating-linear-gradient(to bottom,#fff 0,#fff 24px,#dfe4e8 25px)}
+table{width:100%;border-collapse:collapse;margin:5px 0 11px;font-size:14px}
+th,td{border:1px solid #b9c2ca;padding:5px;vertical-align:top}th{background:#eef2f5;text-align:left}td.blank{height:35px}
+.data-table th,.data-table td{text-align:center}.data-table td{height:32px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.step-list{counter-reset:step;list-style:none;margin-left:0}.step-list li{counter-increment:step;padding-left:29px;position:relative;margin:5px 0}.step-list li:before{content:counter(step);position:absolute;left:0;top:-1px;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:700;font-size:13px}
+.graph-wrap{margin:8px auto 10px;width:100%;max-width:6.6in}.graph-wrap svg{width:100%;height:auto;display:block;border:1px solid #aeb7bf;background:#fff}
+.formula-strip{display:grid;grid-template-columns:1.1fr 2fr;gap:0;border:1px solid #aeb7bf;border-radius:7px;overflow:hidden;margin:5px 0}.formula-strip div{padding:10px}.formula-strip div:first-child{font-weight:700;background:#eef2f5;border-right:1px solid #aeb7bf}
+.prompt-row{display:grid;grid-template-columns:1fr 2.1fr;gap:8px;align-items:start;margin:7px 0}.prompt-row strong{padding-top:7px}
+.discuss{margin:7px 0 0 20px}.discuss li{margin:10px 0}.answer-line{display:block;border-bottom:1px solid #9aa2a9;height:21px;margin-top:3px}
+.footer{position:absolute;bottom:.22in;left:.55in;right:.55in;display:flex;justify-content:space-between;font-size:10px;color:#777;border-top:1px solid #ddd;padding-top:4px}
+.small{font-size:12px;color:var(--muted)}
+@media print{
+  body{background:#fff}
+  .print-bar{display:none!important}
+  .sheet{margin:0;box-shadow:none;width:8.5in;height:10.99in;min-height:10.99in;overflow:hidden;padding:.32in .43in .32in}
+  @page{size:letter;margin:0}
+}
+@media screen and (max-width:900px){.sheet{width:calc(100% - 24px);min-height:auto;padding:28px}.two-col{grid-template-columns:1fr}.choice-grid{grid-template-columns:1fr 1fr}}
+</style>
 </head>
-<body><main class="student-page">
-<div class="kicker">Physics · Unit 1 · Section 1.1 · Investigation</div>
-<h1>Bouncy Ball Evidence & Models</h1>
-<p class="subtitle">A scientific investigation of drop height and rebound height</p>
-<div class="target"><strong>Learning target:</strong> Use observation, measurement, evidence, models, and testable claims to explain a physical pattern.</div>
-<div class="question">Research Question: What relationship, if any, exists between the drop height of a bouncy ball and its rebound height?</div>
-
-<h2>1. Build a Testable Claim</h2>
-<p>Before collecting data, write a claim that predicts how rebound height will change as drop height changes. Your claim must be specific enough that the data could support it, challenge it, or force you to revise it.</p>
-<div class="workspace" style="--ws:100px" data-label="Initial claim / hypothesis"></div>
-<p><strong>What result would count against your claim?</strong> Describe a pattern in the data that would make you revise your explanation.</p>
-<div class="workspace" style="--ws:80px" data-label="Evidence that would challenge my claim"></div>
-
-<h2>2. Identify the Measurements</h2>
-<table>
-<tr><th>Role</th><th>Quantity</th><th>How it will be measured</th></tr>
-<tr><td>Changed on purpose</td><td>Drop height (m)</td><td>Vertical distance from the floor to the center of the ball at release</td></tr>
-<tr><td>Measured response</td><td>Rebound height (m)</td><td>Maximum vertical distance from the floor to the center of the ball after the first bounce</td></tr>
-<tr><td>Kept as consistent as possible</td><td colspan="2">Same ball, same floor surface, same release method, same camera position and scale reference</td></tr>
-</table>
-<p>Write one additional condition your group should keep consistent and explain why it matters.</p>
-<div class="workspace" style="--ws:70px" data-label="Control / consistency reasoning"></div>
-
-<h2>3. Set Up the Measurement</h2>
-<div class="figure"><img src="figures/u1_1_bouncy_ball_setup.png" alt="Camera perpendicular to a bouncy ball drop with meter stick visible for scale"/><div class="caption">Keep the camera perpendicular to the ball's vertical path and include a meter stick or other known scale in the same plane as the motion.</div></div>
-<div class="check"><strong>Before recording:</strong> test one drop. Make sure the entire drop and first rebound stay in frame, the camera does not move, and the scale reference is visible.</div>
-
-<h2>4. Collect Evidence</h2>
-<p>Choose 5-6 different drop heights that your setup can measure safely and clearly. Record each drop. Use Vernier Video Analysis (or the class-approved video measurement method) to measure the release height and first rebound height.</p>
-<table class="data-table">
-<tr><th>Trial</th><th>Drop Height (m)</th><th>Rebound Height (m)</th><th>Observation / quality note</th></tr>
-<tr><td>1</td><td></td><td></td><td></td></tr>
-<tr><td>2</td><td></td><td></td><td></td></tr>
-<tr><td>3</td><td></td><td></td><td></td></tr>
-<tr><td>4</td><td></td><td></td><td></td></tr>
-<tr><td>5</td><td></td><td></td><td></td></tr>
-<tr><td>6</td><td></td><td></td><td></td></tr>
-</table>
-
-<h2>5. Build a Model in Vernier Graphical Analysis</h2>
-<div class="step"><div class="step-num">1</div><div>Enter drop height as the horizontal-axis variable and rebound height as the vertical-axis variable.</div></div>
-<div class="step"><div class="step-num">2</div><div>Create a scatter plot and label both axes with quantity and unit.</div></div>
-<div class="step"><div class="step-num">3</div><div>Apply a linear fit if the pattern appears reasonably linear. Record the model and the fit information your app provides.</div></div>
-<div class="step"><div class="step-num">4</div><div>Paste or insert a screenshot of your graph below.</div></div>
-<table>
-<tr><th>Linear model</th><td>Rebound height = ______________________________</td></tr>
-<tr><th>Fit information</th><td>______________________________________________</td></tr>
-</table>
-<div class="workspace blank" style="--ws:260px" data-label="Paste Graphical Analysis graph here"></div>
-
-<h2>6. Separate Observation From Inference</h2>
-<p><strong>A.</strong> Write one direct observation or measurement from your investigation.</p>
-<div class="workspace" style="--ws:70px" data-label="Observation / measurement"></div>
-<p><strong>B.</strong> Write one inference you can make from the pattern in your measurements.</p>
-<div class="workspace" style="--ws:80px" data-label="Inference from evidence"></div>
-
-<h2>7. Test the Model</h2>
-<p><strong>A. Prediction:</strong> Choose a drop height inside the range you tested. Use your model to predict the rebound height. Show how the model produced the prediction.</p>
-<div class="workspace" style="--ws:100px" data-label="Prediction using the model"></div>
-<p><strong>B. Check:</strong> Perform one new drop near that height. Compare the measured rebound height with the model prediction.</p>
-<table><tr><th>Test drop height</th><th>Model prediction</th><th>Measured rebound height</th><th>Difference</th></tr><tr><td style="height:38px"></td><td></td><td></td><td></td></tr></table>
-<p>Does this new evidence strengthen the model, weaken it, or suggest a revision? Explain.</p>
-<div class="workspace" style="--ws:90px" data-label="Model check"></div>
-
-<h2>8. Claim - Evidence - Reasoning</h2>
-<div class="cer-grid">
-<p><strong>Claim:</strong> State the relationship your group now thinks is best supported.</p>
-<div class="workspace" style="--ws:80px" data-label="Claim"></div>
-<p><strong>Evidence:</strong> Cite at least two specific measurements or features of the graph/model.</p>
-<div class="workspace" style="--ws:110px" data-label="Evidence"></div>
-<p><strong>Reasoning:</strong> Explain why the evidence supports the claim. Distinguish what you measured directly from what you are inferring about the relationship.</p>
-<div class="workspace" style="--ws:150px" data-label="Reasoning"></div>
+<body>
+<div class="print-bar">
+  <button onclick="window.print()">Print Investigation</button>
+  <span>Designed as 3 student pages on letter paper.</span>
 </div>
 
-<h2>9. Revise Like a Physicist</h2>
-<p>Compare your final claim with your initial claim. What changed, if anything? If nothing changed, identify one limitation or source of uncertainty that keeps your model from being a perfect copy of reality.</p>
-<div class="workspace" style="--ws:120px" data-label="Revision / limitation"></div>
-</main></body></html>
+<section class="sheet">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 Investigation</div>
+  <h1>Bouncy Ball Relationships</h1>
+  <p class="subtitle">Use measurements, a model, and evidence to explain a pattern.</p>
+  <div class="name-line"><strong>Name:</strong><div></div><strong>Partner:</strong><div></div></div>
+  <div class="target"><strong>Goal:</strong> Make a testable claim, collect evidence, find a formula that models the relationship, and use it in a CER.</div>
+  <div class="question">Research Question: How does drop height affect the rebound height of a bouncy ball?</div>
+
+  <h2>1. Make an Initial Claim</h2>
+  <p>Before collecting data, predict what the relationship might look like.</p>
+  <div class="choice-grid">
+    <div class="choice">Linear</div><div class="choice">Quadratic</div><div class="choice">Absolute Value</div>
+    <div class="choice">Exponential</div><div class="choice">Radical</div><div class="choice">Other</div>
+  </div>
+  <div class="claim-box"><strong>My claim:</strong> I think the relationship will be __________________________ because...</div>
+  <div class="workspace lines" style="--h:44px"></div>
+
+  <h2>2. Collect Data</h2>
+  <p><strong>Materials:</strong> bouncy ball · meter stick · iPad in slow motion · hard floor</p>
+  <p><strong>Keep it fair:</strong> same ball, same floor, no downward push, meter stick beside the bounce.</p>
+  <h3>Procedure</h3>
+  <ol class="step-list">
+    <li>Stand the meter stick vertically beside the bounce.</li>
+    <li>Record in slow motion with the ball and meter stick visible.</li>
+    <li>Drop from the listed height. Release without pushing.</li>
+    <li>Replay and pause at the highest point after the first bounce.</li>
+    <li>Read the rebound height at the center of the ball.</li>
+  </ol>
+  <table class="data-table">
+    <thead><tr><th>Trial</th><th>Drop Height (cm)</th><th>Rebound Height (cm)</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>20</td><td></td></tr>
+      <tr><td>2</td><td>40</td><td></td></tr>
+      <tr><td>3</td><td>60</td><td></td></tr>
+      <tr><td>4</td><td>80</td><td></td></tr>
+      <tr><td>5</td><td>100</td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="footer"><span>Physics 1.1 · Bouncy Ball Relationships</span><span>Page 1 of 3</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 Investigation</div>
+  <h1>Graph and Model</h1>
+
+  <h2>3. Make a Graph</h2>
+  <p>Plot your five data points. Put <strong>drop height</strong> on the x-axis and <strong>rebound height</strong> on the y-axis.</p>
+  <div class="graph-wrap">
+    <svg viewBox="0 0 650 335" role="img" aria-label="Blank graph grid for drop height versus rebound height">
+      <rect x="0" y="0" width="650" height="335" fill="white"/>
+      <g stroke="#dde2e6" stroke-width="1">
+        <line x1="70" y1="270" x2="610" y2="270"/><line x1="70" y1="225" x2="610" y2="225"/><line x1="70" y1="180" x2="610" y2="180"/><line x1="70" y1="135" x2="610" y2="135"/><line x1="70" y1="90" x2="610" y2="90"/><line x1="70" y1="45" x2="610" y2="45"/>
+        <line x1="70" y1="45" x2="70" y2="270"/><line x1="178" y1="45" x2="178" y2="270"/><line x1="286" y1="45" x2="286" y2="270"/><line x1="394" y1="45" x2="394" y2="270"/><line x1="502" y1="45" x2="502" y2="270"/><line x1="610" y1="45" x2="610" y2="270"/>
+      </g>
+      <g stroke="#333" stroke-width="2"><line x1="70" y1="270" x2="610" y2="270"/><line x1="70" y1="270" x2="70" y2="45"/></g>
+      <g font-family="Arial" font-size="13" fill="#333">
+        <text x="65" y="289">0</text><text x="166" y="289">20</text><text x="274" y="289">40</text><text x="382" y="289">60</text><text x="490" y="289">80</text><text x="592" y="289">100</text>
+        <text x="38" y="275">0</text><text x="28" y="230">20</text><text x="28" y="185">40</text><text x="28" y="140">60</text><text x="28" y="95">80</text><text x="20" y="50">100</text>
+        <text x="270" y="320" font-weight="700">Drop Height (cm)</text>
+        <text transform="translate(14 235) rotate(-90)" font-weight="700">Rebound Height (cm)</text>
+      </g>
+    </svg>
+  </div>
+  <p><strong>Does the graph look like your original claim?</strong> &nbsp; Yes / No / Not sure &nbsp;&nbsp; Why?</p>
+  <div class="workspace lines" style="--h:34px"></div>
+
+  <h2>4. Find a Formula in Desmos</h2>
+  <ol class="step-list">
+    <li>Open Desmos and add a table.</li>
+    <li>Enter drop height in the first column and rebound height in the second column.</li>
+    <li>Open the regression/model menu. Start with the model that matches your claim.</li>
+    <li>Try another model if needed. Choose the model that best matches the data.</li>
+  </ol>
+  <div class="formula-strip"><div>Model Type</div><div>__________________________________________</div></div>
+  <div class="formula-strip"><div>Formula</div><div>__________________________________________</div></div>
+
+  <div class="note-box"><strong>Formula = Relationship</strong><br>A physics formula is a short way to show how measured quantities are related. It is more than a place to plug in numbers.</div>
+  <div class="prompt-row"><strong>In your formula, x means:</strong><div class="workspace" style="--h:28px"></div></div>
+  <div class="prompt-row"><strong>In your formula, y means:</strong><div class="workspace" style="--h:28px"></div></div>
+  <p><strong>What does your formula say happens to rebound height when drop height changes?</strong></p>
+  <div class="workspace lines" style="--h:42px"></div>
+  <div class="footer"><span>Physics 1.1 · Bouncy Ball Relationships</span><span>Page 2 of 3</span></div>
+</section>
+
+<section class="sheet">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 Investigation</div>
+  <h1>Use the Evidence</h1>
+
+  <h2>5. Claim - Evidence - Reasoning</h2>
+  <div class="cer-box"><strong>Claim:</strong> State the relationship that is best supported by your data. Name the type of relationship.</div>
+  <div class="workspace lines" style="--h:58px"></div>
+  <div class="cer-box"><strong>Evidence:</strong> Give at least two specific pieces of evidence from your table, graph, or Desmos model.</div>
+  <div class="workspace lines" style="--h:74px"></div>
+  <div class="cer-box"><strong>Reasoning:</strong> Explain why your evidence supports your claim. Connect the pattern in the data to the formula.</div>
+  <div class="workspace lines" style="--h:88px"></div>
+
+  <h2>6. Discussion</h2>
+  <ol class="discuss">
+    <li>Was your original claim supported? Explain.<span class="answer-line"></span></li>
+    <li>Which model best described your data? What made you choose it?<span class="answer-line"></span></li>
+    <li>What does your formula tell you about the relationship between drop height and rebound height?<span class="answer-line"></span></li>
+    <li>Why did your points probably not land perfectly on the model?<span class="answer-line"></span></li>
+    <li>What could make one group's results different from another group's?<span class="answer-line"></span></li>
+    <li>How could your formula help predict the rebound height for a drop height you did not test?<span class="answer-line"></span></li>
+  </ol>
+  <div class="check"><strong>Before you finish:</strong> Your claim should match your evidence, and your reasoning should explain why the formula is a useful model of the measured relationship.</div>
+  <div class="footer"><span>Physics 1.1 · Bouncy Ball Relationships</span><span>Page 3 of 3</span></div>
+</section>
+</body>
+</html>

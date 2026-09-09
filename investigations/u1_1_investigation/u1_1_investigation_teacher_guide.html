@@ -1,86 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>U1.1 Investigation Teacher Guide - Bouncy Ball Evidence & Models</title>
-<link rel="stylesheet" href="../../css/teacher_guide.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Physics 1.1 Investigation Teacher Guide - Bouncy Ball Relationships</title>
+<style>
+:root{--ink:#171717;--muted:#5c6570;--line:#cdd5dc;--soft:#f5f7f9;--accent:#1f5f8b;--accent2:#eaf3f9;--warn:#fff6df;--good:#edf7ed}
+*{box-sizing:border-box}body{margin:0;background:#edf0f3;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.28}.bar{position:sticky;top:0;background:#17212b;color:white;padding:10px;text-align:center;z-index:5}.bar button{border:0;border-radius:6px;padding:8px 13px;font-weight:700}.page{width:8.5in;min-height:11in;margin:18px auto;background:#fff;padding:.36in .48in .35in;box-shadow:0 3px 16px #0002;page-break-after:always;position:relative}.page:last-of-type{page-break-after:auto}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700}h1{font-size:24px;margin:2px 0 3px}h2{font-size:17px;margin:10px 0 5px;border-bottom:2px solid #d9e1e7;padding-bottom:3px}h3{font-size:14px;margin:7px 0 4px}p{margin:2px 0 5px}ul,ol{margin:2px 0 6px 20px;padding:0}li{margin:2px 0}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:7px 0}.quick{background:var(--soft);border:1px solid var(--line);border-radius:7px;padding:6px}.quick strong{display:block;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.04em}.callout{border-radius:7px;padding:7px 9px;margin:6px 0}.callout.note{background:var(--accent2);border-left:5px solid var(--accent)}.callout.warn{background:var(--warn);border-left:5px solid #cf9a2d}.callout.good{background:var(--good);border-left:5px solid #6c9b6c}table{width:100%;border-collapse:collapse;margin:8px 0 11px;font-size:13px}th,td{border:1px solid #bbc4cc;padding:5px;vertical-align:top}th{background:#eef2f5;text-align:left}.footer{position:absolute;bottom:.22in;left:.58in;right:.58in;border-top:1px solid #ddd;padding-top:4px;display:flex;justify-content:space-between;font-size:10px;color:#777}.small{font-size:12px;color:var(--muted)}
+@media print{body{background:#fff}.bar{display:none}.page{margin:0;box-shadow:none;width:8.5in;height:10.99in;min-height:10.99in;overflow:hidden;padding:.33in .44in .32in}@page{size:letter;margin:0}}
+@media screen and (max-width:900px){.page{width:calc(100% - 24px);min-height:auto;padding:28px}.quick-grid{grid-template-columns:1fr}}
+</style>
 </head>
-<body><main class="guide">
-<div class="kicker">Physics · Unit 1 · Section 1.1 · Investigation Teacher Guide</div>
-<h1>Bouncy Ball Evidence & Models</h1>
-<p class="subtitle">Full-period scientific investigation · adapted from the legacy Bouncy Ball Experiment</p>
-<div class="quick-grid">
-  <div class="quick"><strong>Time</strong>35-40 minutes</div>
-  <div class="quick"><strong>Groups</strong>2-3 students</div>
-  <div class="quick"><strong>Core tools</strong>Video Analysis + Graphical Analysis</div>
-</div>
-
-<h2>Why This Investigation Fits Section 1.1</h2>
-<p>The legacy activity already used a bouncy ball to connect data collection, regression, prediction, and scientific method. This revision keeps that strong experimental core but removes acceleration and energy analysis that occur later in the current course. The new emphasis matches Section 1.1: direct measurement, observation versus inference, evidence, testable claims, mathematical models, prediction, and revision.</p>
-
-<h2>Learning Target Connection</h2>
-<ul>
-  <li>Students make a testable claim before collecting data.</li>
-  <li>Students distinguish measured quantities from inferences about the relationship.</li>
-  <li>Students use a graph and linear fit as a model rather than treating the equation as an answer-producing trick.</li>
-  <li>Students test the model with a new measurement and decide whether the evidence supports or challenges it.</li>
-</ul>
-
-<h2>Materials Per Group</h2>
-<ul>
-  <li>1 bouncy ball or racquetball; use the same ball for all trials in a group</li>
-  <li>1 meter stick or metric scale reference</li>
-  <li>Phone/iPad for recording</li>
-  <li>Vernier Video Analysis or the class-approved video measurement workflow</li>
-  <li>Vernier Graphical Analysis for the scatter plot and linear fit</li>
-  <li>Hard, level floor</li>
-  <li>Student investigation downloaded into Notability before class</li>
-</ul>
-
-<h2>Before Class</h2>
-<ol>
-  <li>Open the student file on a device and confirm the workspace sizes are comfortable in Notability. Every response box uses an inline <code>--ws</code> height that can be edited directly in the HTML.</li>
-  <li>Test one video setup. The camera should be perpendicular to the ball path with the scale reference in the same plane as the motion.</li>
-  <li>Confirm students can enter a manual data table and create a linear fit in Vernier Graphical Analysis.</li>
-  <li>Choose a safe maximum drop height based on the room and camera framing. The old activity used roughly 0.5-2.0 m; use the range that works in your space.</li>
-</ol>
-
-<h2>Suggested 40-Minute Flow</h2>
-<table>
-<tr><th>Minutes</th><th>Student Work</th><th>Teacher Focus</th></tr>
-<tr><td>0-5</td><td>Research question, initial claim, evidence that would challenge it</td><td>Push for a claim that can actually fail. “Greater drop height gives greater rebound height” is testable; “the ball behaves normally” is not.</td></tr>
-<tr><td>5-9</td><td>Variables, setup, practice drop</td><td>Check camera geometry and measurement reference. Insist on measuring the center of the ball consistently.</td></tr>
-<tr><td>9-22</td><td>5-6 recorded drops and height measurements</td><td>Prioritize usable evidence over rushing. If a trial is poor, students should mark it rather than hide the problem.</td></tr>
-<tr><td>22-29</td><td>Enter data in Graphical Analysis, make scatter plot, apply fit</td><td>Ask students what the graph means before asking for the equation.</td></tr>
-<tr><td>29-34</td><td>Observation vs inference, prediction, new test drop</td><td>Make the model earn its value by using it to predict new evidence.</td></tr>
-<tr><td>34-40</td><td>CER and revision/limitation</td><td>Look for evidence-based revision, not a ceremonial conclusion.</td></tr>
-</table>
-
-<h2>Expected Pattern</h2>
-<p>For a consistent ball and surface, rebound height should generally increase as drop height increases. The legacy activity expected an approximately linear relationship with a positive slope and an intercept near zero. Typical slope values in that activity were roughly 0.40-0.70, but the exact value depends on the ball, surface, release technique, and measurement quality.</p>
-<div class="callout warn"><strong>Do not turn the slope into an energy lesson here.</strong> The old version asked where “missing energy” went and included acceleration calculations. Those ideas are intentionally removed because the current Section 1.1 target is scientific reasoning and modeling.</div>
-
-<h2>Strong Student Responses to Listen For</h2>
-<table>
-<tr><th>Prompt</th><th>Evidence of Strong Reasoning</th></tr>
-<tr><td>What would challenge the initial claim?</td><td>A specific measurable pattern: rebound height staying constant, decreasing as drop height increases, or data showing no consistent trend.</td></tr>
-<tr><td>Observation vs inference</td><td>Observation names a measured height or visible pattern. Inference interprets what the pattern means about the relationship.</td></tr>
-<tr><td>Why use the equation?</td><td>The equation is a compact model of the measured pattern and can generate a prediction that is checked with new evidence.</td></tr>
-<tr><td>Why is the model imperfect?</td><td>Measurement uncertainty, inconsistent release, camera angle/parallax, ball spin, floor variation, limited data range, or a relationship that is only approximately linear.</td></tr>
-</table>
-
-<h2>Common Problems & Fixes</h2>
-<ul>
-  <li><strong>Camera moves:</strong> brace it against a desk, stand, or stable object.</li>
-  <li><strong>Scale and ball are in different planes:</strong> move the meter stick next to the ball path to reduce parallax.</li>
-  <li><strong>Students chase a perfect fit:</strong> remind them that unexpected variation is evidence to analyze, not data to erase.</li>
-  <li><strong>Graph made with axes reversed:</strong> drop height is the input/change-on-purpose variable and belongs on the horizontal axis.</li>
-  <li><strong>Students call the fitted line “the truth”:</strong> ask what future measurement could make them revise it.</li>
-</ul>
-
-<h2>Optional Shortening to 25-30 Minutes</h2>
-<p>Use four drop heights instead of six, skip the second control-variable response, and make the model-check drop a teacher-collected class data point. Keep the initial claim, Graphical Analysis model, observation/inference distinction, and final CER; those are the pieces most tightly aligned to Section 1.1.</p>
-
-<h2>Connection to the Next Section</h2>
-<p>Do not pre-teach force explanations during this investigation. If students ask why the ball changes motion at the floor, record the question and use it as a bridge into Section 1.2: Forces and Newton's First Law.</p>
-</main></body></html>
+<body>
+<div class="bar"><button onclick="window.print()">Print Teacher Guide</button></div>
+<section class="page">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 · Investigation Teacher Guide</div>
+  <h1>Bouncy Ball Relationships</h1>
+  <p class="small">Simple measurement → graph → Desmos model → CER</p>
+  <div class="quick-grid"><div class="quick"><strong>Time</strong>35-40 min</div><div class="quick"><strong>Grouping</strong>Pairs</div><div class="quick"><strong>Materials</strong>Ball, meter stick, iPad</div></div>
+  <h2>Purpose</h2>
+  <p>Students practice making a <strong>testable claim</strong>, collecting measurements, using a formula as a <strong>model of a relationship</strong>, and writing a short CER.</p>
+  <div class="callout note"><strong>Section 1.1 connection:</strong> Physics formulas are compact relationships between physical quantities. Students should read what the variables mean and use the equation to describe the pattern, not treat it only as a calculator shortcut.</div>
+  <h2>Materials Per Pair</h2>
+  <ul><li>1 bouncy ball</li><li>1 meter stick</li><li>1 iPad with slow-motion video</li><li>Hard, level floor</li><li>Desmos</li></ul>
+  <h2>Before Class</h2>
+  <ol><li>Choose a clear wall/floor area where a meter stick can stand vertically beside the bounce.</li><li>Test one slow-motion recording so the full ball path and meter stick are visible.</li><li>Confirm Desmos is available. Students use its regression/model menu rather than typing regression syntax.</li><li>Print the three-page student investigation.</li></ol>
+  <div class="footer"><span>Physics 1.1 · Teacher Guide</span><span>Page 1 of 4</span></div>
+</section>
+<section class="page">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 · Investigation Teacher Guide</div>
+  <h1>Class Flow</h1>
+  <h2>Suggested Flow</h2>
+  <table>
+    <tr><th>Time</th><th>Student Work</th><th>Teacher Move</th></tr>
+    <tr><td>0-5</td><td>Initial claim</td><td>Students choose a possible shape: linear, quadratic, absolute value, exponential, radical, or other. The claim only needs to be testable.</td></tr>
+    <tr><td>5-18</td><td>Five slow-motion drops</td><td>Same ball, same floor, no downward push, meter stick beside the bounce.</td></tr>
+    <tr><td>18-25</td><td>Plot data</td><td>Ask what the graph appears to show before opening Desmos.</td></tr>
+    <tr><td>25-31</td><td>Desmos model</td><td>Students start with the model type they predicted, then test another if needed.</td></tr>
+    <tr><td>31-40</td><td>CER + discussion</td><td>Press for measured evidence and a clear connection between the graph and formula.</td></tr>
+  </table>
+  <h2>Measurement Method</h2>
+  <ol><li>Meter stick stands vertically beside the bounce path.</li><li>One student records in slow motion while the other drops the ball.</li><li>Use drop heights of 20, 40, 60, 80, and 100 cm.</li><li>Replay and pause at the highest point after the first bounce.</li><li>Read the rebound height using the center of the ball.</li></ol>
+  <div class="callout warn"><strong>Do not add Vernier or formal video tracking.</strong> The point is simple measurement and scientific reasoning, not learning another analysis tool.</div>
+  <h2>Desmos</h2>
+  <p>Students enter the five points in a table and use the regression/model menu. They should begin with the model type from their claim, then compare with another model if needed. Do not require regression syntax.</p>
+  <div class="footer"><span>Physics 1.1 · Teacher Guide</span><span>Page 2 of 4</span></div>
+</section>
+<section class="page">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 · Investigation Teacher Guide</div>
+  <h1>Evidence Guide</h1>
+  <h2>Expected Pattern</h2>
+  <p>With the same ball and surface, rebound height should generally increase as drop height increases. Over this limited range, the relationship is often approximately <strong>linear</strong>, though student data will not be perfect.</p>
+  <div class="callout good"><strong>Useful teacher move:</strong> Do not tell students the model is linear before they graph. Let the measurements and model comparison do that work.</div>
+  <h2>What to Listen For</h2>
+  <table>
+    <tr><th>Part</th><th>Strong Student Thinking</th></tr>
+    <tr><td>Initial claim</td><td>Names a possible relationship and gives a reason. The claim can be wrong; it just needs to be testable.</td></tr>
+    <tr><td>Graph</td><td>Drop height is x. Rebound height is y. Student describes the overall pattern rather than one point.</td></tr>
+    <tr><td>Formula</td><td>Student can say what x and y represent and explain how the equation summarizes the measured relationship.</td></tr>
+    <tr><td>Claim</td><td>Names the relationship supported by the final data/model.</td></tr>
+    <tr><td>Evidence</td><td>Uses specific measurements, the graph pattern, or the Desmos model.</td></tr>
+    <tr><td>Reasoning</td><td>Explains why the evidence supports the claim and connects the formula to the physical relationship.</td></tr>
+  </table>
+  <h2>CER Emphasis</h2>
+  <p><strong>Claim:</strong> What relationship is supported?</p><p><strong>Evidence:</strong> What measurements or model features support it?</p><p><strong>Reasoning:</strong> Why does that evidence make the claim reasonable?</p>
+  <div class="footer"><span>Physics 1.1 · Teacher Guide</span><span>Page 3 of 4</span></div>
+</section>
+<section class="page">
+  <div class="kicker">Physics · Unit 1 · Section 1.1 · Investigation Teacher Guide</div>
+  <h1>Discussion and Troubleshooting</h1>
+  <h2>Common Problems</h2>
+  <ul><li><strong>Ball leaves the frame:</strong> move the iPad farther back.</li><li><strong>Hard to read height:</strong> keep the camera level and meter stick close to the ball path.</li><li><strong>Ball is pushed:</strong> repeat the trial and release without adding force.</li><li><strong>Axes reversed:</strong> drop height is what students choose, so it belongs on x.</li><li><strong>Students chase a perfect fit:</strong> a model summarizes a pattern; experimental points can vary.</li></ul>
+  <h2>Discussion Question Notes</h2>
+  <ol><li><strong>Original claim:</strong> Either answer is fine if it refers to the data.</li><li><strong>Which model:</strong> Students should refer to graph shape and/or model fit.</li><li><strong>What does the formula tell you:</strong> Look for how rebound height changes with drop height.</li><li><strong>Why not perfect:</strong> Measurement uncertainty, camera angle, release variation, ball spin, floor variation.</li><li><strong>Why groups differ:</strong> Different balls, surfaces, measurement choices, or release technique.</li><li><strong>Predict an untested height:</strong> Use the fitted formula as a model; predictions far outside the measured range are less trustworthy.</li></ol>
+  <h2>Whole-Class Close</h2>
+  <p>Ask: <strong>“What did the formula add that the table did not?”</strong> A useful answer: it summarizes the pattern in one relationship and can make predictions.</p>
+  <p>Then ask: <strong>“Does a formula prove the model is true?”</strong> No. The formula is a model supported by measurements and can be revised when new evidence does not fit.</p>
+  <div class="callout note"><strong>Keep the level simple.</strong> The main wins are a testable claim, usable measurements, a relationship shown in a formula, and a CER that points back to evidence.</div>
+  <div class="footer"><span>Physics 1.1 · Teacher Guide</span><span>Page 4 of 4</span></div>
+</section>
+</body></html>
