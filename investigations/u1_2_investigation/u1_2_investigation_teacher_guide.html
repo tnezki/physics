@@ -5,11 +5,25 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>U1.2 Investigation Teacher Guide - Is Inertia a Force?</title>
 <link rel="stylesheet" href="../../css/teacher_guide.css"/>
+<style>
+.student-copy { border:1px solid #cbd5dc; border-radius:10px; padding:14px 16px; margin:14px 0 10px; background:#fbfcfd; }
+.student-copy h3 { margin-top:0; color:#173f68; }
+.teacher-move { border-left:5px solid #1f5f8b; background:#eaf3f9; padding:11px 14px; margin:10px 0; border-radius:7px; }
+.possible { border-left:5px solid #2e6b45; background:#edf7f0; padding:11px 14px; margin:10px 0 16px; border-radius:7px; }
+.watch { border-left:5px solid #8b4f16; background:#fff5e8; padding:11px 14px; margin:10px 0; border-radius:7px; }
+.model-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:12px 0 18px; }
+.model-card { border:1px solid #cbd5dc; border-radius:8px; padding:10px; break-inside:avoid; }
+.model-card h4 { margin:0 0 6px; font-size:15px; color:#173f68; }
+.model-card svg { width:100%; height:165px; display:block; }
+.answer-table td:first-child { width:31%; font-weight:700; }
+.page-label { margin-top:34px; padding-top:8px; border-top:4px solid #173f68; color:#173f68; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+@media print { .student-copy, .teacher-move, .possible, .watch, .model-card { break-inside:avoid; } .page-label { break-after:avoid; } }
+</style>
 </head>
 <body><main class="guide">
 <div class="kicker">Physics · Unit 1 · Section 1.2 · Investigation Teacher Guide</div>
 <h1>Is Inertia a Force?</h1>
-<p class="subtitle">Coin-card phenomenon + teacher-selected PhET cases + force-model CER</p>
+<p class="subtitle">Annotated student investigation · discourse moves · possible answers · force-model key</p>
 <div class="quick-grid">
   <div class="quick"><strong>Time</strong>35-45 minutes</div>
   <div class="quick"><strong>Groups</strong>2-3 students</div>
@@ -17,99 +31,223 @@
 </div>
 
 <h2>Purpose and Section 1.2 Alignment</h2>
-<p>This rebuild replaces the cart/Vernier investigation with a different physical phenomenon while preserving the exact Section 1.2 evidence scope. Students begin with an unresolved prediction, use the coin-card interaction as evidence, test their developing idea in a few teacher-selected PhET cases, and then confront the stationary-book counterexample before writing a CER.</p>
+<p>Students use a short hands-on inertia phenomenon, three specific PhET comparisons, and a stationary-book counterexample to build an evidence-based explanation of Newton's First Law. The activity stays inside Section 1.2: inertia is a property rather than a force; forces come from interactions; and zero net force is different from no forces.</p>
 <ul>
   <li><strong>I can state Newton's First Law in everyday language.</strong></li>
   <li><strong>I can explain that inertia is a property of matter, not a force.</strong></li>
   <li><strong>I can distinguish between "no forces acting" and "no net force acting" and identify support force, weight, and other common forces in simple situations.</strong></li>
 </ul>
-<div class="callout"><strong>Boundary:</strong> Keep the lesson conceptual. Do not turn this into Section 1.3 vector addition or Section 1.4 formal equilibrium terminology. The useful representation here is a simple force model tied to actual interactions.</div>
+<div class="callout"><strong>Boundary:</strong> Do not turn this into Section 1.3 vector addition or Section 1.4 formal equilibrium terminology. Arrow direction and relative balance can be discussed qualitatively, but the instructional goal is the force-motion relationship.</div>
 
-<h2>Materials</h2>
-<p><strong>Per group:</strong></p>
+<h2>Materials and Prep</h2>
 <ul>
-  <li>1 paper or plastic cup (avoid glass)</li>
-  <li>1 index card or other stiff, smooth card</li>
-  <li>1 coin or metal washer</li>
-  <li>1 iPad with slow-motion video available; recording is optional, not required for every group</li>
-  <li>1 book and desk/table for the counterexample</li>
-  <li>Access to the approved PhET link: <a href="https://phet.colorado.edu/en/simulations/forces-and-motion-basics">https://phet.colorado.edu/en/simulations/forces-and-motion-basics</a></li>
+  <li>Per group: unbreakable cup, stiff index card, coin or washer, iPad if recording slow motion.</li>
+  <li>Book and desk/table for the counterexample.</li>
+  <li>Approved simulation: <a href="https://phet.colorado.edu/en/simulations/forces-and-motion-basics">PhET: Forces and Motion: Basics</a>.</li>
 </ul>
-
-<h2>Before Class</h2>
 <ol>
-  <li>Test the coin-card-cup setup. A stiff card that slides cleanly across the cup works better than a soft or highly textured card.</li>
-  <li>Use a cup opening comfortably larger than the coin/washer. The task should reveal the interaction, not become a trick-shot challenge.</li>
-  <li>Preview the live PhET simulation and choose two or three short cases that are visibly useful for the student table. Because the approved link does not lock a particular live interface, this guide intentionally does not prescribe button names or settings.</li>
-  <li>Have a stationary book available for every group or plan to use one class demonstration.</li>
+  <li>Test the coin-card setup. A stiff, smooth card should slide cleanly across the cup.</li>
+  <li>Plan to model one clean horizontal flick. Students do not need written software directions for slow motion.</li>
+  <li>For PhET, use the three cases printed on the student page: balanced at rest, unbalanced forces, and moving after the push ends in a no-friction condition.</li>
 </ol>
-<div class="callout warn"><strong>Safety / setup:</strong> Use an unbreakable cup. Students should flick the card horizontally across the tabletop and away from faces. If a technique launches the coin, reset and reduce the flick angle rather than increasing force.</div>
+<div class="callout warn"><strong>Safety:</strong> Use an unbreakable cup. Flick the card horizontally across the tabletop and away from faces. If the coin launches, reduce the upward angle rather than increasing the force.</div>
 
 <h2>Suggested Flow</h2>
 <table>
-  <tr><th>Minutes</th><th>Student work</th><th>Teacher focus</th></tr>
-  <tr><td>0-6</td><td>Slow-pull / fast-flick predictions + initial inertia claim</td><td>Do not define inertia yet. Ask what object would have to provide any force students claim exists.</td></tr>
-  <tr><td>6-15</td><td>One slow pull + three fast trials; optional slow-motion recording</td><td>Keep the task observational. A failed cup landing is still usable if students can describe the coin's motion and contact.</td></tr>
-  <tr><td>15-23</td><td>Interaction list + two force models</td><td>Press: "What object causes that force?" Avoid allowing an unlabeled "inertia force" arrow.</td></tr>
-  <tr><td>23-31</td><td>Teacher-selected PhET cases</td><td>Choose only cases the current live simulation clearly supports. Keep this short and comparative.</td></tr>
-  <tr><td>31-36</td><td>Stationary-book counterexample</td><td>Land the distinction between forces present and net force zero without moving into formal equilibrium vocabulary.</td></tr>
-  <tr><td>36-45</td><td>Newton's First Law statement + CER + discussion</td><td>Require evidence from at least two sources, not vocabulary alone.</td></tr>
+<tr><th>Minutes</th><th>Student work</th><th>Teacher focus</th></tr>
+<tr><td>0-6</td><td>Prediction + initial inertia claim</td><td>Protect uncertainty. Do not define inertia yet.</td></tr>
+<tr><td>6-15</td><td>Slow pull + three fast trials</td><td>Evidence is about contact and motion, not whether the coin lands perfectly.</td></tr>
+<tr><td>15-23</td><td>Interaction table + force models</td><td>Ask what object causes every force arrow.</td></tr>
+<tr><td>23-31</td><td>Three PhET cases</td><td>Compare net force with change in motion.</td></tr>
+<tr><td>31-36</td><td>Stationary book</td><td>Separate "forces exist" from "net force is zero."</td></tr>
+<tr><td>36-45</td><td>Newton's First Law + CER + discussion</td><td>Require evidence from at least two sources.</td></tr>
 </table>
 
-<h2>Expected Physical Pattern</h2>
-<p>During a slow pull, contact with the moving card can produce a horizontal frictional interaction on the coin for long enough to noticeably change the coin's horizontal motion. During a clean fast flick, the card is removed quickly; the coin tends to undergo much less horizontal change before the support disappears and gravity changes its vertical motion. Results will not be perfect: card texture, flick angle, coin shape, and technique all matter.</p>
-<div class="callout good"><strong>What matters:</strong> The investigation does not depend on the coin landing perfectly in the cup every time. Students need evidence about contact, interactions, and whether the coin's motion changes while those interactions act.</div>
+<div class="page-label">Student Page 1 · Predict and Test</div>
+<div class="student-copy">
+<h3>Part 1 · Predict — Coin, Card, Cup</h3>
+<p><strong>Student sees:</strong> Place a card across a cup and a coin near the center. Predict what the coin will do if the card is pulled slowly and if it is flicked quickly. Then decide whether you currently think inertia is a force acting on the coin.</p>
+</div>
+<div class="teacher-move"><strong>Discourse moves</strong><br/>Have partners commit before testing. Ask: "What do you think will actually touch or pull on the coin?" Then: "If you say a force keeps the coin where it is, what object is providing that force?" Accept competing claims without resolving them.</div>
+<div class="possible"><strong>Possible responses</strong><br/><strong>Slow pull:</strong> students may predict the coin travels with the card, tips, or eventually falls. <strong>Fast flick:</strong> students may predict the coin stays nearly over the cup and falls in, or that it travels with the card. <strong>Initial inertia claim:</strong> any well-stated prediction is acceptable here. A common misconception is "yes, inertia is a force that holds it in place." Do not correct it yet.</div>
 
-<h2>Force-Model Guidance</h2>
+<div class="student-copy">
+<h3>Part 2 · Test — Collect Observations</h3>
+<p><strong>Student procedure:</strong> one slow pull, three fast horizontal flicks, and optional slow-motion video. Students record what the card does, what the coin does, and one key observation for each trial.</p>
+</div>
+<div class="teacher-move"><strong>Discourse moves</strong><br/>After the slow pull, ask groups to describe only what they observed before explaining it. After the first fast trial, ask: "What changed first - the card or the coin?" and "For how long were the card and coin interacting?" Invite groups with imperfect trials to compare useful evidence rather than rerun until they get a trick-shot result.</div>
+<table class="answer-table">
+<tr><th>Student row</th><th>Possible observation / answer</th></tr>
+<tr><td>Slow pull</td><td>The card moves sideways and the coin tends to move sideways with it while contact lasts. Depending on technique, the coin may move away from the cup instead of dropping through.</td></tr>
+<tr><td>Fast trials</td><td>The card moves sideways quickly while the coin changes horizontal motion much less. Once the card is no longer supporting it, the coin moves downward toward the cup.</td></tr>
+<tr><td>Key evidence</td><td>The fast flick greatly shortens the sideways interaction between card and coin. The coin does not need a sideways "inertia force" to remain nearly where it was horizontally for that brief interval.</td></tr>
+</table>
+<div class="watch"><strong>Watch for:</strong> Students may treat "coin fell in cup" as the entire evidence. Redirect to the order of events, duration of contact, and which interactions were actually present.</div>
+
+<div class="page-label">Student Page 2 · Explain the Puzzle</div>
+<div class="student-copy">
+<h3>Part 3 · Examine — What Interacted With the Coin?</h3>
+<p>Students describe the coin before the card moves, while card and coin are in contact, and after the card no longer supports the coin. They then draw force models for two moments and decide whether inertia belongs as a force arrow.</p>
+</div>
+<div class="teacher-move"><strong>Discourse moves</strong><br/>Use the repeated press: <strong>"What object causes that force?"</strong> If a student says "motion force," "inertia force," or "the coin wants to stay," ask them to identify the second object in the interaction. Revoice productive language: "So you are saying the coin keeps its motion unless an interaction changes it."</div>
+<table class="answer-table">
+<tr><th>Moment</th><th>Possible student description</th></tr>
+<tr><td>Before the card moves</td><td>Coin is at rest. Earth pulls downward; the card supports upward.</td></tr>
+<tr><td>While card and coin contact</td><td>Earth pulls downward, card supports upward, and the card can exert a horizontal friction force on the coin while surfaces interact.</td></tr>
+<tr><td>After support is gone</td><td>The card no longer exerts support or friction. The Earth still pulls downward; air resistance can be ignored here.</td></tr>
+</table>
+
+<h3>Force-model key for the coin</h3>
+<div class="model-grid">
+  <div class="model-card">
+    <h4>Before card moves</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Coin force diagram before card moves">
+      <defs><marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+      <circle cx="140" cy="82" r="20" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="140" y1="61" x2="140" y2="20" stroke="#18242d" stroke-width="3" marker-end="url(#a1)"/>
+      <line x1="140" y1="103" x2="140" y2="145" stroke="#18242d" stroke-width="3" marker-end="url(#a1)"/>
+      <text x="150" y="28" font-size="13">support from card</text>
+      <text x="150" y="144" font-size="13">weight from Earth</text>
+    </svg>
+  </div>
+  <div class="model-card">
+    <h4>Card moving right while in contact</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Coin force diagram while card moves right">
+      <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+      <circle cx="130" cy="82" r="20" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="130" y1="61" x2="130" y2="20" stroke="#18242d" stroke-width="3" marker-end="url(#a2)"/>
+      <line x1="130" y1="103" x2="130" y2="145" stroke="#18242d" stroke-width="3" marker-end="url(#a2)"/>
+      <line x1="151" y1="82" x2="226" y2="82" stroke="#18242d" stroke-width="3" marker-end="url(#a2)"/>
+      <text x="140" y="28" font-size="12">support</text>
+      <text x="140" y="144" font-size="12">weight</text>
+      <text x="174" y="72" font-size="12">friction from card</text>
+    </svg>
+  </div>
+  <div class="model-card">
+    <h4>After card is gone</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Coin force diagram after card is gone">
+      <defs><marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+      <circle cx="140" cy="65" r="20" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="140" y1="86" x2="140" y2="145" stroke="#18242d" stroke-width="3" marker-end="url(#a3)"/>
+      <text x="150" y="139" font-size="13">weight from Earth</text>
+    </svg>
+  </div>
+  <div class="model-card">
+    <h4>What should NOT appear</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Incorrect inertia force diagram">
+      <circle cx="105" cy="82" r="20" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="126" y1="82" x2="210" y2="82" stroke="#8b4f16" stroke-width="4"/>
+      <line x1="142" y1="58" x2="205" y2="105" stroke="#8b4f16" stroke-width="5"/>
+      <line x1="205" y1="58" x2="142" y2="105" stroke="#8b4f16" stroke-width="5"/>
+      <text x="145" y="45" font-size="13" fill="#8b4f16">"inertia force"</text>
+    </svg>
+  </div>
+</div>
+<div class="possible"><strong>Possible answer - Should inertia appear as a force arrow?</strong><br/>No. Inertia is a property of matter: the tendency to resist a change in motion. It is not an interaction between the coin and another object, so there is no "inertia force" arrow.</div>
+<div class="possible"><strong>Possible answer - Slow pull vs. fast flick</strong><br/>During the slow pull, the card remains in contact long enough for friction from the card to change the coin's horizontal motion noticeably. During the fast flick, that horizontal interaction lasts for much less time, so the coin's horizontal motion changes much less before the card is gone.</div>
+
+<div class="page-label">Student Page 3 · Three PhET Cases + Book Counterexample</div>
+<div class="student-copy">
+<h3>Part 4 · Transfer — Three PhET Cases</h3>
+<p><strong>Case A - Balanced at rest:</strong> equal-strength pushes/pulls in opposite directions.</p>
+<p><strong>Case B - Unbalanced:</strong> make one side stronger than the other.</p>
+<p><strong>Case C - Moving after the push ends:</strong> in a no-friction condition, get the object moving, then remove the applied push.</p>
+<p>Students record what the object does, whether its motion changes, and whether net force is zero or nonzero.</p>
+</div>
+<div class="teacher-move"><strong>Discourse moves</strong><br/>Run each case long enough for students to commit to a description before discussing. For Case A ask: "Are there forces, even though nothing changes?" For Case B ask: "What is different about the combined effect?" For Case C ask: "The push is gone - what evidence says the object does or does not need a continuing forward force?"</div>
 <table>
-  <tr><th>Moment</th><th>Reasonable force model for the coin</th><th>Teacher note</th></tr>
-  <tr><td>Before the card moves</td><td>Weight downward; support force from the card upward.</td><td>No "inertia" arrow. The coin can be at rest while forces are acting.</td></tr>
-  <tr><td>While card and coin remain in contact and the card moves sideways</td><td>Weight; support; a horizontal frictional interaction from the card when the contact changes the coin's horizontal motion.</td><td>The exact size is not needed. Tie every arrow to an interaction.</td></tr>
-  <tr><td>After the card no longer supports the coin, before it lands</td><td>Weight downward; air resistance may be neglected for this lesson.</td><td>The loss of support matters; inertia is still not a force.</td></tr>
+<tr><th>Case</th><th>Possible observation</th><th>Net-force interpretation</th><th>Section 1.2 idea</th></tr>
+<tr><td>A · Balanced at rest</td><td>Object remains at rest while opposite forces act.</td><td>Zero net horizontal force.</td><td>Zero net force does not mean no forces.</td></tr>
+<tr><td>B · Unbalanced</td><td>Motion changes toward the stronger side.</td><td>Nonzero net force.</td><td>A change in motion is associated with nonzero net force.</td></tr>
+<tr><td>C · Moving after push ends</td><td>With no friction and applied push removed, the object continues moving rather than instantly stopping.</td><td>Zero net horizontal force after the push is removed.</td><td>Continuing motion does not require a continuing forward force.</td></tr>
 </table>
+<div class="possible"><strong>Possible pattern statement</strong><br/>When the net force is nonzero, motion changes. When the net force is zero, the object's motion stays the same: if it is at rest it remains at rest, and if it is moving it keeps moving at constant velocity.</div>
 
-<h2>PhET Use</h2>
-<p>The approved simulation is used only as a brief transfer check, not as a second full lab. Select a few live cases that let students compare motion, change in motion, and forces/interactions. Useful contrasts are cases in which motion is not changing and cases in which it is changing. If the current simulation version does not clearly support a planned contrast, do not invent a setting; choose a different visible case or skip that row and continue to the book counterexample.</p>
-<p>For each case, press students with questions such as:</p>
-<ul>
-  <li>What is the object actually doing right now?</li>
-  <li>Is its motion changing, or staying the same?</li>
-  <li>What interactions can you identify?</li>
-  <li>What does the motion evidence suggest about the net force?</li>
-</ul>
+<h3>PhET force/motion sketches for teacher reference</h3>
+<div class="model-grid">
+  <div class="model-card">
+    <h4>Case A · balanced</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Balanced horizontal forces">
+      <defs><marker id="a4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+      <rect x="115" y="62" width="50" height="40" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="113" y1="82" x2="45" y2="82" stroke="#18242d" stroke-width="4" marker-end="url(#a4)"/>
+      <line x1="167" y1="82" x2="235" y2="82" stroke="#18242d" stroke-width="4" marker-end="url(#a4)"/>
+      <text x="31" y="66" font-size="12">equal force</text><text x="191" y="66" font-size="12">equal force</text>
+      <text x="91" y="132" font-size="13">motion unchanged</text>
+    </svg>
+  </div>
+  <div class="model-card">
+    <h4>Case B · unbalanced</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Unbalanced horizontal forces">
+      <defs><marker id="a5" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+      <rect x="115" y="62" width="50" height="40" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="113" y1="82" x2="75" y2="82" stroke="#18242d" stroke-width="4" marker-end="url(#a5)"/>
+      <line x1="167" y1="82" x2="250" y2="82" stroke="#18242d" stroke-width="5" marker-end="url(#a5)"/>
+      <text x="185" y="61" font-size="12">stronger force</text>
+      <text x="92" y="132" font-size="13">motion changes</text>
+    </svg>
+  </div>
+  <div class="model-card">
+    <h4>Case C · moving, push removed</h4>
+    <svg viewBox="0 0 280 165" role="img" aria-label="Moving object with zero horizontal force">
+      <defs><marker id="a6" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+      <rect x="105" y="65" width="50" height="36" fill="none" stroke="#18242d" stroke-width="3"/>
+      <line x1="130" y1="63" x2="130" y2="25" stroke="#18242d" stroke-width="3" marker-end="url(#a6)"/>
+      <line x1="130" y1="103" x2="130" y2="142" stroke="#18242d" stroke-width="3" marker-end="url(#a6)"/>
+      <line x1="168" y1="83" x2="242" y2="83" stroke="#5a6872" stroke-width="3" marker-end="url(#a6)"/>
+      <text x="176" y="70" font-size="12">velocity</text>
+      <text x="26" y="157" font-size="12">no horizontal force arrow after push ends</text>
+    </svg>
+  </div>
+</div>
 
-<h2>The Stationary-Book Twist</h2>
-<p>The book is the cleanest Section 1.2 counterexample to "not moving means no forces." A book resting on the desk has weight downward and a support force upward. Its motion is not changing even though forces are present. Students should articulate that <strong>no net force</strong> does not mean <strong>no forces</strong>.</p>
+<div class="student-copy">
+<h3>Part 5 · Counterexample — A Book Sitting on the Desk</h3>
+<p>Students choose between: <strong>A.</strong> No forces act on the book; or <strong>B.</strong> Forces can act even though its motion is not changing. They explain, draw a force model, and distinguish no forces from no net force.</p>
+</div>
+<div class="teacher-move"><strong>Discourse moves</strong><br/>Before revealing the force model, ask for a silent vote A/B. Then ask one student from each side to explain. Press with: "If Earth still pulls on the book, why does it not fall through the desk?" and "If the desk pushes up, why does the book not launch upward?"</div>
+<div class="model-card" style="max-width:430px;margin:12px auto 18px;">
+<h4>Possible book force model</h4>
+<svg viewBox="0 0 360 185" role="img" aria-label="Book with support and weight forces">
+  <defs><marker id="a7" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#18242d"/></marker></defs>
+  <rect x="145" y="72" width="70" height="38" fill="none" stroke="#18242d" stroke-width="3"/>
+  <line x1="180" y1="70" x2="180" y2="22" stroke="#18242d" stroke-width="4" marker-end="url(#a7)"/>
+  <line x1="180" y1="112" x2="180" y2="163" stroke="#18242d" stroke-width="4" marker-end="url(#a7)"/>
+  <text x="194" y="31" font-size="14">support force from desk</text>
+  <text x="194" y="157" font-size="14">weight from Earth</text>
+</svg>
+</div>
+<div class="possible"><strong>Possible answers</strong><br/><strong>Choice:</strong> B. The book has weight downward and support force upward. Its motion is not changing because the forces have zero combined effect. <strong>No forces vs. no net force:</strong> "No forces" means there are no force interactions acting on the object. "No net force" means forces may be present but cancel in their combined effect.</div>
 
-<h2>Answer / Model Guidance</h2>
+<div class="page-label">Student Page 4 · Build the Explanation</div>
+<div class="student-copy">
+<h3>Part 6 · Synthesize — Newton's First Law + CER</h3>
+<p>Students state Newton's First Law in everyday language, then support or reject: <em>"Inertia should be drawn as a force acting on an object."</em> Evidence must come from at least two sources: coin/card, PhET, or book.</p>
+</div>
+<div class="teacher-move"><strong>Discourse moves before writing</strong><br/>Use a 60-second partner rehearsal: one student states a claim and one piece of evidence; the partner asks, "How does that evidence support your claim?" Switch roles. During whole-class share, separate evidence from reasoning explicitly: "That is an observation. What physics idea connects it to your claim?"</div>
+<div class="possible"><strong>Possible Newton's First Law statement</strong><br/>If the net force on an object is zero, its motion does not change: an object at rest stays at rest, and a moving object continues at constant velocity. A nonzero net force is needed to change motion.</div>
+<div class="possible"><strong>Possible CER</strong><br/><strong>Claim:</strong> Reject. Inertia should not be drawn as a force.<br/><strong>Evidence:</strong> In the fast coin-card trial, the coin changed its horizontal motion very little after the card was removed quickly; once the card was gone, there was no horizontal "inertia" interaction to draw. In PhET Case C, the object continued moving after the applied push was removed in the no-friction condition. The book also had real forces acting even while its motion stayed unchanged.<br/><strong>Reasoning:</strong> Forces come from interactions with other objects. Inertia is a property of matter, not an interaction. Newton's First Law says motion remains unchanged when net force is zero; a force is required to change motion, not to maintain motion.</div>
+
+<h3>Closing Discussion - possible answers and moves</h3>
 <table>
-  <tr><th>Student prompt</th><th>Strong response should include</th></tr>
-  <tr><td>Should inertia be a force arrow?</td><td>No. Inertia describes an object's resistance to a change in motion; it is a property of matter, not an interaction force.</td></tr>
-  <tr><td>No forces vs. no net force</td><td>No forces means no interactions are exerting forces on the object. No net force means forces may be present but their combined effect is zero, so the motion does not change.</td></tr>
-  <tr><td>Newton's First Law in everyday language</td><td>If the net force is zero, an object keeps the same state of motion: it remains at rest or continues moving at constant velocity. A change in motion requires a nonzero net force.</td></tr>
-  <tr><td>CER</td><td>Reject the claim that inertia belongs as a force arrow; use specific observations from at least two sources and connect them to Newton's First Law, interactions, and net force.</td></tr>
+<tr><th>Student discussion question</th><th>Possible answer</th><th>Discourse move</th></tr>
+<tr><td>If inertia is not a force, what does it describe?</td><td>A property of matter: resistance to a change in motion.</td><td>Ask students to replace "inertia pushes" with a sentence that contains no hidden force.</td></tr>
+<tr><td>What evidence distinguishes no forces from no net force?</td><td>The book and balanced PhET case both have forces present while the combined effect is zero.</td><td>Ask for two actual interacting objects for each force.</td></tr>
+<tr><td>Why should every force arrow connect to a real interaction?</td><td>A force represents one object exerting a push or pull on another.</td><td>Point to an arrow and ask, "Who is doing that?"</td></tr>
+<tr><td>Why can slow pull and fast flick give different coin motion?</td><td>The horizontal contact interaction acts differently/for a different duration, so the coin's horizontal motion changes by different amounts.</td><td>Ask students to use "interaction" and "change in motion" rather than just "fast" and "slow."</td></tr>
+<tr><td>What must be true about net force for motion to change?</td><td>The net force must be nonzero.</td><td>Contrast PhET Cases A/B/C rather than accepting a memorized phrase.</td></tr>
 </table>
 
-<h2>Useful Press / Discussion Questions</h2>
+<h2>Common Problems and Teacher Responses</h2>
 <ul>
-  <li>What object is actually causing the force you drew?</li>
-  <li>If the coin keeps doing what it was already doing for a moment, what force would be required to explain that?</li>
-  <li>Why does the fast flick not need a hidden forward or backward "inertia force"?</li>
-  <li>How can the book have two forces acting on it without changing motion?</li>
-  <li>What evidence today would convince someone who says, "If it is not moving, there are no forces"?</li>
-  <li>What evidence today would convince someone who says, "Something must keep pushing an object for it to keep moving"?</li>
-</ul>
-
-<h2>Common Problems</h2>
-<ul>
-  <li><strong>Coin travels with the card on every fast trial:</strong> use a stiffer/smoother card, shorten the contact time, and keep the flick horizontal.</li>
-  <li><strong>Coin launches sideways:</strong> students are striking upward or catching the coin. Reset the technique; do not turn it into a harder flick contest.</li>
-  <li><strong>Students treat cup landing as the only evidence:</strong> redirect them to contact time, coin motion, and the interaction list.</li>
-  <li><strong>Students draw "motion force" or "inertia force":</strong> ask, "What other object is exerting that force?"</li>
-  <li><strong>Students say "momentum keeps it moving":</strong> keep the explanation in this section with Newton's First Law and inertia; momentum is not needed here.</li>
-  <li><strong>PhET becomes a software lesson:</strong> keep the teacher-selected cases short. The simulation is evidence transfer, not the main phenomenon.</li>
+<li><strong>Coin travels with the card on every fast trial:</strong> use a stiffer/smoother card and keep the flick horizontal.</li>
+<li><strong>Coin launches sideways:</strong> reduce upward angle; do not make it a harder-flick contest.</li>
+<li><strong>Students treat cup landing as the evidence:</strong> redirect to contact, interaction time, and change in motion.</li>
+<li><strong>Students draw "motion force" or "inertia force":</strong> ask what other object exerts it.</li>
+<li><strong>Students say "momentum keeps it moving":</strong> stay with Newton's First Law and inertia in this section.</li>
+<li><strong>Students think balanced means no forces:</strong> return to the book and PhET Case A.</li>
 </ul>
 
 <h2>Connection Forward</h2>
-<p>Section 1.3 will formalize force direction and net-force representations. This investigation should leave students with the simpler foundation: forces come from interactions, inertia is not one of those forces, and motion changes when the net force is not zero.</p>
+<p>Section 1.3 will formalize force direction and net-force representations. This investigation should leave students with the simpler foundation: forces come from interactions, inertia is not a force, zero net force can occur while forces are present, and motion changes when net force is nonzero.</p>
 </main></body></html>
