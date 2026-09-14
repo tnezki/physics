@@ -1,0 +1,1181 @@
+{
+  "schema": "family-bank/1.1",
+  "bank_version": "physics-family-bank v1.0",
+  "course": "Conceptual Physics",
+  "unit": 1,
+  "mastery_goal": {
+    "id": "U1-MG03",
+    "title": "Vectors, Net Force, and Equilibrium",
+    "description": "Represent forces with vectors, determine net force, and use the equilibrium rule to connect balanced forces with unchanged velocity."
+  },
+  "i_cans": [
+    {
+      "i_can_id": "U1-MG03-IC01",
+      "section_id": "1.3",
+      "exact_text": "I can use vector arrow direction and length to represent a force’s direction and relative magnitude.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC01-A",
+          "label": "Family A",
+          "name": "Read Vector Direction and Length",
+          "family_purpose": "Interpret vector arrow features.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC01",
+          "exact_text": "I can use vector arrow direction and length to represent a force’s direction and relative magnitude.",
+          "question_structure_id": "MODEL-INTERPRET-01",
+          "student_action": "Compare two arrows and infer direction/relative magnitude.",
+          "evidence_job": "Use arrow direction and length as force information.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "common scale",
+            "arrow length visibly different"
+          ],
+          "variation_axes": [
+            "change directions and length ratios",
+            "add a common scale value"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Two force arrows use the same scale. Arrow A points right and is twice as long as Arrow B, which points left. Compare their directions and relative magnitudes.",
+            "student_html": "<p>Both arrows use the same scale.</p><div class=\"rep\"><svg viewBox=\"0 0 360 120\"><line x1=\"90\" y1=\"35\" x2=\"260\" y2=\"35\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"260,35 248,28 248,42\" fill=\"#1f3864\"/><text x=\"20\" y=\"40\">A</text><line x1=\"180\" y1=\"85\" x2=\"95\" y2=\"85\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"95,85 107,78 107,92\" fill=\"#1f3864\"/><text x=\"20\" y=\"90\">B</text></svg></div><p>Compare the arrows’ <strong>directions</strong> and <strong>relative force magnitudes</strong>.</p>",
+            "answer": "A is rightward and about twice the magnitude of B; B is leftward and smaller.",
+            "solution": "Direction comes from the arrowhead; relative magnitude comes from length when the scale is common.",
+            "scoring_guidance": "Correct direction and relative-size interpretation."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC01-B",
+          "label": "Family B",
+          "name": "Construct a Scaled Force Arrow",
+          "family_purpose": "Create a vector representation from a stated force.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC01",
+          "exact_text": "I can use vector arrow direction and length to represent a force’s direction and relative magnitude.",
+          "question_structure_id": "MODEL-CONSTRUCT-01",
+          "student_action": "Draw a force vector using a supplied scale.",
+          "evidence_job": "Show direction and magnitude through an arrow.",
+          "response_mode": "constructed_response",
+          "representation_mode": "blank_draw_surface",
+          "invariants": [
+            "magnitude is an exact multiple of scale",
+            "student must construct rather than select"
+          ],
+          "variation_axes": [
+            "change scale/magnitude/direction"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Use the scale 1 cm = 10 N. Draw a vector that represents a 30 N force to the left. Label the vector.",
+            "student_html": "<p>Use the scale <strong>1 cm = 10 N</strong>.</p><p>Draw and label a vector that represents a <strong>30 N force to the left</strong>.</p><div class=\"drawbox\" aria-label=\"blank drawing area\"></div>",
+            "answer": "A 3 cm arrow pointing left, labeled 30 N (or equivalent force label).",
+            "solution": "30 N at 10 N/cm corresponds to 3 cm; arrowhead points left.",
+            "scoring_guidance": "Direction, scaled length, and label must all be correct."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC01-C",
+          "label": "Family C",
+          "name": "Vector Encoding Error",
+          "family_purpose": "Diagnose an arrow that has correct label but wrong geometry.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC01",
+          "exact_text": "I can use vector arrow direction and length to represent a force’s direction and relative magnitude.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique wrong direction or wrong length.",
+          "evidence_job": "Explain why label alone does not make a vector representation correct.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "representation error must involve arrow geometry"
+          ],
+          "variation_axes": [
+            "wrong direction instead of length",
+            "different ratios"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A diagram labels two forces 20 N and 40 N, but draws both arrows the same length using the same scale. What is wrong, and how should the diagram change?",
+            "student_html": "<p>A diagram uses one common scale but draws these two labeled vectors the same length:</p><div class=\"rep\"><svg viewBox=\"0 0 360 120\" role=\"img\" aria-label=\"Two same-length rightward force arrows labeled 20 N and 40 N\"><text x=\"18\" y=\"38\" font-size=\"14\">20 N</text><line x1=\"75\" y1=\"34\" x2=\"245\" y2=\"34\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"245,34 233,27 233,41\" fill=\"#1f3864\"/><text x=\"18\" y=\"88\" font-size=\"14\">40 N</text><line x1=\"75\" y1=\"84\" x2=\"245\" y2=\"84\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"245,84 233,77 233,91\" fill=\"#1f3864\"/></svg></div><p>What is wrong, and how should the diagram change?</p>",
+            "answer": "The 40 N arrow should be twice as long as the 20 N arrow (if the common linear scale is used).",
+            "solution": "Arrow length carries magnitude information.",
+            "scoring_guidance": "Identify length mismatch and specify the required relative length."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG03-IC02",
+      "section_id": "1.3",
+      "exact_text": "I can combine forces acting in the same or opposite directions to determine net force.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC02-A",
+          "label": "Family A",
+          "name": "Same-Direction Force Sum",
+          "family_purpose": "Combine forces that point the same direction.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC02",
+          "exact_text": "I can combine forces acting in the same or opposite directions to determine net force.",
+          "question_structure_id": "PROC-DIRECT-EXECUTE-01",
+          "student_action": "Add same-direction forces and state direction.",
+          "evidence_job": "Determine net force when vectors reinforce.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "both forces same direction",
+            "values require simple arithmetic"
+          ],
+          "variation_axes": [
+            "force magnitudes",
+            "direction"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Two students push the same cart to the right with forces of 35 N and 20 N. What is the horizontal net force from these pushes?",
+            "student_html": "<p>Two students push the same cart to the <strong>right</strong> with forces of <strong>35 N</strong> and <strong>20 N</strong>.</p><p>What is the horizontal net force from these pushes? Include magnitude and direction.</p>",
+            "answer": "55 N right.",
+            "solution": "Same-direction force magnitudes add: 35 + 20 = 55 N.",
+            "scoring_guidance": "Correct magnitude and direction."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC02-B",
+          "label": "Family B",
+          "name": "Opposite-Direction Net Force",
+          "family_purpose": "Combine opposing forces.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC02",
+          "exact_text": "I can combine forces acting in the same or opposite directions to determine net force.",
+          "question_structure_id": "PROC-DIRECT-EXECUTE-01",
+          "student_action": "Subtract opposing magnitudes and state direction.",
+          "evidence_job": "Determine net force as difference and direction of larger force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "opposing forces",
+            "nonzero net force"
+          ],
+          "variation_axes": [
+            "force magnitudes",
+            "which side is larger"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart has a 48 N push right and a 31 N push left. Determine the horizontal net force.",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Opposing horizontal forces\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"83\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"83,62 93,55 93,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"291\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"291,62 281,55 281,69\" fill=\"#1f3864\"/><text x=\"85\" y=\"30\" font-size=\"14\">31 N</text><text x=\"215\" y=\"30\" font-size=\"14\">48 N</text></svg><div class=\"cap\">Opposing horizontal forces</div></div><p>Determine the <strong>horizontal net force</strong>, including direction.</p>",
+            "answer": "17 N right.",
+            "solution": "Opposing forces subtract: 48 − 31 = 17 N toward the larger force.",
+            "scoring_guidance": "Correct difference and direction."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC02-C",
+          "label": "Family C",
+          "name": "Reverse Net-Force Reasoning",
+          "family_purpose": "Find a missing applied force from net force information.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC02",
+          "exact_text": "I can combine forces acting in the same or opposite directions to determine net force.",
+          "question_structure_id": "PROC-INVERSE-01",
+          "student_action": "Determine an unknown opposing force.",
+          "evidence_job": "Use the net-force relationship in reverse.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "two opposing forces",
+            "net direction given"
+          ],
+          "variation_axes": [
+            "known force/net combinations",
+            "which force is unknown"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart is pulled 50 N to the right and also pulled left. The horizontal net force is 14 N to the right. How large is the leftward force?",
+            "student_html": "<p>A cart is pulled <strong>50 N right</strong> and also pulled left. The horizontal net force is <strong>14 N right</strong>.</p><p>How large is the <strong>leftward force</strong>?</p>",
+            "answer": "36 N left.",
+            "solution": "50 − F_left = 14, so F_left = 36 N.",
+            "scoring_guidance": "Correct missing magnitude and direction."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG03-IC03",
+      "section_id": "1.3",
+      "exact_text": "I can determine the direction and relative magnitude of the resultant/net force from a simple force-vector diagram.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC03-A",
+          "label": "Family A",
+          "name": "Read Resultant from a Force Diagram",
+          "family_purpose": "Determine net/resultant from a supplied vector diagram.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC03",
+          "exact_text": "I can determine the direction and relative magnitude of the resultant/net force from a simple force-vector diagram.",
+          "question_structure_id": "MODEL-INTERPRET-01",
+          "student_action": "Read values from a force diagram and compute net.",
+          "evidence_job": "Integrate arrow direction and magnitude to infer resultant.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "values must be visible in diagram"
+          ],
+          "variation_axes": [
+            "diagram magnitudes",
+            "left/right dominant side"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Use the force diagram to determine the resultant/net force.",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Force-vector diagram\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"90\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"90,62 100,55 100,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"300\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"300,62 290,55 290,69\" fill=\"#1f3864\"/><text x=\"85\" y=\"30\" font-size=\"14\">20 N</text><text x=\"215\" y=\"30\" font-size=\"14\">60 N</text></svg><div class=\"cap\">Force-vector diagram</div></div><p>Determine the <strong>resultant/net force</strong>, including direction.</p>",
+            "answer": "40 N right.",
+            "solution": "The opposing forces differ by 40 N, toward the 60 N force.",
+            "scoring_guidance": "Correct resultant magnitude and direction."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC03-B",
+          "label": "Family B",
+          "name": "Choose the Resultant Arrow",
+          "family_purpose": "Translate a vector diagram into a resultant representation.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC03",
+          "exact_text": "I can determine the direction and relative magnitude of the resultant/net force from a simple force-vector diagram.",
+          "question_structure_id": "REPTRANS-MULTI-ENCODING",
+          "student_action": "Compare candidate resultant arrows.",
+          "evidence_job": "Select the arrow that matches the net vector.",
+          "response_mode": "selected_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "choices include add-magnitudes and wrong-direction distractors"
+          ],
+          "variation_axes": [
+            "magnitudes/directions",
+            "candidate vector forms"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A force diagram shows 30 N left and 50 N right. Which resultant vector is correct?",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Given forces\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"80\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"80,62 90,55 90,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"290\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"290,62 280,55 280,69\" fill=\"#1f3864\"/><text x=\"85\" y=\"30\" font-size=\"14\">30 N</text><text x=\"215\" y=\"30\" font-size=\"14\">50 N</text></svg><div class=\"cap\">Given forces</div></div><p>Which resultant vector is correct?</p><ol class=\"choices\" type=\"A\"><li>20 N right</li><li>20 N left</li><li>80 N right</li><li>0 N</li></ol>",
+            "answer": "A",
+            "solution": "50 N right − 30 N left = 20 N right.",
+            "scoring_guidance": "Select 20 N right."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC03-C",
+          "label": "Family C",
+          "name": "Resultant-Direction Error",
+          "family_purpose": "Diagnose a resultant drawn toward the smaller force.",
+          "unit": 1,
+          "section_id": "1.3",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC03",
+          "exact_text": "I can determine the direction and relative magnitude of the resultant/net force from a simple force-vector diagram.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Correct a student’s resultant.",
+          "evidence_job": "Use magnitude and direction coherently to critique a vector result.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "student result contains a diagnosable vector error"
+          ],
+          "variation_axes": [
+            "wrong magnitude with correct direction",
+            "both wrong"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student sees 70 N right and 25 N left, then draws a 45 N resultant arrow to the left. Identify what is correct and what is wrong in the student’s result.",
+            "student_html": "<p>A student sees <strong>70 N right</strong> and <strong>25 N left</strong>, then draws a <strong>45 N resultant arrow to the left</strong>.</p><p>Identify what is correct and what is wrong in the result.</p>",
+            "answer": "The 45 N magnitude is correct; the direction is wrong. The resultant is 45 N right.",
+            "solution": "The net vector points toward the larger force.",
+            "scoring_guidance": "Recognize correct magnitude and fix direction."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG03-IC04",
+      "section_id": "1.4",
+      "exact_text": "I can distinguish static equilibrium from dynamic equilibrium.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC04-A",
+          "label": "Family A",
+          "name": "Static vs. Dynamic Equilibrium",
+          "family_purpose": "Classify equilibrium state from motion description.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC04",
+          "exact_text": "I can distinguish static equilibrium from dynamic equilibrium.",
+          "question_structure_id": "CONCEPT-CLASSIFY-01",
+          "student_action": "Classify two scenarios.",
+          "evidence_job": "Distinguish equilibrium at rest from equilibrium at constant velocity.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "explicit zero net force or balanced-force condition"
+          ],
+          "variation_axes": [
+            "different rest/constant-velocity contexts"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A hanging sign is motionless. A cart moves east at constant speed in a straight line. If each has zero net force, classify each as static or dynamic equilibrium.",
+            "student_html": "<p>Assume each object has <strong>zero net force</strong>.</p><ol><li>A hanging sign is motionless.</li><li>A cart moves east at constant speed in a straight line.</li></ol><p>Classify each as <strong>static equilibrium</strong> or <strong>dynamic equilibrium</strong>.</p>",
+            "answer": "Sign = static equilibrium; cart = dynamic equilibrium.",
+            "solution": "Static equilibrium is rest with zero net force; dynamic equilibrium is constant velocity with zero net force.",
+            "scoring_guidance": "Both classifications correct."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC04-B",
+          "label": "Family B",
+          "name": "Equilibrium from Motion Data",
+          "family_purpose": "Use a motion record to distinguish static/dynamic equilibrium.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC04",
+          "exact_text": "I can distinguish static equilibrium from dynamic equilibrium.",
+          "question_structure_id": "DATA-INTERPRET-01",
+          "student_action": "Classify from a small table.",
+          "evidence_job": "Interpret a short position/velocity description as equilibrium type.",
+          "response_mode": "constructed_response",
+          "representation_mode": "table",
+          "invariants": [
+            "data clearly show unchanged velocity"
+          ],
+          "variation_axes": [
+            "different constant velocities",
+            "resting data"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart’s velocity is measured once each second: 2.0, 2.0, 2.0, 2.0 m/s east. If the forces are balanced, what kind of equilibrium is this and why?",
+            "student_html": "<table class=\"data\"><thead><tr><th>Time (s)</th><th>Velocity</th></tr></thead><tbody><tr><td>0</td><td>2.0 m/s east</td></tr><tr><td>1</td><td>2.0 m/s east</td></tr><tr><td>2</td><td>2.0 m/s east</td></tr><tr><td>3</td><td>2.0 m/s east</td></tr></tbody></table><p>If the forces are balanced, what kind of equilibrium is this? Explain.</p>",
+            "answer": "Dynamic equilibrium because the cart has constant nonzero velocity while net force is zero.",
+            "solution": "The motion is unchanged but not at rest.",
+            "scoring_guidance": "Identify dynamic equilibrium and cite constant velocity."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC04-C",
+          "label": "Family C",
+          "name": "Equilibrium Does Not Mean Rest",
+          "family_purpose": "Correct the misconception that all equilibrium is static.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC04",
+          "exact_text": "I can distinguish static equilibrium from dynamic equilibrium.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a claim.",
+          "evidence_job": "Explain dynamic equilibrium.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "must address dynamic equilibrium explicitly"
+          ],
+          "variation_axes": [
+            "change example",
+            "contrast with changing direction/speed"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student says, “If an object is in equilibrium, it must be stopped.” Explain why this is incomplete and give a valid moving example.",
+            "student_html": "<p>A student says:</p><blockquote>“If an object is in equilibrium, it must be stopped.”</blockquote><p>Explain why this is incomplete and give a valid <strong>moving</strong> example of equilibrium.</p>",
+            "answer": "An object can be in dynamic equilibrium while moving at constant velocity in a straight line; e.g., a cart moving steadily with balanced forces.",
+            "solution": "Equilibrium means zero net force, which permits either rest or constant velocity.",
+            "scoring_guidance": "State dynamic equilibrium and a physically valid example."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG03-IC05",
+      "section_id": "1.4",
+      "exact_text": "I can explain how an object can have forces acting on it and still have zero net force.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC05-A",
+          "label": "Family A",
+          "name": "Balanced Forces Still Exist",
+          "family_purpose": "Explain zero net force with individual forces present.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC05",
+          "exact_text": "I can explain how an object can have forces acting on it and still have zero net force.",
+          "question_structure_id": "CONCEPT-EXPLAIN-01",
+          "student_action": "Use a resting supported object.",
+          "evidence_job": "Connect equal opposing forces to zero vector sum.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "at least two real forces balance"
+          ],
+          "variation_axes": [
+            "horizontal/vertical balance contexts",
+            "different equal magnitudes"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A 25 N book rests on a table and the table pushes upward with 25 N. Explain how forces can be acting while the net force is zero.",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 150\" role=\"img\" aria-label=\"Forces on the resting book\"><rect x=\"145\" y=\"52\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"170\" y1=\"52\" x2=\"170\" y2=\"-3\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"170,-3 163,9 177,9\" fill=\"#1f3864\"/><line x1=\"170\" y1=\"92\" x2=\"170\" y2=\"147\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"170,147 163,135 177,135\" fill=\"#1f3864\"/><text x=\"190\" y=\"20\" font-size=\"14\">Support 25 N</text><text x=\"190\" y=\"135\" font-size=\"14\">Weight 25 N</text></svg><div class=\"cap\">Forces on the resting book</div></div><p>Explain how forces can be acting while the <strong>net force is zero</strong>.</p>",
+            "answer": "The 25 N upward support and 25 N downward weight are equal and opposite, so their vector sum is zero.",
+            "solution": "Individual forces need not be zero for the net force to be zero.",
+            "scoring_guidance": "Identify both forces and explain cancellation."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC05-B",
+          "label": "Family B",
+          "name": "Multiple Forces, Zero Sum",
+          "family_purpose": "Reason with more than two forces.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC05",
+          "exact_text": "I can explain how an object can have forces acting on it and still have zero net force.",
+          "question_structure_id": "PROC-DIRECT-EXECUTE-01",
+          "student_action": "Evaluate a horizontal multi-force balance.",
+          "evidence_job": "Show that several forces can combine to zero.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "forces must cancel exactly"
+          ],
+          "variation_axes": [
+            "three- or four-force balances",
+            "horizontal/vertical"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A box has two rightward pushes of 10 N and 15 N and one leftward pull of 25 N. What is the horizontal net force? Explain why the box can still have forces acting on it.",
+            "student_html": "<p>A box has two rightward pushes of <strong>10 N</strong> and <strong>15 N</strong>, and one leftward pull of <strong>25 N</strong>.</p><p>What is the horizontal net force? Explain why the box can still have forces acting on it.</p>",
+            "answer": "0 N; 10 + 15 = 25, so the forces cancel even though three forces act.",
+            "solution": "Net force is the vector sum of all forces.",
+            "scoring_guidance": "Correct sum and explanation of nonzero individual forces."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC05-C",
+          "label": "Family C",
+          "name": "No Motion Does Not Mean No Forces",
+          "family_purpose": "Diagnose inference from rest to no forces.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC05",
+          "exact_text": "I can explain how an object can have forces acting on it and still have zero net force.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a statement about a stationary object.",
+          "evidence_job": "Use equilibrium to correct a force-presence misconception.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "stationary object has a clear support interaction"
+          ],
+          "variation_axes": [
+            "supported/hanging objects"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student says, “The hanging plant is not moving, so no forces are acting on it.” Explain the error and name two forces that can act while the plant remains in equilibrium.",
+            "student_html": "<p>A student says:</p><blockquote>“The hanging plant is not moving, so no forces are acting on it.”</blockquote><p>Explain the error and name two forces that can act while the plant remains in equilibrium.</p>",
+            "answer": "Weight downward and support/tension upward can balance, giving zero net force while both forces act.",
+            "solution": "Rest supports zero net force, not necessarily absence of forces.",
+            "scoring_guidance": "Name valid opposing forces and explain balance."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG03-IC06",
+      "section_id": "1.4",
+      "exact_text": "I can use the equilibrium rule to determine an unknown horizontal or vertical force.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC06-A",
+          "label": "Family A",
+          "name": "Unknown Vertical Force",
+          "family_purpose": "Use equilibrium to solve a missing vertical force.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC06",
+          "exact_text": "I can use the equilibrium rule to determine an unknown horizontal or vertical force.",
+          "question_structure_id": "PROC-INVERSE-01",
+          "student_action": "Determine missing upward force.",
+          "evidence_job": "Apply ΣF=0 to a supported/hanging object.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "equilibrium explicitly stated"
+          ],
+          "variation_axes": [
+            "different weights",
+            "support vs tension"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A hanging object is in equilibrium. Its weight is 42 N downward. What upward support/tension force is required?",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 150\" role=\"img\" aria-label=\"Vertical equilibrium\"><rect x=\"145\" y=\"52\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"170\" y1=\"52\" x2=\"170\" y2=\"-3\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"170,-3 163,9 177,9\" fill=\"#1f3864\"/><line x1=\"170\" y1=\"92\" x2=\"170\" y2=\"147\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"170,147 163,135 177,135\" fill=\"#1f3864\"/><text x=\"190\" y=\"20\" font-size=\"14\">Tension ?</text><text x=\"190\" y=\"135\" font-size=\"14\">Weight 42 N</text></svg><div class=\"cap\">Vertical equilibrium</div></div><p>The object is in equilibrium. What upward force is required?</p>",
+            "answer": "42 N upward.",
+            "solution": "For vertical equilibrium, upward and downward forces must balance so ΣF_y = 0.",
+            "scoring_guidance": "42 N upward with equilibrium reasoning."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC06-B",
+          "label": "Family B",
+          "name": "Unknown Horizontal Force",
+          "family_purpose": "Use equilibrium to solve a missing horizontal force.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC06",
+          "exact_text": "I can use the equilibrium rule to determine an unknown horizontal or vertical force.",
+          "question_structure_id": "PROC-INVERSE-01",
+          "student_action": "Determine missing opposing force.",
+          "evidence_job": "Apply balance in one horizontal dimension.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "equilibrium condition establishes zero net force"
+          ],
+          "variation_axes": [
+            "known direction/magnitude",
+            "rest or constant velocity condition"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A crate moves at constant velocity. One person pulls 65 N to the right. Another horizontal force acts left. How large must the leftward force be for equilibrium?",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Horizontal equilibrium\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"55\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"55,62 65,55 65,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"285\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"285,62 275,55 275,69\" fill=\"#1f3864\"/><text x=\"72\" y=\"30\" font-size=\"14\">F left ?</text><text x=\"215\" y=\"30\" font-size=\"14\">65 N</text></svg><div class=\"cap\">Horizontal equilibrium</div></div><p>The crate moves at constant velocity. How large must the leftward force be for equilibrium?</p>",
+            "answer": "65 N left.",
+            "solution": "Constant velocity implies zero net force, so horizontal forces balance.",
+            "scoring_guidance": "65 N left and link to zero net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC06-C",
+          "label": "Family C",
+          "name": "Find the Missing Force in a Four-Force Model",
+          "family_purpose": "Use axis-by-axis equilibrium in a simple model.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC06",
+          "exact_text": "I can use the equilibrium rule to determine an unknown horizontal or vertical force.",
+          "question_structure_id": "MODEL-INTERPRET-01",
+          "student_action": "Determine one missing force from a four-force situation.",
+          "evidence_job": "Recognize that horizontal and vertical balances can be considered separately.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "other axis explicitly balanced"
+          ],
+          "variation_axes": [
+            "change which axis contains the unknown",
+            "change known magnitude"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A box is in equilibrium. Vertically, support and weight are already equal. Horizontally, 18 N acts left and an unknown force acts right. Determine the unknown force and explain why the vertical forces do not change this horizontal answer.",
+            "student_html": "<p>A box is in equilibrium. Vertically, support and weight are already equal. Horizontally, <strong>18 N left</strong> and an unknown force act.</p><p>Determine the unknown horizontal force. Explain why the already-balanced vertical forces do not change this horizontal answer.</p>",
+            "answer": "18 N right; the vertical forces cancel in the vertical direction, while horizontal equilibrium requires the horizontal forces to cancel.",
+            "solution": "Equilibrium is satisfied independently in perpendicular directions in this simple model.",
+            "scoring_guidance": "Correct force and axis reasoning."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG03-IC07",
+      "section_id": "1.4",
+      "exact_text": "I can explain why zero net force means an object remains at rest or moves with constant velocity in a straight line.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG03-IC07-A",
+          "label": "Family A",
+          "name": "Zero Net Force Motion Consequence",
+          "family_purpose": "Connect zero net force to unchanged velocity.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC07",
+          "exact_text": "I can explain why zero net force means an object remains at rest or moves with constant velocity in a straight line.",
+          "question_structure_id": "CONCEPT-PREDICT-01",
+          "student_action": "Predict motion for an initially moving object.",
+          "evidence_job": "State the correct first-law motion outcome.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "net force remains zero"
+          ],
+          "variation_axes": [
+            "initial rest or different velocity"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart is moving west at 3 m/s. The net force on it becomes zero and remains zero. Describe its motion afterward.",
+            "student_html": "<p>A cart is moving west at <strong>3 m/s</strong>. The net force on it becomes <strong>zero</strong> and remains zero.</p><p>Describe its motion afterward.</p>",
+            "answer": "It continues west at 3 m/s in a straight line (constant velocity).",
+            "solution": "Zero net force means no change in velocity.",
+            "scoring_guidance": "State unchanged speed and direction."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC07-B",
+          "label": "Family B",
+          "name": "Match Force State to Motion State",
+          "family_purpose": "Translate between force and motion descriptions.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC07",
+          "exact_text": "I can explain why zero net force means an object remains at rest or moves with constant velocity in a straight line.",
+          "question_structure_id": "REPTRANS-MULTI-ENCODING",
+          "student_action": "Select all descriptions consistent with zero net force.",
+          "evidence_job": "Recognize the motion states compatible with zero net force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "include rest, constant straight-line velocity, and velocity-changing distractors"
+          ],
+          "variation_axes": [
+            "different motion descriptions"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Which of these can occur while net force is zero: (1) resting on a table, (2) moving north at constant velocity, (3) speeding up east, (4) moving in a circle at constant speed? Explain your choices.",
+            "student_html": "<p>Which situations can occur while the <strong>net force is zero</strong>?</p><ol><li>resting on a table</li><li>moving north at constant velocity</li><li>speeding up east</li><li>moving in a circle at constant speed</li></ol><p>Explain your choices.</p>",
+            "answer": "1 and 2 only. Speeding up changes velocity; circular motion changes direction, so both require nonzero net force.",
+            "solution": "Zero net force permits only unchanged velocity, including zero velocity.",
+            "scoring_guidance": "Choose 1 and 2 and explain why 3/4 involve velocity change."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG03-IC07-C",
+          "label": "Family C",
+          "name": "Zero Net Force Does Not Make an Object Stop",
+          "family_purpose": "Correct the stop-at-zero-net-force misconception.",
+          "unit": 1,
+          "section_id": "1.4",
+          "mastery_goal_id": "U1-MG03",
+          "mastery_goal_title": "Vectors, Net Force, and Equilibrium",
+          "i_can_id": "U1-MG03-IC07",
+          "exact_text": "I can explain why zero net force means an object remains at rest or moves with constant velocity in a straight line.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a student prediction.",
+          "evidence_job": "Explain persistence of motion under zero net force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "misconception equates zero net force with zero velocity"
+          ],
+          "variation_axes": [
+            "change moving object/context"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student predicts that when the net force on a moving cart becomes zero, the cart must immediately stop. Explain the mistake.",
+            "student_html": "<p>A student predicts:</p><blockquote>“When the net force on a moving cart becomes zero, the cart must immediately stop.”</blockquote><p>Explain the mistake using Newton’s First Law.</p>",
+            "answer": "Zero net force means velocity stays unchanged; if already moving, it continues at constant velocity rather than stopping immediately.",
+            "solution": "Stopping is itself a change in velocity and would require nonzero net force during the slowdown.",
+            "scoring_guidance": "Explain unchanged velocity and why stopping would be a change."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    }
+  ]
+}

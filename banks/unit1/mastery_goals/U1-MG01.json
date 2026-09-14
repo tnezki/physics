@@ -1,0 +1,683 @@
+{
+  "schema": "family-bank/1.1",
+  "bank_version": "physics-family-bank v1.0",
+  "course": "Conceptual Physics",
+  "unit": 1,
+  "mastery_goal": {
+    "id": "U1-MG01",
+    "title": "Scientific Evidence and Relationships",
+    "description": "Use observations, evidence, testability, and models/relationships to build and evaluate physics explanations."
+  },
+  "i_cans": [
+    {
+      "i_can_id": "U1-MG01-IC01",
+      "section_id": "1.1",
+      "exact_text": "I can distinguish an observation from an inference.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG01-IC01-A",
+          "label": "Family A",
+          "name": "Observation vs. Inference Classification",
+          "family_purpose": "Separate what was directly observed from what was concluded.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC01",
+          "exact_text": "I can distinguish an observation from an inference.",
+          "question_structure_id": "CONCEPT-CLASSIFY-01",
+          "student_action": "Classify paired statements and justify the distinction.",
+          "evidence_job": "Distinguish direct sensory/measurement evidence from interpretation.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "one statement is directly observable/measurable",
+            "one statement requires interpretation"
+          ],
+          "variation_axes": [
+            "change the directly measured quantity",
+            "change the plausible inference",
+            "use a short image/data description"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student watches a cart roll across the floor. The student writes: “The cart traveled 2.4 m in 3.0 s” and “The wheels must have very little friction.” Classify each statement as an observation or an inference, and explain why.",
+            "student_html": "<p>A student watches a cart roll across the floor. The student writes:</p><ol><li>“The cart traveled <strong>2.4 m in 3.0 s</strong>.”</li><li>“The wheels must have very little friction.”</li></ol><p>Classify each statement as an <strong>observation</strong> or an <strong>inference</strong>, and explain why.</p>",
+            "answer": "1 = observation; 2 = inference.",
+            "solution": "The first statement reports measured quantities. The second proposes an explanation that was not directly observed.",
+            "scoring_guidance": "Full credit requires both classifications and a distinction based on direct evidence versus interpretation."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC01-B",
+          "label": "Family B",
+          "name": "Write One of Each",
+          "family_purpose": "Produce an observation and an inference from the same evidence.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC01",
+          "exact_text": "I can distinguish an observation from an inference.",
+          "question_structure_id": "EVIDENCE-GENERATE-01",
+          "student_action": "Read a small data record, then write one observation and one inference.",
+          "evidence_job": "Show that the student can generate, not merely recognize, both categories.",
+          "response_mode": "constructed_response",
+          "representation_mode": "table",
+          "invariants": [
+            "data must support a clear direct statement and a plausible inference"
+          ],
+          "variation_axes": [
+            "change the measured variable/data pattern",
+            "ask for multiple observations before an inference"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A spring scale reading stays at 8 N for three trials. Write one observation supported directly by the record and one inference someone might reasonably make from it.",
+            "student_html": "<p>A spring scale gives the following readings:</p><table class=\"data\"><thead><tr><th>Trial</th><th>Reading</th></tr></thead><tbody><tr><td>1</td><td>8 N</td></tr><tr><td>2</td><td>8 N</td></tr><tr><td>3</td><td>8 N</td></tr></tbody></table><p>Write <strong>one observation</strong> supported directly by the record and <strong>one inference</strong> someone might reasonably make from it.</p>",
+            "answer": "Observation example: all three readings were 8 N. Inference example: the force was steady during the trials.",
+            "solution": "The observation repeats what the record directly shows; the inference interprets the pattern.",
+            "scoring_guidance": "Observation must be directly supported; inference must go beyond the raw record without contradicting it."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC01-C",
+          "label": "Family C",
+          "name": "Inference Disguised as Observation",
+          "family_purpose": "Diagnose the common error of labeling an explanation as an observation.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC01",
+          "exact_text": "I can distinguish an observation from an inference.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a student statement and rewrite it as a genuine observation.",
+          "evidence_job": "Recognize when a statement smuggles interpretation into claimed observation.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "the original statement must contain both observable evidence and an inferred cause"
+          ],
+          "variation_axes": [
+            "change the phenomenon and causal explanation",
+            "use measured versus inferred cause"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student says, “I observed that the block slowed down because friction was acting.” What part of that sentence is inference rather than observation? Rewrite the statement as an observation only.",
+            "student_html": "<p>A student says:</p><blockquote>“I observed that the block slowed down because friction was acting.”</blockquote><p>What part is an <strong>inference</strong> rather than an observation? Rewrite the statement as an observation only.</p>",
+            "answer": "“because friction was acting” is the inference. A clean observation could be “The block’s speed decreased as it moved.”",
+            "solution": "Slowing can be observed/measured; the cause is an interpretation unless independently measured.",
+            "scoring_guidance": "Identify the causal phrase as inference and provide a rewrite containing only observable/measurable information."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG01-IC02",
+      "section_id": "1.1",
+      "exact_text": "I can distinguish a hypothesis, scientific law, and scientific theory by what each does in science.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG01-IC02-A",
+          "label": "Family A",
+          "name": "Scientific Explanation Roles",
+          "family_purpose": "Distinguish hypothesis, law, and theory by function.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC02",
+          "exact_text": "I can distinguish a hypothesis, scientific law, and scientific theory by what each does in science.",
+          "question_structure_id": "VOCAB-MATCH-RELATION-01",
+          "student_action": "Match descriptions to hypothesis, law, or theory.",
+          "evidence_job": "Identify what each type of scientific statement does.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "roles remain scientifically distinct"
+          ],
+          "variation_axes": [
+            "change descriptions/examples while preserving roles",
+            "ask definition-to-term or term-to-function"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Which term best fits each description: a testable proposed explanation; a concise statement of a repeated pattern in nature; a broad explanation supported by extensive evidence?",
+            "student_html": "<p>Match each description to <strong>hypothesis</strong>, <strong>scientific law</strong>, or <strong>scientific theory</strong>.</p><ol><li>A testable proposed explanation</li><li>A concise statement of a repeated pattern in nature</li><li>A broad explanation supported by extensive evidence</li></ol>",
+            "answer": "1 hypothesis; 2 scientific law; 3 scientific theory.",
+            "solution": "The three terms differ by role, not by a simple “guess-to-law” ladder.",
+            "scoring_guidance": "All three matches correct."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC02-B",
+          "label": "Family B",
+          "name": "Classify Statements by Role",
+          "family_purpose": "Apply the terms to realistic scientific statements.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC02",
+          "exact_text": "I can distinguish a hypothesis, scientific law, and scientific theory by what each does in science.",
+          "question_structure_id": "CONCEPT-CLASSIFY-01",
+          "student_action": "Classify three short statements.",
+          "evidence_job": "Recognize the role a scientific statement is playing, not just recite definitions.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "each example must clearly foreground the relevant role"
+          ],
+          "variation_axes": [
+            "swap in other testable proposals/patterns/explanatory frameworks"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Classify each as hypothesis, law, or theory: (1) “If surface roughness increases, a sliding block will slow more quickly.” (2) “For a given interaction, a measured pattern is summarized in a compact relationship.” (3) “A broad evidence-based model explains many related observations.”",
+            "student_html": "<p>Classify each statement as a <strong>hypothesis</strong>, <strong>scientific law</strong>, or <strong>scientific theory</strong>:</p><ol><li>“If surface roughness increases, a sliding block will slow more quickly.”</li><li>“A repeated measured pattern is summarized in a compact relationship.”</li><li>“A broad evidence-based model explains many related observations.”</li></ol>",
+            "answer": "1 hypothesis; 2 law; 3 theory.",
+            "solution": "The first is a testable proposal, the second summarizes a regularity, and the third explains a broad body of evidence.",
+            "scoring_guidance": "Correctly classify each and justify at least one classification by function."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC02-C",
+          "label": "Family C",
+          "name": "Theory Does Not Become Law",
+          "family_purpose": "Target the misconception that theories “graduate” into laws.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC02",
+          "exact_text": "I can distinguish a hypothesis, scientific law, and scientific theory by what each does in science.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Evaluate a claim and correct it.",
+          "evidence_job": "Explain why law and theory have different scientific jobs.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "retain the misconception about hierarchy between law and theory"
+          ],
+          "variation_axes": [
+            "change misconception wording",
+            "compare “law is more certain than theory”"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A classmate says, “A theory becomes a law once enough evidence proves it.” Explain what is wrong with this statement and describe the different jobs of laws and theories.",
+            "student_html": "<p>A classmate says:</p><blockquote>“A theory becomes a law once enough evidence proves it.”</blockquote><p>Explain what is wrong with this statement and describe the different jobs of <strong>laws</strong> and <strong>theories</strong>.</p>",
+            "answer": "Laws summarize patterns/relationships; theories explain broad sets of observations. A theory does not become a law by accumulating evidence.",
+            "solution": "They are different kinds of scientific knowledge, not rungs on one ladder.",
+            "scoring_guidance": "Must reject the graduation idea and correctly distinguish the roles."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG01-IC03",
+      "section_id": "1.1",
+      "exact_text": "I can decide whether a claim is testable and use evidence to judge whether the claim is supported.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG01-IC03-A",
+          "label": "Family A",
+          "name": "Testable Claim + Evidence",
+          "family_purpose": "Judge whether evidence supports a testable claim.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC03",
+          "exact_text": "I can decide whether a claim is testable and use evidence to judge whether the claim is supported.",
+          "question_structure_id": "EVIDENCE-EVALUATE-01",
+          "student_action": "Identify what is testable and compare evidence to the prediction.",
+          "evidence_job": "Use a defined observation to evaluate a claim.",
+          "response_mode": "constructed_response",
+          "representation_mode": "table",
+          "invariants": [
+            "claim makes a measurable prediction",
+            "evidence directly bears on the claim"
+          ],
+          "variation_axes": [
+            "change measured variable/trend",
+            "include evidence that contradicts or is mixed"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Claim: “Increasing the pull on the same cart makes its motion change more during the same time interval.” Three trials use pulls of 2 N, 4 N, and 6 N, and the measured speed changes are 0.4, 0.8, and 1.2 m/s. Is the claim testable, and does this evidence support it?",
+            "student_html": "<p><strong>Claim:</strong> Increasing the pull on the same cart makes its motion change more during the same time interval.</p><table class=\"data\"><thead><tr><th>Pull</th><th>Change in speed</th></tr></thead><tbody><tr><td>2 N</td><td>0.4 m/s</td></tr><tr><td>4 N</td><td>0.8 m/s</td></tr><tr><td>6 N</td><td>1.2 m/s</td></tr></tbody></table><p>Is the claim <strong>testable</strong>? Does this evidence support it? Explain.</p>",
+            "answer": "Yes; it predicts a measurable relationship, and the data support the claim because larger pulls are paired with larger changes in speed.",
+            "solution": "A testable claim must connect to an observable measurement; the trend is consistent with the claim.",
+            "scoring_guidance": "State testability, verdict, and cite the relevant trend."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC03-B",
+          "label": "Family B",
+          "name": "Design a Test",
+          "family_purpose": "Turn a claim into a measurable test.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC03",
+          "exact_text": "I can decide whether a claim is testable and use evidence to judge whether the claim is supported.",
+          "question_structure_id": "EXPERIMENT-DESIGN-01",
+          "student_action": "Specify what to change, what to measure, and what result would matter.",
+          "evidence_job": "Identify a measurement that could confirm or challenge the claim.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "claim must be testable with accessible observations"
+          ],
+          "variation_axes": [
+            "change the claim",
+            "vary whether student chooses measurement or comparison"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Claim: “A heavier book has more inertia than a lighter book.” Describe a simple test that would collect evidence relevant to the claim. State what you would compare or measure.",
+            "student_html": "<p><strong>Claim:</strong> “A heavier book has more inertia than a lighter book.”</p><p>Describe a simple test that would collect evidence relevant to the claim. State what you would <strong>compare or measure</strong>. You do not need to carry out the test.</p>",
+            "answer": "Example: apply comparable pushes to books of different mass and compare how difficult it is to change their motion, while keeping the interaction as consistent as possible.",
+            "solution": "A useful test links the claim to observable evidence and identifies a comparison.",
+            "scoring_guidance": "Plan must identify a measurable/observable comparison relevant to inertia and avoid circular reasoning."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC03-C",
+          "label": "Family C",
+          "name": "Evidence That Does Not Test the Claim",
+          "family_purpose": "Recognize irrelevant evidence.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC03",
+          "exact_text": "I can decide whether a claim is testable and use evidence to judge whether the claim is supported.",
+          "question_structure_id": "EVIDENCE-RELEVANCE-01",
+          "student_action": "Evaluate two evidence sets and explain which actually tests the claim.",
+          "evidence_job": "Distinguish evidence that bears on the claim from evidence that merely sounds scientific.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "one evidence set must directly test the claim and one must not"
+          ],
+          "variation_axes": [
+            "swap in relevant/irrelevant measurements",
+            "ask what additional evidence is needed"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Claim: “The support force on a resting book points upward.” Student A measures the book’s mass. Student B uses a force sensor between the book and table to determine the direction of the contact force. Whose evidence is more directly relevant to the claim, and why?",
+            "student_html": "<p><strong>Claim:</strong> “The support force on a resting book points upward.”</p><ul><li>Student A measures the book’s mass.</li><li>Student B uses a force sensor/contact setup to determine the direction of the table’s force on the book.</li></ul><p>Whose evidence is more directly relevant to the claim, and why?</p>",
+            "answer": "Student B, because the evidence addresses the direction of the contact/support force itself.",
+            "solution": "Mass alone does not establish the direction of the support force.",
+            "scoring_guidance": "Choose B and explain relevance to the actual claim."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG01-IC04",
+      "section_id": "1.1",
+      "exact_text": "I can explain what a formula or model says about the relationship between physical quantities.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG01-IC04-A",
+          "label": "Family A",
+          "name": "Read a Relationship",
+          "family_purpose": "Interpret a formula/model in words.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC04",
+          "exact_text": "I can explain what a formula or model says about the relationship between physical quantities.",
+          "question_structure_id": "FORMULA-INTERPRET-01",
+          "student_action": "Translate a simple net-force relationship into words.",
+          "evidence_job": "Explain what a relationship says about physical quantities without merely calculating.",
+          "response_mode": "constructed_response",
+          "representation_mode": "equation",
+          "invariants": [
+            "student must interpret the relationship physically"
+          ],
+          "variation_axes": [
+            "change force values only as support, not the core task",
+            "ask effect of increasing one term"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "For horizontal forces in opposite directions, a model is F_net = F_right − F_left. What does this relationship say about how the two forces determine the net force?",
+            "student_html": "<p>For horizontal forces in opposite directions, consider the model:</p><p class=\"eq\">\\(F_{net}=F_{right}-F_{left}\\)</p><p>Explain in words what this relationship says about how the two forces determine the net force.</p>",
+            "answer": "The net horizontal force depends on the difference between the opposing forces; equal forces give zero net force, and the larger side sets the net direction.",
+            "solution": "Interpret subtraction as opposition, not as a plug-in instruction only.",
+            "scoring_guidance": "Explain both difference and the physical meaning of equality/larger side."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC04-B",
+          "label": "Family B",
+          "name": "Predict a Change from the Model",
+          "family_purpose": "Use a relationship to make a qualitative prediction.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC04",
+          "exact_text": "I can explain what a formula or model says about the relationship between physical quantities.",
+          "question_structure_id": "COMPARE-RANK-01",
+          "student_action": "Predict the effect of changing one force while another stays fixed.",
+          "evidence_job": "Reason about how changing one quantity changes the represented result.",
+          "response_mode": "constructed_response",
+          "representation_mode": "equation",
+          "invariants": [
+            "one term changes while the other is controlled"
+          ],
+          "variation_axes": [
+            "change which term varies",
+            "use equality-to-imbalance or imbalance-to-equality"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart has opposing horizontal forces. F_left stays 5 N while F_right increases from 5 N to 9 N. Without treating the formula as a plug-in exercise, describe how the net force changes and what feature of the relationship tells you that.",
+            "student_html": "<p>A cart has opposing horizontal forces described by \\(F_{net}=F_{right}-F_{left}\\).</p><p>\\(F_{left}\\) stays at <strong>5 N</strong> while \\(F_{right}\\) increases from <strong>5 N to 9 N</strong>.</p><p>Describe how the <strong>net force</strong> changes and what feature of the relationship tells you that.</p>",
+            "answer": "It changes from zero to 4 N right because increasing the rightward term makes the difference positive/rightward.",
+            "solution": "The change follows from the difference between opposing contributions.",
+            "scoring_guidance": "Correct qualitative/quantitative change plus explanation tied to the relationship."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG01-IC04-C",
+          "label": "Family C",
+          "name": "Formula as Thinking Tool",
+          "family_purpose": "Diagnose plug-in-only reasoning.",
+          "unit": 1,
+          "section_id": "1.1",
+          "mastery_goal_id": "U1-MG01",
+          "mastery_goal_title": "Scientific Evidence and Relationships",
+          "i_can_id": "U1-MG01-IC04",
+          "exact_text": "I can explain what a formula or model says about the relationship between physical quantities.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a student who says a formula has no meaning until numbers are inserted.",
+          "evidence_job": "Explain what information a formula communicates beyond an answer.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "response must interpret structure without requiring calculation"
+          ],
+          "variation_axes": [
+            "change the relationship/model",
+            "ask for prediction or limiting case"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student says, “The equation F_net = F_right − F_left tells me nothing until I have numbers to plug in.” Explain two things the equation already tells you before any numbers are used.",
+            "student_html": "<p>A student says:</p><blockquote>“The equation \\(F_{net}=F_{right}-F_{left}\\) tells me nothing until I have numbers to plug in.”</blockquote><p>Explain <strong>two things</strong> the relationship already tells you before any numbers are used.</p>",
+            "answer": "Examples: the forces oppose each other; the net depends on their difference; equal opposing forces give zero net force; the larger force determines the net direction.",
+            "solution": "The symbolic model encodes structure and physical relationships before numerical substitution.",
+            "scoring_guidance": "Give two correct physical interpretations of the relationship."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    }
+  ]
+}

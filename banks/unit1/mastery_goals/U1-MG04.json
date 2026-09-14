@@ -1,0 +1,679 @@
+{
+  "schema": "family-bank/1.1",
+  "bank_version": "physics-family-bank v1.0",
+  "course": "Conceptual Physics",
+  "unit": 1,
+  "mastery_goal": {
+    "id": "U1-MG04",
+    "title": "Force Models in Real Situations",
+    "description": "Create, use, critique, and defend force models for real-world systems."
+  },
+  "i_cans": [
+    {
+      "i_can_id": "U1-MG04-IC01",
+      "section_id": "1.5",
+      "exact_text": "I can draw a force diagram that includes only the forces acting on the chosen object.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG04-IC01-A",
+          "label": "Family A",
+          "name": "Construct a Force Diagram",
+          "family_purpose": "Build a force model for one chosen object.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC01",
+          "exact_text": "I can draw a force diagram that includes only the forces acting on the chosen object.",
+          "question_structure_id": "MODEL-CONSTRUCT-01",
+          "student_action": "Draw a force diagram from a physical situation.",
+          "evidence_job": "Include only forces acting on the object with correct directions.",
+          "response_mode": "constructed_response",
+          "representation_mode": "blank_draw_surface",
+          "invariants": [
+            "chosen object explicit",
+            "all required forces are in Unit scope"
+          ],
+          "variation_axes": [
+            "hanging/supported/pushed situations"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A book rests on a horizontal table. Draw a force diagram for the book only. Label every force acting on the book.",
+            "student_html": "<p>A book rests on a horizontal table.</p><p>Draw a <strong>force diagram for the book only</strong>. Label every force acting on the book.</p><div class=\"drawbox\" aria-label=\"blank drawing area\"></div>",
+            "answer": "Weight downward and support force upward, equal in magnitude for equilibrium.",
+            "solution": "The force model includes forces acting on the book, not forces the book exerts on the table.",
+            "scoring_guidance": "Must include weight down and support up; no extra motion/inertia/book-on-table force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC01-B",
+          "label": "Family B",
+          "name": "From Situation to Force List",
+          "family_purpose": "Plan the model before drawing.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC01",
+          "exact_text": "I can draw a force diagram that includes only the forces acting on the chosen object.",
+          "question_structure_id": "MODEL-IDENTIFY-FORCES-01",
+          "student_action": "List forces and directions in a more complex but still Unit-1 situation.",
+          "evidence_job": "Identify the complete valid force set for a chosen object.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "chosen object remains explicit"
+          ],
+          "variation_axes": [
+            "change applied force direction",
+            "use hanging object"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A person pushes a box to the right while it remains on the floor. For the box only, list the forces from gravity, the floor, and the person, and state each direction.",
+            "student_html": "<p>A person pushes a box to the right while it remains on the floor.</p><p>For the <strong>box only</strong>, list the forces from:</p><ul><li>gravity</li><li>the floor</li><li>the person</li></ul><p>State each direction.</p>",
+            "answer": "Weight down; floor support up; applied push right.",
+            "solution": "The list identifies interactions acting on the chosen object.",
+            "scoring_guidance": "All requested forces and directions, no forces exerted by the box on others."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC01-C",
+          "label": "Family C",
+          "name": "Remove Forces That Do Not Belong",
+          "family_purpose": "Critique a force diagram with extra wrong-object or motion forces.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC01",
+          "exact_text": "I can draw a force diagram that includes only the forces acting on the chosen object.",
+          "question_structure_id": "MODEL-CRITIQUE-01",
+          "student_action": "Identify and remove invalid forces.",
+          "evidence_job": "Use object focus to edit the model.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "at least one nonexistent force and one wrong-object force"
+          ],
+          "variation_axes": [
+            "different extra-force misconceptions"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "For a box moving right on a floor, a student draws weight down, support up, “force of motion” right, and “box pushes floor” down. Which arrows do not belong on a force diagram for the box, and why?",
+            "student_html": "<p>For a box moving right on a floor, a student draws these arrows:</p><ul><li>weight down</li><li>support up</li><li>“force of motion” right</li><li>“box pushes floor” down</li></ul><p>Which arrows do <strong>not</strong> belong on the force diagram for the box, and why?</p>",
+            "answer": "“Force of motion” is not a force; “box pushes floor” acts on the floor, not the box. Weight and support belong.",
+            "solution": "A force model includes real interactions acting on the selected object.",
+            "scoring_guidance": "Identify both invalid arrows and give the correct reason for each."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG04-IC02",
+      "section_id": "1.5",
+      "exact_text": "I can use a force diagram to decide whether the forces are balanced or unbalanced.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG04-IC02-A",
+          "label": "Family A",
+          "name": "Balanced or Unbalanced from Diagram",
+          "family_purpose": "Use a force diagram to classify balance.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC02",
+          "exact_text": "I can use a force diagram to decide whether the forces are balanced or unbalanced.",
+          "question_structure_id": "MODEL-INTERPRET-01",
+          "student_action": "Inspect a supplied diagram and classify.",
+          "evidence_job": "Determine whether vector sums cancel.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "diagram contains enough information to decide balance"
+          ],
+          "variation_axes": [
+            "balanced or unbalanced horizontal values",
+            "vertical imbalance instead"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "The vertical forces on a box cancel. Horizontally, 55 N acts right and 35 N acts left. Are the forces on the box balanced or unbalanced? Explain.",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Horizontal forces; vertical forces are balanced\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"77\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"77,62 87,55 87,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"293\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"293,62 283,55 283,69\" fill=\"#1f3864\"/><text x=\"85\" y=\"30\" font-size=\"14\">35 N</text><text x=\"215\" y=\"30\" font-size=\"14\">55 N</text></svg><div class=\"cap\">Horizontal forces; vertical forces are balanced</div></div><p>Are the <strong>overall forces</strong> balanced or unbalanced? Explain.</p>",
+            "answer": "Unbalanced; horizontal net force is 20 N right even though vertical forces cancel.",
+            "solution": "Overall balance requires net force zero in all directions.",
+            "scoring_guidance": "Classify unbalanced and identify nonzero horizontal net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC02-B",
+          "label": "Family B",
+          "name": "Compare Two Force Models",
+          "family_purpose": "Decide which model is in equilibrium.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC02",
+          "exact_text": "I can use a force diagram to decide whether the forces are balanced or unbalanced.",
+          "question_structure_id": "COMPARE-RANK-01",
+          "student_action": "Choose the balanced diagram and justify.",
+          "evidence_job": "Compare force diagrams using net force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "one model balances and one does not"
+          ],
+          "variation_axes": [
+            "change values/directions",
+            "include vertical models"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Model A has 40 N left and 40 N right. Model B has 25 N left and 40 N right. Which model is balanced?",
+            "student_html": "<div class=\"two\"><div><strong>Model A</strong><div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Model A\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"70\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"70,62 80,55 80,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"270\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"270,62 260,55 260,69\" fill=\"#1f3864\"/><text x=\"85\" y=\"30\" font-size=\"14\">40 N</text><text x=\"215\" y=\"30\" font-size=\"14\">40 N</text></svg><div class=\"cap\">Model A</div></div></div><div><strong>Model B</strong><div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Model B\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"90\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"90,62 100,55 100,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"280\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"280,62 270,55 270,69\" fill=\"#1f3864\"/><text x=\"85\" y=\"30\" font-size=\"14\">25 N</text><text x=\"215\" y=\"30\" font-size=\"14\">40 N</text></svg><div class=\"cap\">Model B</div></div></div></div><p>Which model is <strong>balanced</strong>? Explain using net force.</p>",
+            "answer": "Model A; net force is zero. Model B has 15 N net right.",
+            "solution": "Balanced means the vector sum is zero.",
+            "scoring_guidance": "Choose A and correctly describe both nets."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC02-C",
+          "label": "Family C",
+          "name": "Balance Error from Ignoring One Direction",
+          "family_purpose": "Diagnose an incomplete balance judgment.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC02",
+          "exact_text": "I can use a force diagram to decide whether the forces are balanced or unbalanced.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a student who notices vertical balance but ignores horizontal imbalance.",
+          "evidence_job": "Check all force directions, not just one pair.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "one axis balanced and one not"
+          ],
+          "variation_axes": [
+            "swap axes",
+            "different unequal pair"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student says a box is balanced because support equals weight. The same diagram also shows 18 N right and 6 N left. Is the student correct? Explain.",
+            "student_html": "<p>A student says a box is balanced because <strong>support equals weight</strong>. The same force model also shows <strong>18 N right</strong> and <strong>6 N left</strong>.</p><p>Is the student correct? Explain.</p>",
+            "answer": "No. Vertical forces balance, but the horizontal net force is 12 N right, so the overall forces are unbalanced.",
+            "solution": "Zero net force is required in every direction.",
+            "scoring_guidance": "Reject claim and identify horizontal imbalance."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG04-IC03",
+      "section_id": "1.5",
+      "exact_text": "I can use net force to predict whether an object’s velocity will stay the same or change.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG04-IC03-A",
+          "label": "Family A",
+          "name": "Predict Same or Changing Velocity",
+          "family_purpose": "Use net force to predict whether velocity changes.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC03",
+          "exact_text": "I can use net force to predict whether an object’s velocity will stay the same or change.",
+          "question_structure_id": "CONCEPT-PREDICT-01",
+          "student_action": "Classify motion consequence from force model.",
+          "evidence_job": "Connect zero/nonzero net force to motion change.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "net force information sufficient"
+          ],
+          "variation_axes": [
+            "zero vs nonzero net",
+            "initial motion may vary"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart has 50 N right and 50 N left, with vertical forces balanced. Will its velocity stay the same or change?",
+            "student_html": "<div class=\"rep\"><svg viewBox=\"0 0 340 105\" role=\"img\" aria-label=\"Balanced horizontal forces\"><rect x=\"145\" y=\"42\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"145\" y1=\"62\" x2=\"65\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"65,62 75,55 75,69\" fill=\"#1f3864\"/><line x1=\"195\" y1=\"62\" x2=\"275\" y2=\"62\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"275,62 265,55 265,69\" fill=\"#1f3864\"/><text x=\"72\" y=\"30\" font-size=\"14\">50 N</text><text x=\"215\" y=\"30\" font-size=\"14\">50 N</text></svg><div class=\"cap\">Balanced horizontal forces</div></div><p>Will the cart’s <strong>velocity stay the same or change</strong>? Explain.</p>",
+            "answer": "Stay the same; net force is zero.",
+            "solution": "Zero net force means unchanged velocity (which could be rest or constant straight-line motion).",
+            "scoring_guidance": "State unchanged velocity and connect to zero net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC03-B",
+          "label": "Family B",
+          "name": "Direction of Net Force vs. Motion",
+          "family_purpose": "Separate direction of velocity from direction of its change.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC03",
+          "exact_text": "I can use net force to predict whether an object’s velocity will stay the same or change.",
+          "question_structure_id": "CONCEPT-EXPLAIN-01",
+          "student_action": "Reason about a cart moving one way while net force points another way.",
+          "evidence_job": "Avoid inferring current motion direction from net-force direction.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "current velocity and net force directions are deliberately different"
+          ],
+          "variation_axes": [
+            "moving left with rightward net",
+            "rest with nonzero net"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart is moving to the right, but the net force on it points left. Must the cart instantly move left? Explain what the leftward net force tells you about the cart’s velocity.",
+            "student_html": "<p>A cart is moving to the <strong>right</strong>, but the net force on it points <strong>left</strong>.</p><p>Must the cart instantly move left? Explain what the leftward net force tells you about how its <strong>velocity changes</strong>.</p>",
+            "answer": "No. The cart may still be moving right while slowing; the leftward net force means velocity changes toward the left.",
+            "solution": "Net force controls change in velocity, not necessarily current velocity direction.",
+            "scoring_guidance": "Reject instant reversal and explain leftward velocity change."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC03-C",
+          "label": "Family C",
+          "name": "Motion-Arrow Misconception in a Force Model",
+          "family_purpose": "Critique a model that adds a force solely because the object is moving.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC03",
+          "exact_text": "I can use net force to predict whether an object’s velocity will stay the same or change.",
+          "question_structure_id": "MODEL-CRITIQUE-01",
+          "student_action": "Diagnose a “force in direction of motion” arrow.",
+          "evidence_job": "Use net force rather than motion direction to predict change.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "misconception adds force based only on motion direction"
+          ],
+          "variation_axes": [
+            "different constant-velocity objects"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A box moves right at constant velocity. A student adds a rightward “motion force” arrow to its force diagram because it is moving right. Explain why this arrow is wrong and what constant velocity implies about net force.",
+            "student_html": "<p>A box moves right at <strong>constant velocity</strong>. A student adds a rightward “motion force” arrow because the box is moving right.</p><p>Explain why this arrow is wrong and what the constant velocity tells you about the <strong>net force</strong>.</p>",
+            "answer": "Motion is not itself a force. Constant velocity implies net force is zero.",
+            "solution": "A force diagram represents interactions, while motion is a state of the object.",
+            "scoring_guidance": "Reject motion force and state zero net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG04-IC04",
+      "section_id": "1.5",
+      "exact_text": "I can critique and revise an incorrect force model or force explanation using evidence and physics vocabulary.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG04-IC04-A",
+          "label": "Family A",
+          "name": "Repair a Flawed Force Diagram",
+          "family_purpose": "Critique and revise a specific incorrect model.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC04",
+          "exact_text": "I can critique and revise an incorrect force model or force explanation using evidence and physics vocabulary.",
+          "question_structure_id": "MODEL-CRITIQUE-01",
+          "student_action": "Repair a resting-book force model.",
+          "evidence_job": "Identify a missing/extra force and explain the correction.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "flawed model has one clear repair tied to evidence"
+          ],
+          "variation_axes": [
+            "missing support/weight/applied force",
+            "extra wrong-object force"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A force diagram for a book resting on a table shows only one downward arrow labeled weight. What is missing? Describe the corrected model and explain why it fits the motion.",
+            "student_html": "<p>A force diagram for a book resting on a table shows only one downward arrow labeled <strong>weight</strong>.</p><p>What is missing? Describe the corrected model and explain why it fits the book’s motion.</p>",
+            "answer": "Add an upward support force equal in magnitude to the weight. The forces then balance, consistent with the book remaining at rest.",
+            "solution": "A supported resting object has a support interaction in addition to gravity.",
+            "scoring_guidance": "Add support up, indicate balance, and link to rest/zero net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC04-B",
+          "label": "Family B",
+          "name": "Choose and Defend the Better Model",
+          "family_purpose": "Compare competing force models.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC04",
+          "exact_text": "I can critique and revise an incorrect force model or force explanation using evidence and physics vocabulary.",
+          "question_structure_id": "MODEL-COMPARE-01",
+          "student_action": "Choose between two described models and justify.",
+          "evidence_job": "Evaluate which model is consistent with both interactions and motion evidence.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "one model consistent with all evidence, one violates it"
+          ],
+          "variation_axes": [
+            "different competing errors",
+            "diagram or text model choices"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A cart moves at constant velocity while two students pull in opposite directions with equal forces. Model A shows equal opposite arrows. Model B shows one larger arrow in the direction of motion. Which model better fits the evidence, and why?",
+            "student_html": "<p>A cart moves at <strong>constant velocity</strong> while two students pull in opposite directions with equal forces.</p><ul><li><strong>Model A:</strong> equal opposite force arrows</li><li><strong>Model B:</strong> one larger arrow in the direction of motion</li></ul><p>Which model better fits the evidence, and why?</p>",
+            "answer": "Model A. Constant velocity is consistent with zero net force, and the described pulls are equal/opposite.",
+            "solution": "The chosen model must fit both the interaction evidence and the motion evidence.",
+            "scoring_guidance": "Choose A and cite both balanced pulls and constant velocity."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG04-IC04-C",
+          "label": "Family C",
+          "name": "Revise an Incorrect Explanation",
+          "family_purpose": "Repair reasoning, not just the picture.",
+          "unit": 1,
+          "section_id": "1.5",
+          "mastery_goal_id": "U1-MG04",
+          "mastery_goal_title": "Force Models in Real Situations",
+          "i_can_id": "U1-MG04-IC04",
+          "exact_text": "I can critique and revise an incorrect force model or force explanation using evidence and physics vocabulary.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Rewrite a mistaken force explanation.",
+          "evidence_job": "Use physics vocabulary and evidence to correct a flawed claim.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "revision must use evidence/motion state to justify force balance"
+          ],
+          "variation_axes": [
+            "different flawed explanations",
+            "require force diagram reference"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student writes, “The box is moving at constant speed to the right, so the rightward force must be larger than the leftward force.” Rewrite this explanation so it is correct for straight-line constant-velocity motion.",
+            "student_html": "<p>A student writes:</p><blockquote>“The box is moving at constant speed to the right, so the rightward force must be larger than the leftward force.”</blockquote><p>Rewrite the explanation so it is correct for <strong>straight-line constant-velocity motion</strong>. Use the terms <strong>net force</strong> and <strong>balanced</strong>.</p>",
+            "answer": "For straight-line constant velocity, the net force is zero, so the forces are balanced; motion to the right does not require a larger rightward force.",
+            "solution": "The revision must connect unchanged velocity to zero net force.",
+            "scoring_guidance": "Correct explanation using required vocabulary and rejecting motion-requires-force logic."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    }
+  ]
+}

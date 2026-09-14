@@ -1,99 +1,40 @@
 {
-  "schema": "bank-v2-manifest/1.0",
-  "course": "Physics",
+  "schema": "family-bank/1.1",
+  "bank_version": "physics-family-bank v1.0",
+  "course": "Conceptual Physics",
   "unit": 1,
+  "architecture": "mastery_goal_i_can_question_family",
   "status": "COMPLETE",
   "ready_for_downstream": true,
-  "completed": [
-    "3A_instructional_core",
-    "3B_practice_families",
-    "3C_assessment_families"
-  ],
-  "pending": [],
-  "next_phase": null,
-  "profile": {
-    "name": "Conceptual Physics Bank v2 Course Profile",
-    "schema": "course-bank-v2-profile/1.0",
-    "profile_version": "v1.2",
-    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
-    "repository": "tnezki/memories",
-    "pinned_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
-  },
-  "accepted_bank_map": {
-    "path": "banks/unit1_bank_map/MAP_MANIFEST.json",
-    "map_fingerprint": "bda7384c3f60c0b876469bfe3c7c0a15d508bbfeb6ce8d98f9cc1c5bddc01451",
-    "status": "PASS",
-    "question_design_map_sha256": "7f097e566b6043254e5125e8ce5f7d061cf800cb787d3f6778c5ff077da76f60"
-  },
-  "pinned_run": {
-    "system_repo": "tnezki/memories",
-    "system_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8",
-    "course_repo": "tnezki/physics",
-    "course_commit": "ea800dba3060ce8257eda8c80e9b5bfbed0c5d75"
-  },
-  "record_counts": {
-    "stage_3a_total": 135,
-    "wtc": 5,
-    "notes_example": 20,
-    "notes_yti": 20,
-    "cyu": 30,
-    "warmups": 60,
-    "practice_families": 150,
-    "current_bank_total": 365,
-    "stage_3b_total": 150,
-    "exit_families": 40,
-    "summative_families": 40,
-    "stage_3c_total": 80,
-    "final_bank_total": 365
-  },
-  "paths": {
-    "item_index": "ITEM_INDEX.json",
-    "notes": "notes/section_<section-id>.json",
-    "cyu": "cyu/section_<section-id>.json",
-    "warmups": "warmups/section_<section-id>.json",
-    "provenance_build": "provenance/3a_build.json",
-    "provenance_report": "provenance/3a_report.txt",
-    "practice": "practice/section_<section-id>.json",
-    "provenance_3b_build": "provenance/3b_build.json",
-    "provenance_3b_contract_qa": "provenance/3b_contract_qa.json",
-    "provenance_3b_report": "provenance/3b_report.txt",
-    "exit": "exit/section_<section-id>.json",
-    "summative_A": "summative/blueprint_A.json",
-    "summative_B": "summative/blueprint_B.json",
-    "teacher_bank_html": "unit1.html",
-    "provenance_3c_build": "provenance/3c_build.json",
-    "provenance_3c_qa": "provenance/3c_qa.json",
-    "provenance_3c_report": "provenance/3c_report.txt"
-  },
-  "figure_delivery": "Canonical mapped course assets are referenced in place by exact repository path + pinned asset commit; no duplicate binary copies are included in this 3A snapshot.",
+  "qa": "PASS",
   "qa_status": "PASS",
-  "stage_3b_pinned_run": {
-    "system_repo": "tnezki/memories",
-    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
-    "course_repo": "tnezki/physics",
-    "course_commit": "38ccf4b001ed26fdbf56b301815d86b73eab2e97"
+  "mastery_goal_count": 4,
+  "i_can_count": 19,
+  "families_per_i_can": 3,
+  "family_count": 57,
+  "exemplar_count": 57,
+  "viewer": "unit1.html",
+  "student_viewer": "student.html",
+  "family_index": "FAMILY_INDEX.json",
+  "mastery_goal_root": "mastery_goals",
+  "fragment_anchors": "canonical MG ID / I Can ID / family_id",
+  "source_policy": "CLOSED_PROJECT_SOURCES_ONLY",
+  "public_web_research_used": false,
+  "file_library_recovery_used": false,
+  "authority": {
+    "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+    "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+    "course_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+    "unit_bank_amendment": "frameworks/Physics/UNIT1_FAMILY_BANK_AMENDMENT.txt",
+    "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md"
   },
-  "continuation_profile": {
-    "profile_version": "v1.3",
-    "path": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/bank_v2_course_profile.json",
-    "repository": "tnezki/memories",
-    "pinned_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b"
+  "pinned_sources": {
+    "memories_commit": "f2f2ad42dfa0805e75c3d544a382b29191d1bf8b",
+    "physics_commit": "24e106c0b96b000e2f24ed99394631b7838d3264"
   },
-  "stage_3c_pinned_run": {
-    "system_repo": "tnezki/memories",
-    "system_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b",
-    "course_repo": "tnezki/physics",
-    "course_commit": "4f66eca8afba3842d8886a0afae5f14a80697048"
+  "legacy_bank": {
+    "status": "SUPERSEDED_NOT_AUTHORITY",
+    "note": "Legacy destination-driven files under notes/, practice/, warmups/, cyu/, exit/, summative/, provenance/, and ITEM_INDEX.json are not canonical inputs after this manifest is current. Downstream jobs must use this manifest, FAMILY_INDEX.json, and mastery_goals/*.json only."
   },
-  "stage_3c_profiles": {
-    "accepted_map_profile": {
-      "profile_version": "v1.2",
-      "pinned_commit": "84e34ee822efdc3477ce69fc480f7ab1539af4e8"
-    },
-    "current_profile": {
-      "profile_version": "v1.3",
-      "pinned_commit": "7887cef4e02c8fe6ce8c53cffda0e3eac8a53b2b"
-    },
-    "compatibility": "PASS — v1.3 explicitly leaves Practice/Exit/Summative contracts unchanged and accepted map identity is unchanged."
-  }
+  "human_display_rule": "Whenever an I Can is shown to a teacher or student, show the canonical code and the full exact statement together. Never show code-only ranges as the human learning label."
 }

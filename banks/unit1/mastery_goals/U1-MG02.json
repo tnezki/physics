@@ -1,0 +1,681 @@
+{
+  "schema": "family-bank/1.1",
+  "bank_version": "physics-family-bank v1.0",
+  "course": "Conceptual Physics",
+  "unit": 1,
+  "mastery_goal": {
+    "id": "U1-MG02",
+    "title": "Newton’s First Law and Forces",
+    "description": "Explain Newton’s First Law and inertia and identify the forces needed to reason about simple motion situations."
+  },
+  "i_cans": [
+    {
+      "i_can_id": "U1-MG02-IC01",
+      "section_id": "1.2",
+      "exact_text": "I can explain Newton’s First Law in everyday language.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG02-IC01-A",
+          "label": "Family A",
+          "name": "First-Law Motion Prediction",
+          "family_purpose": "Apply Newton’s First Law to a simple situation.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC01",
+          "exact_text": "I can explain Newton’s First Law in everyday language.",
+          "question_structure_id": "CONCEPT-PREDICT-01",
+          "student_action": "Explain what happens to motion when no net force acts.",
+          "evidence_job": "Predict unchanged motion when net force is zero.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "net force is explicitly zero"
+          ],
+          "variation_axes": [
+            "object initially at rest or moving",
+            "different directions"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A puck is already sliding to the right on a nearly frictionless surface. The horizontal net force becomes zero. According to Newton’s First Law, what happens to the puck’s motion?",
+            "student_html": "<p>A puck is already sliding to the right on a nearly frictionless surface. The <strong>horizontal net force becomes zero</strong>.</p><p>According to Newton’s First Law, what happens to the puck’s motion? Explain in everyday language.</p>",
+            "answer": "It continues moving to the right at constant velocity; zero net force means its velocity does not change.",
+            "solution": "Newton’s First Law connects zero net force to unchanged velocity.",
+            "scoring_guidance": "State continued constant-velocity motion and connect it to zero net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC01-B",
+          "label": "Family B",
+          "name": "Rest and Motion, Same Law",
+          "family_purpose": "Recognize that rest and constant straight-line motion are both first-law states.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC01",
+          "exact_text": "I can explain Newton’s First Law in everyday language.",
+          "question_structure_id": "COMPARE-EXPLAIN-01",
+          "student_action": "Explain why both can satisfy Newton’s First Law.",
+          "evidence_job": "Compare two scenarios under zero net force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "both valid first-law cases share zero net force"
+          ],
+          "variation_axes": [
+            "compare other constant velocities",
+            "include an accelerating contrast case"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Object A is at rest with zero net force. Object B moves east at constant velocity with zero net force. Explain why both situations are consistent with Newton’s First Law.",
+            "student_html": "<p><strong>Object A:</strong> at rest, zero net force.</p><p><strong>Object B:</strong> moving east at constant velocity, zero net force.</p><p>Explain why <strong>both</strong> situations are consistent with Newton’s First Law.</p>",
+            "answer": "In both cases velocity is unchanged. Rest is constant zero velocity; object B has constant nonzero velocity.",
+            "solution": "The law is about change in velocity, not about whether an object is moving.",
+            "scoring_guidance": "Identify unchanged velocity in both cases."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC01-C",
+          "label": "Family C",
+          "name": "Motion-Requires-Force Misconception",
+          "family_purpose": "Correct the idea that continued motion requires a forward net force.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC01",
+          "exact_text": "I can explain Newton’s First Law in everyday language.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Critique a claim and replace it with a correct explanation.",
+          "evidence_job": "Diagnose a classic misconception using Newton’s First Law.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "misconception must conflate motion direction with net-force requirement"
+          ],
+          "variation_axes": [
+            "change direction/object",
+            "contrast constant velocity with changing velocity"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student says, “If a cart is moving right, there must be a net force to the right keeping it moving.” Explain why this is not always true and state what a rightward net force would actually tell you.",
+            "student_html": "<p>A student says:</p><blockquote>“If a cart is moving right, there must be a net force to the right keeping it moving.”</blockquote><p>Explain why this is not always true. What would a <strong>rightward net force</strong> actually tell you?</p>",
+            "answer": "A cart can move right at constant velocity with zero net force. A rightward net force means the velocity is changing in the rightward direction, not merely that the cart is moving right.",
+            "solution": "Force is tied to change in motion, not to motion itself.",
+            "scoring_guidance": "Reject motion-requires-force and correctly interpret nonzero net force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG02-IC02",
+      "section_id": "1.2",
+      "exact_text": "I can explain that inertia is a property of matter, not a force.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG02-IC02-A",
+          "label": "Family A",
+          "name": "Inertia Is a Property",
+          "family_purpose": "Identify inertia as a property rather than a force.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC02",
+          "exact_text": "I can explain that inertia is a property of matter, not a force.",
+          "question_structure_id": "CONCEPT-EXPLAIN-01",
+          "student_action": "Respond to a situation without inventing an “inertia force.”",
+          "evidence_job": "Explain what inertia describes.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "inertia explains resistance to motion change without becoming an extra force"
+          ],
+          "variation_axes": [
+            "starting/stopping/turning situations",
+            "different objects"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "When a bus suddenly starts moving forward, a standing passenger tends to lag backward relative to the bus. Explain this using inertia without calling inertia a force.",
+            "student_html": "<p>When a bus suddenly starts moving forward, a standing passenger tends to lag backward relative to the bus.</p><p>Explain this using <strong>inertia</strong> without calling inertia a force.</p>",
+            "answer": "The passenger’s body tends to maintain its previous state of motion; inertia is that resistance to a change in motion, not a backward force.",
+            "solution": "The bus changes motion before the passenger’s body fully does.",
+            "scoring_guidance": "Describe inertia as a property/tendency and explicitly avoid treating it as a force."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC02-B",
+          "label": "Family B",
+          "name": "Compare Inertia",
+          "family_purpose": "Use a comparison to reason about resistance to change.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC02",
+          "exact_text": "I can explain that inertia is a property of matter, not a force.",
+          "question_structure_id": "COMPARE-RANK-01",
+          "student_action": "Compare two objects under similar attempts to change motion.",
+          "evidence_job": "Relate amount of matter/mass to inertia qualitatively without treating inertia as a push.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "comparison is about resistance to motion change"
+          ],
+          "variation_axes": [
+            "vary masses qualitatively",
+            "rank three objects"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Two carts have different masses. One is loaded with books and one is empty. If you try to make the same change in motion, which cart has more inertia? Explain what “more inertia” means.",
+            "student_html": "<p>Two carts are identical except one is loaded with books and one is empty.</p><p>If you try to make the same change in motion, which cart has <strong>more inertia</strong>? Explain what “more inertia” means.</p>",
+            "answer": "The loaded cart has more inertia; its motion is harder to change. Inertia is not an extra force.",
+            "solution": "More matter/mass corresponds to more resistance to a change in motion.",
+            "scoring_guidance": "Choose loaded cart and explain resistance-to-change meaning."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC02-C",
+          "label": "Family C",
+          "name": "Delete the Fake Inertia Force",
+          "family_purpose": "Repair a force explanation that includes a nonexistent inertia force.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC02",
+          "exact_text": "I can explain that inertia is a property of matter, not a force.",
+          "question_structure_id": "MODEL-CRITIQUE-01",
+          "student_action": "Critique a proposed force list.",
+          "evidence_job": "Distinguish a property of the object from an interaction force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "model contains a specifically labeled inertia force"
+          ],
+          "variation_axes": [
+            "change resting/moving scenario",
+            "mix inertia with another valid force"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student lists the forces on a book resting on a table as “weight downward, support upward, and inertia holding the book still.” What should be removed or changed, and why?",
+            "student_html": "<p>A student lists the forces on a book resting on a table:</p><ul><li>weight downward</li><li>support force upward</li><li>“inertia holding the book still”</li></ul><p>What should be removed or changed, and why?</p>",
+            "answer": "Remove “inertia” from the force list. Inertia is a property of matter, not an interaction force. The weight and support forces can balance.",
+            "solution": "The model should include only actual forces acting on the book.",
+            "scoring_guidance": "Identify inertia as the invalid force and explain why."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG02-IC03",
+      "section_id": "1.2",
+      "exact_text": "I can distinguish between no forces acting and zero net force.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG02-IC03-A",
+          "label": "Family A",
+          "name": "No Forces vs. Zero Net Force",
+          "family_purpose": "Distinguish absence of forces from balanced forces.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC03",
+          "exact_text": "I can distinguish between no forces acting and zero net force.",
+          "question_structure_id": "CONCEPT-CLASSIFY-01",
+          "student_action": "Explain why balanced nonzero forces can yield zero net force.",
+          "evidence_job": "Classify scenarios using force presence and net force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "nonzero forces are present and balance"
+          ],
+          "variation_axes": [
+            "use horizontal pulls or hanging objects",
+            "vary number of balancing forces"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A book rests on a table. Weight acts downward and the table’s support force acts upward with equal strength. Is this “no forces acting” or “zero net force”? Explain.",
+            "student_html": "<p>A book rests on a table. <strong>Weight acts downward</strong> and the table’s <strong>support force acts upward</strong> with equal strength.</p><p>Is this <strong>no forces acting</strong> or <strong>zero net force</strong>? Explain.</p>",
+            "answer": "Zero net force; forces do act, but they cancel.",
+            "solution": "The vector sum is zero even though individual forces are present.",
+            "scoring_guidance": "Name zero net force and reference the cancelling forces."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC03-B",
+          "label": "Family B",
+          "name": "Diagram Contrast",
+          "family_purpose": "Use representations to distinguish an empty force model from a balanced one.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC03",
+          "exact_text": "I can distinguish between no forces acting and zero net force.",
+          "question_structure_id": "REPTRANS-MULTI-ENCODING",
+          "student_action": "Compare two diagrams.",
+          "evidence_job": "Interpret force diagrams as evidence of force presence and net force.",
+          "response_mode": "constructed_response",
+          "representation_mode": "inline_svg",
+          "invariants": [
+            "one diagram has cancelling forces; one has none"
+          ],
+          "variation_axes": [
+            "change directions/labels",
+            "use horizontal balance"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "Diagram A shows equal upward and downward forces on a box. Diagram B shows no force arrows. Which diagram represents forces acting with zero net force, and how is that different from no forces acting?",
+            "student_html": "<p><strong>Diagram A</strong></p><div class=\"rep\"><svg viewBox=\"0 0 340 150\" role=\"img\" aria-label=\"Diagram A\"><rect x=\"145\" y=\"52\" width=\"50\" height=\"40\" rx=\"4\" fill=\"#f7f8fa\" stroke=\"#222\"/><line x1=\"170\" y1=\"52\" x2=\"170\" y2=\"2\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"170,2 163,14 177,14\" fill=\"#1f3864\"/><line x1=\"170\" y1=\"92\" x2=\"170\" y2=\"142\" stroke=\"#1f3864\" stroke-width=\"4\"/><polygon points=\"170,142 163,130 177,130\" fill=\"#1f3864\"/><text x=\"190\" y=\"20\" font-size=\"14\">Support 12 N</text><text x=\"190\" y=\"135\" font-size=\"14\">Weight 12 N</text></svg><div class=\"cap\">Diagram A</div></div><p><strong>Diagram B:</strong> the same box with no force arrows shown.</p><p>Which diagram represents <strong>forces acting with zero net force</strong>? How is that different from “no forces acting”?</p>",
+            "answer": "Diagram A. It has forces that cancel. Diagram B would represent no shown forces, which is a different claim.",
+            "solution": "Equal opposite forces can sum to zero while remaining real forces.",
+            "scoring_guidance": "Choose A and distinguish cancellation from absence."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC03-C",
+          "label": "Family C",
+          "name": "Zero Net Does Not Mean Empty",
+          "family_purpose": "Diagnose language that confuses net force with individual forces.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC03",
+          "exact_text": "I can distinguish between no forces acting and zero net force.",
+          "question_structure_id": "ERROR-DIAGNOSE-WORKED-SOLUTION-01",
+          "student_action": "Correct a student conclusion.",
+          "evidence_job": "Explain the difference between vector sum and force count.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "the incorrect claim equates zero sum with no individual forces"
+          ],
+          "variation_axes": [
+            "different balanced examples",
+            "diagram-based critique"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student calculates a net force of 0 N and writes, “Therefore no forces are acting.” Explain the mistake and give one example where forces act but net force is zero.",
+            "student_html": "<p>A student calculates a net force of <strong>0 N</strong> and writes:</p><blockquote>“Therefore no forces are acting.”</blockquote><p>Explain the mistake and give one example where forces act but the net force is zero.</p>",
+            "answer": "Net force is the vector sum. Individual forces may cancel; e.g., weight and support force on a resting book.",
+            "solution": "A zero sum does not imply zero terms.",
+            "scoring_guidance": "Explain sum-versus-individual distinction and give a valid example."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "i_can_id": "U1-MG02-IC04",
+      "section_id": "1.2",
+      "exact_text": "I can identify weight, support force, and applied pushes or pulls acting on an object in a simple situation.",
+      "target_count": 3,
+      "families": [
+        {
+          "family_id": "U1-MG02-IC04-A",
+          "label": "Family A",
+          "name": "Name Forces on the Chosen Object",
+          "family_purpose": "Identify common forces acting on one object.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC04",
+          "exact_text": "I can identify weight, support force, and applied pushes or pulls acting on an object in a simple situation.",
+          "question_structure_id": "MODEL-IDENTIFY-FORCES-01",
+          "student_action": "Identify weight, support, and applied force in context.",
+          "evidence_job": "List only forces acting on the selected object.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "only forces acting on selected object are requested"
+          ],
+          "variation_axes": [
+            "change object orientation/support",
+            "use pull instead of push"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A student pushes a box to the right across a horizontal floor. Focus only on the box. Name the weight force, the floor’s support force, and the applied push, including each direction.",
+            "student_html": "<p>A student pushes a box to the right across a horizontal floor. Focus <strong>only on the box</strong>.</p><p>Name these forces and their directions:</p><ul><li>weight</li><li>the floor’s support force</li><li>the applied push</li></ul>",
+            "answer": "Weight downward; support upward; applied push right.",
+            "solution": "Each force is an interaction acting on the box.",
+            "scoring_guidance": "All three forces with correct directions."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC04-B",
+          "label": "Family B",
+          "name": "Choose the Correct Force Model",
+          "family_purpose": "Recognize a force diagram with correct forces/directions.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC04",
+          "exact_text": "I can identify weight, support force, and applied pushes or pulls acting on an object in a simple situation.",
+          "question_structure_id": "MODEL-SELECT-01",
+          "student_action": "Select and justify the correct diagram description.",
+          "evidence_job": "Translate a physical situation into a supplied force representation.",
+          "response_mode": "selected_response",
+          "representation_mode": "text",
+          "invariants": [
+            "distractors reflect wrong-object or motion-force errors"
+          ],
+          "variation_axes": [
+            "change contact situation",
+            "use hanging object and tension/support"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "A book rests on a table while a hand pushes it gently to the right. Which force list is correct for the book?",
+            "student_html": "<p>A book rests on a table while a hand pushes it gently to the right. Which force list is correct for the <strong>book</strong>?</p><ol class=\"choices\" type=\"A\"><li>weight down, support up, applied push right</li><li>weight down only</li><li>support up and “motion force” right</li><li>weight down, force of book on table down, applied push right</li></ol>",
+            "answer": "A",
+            "solution": "The book has weight, table support, and the hand’s applied force. The force the book exerts on the table acts on the table, not on the book.",
+            "scoring_guidance": "Correct choice plus brief justification if used as constructed follow-up."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        },
+        {
+          "family_id": "U1-MG02-IC04-C",
+          "label": "Family C",
+          "name": "Wrong-Object Force Diagnosis",
+          "family_purpose": "Detect forces that act on another object.",
+          "unit": 1,
+          "section_id": "1.2",
+          "mastery_goal_id": "U1-MG02",
+          "mastery_goal_title": "Newton’s First Law and Forces",
+          "i_can_id": "U1-MG02-IC04",
+          "exact_text": "I can identify weight, support force, and applied pushes or pulls acting on an object in a simple situation.",
+          "question_structure_id": "MODEL-CRITIQUE-01",
+          "student_action": "Critique a force list containing an interaction on the wrong object.",
+          "evidence_job": "Use system/object focus to reject action-on-other-object arrows.",
+          "response_mode": "constructed_response",
+          "representation_mode": "text",
+          "invariants": [
+            "one listed force must act on another object"
+          ],
+          "variation_axes": [
+            "change object pair",
+            "use hand/rope/floor interactions"
+          ],
+          "forbidden_variations": [
+            "change only names/nouns while preserving the same finished prompt"
+          ],
+          "fresh_instance_rule": "Preserve the evidence job and invariants; vary only declared axes. A fresh instance must not be a noun-only or number-only clone when conceptual reasoning is the evidence target.",
+          "allowed_destinations": [
+            "Student Bank",
+            "Practice",
+            "Quick Check",
+            "reassessment",
+            "Summative fresh secure instance"
+          ],
+          "best_use": "Practice / Student Bank",
+          "avoid_uses": [],
+          "security": "NONSECURE_LEARNING_EVIDENCE",
+          "exemplar": {
+            "prompt": "For a book resting on a table, a student includes “the force of the book pushing down on the table” in the book’s force diagram. Explain why that force does not belong on the diagram for the book.",
+            "student_html": "<p>For a book resting on a table, a student includes:</p><blockquote>“the force of the book pushing down on the table”</blockquote><p>Explain why that force does <strong>not</strong> belong on the force diagram for the book. Name the corresponding force that <em>does</em> act on the book.</p>",
+            "answer": "The downward force by the book acts on the table. The corresponding force on the book is the table’s upward support force.",
+            "solution": "Force diagrams include forces acting on the chosen object, not forces it exerts on other objects.",
+            "scoring_guidance": "State wrong target object and name support force on the book."
+          },
+          "provenance": {
+            "assessment_plan": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/assessment_plans/original/unit1_assessment_plan/unit1_assessment_plan.html",
+            "unit_learning_map": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/curriculum/unit1_learning_map.json",
+            "physics_framework": "frameworks/Physics/FRAMEWORK.txt",
+            "physics_bank_profile": "frameworks/2_Framework_Physics/Conceptual_Physics_Framework/profiles/family_bank_course_profile.json",
+            "question_structure": "_question_structure/QUESTION_STRUCTURE_CORE.md",
+            "source_policy": "CLOSED_PROJECT_SOURCES_ONLY"
+          }
+        }
+      ]
+    }
+  ]
+}
