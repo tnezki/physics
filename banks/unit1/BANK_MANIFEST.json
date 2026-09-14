@@ -36,5 +36,14 @@
     "status": "SUPERSEDED_NOT_AUTHORITY",
     "note": "Legacy destination-driven files under notes/, practice/, warmups/, cyu/, exit/, summative/, provenance/, and ITEM_INDEX.json are not canonical inputs after this manifest is current. Downstream jobs must use this manifest, FAMILY_INDEX.json, and mastery_goals/*.json only."
   },
-  "human_display_rule": "Whenever an I Can is shown to a teacher or student, show the canonical code and the full exact statement together. Never show code-only ranges as the human learning label."
+  "human_display_rule": "Whenever an I Can is shown to a teacher or student, show the canonical code and the full exact statement together. Never show code-only ranges as the human learning label.",
+  "student_practice": {
+    "pool": "student_practice_pool.json",
+    "status": "APPROVED",
+    "qa": "PASS",
+    "instances_per_family": 4,
+    "question_count": 228,
+    "builder": "../../practice_builder___p7r4x/student_practice_builder.html",
+    "browser_authors_questions": false
+  }
 }

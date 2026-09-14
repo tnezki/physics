@@ -73,14 +73,15 @@ function sectionResources(u,s){const stem=`u${u}_${s}`;return{title:unitDefs[u-1
 {label:'Quick Check',icon:'ti-bolt',href:`quick_check____htq5855/${stem}_quick_check/${stem}_quick_check.html`},
 {label:'Practice Set 2',icon:'ti-pencil',href:`practice_sets/practice_sets_${u}_${s}/practice_set_${u}_${s}_2.html`},
 {label:'Practice Set 3',icon:'ti-pencil',href:`practice_sets/practice_sets_${u}_${s}/practice_set_${u}_${s}_3.html`} ]}}
-const units=unitDefs.map(d=>({id:String(d.n),label:`Unit ${d.n}`,name:d.name,meta:[
-{label:'Progress',teacher:false,href:`progress/unit_${d.n}_progress/unit_${d.n}_progress.html`},
-{label:'Warm Ups',teacher:false,href:`warmups/unit_${d.n}_warmups/unit_${d.n}_warmups.html`},
-{label:'Review',teacher:false,href:`reviews/review${d.n}/review_${d.n}.html`},
-{label:'Exit Tickets',teacher:true,href:`exit/exit${d.n}/exit_${d.n}.html`},
-{label:'Assess. Plan',teacher:true,href:`assessments_zxrtjp/unit${d.n}_assessment_plan/unit${d.n}_assessment_plan.html`},
-{label:'Banks',teacher:true,href:`banks/unit${d.n}/unit${d.n}.html`},
-{label:'Summative',teacher:true,href:`assessments_zxrtjp/unit${d.n}_summative/unit${d.n}_summative_assessment.html`}],sections:d.sections.map((_,i)=>sectionResources(d.n,i+1))}));
+function unitMeta(n){const m=[];if(n===1){m.push({label:'Student Bank',teacher:false,href:'banks/unit1/student.html'});m.push({label:'Practice Builder',teacher:false,href:'practice_builder___p7r4x/student_practice_builder.html?unit=1'})}m.push(
+{label:'Progress',teacher:false,href:`progress/unit_${n}_progress/unit_${n}_progress.html`},
+{label:'Warm Ups',teacher:false,href:`warmups/unit_${n}_warmups/unit_${n}_warmups.html`},
+{label:'Review',teacher:false,href:`reviews/review${n}/review_${n}.html`},
+{label:'Exit Tickets',teacher:true,href:`exit/exit${n}/exit_${n}.html`},
+{label:'Assess. Plan',teacher:true,href:`assessments_zxrtjp/unit${n}_assessment_plan/unit${n}_assessment_plan.html`},
+{label:'Banks',teacher:true,href:`banks/unit${n}/unit${n}.html`},
+{label:'Summative',teacher:true,href:`assessments_zxrtjp/unit${n}_summative/unit${n}_summative_assessment.html`});return m}
+const units=unitDefs.map(d=>({id:String(d.n),label:`Unit ${d.n}`,name:d.name,meta:unitMeta(d.n),sections:d.sections.map((_,i)=>sectionResources(d.n,i+1))}));
 function buildUnit(u){const metaHTML=u.meta.map(m=>`<a href="${m.href}" class="unit-meta-chip${m.teacher?' teacher':''}" target="_blank">${m.label}</a>`).join(' ');const sectionsHTML=u.sections.map((sec,i)=>buildSection(u.id,i+1,sec)).join('');const block=document.createElement('div');block.className='unit-block';block.innerHTML=`<div class="unit-header" onclick="toggleUnit(this)"><span class="unit-label">${u.label}</span><span class="unit-name">${u.name}</span><i class="ti ti-chevron-down unit-chevron"></i></div><div class="unit-collapsible"><div class="unit-meta">${metaHTML}</div><div class="unit-body">${sectionsHTML}</div></div>`;return block}
 function buildSection(unitId,index,sec){const num=unitId+'.'+index;const studentBtns=sec.studentResources.map(r=>`<a href="${r.href}" class="r-btn ${r.cls}" target="_blank"><i class="ti ${r.icon}"></i>${r.label}</a>`).join(' ');const teacherBtns=sec.teacherResources.map(r=>`<a href="${r.href}" class="r-btn teacher${r.control?' control':''}" target="_blank"><i class="ti ${r.icon}"></i>${r.label}</a>`).join(' ');return `<div class="section-row"><div class="section-head" onclick="toggleSection(this)"><span class="section-num">${num}</span><span class="section-title">${sec.title}</span><i class="ti ti-chevron-down section-chevron"></i></div><div class="section-body"><div class="btn-row"><div class="btn-row-label">Student resources</div>${studentBtns}</div><div class="btn-row"><div class="btn-row-label">Teacher resources</div>${teacherBtns}</div></div></div>`}
 function toggleUnit(h){const c=h.nextElementSibling,v=c.classList.toggle('open');h.querySelector('.unit-chevron').classList.toggle('open',v)}function toggleSection(h){const b=h.nextElementSibling,v=b.classList.toggle('open');h.querySelector('.section-chevron').classList.toggle('open',v)}const host=document.getElementById('units');units.forEach(u=>host.appendChild(buildUnit(u)));
