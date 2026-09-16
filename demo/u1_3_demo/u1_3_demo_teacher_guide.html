@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>U1.3 Demo Teacher Guide - Draw It, Predict It, Blow It</title>
 <link rel="stylesheet" href="../../css/teacher_guide.css"/>
 <style>
-  .diagram-key{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
-  .diagram-key .callout{margin:0}
   .tight li{margin:.28em 0}
   .round-table td:first-child{white-space:nowrap;font-weight:700}
   .teacher-note{border-left:5px solid #6d4aa1;background:#f4effb;padding:14px 16px;border-radius:8px;margin:18px 0}
@@ -16,21 +13,16 @@
 <body><main class="guide">
 <div class="kicker">Physics · Unit 1 · Section 1.3 · Demo Teacher Guide</div>
 <h1>Draw It. Predict It. Blow It.</h1>
-<p class="subtitle">10-15 minute whiteboard + ping-pong-ball vector demo</p>
+<p class="subtitle">12-18 minute whiteboard + ping-pong-ball vector demo</p>
 <div class="quick-grid">
-  <div class="quick"><strong>Time</strong>10-15 minutes</div>
+  <div class="quick"><strong>Time</strong>12-18 minutes</div>
   <div class="quick"><strong>Grouping</strong>Whole class + 2-3 volunteers</div>
   <div class="quick"><strong>Student tools</strong>Whiteboards + markers</div>
 </div>
 
 <h2>Purpose</h2>
-<p>This demo makes Section 1.3 visible before students formalize vector addition. Students model the ping-pong ball as a point, draw force vectors from that point, predict a single resultant vector, test the prediction with air forces from straws, and then make a separate sketch of the ball's observed motion.</p>
-<p>The instructional emphasis is qualitative: <strong>direction</strong> and <strong>relative arrow length</strong>. No force numbers are needed. The sequence directly supports the Section 1.3 goals of reading force-arrow direction and length, combining same/opposite-direction forces, and determining the direction and relative magnitude of a resultant from a simple force-vector diagram.</p>
-
-<div class="diagram-key">
-  <div class="callout good"><strong>Force model</strong><br>Solid arrows start at the ball. Arrow direction shows force direction; arrow length shows relative force strength.</div>
-  <div class="teacher-note"><strong>After-demo motion sketch</strong><br>Students add a dashed arrow for what the ball actually did. This is deliberately separate from the force vector so students do not treat a force arrow as a path arrow.</div>
-</div>
+<p>Students repeatedly move through the same reasoning cycle: copy a force diagram, add one predicted resultant vector, test the situation with straws and a ping-pong ball, then add a separate dashed arrow showing what the ball actually did. The sequence stays qualitative and directly supports Section 1.3 work with vector direction, relative magnitude, and resultant/net force.</p>
+<div class="teacher-note"><strong>Important visual rule:</strong> The projected force diagrams contain only the point and force arrows. Do not add labels, numbers, captions, or explanatory words to the diagrams themselves. All interpretation should come from arrow direction and relative length.</div>
 
 <h2>Materials &amp; Setup</h2>
 <ul class="tight">
@@ -38,72 +30,59 @@
   <li>3 drinking straws</li>
   <li>Student whiteboards and markers</li>
   <li>Smooth tabletop or floor area</li>
-  <li>Masking tape to mark the starting point and approximate blower locations</li>
+  <li>Masking tape for the ball's start point and approximate student positions</li>
   <li>Project <code>u1_3_demo.html</code> full screen</li>
 </ul>
-<p>Mark one start point for the ball. Leave enough open space around it to place students on opposite sides, at about 90°, at another angle, and finally in three different directions.</p>
-<div class="callout warn"><strong>Important:</strong> A straw blows air <em>toward</em> the ball, but the force arrow on the ball points in the direction the air pushes the ball — away from the blower. Keep every force arrow's tail at the ball.</div>
+<p>Use one marked start point for the ball. Reposition the student blowers between rounds rather than trying to keep permanent floor marks for every geometry.</p>
+<div class="callout warn"><strong>Direction reminder:</strong> A student blows air toward the ball, but the force arrow on the ball points in the direction the air pushes the ball — away from the blower.</div>
+
+<h2>Whiteboard Routine</h2>
+<ol class="tight">
+  <li>Students copy only the point and shown force arrows.</li>
+  <li>Students add one resultant vector from the point. If the ideal resultant is zero, they should mark that clearly rather than inventing an arrow.</li>
+  <li>Run the physical straw trial.</li>
+  <li>Students keep their prediction and add a <strong>dashed</strong> arrow for the observed motion.</li>
+</ol>
+<p>Do not require numerical force values. Arrow length represents relative force strength only.</p>
 
 <h2>Run of Show</h2>
 <table class="round-table">
-<tr><th>Round</th><th>Projection / Student Move</th><th>Physical Demo</th><th>Teacher Focus</th></tr>
-<tr>
-  <td>Setup</td>
-  <td>Slides 1-2. Students learn the point-and-arrow model and prepare whiteboards.</td>
-  <td>No demo yet.</td>
-  <td>Establish that arrow direction and arrow length both carry meaning. The resultant is one vector representing the combined effect.</td>
-</tr>
-<tr>
-  <td>1 · Opposite</td>
-  <td>Slide 3: students copy equal opposite force arrows and predict the resultant. Slide 4: after the trial they add a dashed motion arrow.</td>
-  <td>Two students blow from opposite directions and try to use equal effort.</td>
-  <td>The ideal model has a zero resultant. If the ball drifts, use that as evidence that the actual forces were not perfectly equal. Avoid calling the human trial perfectly balanced.</td>
-</tr>
-<tr>
-  <td>2 · 90°</td>
-  <td>Slide 5: students draw a resultant from two perpendicular force arrows. Slide 6: they add the observed-motion arrow and revise if needed.</td>
-  <td>Move one student so the two forces are about 90° apart. Blow together.</td>
-  <td>The resultant should point between the force directions. With roughly equal forces, it should be approximately diagonal and longer than either component arrow.</td>
-</tr>
-<tr>
-  <td>3 · Other angle</td>
-  <td>Slide 7: students predict from an angled diagram with unequal arrow lengths. Slide 8: observe and revise.</td>
-  <td>Use a non-90° angle. Ask one student to blow noticeably harder and the other more gently.</td>
-  <td>The resultant should lean toward the longer force arrow. Emphasize relative length, not numerical calculation.</td>
-</tr>
-<tr>
-  <td>4 · Three straws</td>
-  <td>Slide 9: students combine three force arrows into one resultant. Slide 10: run the trial and add the dashed motion arrow.</td>
-  <td>Add a third student. Strongest push roughly rightward, medium upper-left, gentler lower-left.</td>
-  <td>Students should reason that several forces can still be represented by one resultant. Precision is not the goal; coherent direction/relative magnitude is.</td>
-</tr>
-<tr>
-  <td>Close</td>
-  <td>Slide 11: students summarize patterns.</td>
-  <td>No demo.</td>
-  <td>Bridge directly to vector arrows, net force, and resultants in the notes.</td>
-</tr>
+<tr><th>Slides</th><th>Round</th><th>Student Prediction</th><th>Physical Demo / Teacher Focus</th></tr>
+<tr><td>1</td><td>Setup</td><td>Introduce the four-step routine and the meaning of point, direction, and arrow length.</td><td>No demo yet. Keep the distinction between force vector and later dashed motion arrow clear.</td></tr>
+<tr><td>2-3</td><td>1 · Opposite &amp; balanced</td><td>Equal opposite arrows should produce no resultant arrow / zero resultant.</td><td>Two students blow from opposite sides with similar effort. If the ball drifts, treat that as evidence the real forces were not perfectly equal.</td></tr>
+<tr><td>4-5</td><td>2 · Equal forces at 90°</td><td>Resultant points between the arrows, approximately along the diagonal, and is longer than either individual arrow.</td><td>Place students about 90° apart and ask for similar steady pushes. Focus on the new direction created by combining the two vectors.</td></tr>
+<tr><td>6-7</td><td>3 · 90°, one force about twice as large</td><td>Resultant still lies between the force directions but leans strongly toward the longer arrow.</td><td>Keep the right-angle setup. Ask one student for a clearly stronger steady push. Do not claim the human breath is exactly a 2:1 force ratio; the diagram is the model.</td></tr>
+<tr><td>8-9</td><td>4 · Non-right angle</td><td>With roughly equal arrows, resultant points between the two directions and follows the geometry of the angle.</td><td>Move students to a clearly non-90° angle and use similar effort. Ask students to compare how the resultant direction changes from the right-angle case.</td></tr>
+<tr><td>10-11</td><td>5 · Three forces</td><td>Students replace all three shown vectors with one qualitative resultant.</td><td>Add a third student and approximate the projected directions. Precision is not the goal; students should reason coherently from all three arrows rather than choosing one force as the winner.</td></tr>
+<tr><td>12</td><td>Discussion</td><td>Students discuss direction changes, the effect of a longer force vector, and why one resultant can represent several forces.</td><td>Use the discussion to transition directly into the Section 1.3 notes.</td></tr>
 </table>
 
 <h2>Suggested Teacher Language</h2>
-<div class="callout">“Your force diagram is a model, not a photograph. The point is the ball. Every solid arrow begins at the ball and tells us which way a force acts and how strong it is relative to the others. Before we test it, replace all of those forces with one resultant arrow.”</div>
-<div class="callout">“After we test it, do not erase your prediction. Add a dashed arrow for what the ball actually did. Now compare the observation with the resultant you predicted.”</div>
+<div class="callout">“Copy exactly what you see: a point and the force arrows. Then add one resultant vector. Do not calculate — use direction and relative arrow length.”</div>
+<div class="callout">“After we test it, keep your prediction. Add a dashed arrow for what the ball actually did. The solid arrows are force vectors; the dashed arrow is our observation of the ball's motion.”</div>
 
 <h2>What to Listen For</h2>
 <ul class="tight">
-  <li><strong>“The arrows cancel.”</strong> Good for equal opposite forces; ask what has to be true about both direction and relative length.</li>
-  <li><strong>“The ball should go between them.”</strong> Ask whether it should be exactly halfway or lean toward a stronger/longer force.</li>
-  <li><strong>“The longest force wins.”</strong> Push students to describe a combined effect rather than selecting a single force.</li>
-  <li><strong>“The force arrow is where it moved.”</strong> Redirect: solid arrows are forces; the dashed arrow is the separate observed-motion sketch.</li>
-  <li><strong>“Three forces are too many to combine.”</strong> Reinforce that the resultant is still one vector for the total effect.</li>
+  <li><strong>“The arrows cancel.”</strong> Ask what must be true about both direction and length for that to happen.</li>
+  <li><strong>“It goes halfway between.”</strong> Ask whether that still makes sense when one arrow is much longer.</li>
+  <li><strong>“The longer arrow wins.”</strong> Push students to draw a combined vector that includes both influences.</li>
+  <li><strong>“The force arrow is the path.”</strong> Reinforce that force vectors and the dashed observed-motion arrow are different representations.</li>
+  <li><strong>“Three forces need three answers.”</strong> Reinforce that one resultant can represent the combined vector effect.</li>
 </ul>
 
 <h2>Likely Messiness — Use It Productively</h2>
-<p>Two students will not create perfectly equal air forces, and the ball may spin, wobble, or respond to table imperfections. Do not treat those imperfections as failure. Ask whether the observed drift suggests the actual force arrows should have been slightly different in length or direction. The purpose is to use a model to interpret evidence, not to make human breath into a calibrated force source.</p>
+<p>Human breath is not calibrated. Students may blow at slightly different strengths or directions, and the ball may wobble because of spin or surface imperfections. Use disagreement between the ideal diagram and the observed motion as evidence about the <em>actual</em> forces. Do not change the vector model into a claim that the human trial was exact.</p>
 
 <h2>Section Boundary</h2>
-<p>Keep the language in Section 1.3: <strong>vector</strong>, <strong>magnitude</strong>, <strong>direction</strong>, <strong>resultant</strong>, and <strong>net force</strong>. The first round may be described as equal opposite forces giving a zero resultant, but avoid turning the demo into a full lesson on static/dynamic equilibrium; that belongs in Section 1.4.</p>
+<p>Keep the language in Section 1.3: <strong>vector</strong>, <strong>magnitude</strong>, <strong>direction</strong>, <strong>resultant</strong>, and <strong>net force</strong>. Round 1 can show a zero resultant, but do not turn the demo into the later Section 1.4 equilibrium lesson.</p>
+
+<h2>Final Discussion Questions</h2>
+<ol class="tight">
+  <li>How did the direction of the resultant change when the force directions changed?</li>
+  <li>What happened to the resultant when one force arrow became much longer than the other?</li>
+  <li>How can several force arrows be replaced by one resultant vector without losing the important information?</li>
+</ol>
 
 <h2>Transition Into Notes</h2>
-<p>End with: “We just predicted several force situations without using numbers. Now we need a reliable way to read and combine force arrows so the resultant keeps both magnitude and direction.” Then move into Section 1.3 notes.</p>
+<p>End with: “We were able to make useful predictions without force numbers because the arrows carried two pieces of information at once: direction and relative magnitude. Now we will formalize how those vectors combine.”</p>
 </main></body></html>
