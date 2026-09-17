@@ -1,102 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>U1.3 Investigation Teacher Guide - Resultant Vector Lab</title>
-<link rel="stylesheet" href="../../css/teacher_guide.css"/>
-<style>
-  .guide{max-width:940px;}
-  .scope-table td:first-child{width:24%;font-weight:700;}
-  .answer-table td:first-child{width:12%;font-weight:800;white-space:nowrap;}
-  .answer-table td:nth-child(2){width:34%;}
-  .tiny{font-size:13px;color:var(--muted);}
-  .result{font-weight:800;}
-</style>
-</head>
-<body><main class="guide">
-<div class="kicker">Physics · Unit 1 · Section 1.3 · Investigation Teacher Guide</div>
-<h1>Resultant Vector Lab</h1>
-<p class="subtitle">Eight short vector scenarios: six two-force cases and two three-force extensions, each predicted before PhET verification.</p>
-<div class="quick-grid"><div class="quick"><strong>Time</strong>35–45 minutes</div><div class="quick"><strong>Groups</strong>Pairs</div><div class="quick"><strong>Core tool</strong>PhET Vector Addition</div></div>
-
-<h2>Purpose and Exact Section Alignment</h2>
-<p><strong>Learning Target:</strong> Students will represent forces as vectors and determine resultant/net force in simple force situations.</p>
-<ul>
-  <li><strong>U1-MG03-IC01:</strong> use vector arrow direction and length to represent a force’s direction and relative magnitude.</li>
-  <li><strong>U1-MG03-IC02:</strong> combine forces acting in the same or opposite directions to determine net force.</li>
-  <li><strong>U1-MG03-IC03:</strong> determine the direction and relative magnitude of the resultant/net force from a simple force-vector diagram.</li>
-</ul>
-<div class="callout"><strong>Scope guard.</strong> Scenarios 1–4 are direct Section 1.3 evidence. Scenarios 5–6 apply the current 1.3 Notes’ simple two-dimensional resultant geometry. Extensions 7–8 are intentionally labeled extensions. Students do <strong>not</strong> need component trigonometry. They may use signed addition/subtraction, a scale drawing, symmetry, and the Pythagorean relationship when useful.</div>
-
-<h2>Materials and Setup</h2>
-<ul>
-  <li>One iPad/device per pair with internet access.</li>
-  <li>Student investigation, pencil, and a ruler/straightedge if students want cleaner scale drawings.</li>
-  <li>Approved simulation: <code>https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_en.html</code></li>
-</ul>
-<p>Before starting, briefly establish the angle convention: measure counterclockwise from +x, so 0° is right, 90° is up, 180° is left, and 270° is down. The student page carries this reference.</p>
-
-<h2>Suggested Flow</h2>
-<table>
-<tr><th>Minutes</th><th>Student work</th><th>Teacher focus</th></tr>
-<tr><td>0–4</td><td>Launch angle convention and prediction/check routine.</td><td>Do not demonstrate the resultants. Demonstrate only how to enter/recreate a vector if needed.</td></tr>
-<tr><td>4–18</td><td>Scenarios 1–4.</td><td>Press for direction-aware addition/subtraction and proportional arrow length.</td></tr>
-<tr><td>18–30</td><td>Scenarios 5–6.</td><td>Ask students to use the diagram first. Pythagorean reasoning is useful in Scenario 5; symmetry is the main idea in Scenario 6.</td></tr>
-<tr><td>30–38</td><td>Extensions 7–8.</td><td>Let students reason graphically. These are challenge/application tasks, not new required component-trig content.</td></tr>
-<tr><td>38–45</td><td>Closing questions and discussion.</td><td>Compare predictions with checks and connect the resultant back to net force.</td></tr>
-</table>
-
-<h2>What Students Should Physically Do</h2>
-<ol>
-  <li>Read the two or three given force vectors and interpret each magnitude/direction.</li>
-  <li>Draw the vectors from a common origin on the printed grid using a scale that fits.</li>
-  <li>Construct a resultant using a head-to-tail/parallelogram idea and make a numerical or graphical prediction.</li>
-  <li>Write enough math/geometric reasoning to show why the prediction makes sense.</li>
-  <li>Recreate the same vectors in PhET and record the checked resultant.</li>
-  <li>If their prediction changes, identify what changed in the drawing or reasoning.</li>
-</ol>
-
-<h2>Press Questions</h2>
-<ul>
-  <li>What information is lost if you ignore the vector directions and only add the magnitudes?</li>
-  <li>In Scenario 4, why is “0 N @ 0°” less accurate than “0 N, no defined direction”?</li>
-  <li>In Scenario 5, where must the resultant point before you calculate anything? Why?</li>
-  <li>In Scenario 6, what cancels because the two vectors are mirror images?</li>
-  <li>Why can three nonzero forces in Extension 7 still produce a zero resultant?</li>
-  <li>What single change turns Extension 7 into Extension 8, and what does that do to the resultant?</li>
-</ul>
-
-<h2>Expected Results</h2>
-<table class="answer-table">
-<tr><th>Case</th><th>Given</th><th>Expected resultant</th><th>Useful reasoning</th></tr>
-<tr><td>1</td><td>4 N @ 0° + 6 N @ 0°</td><td class="result">10 N @ 0°</td><td>Same direction: magnitudes add.</td></tr>
-<tr><td>2</td><td>9 N @ 0° + 4 N @ 180°</td><td class="result">5 N @ 0°</td><td>Opposite directions: subtract; point toward the larger force.</td></tr>
-<tr><td>3</td><td>7 N @ 90° + 3 N @ 270°</td><td class="result">4 N @ 90°</td><td>Vertical opposite pair; same signed-sum idea.</td></tr>
-<tr><td>4</td><td>5 N @ 0° + 5 N @ 180°</td><td class="result">0 N; no defined direction</td><td>Equal and opposite vectors cancel. A zero vector does not have a meaningful direction angle.</td></tr>
-<tr><td>5</td><td>6 N @ 0° + 8 N @ 90°</td><td class="result">10 N @ about 53°</td><td>Right triangle: magnitude is 10 N. Direction should lie between 0° and 90°, closer to 90° because the upward force is larger.</td></tr>
-<tr><td>6</td><td>6 N @ 30° + 6 N @ 150°</td><td class="result">6 N @ 90°</td><td>Equal angled vectors are symmetric about the y-axis. Horizontal effects cancel; vertical effects reinforce.</td></tr>
-<tr><td>7</td><td>5 N @ 0° + 5 N @ 120° + 5 N @ 240°</td><td class="result">0 N; no defined direction</td><td>Three equal vectors spaced 120° apart balance by rotational symmetry.</td></tr>
-<tr><td>8</td><td>6 N @ 0° + 4 N @ 120° + 4 N @ 240°</td><td class="result">2 N @ 0°</td><td>The two 4 N angled forces have vertical effects that cancel and a combined leftward effect; the 6 N rightward force leaves a 2 N rightward resultant.</td></tr>
-</table>
-<p class="tiny">Angle readouts may vary slightly with drawing/rounding. Treat a visually and numerically reasonable result as correct when the model and direction are consistent.</p>
-
-<h2>Common Misconceptions / Setup Problems</h2>
-<ul>
-  <li><strong>Adding magnitudes regardless of direction:</strong> ask students to point along each arrow and identify which effects reinforce or oppose.</li>
-  <li><strong>Arrow length treated as decoration:</strong> require the larger force to have the longer arrow when the same drawing scale is used.</li>
-  <li><strong>Clockwise angle measurement:</strong> return to the 0°/90°/180°/270° reference printed on every grid.</li>
-  <li><strong>Calling the resultant a third independent force:</strong> the resultant is a single vector model of the combined effect of the given forces.</li>
-  <li><strong>Trying to force a direction onto a zero vector:</strong> zero magnitude has no meaningful direction.</li>
-  <li><strong>Jumping to component trig:</strong> redirect to scale drawing, symmetry, simple signed sums, or the right-triangle relationship used in the current Notes.</li>
-</ul>
-
-<h2>Closing / Answer Guidance</h2>
-<table class="scope-table">
-<tr><td>Why not always add magnitudes?</td><td>Because vector direction changes how forces combine. Same-direction forces reinforce; opposite forces can partially or completely cancel; non-collinear forces combine geometrically.</td></tr>
-<tr><td>What produces zero resultant?</td><td>The vector effects must balance completely so their combined vector is zero. Equal opposite pairs are one example; the three equally spaced vectors in Extension 7 are another.</td></tr>
-<tr><td>Prediction vs. PhET evidence</td><td>Strong responses name a specific mismatch or confirmation—direction, arrow length, symmetry, signed sum, or geometry—and explain how the simulation evidence changed or strengthened the student’s model.</td></tr>
-</table>
-
-<div class="callout good"><strong>Good stopping point:</strong> students should leave seeing the resultant as a direction-and-magnitude summary of the given force vectors, not as a separate force that appeared after the calculation.</div>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>U1.3 Investigation Teacher Guide - Tip-to-Tail Resultant Lab</title><style>
+:root{--ink:#18242d;--muted:#5a6872;--accent:#1f5f8b;--accent-soft:#e6f1f8;--line:#cbd5dc;--warn:#8b4f16;--warn-soft:#fff1dc;--good:#2e6b45;--good-soft:#e6f4eb}*{box-sizing:border-box}body{margin:0;background:#eef2f5;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.42}.guide{max-width:920px;margin:28px auto;background:#fff;padding:38px 48px 56px;box-shadow:0 7px 24px rgba(20,40,55,.12)}.kicker{text-transform:uppercase;letter-spacing:.06em;font-weight:800;color:var(--accent);font-size:12px}h1{font-size:32px;line-height:1.1;margin:5px 0}.subtitle{color:var(--muted);font-size:16px;margin:0 0 20px}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 22px}.quick{background:var(--accent-soft);border-radius:10px;padding:10px 12px}.quick strong{display:block;color:var(--accent);margin-bottom:3px}h2{margin-top:28px;border-bottom:3px solid var(--accent);padding-bottom:5px;font-size:21px}p,li,td,th{font-size:14px}ul,ol{padding-left:22px}.callout{border-left:5px solid var(--accent);background:var(--accent-soft);padding:12px 14px;border-radius:7px;margin:14px 0}.warn{border-left-color:var(--warn);background:var(--warn-soft)}.good{border-left-color:var(--good);background:var(--good-soft)}table{width:100%;border-collapse:collapse;margin:10px 0 18px}th,td{border:1px solid var(--line);padding:8px 9px;vertical-align:top}th{background:#edf3f7;text-align:left}.answer-table td:first-child{font-weight:800;width:7%}.answer-table td:nth-child(2){width:42%}.answer-table td:nth-child(3){width:16%}.tiny{font-size:12px;color:var(--muted)}code{background:#f2f4f5;padding:1px 4px;border-radius:4px}@page{size:letter;margin:.5in}@media print{body{background:#fff}.guide{max-width:none;margin:0;padding:0;box-shadow:none}h2{break-after:avoid}table,.callout{break-inside:avoid}}
+</style></head><body><main class="guide">
+<div class="kicker">Physics · Unit 1 · Section 1.3 · Investigation Teacher Guide</div><h1>Tip-to-Tail Resultant Lab</h1><p class="subtitle">Six perpendicular unequal two-vector situations plus two three-vector challenges. Every vector endpoint is on a grid intersection and every student diagram uses 1 square = 1 N.</p>
+<div class="quick-grid"><div class="quick"><strong>Time</strong>40-50 minutes</div><div class="quick"><strong>Groups</strong>Pairs</div><div class="quick"><strong>Check tool</strong>PhET Vector Addition</div></div>
+<h2>Purpose and Section Alignment</h2><p><strong>Learning Target:</strong> Students will represent forces as vectors and determine resultant/net force in simple force situations.</p><ul><li><strong>U1-MG03-IC01:</strong> use vector arrow direction and length to represent force direction and relative magnitude.</li><li><strong>U1-MG03-IC03:</strong> determine direction and relative magnitude of the resultant/net force from a simple force-vector diagram.</li></ul>
+<div class="callout"><strong>Teacher goal:</strong> repeated practice with the <strong>tip-to-tail method</strong>. Students read each vector from a scaled grid, redraw the vectors tip-to-tail, draw the resultant, use the Pythagorean Theorem for magnitude, and use inverse tangent plus quadrant reasoning for direction. PhET is the check, not the starting point.</div>
+<div class="callout warn"><strong>Scope note:</strong> The current 1.3 Notes include perpendicular vector geometry, the Pythagorean relationship, and direction reasoning. Keep the work concrete and graphical: read Δx/Δy from the grid, use the right-triangle relationship for R, then use inverse tangent for the resultant direction. Do not expand this into a formal component-trig lesson.</div>
+<h2>Materials and Launch</h2><ul><li>Printed investigation or iPad/Notability copy.</li><li>Pencil and straightedge.</li><li>One device per pair for <code>https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_en.html</code>.</li></ul><p>Launch with one board example showing only the mechanic of translating a vector without rotating or resizing it. Then draw the resultant from the original tail to the final head. Do not solve one of the printed situations.</p>
+<h2>Student Routine</h2><ol><li>Count squares to read each vector's Δx and Δy. Only A/B/C labels appear on the student diagram.</li><li>Translate A, then B (and C in the challenges) onto the blank grid tip-to-tail.</li><li>Draw R from the original tail to the final head.</li><li>Read Δx<sub>R</sub> and Δy<sub>R</sub> from the grid.</li><li>Use the Pythagorean Theorem for magnitude.</li><li>Use inverse tangent for a reference angle, then use the quadrant to report direction counterclockwise from +x.</li><li>Check in PhET and record the input-vector magnitude/direction readouts and the resultant.</li></ol>
+<h2>Expected Results</h2><table class="answer-table"><thead><tr><th>Case</th><th>Given coordinates and PhET input readouts</th><th>R components</th><th>Expected resultant</th></tr></thead><tbody><tr><td>1</td><td><strong>A</strong> = &lt;4, 0&gt; = 4 N @ 0°<br><strong>B</strong> = &lt;0, 3&gt; = 3 N @ 90°</td><td>&lt;4, 3&gt;</td><td>5 N @ 36.9°</td></tr><tr><td>2</td><td><strong>A</strong> = &lt;-5, 0&gt; = 5 N @ 180°<br><strong>B</strong> = &lt;0, 2&gt; = 2 N @ 90°</td><td>&lt;-5, 2&gt;</td><td>5.39 N @ 158.2°</td></tr><tr><td>3</td><td><strong>A</strong> = &lt;-3, 0&gt; = 3 N @ 180°<br><strong>B</strong> = &lt;0, -4&gt; = 4 N @ 270°</td><td>&lt;-3, -4&gt;</td><td>5 N @ 233.1°</td></tr><tr><td>4</td><td><strong>A</strong> = &lt;6, 0&gt; = 6 N @ 0°<br><strong>B</strong> = &lt;0, -8&gt; = 8 N @ 270°</td><td>&lt;6, -8&gt;</td><td>10 N @ 306.9°</td></tr><tr><td>5</td><td><strong>A</strong> = &lt;3, 4&gt; = 5 N @ 53.1°<br><strong>B</strong> = &lt;-8, 6&gt; = 10 N @ 143.1°</td><td>&lt;-5, 10&gt;</td><td>11.18 N @ 116.6°</td></tr><tr><td>6</td><td><strong>A</strong> = &lt;4, 3&gt; = 5 N @ 36.9°<br><strong>B</strong> = &lt;6, -8&gt; = 10 N @ 306.9°</td><td>&lt;10, -5&gt;</td><td>11.18 N @ 333.4°</td></tr><tr><td>7</td><td><strong>A</strong> = &lt;3, 4&gt; = 5 N @ 53.1°<br><strong>B</strong> = &lt;6, -8&gt; = 10 N @ 306.9°<br><strong>C</strong> = &lt;-4, 3&gt; = 5 N @ 143.1°</td><td>&lt;5, -1&gt;</td><td>5.10 N @ 348.7°</td></tr><tr><td>8</td><td><strong>A</strong> = &lt;-4, 3&gt; = 5 N @ 143.1°<br><strong>B</strong> = &lt;-6, -8&gt; = 10 N @ 233.1°<br><strong>C</strong> = &lt;3, 4&gt; = 5 N @ 53.1°</td><td>&lt;-7, -1&gt;</td><td>7.07 N @ 188.1°</td></tr></tbody></table><p class="tiny">Round magnitudes and angles reasonably. Small PhET/readout differences are acceptable when the drawing, components, and quadrant are correct.</p>
+<h2>Teaching Notes by Situation</h2><table><tr><th>Situations</th><th>What to watch for</th></tr><tr><td>1-4</td><td>Axis-aligned perpendicular inputs with resultants in all four quadrants. Establish the complete routine and insist that the drawing agrees with the calculated direction.</td></tr><tr><td>5-6</td><td>Diagonal lattice vectors. Every endpoint is on a grid intersection, so students can still count integer Δx/Δy values. The vectors are perpendicular and unequal, so the same tip-to-tail and right-triangle reasoning applies.</td></tr><tr><td>7-8</td><td>Three-vector challenges. Require A → B → C to remain unchanged while translated. The single resultant runs from the first tail to the final head.</td></tr></table>
+<h2>Common Errors and Press Questions</h2><ul><li><strong>Vector changes while moving:</strong> “Did you translate the arrow, or did you rotate/resize it?”</li><li><strong>Wrong resultant endpoints:</strong> “Where did the first vector start? Where did the last vector end?”</li><li><strong>Inverse tan used as final direction:</strong> “What quadrant is the resultant actually in?”</li><li><strong>Arrow length out of proportion:</strong> “If 1 square = 1 N, how many squares should that change be?”</li><li><strong>Checking too early:</strong> have students complete their own drawing and calculation before opening the PhET check.</li></ul>
+<h2>Suggested Closing</h2><p>Compare one case where the calculator's inverse-tangent output is not yet the final direction. Ask: <strong>Why is the tip-to-tail drawing useful even after you know how to calculate the magnitude and angle?</strong> Strong responses connect the picture to direction, quadrant, scale, and a visual reasonableness check.</p><div class="callout good"><strong>Success criterion:</strong> students move vectors without changing them, construct the resultant geometrically, and make the numerical magnitude/direction agree with the drawing before relying on PhET.</div>
 </main></body></html>
