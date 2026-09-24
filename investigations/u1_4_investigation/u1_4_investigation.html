@@ -1,43 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>U1.4 Investigation - Equilibrium: Still and Moving</title>
-<link rel="stylesheet" href="../../css/investigation.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U1.4 Investigation - From Mass to Balance</title>
+<script>
+window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]],processEscapes:true}};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="../../css/investigation.css">
+<style>
+/* Local print-fit tuning for this investigation; shared course CSS remains unchanged. */
+.student-page{padding:.36in .50in .46in;}
+.investigation-header{padding-bottom:.08in;margin-bottom:.11in;}
+.eyebrow{font-size:8.8pt;} h1{font-size:21pt;} .subtitle{font-size:10.5pt;}
+.meta-line{font-size:8.8pt;margin:.07in 0 .03in;}
+.target{font-size:9.5pt;margin:.08in 0 .10in;padding:.07in .10in;}
+.phase{margin:.10in 0 .06in;} .phase-label{font-size:8.5pt;}
+h2{font-size:15pt;margin:.01in 0 .06in;padding-bottom:.035in;} h3{font-size:11.4pt;}
+p,li,td,th{font-size:9.55pt;} p{margin:.04in 0 .06in;}
+ul,ol{margin:.04in 0 .07in .22in;} li{margin:.018in 0;}
+.task{margin:.08in 0 .10in;padding-left:.10in;} .task-title{margin-bottom:.025in;} .task-num{font-size:8.3pt;}
+.directions{margin:.06in 0 .09in;padding:.07in .10in;}
+table{margin:.05in auto .08in;} th,td{padding:.035in .055in;}
+.equation-center{font-size:14pt;padding:.05in 0;}
+.workspace{margin:.045in 0 .075in;background:repeating-linear-gradient(to bottom,transparent 0,transparent .23in,#e2e7ea .24in);}
+.synthesis{margin:.08in 0;padding:.08in .11in;} .checkpoint{margin:.07in 0;padding:.07in .10in;}
+.footer-note{left:.50in;right:.50in;bottom:.18in;font-size:7.5pt;}
+</style>
 </head>
-<body><main class="student-page">
-<div class="kicker">Physics · Unit 1 · Section 1.4 · Investigation</div>
-<h1>Equilibrium: Still and Moving</h1>
-<p class="subtitle">Balance real forces, then test whether equilibrium can exist while an object is moving.</p>
-<div class="target"><strong>Learning target:</strong> Determine whether an object is in mechanical equilibrium and explain how balanced forces relate to rest or constant straight-line motion.</div>
-<div class="question">Research Question: What evidence tells us that forces are balanced, and can an object be in equilibrium while it is moving?</div>
+<body>
 
-<h2>Part A. Air-Force Balance Challenge</h2>
-<div class="check"><strong>Materials:</strong> 3 drinking straws, 1 ping-pong ball, masking tape, protractor, ruler, and timer. Work on a smooth tabletop or floor area.</div>
-<h3>Level 1 - Opposite Forces</h3><ol><li>Mark a center point with tape.</li><li>Two students position themselves directly opposite each other, roughly 180° apart.</li><li>Place the ball at the center. Both blow through the straws and adjust until the ball stays near the center for at least 5 seconds.</li><li>Change one person's force and observe what happens.</li></ol>
-<table><tr><th>Observation</th><th>Your evidence</th></tr><tr><td>What did the ball do when the two effects were balanced?</td><td></td></tr><tr><td>What changed when one side became stronger?</td><td></td></tr><tr><td>Net force during the best balance: zero or nonzero?</td><td></td></tr></table>
-<div class="workspace blank" style="--ws:160px" data-label="Sketch the two force vectors during equilibrium"></div>
+<section class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">Physics · Unit 1 · Section 1.4 · Investigation</div>
+    <h1>From Mass to Balance</h1>
+    <p class="subtitle">Measure mass, predict weight, and test how support forces combine in equilibrium.</p>
+    <div class="meta-line"><span><strong>Name:</strong> __________________________</span><span><strong>Partner(s):</strong> ________________________</span><span><strong>Date:</strong> __________</span></div>
+  </header>
 
-<h3>Level 2 - Perpendicular Forces</h3><ol><li>Move the two blowers so their directions are 90° apart.</li><li>Try equal-strength blowing first.</li><li>Predict and then observe the direction in which the ball drifts.</li><li>Decide where a third force would need to point to stop that drift.</li></ol>
-<div class="workspace" style="--ws:90px" data-label="Why two perpendicular forces do not balance"></div>
+  <div class="target"><strong>Learning target:</strong> I can use \(W=mg\) to predict gravitational force and use measured support forces to explain vertical equilibrium.<br><strong>Research question:</strong> How can a mass measurement predict the forces needed to support a system that is at rest?</div>
 
-<h3>Level 3 - Three-Way Balance</h3><ol><li>Place three blowers about 120° apart around the center.</li><li>All three begin together and make small adjustments until the ball remains near center.</li><li>Record your longest stable time.</li></ol>
-<table><tr><th>Best equilibrium time</th><td style="height:38px"></td></tr><tr><th>What evidence says net force was near zero?</th><td></td></tr></table>
-<div class="workspace blank" style="--ws:180px" data-label="Sketch three force vectors during the best balance"></div>
+  <div class="directions"><strong>Materials:</strong> digital scale, hanging mass or mass hanger, two spring scales/force sensors, lightweight rigid bar or meter stick, vertical support loops, stand/support, and tape. <strong>Safety:</strong> Stay below each spring scale's maximum reading and keep feet clear of falling masses.</div>
 
-<h2>Part B. Dynamic Equilibrium Challenge</h2>
-<div class="check"><strong>Materials:</strong> wooden block or textbook, spring scale/force sensor, smooth marked path, Vernier motion detector, and Graphical Analysis. The object should slide with noticeable friction.</div>
-<p>Your group will pull the object in a straight line while trying to maintain approximately constant speed for several seconds.</p>
-<div class="step"><div class="step-num">1</div><div>Set Graphical Analysis to display velocity vs time.</div></div><div class="step"><div class="step-num">2</div><div>Pull horizontally with the spring scale/force sensor. Adjust your pull until the velocity graph is as flat as you can make it for a useful interval.</div></div><div class="step"><div class="step-num">3</div><div>Record the approximate steady pulling force and paste or sketch the velocity graph.</div></div>
-<table><tr><th>Approximate steady pulling force</th><td></td><th>Motion during selected interval</th><td></td></tr></table>
-<div class="workspace blank" style="--ws:210px" data-label="Paste or sketch constant-speed velocity graph"></div>
-<p>Draw a force diagram for the block during your best constant-speed interval. Include weight, support force, applied pull, and friction/resistance.</p>
-<div class="workspace blank" style="--ws:220px" data-label="Dynamic-equilibrium force diagram"></div>
+  <div class="phase"><div class="phase-label">Part A · One support</div><h2>Can mass predict a spring-scale reading?</h2></div>
 
-<h2>Compare Static and Dynamic Equilibrium</h2>
-<table><tr><th></th><th>Static equilibrium</th><th>Dynamic equilibrium</th></tr><tr><td>Motion</td><td></td><td></td></tr><tr><td>Net force</td><td></td><td></td></tr><tr><td>Can individual forces be nonzero?</td><td></td><td></td></tr></table>
-<p>Explain why the moving block can have zero net force even though a forward pull is acting on it.</p><div class="workspace" style="--ws:105px" data-label="Balanced-motion reasoning"></div>
+  <div class="task">
+    <div class="task-title"><span class="task-num">A1</span><h3>Measure the hanging load</h3></div>
+    <p>Choose one hanging load. Use the <strong>digital scale</strong> to measure its mass before attaching it to a spring scale.</p>
+    <table class="data-table"><tr><th>Mass from digital scale</th><th>Mass in kilograms</th></tr><tr><td style="height:36px">__________ g</td><td>__________ kg</td></tr></table>
+  </div>
 
-<h2>Equilibrium Rule</h2>
-<p>Write an evidence-based rule connecting net force and motion. Your rule must allow both an object at rest and an object moving at constant speed in a straight line.</p><div class="workspace" style="--ws:120px" data-label="Equilibrium rule in your own words"></div>
-</main></body></html>
+  <div class="task">
+    <div class="task-title"><span class="task-num">A2</span><h3>Predict the weight</h3></div>
+    <p>Use \(g=9.8\text{ N/kg}\) to calculate the gravitational force on the load.</p>
+    <p class="equation-center">\(W=mg\)</p>
+    <div class="workspace" style="--ws:.42in"></div>
+    <p><strong>Predicted weight:</strong> <span class="response-line"></span> N</p>
+    <p class="prompt">Before you hang the load, what should one vertical spring scale read when the load is at rest? Why?</p>
+    <div class="workspace" style="--ws:.42in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">A3</span><h3>Test the prediction</h3></div>
+    <ol><li>Hang the same load from <strong>one</strong> spring scale.</li><li>Wait until the load is motionless.</li><li>Record the scale reading and compare it with your calculated weight.</li></ol>
+    <table><tr><th>Calculated weight \(W=mg\)</th><th>Measured support force</th><th>Difference</th></tr><tr><td style="height:36px">__________ N</td><td>__________ N</td><td>__________ N</td></tr></table>
+    <p class="prompt">What does the comparison suggest about the upward support force and downward weight?</p>
+    <div class="workspace" style="--ws:.38in"></div>
+  </div>
+
+  <div class="checkpoint"><strong>Checkpoint:</strong> Sketch a force diagram for the motionless load. Label the upward support force and downward weight, then write the vertical equilibrium relationship.</div>
+  <div class="workspace blank" style="--ws:.28in"></div>
+
+  <div class="footer-note"><span>Physics · Unit 1.4</span><span>Investigation · Page 1 of 4</span></div>
+</section>
+
+<section class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">Physics · Unit 1 · Section 1.4 · Investigation</div>
+    <h1>From Mass to Balance</h1>
+    <p class="subtitle">Test how two vertical supports share the same total load.</p>
+  </header>
+
+  <div class="phase"><div class="phase-label">Part B · Two supports</div><h2>How do two supports share one load?</h2></div>
+  <div class="directions">Suspend a lightweight rigid bar from <strong>two vertical spring scales</strong>. Hang the same load from the bar. Keep both support points fixed and keep the total suspended mass the same in every trial.</div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">B1</span><h3>Find the total system weight</h3></div>
+    <p>Place the <strong>entire load that will hang below the spring scales</strong> on the digital scale: bar + connectors + hanging load. Do not include the spring scales.</p>
+    <table><tr><th>Total suspended mass</th><th>Total mass in kg</th><th>Calculated \(W_{system}\)</th></tr><tr><td style="height:36px">__________ g</td><td>__________ kg</td><td>__________ N</td></tr></table>
+    <p>Show \(W_{system}=m_{system}g\):</p><div class="workspace" style="--ws:.34in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">B2</span><h3>Predict the center trial</h3></div>
+    <p>Hang the load near the center. Before reading the scales, predict how the total weight might be shared.</p>
+    <table><tr><th>Predicted \(F_A\)</th><th>Predicted \(F_B\)</th><th>Predicted \(F_A+F_B\)</th></tr><tr><td style="height:34px">__________ N</td><td>__________ N</td><td>__________ N</td></tr></table>
+    <p class="prompt">If the bar stays at rest, what must be true about the two support forces together?</p><div class="workspace" style="--ws:.30in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">B3</span><h3>Move the load and collect evidence</h3></div>
+    <ol><li>Trial 1: load near the center.</li><li>Trial 2: move the load closer to Support A.</li><li>Trial 3: move the load closer to Support B.</li><li>Wait for the system to settle before reading both scales.</li></ol>
+    <table><tr><th>Trial</th><th>Load position</th><th>\(F_A\)</th><th>\(F_B\)</th><th>\(F_A+F_B\)</th><th>\(W_{system}\)</th></tr><tr><td>1</td><td>Center</td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td>Closer to A</td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td>Closer to B</td><td></td><td></td><td></td><td></td></tr></table>
+  </div>
+
+  <div class="synthesis">
+    <strong>Analyze your evidence.</strong>
+    <p><strong>What changed?</strong> __________________________________________________________________________________</p>
+    <p><strong>What stayed approximately constant?</strong> ______________________________________________________________</p>
+    <p><strong>Complete the rule:</strong> \(F_A+F_B\approx\) ____________________</p>
+  </div>
+
+  <div class="footer-note"><span>Physics · Unit 1.4</span><span>Investigation · Page 2 of 4</span></div>
+</section>
+
+<section class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">Physics · Unit 1 · Section 1.4 · Investigation</div>
+    <h1>From Mass to Balance</h1>
+    <p class="subtitle">Use equilibrium as a prediction tool, not just an observation.</p>
+  </header>
+
+  <div class="phase"><div class="phase-label">Part C · Mystery force</div><h2>Can you predict a hidden support force?</h2></div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">C1</span><h3>Hide Support B</h3></div>
+    <ol><li>Place the hanging load off-center so the two readings are noticeably different.</li><li>Wait until the system is at rest, then have your partner cover Support B.</li><li>Record \(W_{system}\) and the visible Support A reading.</li><li>Use vertical equilibrium to predict Support B <strong>before</strong> uncovering it.</li></ol>
+    <table><tr><th>\(W_{system}\)</th><th>Visible \(F_A\)</th><th>Predicted \(F_B\)</th><th>Measured \(F_B\)</th><th>Difference</th></tr><tr><td style="height:38px"></td><td></td><td></td><td></td><td></td></tr></table>
+    <p>Show the equilibrium calculation:</p><div class="workspace" style="--ws:.52in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">C2</span><h3>Switch the mystery</h3></div>
+    <p>Move the load to a new off-center position. Cover Support A and predict it from the visible Support B reading.</p>
+    <table><tr><th>\(W_{system}\)</th><th>Visible \(F_B\)</th><th>Predicted \(F_A\)</th><th>Measured \(F_A\)</th><th>Difference</th></tr><tr><td style="height:38px"></td><td></td><td></td><td></td><td></td></tr></table>
+    <p>Show the equilibrium calculation:</p><div class="workspace" style="--ws:.52in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">C3</span><h3>Unequal-support challenge</h3></div>
+    <p>Adjust the load so one support carries clearly more force than the other while the system remains at rest. Record the readings.</p>
+    <table><tr><th>\(F_A\)</th><th>\(F_B\)</th><th>\(F_A+F_B\)</th><th>\(W_{system}\)</th></tr><tr><td style="height:36px"></td><td></td><td></td><td></td></tr></table>
+    <p class="prompt">Does equilibrium require the individual support forces to be equal? Use your trial as evidence.</p><div class="workspace" style="--ws:.62in"></div>
+  </div>
+
+  <div class="checkpoint"><strong>Prediction model:</strong> For vertical equilibrium, \(\Sigma F_y=0\). If upward is positive, \(F_A+F_B-W_{system}=0\).</div>
+
+  <div class="footer-note"><span>Physics · Unit 1.4</span><span>Investigation · Page 3 of 4</span></div>
+</section>
+
+<section class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">Physics · Unit 1 · Section 1.4 · Investigation</div>
+    <h1>From Mass to Balance</h1>
+    <p class="subtitle">Use your measurements to state what equilibrium means.</p>
+  </header>
+
+  <div class="phase"><div class="phase-label">Synthesis</div><h2>What does equilibrium actually mean?</h2></div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">1</span><h3>Make a claim from evidence</h3></div>
+    <p class="prompt">A student says, “If an object is at rest, either no forces act on it or every support force must be the same size.” Use evidence from this investigation to respond.</p>
+    <div class="workspace" style="--ws:1.05in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">2</span><h3>Write the equilibrium rule</h3></div>
+    <p>Use words and an equation to state the rule for vertical equilibrium.</p>
+    <div class="workspace" style="--ws:.72in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">3</span><h3>Final prediction</h3></div>
+    <p>A suspended system has a mass of \(0.650\text{ kg}\). Support A reads \(2.40\text{ N}\). If the system is in vertical equilibrium, predict the reading on Support B. Show enough work to make your reasoning clear.</p>
+    <div class="workspace" style="--ws:.90in"></div>
+  </div>
+
+  <div class="task">
+    <div class="task-title"><span class="task-num">4</span><h3>Evaluate the model</h3></div>
+    <p>Your calculated and measured forces may not match perfectly. Identify one reasonable source of experimental difference without changing the equilibrium model.</p>
+    <div class="workspace" style="--ws:.62in"></div>
+  </div>
+
+  <div class="synthesis"><strong>Connection:</strong> Today your system was at rest, so you observed <em>static equilibrium</em>. An object moving in a straight line at constant velocity can also have zero net force; that is <em>dynamic equilibrium</em>. In both cases, equilibrium means the velocity is not changing.</div>
+
+  <div class="footer-note"><span>Physics · Unit 1.4</span><span>Investigation · Page 4 of 4</span></div>
+</section>
+
+</body>
+</html>
