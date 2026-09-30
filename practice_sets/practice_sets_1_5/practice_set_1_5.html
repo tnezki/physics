@@ -10,160 +10,268 @@
 window.MathJax = {
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
   }
 };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+.force-diagram-surface {
+  width: 100%;
+  min-height: 210px;
+  margin: 8px 0 2px 0;
+  border: 1.5px dashed #9aa4af;
+  border-radius: 8px;
+  background: #fff;
+}
+.vector-note {
+  margin: 2px 0 10px 0;
+  padding: 8px 10px;
+  border-left: 4px solid var(--navy-mid);
+  background: var(--blue-bg);
+  line-height: 1.35;
+}
+.word-bank {
+  margin: 6px 0 8px 0;
+  padding: 7px 10px;
+  border: 1px solid #a9b9cf;
+  background: var(--blue-bg);
+  font-weight: 700;
+}
+@media print {
+  .force-diagram-surface { min-height: 1.8in; }
+}
+</style>
 </head>
 <body>
 <div class="container">
 <h1>Conceptual Physics Practice 1.5</h1>
 <div class="dok-section">
-<div class="problem" data-task-id="758bfece2908696e5c97" data-bank-family-id="U1-S5-PRACTICE-F02" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="739744ced77db458f7d3f7ebf31dd58884b848fc29674b322710a9e53f012810">
+
+<div class="section-label">Vocabulary &amp; Concept Review — Equilibrium</div>
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC1" data-i-can-text="I can recognize static equilibrium and dynamic equilibrium." data-question-structure-id="VOCAB-MATCHING-SET-01" data-response-mode="matching" data-representation-mode="direct_text">
 <div class="problem-body">
-<p><span class="qnum">1.</span> A lamp hangs motionless from a single vertical cord. Draw a force diagram for the lamp only.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
+<p><span class="qnum">1.</span> Match each physics term to the best definition.</p>
+<ol class="matching-prompts">
+<li><strong>net force</strong></li>
+<li><strong>equilibrium</strong></li>
+<li><strong>static equilibrium</strong></li>
+<li><strong>dynamic equilibrium</strong></li>
+<li><strong>normal force</strong></li>
+<li><strong>tension</strong></li>
+</ol>
+<ol class="matching-choices" type="A">
+<li>The vector sum of all forces acting on an object.</li>
+<li>A state in which the net force is zero.</li>
+<li>Zero net force while the object remains at rest.</li>
+<li>Zero net force while the object moves with constant velocity.</li>
+<li>A support force exerted by a surface, perpendicular to that surface.</li>
+<li>A pulling force transmitted by a rope, string, or cable.</li>
+</ol>
+<div class="workspace ws-30"></div>
+</div>
+</div>
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="VOCAB-CONCEPT-TO-TERM-01" data-response-mode="constructed_response" data-representation-mode="direct_text">
+<div class="problem-body">
+<p><span class="qnum">2.</span> Use the word bank to complete the statements.</p>
+<div class="word-bank">balanced forces &nbsp;•&nbsp; unbalanced forces &nbsp;•&nbsp; resultant vector &nbsp;•&nbsp; equilibrium</div>
+<p>a. When all force vectors add to zero, the forces are __________ and the object is in __________.</p>
+<p>b. The single vector that represents the vector sum of two or more vectors is the __________.</p>
+<p>c. When the force vectors do not add to zero, the forces are __________.</p>
+<div class="workspace ws-40"></div>
+</div>
+</div>
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC1" data-i-can-text="I can recognize static equilibrium and dynamic equilibrium." data-question-structure-id="VOCAB-MATCHING-SET-01" data-response-mode="matching" data-representation-mode="direct_text">
+<div class="problem-body">
+<p><span class="qnum">3.</span> Classify each situation as <strong>static equilibrium</strong>, <strong>dynamic equilibrium</strong>, or <strong>not in equilibrium</strong>.</p>
+<ol class="matching-prompts">
+<li>A book sits motionless on a desk.</li>
+<li>A train moves west at constant speed on a straight track.</li>
+<li>A bicycle speeds up while traveling straight ahead.</li>
+<li>A car turns a corner at constant speed.</li>
+</ol>
 <div class="workspace ws-50"></div>
 </div>
 </div>
-<div class="problem" data-task-id="73a2f60fcf1f498eeabe" data-bank-family-id="U1-S5-PRACTICE-F17" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="FEATURE-IDENTIFY-FROM-REPRESENTATION-01" data-response-mode="constructed_response" data-representation-mode="supplied_force_diagram" data-variant-key="6f1b23fed26630584f871db19392a69fb35aa1506e794818bdd454c4a02ef5da">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC2" data-i-can-text="I can explain why an object at rest can still have forces acting on it." data-question-structure-id="ERROR-CRITIQUE-CLAIM-01" data-response-mode="constructed_response" data-representation-mode="direct_text">
 <div class="problem-body">
-<p><span class="qnum">2.</span> Use the opposing-force diagram. State the condition required for the shown forces to be balanced.</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-70800F1157C9__unit1-opposing-forces.png" alt="Approved Unit 1 physics diagram for this question.">
-<div class="workspace ws-50"></div>
+<p><span class="qnum">4.</span> A laptop rests on a desk. A student says, “Because the laptop is not moving, no forces are acting on it.” Critique the statement and revise it using the terms <strong>weight</strong>, <strong>normal force</strong>, and <strong>net force</strong>.</p>
+<div class="workspace ws-80"></div>
 </div>
 </div>
-<div class="problem" data-task-id="2ccac30d27028f75b01f" data-bank-family-id="U1-S5-PRACTICE-F10" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="bcba54c287d2e2f8c76509ac14df3a96c8fdc9aa946eb6586cd2bfccaccb788a">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC3" data-i-can-text="I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces." data-question-structure-id="PHYS-PREDICT-JUSTIFY-01" data-response-mode="constructed_response" data-representation-mode="direct_text">
 <div class="problem-body">
-<p><span class="qnum">3.</span> A parachutist descends at terminal speed. Draw a force diagram for the parachutist.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">5.</span> A car travels east at constant speed on a straight, level road. Explain why the car can be in equilibrium even though it is moving. State what must be true about the total left/right forces and the total up/down forces.</p>
+<div class="workspace ws-80"></div>
 </div>
 </div>
-<div class="problem" data-task-id="e5a1274f713ac87f3429" data-bank-family-id="U1-S5-PRACTICE-F01" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="908a40460a6982c3d44440134491dacce0cb07a12f095a92cf1f2787960bf04b">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC3" data-i-can-text="I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces." data-question-structure-id="FORMULA-INVERSE-VARIABLE-01" data-response-mode="constructed_response" data-representation-mode="equation_relationship">
 <div class="problem-body">
-<p><span class="qnum">4.</span> A book rests on a level table. Draw a force diagram for the book only.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">6.</span> An elevator moves <strong>downward at constant speed</strong>. Its weight is 7200 N downward. What upward cable tension is required? Is this static equilibrium or dynamic equilibrium?</p>
+<p>Use the equilibrium rule: \(\sum F_y=0\).</p>
+<div class="workspace ws-70"></div>
 </div>
 </div>
-<div class="problem" data-task-id="ede6c649cd1f99d0c04b" data-bank-family-id="U1-S5-PRACTICE-F25" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="ERROR-CRITIQUE-CLAIM-01" data-response-mode="constructed_response" data-representation-mode="direct_text" data-variant-key="b3eb76053356ec402728f40090cce6b7da9a6e996dd4ac526ec3a464fdd61089">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC3" data-i-can-text="I can explain why an object moving at constant speed in a straight line can be in equilibrium and use the equilibrium rule to reason about upward/downward and left/right forces." data-question-structure-id="FRQ-MULTIPART-SHARED-CONTEXT-01" data-response-mode="constructed_response" data-representation-mode="equation_relationship">
 <div class="problem-body">
-<p><span class="qnum">5.</span> A ball is moving upward after release. A student draws an upward “motion force.” Critique the model.</p>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">7.</span> A crate moves right at constant speed across a rough, level floor. A 145 N push acts right, and the crate’s weight is 410 N downward.</p>
+<p>a. Find the friction force needed for horizontal equilibrium.</p>
+<p>b. Find the normal force needed for vertical equilibrium.</p>
+<p>c. State the net force on the crate.</p>
+<div class="workspace ws-100"></div>
 </div>
 </div>
-<div class="problem" data-task-id="612c0dd52f9441685842" data-bank-family-id="U1-S5-PRACTICE-F03" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="145a066a87b5ef652418b706c3bab5b0c900ea0bf2d41e59aed7182cb0d2f903">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC1" data-i-can-text="I can recognize static equilibrium and dynamic equilibrium." data-question-structure-id="PHYS-PREDICT-JUSTIFY-01" data-response-mode="constructed_response" data-representation-mode="direct_text">
 <div class="problem-body">
-<p><span class="qnum">6.</span> A sled is pulled to the right across rough snow and is speeding up. Draw a force diagram for the sled.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">8.</span> A skateboarder moves at constant speed but turns through a curved path. Is the skateboarder in equilibrium? Explain using <strong>velocity</strong>, <strong>acceleration</strong>, and <strong>net force</strong>.</p>
+<div class="workspace ws-80"></div>
 </div>
 </div>
-<div class="problem" data-task-id="a9e37d600b069dbf0d93" data-bank-family-id="U1-S5-PRACTICE-F28" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="PHYS-ASSUMPTION-MODEL-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="direct_text" data-variant-key="b066abd54930e48ca222deec5a664b31c728bb4cd92bb79542bd87d9f41d7a90">
+
+<div class="section-label">Force Diagrams, Balanced Forces &amp; Net Force</div>
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd">
 <div class="problem-body">
-<p><span class="qnum">7.</span> Equal 20 N forces act left and right on a moving cart. A student predicts the cart must stop. Critique the prediction.</p>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">9.</span> A textbook rests on a level table. Draw a force diagram for the <strong>textbook only</strong>. Label each force and show its direction.</p>
+<div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
 </div>
 </div>
-<div class="problem" data-task-id="2c33d602ed65a48e97e5" data-bank-family-id="U1-S5-PRACTICE-F22" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="ERROR-CRITIQUE-CLAIM-01" data-response-mode="constructed_response" data-representation-mode="supplied_force_diagram" data-variant-key="1f6ee7ca25c6a8aff8f973c8a056717098b9b9631bbc6c6c31f8ef544bb23c84">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd">
 <div class="problem-body">
-<p><span class="qnum">8.</span> Use the supplied mismatch diagram to critique the claim “An object must move in the direction of the largest force arrow.”</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png" alt="Approved Unit 1 physics diagram for this question.">
-<div class="workspace ws-50"></div>
+<p><span class="qnum">10.</span> A lamp hangs motionless from one vertical cord. Draw a force diagram for the <strong>lamp only</strong>. Label each force and show its direction.</p>
+<div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
 </div>
 </div>
-<div class="problem" data-task-id="68ac6a630b12cedee93c" data-bank-family-id="U1-S5-PRACTICE-F18" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="FEATURE-IDENTIFY-FROM-REPRESENTATION-01" data-response-mode="constructed_response" data-representation-mode="supplied_force_diagram" data-variant-key="c7717d54d3df7ff59fee6b79a16eccc874042248952dbcf302d32ff68875a198">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd">
 <div class="problem-body">
-<p><span class="qnum">9.</span> Use the flawed cart diagram to distinguish a force arrow from an arrow that merely shows the object’s motion.</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-CE653198C2C5__unit1-flawed-cart-diagram.png" alt="Approved Unit 1 physics diagram for this question.">
-<div class="workspace ws-50"></div>
+<p><span class="qnum">11.</span> A crate is pushed right across a rough floor at <strong>constant speed</strong>. Draw a force diagram for the crate. Then label the forces as balanced or unbalanced.</p>
+<div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
 </div>
 </div>
-<div class="problem" data-task-id="a6801fd38e6d0cae23bf" data-bank-family-id="U1-S5-PRACTICE-F15" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="PHYS-RANK-COMPARE-01" data-response-mode="constructed_response" data-representation-mode="supplied_force_diagram" data-variant-key="4e5e9c3b0a620badc2a7f1ffffc3f6fed7f16e4ba43a48008580fe207b8bfa22">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd">
 <div class="problem-body">
-<p><span class="qnum">10.</span> Use the constant-speed box diagram. Explain what the force arrows must show if the motion is truly constant in a straight line.</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png" alt="Approved Unit 1 physics diagram for this question.">
-<div class="workspace ws-50"></div>
+<p><span class="qnum">12.</span> A sled is pulled right across rough snow and is <strong>speeding up</strong>. Draw a force diagram for the sled. Make the relative horizontal arrow lengths consistent with the motion.</p>
+<div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
 </div>
 </div>
-<div class="problem" data-task-id="3c115a2807e51f663971" data-bank-family-id="U1-S5-PRACTICE-F19" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="FEATURE-IDENTIFY-FROM-REPRESENTATION-01" data-response-mode="selected_response" data-representation-mode="supplied_force_diagram" data-variant-key="45b923f312fd894a240bd209aaaee2343da97986701ec80dfbade8b67ad5e095">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd">
 <div class="problem-body">
-<p><span class="qnum">11.</span> Use the representation-mismatch diagram. What revision is needed before the model can represent zero net force?</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png" alt="Approved Unit 1 physics diagram for this question."><ol class="choices" type="A"><li>Adjust the opposing arrows so the vector sum is zero.</li><li>Any two forces automatically balance.</li><li>Motion requires a net force in the direction of motion.</li><li>A force diagram cannot show balance.</li></ol>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">13.</span> An elevator moves upward at constant speed. Draw a force diagram for the elevator car and identify whether it is in static equilibrium, dynamic equilibrium, or not in equilibrium.</p>
+<div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
 </div>
 </div>
-<div class="problem" data-task-id="d793f87e1d4b2ae3f0f0" data-bank-family-id="U1-S5-PRACTICE-F11" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="99e93acc9d77728bb95c357baa07fd23adfac55f96f81733d25ab69e4e622de6">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd">
 <div class="problem-body">
-<p><span class="qnum">12.</span> A crate is pushed left at constant speed across a rough floor. Draw a force diagram for the crate.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">14.</span> A ball has been tossed upward and has already left the thrower’s hand. Neglect air resistance. Draw a force diagram for the ball while it is still moving upward.</p>
+<div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
 </div>
 </div>
-<div class="problem" data-task-id="63d8df187510e09eadd5" data-bank-family-id="U1-S5-PRACTICE-F20" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="FEATURE-IDENTIFY-FROM-REPRESENTATION-01" data-response-mode="constructed_response" data-representation-mode="supplied_force_diagram" data-variant-key="8500eec60d0901e66616ecc2debde330d3c351893a6707bafd4656ef99f07eab">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="FRQ-MULTIPART-SHARED-CONTEXT-01" data-response-mode="constructed_response" data-representation-mode="equation_relationship">
 <div class="problem-body">
-<p><span class="qnum">13.</span> Use the constant-speed diagram to connect balanced forces with unchanged velocity.</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-9C32901B2ABF__unit1-box-constant-speed.png" alt="Approved Unit 1 physics diagram for this question.">
-<div class="workspace ws-50"></div>
+<p><span class="qnum">15.</span> A cart has 300 N of weight downward and a 300 N normal force upward. A person pushes 85 N right while friction acts 35 N left.</p>
+<p>a. Are the vertical forces balanced or unbalanced?</p>
+<p>b. Are the horizontal forces balanced or unbalanced?</p>
+<p>c. Find the cart’s net force and state the direction of its acceleration.</p>
+<div class="workspace ws-100"></div>
 </div>
 </div>
-<div class="problem" data-task-id="26f26a0f7eac67bec7a6" data-bank-family-id="U1-S5-PRACTICE-F16" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="FEATURE-IDENTIFY-FROM-REPRESENTATION-01" data-response-mode="selected_response" data-representation-mode="supplied_force_diagram" data-variant-key="5290bf869cd27c40205d90d7328ef38a8fecf46e0cb764259bd3e3a680f22814">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC2" data-i-can-text="I can explain why an object at rest can still have forces acting on it." data-question-structure-id="FORMULA-INVERSE-VARIABLE-01" data-response-mode="constructed_response" data-representation-mode="equation_relationship">
 <div class="problem-body">
-<p><span class="qnum">14.</span> Use the equilibrium force diagram. Which statement best defines balanced forces?</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-B6D46ACCB666__u1_4_from_ch_2_14_equilibrium_rule_scaffold_force_diagram.png" alt="Approved Unit 1 physics diagram for this question."><ol class="choices" type="A"><li>The vector sum of all forces is zero.</li><li>Any two forces automatically balance.</li><li>Motion requires a net force in the direction of motion.</li><li>A force diagram cannot show balance.</li></ol>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">16.</span> A 640 N box remains at rest on the floor while two people lift upward on it with forces of 220 N and 180 N. The floor still touches the box. What upward normal force must the floor exert for static equilibrium?</p>
+<p>Use \(\sum F_y=0\).</p>
+<div class="workspace ws-80"></div>
 </div>
 </div>
-<div class="problem" data-task-id="cc13485269ccfc6d5598" data-bank-family-id="U1-S5-PRACTICE-F23" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="PHYS-PREDICT-JUSTIFY-01" data-response-mode="constructed_response" data-representation-mode="direct_text" data-variant-key="115261ff5a0bfdc75c6306a40a02748fc4bb30decb9bdba3cf9e515569e3c738">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="PHYS-PREDICT-JUSTIFY-01" data-response-mode="constructed_response" data-representation-mode="direct_text">
 <div class="problem-body">
-<p><span class="qnum">15.</span> A cart is moving right while a net force acts left. Predict how its motion changes if that force continues.</p>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">17.</span> A cart is moving right when a net force begins acting left. Describe what happens to the cart’s velocity if the leftward net force continues. Be clear about the difference between the direction of <strong>velocity</strong> and the direction of <strong>acceleration</strong>.</p>
+<div class="workspace ws-90"></div>
 </div>
 </div>
-<div class="problem" data-task-id="627c093c9aa6b7f10117" data-bank-family-id="U1-S5-PRACTICE-F29" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="ERROR-CRITIQUE-CLAIM-01" data-response-mode="constructed_response" data-representation-mode="direct_text" data-variant-key="4892031e0713aff54150c13955de36999e23ecb7e302fcd0a3039d80b51627b6">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="ERROR-CRITIQUE-CLAIM-01" data-response-mode="constructed_response" data-representation-mode="direct_text">
 <div class="problem-body">
-<p><span class="qnum">16.</span> A sled moves right but is slowing. A student says the net force must point right. Critique the statement.</p>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">18.</span> A student says, “If the net force points left, the object must be moving left.” Critique the statement and rewrite it correctly using the terms <strong>net force</strong>, <strong>acceleration</strong>, and <strong>velocity</strong>.</p>
+<div class="workspace ws-90"></div>
 </div>
 </div>
-<div class="problem" data-task-id="52a559513cb29258081d" data-bank-family-id="U1-S5-PRACTICE-F07" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="924d776020873754100de5d2190fa216f24ef1b6324ef5fa631b6a6f2084a0eb">
+
+<div class="section-label">Resultant Vectors from Components</div>
+<div class="vector-note"><strong>For Questions 19–24:</strong> Each vector is written as \(\langle F_x,F_y\rangle\), where +x is right and +y is up. Add x-components together and y-components together. Write each resultant as \(\vec R=\langle R_x,R_y\rangle\). The given vectors are not parallel.</div>
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="REPRESENTATION-READ-THEN-CALCULATE-01" data-response-mode="constructed_response" data-representation-mode="vector_components">
 <div class="problem-body">
-<p><span class="qnum">17.</span> A block rests on a frictionless incline. Draw a force diagram for the block.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">19.</span> Two forces act on an object: \(\vec F_1=\langle 6,2\rangle\text{ N}\) and \(\vec F_2=\langle -1,5\rangle\text{ N}\).</p>
+<p>a. Find the resultant vector.</p>
+<p>b. Are the forces balanced or unbalanced?</p>
+<div class="workspace ws-80"></div>
 </div>
 </div>
-<div class="problem" data-task-id="4dcf4389d5848be82ee2" data-bank-family-id="U1-S5-PRACTICE-F05" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="74d35f987a03f0384a45bb0b230a509960a74cb4fb2c8d7d6443cf1f38ddabb2">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="REPRESENTATION-READ-THEN-CALCULATE-01" data-response-mode="constructed_response" data-representation-mode="vector_components">
 <div class="problem-body">
-<p><span class="qnum">18.</span> An elevator moves upward at constant speed. Draw a force diagram for the elevator car.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">20.</span> Two forces act on a low-friction cart: \(\vec F_1=\langle -4,7\rangle\text{ N}\) and \(\vec F_2=\langle 9,-3\rangle\text{ N}\).</p>
+<p>a. Find the resultant vector.</p>
+<p>b. Based on the signs of \(R_x\) and \(R_y\), describe the direction of the cart’s acceleration.</p>
+<div class="workspace ws-90"></div>
 </div>
 </div>
-<div class="problem" data-task-id="487da3c32136e7be86ed" data-bank-family-id="U1-S5-PRACTICE-F26" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="PHYS-REPRESENTATION-CONSISTENCY-01" data-response-mode="constructed_response" data-representation-mode="supplied_force_diagram" data-variant-key="1ee888221167e36f0bd9743d39a17d910d4506f65096aca0768b568802d8297f">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="REPRESENTATION-READ-THEN-CALCULATE-01" data-response-mode="constructed_response" data-representation-mode="vector_components">
 <div class="problem-body">
-<p><span class="qnum">19.</span> Use the supplied mismatch diagram to distinguish velocity arrows from force arrows and revise a confused explanation.</p><img class="bank-figure" src="../../resources/Physics_Notes_Image_Toolkit/images/unit1/PHYS-DBC68196705B__unit1-representation-mismatch.png" alt="Approved Unit 1 physics diagram for this question.">
-<div class="workspace ws-50"></div>
+<p><span class="qnum">21.</span> Two nonparallel forces act on an air-hockey puck: \(\vec F_1=\langle 8,-6\rangle\text{ N}\) and \(\vec F_2=\langle -3,2\rangle\text{ N}\).</p>
+<p>a. Find the resultant vector.</p>
+<p>b. Which horizontal and vertical directions does the resultant point?</p>
+<div class="workspace ws-90"></div>
 </div>
 </div>
-<div class="problem" data-task-id="a4cdaff2a62c73774fbf" data-bank-family-id="U1-S5-PRACTICE-F24" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="PHYS-ASSUMPTION-MODEL-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="direct_text" data-variant-key="0fc83eb870e8b9e108a75669347f1a07b2bbec775293f4f740a342837a7235c7">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S4-IC1" data-i-can-text="I can recognize static equilibrium and dynamic equilibrium." data-question-structure-id="REPRESENTATION-READ-THEN-CALCULATE-01" data-response-mode="constructed_response" data-representation-mode="vector_components">
 <div class="problem-body">
-<p><span class="qnum">20.</span> A cart is moving left while 30 N acts right and 12 N acts left. A student says the net force points left because the cart is moving left. Critique the reasoning.</p>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">22.</span> Three forces act on an object: \(\vec F_1=\langle 5,4\rangle\text{ N}\), \(\vec F_2=\langle -2,1\rangle\text{ N}\), and \(\vec F_3=\langle -3,-5\rangle\text{ N}\).</p>
+<p>a. Find the resultant vector.</p>
+<p>b. Are the forces balanced?</p>
+<p>c. Name the two possible equilibrium states the object could have, depending on whether its velocity is zero or nonzero.</p>
+<div class="workspace ws-100"></div>
 </div>
 </div>
-<div class="problem" data-task-id="4ad8e9419b596a9d8a6a" data-bank-family-id="U1-S5-PRACTICE-F04" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="e48c93845e1b4370190060665bdc40a851bdf856b80675df4609e8b7103f07f9">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC2" data-i-can-text="I can decide whether the forces are balanced or unbalanced." data-question-structure-id="REPRESENTATION-READ-THEN-CALCULATE-01" data-response-mode="constructed_response" data-representation-mode="vector_components">
 <div class="problem-body">
-<p><span class="qnum">21.</span> A ball is falling after release. Neglect air resistance. Draw a force diagram for the ball.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">23.</span> Three forces act on a small robot: \(\vec F_1=\langle 12,0\rangle\text{ N}\), \(\vec F_2=\langle -4,6\rangle\text{ N}\), and \(\vec F_3=\langle -3,-2\rangle\text{ N}\).</p>
+<p>a. Find the resultant vector.</p>
+<p>b. Are the forces balanced or unbalanced?</p>
+<p>c. Sketch the resultant arrow on a small x-y axis in your workspace.</p>
+<div class="workspace ws-110"></div>
 </div>
 </div>
-<div class="problem" data-task-id="ada5c307c3d48945e604" data-bank-family-id="U1-S5-PRACTICE-F12" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="adec6ed46fc1da207956337e2296c02f74683f4434d5e04cc382743bd160f157">
+
+<div class="problem" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="ERROR-CRITIQUE-CLAIM-01" data-response-mode="constructed_response" data-representation-mode="vector_components">
 <div class="problem-body">
-<p><span class="qnum">22.</span> A metal sphere hangs motionless from a vertical string. Draw a force diagram for the sphere.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
+<p><span class="qnum">24.</span> Three forces act on an air-hockey puck: \(\vec F_1=\langle 7,4\rangle\text{ N}\), \(\vec F_2=\langle -2,5\rangle\text{ N}\), and \(\vec F_3=\langle -6,-3\rangle\text{ N}\). The puck is currently moving right.</p>
+<p>a. Find the resultant force vector.</p>
+<p>b. A student says, “The puck will instantly move in exactly the same direction as the resultant force.” Critique the claim. Explain what the resultant force actually tells you about the puck’s motion.</p>
+<div class="workspace ws-120"></div>
 </div>
 </div>
-<div class="problem" data-task-id="6f162a7234b9b5186632" data-bank-family-id="U1-S5-PRACTICE-F27" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC3" data-i-can-text="I can explain how the net force affects the object’s motion and critique an incorrect force explanation and revise it using physics vocabulary." data-question-structure-id="PHYS-PREDICT-JUSTIFY-01" data-response-mode="constructed_response" data-representation-mode="direct_text" data-variant-key="05d842f574c544f990b704fb84e621ee32ba6dd25d0b627998fee785f00f2693">
-<div class="problem-body">
-<p><span class="qnum">23.</span> A puck moves left while the net force points right. Predict its motion over time.</p>
-<div class="workspace ws-50"></div>
-</div>
-</div>
-<div class="problem" data-task-id="4ad3ef5d984f536d973c" data-bank-family-id="U1-S5-PRACTICE-F08" data-section="1.5" data-artifact-type="practice_set" data-i-can-id="U1-S5-IC1" data-i-can-text="I can draw a force diagram for an object in a real-world situation." data-question-structure-id="REPRESENTATION-CONSTRUCT-OR-CRITIQUE-01" data-response-mode="constructed_response" data-representation-mode="student_constructed_fbd" data-variant-key="de83216df97bc454d94f2b6067bac92e9ccde9d121d0fc605c48db1747bd0705">
-<div class="problem-body">
-<p><span class="qnum">24.</span> A sign hangs at rest from two angled cables. Draw a force diagram for the sign.</p><div class="response-surface force-diagram-surface" aria-label="Blank force-diagram workspace"></div>
-<div class="workspace ws-50"></div>
-</div>
-</div>
+
 </div>
 </div>
 </body>
