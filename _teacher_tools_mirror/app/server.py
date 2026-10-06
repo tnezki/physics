@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import json, re, sys, shutil
+import json, re, sys, shutil, subprocess
 from copy import deepcopy
 from html import unescape, escape
 from html.parser import HTMLParser
@@ -13,7 +13,7 @@ ROOT=HERE.parent
 sys.path.insert(0,str(ROOT/'planner'))
 import planner_server as base
 
-VERSION='1.1-weekly-warmups'
+VERSION='1.2-planner-bump-forward'
 PHYSICS_ROOT=base.PHYSICS_ROOT
 PUBLIC_BASE=base.PUBLIC_BASE
 PRACTICE_CFG=ROOT/'practice_builder'/'sections'
@@ -301,8 +301,131 @@ class Handler(base.PlannerHandler):
             except Exception as e:return self._json(400,{'ok':False,'error':str(e)})
         return super().do_POST()
 
+def _planner_payload(day):
+    custom=deepcopy(day.get('custom_slots') or [])
+    while len(custom)<5: custom.append({'label':'','url':''})
+    return {
+        'section':str(day.get('section') or ''),
+        'day_number':int(day.get('day_number') or 0),
+        'student_slots':list(day.get('student_slots') or ['', '', '', '', ''])[:5],
+        'custom_slots':custom[:5],
+    }
+
+def _put_planner_payload(day,payload):
+    day['section']=payload['section']
+    day['day_number']=payload['day_number']
+    day['student_slots']=list(payload['student_slots'])
+    day['custom_slots']=deepcopy(payload['custom_slots'])
+
+def _blank_planner_payload(day):
+    day['section']=''
+    day['day_number']=0
+    day['student_slots']=['','','','','']
+    day['custom_slots']=[{'label':'','url':''} for _ in range(5)]
+
+def _shift_planner_forward_one(state,start_index):
+    displaced=_planner_payload(state['days'][start_index])
+    _blank_planner_payload(state['days'][start_index])
+    state['days'][start_index]['control']='Regular Day'
+    state['days'][start_index]['shift_applied']=False
+    for j in range(start_index+1,len(state['days'])):
+        target=state['days'][j]
+        if str(target.get('control') or 'Regular Day') in base.BLOCKED_CONTROLS:
+            continue
+        nxt=_planner_payload(target)
+        _put_planner_payload(target,displaced)
+        displaced=nxt
+
+def _repair_week6_for_october_shift():
+    path=warmup_cfg_path(6)
+    if not path.is_file(): return False
+    cfg=load_warmup(6)
+    bynum={int(w.get('number',0)):w for w in cfg.get('warmups',[])}
+    changed=False
+    edits={
+        1:('10/5 · Before 2.1','No new section scheduled'),
+        2:('10/6 · Before 2.1','2.1 Motion & Reference Frames'),
+        3:('10/7 · During 2.1','2.1 Motion & Reference Frames'),
+        4:('10/8 · During 2.1','2.1 Motion & Reference Frames'),
+        5:('10/9 · Before 2.2','2.2 Speed & Velocity'),
+    }
+    for n,(label,current) in edits.items():
+        w=bynum.get(n)
+        if not w: continue
+        if w.get('label')!=label: w['label']=label; changed=True
+        if w.get('current_section')!=current: w['current_section']=current; changed=True
+    w4=bynum.get(4)
+    if w4 and len(w4.get('questions') or [])>=3:
+        q1=w4['questions'][0]
+        new1={
+            'source_section':'1.5',
+            'topic':'Balanced force diagram',
+            'workspace':0.75,
+            'response_type':'FRQ',
+            'stem_html':'<p>A picture frame hangs motionless from a cord. Draw a force diagram for the frame and explain how the force arrows show that the frame is in equilibrium.</p>',
+            'choices':['','','','',''],
+        }
+        inst1=(q1.get('instances') or [{'label':'Original'}])[0]
+        for key,val in [('source_section',new1['source_section']),('topic',new1['topic']),('workspace',new1['workspace']),('response_type',new1['response_type'])]:
+            if q1.get(key)!=val: q1[key]=val; changed=True
+        if inst1.get('stem_html')!=new1['stem_html']: inst1['stem_html']=new1['stem_html']; changed=True
+        if inst1.get('choices')!=new1['choices']: inst1['choices']=new1['choices']; changed=True
+        q1['instances']=[inst1]
+        q1['active_instance']=0
+        q3=w4['questions'][2]
+        new3={
+            'source_section':'1.4',
+            'topic':'Zero net force',
+            'workspace':0.2,
+            'response_type':'MC',
+            'stem_html':'<p>Which statement must be true when the net force on an object is zero?</p>',
+            'choices':['The object must be at rest','The object must be moving','The object has zero acceleration','The object has no forces acting on it','The object must be slowing down'],
+        }
+        inst3=(q3.get('instances') or [{'label':'Original'}])[0]
+        for key,val in [('source_section',new3['source_section']),('topic',new3['topic']),('workspace',new3['workspace']),('response_type',new3['response_type'])]:
+            if q3.get(key)!=val: q3[key]=val; changed=True
+        if inst3.get('stem_html')!=new3['stem_html']: inst3['stem_html']=new3['stem_html']; changed=True
+        if inst3.get('choices')!=new3['choices']: inst3['choices']=new3['choices']; changed=True
+        q3['instances']=[inst3]
+        q3['active_instance']=0
+    if changed: save_warmup(cfg,publish=True)
+    return changed
+
+def _migrate_october_6_schedule():
+    state=base.get_state()
+    days=state.get('days') or []
+    index={str(d.get('date')):i for i,d in enumerate(days)}
+    i=index.get('2026-10-05')
+    j=index.get('2026-10-06')
+    shifted=False
+    if i is not None and j is not None:
+        d0,d1=days[i],days[j]
+        if str(d0.get('section','')).startswith('2.1') and int(d0.get('day_number') or 0)==1 and str(d1.get('section','')).startswith('2.1') and int(d1.get('day_number') or 0)==2:
+            _shift_planner_forward_one(state,i)
+            base.save_state(state)
+            atomic(base.AGENDA_PATH,base.build_student_agenda(state))
+            shifted=True
+            print('Planner migration: 2.1 now starts Tuesday 10/6; later instruction bumped forward one school day.')
+    warmups=_repair_week6_for_october_shift()
+    return shifted or warmups
+
+def _refresh_physics_mirror():
+    cmd=ROOT/'Refresh Physics GitHub Mirror.command'
+    if not cmd.is_file(): return
+    try:
+        proc=subprocess.run(['/bin/bash',str(cmd)],input='\n',text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90,check=False)
+        if proc.returncode!=0:
+            print('Physics mirror refresh warning: '+(proc.stdout or '').strip())
+    except Exception as exc:
+        print(f'Physics mirror refresh warning: {exc}')
+
 def main():
     base.ensure_teacher_shared_layout()
+    try:
+        _migrate_october_6_schedule()
+    except Exception as exc:
+        print(f'Planner migration warning: {exc}')
+    _refresh_physics_mirror()
     h=lambda *a,**kw: Handler(*a,directory=str(ROOT),**kw)
     server=ThreadingHTTPServer((base.HOST,base.PORT),h)
     print(f'Physics Tools {VERSION} running at http://{base.HOST}:{base.PORT}/')
