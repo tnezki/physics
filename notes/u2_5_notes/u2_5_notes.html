@@ -9,109 +9,73 @@
 <script>window.MathJax={tex:{inlineMath:[["\(","\)"]],displayMath:[["\[","\]"]],processEscapes:true}};</script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <style>
-  .reading-prose{font-size:10.5pt;line-height:1.62;color:#222;margin:0 0 14px}
-  .reading-prose p{font-size:10.5pt!important;line-height:1.62!important;margin:0 0 12px!important}
-  .concept-callout{margin:16px 0 18px;padding:15px 20px;border-left:7px solid var(--navy,#0b174f);background:#f4f7fb;font-size:13pt;font-weight:800;line-height:1.38;break-inside:avoid-page;page-break-inside:avoid}
-  .reading-heading{color:var(--navy,#0b174f);font-size:17pt;line-height:1.15;margin:24px 0 10px;border-left:7px solid var(--navy,#0b174f);padding:4px 0 4px 12px;break-after:avoid-page;page-break-after:avoid}
-  .textbook-figure{margin:15px auto 18px;text-align:center;break-inside:avoid-page;page-break-inside:avoid}
-  .textbook-figure img,.textbook-figure svg{display:block;margin:0 auto;max-width:min(100%,6.25in)!important;max-height:3.75in!important;width:auto;height:auto;object-fit:contain}
-  .textbook-figure figcaption{margin-top:6px;color:#555;font-size:8.5pt!important;line-height:1.35}
-  .figure-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 18px;break-inside:avoid-page;page-break-inside:avoid}
-  .figure-pair figure{margin:0;text-align:center}
-  .figure-pair img,.figure-pair svg{display:block;margin:0 auto;max-width:100%!important;max-height:2.75in!important;width:auto;height:auto;object-fit:contain}
-  .figure-pair figcaption{margin-top:5px;color:#555;font-size:8pt!important;line-height:1.3}
-  .stop-reflect{margin:16px 0 18px;padding:13px 16px;border:2px solid #b7831f;border-left-width:7px;border-radius:8px;background:#fffaf0;break-inside:avoid-page;page-break-inside:avoid}
+  .reading-prose{font-size:10.7pt;line-height:1.66;color:#222;margin:0 0 14px}
+  .reading-prose p{font-size:10.7pt!important;line-height:1.66!important;margin:0 0 13px!important}
+  .concept-callout{margin:17px 0 19px;padding:15px 20px;border-left:7px solid var(--navy,#0b174f);background:#f4f7fb;font-size:13pt;font-weight:800;line-height:1.4;break-inside:avoid-page;page-break-inside:avoid}
+  .reading-heading{color:var(--navy,#0b174f);font-size:17pt;line-height:1.15;margin:25px 0 10px;border-left:7px solid var(--navy,#0b174f);padding:4px 0 4px 12px;break-after:avoid-page;page-break-after:avoid}
+  .resource-figure{margin:16px auto 20px;text-align:center;break-inside:avoid-page;page-break-inside:avoid}
+  .resource-figure img{display:block;margin:0 auto;max-width:min(100%,6.15in)!important;max-height:3.7in!important;width:auto;height:auto;object-fit:contain;border:0;background:#fff}
+  .figure-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:15px 0 20px;break-inside:avoid-page;page-break-inside:avoid}
+  .figure-pair figure{margin:0;text-align:center}.figure-pair img{display:block;margin:0 auto;max-width:100%!important;max-height:2.65in!important;width:auto;height:auto;object-fit:contain;border:0;background:#fff}
+  .stop-reflect{margin:17px 0 19px;padding:13px 16px;border:2px solid #b7831f;border-left-width:7px;border-radius:8px;background:#fffaf0;break-inside:avoid-page;page-break-inside:avoid}
   .stop-reflect .reflect-title{display:block;color:#734d06;font-size:11pt;font-weight:900;margin-bottom:5px}
   .stop-reflect p{font-size:10pt!important;line-height:1.5!important;margin:0!important}
-  .reflect-space{height:.65in;margin-top:8px;border-bottom:1px solid #c8c8c8}
-  .example-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 20px;break-inside:avoid-page;page-break-inside:avoid}
+  .reflect-space{height:.7in;margin-top:8px;border-bottom:1px solid #c8c8c8}
+  .reflect-space.tall{height:.95in}
+  .example-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:17px 0 21px;break-inside:avoid-page;page-break-inside:avoid}
   .worked-example,.yti-card{border:2px solid #9eabbc;border-radius:9px;background:#fff;padding:13px 15px;min-width:0;break-inside:avoid-page;page-break-inside:avoid}
-  .worked-example{border-left:7px solid #2d6a9f;background:#f6fafe}
-  .yti-card{border-left:7px solid #5a3d8a;background:#faf8fd}
+  .worked-example{border-left:7px solid #2d6a9f;background:#f6fafe}.yti-card{border-left:7px solid #5a3d8a;background:#faf8fd}
   .example-label{font-size:11pt;font-weight:900;color:var(--navy,#0b174f);margin:0 0 7px}
-  .worked-example p,.yti-card p,.worked-example li,.yti-card li{font-size:9.5pt!important;line-height:1.48!important}
-  .worked-steps{margin:8px 0 0 20px;padding:0}
-  .yti-space{height:1.05in;margin-top:10px}
-  .formula-box{margin:14px auto 18px;max-width:6.2in;border:1px solid #bdc7d4;border-left:7px solid #2d6a9f;border-radius:8px;background:#fbfcfe;padding:12px 16px;break-inside:avoid-page;page-break-inside:avoid}
-  .formula-box .formula-title{font-size:10pt;font-weight:900;color:var(--navy,#0b174f);margin-bottom:5px}
-  .formula-box p{font-size:10pt!important;line-height:1.45!important;margin:0!important}
-  .reading-check{margin-top:24px;break-before:auto;page-break-before:auto}
-  .reading-check h2{color:var(--navy,#0b174f);font-size:20pt;border-left:7px solid var(--navy,#0b174f);padding:5px 0 5px 14px;margin:0 0 10px}
-  .reading-check .directions{font-size:9.5pt!important;margin:0 0 10px!important}
-  .reading-check ol{margin:0 0 0 24px;padding:0}
-  .reading-check li{font-size:9.5pt!important;line-height:1.45!important;margin:0 0 10px;padding-left:3px}
-  .answer-space{display:block;height:.42in;border-bottom:1px solid #d7dbe0;margin-top:4px}
-  .diagram-label{font:700 14px Arial,Helvetica,sans-serif;fill:#173f6d}
-  .diagram-text{font:13px Arial,Helvetica,sans-serif;fill:#1f2937}
-  .diagram-axis{stroke:#334155;stroke-width:2}.diagram-grid{stroke:#dbe3ec;stroke-width:1}.diagram-line{stroke:#173f6d;stroke-width:4;fill:none}.diagram-accent{stroke:#b7831f;stroke-width:4;fill:none}.diagram-dot{fill:#173f6d}
-  @media(max-width:820px){.figure-pair,.example-pair{grid-template-columns:1fr}.textbook-figure img,.textbook-figure svg{max-height:none!important}}
-  @media print{
-    .reading-prose p{font-size:9.5pt!important;line-height:1.5!important}
-    .textbook-figure,.figure-pair,.stop-reflect,.example-pair,.worked-example,.yti-card,.formula-box,.reading-check li{break-inside:avoid-page!important;page-break-inside:avoid!important}
-    .textbook-figure img,.textbook-figure svg{max-height:3.25in!important}
-    .figure-pair img,.figure-pair svg{max-height:2.45in!important}
-  }
+  .worked-example p,.yti-card p,.worked-example li,.yti-card li{font-size:9.5pt!important;line-height:1.5!important}.worked-steps{margin:8px 0 0 20px;padding:0}.yti-space{height:1.08in;margin-top:10px}
+  .formula-box{margin:15px auto 19px;max-width:6.2in;border:1px solid #bdc7d4;border-left:7px solid #2d6a9f;border-radius:8px;background:#fbfcfe;padding:12px 16px;break-inside:avoid-page;page-break-inside:avoid}
+  .formula-box .formula-title{font-size:10pt;font-weight:900;color:var(--navy,#0b174f);margin-bottom:5px}.formula-box p{font-size:10pt!important;line-height:1.48!important;margin:0!important}
+  .quick-table{width:100%;border-collapse:collapse;margin:12px 0 17px;break-inside:avoid-page;page-break-inside:avoid}.quick-table th,.quick-table td{border:1px solid #aeb8c5;padding:7px 9px;font-size:9.5pt;vertical-align:top}.quick-table th{background:#edf3fa;color:var(--navy,#0b174f);font-weight:900}
+  .reading-check{margin-top:25px;break-before:auto;page-break-before:auto}.reading-check h2{color:var(--navy,#0b174f);font-size:20pt;border-left:7px solid var(--navy,#0b174f);padding:5px 0 5px 14px;margin:0 0 10px}
+  .reading-check .directions{font-size:9.5pt!important;margin:0 0 10px!important}.reading-check ol{margin:0 0 0 24px;padding:0}.reading-check li{font-size:9.5pt!important;line-height:1.45!important;margin:0 0 10px;padding-left:3px}.answer-space{display:block;height:.42in;border-bottom:1px solid #d7dbe0;margin-top:4px}
+  .time-note{font-size:9pt;color:#64748b;margin:3px 0 0}
+  @media(max-width:820px){.figure-pair,.example-pair{grid-template-columns:1fr}.resource-figure img{max-height:none!important}}
+  @media print{.reading-prose p{font-size:9.5pt!important;line-height:1.5!important}.resource-figure,.figure-pair,.stop-reflect,.example-pair,.worked-example,.yti-card,.formula-box,.reading-check li,.quick-table{break-inside:avoid-page!important;page-break-inside:avoid!important}.resource-figure img{max-height:3.2in!important}.figure-pair img{max-height:2.35in!important}}
 </style>
 </head>
 <body>
 <main class="container">
-<header class="notes-title">
-  <div class="title-kicker">Conceptual Physics • Unit 2</div>
-  <h1 class="title-main">Velocity Vectors and Motion Modeling</h1>
-  <p class="title-sub">Section 2.5</p>
-  <p class="title-quote">A good motion model tells the same story in arrows, dots, data, graphs, and words.</p>
-</header>
-
-<section class="objectives">
-  <h2 class="h-target">Learning Target</h2>
-  <p>Students will use velocity vectors, motion diagrams, and simple graphs to model and explain the motion of objects.</p>
-  <ul><li>I can represent velocity with arrows that show both speed and direction.</li><li>I can compare velocity vectors to determine whether an object’s velocity is changing.</li><li>I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.</li></ul>
-</section>
-
-<section class="vocab-preview-section">
-  <h2 class="h-vocab">Vocabulary / Key Notation Preview</h2>
-  <div class="vocab-box">
-    <p class="vocab-list"><strong>velocity vector</strong>, <strong>magnitude</strong>, <strong>direction</strong>, <strong>motion diagram</strong>, <strong>position–time graph</strong>, <strong>model</strong></p>
-    <div class="vocab-sort-task">
-      <p class="vocab-sort-directions"><strong>Sort before reading.</strong> Place each term where it best fits your current understanding.</p>
-      <table class="vocab-sort-table"><thead><tr><th>Know for sure</th><th>Recognize</th><th>Don’t know yet</th></tr></thead><tbody><tr class="vocab-sort-space"><td></td><td></td><td></td></tr></tbody></table>
-    </div>
-  </div>
-</section>
-
+<!-- Built from current Physics Framework + Unit 2 source/reference packets + approved reusable figure catalog. Figure URLs pin memories commit 27148d1d3d456fa91e21bbce424f8a7ac72b4816. -->
+<header class="notes-title"><div class="title-kicker">Conceptual Physics • Unit 2</div><h1 class="title-main">Velocity Vectors and Motion Modeling</h1><p class="title-sub">Section 2.5</p><p class="title-quote">A strong motion model tells the same story in words, diagrams, vectors, tables, and graphs.</p><p class="time-note">Designed for about 20–30 minutes of reading, reflection, and practice.</p></header>
+<section class="objectives"><h2 class="h-target">Learning Target</h2><p>Students will use velocity vectors, motion diagrams, and simple graphs to model and explain the motion of objects.</p><ul><li>I can represent velocity with arrows that show both speed and direction.</li><li>I can compare velocity vectors to determine whether an object’s velocity is changing.</li><li>I can connect motion diagrams, data tables, and graphs to written descriptions of motion and critique an incorrect motion model and revise it using evidence.</li></ul></section>
+<section class="vocab-preview-section"><h2 class="h-vocab">Vocabulary / Key Notation Preview</h2><div class="vocab-box"><p class="vocab-list"><strong>velocity vector</strong>, <strong>magnitude</strong>, <strong>direction</strong>, <strong>motion diagram</strong>, <strong>position–time graph</strong>, <strong>velocity–time graph</strong>, <strong>model</strong></p><div class="vocab-sort-task"><p class="vocab-sort-directions"><strong>Sort before reading.</strong> Place each term where it best fits your current understanding.</p><table class="vocab-sort-table"><thead><tr><th>Know for sure</th><th>Recognize</th><th>Don’t know yet</th></tr></thead><tbody><tr class="vocab-sort-space"><td></td><td></td><td></td></tr></tbody></table></div></div></section>
 <section class="reading-prose">
-<p>A velocity vector is an arrow that stores two pieces of information at once. The arrow direction shows the direction of motion, and its length represents speed. Two velocity vectors are the same only when both their lengths and directions match.</p>
-<p>Motion models become more useful when several representations agree. A written description, motion diagram, data table, graph, and set of velocity vectors should all tell a consistent story about where an object is, how fast it moves, and whether its velocity is changing.</p>
-<div class="concept-callout">When comparing velocity vectors, check <strong>both</strong> arrow length and arrow direction. A change in either one means velocity changed.</div>
-<div class="figure-pair"><figure><svg viewBox="0 0 360 230" role="img" aria-label="Velocity vectors"><line x1="60" y1="80" x2="200" y2="80" class="diagram-line"/><polygon points="200,80 180,68 180,92" fill="#173f6d"/><text x="75" y="60" class="diagram-label">4 m/s east</text><line x1="100" y1="175" x2="100" y2="65" class="diagram-accent"/><polygon points="100,65 88,85 112,85" fill="#b7831f"/><text x="120" y="135" class="diagram-label">4 m/s north</text></svg><figcaption>Equal lengths can still represent different velocities when directions differ.</figcaption></figure><figure><svg viewBox="0 0 360 230" role="img" aria-label="Position time graph with constant positive slope"><line x1="55" y1="185" x2="330" y2="185" class="diagram-axis"/><line x1="55" y1="185" x2="55" y2="35" class="diagram-axis"/><line x1="75" y1="165" x2="300" y2="55" class="diagram-line"/><text x="135" y="215" class="diagram-label">time</text><text x="10" y="105" class="diagram-label" transform="rotate(-90 10 105)">position</text><text x="158" y="85" class="diagram-text">constant positive slope</text></svg><figcaption>A straight position–time line has constant velocity; graph height is position, not physical height.</figcaption></figure></div>
-<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Two velocity arrows are the same length. One points east and the other north. Has the velocity changed? What evidence supports your answer?</p><div class="reflect-space"></div></div>
-<div class="formula-box"><div class="formula-title">Representation Connection</div><p>For a position–time graph, <strong>slope represents velocity</strong>. For a velocity vector, <strong>arrow length represents speed</strong> and <strong>arrow direction represents motion direction</strong>.</p></div>
+<p>A useful motion model must preserve the quantities that matter. For velocity, two pieces of information matter at the same time: <strong>magnitude</strong> (speed) and <strong>direction</strong>. A <strong>velocity vector</strong> represents both with an arrow. The arrow points in the motion direction, and its length represents the velocity magnitude when a scale is being used.</p>
+<div class="concept-callout">A velocity vector is not just an arrow showing direction. Its direction and relative length together communicate the velocity.</div>
+<p>If two vectors point the same direction but have different lengths, the object has different speeds. If two vectors have the same length but point different directions, the speed can be the same while velocity changes. Both features must match for two velocity vectors to represent the same velocity.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/approved_course_figures/unit2-velocity-vector-turn.png" alt="Velocity vectors before and after a turn, showing how direction change changes velocity." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Two velocity arrows have equal length, but one points east and the other north. What stayed the same, what changed, and what does that mean for velocity?</p><div class="reflect-space"></div></div>
+<div class="example-pair"><section class="worked-example"><div class="example-label">Worked Example 1</div><p><strong>Situation:</strong> Construct a velocity vector for an object moving left at 5 m/s.</p><ol class="worked-steps"><li>The arrow must point left because direction is left.</li><li>The arrow length must represent 5 m/s on the chosen scale.</li><li>Both direction and magnitude are required for a complete velocity vector.</li></ol></section><section class="yti-card"><div class="example-label">You Try It 1</div><p>Construct a velocity vector for an object moving downward at 6 m/s. Explain what the arrow direction and length represent.</p><div class="yti-space"></div></section></div>
 <h2 class="reading-heading">Comparing Velocity Vectors</h2>
-<p>If two vectors have the same direction but different lengths, speed changed. If they have the same length but different directions, direction changed. If both length and direction change, both parts of velocity changed. Any of these cases means the object accelerated over the interval.</p>
-<div class="example-pair">
-    <section class="worked-example"><div class="example-label">Worked Example 1</div><p><strong>Situation:</strong> Construct a velocity vector for an object moving left at 5 m/s. Use arrow direction for motion direction and arrow length to represent speed.</p><ol class="worked-steps"><li>Point the arrow left to show direction.</li><li>Choose an arrow length that represents 5 m/s on the chosen scale.</li><li>Both direction and length are required for a complete velocity vector.</li></ol></section>
-    <section class="yti-card"><div class="example-label">You Try It 1</div><p>Construct a velocity vector for an object moving down at 6 m/s. Use arrow direction for motion direction and arrow length to represent speed.</p><div class="yti-space"></div></section>
-  </div>
-<h2 class="reading-heading">Connecting Representations</h2>
-<p>A motion diagram uses positions at equal time intervals. Larger spacing between successive positions indicates greater speed. A position–time graph uses vertical height to represent position, not how high the object is in the real world. The slope of a position–time graph describes velocity.</p>
-<div class="example-pair">
-    <section class="worked-example"><div class="example-label">Worked Example 2</div><p><strong>Situation:</strong> Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Determine whether the object’s velocity changed and explain what feature of the vectors supports your answer.</p><ol class="worked-steps"><li>The arrows have equal length, so the speed magnitude can be the same.</li><li>The direction changes from east to north.</li><li>Because direction is part of velocity, the velocity changed.</li></ol></section>
-    <section class="yti-card"><div class="example-label">You Try It 2</div><p>Vector A is 5 cm long and points south. Vector B is 5 cm long and points west. Determine whether the velocity changed and explain what feature supports your answer.</p><div class="yti-space"></div></section>
-  </div>
-<h2 class="reading-heading">Critiquing a Motion Model</h2>
-<p>A common mistake is reading a graph as a picture of the path. A line that slopes upward on a position–time graph does not mean the object climbed a hill; it means position increased as time passed. A strong critique names the incorrect interpretation and replaces it with one supported by the axes, slope, vectors, or data.</p>
-<div class="example-pair">
-    <section class="worked-example"><div class="example-label">Worked Example 3</div><p><strong>Situation:</strong> A position–time graph is shown above. Write a motion description consistent with the graph, then identify one common incorrect interpretation and correct it.</p><ol class="worked-steps"><li>The line is straight with a positive slope, so the object moves in the positive direction at constant velocity.</li><li>Graph height represents position, not physical height above the ground.</li><li>The graph should not be read as a picture of a hill.</li></ol></section>
-    <section class="yti-card"><div class="example-label">You Try It 3</div><p>Imagine a straight position–time graph with a smaller positive slope. Write a motion description and explain why the graph should not be interpreted as the shape of a hill.</p><div class="yti-space"></div></section>
-  </div>
-
+<p>Comparing vectors is one way to decide whether velocity changes. Look first at length, then at direction. A length change means the speed changed. A direction change means the direction of motion changed. Either one is enough to make the velocity different.</p>
+<p>This connects directly to acceleration. If successive velocity vectors differ, the object’s velocity is changing, so the motion includes acceleration. The vectors do not have to get longer; turning at constant speed also changes velocity.</p>
+<div class="example-pair"><section class="worked-example"><div class="example-label">Worked Example 2</div><p><strong>Situation:</strong> Vector A is 4 cm long and points east. Vector B is 4 cm long and points north. Did velocity change?</p><ol class="worked-steps"><li>The vector lengths are equal, so the represented speed can be the same.</li><li>The direction changes from east to north.</li><li>Because direction is part of velocity, the velocity changed.</li></ol></section><section class="yti-card"><div class="example-label">You Try It 2</div><p>Vector A is 3 cm long and points south. Vector B is 5 cm long and points south. Compare the two velocities and identify what changed.</p><div class="yti-space"></div></section></div>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Create two velocity vectors that represent the same speed but different velocities. Describe them clearly enough that another student could draw them.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Motion Diagrams Add Time Structure</h2>
+<p>A motion diagram shows positions at equal time intervals. Dot spacing tells how much distance is covered in each interval. Equal spacing represents constant speed. Increasing spacing shows speeding up. Decreasing spacing shows slowing down. When direction changes, the sequence of positions bends or reverses.</p>
+<p>Velocity vectors can be added to the motion diagram to show both speed and direction at each moment. This creates a richer model: the dots show where the object is, while the arrows show how it is moving.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/approved_course_figures/unit2-motion-diagram-spacing.png" alt="Equal-time motion diagrams showing constant speed, speeding up, and slowing down patterns." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>For a motion diagram with dots that get farther apart to the right, describe the velocity vectors you would draw at successive dots.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Graphs Are Representations, Not Pictures of the Path</h2>
+<p>A common graph mistake is to treat the graph line as a picture of the object’s path. On a position–time graph, the vertical axis is position and the horizontal axis is time. A rising straight line means position increases at a constant rate; it does not mean the object is climbing a hill. A steeper straight line means a larger constant velocity in the positive direction.</p>
+<p>On a velocity–time graph, the vertical value is velocity. A horizontal line above zero means constant positive velocity. A line that slopes upward means velocity is increasing; its slope represents acceleration.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/approved_course_figures/unit2-distance-time-graphs.png" alt="Motion graphs used to connect graph shape with written descriptions of motion." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Why is the statement “the object goes uphill because the graph slopes upward” usually a bad interpretation of a position–time graph?</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Translating Between Representations</h2>
+<p>Strong motion reasoning connects several representations without changing the physical story. A written description, a motion diagram, a data table, a graph, and a velocity-vector sketch should agree. If the written description says the object moves right at constant velocity, then equal-time dots should be equally spaced to the right, velocity arrows should be equal and rightward, and a position–time graph should have a constant positive slope.</p>
+<p>Translation is not copying surface features. It means preserving the same physical relationships. When two representations disagree, that mismatch is evidence that at least one part of the model needs revision.</p>
+<table class="quick-table"><thead><tr><th>Written Motion</th><th>Motion Diagram</th><th>Velocity Vectors</th><th>Position–Time Graph</th></tr></thead><tbody><tr><td>Right at constant speed</td><td>Equal spacing rightward</td><td>Equal arrows rightward</td><td>Straight line with constant positive slope</td></tr><tr><td>Right and speeding up</td><td>Spacing increases rightward</td><td>Rightward arrows grow longer</td><td>Position increases more rapidly over time</td></tr></tbody></table>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Choose one row in the table and explain how all four representations tell the same motion story.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Vectors Can Also Combine Motions</h2>
+<p>The selected source-reference image below shows velocity vectors in a situation where more than one motion contributes to the result. The key habit is the same as before: arrows carry magnitude and direction. When vectors are combined, the resultant must preserve both.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/source_reference/u2-s5__u2_5_from_ch_3_29_airplane_velocity_vector_80_60_100.png" alt="Airplane and wind velocity vectors combined to show a resultant ground velocity." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Without calculating, explain why the resultant velocity in a two-direction vector situation must depend on both vector directions, not only on adding their numerical speeds.</p><div class="reflect-space"></div></div>
+<div class="example-pair"><section class="worked-example"><div class="example-label">Worked Example 3</div><p><strong>Situation:</strong> A position–time graph is a straight line with constant positive slope. Write a matching motion description and correct one common graph misconception.</p><ol class="worked-steps"><li>A constant positive slope means constant positive velocity.</li><li>The object moves in the positive direction at a steady rate.</li><li>The graph line is not a drawing of a hill or physical path; its vertical axis represents position.</li></ol></section><section class="yti-card"><div class="example-label">You Try It 3</div><p>A position–time graph is horizontal for several seconds and then rises as a straight line. Write a motion description that matches both segments and explain why the graph is not a picture of the path.</p><div class="yti-space"></div></section></div>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>A student’s written description says “constant speed to the east,” but the student draws velocity arrows that get longer each second. Identify the mismatch and state how to fix it.</p><div class="reflect-space tall"></div></div>
 </section>
-
-<section class="reading-check">
-  <h2>Reading Check</h2>
-  <p class="directions">Answer from the reading. Most answers should be one or two sentences.</p>
-  <ol><li>What two features of a velocity vector represent the two parts of velocity?<span class="answer-space"></span></li><li>When are two velocity vectors equal?<span class="answer-space"></span></li><li>Two arrows have the same direction but different lengths. What changed?<span class="answer-space"></span></li><li>Two arrows have the same length but different directions. What changed?<span class="answer-space"></span></li><li>In a motion diagram with equal time intervals, what does increasing dot spacing indicate?<span class="answer-space"></span></li><li>What does the vertical axis of a position–time graph represent?<span class="answer-space"></span></li><li>What does the slope of a position–time graph represent?<span class="answer-space"></span></li><li>Why is it incorrect to interpret a position–time graph as a picture of a hill?<span class="answer-space"></span></li><li>Name two representations that should tell a consistent story in a good motion model.<span class="answer-space"></span></li></ol>
-</section>
-</main>
-</body>
-</html>
+<section class="reading-check"><h2>Reading Check</h2><p class="directions">Answer from the reading. Use complete physics statements when a question asks you to explain.</p><ol><li>What two pieces of information does a velocity vector communicate?<span class="answer-space"></span></li><li>How can two vectors have the same speed but different velocities?<span class="answer-space"></span></li><li>How can comparing successive velocity vectors show that acceleration is occurring?<span class="answer-space"></span></li><li>What does equal spacing in an equal-time motion diagram indicate?<span class="answer-space"></span></li><li>What does increasing dot spacing indicate?<span class="answer-space"></span></li><li>Why should a position–time graph not be read as a picture of a hill or path?<span class="answer-space"></span></li><li>Describe the graph pattern for constant positive velocity on a position–time graph.<span class="answer-space"></span></li><li>Give one written motion description and explain what matching velocity vectors should look like.<span class="answer-space"></span></li><li>What should you do when two representations of the same motion disagree?<span class="answer-space"></span></li></ol></section>
+</main></body></html>

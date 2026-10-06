@@ -9,106 +9,71 @@
 <script>window.MathJax={tex:{inlineMath:[["\(","\)"]],displayMath:[["\[","\]"]],processEscapes:true}};</script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <style>
-  .reading-prose{font-size:10.5pt;line-height:1.62;color:#222;margin:0 0 14px}
-  .reading-prose p{font-size:10.5pt!important;line-height:1.62!important;margin:0 0 12px!important}
-  .concept-callout{margin:16px 0 18px;padding:15px 20px;border-left:7px solid var(--navy,#0b174f);background:#f4f7fb;font-size:13pt;font-weight:800;line-height:1.38;break-inside:avoid-page;page-break-inside:avoid}
-  .reading-heading{color:var(--navy,#0b174f);font-size:17pt;line-height:1.15;margin:24px 0 10px;border-left:7px solid var(--navy,#0b174f);padding:4px 0 4px 12px;break-after:avoid-page;page-break-after:avoid}
-  .textbook-figure{margin:15px auto 18px;text-align:center;break-inside:avoid-page;page-break-inside:avoid}
-  .textbook-figure img,.textbook-figure svg{display:block;margin:0 auto;max-width:min(100%,6.25in)!important;max-height:3.75in!important;width:auto;height:auto;object-fit:contain}
-  .textbook-figure figcaption{margin-top:6px;color:#555;font-size:8.5pt!important;line-height:1.35}
-  .figure-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 18px;break-inside:avoid-page;page-break-inside:avoid}
-  .figure-pair figure{margin:0;text-align:center}
-  .figure-pair img,.figure-pair svg{display:block;margin:0 auto;max-width:100%!important;max-height:2.75in!important;width:auto;height:auto;object-fit:contain}
-  .figure-pair figcaption{margin-top:5px;color:#555;font-size:8pt!important;line-height:1.3}
-  .stop-reflect{margin:16px 0 18px;padding:13px 16px;border:2px solid #b7831f;border-left-width:7px;border-radius:8px;background:#fffaf0;break-inside:avoid-page;page-break-inside:avoid}
+  .reading-prose{font-size:10.7pt;line-height:1.66;color:#222;margin:0 0 14px}
+  .reading-prose p{font-size:10.7pt!important;line-height:1.66!important;margin:0 0 13px!important}
+  .concept-callout{margin:17px 0 19px;padding:15px 20px;border-left:7px solid var(--navy,#0b174f);background:#f4f7fb;font-size:13pt;font-weight:800;line-height:1.4;break-inside:avoid-page;page-break-inside:avoid}
+  .reading-heading{color:var(--navy,#0b174f);font-size:17pt;line-height:1.15;margin:25px 0 10px;border-left:7px solid var(--navy,#0b174f);padding:4px 0 4px 12px;break-after:avoid-page;page-break-after:avoid}
+  .resource-figure{margin:16px auto 20px;text-align:center;break-inside:avoid-page;page-break-inside:avoid}
+  .resource-figure img{display:block;margin:0 auto;max-width:min(100%,6.15in)!important;max-height:3.7in!important;width:auto;height:auto;object-fit:contain;border:0;background:#fff}
+  .figure-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:15px 0 20px;break-inside:avoid-page;page-break-inside:avoid}
+  .figure-pair figure{margin:0;text-align:center}.figure-pair img{display:block;margin:0 auto;max-width:100%!important;max-height:2.65in!important;width:auto;height:auto;object-fit:contain;border:0;background:#fff}
+  .stop-reflect{margin:17px 0 19px;padding:13px 16px;border:2px solid #b7831f;border-left-width:7px;border-radius:8px;background:#fffaf0;break-inside:avoid-page;page-break-inside:avoid}
   .stop-reflect .reflect-title{display:block;color:#734d06;font-size:11pt;font-weight:900;margin-bottom:5px}
   .stop-reflect p{font-size:10pt!important;line-height:1.5!important;margin:0!important}
-  .reflect-space{height:.65in;margin-top:8px;border-bottom:1px solid #c8c8c8}
-  .example-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 20px;break-inside:avoid-page;page-break-inside:avoid}
+  .reflect-space{height:.7in;margin-top:8px;border-bottom:1px solid #c8c8c8}
+  .reflect-space.tall{height:.95in}
+  .example-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:17px 0 21px;break-inside:avoid-page;page-break-inside:avoid}
   .worked-example,.yti-card{border:2px solid #9eabbc;border-radius:9px;background:#fff;padding:13px 15px;min-width:0;break-inside:avoid-page;page-break-inside:avoid}
-  .worked-example{border-left:7px solid #2d6a9f;background:#f6fafe}
-  .yti-card{border-left:7px solid #5a3d8a;background:#faf8fd}
+  .worked-example{border-left:7px solid #2d6a9f;background:#f6fafe}.yti-card{border-left:7px solid #5a3d8a;background:#faf8fd}
   .example-label{font-size:11pt;font-weight:900;color:var(--navy,#0b174f);margin:0 0 7px}
-  .worked-example p,.yti-card p,.worked-example li,.yti-card li{font-size:9.5pt!important;line-height:1.48!important}
-  .worked-steps{margin:8px 0 0 20px;padding:0}
-  .yti-space{height:1.05in;margin-top:10px}
-  .formula-box{margin:14px auto 18px;max-width:6.2in;border:1px solid #bdc7d4;border-left:7px solid #2d6a9f;border-radius:8px;background:#fbfcfe;padding:12px 16px;break-inside:avoid-page;page-break-inside:avoid}
-  .formula-box .formula-title{font-size:10pt;font-weight:900;color:var(--navy,#0b174f);margin-bottom:5px}
-  .formula-box p{font-size:10pt!important;line-height:1.45!important;margin:0!important}
-  .reading-check{margin-top:24px;break-before:auto;page-break-before:auto}
-  .reading-check h2{color:var(--navy,#0b174f);font-size:20pt;border-left:7px solid var(--navy,#0b174f);padding:5px 0 5px 14px;margin:0 0 10px}
-  .reading-check .directions{font-size:9.5pt!important;margin:0 0 10px!important}
-  .reading-check ol{margin:0 0 0 24px;padding:0}
-  .reading-check li{font-size:9.5pt!important;line-height:1.45!important;margin:0 0 10px;padding-left:3px}
-  .answer-space{display:block;height:.42in;border-bottom:1px solid #d7dbe0;margin-top:4px}
-  .diagram-label{font:700 14px Arial,Helvetica,sans-serif;fill:#173f6d}
-  .diagram-text{font:13px Arial,Helvetica,sans-serif;fill:#1f2937}
-  .diagram-axis{stroke:#334155;stroke-width:2}.diagram-grid{stroke:#dbe3ec;stroke-width:1}.diagram-line{stroke:#173f6d;stroke-width:4;fill:none}.diagram-accent{stroke:#b7831f;stroke-width:4;fill:none}.diagram-dot{fill:#173f6d}
-  @media(max-width:820px){.figure-pair,.example-pair{grid-template-columns:1fr}.textbook-figure img,.textbook-figure svg{max-height:none!important}}
-  @media print{
-    .reading-prose p{font-size:9.5pt!important;line-height:1.5!important}
-    .textbook-figure,.figure-pair,.stop-reflect,.example-pair,.worked-example,.yti-card,.formula-box,.reading-check li{break-inside:avoid-page!important;page-break-inside:avoid!important}
-    .textbook-figure img,.textbook-figure svg{max-height:3.25in!important}
-    .figure-pair img,.figure-pair svg{max-height:2.45in!important}
-  }
+  .worked-example p,.yti-card p,.worked-example li,.yti-card li{font-size:9.5pt!important;line-height:1.5!important}.worked-steps{margin:8px 0 0 20px;padding:0}.yti-space{height:1.08in;margin-top:10px}
+  .formula-box{margin:15px auto 19px;max-width:6.2in;border:1px solid #bdc7d4;border-left:7px solid #2d6a9f;border-radius:8px;background:#fbfcfe;padding:12px 16px;break-inside:avoid-page;page-break-inside:avoid}
+  .formula-box .formula-title{font-size:10pt;font-weight:900;color:var(--navy,#0b174f);margin-bottom:5px}.formula-box p{font-size:10pt!important;line-height:1.48!important;margin:0!important}
+  .quick-table{width:100%;border-collapse:collapse;margin:12px 0 17px;break-inside:avoid-page;page-break-inside:avoid}.quick-table th,.quick-table td{border:1px solid #aeb8c5;padding:7px 9px;font-size:9.5pt;vertical-align:top}.quick-table th{background:#edf3fa;color:var(--navy,#0b174f);font-weight:900}
+  .reading-check{margin-top:25px;break-before:auto;page-break-before:auto}.reading-check h2{color:var(--navy,#0b174f);font-size:20pt;border-left:7px solid var(--navy,#0b174f);padding:5px 0 5px 14px;margin:0 0 10px}
+  .reading-check .directions{font-size:9.5pt!important;margin:0 0 10px!important}.reading-check ol{margin:0 0 0 24px;padding:0}.reading-check li{font-size:9.5pt!important;line-height:1.45!important;margin:0 0 10px;padding-left:3px}.answer-space{display:block;height:.42in;border-bottom:1px solid #d7dbe0;margin-top:4px}
+  .time-note{font-size:9pt;color:#64748b;margin:3px 0 0}
+  @media(max-width:820px){.figure-pair,.example-pair{grid-template-columns:1fr}.resource-figure img{max-height:none!important}}
+  @media print{.reading-prose p{font-size:9.5pt!important;line-height:1.5!important}.resource-figure,.figure-pair,.stop-reflect,.example-pair,.worked-example,.yti-card,.formula-box,.reading-check li,.quick-table{break-inside:avoid-page!important;page-break-inside:avoid!important}.resource-figure img{max-height:3.2in!important}.figure-pair img{max-height:2.35in!important}}
 </style>
 </head>
 <body>
 <main class="container">
-<header class="notes-title">
-  <div class="title-kicker">Conceptual Physics • Unit 2</div>
-  <h1 class="title-main">Acceleration</h1>
-  <p class="title-sub">Section 2.3</p>
-  <p class="title-quote">Acceleration is about changing velocity—not just going faster.</p>
-</header>
-
-<section class="objectives">
-  <h2 class="h-target">Learning Target</h2>
-  <p>Students will explain acceleration as the rate at which velocity changes and identify acceleration from motion descriptions, data, and graphs.</p>
-  <ul><li>I can calculate acceleration from change in velocity and time.</li><li>I can explain that acceleration can involve speeding up, slowing down, or changing direction.</li><li>I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.</li></ul>
-</section>
-
-<section class="vocab-preview-section">
-  <h2 class="h-vocab">Vocabulary / Key Notation Preview</h2>
-  <div class="vocab-box">
-    <p class="vocab-list"><strong>acceleration</strong>, <strong>change in velocity</strong>, <strong>positive acceleration</strong>, <strong>negative acceleration</strong>, <strong>zero acceleration</strong>, <strong>velocity–time graph</strong></p>
-    <div class="vocab-sort-task">
-      <p class="vocab-sort-directions"><strong>Sort before reading.</strong> Place each term where it best fits your current understanding.</p>
-      <table class="vocab-sort-table"><thead><tr><th>Know for sure</th><th>Recognize</th><th>Don’t know yet</th></tr></thead><tbody><tr class="vocab-sort-space"><td></td><td></td><td></td></tr></tbody></table>
-    </div>
-  </div>
-</section>
-
+<!-- Built from current Physics Framework + Unit 2 source/reference packets + approved reusable figure catalog. Figure URLs pin memories commit 27148d1d3d456fa91e21bbce424f8a7ac72b4816. -->
+<header class="notes-title"><div class="title-kicker">Conceptual Physics • Unit 2</div><h1 class="title-main">Acceleration</h1><p class="title-sub">Section 2.3</p><p class="title-quote">Acceleration is about changing velocity, not simply going fast.</p><p class="time-note">Designed for about 20–30 minutes of reading, reflection, and practice.</p></header>
+<section class="objectives"><h2 class="h-target">Learning Target</h2><p>Students will explain acceleration as the rate at which velocity changes and identify acceleration from motion descriptions, data, and graphs.</p><ul><li>I can calculate acceleration from change in velocity and time.</li><li>I can explain that acceleration can involve speeding up, slowing down, or changing direction.</li><li>I can identify positive, negative, or zero acceleration from a motion situation and interpret simple motion graphs and connect them to velocity or acceleration.</li></ul></section>
+<section class="vocab-preview-section"><h2 class="h-vocab">Vocabulary / Key Notation Preview</h2><div class="vocab-box"><p class="vocab-list"><strong>acceleration</strong>, <strong>change in velocity</strong>, <strong>positive direction</strong>, <strong>negative direction</strong>, <strong>velocity–time graph</strong>, <strong>slope</strong></p><div class="vocab-sort-task"><p class="vocab-sort-directions"><strong>Sort before reading.</strong> Place each term where it best fits your current understanding.</p><table class="vocab-sort-table"><thead><tr><th>Know for sure</th><th>Recognize</th><th>Don’t know yet</th></tr></thead><tbody><tr class="vocab-sort-space"><td></td><td></td><td></td></tr></tbody></table></div></div></section>
 <section class="reading-prose">
-<p>Acceleration describes how quickly velocity changes. Because velocity includes both speed and direction, acceleration can happen in several ways: an object can speed up, slow down, or change direction.</p>
-<p>Average acceleration compares the change in velocity with the time interval over which that change occurs. The sign of acceleration depends on the chosen positive direction, so “positive acceleration” does not automatically mean speeding up.</p>
-<div class="concept-callout">An object accelerates whenever its <strong>velocity changes</strong>—through a change in speed, a change in direction, or both.</div>
-<div class="figure-pair"><figure><svg viewBox="0 0 360 230" role="img" aria-label="Positive slope velocity time graph"><line x1="55" y1="185" x2="330" y2="185" class="diagram-axis"/><line x1="55" y1="185" x2="55" y2="35" class="diagram-axis"/><line x1="75" y1="165" x2="300" y2="55" class="diagram-line"/><text x="138" y="215" class="diagram-label">time</text><text x="12" y="90" class="diagram-label" transform="rotate(-90 12 90)">velocity</text><text x="175" y="85" class="diagram-text">positive slope → positive acceleration</text></svg><figcaption>On a velocity–time graph, slope represents acceleration.</figcaption></figure><figure><svg viewBox="0 0 360 230" role="img" aria-label="Velocity and acceleration opposite while slowing"><line x1="60" y1="110" x2="285" y2="110" class="diagram-line"/><polygon points="285,110 265,98 265,122" fill="#173f6d"/><text x="95" y="90" class="diagram-label">velocity east</text><line x1="230" y1="160" x2="105" y2="160" class="diagram-accent"/><polygon points="105,160 125,148 125,172" fill="#b7831f"/><text x="120" y="190" class="diagram-label">acceleration west</text></svg><figcaption>Opposite velocity and acceleration directions correspond to slowing down.</figcaption></figure></div>
-<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>A skateboarder moves east but slows down. The velocity points east. Which direction must the acceleration point, and why?</p><div class="reflect-space"></div></div>
-<div class="formula-box"><div class="formula-title">Acceleration</div><p>\[a=\frac{\Delta v}{\Delta t}=\frac{v_f-v_i}{\Delta t}\]</p></div>
-<h2 class="reading-heading">Calculating Average Acceleration</h2>
-<p>Average acceleration is the change in velocity divided by the elapsed time. You must compare the final and initial velocities before dividing by time. Units of m/s² mean that velocity changes by some number of meters per second during each second.</p>
-<div class="example-pair">
-    <section class="worked-example"><div class="example-label">Worked Example 1</div><p><strong>Situation:</strong> A cart’s velocity changes from 1 m/s to 7 m/s in 3 s. Calculate its average acceleration.</p><ol class="worked-steps"><li>Find the change in velocity: 7 − 1 = 6 m/s.</li><li>Divide by the time interval: 6 m/s ÷ 3 s = 2 m/s².</li><li>Answer: 2 m/s².</li></ol></section>
-    <section class="yti-card"><div class="example-label">You Try It 1</div><p>A cart’s velocity changes from 1 m/s to 13 m/s in 3 s. Calculate its average acceleration.</p><div class="yti-space"></div></section>
-  </div>
-<h2 class="reading-heading">Reading a Velocity–Time Graph</h2>
-<p>The slope of a velocity–time graph represents acceleration. An upward-sloping line has positive acceleration, a downward-sloping line has negative acceleration, and a horizontal line has zero acceleration. The graph describes velocity over time; it is not a picture of the object’s path.</p>
-<div class="example-pair">
-    <section class="worked-example"><div class="example-label">Worked Example 2</div><p><strong>Situation:</strong> A skateboarder moves east while slowing down. State the direction of the skateboarder’s velocity and acceleration, and explain why the skateboarder is accelerating even though speed decreases.</p><ol class="worked-steps"><li>Velocity points east because that is the direction of motion.</li><li>Acceleration points west, opposite the velocity, because the skateboarder is slowing down.</li><li>A decrease in velocity magnitude is still a change in velocity, so it is acceleration.</li></ol></section>
-    <section class="yti-card"><div class="example-label">You Try It 2</div><p>A bicycle moves west while slowing down. State the direction of velocity and acceleration, and explain why the bicycle is accelerating.</p><div class="yti-space"></div></section>
-  </div>
-<div class="example-pair">
-    <section class="worked-example"><div class="example-label">Worked Example 3</div><p><strong>Situation:</strong> Use the velocity–time graph shown above to identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><ol class="worked-steps"><li>The line slopes upward as time increases.</li><li>Slope on a velocity–time graph equals acceleration.</li><li>Therefore the acceleration is positive.</li></ol></section>
-    <section class="yti-card"><div class="example-label">You Try It 3</div><p>Imagine a velocity–time graph with a horizontal line. Identify whether the acceleration is positive, negative, or zero and justify your answer from the graph slope.</p><div class="yti-space"></div></section>
-  </div>
+<p>Velocity describes speed and direction. <strong>Acceleration</strong> describes how velocity changes. Because velocity can change in more than one way, acceleration is broader than “speeding up.” An object accelerates when it speeds up, slows down, or changes direction.</p>
+<div class="concept-callout">Acceleration is the rate at which velocity changes. A change in speed, a change in direction, or both can produce acceleration.</div>
+<p>For straight-line motion, average acceleration compares the change in velocity with the time interval over which that change occurs.</p>
+<div class="formula-box"><div class="formula-title">Average Acceleration</div><p>\(a=\dfrac{\Delta v}{\Delta t}=\dfrac{v_f-v_i}{\Delta t}\). The unit \(\text{m/s}^2\) means the velocity changes by a certain number of meters per second each second.</p></div>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>A car’s velocity changes by 6 m/s every second for several seconds. Explain what the “per second each second” idea means in ordinary language.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Speeding Up and Slowing Down Are Both Acceleration</h2>
+<p>If an object moves east and its eastward speed increases, the velocity is changing eastward. If the object still moves east but slows down, its velocity is also changing. In the second case, the acceleration points opposite the velocity. This is why the sign of acceleration alone does not tell you whether an object is speeding up or slowing down; you must compare the directions of velocity and acceleration.</p>
+<p>In one-dimensional motion we often choose one direction as positive. East or right might be positive, making west or left negative. With that choice, acceleration can be positive, negative, or zero. The sign tells direction relative to the chosen axis, not whether the acceleration is “good” or “bad.”</p>
+<div class="example-pair"><section class="worked-example"><div class="example-label">Worked Example 1</div><p><strong>Situation:</strong> A cart’s velocity changes from 1 m/s to 7 m/s in 3 s. Calculate its average acceleration.</p><ol class="worked-steps"><li>Find the change in velocity: \(7-1=6\text{{ m/s}}\).</li><li>Divide by the time interval: \(6\text{{ m/s}}/3\text{{ s}}=2\text{{ m/s}}^2\).</li><li>The positive result means acceleration is in the chosen positive direction.</li></ol></section><section class="yti-card"><div class="example-label">You Try It 1</div><p>A cart’s velocity changes from 1 m/s to 13 m/s in 3 s. Calculate its average acceleration with units.</p><div class="yti-space"></div></section></div>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>An object has a negative acceleration. Can you conclude that it is slowing down? Explain what other information you need.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Motion Diagrams Reveal Changing Speed</h2>
+<p>A motion diagram marks an object’s position at equal time intervals. Equal spacing between dots represents constant speed. Increasing spacing means the object covers more distance in each equal time interval and is speeding up. Decreasing spacing means it covers less distance in each interval and is slowing down.</p>
+<p>The approved course figure below lets you read acceleration from spacing patterns without beginning with an equation. This is an example of representation reasoning: the diagram is evidence about how motion changes over time.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/approved_course_figures/unit2-motion-diagram-spacing.png" alt="Equal-time motion diagrams with different dot-spacing patterns." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Pick one dot pattern that shows changing speed. Explain what feature of the spacing is your evidence.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Changing Direction Is Also Acceleration</h2>
+<p>An object moving at constant speed can still accelerate if its direction changes. On a curved path, the velocity vector points in a different direction from one moment to the next. Since velocity changes, acceleration is present even if the speedometer reading stays constant.</p>
+<p>This is a common misconception because everyday speech often uses “accelerate” to mean “go faster.” Physics uses a more precise meaning: any change in velocity.</p>
+<div class="example-pair"><section class="worked-example"><div class="example-label">Worked Example 2</div><p><strong>Situation:</strong> A skateboarder moves east while slowing down. State the direction of velocity and acceleration.</p><ol class="worked-steps"><li>The velocity points east because the skateboarder is moving east.</li><li>To reduce an eastward velocity, acceleration points west, opposite the velocity.</li><li>The skateboarder is accelerating because velocity magnitude is changing even though speed decreases.</li></ol></section><section class="yti-card"><div class="example-label">You Try It 2</div><p>A cyclist moves west while slowing down. State the direction of the cyclist’s velocity and acceleration and explain why acceleration is present.</p><div class="yti-space"></div></section></div>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>Give one example of acceleration caused by a direction change while speed stays nearly constant.</p><div class="reflect-space"></div></div>
+<h2 class="reading-heading">Velocity–Time Graphs: Slope Tells Acceleration</h2>
+<p>On a velocity–time graph, the vertical axis is velocity and the horizontal axis is time. The slope tells how quickly velocity changes. A line sloping upward has positive acceleration. A horizontal line has zero acceleration because velocity is constant. A line sloping downward has negative acceleration.</p>
+<p>Do not confuse the height of the graph with acceleration. A point high on the graph means the velocity value is high; acceleration comes from the <em>slope</em>. A steep slope means velocity changes quickly. A shallow slope means it changes more slowly.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/approved_course_figures/unit2-velocity-time-pattern.png" alt="Velocity versus time patterns used to compare positive, zero, and negative acceleration." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>On a velocity–time graph, what would a horizontal line below zero mean? Describe both the motion and the acceleration.</p><div class="reflect-space"></div></div>
+<div class="example-pair"><section class="worked-example"><div class="example-label">Worked Example 3</div><p><strong>Situation:</strong> A velocity–time graph rises steadily with a slope of 2 m/s². Identify the acceleration and justify from the graph.</p><ol class="worked-steps"><li>The slope of a velocity–time graph equals acceleration.</li><li>The line rises as time increases, so the slope is positive.</li><li>The stated slope is 2 m/s², so the acceleration is +2 m/s².</li></ol></section><section class="yti-card"><div class="example-label">You Try It 3</div><p>A velocity–time graph is horizontal at 6 m/s for 5 s. Identify the acceleration and explain your reasoning from the slope.</p><div class="yti-space"></div></section></div>
+<h2 class="reading-heading">From Inclined Motion to Free Fall</h2>
+<p>The source-reference image below shows a classic way to think about acceleration: motion down inclined planes becomes more strongly accelerated as the incline becomes steeper. The important connection is that acceleration describes a systematic change in velocity over time, not merely a high speed.</p>
+<figure class="resource-figure"><img src="https://raw.githubusercontent.com/tnezki/memories/27148d1d3d456fa91e21bbce424f8a7ac72b4816/frameworks/2_Framework_Physics/Conceptual_Physics_Framework/reference_library/reusable_figures/source_reference/u2-s3__u2_4_from_ch_3_6_galileo_inclined_planes_steeper_angles.png" alt="Inclined-plane motion used to compare different amounts of acceleration and connect toward vertical fall." loading="lazy"></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>A fast-moving object can have zero acceleration, while a slow-moving object can have large acceleration. Explain how both statements can be true.</p><div class="reflect-space tall"></div></div>
 </section>
-
-<section class="reading-check">
-  <h2>Reading Check</h2>
-  <p class="directions">Answer from the reading. Most answers should be one or two sentences.</p>
-  <ol><li>What does acceleration measure?<span class="answer-space"></span></li><li>List three ways an object can accelerate.<span class="answer-space"></span></li><li>Why can an object be accelerating while slowing down?<span class="answer-space"></span></li><li>What does m/s² mean conceptually?<span class="answer-space"></span></li><li>A car changes velocity from 4 m/s to 10 m/s in 3 s. What is its average acceleration?<span class="answer-space"></span></li><li>What does the slope of a velocity–time graph represent?<span class="answer-space"></span></li><li>What does a horizontal line on a velocity–time graph indicate?<span class="answer-space"></span></li><li>If an object moves east while slowing down, compare the directions of velocity and acceleration.<span class="answer-space"></span></li></ol>
-</section>
-</main>
-</body>
-</html>
+<section class="reading-check"><h2>Reading Check</h2><p class="directions">Answer from the reading. Use complete physics statements when a question asks you to explain.</p><ol><li>Define acceleration in terms of velocity.<span class="answer-space"></span></li><li>List the three ways velocity can change.<span class="answer-space"></span></li><li>Calculate the average acceleration when velocity changes from 2 m/s to 14 m/s in 4 s.<span class="answer-space"></span></li><li>Why can an object moving at constant speed still accelerate?<span class="answer-space"></span></li><li>What does the sign of acceleration tell you in one-dimensional motion?<span class="answer-space"></span></li><li>How can a motion diagram show that an object is speeding up?<span class="answer-space"></span></li><li>What does the slope of a velocity–time graph represent?<span class="answer-space"></span></li><li>What acceleration corresponds to a horizontal velocity–time graph?<span class="answer-space"></span></li><li>Why is “negative acceleration means slowing down” not always correct?<span class="answer-space"></span></li></ol></section>
+</main></body></html>
