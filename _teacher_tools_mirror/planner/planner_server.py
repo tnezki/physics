@@ -33,7 +33,7 @@ QUICK_CHECK_LIBRARY = PHYSICS_ROOT / "quick_check____htq5855" / "library.json"
 PUBLIC_BASE = "https://tnezki.github.io/physics/"
 
 STUDENT_RESOURCE_OPTIONS = [
-    "", "Warm Up", "Notes", "Investigation", "Activity", "Demo",
+    "", "Warmups", "Notes", "Investigation", "Activity", "Demo",
     "Performance Task", "Practice Set", "Extra Practice", "Quick Check", "Review", "Custom Item",
 ]
 DAY_CONTROLS = [
@@ -499,11 +499,11 @@ def normalize_control(label: str) -> str:
 
 def default_slots(day_number: int | None) -> list[str]:
     if day_number == 1:
-        return ["Warm Up", "Notes", "Practice Set", "", ""]
+        return ["Warmups", "Notes", "Practice Set", "", ""]
     if day_number == 2:
-        return ["Warm Up", "Investigation", "Practice Set", "Extra Practice", ""]
+        return ["Warmups", "Investigation", "Practice Set", "Extra Practice", ""]
     if day_number == 3:
-        return ["Warm Up", "Activity", "Practice Set", "Extra Practice", "Quick Check"]
+        return ["Warmups", "Activity", "Practice Set", "Extra Practice", "Quick Check"]
     return ["", "", "", "", ""]
 
 
@@ -657,8 +657,8 @@ def resource_url(resource: str, section_title: str, day_number: int = 0) -> str 
     unit_s, sec_s = code.split(".")
     unit, sec = int(unit_s), int(sec_s)
     tag = f"{unit}_{sec}"
-    if resource == "Warm Up":
-        return rel_if_exists(f"warmups/unit_{unit}_warmups/unit_{unit}_warmups.html")
+    if resource in {"Warmups", "Warm Up"}:
+        return None
     if resource == "Notes":
         return rel_if_exists(f"notes/u{tag}_notes/u{tag}_notes.html")
     if resource == "Investigation":
@@ -679,6 +679,30 @@ def resource_url(resource: str, section_title: str, day_number: int = 0) -> str 
         # Student agenda intentionally displays Quick Check without a link.
         return None
     return None
+
+
+def weekly_warmup_public_url(day: dict) -> str | None:
+    try:
+        week_number = int(day.get("week_index", -1)) + 1
+    except Exception:
+        return None
+    if week_number < 1:
+        return None
+    relative = f"warmups/week_{week_number:02d}_warmups/week_{week_number:02d}_warmups.html"
+    return rel_if_exists(relative)
+
+def planner_weekly_warmup_url(day: dict) -> str | None:
+    try:
+        week_number = int(day.get("week_index", -1)) + 1
+    except Exception:
+        return None
+    if week_number < 1:
+        return None
+    folder = f"week_{week_number:02d}_warmups"
+    local = TEACHER_TOOLS_ROOT / "library" / "warmups" / folder / f"{folder}.html"
+    if local.is_file():
+        return f"/library/warmups/{folder}/{folder}.html"
+    return weekly_warmup_public_url(day)
 
 
 def welcome_url(section_title: str, day_number: int) -> str | None:
@@ -809,8 +833,14 @@ def build_registry(state: dict) -> dict:
         "resources": {},
         "teacher": {},
         "welcome": {},
+        "weekly_warmups": {},
         "shared": {"section": {}, "summative": {}},
     }
+    for day in state.get("days", []):
+        key = str(int(day.get("week_index", 0)))
+        if key not in registry["weekly_warmups"]:
+            registry["weekly_warmups"][key] = planner_weekly_warmup_url(day)
+
     for section in sections:
         registry["resources"][section] = {
             r: resource_url(r, section) for r in STUDENT_RESOURCE_OPTIONS if r
@@ -854,6 +884,8 @@ def apply_manual_current_state(state: dict) -> None:
         d["locked_past"] = False
         d.setdefault("shift_applied", False)
         d.setdefault("assessment_unit", 0)
+        slots = d.get("student_slots") if isinstance(d.get("student_slots"), list) else []
+        d["student_slots"] = ["Warmups" if x == "Warm Up" else x for x in slots]
         # Migrate the short-lived Summative/Remove-Blank experiment into the simpler model.
         if d.get("control") == "Summative Assessment":
             unit = 0
@@ -1101,9 +1133,10 @@ def day_items(day: dict, past: bool = False) -> list[dict]:
             url = normalize_custom_url(custom.get("url"))
             items.append({"label": label, "url": url, "kind": ""})
             continue
+        warmup = resource in {"Warmups", "Warm Up"}
         items.append({
-            "label": resource,
-            "url": resource_url(resource, section, int(day.get("day_number", 0) or 0)),
+            "label": "Warmups" if warmup else resource,
+            "url": weekly_warmup_public_url(day) if warmup else resource_url(resource, section, int(day.get("day_number", 0) or 0)),
             "kind": "",
         })
     return items

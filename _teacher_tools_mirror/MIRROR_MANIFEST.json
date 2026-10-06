@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "_physics_teacher_tools",
   "destination": "physics/_teacher_tools_mirror",
-  "file_count": 27,
+  "file_count": 30,
   "files": [
     {
       "path": "Physics Tools.app/Contents/Info.plist",
@@ -31,13 +31,13 @@
     },
     {
       "path": "Restart Physics Tools.command",
-      "bytes": 655,
-      "sha256": "fca6c8407177ce600f448774e3f01b59fc82a2fd9ef65f6aa12a448b7b726218"
+      "bytes": 647,
+      "sha256": "d630c6edd46bb062b9da113935e7cbc0f3a23be738cc283a82ff451dce5fccf4"
     },
     {
       "path": "app/server.py",
-      "bytes": 20000,
-      "sha256": "1c9a8c464cf8aff42469095f9639902cc31a18badbf2e543deaeb35cb1e49063"
+      "bytes": 23901,
+      "sha256": "b90c797dfa8963979eda2915864a25b823c51e203ef37a66a9939ad1f401f14d"
     },
     {
       "path": "fixtures/fake_students.json",
@@ -55,14 +55,24 @@
       "sha256": "e781b0f3050369bcf631e9097eb5224e925970aa883e7ddf100d46613885b7b1"
     },
     {
+      "path": "library/practice_sets/u2_1/index.html",
+      "bytes": 12793,
+      "sha256": "9c1395fc60f2ddfc459611c1c845bfe70b09f61dbeed1d2fb796d1483abf7c1f"
+    },
+    {
+      "path": "library/warmups/week_06_warmups/week_06_warmups.html",
+      "bytes": 12260,
+      "sha256": "5531bbc975051a5909b065d996adb87d84660bb0bd2cbdfba19acaab7cc34e68"
+    },
+    {
       "path": "planner/index.html",
-      "bytes": 33092,
-      "sha256": "8f1e741f39931c1a09c158c6b138dc0ebd83dd58918ecdb436a0c0a5228dcfa1"
+      "bytes": 33342,
+      "sha256": "50ef8b548065476aeeecbc8fa9270b532e57480be560faab9449c8941bf1aa9a"
     },
     {
       "path": "planner/planner_server.py",
-      "bytes": 74738,
-      "sha256": "98f3069535489bd31d82369f134a50afd6e715852b5044cec86f9030424665e2"
+      "bytes": 76023,
+      "sha256": "93975763e3cd937576fb3f7683c21c49933dabaf2e59bf206398a5d14f4bf49b"
     },
     {
       "path": "planner/planner_state.json",
@@ -101,8 +111,8 @@
     },
     {
       "path": "practice_builder/sections/u2_1.json",
-      "bytes": 26946,
-      "sha256": "aaa8eb8728b81c365611d124aa284e387927df01f27662862734d432f545985b"
+      "bytes": 26996,
+      "sha256": "d551a2b73f96fa94f9d4245572f184905a337438406d03a866378be219827312"
     },
     {
       "path": "practice_builder/sections/u2_2.json",
@@ -126,18 +136,23 @@
     },
     {
       "path": "warmup_builder/editor.html",
-      "bytes": 10839,
-      "sha256": "b4b69176607bea46fe1a4fcd92e4f9c74a7a44949327835d8147308c730d2a84"
+      "bytes": 13592,
+      "sha256": "ad3881e4347e5b5bd136f0b810871a8698e83750e54b7c42ab8ca608af597056"
     },
     {
       "path": "warmup_builder/index.html",
-      "bytes": 1247,
-      "sha256": "d17ca95e5226725e3a835646e4c440e8e2155e319c57fe2d582acd5c638541f6"
+      "bytes": 1472,
+      "sha256": "4858a481628a04d0f0ecad01a7b3260fa266b46aeda0247e225ac7786a981d1f"
     },
     {
       "path": "warmup_builder/units/unit_2.json",
       "bytes": 30538,
       "sha256": "ebabb6065a66069d12035e523c8b161406198a23d2e6375ffc3cdacf7212dbc9"
+    },
+    {
+      "path": "warmup_builder/weeks/week_06.json",
+      "bytes": 12149,
+      "sha256": "11499743f2675b5d2b646dd8d17d0a7f26491ab6c95c2ac459f11881f72602e1"
     }
   ]
 }
