@@ -10,15 +10,17 @@
    ============================================================ */
 @page { size: 8.5in 11in; margin: .45in; }
 :root { --content-media-max-height: 1.9in; }
-h1 { background: transparent; color: var(--navy); font-weight: 900; font-size: 15pt; line-height: 1.2; padding: 0 0 7px 0; margin: 0 0 12px 0; border: 0; border-bottom: 4px solid var(--navy); }
+body { font-family: Arial, Helvetica, sans-serif; color: #1f2937; }
+h1 { background: transparent; color: #111827; font-weight: 900; font-size: 19pt; line-height: 1.15; padding: 0 0 8px 0; margin: 0 0 14px 0; border: 0; border-bottom: 2px solid #111; }
 .dok-section { margin: 0 0 14px 0; }
-.problem { padding: 10px 12px; margin: 0 0 12px 0; background: var(--bg); break-inside: avoid; page-break-inside: avoid; display: flex; flex-direction: column; border: 2px solid var(--navy); border-radius: 10px; }
-.problem .problem-body { display: flex; flex-direction: column; flex: 1; }
-.problem .workspace:last-child { margin-top: auto; }
+.problem { padding: 11px 0; margin: 0; background: #fff; break-inside: avoid; page-break-inside: avoid; display: block; border: 0; border-top: 1px solid #dde3ea; border-radius: 0; }
+.problem:first-child { border-top: 0; }
+.problem .problem-body { display: block; }
+.problem .workspace:last-child { margin-top: 8px; }
 .qnum { font-weight: 900; color: var(--navy); }
 .problem-body { min-width: 0; }
-.problem-body p { margin: 0 0 5px 0; line-height: 1.28; }
-.problem-body ol, .problem-body ul { margin: 4px 0 5px 1.25em; padding: 0; }
+.problem-body p { margin: 0 0 6px 0; line-height: 1.32; }
+.problem-body ol, .problem-body ul { margin: 6px 0 8px 1.55em; padding: 0; }
 .problem-body li { margin-bottom: 2px; }
 .ps-figure, .ps-diagram { margin: 6px auto 7px auto; text-align: center; break-inside: avoid; page-break-inside: avoid; }
 .ps-figure img { max-width: 3.5in; max-height: var(--content-media-max-height); width: 100%; height: auto; display: block; margin: 0 auto; border: 0; background: #fff; object-fit: contain; }
@@ -32,7 +34,7 @@ h1 { background: transparent; color: var(--navy); font-weight: 900; font-size: 1
 .wu-img-550 img { max-width: 5.5in; }
 .wu-img-600 img { max-width: 6in; }
 /* ---- Workspace height utility classes (px) ---- */
-.workspace { background: #fff; margin-top: 3px; border: 0; }
+.workspace { width: 100%; margin-top: 8px; border: 0; border-bottom: 1px solid #edf1f5; background: repeating-linear-gradient(to bottom, transparent 0, transparent 27px, #edf1f5 28px); }
 .ws-10 { height: 10px; }
 .ws-20 { height: 20px; }
 .ws-30 { height: 30px; }
@@ -152,4 +154,4 @@ table.values.compact-table th, table.values.compact-table td { width: 50%; paddi
 .cyu-grid .ps-figure img { max-width: 2.35in; }
 .cyu-grid .ps-diagram svg { max-width: 2.6in; }
 .cyu-workspace-page { height: 9.25in; min-height: 9.25in; margin: 0; padding: 0; border: 0; background: #fff; break-before: page; page-break-before: always; }
-@media print { .problem { padding: 7px 0; } }
+@media print { .problem { padding: 9px 0; } }
