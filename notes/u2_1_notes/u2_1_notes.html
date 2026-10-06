@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conceptual Physics — Unit 2, Section 2.1: Motion and Reference Frames</title>
+<link rel="stylesheet" href="../../css/base.css">
+<link rel="stylesheet" href="../../css/notes.css">
+<script>window.MathJax={tex:{inlineMath:[["\(","\)"]],displayMath:[["\[","\]"]],processEscapes:true}};</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  .reading-prose{font-size:10.5pt;line-height:1.62;color:#222;margin:0 0 14px}
+  .reading-prose p{font-size:10.5pt!important;line-height:1.62!important;margin:0 0 12px!important}
+  .concept-callout{margin:16px 0 18px;padding:15px 20px;border-left:7px solid var(--navy,#0b174f);background:#f4f7fb;font-size:13pt;font-weight:800;line-height:1.38;break-inside:avoid-page;page-break-inside:avoid}
+  .reading-heading{color:var(--navy,#0b174f);font-size:17pt;line-height:1.15;margin:24px 0 10px;border-left:7px solid var(--navy,#0b174f);padding:4px 0 4px 12px;break-after:avoid-page;page-break-after:avoid}
+  .textbook-figure{margin:15px auto 18px;text-align:center;break-inside:avoid-page;page-break-inside:avoid}
+  .textbook-figure img,.textbook-figure svg{display:block;margin:0 auto;max-width:min(100%,6.25in)!important;max-height:3.75in!important;width:auto;height:auto;object-fit:contain}
+  .textbook-figure figcaption{margin-top:6px;color:#555;font-size:8.5pt!important;line-height:1.35}
+  .figure-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 18px;break-inside:avoid-page;page-break-inside:avoid}
+  .figure-pair figure{margin:0;text-align:center}
+  .figure-pair img,.figure-pair svg{display:block;margin:0 auto;max-width:100%!important;max-height:2.75in!important;width:auto;height:auto;object-fit:contain}
+  .figure-pair figcaption{margin-top:5px;color:#555;font-size:8pt!important;line-height:1.3}
+  .stop-reflect{margin:16px 0 18px;padding:13px 16px;border:2px solid #b7831f;border-left-width:7px;border-radius:8px;background:#fffaf0;break-inside:avoid-page;page-break-inside:avoid}
+  .stop-reflect .reflect-title{display:block;color:#734d06;font-size:11pt;font-weight:900;margin-bottom:5px}
+  .stop-reflect p{font-size:10pt!important;line-height:1.5!important;margin:0!important}
+  .reflect-space{height:.65in;margin-top:8px;border-bottom:1px solid #c8c8c8}
+  .example-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0 20px;break-inside:avoid-page;page-break-inside:avoid}
+  .worked-example,.yti-card{border:2px solid #9eabbc;border-radius:9px;background:#fff;padding:13px 15px;min-width:0;break-inside:avoid-page;page-break-inside:avoid}
+  .worked-example{border-left:7px solid #2d6a9f;background:#f6fafe}
+  .yti-card{border-left:7px solid #5a3d8a;background:#faf8fd}
+  .example-label{font-size:11pt;font-weight:900;color:var(--navy,#0b174f);margin:0 0 7px}
+  .worked-example p,.yti-card p,.worked-example li,.yti-card li{font-size:9.5pt!important;line-height:1.48!important}
+  .worked-steps{margin:8px 0 0 20px;padding:0}
+  .yti-space{height:1.05in;margin-top:10px}
+  .formula-box{margin:14px auto 18px;max-width:6.2in;border:1px solid #bdc7d4;border-left:7px solid #2d6a9f;border-radius:8px;background:#fbfcfe;padding:12px 16px;break-inside:avoid-page;page-break-inside:avoid}
+  .formula-box .formula-title{font-size:10pt;font-weight:900;color:var(--navy,#0b174f);margin-bottom:5px}
+  .formula-box p{font-size:10pt!important;line-height:1.45!important;margin:0!important}
+  .reading-check{margin-top:24px;break-before:auto;page-break-before:auto}
+  .reading-check h2{color:var(--navy,#0b174f);font-size:20pt;border-left:7px solid var(--navy,#0b174f);padding:5px 0 5px 14px;margin:0 0 10px}
+  .reading-check .directions{font-size:9.5pt!important;margin:0 0 10px!important}
+  .reading-check ol{margin:0 0 0 24px;padding:0}
+  .reading-check li{font-size:9.5pt!important;line-height:1.45!important;margin:0 0 10px;padding-left:3px}
+  .answer-space{display:block;height:.42in;border-bottom:1px solid #d7dbe0;margin-top:4px}
+  .diagram-label{font:700 14px Arial,Helvetica,sans-serif;fill:#173f6d}
+  .diagram-text{font:13px Arial,Helvetica,sans-serif;fill:#1f2937}
+  .diagram-axis{stroke:#334155;stroke-width:2}.diagram-grid{stroke:#dbe3ec;stroke-width:1}.diagram-line{stroke:#173f6d;stroke-width:4;fill:none}.diagram-accent{stroke:#b7831f;stroke-width:4;fill:none}.diagram-dot{fill:#173f6d}
+  @media(max-width:820px){.figure-pair,.example-pair{grid-template-columns:1fr}.textbook-figure img,.textbook-figure svg{max-height:none!important}}
+  @media print{
+    .reading-prose p{font-size:9.5pt!important;line-height:1.5!important}
+    .textbook-figure,.figure-pair,.stop-reflect,.example-pair,.worked-example,.yti-card,.formula-box,.reading-check li{break-inside:avoid-page!important;page-break-inside:avoid!important}
+    .textbook-figure img,.textbook-figure svg{max-height:3.25in!important}
+    .figure-pair img,.figure-pair svg{max-height:2.45in!important}
+  }
+</style>
+</head>
+<body>
+<main class="container">
+<header class="notes-title">
+  <div class="title-kicker">Conceptual Physics • Unit 2</div>
+  <h1 class="title-main">Motion and Reference Frames</h1>
+  <p class="title-sub">Section 2.1</p>
+  <p class="title-quote">Motion only makes sense after you decide what you are measuring it relative to.</p>
+</header>
+
+<section class="objectives">
+  <h2 class="h-target">Learning Target</h2>
+  <p>Students will explain that motion is relative and describe an object’s motion using an appropriate frame of reference.</p>
+  <ul><li>I can explain why an object can be moving relative to one reference frame but not another.</li><li>I can identify the reference frame used in a motion description.</li><li>I can compare motion from two different points of view and explain why everyday motion is usually described relative to Earth’s surface.</li></ul>
+</section>
+
+<section class="vocab-preview-section">
+  <h2 class="h-vocab">Vocabulary / Key Notation Preview</h2>
+  <div class="vocab-box">
+    <p class="vocab-list"><strong>reference frame</strong>, <strong>relative motion</strong>, <strong>position</strong>, <strong>at rest</strong>, <strong>Earth frame</strong></p>
+    <div class="vocab-sort-task">
+      <p class="vocab-sort-directions"><strong>Sort before reading.</strong> Place each term where it best fits your current understanding.</p>
+      <table class="vocab-sort-table"><thead><tr><th>Know for sure</th><th>Recognize</th><th>Don’t know yet</th></tr></thead><tbody><tr class="vocab-sort-space"><td></td><td></td><td></td></tr></tbody></table>
+    </div>
+  </div>
+</section>
+
+<section class="reading-prose">
+<p>A motion description is never complete until you know what the position is being compared with. The object or coordinate system used for that comparison is the <strong>reference frame</strong>. An object may be at rest in one frame and moving in another at the same time.</p>
+<p>Imagine a backpack resting on the seat of a moving bus. Relative to the seat and passengers, the backpack does not change position. Relative to the road, the backpack travels with the bus. Neither description is wrong; they answer different questions because they use different reference frames.</p>
+<div class="concept-callout">Motion is <strong>relative</strong>. “Moving” and “at rest” always mean moving or at rest <strong>relative to a chosen reference frame</strong>.</div>
+<figure class="textbook-figure"><svg viewBox="0 0 760 250" role="img" aria-label="Bus reference frame and road reference frame"><rect x="130" y="82" width="360" height="92" rx="18" fill="#f4f7fb" stroke="#173f6d" stroke-width="4"/><circle cx="220" cy="184" r="24" fill="#fff" stroke="#173f6d" stroke-width="4"/><circle cx="415" cy="184" r="24" fill="#fff" stroke="#173f6d" stroke-width="4"/><rect x="270" y="112" width="58" height="34" rx="5" fill="#e0bd4f" stroke="#755b18" stroke-width="2"/><text x="280" y="103" class="diagram-label">Backpack</text><line x1="270" y1="151" x2="330" y2="151" class="diagram-axis"/><text x="205" y="222" class="diagram-text">Bus/passenger frame: backpack at rest</text><line x1="515" y1="128" x2="665" y2="128" class="diagram-line"/><polygon points="665,128 645,116 645,140" fill="#173f6d"/><text x="522" y="108" class="diagram-label">Bus moves east</text><line x1="40" y1="218" x2="720" y2="218" stroke="#777" stroke-width="4"/><text x="470" y="242" class="diagram-text">Earth/road frame: backpack moves east with bus</text></svg><figcaption>The same backpack is at rest in the bus frame and moving in the Earth/road frame.</figcaption></figure>
+<div class="stop-reflect"><span class="reflect-title">Stop and Reflect</span><p>A passenger says a cup on the dashboard is at rest. A person standing on the sidewalk says the cup is moving. What reference frame is each person using?</p><div class="reflect-space"></div></div>
+
+<h2 class="reading-heading">Identifying the Reference Frame</h2>
+<p>Clues in a motion statement often reveal the frame. Words such as “beside the passenger,” “relative to the train,” or “past the window” tell you what positions are being compared. A strong motion statement names the frame explicitly: “The backpack is at rest relative to the bus,” or “The backpack moves east relative to the road.”</p>
+<div class="example-pair">
+    <section class="worked-example"><div class="example-label">Worked Example 1</div><p><strong>Situation:</strong> Kai walks toward the front of a train moving east at 9 m/s. Kai walks at 1 m/s relative to the train. Explain how Kai can be moving relative to the ground while also being described using a different motion relative to the train.</p><ol class="worked-steps"><li>Use one reference frame at a time.</li><li>Relative to the train, Kai moves east at 1 m/s.</li><li>Relative to the ground, the train motion and walking motion are both east, so Kai moves east at 10 m/s.</li><li>Both descriptions are valid because the reference frames are different.</li></ol></section>
+    <section class="yti-card"><div class="example-label">You Try It 1</div><p>Zoe walks toward the front of a train moving east at 9 m/s. Zoe walks at 3 m/s relative to the train. Explain how Zoe can be moving relative to the ground while also being described using a different motion relative to the train.</p><div class="yti-space"></div></section>
+  </div>
+<h2 class="reading-heading">Why Earth Is the Everyday Default</h2>
+<p>For ordinary travel, Earth’s surface is a convenient shared frame because roads, buildings, addresses, and most everyday locations are fixed relative to it. Using the Earth frame does not make it more physically correct than every other frame; it simply gives people a common reference for describing motion.</p>
+<div class="example-pair">
+    <section class="worked-example"><div class="example-label">Worked Example 2</div><p><strong>Situation:</strong> A motion description says, “The backpack remains beside Sam on the seat while trees move backward past the window.” Identify the reference frame used when the backpack is described as remaining beside Sam, and cite the cue.</p><ol class="worked-steps"><li>The frame is the vehicle/passenger frame.</li><li>The cue is that the backpack stays at a fixed position beside Sam on the seat.</li></ol></section>
+    <section class="yti-card"><div class="example-label">You Try It 2</div><p>A motion description says, “The backpack remains beside Ari on the seat while trees move backward past the window.” Identify the reference frame used when the backpack is described as remaining beside Ari, and cite the cue.</p><div class="yti-space"></div></section>
+  </div>
+<div class="example-pair">
+    <section class="worked-example"><div class="example-label">Worked Example 3</div><p><strong>Situation:</strong> A passenger on a bus says a phone on the seat is at rest. A person on the sidewalk says the phone is moving east with the bus. Compare the two descriptions and explain why using Earth’s surface is convenient for ordinary travel descriptions.</p><ol class="worked-steps"><li>Both descriptions can be correct because they use different frames.</li><li>The phone is at rest in the bus frame and moving in the Earth/sidewalk frame.</li><li>Earth’s surface is a convenient shared frame for everyday locations and travel.</li></ol></section>
+    <section class="yti-card"><div class="example-label">You Try It 3</div><p>A rider says a bag is at rest on the train floor while a station observer says the bag is moving west. Explain how both statements can be correct and identify the reference frame for each statement.</p><div class="yti-space"></div></section>
+  </div>
+</section>
+
+<section class="reading-check">
+  <h2>Reading Check</h2>
+  <p class="directions">Answer from the reading. Most answers should be one or two sentences.</p>
+  <ol><li>What is a reference frame?<span class="answer-space"></span></li><li>How can one object be at rest in one frame and moving in another?<span class="answer-space"></span></li><li>What clue can help you identify the reference frame in a motion description?<span class="answer-space"></span></li><li>A phone lies on a seat in a moving car. Describe its motion relative to the car.<span class="answer-space"></span></li><li>Describe the same phone’s motion relative to the road.<span class="answer-space"></span></li><li>Why is Earth’s surface a convenient frame for everyday motion descriptions?<span class="answer-space"></span></li><li>Write one complete motion statement that explicitly names a reference frame.<span class="answer-space"></span></li><li>Two people give different motion descriptions for the same object. What must you check before deciding that one of them is wrong?<span class="answer-space"></span></li></ol>
+</section>
+</main>
+</body>
+</html>
