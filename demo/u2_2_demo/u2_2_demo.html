@@ -1,1 +1,180 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>U2.2 Demo - Fast Trip, Zero Direction?</title><link rel="stylesheet" href="../../css/demo.css"/></head><body class="demo-screen"><main class="demo-deck" id="deck"><section class="demo-slide active"><div class="slide-card"><div class="kicker">Unit 2 - Section 2 - Speed and Velocity</div><h1>Fast Trip, Zero Direction?</h1><div class="prompt">Speed describes how fast; velocity adds direction.</div><p class="small">Watch, predict, and be ready to defend what you notice.</p></div></section><section class="demo-slide"><div class="slide-card"><div class="kicker">The trip</div><h2>You walk from school to a friend’s house, then return to school.</h2><div class="prompt">You definitely moved. But how should the whole trip be described?</div></div></section><section class="demo-slide"><div class="slide-card"><div class="kicker">Two numbers can tell different stories</div><h2>Suppose the total trip is 2.0 km and takes 20 min.</h2><div class="prompt">Can your average speed be nonzero even though you finish where you started?</div></div></section><section class="demo-slide"><div class="slide-card"><div class="kicker">Add direction</div><h2>Compare: “5 m/s” and “5 m/s east.”</h2><div class="prompt">Which statement tells more about the motion? What extra information was added?</div></div></section><section class="demo-slide"><div class="slide-card"><div class="kicker">Constant speed is not always constant motion</div><h2>Imagine a car moving around a curve while the speedometer stays at 30 mph.</h2><div class="prompt">Did the car’s motion stay completely unchanged?</div></div></section><section class="demo-slide"><div class="slide-card"><div class="kicker">Question to carry into the notes</div><h2>When does “how fast” describe enough, and when must direction be included?</h2><div class="prompt">Keep this question unresolved until the section model gives us better language and evidence.</div></div></section></main><div class="controls"><button id="prev">&larr; Back</button><div class="counter" id="counter">1 / 6</div><button class="primary" id="next">Next &rarr;</button></div><script>const slides=[...document.querySelectorAll('.demo-slide')]; let i=0;function show(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,j)=>s.classList.toggle('active',j===i)); document.getElementById('counter').textContent=`${i+1} / ${slides.length}`; }document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);document.addEventListener('keydown',e=>{ if(['ArrowRight','PageDown',' '].includes(e.key)) show(i+1); if(['ArrowLeft','PageUp'].includes(e.key)) show(i-1); });</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>U2.2 Demo - Same Speed, Different Motion</title>
+  <link rel="stylesheet" href="../../css/demo.css">
+  <style>
+    /* Scoped projection adjustments; retains the shared Physics demo deck. */
+    .demo-slide { padding:2.5vh 3vw 10vh; }
+    .slide-card { width:min(1280px,94vw); height:81vh; min-height:0; padding:3vh 3vw; justify-content:flex-start; gap:1.5vh; overflow-y:auto; }
+    .kicker { font-size:clamp(17px,1.5vw,23px); margin:0; }
+    h1 { font-size:clamp(42px,5.1vw,70px); margin:0; }
+    h2 { font-size:clamp(34px,3.9vw,55px); margin:0; }
+    .subheading { font-size:clamp(23px,2.5vw,36px); font-weight:700; color:#304b61; margin:0; }
+    p, li { font-size:clamp(20px,2vw,30px); line-height:1.21; margin:.3vh 0; }
+    .small { font-size:clamp(17px,1.6vw,23px); }
+    .prompt, .challenge { margin:.6vh 0; padding:1.4vh 1.6vw; font-size:clamp(22px,2.25vw,33px); line-height:1.18; }
+    .two-col { gap:1.5vw; }
+    .box { padding:1.6vh 1.4vw; }
+    .box h3 { font-size:clamp(23px,2.45vw,33px); margin:0 0 .7vh; }
+    .box p, .box li { font-size:clamp(19px,1.85vw,27px); }
+    .stage { color:#8b4f16; font-size:clamp(17px,1.55vw,22px); font-weight:800; text-transform:uppercase; letter-spacing:.03em; }
+    .path { display:flex; align-items:center; justify-content:center; gap:2vw; background:#f3f7fa; border:2px solid #cbd5dc; border-radius:15px; padding:1.3vh 2vw; }
+    .path .endpoint { font-size:clamp(30px,3.1vw,44px); font-weight:800; color:#1f5f8b; }
+    .path .path-arrow { flex:1; text-align:center; border-bottom:5px solid #1f5f8b; position:relative; padding-bottom:1vh; font-size:clamp(19px,1.9vw,27px); font-weight:800; }
+    .path .path-arrow:after { content:""; position:absolute; right:-1px; bottom:-9px; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:14px solid #1f5f8b; }
+    .formula { font-size:clamp(25px,2.8vw,40px); font-weight:800; letter-spacing:.005em; background:#e6f1f8; border:2px solid #9ec2dd; color:#183e5b; border-radius:14px; padding:1.2vh 1.4vw; margin:.4vh 0; }
+    .records { width:100%; border-collapse:collapse; font-size:clamp(18px,1.9vw,27px); }
+    .records th,.records td { border:2px solid #cbd5dc; padding:1.5vh .9vw; text-align:left; }
+    .records th { background:#e6f1f8; }
+    .records td { height:7vh; }
+    .records th:nth-child(1) { width:20%; }
+    .records th:nth-child(2) { width:18%; }
+    .records th:nth-child(3) { width:27%; }
+    .records th:nth-child(4) { width:35%; }
+    .steps { margin:0; padding-left:1.45em; }
+    .steps li { margin:.5vh 0; }
+    .bulletless { list-style:none; margin:0; padding:0; }
+    .discussion { counter-reset:talk; display:grid; gap:1.3vh; padding:0; margin:.5vh 0; }
+    .discussion li { list-style:none; display:flex; gap:1.2vw; align-items:flex-start; padding:1.4vh 1.5vw; border:2px solid #cbd5dc; border-radius:15px; background:#f7fafc; font-size:clamp(20px,2vw,29px); }
+    .discussion li::before { counter-increment:talk; content:counter(talk); background:#1f5f8b; color:#fff; border-radius:50%; min-width:2.1em; height:2.1em; display:grid; place-items:center; font-weight:800; font-size:.83em; }
+    .takeaway { color:#1f5f8b; font-size:clamp(20px,2vw,29px); font-weight:800; }
+    .controls button:focus-visible { outline:4px solid #ed9d3b; outline-offset:3px; }
+    .controls button:disabled { opacity:.4; cursor:not-allowed; }
+    @media(max-width:750px) { .slide-card { padding:2vh 3vw; } .two-col { grid-template-columns:1fr; } .records th,.records td { padding:.8vh .7vw; font-size:15px; } .discussion li { padding:.9vh .7vw; } }
+    @media print { .slide-card { height:auto; min-height:0; overflow:visible; } .demo-slide { padding:0; } }
+  </style>
+</head>
+<body class="demo-screen">
+<main class="demo-deck" id="deck" aria-label="Same Speed, Different Motion classroom slides">
+  <section class="demo-slide active" aria-label="Opening">
+    <div class="slide-card">
+      <div class="kicker">Physics | Unit 2.2 | 0-2 min | whole-class demo</div>
+      <h1>Same Speed, Different Motion</h1>
+      <p class="subheading">I will move. <strong>You will time, calculate, and explain.</strong></p>
+      <div class="path" aria-label="Tape points A and B are 6 meters apart">
+        <span class="endpoint">A</span><span class="path-arrow">6 meters</span><span class="endpoint">B</span>
+      </div>
+      <div class="two-col">
+        <div class="box"><h3>Get ready</h3><p>Use a stopwatch or timer and paper / Notability for your data.</p></div>
+        <div class="box"><h3>Timing rule</h3><p>Start when I first move. Stop when I reach the finish point.</p></div>
+      </div>
+      <div class="prompt">Big question: Can two trips have about the same average speed, but different motion?</div>
+    </div>
+  </section>
+  <section class="demo-slide" aria-label="Record your evidence">
+    <div class="slide-card">
+      <div class="kicker">0-2 min | prepare your recording space</div>
+      <h2>Make a 3-row data table</h2>
+      <table class="records" aria-label="Record time and average speed for all three timed walks">
+        <thead><tr><th>Walk</th><th>Distance</th><th>Your time</th><th>Your average speed</th></tr></thead>
+        <tbody>
+          <tr><td>1. Steady</td><td>6 m</td><td>_____ s</td><td>_____ m/s</td></tr>
+          <tr><td>2. Mixed pace</td><td>6 m</td><td>_____ s</td><td>_____ m/s</td></tr>
+          <tr><td>3. Out / back</td><td>12 m</td><td>_____ s</td><td>_____ m/s</td></tr>
+        </tbody>
+      </table>
+      <div class="formula">Average speed = total distance &divide; total time</div>
+      <p class="small">Use your own time for each calculation. Different timers may give slightly different results.</p>
+    </div>
+  </section>
+  <section class="demo-slide" aria-label="Walk one">
+    <div class="slide-card">
+      <div class="kicker">Walk 1 | 2-5 min</div>
+      <h2>Steady walk: A &rarr; B</h2>
+      <div class="path" aria-hidden="true"><span class="endpoint">A</span><span class="path-arrow">6 meters</span><span class="endpoint">B</span></div>
+      <ol class="steps">
+        <li>Everyone times my walk from A to B.</li>
+        <li>Record your time in row 1.</li>
+        <li>Calculate your average speed.</li>
+      </ol>
+      <div class="formula">6 m &divide; your time = _____ m/s</div>
+      <div class="prompt">Question: Does this answer prove I moved at exactly that speed every instant?</div>
+    </div>
+  </section>
+  <section class="demo-slide" aria-label="Walk two">
+    <div class="slide-card">
+      <div class="kicker">Walk 2 | 5-9 min</div>
+      <h2>Different speeds during one trip</h2>
+      <p class="subheading">Watch: slow &rarr; quick &rarr; pause &rarr; quick.</p>
+      <ol class="steps">
+        <li>Everyone times the entire 6 m trip, including the pause.</li>
+        <li>Record your time in row 2 and calculate average speed.</li>
+        <li>Compare your answers from walks 1 and 2.</li>
+      </ol>
+      <div class="formula">6 m &divide; your time = _____ m/s</div>
+      <div class="challenge">At the pause, what was my <em>instantaneous</em> speed? If the two overall times are close, was the motion still different?</div>
+    </div>
+  </section>
+  <section class="demo-slide" aria-label="Walk three">
+    <div class="slide-card">
+      <div class="kicker">Walk 3 | 9-13 min</div>
+      <h2>Go out &hellip; then return to A</h2>
+      <p class="subheading">A &rarr; B &rarr; A (6 m out + 6 m back)</p>
+      <ol class="steps">
+        <li>Time the entire walk until I return to A.</li>
+        <li>Record your time and calculate average speed using <strong>12 m</strong>.</li>
+        <li>Watch the arrow: what happens to the direction of my velocity?</li>
+      </ol>
+      <div class="formula">12 m &divide; your time = _____ m/s</div>
+      <div class="prompt">I finish where I started. Is my average <em>speed</em> zero? What is my net change in position?</div>
+    </div>
+  </section>
+  <section class="demo-slide" aria-label="Curved walk">
+    <div class="slide-card">
+      <div class="kicker">Walk 4 | 13-15 min | observation only</div>
+      <h2>Same pace, turning direction</h2>
+      <p class="subheading">I walk on a curve at approximately one steady speed.</p>
+      <div class="two-col">
+        <div class="box"><h3>Watch the arrow</h3><p>It always points in the direction I am moving.</p></div>
+        <div class="box"><h3>No timing needed</h3><p>Focus on what changes, even if the pace stays about the same.</p></div>
+      </div>
+      <div class="prompt">Prediction: If my speed stays roughly constant but the arrow turns, does my velocity stay constant?</div>
+      <p class="small">Compare this to the steady, straight middle part of walk 1.</p>
+    </div>
+  </section>
+  <section class="demo-slide" aria-label="Discussion and takeaway">
+    <div class="slide-card">
+      <div class="kicker">15-18 min | think, discuss, defend</div>
+      <h2>Use evidence from our walks</h2>
+      <ol class="discussion">
+        <li><span>Walks 1 and 2 may have similar average speeds. How did their <strong>instantaneous</strong> speeds differ?</span></li>
+        <li><span>In walk 3, why was my average speed greater than zero even though I ended at A? What happened to direction?</span></li>
+        <li><span>During the curved walk, could my speed stay constant while my velocity changed? Explain using the arrow.</span></li>
+      </ol>
+      <div class="takeaway">Speed = how fast. &nbsp; Velocity = how fast + which direction.</div>
+    </div>
+  </section>
+</main>
+<div class="controls" role="navigation" aria-label="Slide controls">
+  <button id="prev" type="button" aria-label="Previous slide">&larr; Back</button>
+  <div class="counter" id="counter" aria-live="polite">1 / 7</div>
+  <button class="primary" id="next" type="button" aria-label="Next slide">Next &rarr;</button>
+</div>
+<script>
+  const slides = [...document.querySelectorAll('.demo-slide')];
+  let current = 0;
+  function show(index) {
+    current = Math.max(0, Math.min(slides.length - 1, index));
+    slides.forEach((slide, i) => {
+      const active = i === current;
+      slide.classList.toggle('active', active);
+      slide.setAttribute('aria-hidden', active ? 'false' : 'true');
+    });
+    document.getElementById('counter').textContent = `${current + 1} / ${slides.length}`;
+    document.getElementById('prev').disabled = current === 0;
+    document.getElementById('next').disabled = current === slides.length - 1;
+  }
+  document.getElementById('prev').addEventListener('click', () => show(current - 1));
+  document.getElementById('next').addEventListener('click', () => show(current + 1));
+  document.addEventListener('keydown', (event) => {
+    if (event.altKey || event.ctrlKey || event.metaKey || (event.target instanceof Element && event.target.closest('button'))) return;
+    if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(current + 1); }
+    if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
+  });
+  show(0);
+</script>
+</body>
+</html>
