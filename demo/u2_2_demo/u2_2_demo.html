@@ -1,165 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Unit 2.2 Demo - Same Speed, Different Motion</title>
-<link rel="stylesheet" href="../../css/demo.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>U2.2 Demo - Same Speed, Different Motion</title>
+<link rel="stylesheet" href="../../css/demo.css">
 <style>
-/* Small, content-only enhancements. Existing demo.css remains the design authority. */
-.calculation { font-size: clamp(1.4rem, 3.5vw, 2.8rem); font-weight: 800; text-align: center; margin: 1rem 0; }
-.measure { display:flex; gap:1rem; align-items:center; justify-content:center; flex-wrap:wrap; }
-.measure input { width:7ch; max-width:95%; padding:.45em; font:inherit; text-align:center; color:inherit; background:transparent; border:2px solid currentColor; border-radius:.35rem; }
-.measure label { display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; }
-.result { min-height:2.5em; text-align:center; font-weight:750; font-size:clamp(1.25rem,2.7vw,2.2rem); }
-.motion-diagrams { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
-.motion-diagrams svg { width:100%; height:clamp(90px,18vh,170px); }
-.motion-diagrams .box { text-align:center; }
-.motion-diagrams p { margin:.2rem 0; }
-.answer { display:none; border-top:1px solid currentColor; padding-top:.5rem; margin-top:.6rem; font-weight:650; }
-.answer.is-visible { display:block; }
-.answer-toggle { font:inherit; border:1px solid currentColor; background:transparent; color:inherit; border-radius:.4rem; padding:.35rem .65rem; cursor:pointer; }
-@media (max-width:700px){ .motion-diagrams{grid-template-columns:1fr;} }
+/* Minimal projected layout; works with the course's existing demo controls. */
+.demo-slide { padding:2.5vh 4vw 9.5vh; }
+.slide-card { width:min(1200px,94vw); height:82vh; min-height:0; padding:3vh 3.3vw; justify-content:flex-start; gap:1.6vh; overflow:hidden; }
+.kicker { font-size:clamp(17px,1.5vw,23px); margin:0; }
+h1 { font-size:clamp(43px,5.5vw,80px); line-height:1.08; margin:0; }
+h2 { font-size:clamp(38px,4.5vw,66px); line-height:1.1; margin:0; }
+p, li { font-size:clamp(22px,2.3vw,32px); line-height:1.24; margin:.2vh 0; }
+.small { font-size:clamp(18px,1.8vw,26px); }
+.core { font-weight:800; color:#173f5e; }
+.route { display:flex; justify-content:space-between; align-items:center; gap:2vw; background:#eaf3f9; border:2px solid #b0cfe3; border-radius:16px; padding:2.1vh 2.4vw; font-size:clamp(27px,3vw,42px); font-weight:800; }
+.route .arrow { flex:1; text-align:center; font-size:clamp(32px,3.8vw,54px); color:#1f5f8b; white-space:nowrap; }
+.route .point { white-space:nowrap; }
+.chips { display:grid; grid-template-columns:repeat(4,1fr); gap:1vw; margin-top:1vh; }
+.chip { background:#f6f9fb; border:2px solid #c9d4dc; border-radius:12px; padding:1.5vh 1vw; }
+.chip .lab { font-size:clamp(15px,1.35vw,19px); color:#496174; text-transform:uppercase; font-weight:800; letter-spacing:.025em; }
+.chip .val { font-size:clamp(28px,3vw,43px); font-weight:800; margin-top:.6vh; white-space:nowrap; }
+.formulas { display:grid; grid-template-columns:1fr 1fr; gap:1.3vw; margin-top:1vh; }
+.formula { padding:1.3vh 1.5vw; background:#eaf3f9; border-left:7px solid #1f5f8b; border-radius:10px; font-size:clamp(20px,2.05vw,29px); font-weight:800; line-height:1.2; }
+.formula span { display:block; font-size:.75em; font-weight:600; margin-top:.3vh; }
+.prompt { font-size:clamp(23px,2.45vw,34px); padding:1.5vh 1.6vw; margin:.7vh 0 0; line-height:1.2; }
+.four { display:grid; grid-template-columns:repeat(2,1fr); gap:1.3vw; }
+.four .box { padding:1.6vh 1.5vw; }
+.four .box h3 { font-size:clamp(25px,2.5vw,35px); margin:0 0 .5vh; }
+.four .box p { font-size:clamp(19px,1.8vw,26px); }
+.concept { font-size:clamp(24px,2.4vw,35px); font-weight:800; background:#edf4f9; border-radius:10px; padding:1.3vh 1.5vw; margin:.5vh 0; }
+.results { width:100%; border-collapse:collapse; margin:.4vh 0; table-layout:fixed; }
+.results th,.results td { text-align:left; border:2px solid #cbd5dc; padding:1.2vh 1vw; font-size:clamp(19px,1.8vw,25px); }
+.results th { background:#e6f1f8; font-weight:800; }
+.results th:first-child { width:31%; }
+.results td { background:#fff; }
+.question { background:#f7fafc; border:2px solid #cbd5dc; border-radius:14px; padding:1.4vh 1.5vw; font-size:clamp(22px,2.4vw,34px); font-weight:650; }
+.question .num { display:inline-grid; place-items:center; width:1.8em; height:1.8em; border-radius:50%; background:#1f5f8b; color:white; font-size:.78em; margin-right:.55em; }
+.closing { font-size:clamp(24px,2.6vw,38px); font-weight:800; color:#1b5278; margin-top:.8vh; }
+.controls button:focus-visible { outline:3px solid #be7c20; outline-offset:3px; }
+.controls button:disabled { opacity:.4; cursor:not-allowed; }
+@media(max-width:800px) { .slide-card { padding:2vh 2vw; } .chip { padding:1vh .8vw; } .chip .val { font-size:clamp(16px,2.7vw,23px); } .chip .lab { font-size:12px; } .formula { font-size:17px; } .results th,.results td { font-size:15px; } }
+@media print { .slide-card { height:auto; min-height:0; overflow:visible; } .demo-slide { padding:0; } }
 </style>
 </head>
 <body class="demo-screen">
-<main class="demo-deck" id="deck">
-  <section class="demo-slide active">
-    <div class="slide-card">
-      <div class="kicker">Physics | Unit 2.2 | Speed &amp; Velocity | 18-20 minutes</div>
-      <h1>Same Speed, Different Motion</h1>
-      <div class="prompt">How can two people move equally fast but have different velocities?</div>
-      <p class="small">Today's challenge: Watch, measure, predict, and explain.</p>
-    </div>
-  </section>
-
-  <section class="demo-slide">
-    <div class="slide-card">
-      <div class="kicker">0-5 min | Walk 1: Measure</div>
-      <h2>How fast was the walk?</h2>
-      <div class="prompt">A volunteer travels from A to B: <strong>900 cm (9 m)</strong>.</div>
-      <div class="measure"><label>Measured time: <input id="walk-time" type="number" min="0.1" step="0.1" value="4" inputmode="decimal" aria-label="Measured time in seconds"/> seconds</label></div>
-      <div class="calculation">Average speed = distance &divide; time</div>
-      <div class="result" id="walk-result" aria-live="polite">900 cm &divide; 4 s = 225 cm/s</div>
-      <p class="small">Use the actual class time. The 4-second starting value is an example, not a predicted result.</p>
-    </div>
-  </section>
-
-  <section class="demo-slide">
-    <div class="slide-card">
-      <div class="kicker">5-10 min | Walk 2: Watch closely</div>
-      <h2>Did the speed stay the same?</h2>
-      <div class="two-col">
-        <div class="box"><h3>Walk pattern</h3><p>Slow 300 cm &rarr; fast 300 cm &rarr; stop 2 seconds &rarr; final 300 cm.</p></div>
-        <div class="box"><h3>Predict</h3><p>At the instant the walker stops, what is their speed?</p></div>
-      </div>
-      <div class="challenge">Can the instantaneous speed be zero while the average speed for the whole walk is greater than zero?</div>
-    </div>
-  </section>
-
-  <section class="demo-slide">
-    <div class="slide-card">
-      <div class="kicker">Compare | Speed at a moment versus for a trip</div>
-      <h2>Two different kinds of speed</h2>
-      <div class="two-col">
-        <div class="box"><h3>Instantaneous speed</h3><p>How fast are you moving <strong>right now</strong>?</p><p>During the stop: <strong>0 cm/s</strong>.</p></div>
-        <div class="box"><h3>Average speed</h3><p><strong>Total distance &divide; total time</strong>.</p><p>Count the stopping time, too!</p></div>
-      </div>
-      <div class="challenge">Does a car speedometer show instantaneous speed or whole-trip average speed?</div>
-    </div>
-  </section>
-
-  <section class="demo-slide">
-    <div class="slide-card">
-      <div class="kicker">10-15 min | Walk 3: Follow the arrow</div>
-      <h2>Same speed. Different velocity?</h2>
-      <div class="motion-diagrams">
-        <div class="box">
-          <h3>Walk A: Straight</h3>
-          <svg viewBox="0 0 290 135" role="img" aria-label="Straight arrow pointing right from A toward B">
-            <line x1="20" y1="85" x2="266" y2="85" stroke="currentColor" stroke-width="3" stroke-opacity="0.3" stroke-dasharray="9 7"/>
-            <path d="M30 50 H245 M229 38 L246 50 L229 62" fill="none" stroke="#21966e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="20" y="115" font-size="22" fill="currentColor">A</text><text x="250" y="115" font-size="22" fill="currentColor">B</text>
-          </svg>
-          <p>Steady speed, same direction.</p>
-        </div>
-        <div class="box">
-          <h3>Walk B: Circle</h3>
-          <svg viewBox="0 0 290 135" role="img" aria-label="Circular path with a direction arrow changing around the loop">
-            <ellipse cx="145" cy="72" rx="94" ry="46" stroke="#21966e" stroke-width="8" fill="none"/>
-            <path d="M145 26 L170 27 L158 7" fill="none" stroke="#21966e" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-            <circle cx="238" cy="72" r="9" fill="#2186C9"/>
-            <path d="M238 56 V25 M225 38 L238 24 L251 38" fill="none" stroke="#2186C9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <p>Steady speed, changing direction.</p>
-        </div>
-      </div>
-      <div class="challenge">Which walk could have constant velocity? Explain using speed AND direction.</div>
-    </div>
-  </section>
-
-  <section class="demo-slide">
-    <div class="slide-card">
-      <div class="kicker">15-18 min | Class predictions</div>
-      <h2>One finger = constant velocity. Two = changing velocity.</h2>
-      <div class="box"><p><strong>1.</strong> A car travels east at a steady 30 mph.</p><button type="button" class="answer-toggle" data-answer="a1">Reveal</button><p class="answer" id="a1">1 finger: Constant velocity. Neither speed nor direction changes.</p></div>
-      <div class="box"><p><strong>2.</strong> A car rounds a circular track at a steady 30 mph.</p><button type="button" class="answer-toggle" data-answer="a2">Reveal</button><p class="answer" id="a2">2 fingers: Velocity changes because the direction changes.</p></div>
-      <div class="box"><p><strong>3.</strong> A runner moves north, increasing from 2 m/s to 4 m/s.</p><button type="button" class="answer-toggle" data-answer="a3">Reveal</button><p class="answer" id="a3">2 fingers: Velocity changes because the speed changes.</p></div>
-    </div>
-  </section>
-
-  <section class="demo-slide">
-    <div class="slide-card">
-      <div class="kicker">18-20 min | Independent exit check</div>
-      <h2>Explain it without help.</h2>
-      <div class="box"><p><strong>1.</strong> A student travels 12 m in 6 s. What is their average speed?</p></div>
-      <div class="box"><p><strong>2.</strong> A speedometer reads 5 m/s. Instantaneous or average speed?</p></div>
-      <div class="box"><p><strong>3.</strong> Can an object have constant speed but changing velocity? Give an example.</p></div>
-      <div class="challenge">Speed tells <strong>how fast</strong>. Velocity tells <strong>how fast and in which direction</strong>.</div>
-    </div>
-  </section>
-</main>
-
-<div class="controls">
-  <button type="button" id="prev">&larr; Back</button>
-  <div class="counter" id="counter" aria-live="polite">1 / 7</div>
-  <button type="button" class="primary" id="next">Next &rarr;</button>
+<main class="demo-deck" id="deck" aria-label="Same Speed, Different Motion classroom demonstration">
+<section class="demo-slide active" aria-label="Setup and measurement rules"><div class="slide-card">
+<div class="kicker">Unit 2.2 &bull; 0-3 min &bull; teacher moves, everyone measures</div>
+<h1>Same Speed, Different Motion</h1>
+<div class="route"><span class="point">A = 0 cm</span><span class="arrow">&longrightarrow; 900 cm &longrightarrow;</span><span class="point">B = 900 cm</span></div>
+<div class="concept">For each walk, record these four measurements:</div>
+<div class="chips">
+<div class="chip"><div class="lab">Total distance</div><div class="val">_____ cm</div></div>
+<div class="chip"><div class="lab">Initial position</div><div class="val">_____ cm</div></div>
+<div class="chip"><div class="lab">Final position</div><div class="val">_____ cm</div></div>
+<div class="chip"><div class="lab">Your time</div><div class="val">_____ s</div></div>
 </div>
+<div class="formulas"><div class="formula">Average speed = distance &divide; time</div><div class="formula">Average velocity = (final &minus; initial) &divide; time</div></div>
+<p class="small">Make four rows. Start your timer when I begin moving; stop at the end of each walk. A to B is positive.</p>
+</div></section>
+<section class="demo-slide" aria-label="Scenario one"><div class="slide-card">
+<div class="kicker">Walk 1 of 4 &bull; 3-6 min</div>
+<h2>Steady walk: A to B</h2>
+<div class="route"><span class="point">A (0 cm)</span><span class="arrow">&longrightarrow;</span><span class="point">B (900 cm)</span></div>
+<div class="chips"><div class="chip"><div class="lab">Total distance</div><div class="val">900 cm</div></div><div class="chip"><div class="lab">Initial position</div><div class="val">0 cm</div></div><div class="chip"><div class="lab">Final position</div><div class="val">900 cm</div></div><div class="chip"><div class="lab">Your time</div><div class="val">_____ s</div></div></div>
+<div class="formulas"><div class="formula">Average speed = 900 cm &divide; time</div><div class="formula">Average velocity = (900 &minus; 0) cm &divide; time</div></div>
+<div class="prompt">Calculate both. What direction is the average velocity?</div>
+</div></section>
+<section class="demo-slide" aria-label="Scenario two"><div class="slide-card">
+<div class="kicker">Walk 2 of 4 &bull; 6-9 min</div>
+<h2>Same path, changing pace</h2>
+<div class="route"><span class="point">A (0 cm)</span><span class="arrow">&longrightarrow;</span><span class="point">B (900 cm)</span></div>
+<p class="small">Watch: slow &rarr; fast &rarr; pause &rarr; fast.</p>
+<div class="chips"><div class="chip"><div class="lab">Total distance</div><div class="val">900 cm</div></div><div class="chip"><div class="lab">Initial position</div><div class="val">0 cm</div></div><div class="chip"><div class="lab">Final position</div><div class="val">900 cm</div></div><div class="chip"><div class="lab">Your time</div><div class="val">_____ s</div></div></div>
+<div class="formulas"><div class="formula">Average speed = 900 cm &divide; time</div><div class="formula">Average velocity = (900 &minus; 0) cm &divide; time</div></div>
+<div class="prompt">Compare walks 1 and 2: can similar averages hide different motion?</div>
+</div></section>
+<section class="demo-slide" aria-label="Scenario three round trip"><div class="slide-card">
+<div class="kicker">Walk 3 of 4 &bull; 9-13 min &bull; key comparison</div>
+<h2>Out and back: A to B to A</h2>
+<div class="route"><span class="point">A (0 cm)</span><span class="arrow">&longleftrightarrow; 900 cm each way</span><span class="point">B (900 cm)</span></div>
+<div class="chips"><div class="chip"><div class="lab">Total distance</div><div class="val">1800 cm</div></div><div class="chip"><div class="lab">Initial position</div><div class="val">0 cm</div></div><div class="chip"><div class="lab">Final position</div><div class="val">0 cm</div></div><div class="chip"><div class="lab">Your time</div><div class="val">_____ s</div></div></div>
+<div class="formulas"><div class="formula">Average speed = 1800 cm &divide; time</div><div class="formula">Average velocity = (0 &minus; 0) cm &divide; time</div></div>
+<div class="prompt">I traveled 1800 cm. Why is my average velocity <strong>0 cm/s</strong>?</div>
+</div></section>
+<section class="demo-slide" aria-label="Scenario four reverse direction"><div class="slide-card">
+<div class="kicker">Walk 4 of 4 &bull; 13-15 min</div>
+<h2>Reverse direction: B to A</h2>
+<div class="route"><span class="point">A (0 cm)</span><span class="arrow">&longleftarrow;</span><span class="point">B (900 cm)</span></div>
+<div class="chips"><div class="chip"><div class="lab">Total distance</div><div class="val">900 cm</div></div><div class="chip"><div class="lab">Initial position</div><div class="val">900 cm</div></div><div class="chip"><div class="lab">Final position</div><div class="val">0 cm</div></div><div class="chip"><div class="lab">Your time</div><div class="val">_____ s</div></div></div>
+<div class="formulas"><div class="formula">Average speed = 900 cm &divide; time</div><div class="formula">Average velocity = (0 &minus; 900) cm &divide; time</div></div>
+<div class="prompt">Compare walks 1 and 4. What changed if the speeds were similar?</div>
+</div></section>
+<section class="demo-slide" aria-label="Compare all four scenarios"><div class="slide-card">
+<div class="kicker">15-16 min &bull; compare your calculations</div>
+<h2>Four walks. Two averages.</h2>
+<table class="results"><thead><tr><th>Walk</th><th>Total distance</th><th>Change in position</th><th>Average velocity</th></tr></thead>
+<tbody><tr><td>1. A &rarr; B</td><td>900 cm</td><td>+900 cm</td><td>Positive</td></tr>
+<tr><td>2. A &rarr; B (varied)</td><td>900 cm</td><td>+900 cm</td><td>Positive</td></tr>
+<tr><td>3. A &rarr; B &rarr; A</td><td>1800 cm</td><td>0 cm</td><td>0 cm/s</td></tr>
+<tr><td>4. B &rarr; A</td><td>900 cm</td><td>&minus;900 cm</td><td>Negative</td></tr></tbody></table>
+<div class="formulas"><div class="formula">Average speed<span>Uses distance: always nonnegative</span></div><div class="formula">Average velocity<span>Uses change in position: includes direction</span></div></div>
+<div class="prompt">Do your calculations match these patterns?</div>
+</div></section>
+<section class="demo-slide" aria-label="Follow-up discussion"><div class="slide-card">
+<div class="kicker">16-18 min &bull; think &bull; discuss &bull; defend</div>
+<h2>Use evidence from your data.</h2>
+<div class="question"><span class="num">1</span>How could walks 1 and 2 have similar average speeds but different speeds during the trip?</div>
+<div class="question"><span class="num">2</span>Why was average speed above zero but average velocity zero for the round trip?</div>
+<div class="question"><span class="num">3</span>How could walks 1 and 4 have similar average speeds but opposite average velocities?</div>
+<div class="closing">Speed: how fast. Velocity: how fast and which direction.</div>
+</div></section>
+</main>
+<div class="controls"><button type="button" id="prev" aria-label="Previous slide">&larr; Back</button><div class="counter" id="counter" aria-live="polite">1 / 7</div><button type="button" class="primary" id="next" aria-label="Next slide">Next &rarr;</button></div>
 <script>
-(function(){
-  'use strict';
-  const slides=[...document.querySelectorAll('.demo-slide')];
-  let index=0;
-  function show(n){
-    index=Math.max(0,Math.min(slides.length-1,n));
-    slides.forEach((slide,j)=>slide.classList.toggle('active',j===index));
-    document.getElementById('counter').textContent=(index+1)+' / '+slides.length;
-    document.getElementById('prev').disabled=index===0;
-    document.getElementById('next').disabled=index===slides.length-1;
-  }
-  document.getElementById('prev').addEventListener('click',()=>show(index-1));
-  document.getElementById('next').addEventListener('click',()=>show(index+1));
-  document.addEventListener('keydown',e=>{
-    if(e.target.matches('input,textarea,button'))return;
-    if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(index+1);}
-    if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(index-1);}
-  });
-  const seconds=document.getElementById('walk-time');
-  const result=document.getElementById('walk-result');
-  seconds.addEventListener('input',()=>{
-    const t=Number(seconds.value);
-    if(!Number.isFinite(t)||t<=0){result.textContent='Enter a time greater than 0 seconds.';return;}
-    const speed=900/t;
-    const rounded=Number(speed.toFixed(2)).toLocaleString('en-US');
-    result.textContent='900 cm \u00f7 '+t+' s = '+rounded+' cm/s';
-  });
-  document.querySelectorAll('[data-answer]').forEach(button=>button.addEventListener('click',()=>{
-    const answer=document.getElementById(button.dataset.answer);
-    const shown=answer.classList.toggle('is-visible');
-    button.textContent=shown?'Hide':'Reveal';
-  }));
-  show(0);
-})();
+const slides=[...document.querySelectorAll('.demo-slide')];let i=0;
+function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,j)=>s.classList.toggle('active',j===i));document.getElementById('counter').textContent=(i+1)+' / '+slides.length;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===slides.length-1;}
+document.getElementById('prev').addEventListener('click',()=>show(i-1));
+document.getElementById('next').addEventListener('click',()=>show(i+1));
+document.addEventListener('keydown',e=>{if(e.target instanceof HTMLElement&&['INPUT','TEXTAREA','SELECT','BUTTON'].includes(e.target.tagName))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(i+1);}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(i-1);}});
+show(0);
 </script>
 </body>
 </html>
