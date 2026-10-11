@@ -1,1 +1,150 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>U2.2 Investigation - Hands-on walking data investigation</title><link rel="stylesheet" href="../../css/investigation.css"/></head><body><main class="student-page"><div class="kicker">Physics - Unit 2 - Section 2 - Investigation</div><h1>Hands-on walking data investigation</h1><p class="subtitle">Use evidence from the activity to test and apply the motion model from Section 2.2.</p><div class="target"><strong>Learning target:</strong> Distinguish speed from velocity and use distance, time, and direction to describe motion.</div><div class="question">Research Question: How can two trips have similar speeds but different velocities?</div><h2>1. Make a Prediction</h2><p>Before collecting evidence, write the result or pattern you expect and give one reason.</p><div class="workspace" style="--ws:110px" data-label="Prediction"></div><h2>2. Set Up and Collect Evidence</h2><div class="check"><strong>Equipment:</strong> meter sticks or tape measure, stopwatch, rubber bands or floor markers, masking tape</div><div class="step"><div class="step-num">1</div><div>Mark a straight 8-10 m path. Place rubber-band or tape markers every 1 m.</div></div><div class="step"><div class="step-num">2</div><div>Trial A: walk from start to finish at a steady pace. Record total distance and total time.</div></div><div class="step"><div class="step-num">3</div><div>Trial B: travel the same total distance but include a turn so your final direction differs from Trial A. Record distance and time.</div></div><div class="step"><div class="step-num">4</div><div>Trial C: complete an out-and-back trip that ends at the start. Record total distance and total time.</div></div><div class="step"><div class="step-num">5</div><div>Calculate average speed for each trial using v=d/t. Then write a velocity description for the motion when a single direction is meaningful.</div></div><h2>3. Record Your Evidence</h2><table class="data-table"><tr><th>Trial</th><th>Distance</th><th>Time</th><th>Average speed</th><th>Direction / velocity description</th></tr><tr><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td>B</td><td></td><td></td><td></td><td></td></tr><tr><td>C</td><td></td><td></td><td></td><td></td></tr></table><div class="workspace blank" style="--ws:190px" data-label="Graph, diagram, or additional evidence"></div><h2>4. Analyze the Evidence</h2><h3>1. Which trial(s) can have similar average speed but different velocity descriptions?</h3><div class="workspace" style="--ws:110px" data-label="Response"></div><h3>2. Why does the out-and-back trip still have a nonzero average speed?</h3><div class="workspace" style="--ws:110px" data-label="Response"></div><h3>3. Give an example from your data where changing direction changes velocity even if speed is similar.</h3><div class="workspace" style="--ws:130px" data-label="Response"></div><h2>5. Final Model</h2><p>Write a concise conclusion that answers the research question using specific evidence from your group’s data or observations.</p><div class="workspace" style="--ws:150px" data-label="Conclusion / model"></div><p class="footer-note">Use the physics ideas from the completed Section 2.2 notes. Do not add explanations from later sections unless your teacher specifically asks you to.</p></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U2.2 Investigation | The Speed Trap</title>
+<link rel="stylesheet" href="../../css/investigation.css">
+<style>
+  .student-page { padding:.32in .55in .40in; line-height:1.25; }
+  .student-page h1 { font-size:21pt; }
+  .student-page h2 { font-size:14.5pt; margin:.07in 0 .06in; padding-bottom:.025in; }
+  .student-page p, .student-page li, .student-page td, .student-page th { font-size:9.8pt; }
+  .student-page p { margin:.035in 0 .065in; }
+  .student-page ol { margin:.035in 0 .065in .22in; }
+  .student-page li { margin:.012in 0; }
+  .student-page .investigation-header { padding-bottom:.07in; margin-bottom:.08in; }
+  .student-page .target { margin:.08in 0; padding:.055in .10in; }
+  .student-page .directions { margin:.05in 0; padding:.065in .10in; }
+  .student-page .checkpoint { margin:.07in 0; padding:.06in .10in; }
+  .student-page .synthesis { margin:.08in 0; padding:.08in .11in; }
+  .student-page .workspace { margin:.05in 0 .09in; }
+  .student-page .record-table { margin:.05in auto .09in; }
+  .student-page .record-table th, .student-page .record-table td { padding:.04in .05in; }
+
+  .mini-equation { font-weight:800; text-align:center; background:#edf5fa; padding:.10in; margin:.12in 0; }
+  .tight { margin:.04in 0 .08in; }
+  .record-table { width:100%; table-layout:fixed; }
+  .record-table td { height:.34in; }
+  .record-table th { font-size:10pt; }
+  .path { display:flex; align-items:center; justify-content:space-between; margin:.06in auto .18in; max-width:6.7in; }
+  .path .mark { text-align:center; flex:1; }
+  .path .mark b { display:block; padding:.055in 0; border-left:2px solid #173f68; background:#f1f5f8; }
+  .path .mark:last-child b { border-right:2px solid #173f68; }
+  .path small { display:block; font-size:9pt; padding:.02in 0; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:.17in; }
+  .two-col > div { min-width:0; }
+  .answer-row { display:flex; gap:.15in; align-items:baseline; margin:.11in 0; }
+  .answer-row .response-line { flex:1; min-width:0; }
+  @media print {
+    .student-page { padding:.32in .55in .40in; line-height:1.25; }
+  .student-page h1 { font-size:21pt; }
+  .student-page h2 { font-size:14.5pt; margin:.07in 0 .06in; padding-bottom:.025in; }
+  .student-page p, .student-page li, .student-page td, .student-page th { font-size:9.8pt; }
+  .student-page p { margin:.035in 0 .065in; }
+  .student-page ol { margin:.035in 0 .065in .22in; }
+  .student-page li { margin:.012in 0; }
+  .student-page .investigation-header { padding-bottom:.07in; margin-bottom:.08in; }
+  .student-page .target { margin:.08in 0; padding:.055in .10in; }
+  .student-page .directions { margin:.05in 0; padding:.065in .10in; }
+  .student-page .checkpoint { margin:.07in 0; padding:.06in .10in; }
+  .student-page .synthesis { margin:.08in 0; padding:.08in .11in; }
+  .student-page .workspace { margin:.05in 0 .09in; }
+  .student-page .record-table { margin:.05in auto .09in; }
+  .student-page .record-table th, .student-page .record-table td { padding:.04in .05in; }
+
+    .record-table td { height:.34in; }
+  }
+</style>
+</head>
+<body>
+<section class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">Physics • Unit 2 • Section 2 • Investigation</div>
+    <h1>The Speed Trap</h1>
+    <p class="subtitle">Toy car + four-foot ramp • About 25–30 minutes</p>
+    <div class="meta-line"><span><strong>Name:</strong> <span class="response-line"></span></span><span><strong>Group:</strong> __________</span></div>
+  </header>
+
+  <div class="target"><strong>Learning target:</strong> Distinguish speed from velocity and use distance, time, and direction to describe motion.</div>
+  <p class="prompt">Question: Does a car have the same average speed over every one-foot section of a ramp?</p>
+  <div class="answer-row"><strong>Prediction:</strong><span class="response-line"></span></div>
+
+  <h2>1. Set Up the Ramp</h2>
+  <div class="directions"><strong>Materials:</strong> toy car, four-foot board, tape, books or a stable support, iPad, and something soft to catch the car.</div>
+  <ol>
+    <li>Raise one end of the board slightly and secure it. Put a soft stop at the bottom.</li>
+    <li>Mark <strong>0, 1, 2, 3, and 4 ft</strong> down the board. The 0-ft mark is at the raised end.</li>
+    <li>Keep the ramp height and release position the <strong>same</strong> for every run.</li>
+  </ol>
+  <div class="path" aria-label="Ramp marks at 0, 1, 2, 3, and 4 feet">
+    <div class="mark"><b>0</b><small>start</small></div>
+    <div class="mark"><b>1</b><small>1 ft</small></div>
+    <div class="mark"><b>2</b><small>2 ft</small></div>
+    <div class="mark"><b>3</b><small>3 ft</small></div>
+    <div class="mark"><b>4</b><small>4 ft</small></div>
+  </div>
+
+  <h2>2. Film One Run</h2>
+  <ol>
+    <li>Place the iPad beside the ramp so the <strong>whole board and all five marks</strong> are visible. Keep the camera still.</li>
+    <li>Record the car rolling from <strong>0 to 4 ft</strong>. Release it without pushing. Use slow-motion video if available.</li>
+    <li>Replay the video. Use the <strong>front of the car</strong> as your timing point each time it reaches a mark.</li>
+    <li>Set the video time at 0 ft to <strong>0.00 s</strong>. Record the elapsed time at each mark. Use actual elapsed seconds, not slowed playback seconds.</li>
+  </ol>
+  <div class="checkpoint"><strong>Timing:</strong> Use video timestamps with decimal seconds, or a frame-by-frame timer if available. If the video cannot show times accurately, use a lower ramp or ask your teacher for a timing method.</div>
+
+  <h2>3. Record the Video Times</h2>
+  <table class="record-table">
+    <thead><tr><th>Distance from start</th><th>Time when car reaches mark (s)</th></tr></thead>
+    <tbody>
+      <tr><td>0 ft</td><td><strong>0.00 s</strong></td></tr>
+      <tr><td>1 ft</td><td></td></tr>
+      <tr><td>2 ft</td><td></td></tr>
+      <tr><td>3 ft</td><td></td></tr>
+      <tr><td>4 ft</td><td></td></tr>
+    </tbody>
+  </table>
+  <p class="tight">One continuous video gives you the timing for <strong>0–1, 1–2, 2–3, 3–4, and 0–4 ft</strong>. You do not need to restart the car at each mark.</p>
+  <div class="footer-note"><span>U2.2 • The Speed Trap</span><span>1</span></div>
+</section>
+
+<section class="student-page">
+  <header class="investigation-header">
+    <div class="eyebrow">The Speed Trap • Calculations and Analysis</div>
+    <h1>How Does Speed Change?</h1>
+  </header>
+
+  <h2>4. Calculate Average Speeds</h2>
+  <div class="mini-equation">Time for an interval = end time − start time<br>Average speed = distance traveled ÷ time for that interval</div>
+  <p class="tight">All distances are in <strong>feet</strong>. Record all speeds in <strong>ft/s</strong>.</p>
+  <table class="record-table">
+    <thead><tr><th>Part of ramp</th><th>Distance traveled</th><th>Time for interval (s)</th><th>Average speed (ft/s)</th></tr></thead>
+    <tbody>
+      <tr><td>0–1 ft</td><td>1 ft</td><td></td><td></td></tr>
+      <tr><td>1–2 ft</td><td>1 ft</td><td></td><td></td></tr>
+      <tr><td>2–3 ft</td><td>1 ft</td><td></td><td></td></tr>
+      <tr><td>3–4 ft</td><td>1 ft</td><td></td><td></td></tr>
+      <tr><td><strong>0–4 ft</strong></td><td><strong>4 ft</strong></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <p class="prompt">Show your calculation for the 1–2 ft interval.</p>
+  <div class="workspace blank" style="--ws:.61in"></div>
+
+  <h2>5. Look for the Pattern</h2>
+  <p><strong>A.</strong> Compare the four one-foot average speeds. Where was the car slowest? Where was it fastest?</p>
+  <div class="workspace blank" style="--ws:.56in"></div>
+  <p><strong>B.</strong> Is the 0–4 ft average speed the same as the 3–4 ft average speed? Use your numbers.</p>
+  <div class="workspace blank" style="--ws:.56in"></div>
+  <p><strong>C.</strong> Which gives a better estimate of the car's speed near the bottom: 0–4 ft or 3–4 ft? Why?</p>
+  <div class="workspace blank" style="--ws:.58in"></div>
+  <p><strong>D.</strong> The car keeps moving <em>down the ramp</em>. Is its velocity constant? Use speed and direction to explain.</p>
+  <div class="workspace blank" style="--ws:.58in"></div>
+
+  <div class="synthesis"><strong>Final conclusion:</strong> Does one average speed describe the car's motion equally well at every point on the ramp? Support your answer with two measurements.</div>
+  <div class="workspace blank" style="--ws:.63in"></div>
+  <div class="footer-note"><span>U2.2 • The Speed Trap</span><span>2</span></div>
+</section>
+</body>
+</html>
