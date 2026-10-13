@@ -1,0 +1,211 @@
+/* Physics 2.2 Quick Check — compact four-question, one-page layout.
+   Loaded after the Physics standard quick_check.css. Scope every rule to
+   these three version IDs so other Physics quick checks are unaffected. */
+
+#version-a, #version-b, #version-c {
+  box-sizing: border-box !important;
+  width: min(100%, 8.5in) !important;
+  max-width: 8.5in !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto 22px !important;
+  padding: 0.33in 0.46in !important;
+  display: block !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #17222f;
+  background: white;
+}
+#version-a *, #version-b *, #version-c * { box-sizing: border-box; }
+#version-a .qc-header, #version-b .qc-header, #version-c .qc-header {
+  padding: 0 0 8px !important;
+  margin: 0 0 8px !important;
+  min-height: 0 !important;
+  border-bottom: 2px solid #243847 !important;
+}
+#version-a .qc-title-row, #version-b .qc-title-row, #version-c .qc-title-row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 16px !important;
+  margin: 0 !important;
+}
+#version-a .qc-kicker, #version-b .qc-kicker, #version-c .qc-kicker {
+  font-size: 9px !important;
+  letter-spacing: 0.065em !important;
+  line-height: 1.2 !important;
+  font-weight: 750 !important;
+  margin: 0 0 2px !important;
+}
+#version-a .qc-title, #version-b .qc-title, #version-c .qc-title {
+  font-size: 20px !important;
+  line-height: 1.1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#version-a .qc-section-pill, #version-b .qc-section-pill, #version-c .qc-section-pill {
+  flex: none !important;
+  font-size: 11px !important;
+  padding: 5px 10px !important;
+  line-height: 1.1 !important;
+  border: 1.5px solid #222 !important;
+  border-radius: 18px !important;
+  background: white !important;
+  color: #17222f !important;
+}
+#version-a .student-row, #version-b .student-row, #version-c .student-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 2.5fr) minmax(0, 1.1fr) minmax(0, .7fr) !important;
+  gap: 14px !important;
+  align-items: center !important;
+  margin: 10px 0 0 !important;
+  padding: 0 !important;
+}
+#version-a .student-field, #version-b .student-field, #version-c .student-field {
+  display: block !important;
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#version-a .qc-directions, #version-b .qc-directions, #version-c .qc-directions {
+  margin: 0 0 8px !important;
+  font-size: 11px !important;
+  line-height: 1.35 !important;
+}
+#version-a .qc-question, #version-b .qc-question, #version-c .qc-question {
+  display: block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 0 8px !important;
+  padding: 8px 11px !important;
+  background: #fff !important;
+  border: 1px solid #a8b4c0 !important;
+  border-radius: 7px !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  overflow: visible !important;
+}
+#version-a .qc-question-head, #version-b .qc-question-head, #version-c .qc-question-head {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 9px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#version-a .qc-number, #version-b .qc-number, #version-c .qc-number {
+  flex: 0 0 23px !important;
+  width: 23px !important;
+  height: 23px !important;
+  line-height: 23px !important;
+  border-radius: 50% !important;
+  background: #283744 !important;
+  color: white !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#version-a .qc-prompt, #version-b .qc-prompt, #version-c .qc-prompt {
+  display: block !important;
+  font-size: 11.7px !important;
+  line-height: 1.34 !important;
+  font-weight: 650 !important;
+  margin: 2px 0 0 !important;
+  padding: 0 !important;
+}
+#version-a .response-space, #version-b .response-space, #version-c .response-space {
+  display: block !important;
+  width: 100% !important;
+  height: .58in !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: white !important;
+  flex: none !important;
+}
+#version-a .qc-question[data-concept="cart"] .response-space,
+#version-b .qc-question[data-concept="cart"] .response-space,
+#version-c .qc-question[data-concept="cart"] .response-space { height: .82in !important; }
+#version-a .qc-question[data-concept="ramp"] .response-space,
+#version-b .qc-question[data-concept="ramp"] .response-space,
+#version-c .qc-question[data-concept="ramp"] .response-space { height: 1.05in !important; }
+#version-a .qc-question[data-concept="bike"] .response-space,
+#version-b .qc-question[data-concept="bike"] .response-space,
+#version-c .qc-question[data-concept="bike"] .response-space { height: .86in !important; }
+#version-a .qc-question[data-concept="robot"] .response-space,
+#version-b .qc-question[data-concept="robot"] .response-space,
+#version-c .qc-question[data-concept="robot"] .response-space { height: .91in !important; }
+#version-a .qc-table, #version-b .qc-table, #version-c .qc-table {
+  display: table !important;
+  width: calc(100% - 32px) !important;
+  max-width: 100% !important;
+  margin: 7px 0 7px 32px !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  font-size: 11px !important;
+  table-layout: fixed !important;
+}
+#version-a .qc-table th, #version-a .qc-table td,
+#version-b .qc-table th, #version-b .qc-table td,
+#version-c .qc-table th, #version-c .qc-table td {
+  border: 1px solid #9ca7b3 !important;
+  padding: 3px 8px !important;
+  line-height: 1.15 !important;
+  height: auto !important;
+  background: white !important;
+  color: #17222f !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+#version-a .qc-table th, #version-b .qc-table th, #version-c .qc-table th {
+  background: #edf1f5 !important;
+  font-weight: bold !important;
+}
+#version-a .qc-subprompt, #version-b .qc-subprompt, #version-c .qc-subprompt {
+  font-size: 11px !important;
+  line-height: 1.3 !important;
+  margin: 4px 0 0 32px !important;
+  padding: 0 !important;
+}
+#version-a .qc-footer, #version-b .qc-footer, #version-c .qc-footer {
+  font-size: 9px !important;
+  line-height: 1.3 !important;
+  text-align: right !important;
+  margin: 2px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+@page { size: letter portrait; margin: .52in .56in; }
+@media print {
+  html, body { margin: 0 !important; padding: 0 !important; background: white !important; }
+  #version-a, #version-b, #version-c {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    overflow: visible !important;
+  }
+  #version-c { page-break-after: auto !important; break-after: auto !important; }
+  #version-a, #version-b, #version-c {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+@media screen {
+  #version-a, #version-b, #version-c { box-shadow: 0 3px 18px rgba(0,0,0,.08); border: 1px solid #ccd4dc; }
+}
