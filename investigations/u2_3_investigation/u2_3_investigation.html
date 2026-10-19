@@ -1,98 +1,123 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Physics 2.3 Investigation | Ramp Acceleration</title><style>
-:root {--navy:#183e65;--blue:#23668f;--ink:#20303a;--muted:#556675;--line:#a9beca;--paper:#fff;--shade:#eef5f9;}
+:root{--navy:#183e65;--blue:#23668f;--ink:#20303a;--muted:#526775;--line:#a9beca;--shade:#eef5f9}
 *{box-sizing:border-box}
-html,body{padding:0;margin:0}
-body{font-family:Arial,Helvetica,sans-serif; color:var(--ink);background:#e7eef2;font-size:11pt;line-height:1.32}
-.student-page{width:8.5in;height:11in;margin:18px auto;background:var(--paper);padding:.40in .52in .38in;box-shadow:0 3px 20px #1735501f;break-after:page;position:relative;overflow:hidden}
-.student-page:last-child{break-after:auto}
-.headline{border-bottom:3px solid var(--navy);padding-bottom:.10in;margin-bottom:.10in}
-.eyebrow{font-size:9pt;font-weight:800;color:var(--blue);letter-spacing:.05em;text-transform:uppercase}
-h1{font-size:22pt;line-height:1.1;margin:.04in 0 .04in;color:var(--navy)}
-.subtitle{font-size:10pt;margin:0;color:var(--muted)}
-.info{display:flex;gap:.30in;margin:.13in 0 .09in;font-size:10pt}
-.line{display:inline-block;border-bottom:1px solid #667987;min-width:1.85in;height:.16in}
-.target{padding:.07in .12in;border-left:4px solid var(--blue);background:var(--shade);margin:.09in 0 .09in;font-size:10pt}
-h2{font-size:13.5pt;color:var(--navy);border-bottom:1.4px solid #b5c8d3;margin:.14in 0 .06in;padding-bottom:.035in}
-p{margin:.055in 0 .075in}
-.note{background:#f3f7fa;border-left:3px solid var(--blue);padding:.07in .11in;margin:.09in 0;font-size:9.5pt}
-.small{font-size:9.5pt}
-ol{padding-left:.23in;margin:.06in 0 .10in}
-li{padding-left:.02in;margin:0 0 .055in;line-height:1.23;font-size:10pt}
-strong{font-weight:750}
-.label{font-size:9.3pt;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.045em}
-.fills{display:flex;gap:.20in;align-items:baseline;flex-wrap:wrap;font-size:10pt;margin:.08in 0}
-.fills .line{min-width:.75in;flex:1}
-.data-table{border-collapse:collapse;width:100%;table-layout:fixed;margin:.07in 0 .09in}
-.data-table th{color:var(--navy);background:var(--shade);border:1px solid #93acbc;text-align:center;font-size:9.2pt;padding:.065in .04in;line-height:1.18}
-.data-table td{border:1px solid #91a7b8;height:.276in;text-align:center;padding:0}
-.data-table tbody tr:nth-child(even){background:#fafcfd}
-.data-table td:first-child{font-size:9.2pt;font-weight:650}
-.gridtwo{display:grid;grid-template-columns:1fr 1fr;gap:.18in}
-.calcbox{border:1px solid var(--line);padding:.09in .10in;margin:.06in 0;font-size:9.7pt;min-height:.8in}
-.calcbox .line{min-width:0;width:95%;margin-top:.10in}
-.question{margin:.115in 0 .075in;break-inside:avoid}
-.question p{margin:0 0 .03in;font-weight:650;font-size:10pt}
-.write{height:.46in;border:1px solid #d1dde5;background:repeating-linear-gradient(to bottom,transparent 0,transparent .24in,#dbe5eb .248in,transparent .253in)}
-.write.short{height:.38in}
-.endnote{font-size:9pt;color:var(--muted);margin:.08in 0}
-.footer{position:absolute;bottom:.19in;left:.52in;right:.52in;font-size:8pt;color:#657c8b;display:flex;justify-content:space-between}
+html,body{margin:0;padding:0}
+body{font:10.5pt/1.32 Arial,Helvetica,sans-serif;color:var(--ink);background:#e8eef2}
+.student-page{width:8.5in;height:11in;position:relative;padding:.40in .55in .40in;background:white;margin:16px auto;box-shadow:0 4px 22px #213a5018;overflow:hidden;break-after:page;page-break-after:always}
+.student-page:last-child{break-after:auto;page-break-after:auto}
+header.head{border-bottom:3px solid var(--navy);padding-bottom:.09in;margin-bottom:.11in}
+.kicker{color:var(--blue);font-weight:800;font-size:9pt;letter-spacing:.035em;text-transform:uppercase}
+h1{color:var(--navy);font-size:21pt;line-height:1.12;margin:.05in 0 .025in}
+.sub{font-size:10pt;color:var(--muted);margin:0}
+h2{color:var(--navy);border-bottom:1.3px solid var(--line);padding-bottom:.045in;margin:.18in 0 .10in;font-size:14pt;line-height:1.12}
+h3{color:var(--navy);font-size:11pt;margin:.09in 0 .07in}
+p{margin:.07in 0 .10in}
+ol{margin:.07in 0 .10in;padding-left:.25in}
+li{padding-left:.02in;margin:0 0 .075in}
+.info{display:flex;align-items:baseline;gap:.28in;font-size:10pt;margin:.14in 0 .10in}
+.fill{display:inline-block;min-width:2.0in;height:.17in;border-bottom:1px solid #7b8d99;vertical-align:bottom}
+.target{margin:.09in 0;padding:.09in .12in;border-left:4px solid var(--blue);background:var(--shade);font-size:10pt}
+.equation-strip{font-weight:750;text-align:center;padding:.10in .09in;background:var(--shade);margin:.12in 0;font-size:10pt;line-height:1.45}
+.note{background:#f4f8fa;border-left:3px solid var(--blue);padding:.08in .11in;margin:.10in 0;font-size:9.7pt}
+.compact{font-size:9.8pt;line-height:1.25}
+.data-table{width:100%;border-collapse:collapse;table-layout:fixed;margin:.12in 0 .12in;break-inside:avoid;page-break-inside:avoid}
+.data-table th{color:var(--navy);background:var(--shade);border:1px solid #91acbe;text-align:center;font-size:10.5pt;padding:.11in .04in;line-height:1.15}
+.data-table td{height:.46in;border:1px solid #91acbe;text-align:center;vertical-align:middle;padding:0}
+.data-table tbody tr:nth-child(even){background:#f9fbfd}
+.data-table td:first-child{font-weight:800;width:18%}
+.calc{border:1px solid var(--line);margin:.115in 0;padding:.11in .13in;break-inside:avoid;page-break-inside:avoid;position:relative}
+.calc strong{color:var(--navy)}
+.calc.independent{margin:.075in 0;padding:.075in .10in}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:.08in .27in;font-size:10pt;margin:.055in 0}
+.blankline{display:inline-block;min-width:.72in;border-bottom:1px solid #8397a4;height:.13in;vertical-align:baseline}
+.calc-formula{font-size:10pt;margin:.06in 0}
+.work-area{background:repeating-linear-gradient(to bottom,transparent 0,transparent .245in,#e0e7ec .252in,transparent .258in);border-top:1px solid #e1e8ed;margin-top:.08in;min-height:.53in}
+.calc.guided .work-area{min-height:.61in}
+.calc.independent .work-area{min-height:.44in}
+.analysis-question{margin:.15in 0 .18in;break-inside:avoid}
+.analysis-question p{font-weight:700;margin-bottom:.07in}
+.write{border:1px solid #cfdae1;background:repeating-linear-gradient(to bottom,transparent 0,transparent .28in,#e1e7ec .288in,transparent .295in);height:.91in}
+.write.graph{height:1.24in;background:none}
+.footer{position:absolute;bottom:.19in;left:.55in;right:.55in;display:flex;justify-content:space-between;color:#657b8b;font-size:8.5pt}
 @page{size:letter;margin:0}
-@media print{body{background:#fff}.student-page{box-shadow:none;margin:0;page-break-after:always;break-after:page}.student-page:last-child{page-break-after:auto;break-after:auto}}
+@media print{body{background:white}.student-page{margin:0;box-shadow:none;break-after:page;page-break-after:always}.student-page:last-child{break-after:auto;page-break-after:auto}}
 </style></head><body>
-<section class="student-page" id="trial-one">
-<header class="headline"><div class="eyebrow">Physics • Unit 2.3 • Investigation</div><h1>Ramp Acceleration</h1><p class="subtitle">Vernier Video Analysis • Guided trial → independent trial</p></header>
-<div class="info"><span><strong>Name:</strong> <span class="line"></span></span><span><strong>Group:</strong> __________</span></div>
+<section class="student-page" id="guided-data">
+<header class="head"><div class="kicker">Physics • Unit 2.3 • Investigation</div><h1>Ramp Acceleration</h1><p class="sub">Vernier Dynamics Cart + Track • Guided trial, then independent trial</p></header>
+<div class="info"><span><strong>Name:</strong> <span class="fill"></span></span><span><strong>Group:</strong> __________</span></div>
 <div class="target"><strong>Learning target:</strong> Explain acceleration as the rate at which velocity changes and identify acceleration from motion descriptions, data, and graphs.</div>
-<p class="small"><strong>Research question:</strong> What evidence shows that a cart on a gentle ramp is accelerating rather than moving at constant velocity?</p>
-<div class="fills"><strong>Prediction:</strong> <span class="line"></span></div>
-<h2>1. Set Up and Record (Trial 1 • Guided)</h2>
-<p class="small"><strong>Materials:</strong> four-foot board, toy car/cart, support blocks, tape, meterstick, iPad camera, Vernier Video Analysis, soft stop.</p>
-<ol>
-<li>Mark <strong>0, 1, 2, 3, 4 ft</strong> on the ramp. Raise one end a little and secure it. Place a soft stop after 4 ft.</li>
-<li>Record the <strong>ramp height</strong> (vertical height of the raised end). Release the car at 0 ft <strong>without pushing</strong>.</li>
-<li>Film the entire run <strong>side-on</strong> with the whole ramp and a known measurement visible. Record <strong>one good trial</strong>.</li>
-</ol>
-<div class="fills"><strong>Trial 1 ramp height:</strong><span class="line"></span> <strong>cm</strong></div>
-<h2>2. Track the Car With Your Teacher</h2>
-<ol>
-<li>Open the video in <strong>Vernier Video Analysis</strong>. Set the <strong>Scale</strong> from a known length on the ramp; set the origin at 0 ft and positive direction <strong>down the ramp</strong>.</li>
-<li>Open <strong>Advanced Video Options (gear) → Advance Frames → 5 frames</strong>.</li>
-<li>Use <strong>Add</strong> to mark the <em>same point</em> on the car in each selected frame. Continue through the run.</li>
-<li>View <strong>velocity vs. time</strong>. Use the Vernier data table to copy your time, position, and velocity readings below.</li>
-</ol>
-<h2>3. Record Your Data — Trial 1</h2>
-<p class="small">Record points in time order. Leave extra rows empty. Use Vernier’s measured time, not the slowed playback time.</p>
-<table class="data-table" aria-label="Vernier tracked motion data"><colgroup><col style="width:12%"><col style="width:25%"><col style="width:31%"><col style="width:32%"></colgroup><thead><tr><th>Point</th><th>Time (s)</th><th>Position down<br>ramp (m)</th><th>Velocity down<br>ramp (m/s)</th></tr></thead><tbody><tr><td>1</td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td></tr><tr><td>5</td><td></td><td></td><td></td></tr><tr><td>6</td><td></td><td></td><td></td></tr><tr><td>7</td><td></td><td></td><td></td></tr><tr><td>8</td><td></td><td></td><td></td></tr><tr><td>9</td><td></td><td></td><td></td></tr><tr><td>10</td><td></td><td></td><td></td></tr><tr><td>11</td><td></td><td></td><td></td></tr><tr><td>12</td><td></td><td></td><td></td></tr></tbody></table>
-<div class="footer"><span>Unit 2.3 • Guided video tracking</span><span>1 / 3</span></div>
+<p><strong>Research question:</strong> What evidence shows that a cart on a gentle ramp is accelerating rather than moving at constant velocity?</p>
+<h2>1. Set Up and Film — Trial 1 (Together)</h2>
+<p class="compact"><strong>Materials:</strong> Vernier dynamics cart and track with built-in tape measure, stable support, iPad camera, Vernier Video Analysis, and a soft stop.</p>
+<ol><li>Raise one end of the <strong>track</strong> slightly and secure it. Release the cart from the same starting position every run, <strong>without pushing</strong>.</li>
+<li>Film one good trial <strong>from the side</strong>. Keep the <strong>built-in tape measure</strong> visible in the video for setting the distance scale.</li>
+<li><strong>Do not move the filming iPad</strong> during the recording. Keep the whole cart path visible and stop the cart safely.</li></ol>
+<h2>2. Track the Cart With Your Teacher</h2>
+<ol><li>Import the video into <strong>Vernier Video Analysis</strong>. Use the track's tape measure to set the <strong>distance scale</strong>. Set the origin and positive direction <strong>down the track</strong>.</li>
+<li>Open <strong>Advanced Video Options → Advance Frames → 5 frames</strong>.</li>
+<li>Choose <strong>Add</strong>, then mark the <strong>same spot</strong> on the cart (such as its front axle) as the video advances.</li>
+<li>Open the <strong>velocity–time graph/data table</strong>. Copy <strong>five points</strong> with both time and velocity shown; use points spread across the run.</li></ol>
+<h2>3. Record Trial 1 Data</h2>
+<p class="compact">Record only <strong>time</strong> and <strong>velocity</strong>. Vernier already keeps the position values. Use actual time from Vernier, not the slowed video playback clock.</p>
+<table class="data-table" aria-label="Trial 1 time and velocity data"><colgroup><col style="width:16%"><col style="width:42%"><col style="width:42%"></colgroup><thead><tr><th>Point</th><th>Time (s)</th><th>Velocity down the ramp (m/s)</th></tr></thead><tbody><tr><td>1</td><td aria-label="Time for point 1"></td><td aria-label="Velocity for point 1"></td></tr><tr><td>2</td><td aria-label="Time for point 2"></td><td aria-label="Velocity for point 2"></td></tr><tr><td>3</td><td aria-label="Time for point 3"></td><td aria-label="Velocity for point 3"></td></tr><tr><td>4</td><td aria-label="Time for point 4"></td><td aria-label="Velocity for point 4"></td></tr><tr><td>5</td><td aria-label="Time for point 5"></td><td aria-label="Velocity for point 5"></td></tr></tbody></table>
+<div class="footer"><span>Physics 2.3 • Guided filming and five data points</span><span>1 / 4</span></div>
 </section>
-<section class="student-page" id="trial-two">
-<header class="headline"><div class="eyebrow">Physics • Unit 2.3 • Investigation</div><h1>Change the Ramp Height</h1><p class="subtitle">Independent repeat • Compare how quickly velocity changes</p></header>
-<h2>4. Run Trial 2 on Your Own</h2>
-<ol>
-<li><strong>Increase the height of the raised end</strong> of the ramp. Keep the same car, release point, and marks.</li>
-<li>Film <strong>one good run</strong> without pushing. Import it into Vernier and repeat the tracking process. Keep <strong>Advance Frames = 5 frames</strong>.</li>
-<li>Read the new time, position, and velocity values. Compare the velocity–time graphs for both trials.</li>
-</ol>
-<div class="fills"><strong>Trial 2 ramp height:</strong><span class="line"></span> <strong>cm</strong></div>
-<h2>5. Record Your Data — Trial 2</h2>
-<table class="data-table" aria-label="Vernier tracked motion data"><colgroup><col style="width:12%"><col style="width:25%"><col style="width:31%"><col style="width:32%"></colgroup><thead><tr><th>Point</th><th>Time (s)</th><th>Position down<br>ramp (m)</th><th>Velocity down<br>ramp (m/s)</th></tr></thead><tbody><tr><td>1</td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td></tr><tr><td>5</td><td></td><td></td><td></td></tr><tr><td>6</td><td></td><td></td><td></td></tr><tr><td>7</td><td></td><td></td><td></td></tr><tr><td>8</td><td></td><td></td><td></td></tr><tr><td>9</td><td></td><td></td><td></td></tr><tr><td>10</td><td></td><td></td><td></td></tr><tr><td>11</td><td></td><td></td><td></td></tr><tr><td>12</td><td></td><td></td><td></td></tr></tbody></table>
-<h2>6. Calculate and Compare</h2>
-<p class="small">For <strong>each trial</strong>, choose an early and a later point from your table. Calculate <strong>Δv = v<sub>f</sub> − v<sub>i</sub></strong>, <strong>Δt = t<sub>f</sub> − t<sub>i</sub></strong>, and <strong>a = Δv / Δt</strong>.</p>
-<div class="gridtwo"><div class="calcbox"><strong>Trial 1: </strong> Δv = ______ m/s<br>Δt = ______ s<br><strong>a = __________ m/s²</strong></div><div class="calcbox"><strong>Trial 2: </strong> Δv = ______ m/s<br>Δt = ______ s<br><strong>a = __________ m/s²</strong></div></div>
-<div class="note"><strong>Use your numbers:</strong> Check whether acceleration changed when you raised the ramp. Keep your two videos so you can compare the velocity–time graphs on the next page.</div>
-<div class="footer"><span>Unit 2.3 • Independent repeat + calculations</span><span>2 / 3</span></div>
+<section class="student-page" id="guided-calculations">
+<header class="head"><div class="kicker">Physics • Unit 2.3 • Guided calculations</div><h1>Trial 1 — Calculate Acceleration</h1><p class="sub">Follow your teacher. Show the substitutions and your work.</p></header>
+<div class="equation-strip">Δv = v<sub>f</sub> − v<sub>i</sub> &nbsp;&nbsp; • &nbsp;&nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> &nbsp;&nbsp; • &nbsp;&nbsp; a = Δv ÷ Δt</div>
+<p class="compact">Use the recorded values from <strong>Trial 1</strong>. Calculate acceleration three times using different pairs of points. Record values, subtract, then divide. Include units.</p>
+<div class="calc guided">
+ <strong>Calculation 1 — points 1 and 3</strong>
+ <div class="calc-grid"><div>t<sub>i</sub> = <span class="blankline"></span> s</div><div>t<sub>f</sub> = <span class="blankline"></span> s</div><div>v<sub>i</sub> = <span class="blankline"></span> m/s</div><div>v<sub>f</sub> = <span class="blankline"></span> m/s</div></div>
+ <div class="calc-formula">Δv = v<sub>f</sub> − v<sub>i</sub> = <span class="blankline"></span> m/s&nbsp;&nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> = <span class="blankline"></span> s</div>
+ <div class="calc-formula"><strong>a = Δv ÷ Δt = <span class="blankline"></span> m/s²</strong></div>
+ <div class="work-area" aria-label="Blank work area"></div></div><div class="calc guided">
+ <strong>Calculation 2 — points 2 and 4</strong>
+ <div class="calc-grid"><div>t<sub>i</sub> = <span class="blankline"></span> s</div><div>t<sub>f</sub> = <span class="blankline"></span> s</div><div>v<sub>i</sub> = <span class="blankline"></span> m/s</div><div>v<sub>f</sub> = <span class="blankline"></span> m/s</div></div>
+ <div class="calc-formula">Δv = v<sub>f</sub> − v<sub>i</sub> = <span class="blankline"></span> m/s&nbsp;&nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> = <span class="blankline"></span> s</div>
+ <div class="calc-formula"><strong>a = Δv ÷ Δt = <span class="blankline"></span> m/s²</strong></div>
+ <div class="work-area" aria-label="Blank work area"></div></div><div class="calc guided">
+ <strong>Calculation 3 — points 3 and 5</strong>
+ <div class="calc-grid"><div>t<sub>i</sub> = <span class="blankline"></span> s</div><div>t<sub>f</sub> = <span class="blankline"></span> s</div><div>v<sub>i</sub> = <span class="blankline"></span> m/s</div><div>v<sub>f</sub> = <span class="blankline"></span> m/s</div></div>
+ <div class="calc-formula">Δv = v<sub>f</sub> − v<sub>i</sub> = <span class="blankline"></span> m/s&nbsp;&nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> = <span class="blankline"></span> s</div>
+ <div class="calc-formula"><strong>a = Δv ÷ Δt = <span class="blankline"></span> m/s²</strong></div>
+ <div class="work-area" aria-label="Blank work area"></div></div>
+<h2>4. Prepare Trial 2 — Independent</h2>
+<p class="compact"><strong>Increase the raised end</strong> of the track. Keep the same cart, starting point, and stationary iPad. Film one clear new run; in Vernier, check the scale and positive direction, use <strong>Advance Frames = 5 frames</strong>, and record five valid time/velocity points on the next page.</p>
+<div class="footer"><span>Physics 2.3 • Three guided acceleration calculations</span><span>2 / 4</span></div>
+</section>
+<section class="student-page" id="independent-data">
+<header class="head"><div class="kicker">Physics • Unit 2.3 • Independent trial</div><h1>Trial 2 — Higher Ramp</h1><p class="sub">Repeat the Vernier tracking and calculations without the teacher walkthrough.</p></header>
+<h2>5. Record Trial 2 Data</h2>
+<p class="compact">Use <strong>five points</strong> from the new velocity–time data table. Record the actual Vernier time and downhill velocity. Keep positive downhill for both trials.</p>
+<table class="data-table" aria-label="Trial 2 time and velocity data"><colgroup><col style="width:16%"><col style="width:42%"><col style="width:42%"></colgroup><thead><tr><th>Point</th><th>Time (s)</th><th>Velocity down the ramp (m/s)</th></tr></thead><tbody><tr><td>1</td><td aria-label="Time for point 1"></td><td aria-label="Velocity for point 1"></td></tr><tr><td>2</td><td aria-label="Time for point 2"></td><td aria-label="Velocity for point 2"></td></tr><tr><td>3</td><td aria-label="Time for point 3"></td><td aria-label="Velocity for point 3"></td></tr><tr><td>4</td><td aria-label="Time for point 4"></td><td aria-label="Velocity for point 4"></td></tr><tr><td>5</td><td aria-label="Time for point 5"></td><td aria-label="Velocity for point 5"></td></tr></tbody></table>
+<h2>6. Calculate Acceleration — Trial 2</h2>
+<p class="compact">Use the <strong>same three pairs</strong> of point numbers as Trial 1. Show enough work to check your subtraction and division.</p>
+<div class="calc independent"><strong>Calculation 1 — points 1 and 3</strong>
+  <div class="calc-formula">Δv = v<sub>f</sub> − v<sub>i</sub> = <span class="blankline"></span> m/s &nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> = <span class="blankline"></span> s</div>
+  <div class="calc-formula"><strong>a = Δv ÷ Δt = <span class="blankline"></span> m/s²</strong></div>
+  <div class="work-area" aria-label="Show your substitution and steps"></div></div><div class="calc independent"><strong>Calculation 2 — points 2 and 4</strong>
+  <div class="calc-formula">Δv = v<sub>f</sub> − v<sub>i</sub> = <span class="blankline"></span> m/s &nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> = <span class="blankline"></span> s</div>
+  <div class="calc-formula"><strong>a = Δv ÷ Δt = <span class="blankline"></span> m/s²</strong></div>
+  <div class="work-area" aria-label="Show your substitution and steps"></div></div><div class="calc independent"><strong>Calculation 3 — points 3 and 5</strong>
+  <div class="calc-formula">Δv = v<sub>f</sub> − v<sub>i</sub> = <span class="blankline"></span> m/s &nbsp; Δt = t<sub>f</sub> − t<sub>i</sub> = <span class="blankline"></span> s</div>
+  <div class="calc-formula"><strong>a = Δv ÷ Δt = <span class="blankline"></span> m/s²</strong></div>
+  <div class="work-area" aria-label="Show your substitution and steps"></div></div>
+<div class="footer"><span>Physics 2.3 • Independent tracking and calculations</span><span>3 / 4</span></div>
 </section>
 <section class="student-page" id="analysis">
-<header class="headline"><div class="eyebrow">Physics • Unit 2.3 • Investigation</div><h1>Analysis and Conclusion</h1><p class="subtitle">Use data from both ramp heights.</p></header>
+<header class="head"><div class="kicker">Physics • Unit 2.3 • Analysis</div><h1>What Does the Graph Show?</h1><p class="sub">Use your two trials, acceleration calculations, and Vernier graphs.</p></header>
 <h2>7. Analyze Your Evidence</h2>
-<div class="question"><p>1. What graph evidence shows that velocity changed?</p><div class="write" style="height:1.07in"></div></div>
-<div class="question"><p>2. Was the acceleration approximately positive, negative, or zero using your chosen positive direction? Explain.</p><div class="write" style="height:1.07in"></div></div>
-<div class="question"><p>3. Would a steeper or flatter velocity-time trend mean a larger or smaller acceleration? Defend with your data.</p><div class="write" style="height:1.17in"></div></div>
+<div class="analysis-question"><p>1. What graph evidence shows that velocity changed?</p><div class="write" style="height:.98in"></div></div>
+<div class="analysis-question"><p>2. Was the acceleration approximately positive, negative, or zero using your chosen positive direction? Explain.</p><div class="write" style="height:1.01in"></div></div>
+<div class="analysis-question"><p>3. Would a steeper or flatter velocity-time trend mean a larger or smaller acceleration? Defend with your data.</p><div class="write" style="height:1.04in"></div></div>
 <h2>Graph Evidence</h2>
-<p class="small">Sketch or note the two velocity–time trends from Vernier here, if helpful.</p>
-<div class="write" style="height:1.70in"></div>
-<div class="question"><p><strong>Final Model:</strong> Write a concise conclusion that answers the research question using specific evidence from your group’s data or observations.</p><div class="write" style="height:1.17in"></div></div>
-<div class="footer"><span>Unit 2.3 • Analysis and final model</span><span>3 / 3</span></div>
+<p class="compact">Sketch the Trial 1 and Trial 2 velocity–time trends or record observations from the two graphs.</p>
+<div class="write graph" style="height:.79in"></div>
+<h2>8. Final Model</h2>
+<p><strong>Write a concise conclusion that answers the research question using specific evidence from your group’s data or observations.</strong></p>
+<div class="write" style="height:.91in"></div>
+<div class="footer"><span>Physics 2.3 • Analysis and conclusion</span><span>4 / 4</span></div>
 </section>
 </body></html>
