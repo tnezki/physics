@@ -1,7 +1,7 @@
 {
   "schema": "physics-planner-state/0.4",
   "school_year": "2026-2027",
-  "current_week_index": 6,
+  "current_week_index": 7,
   "days": [
     {
       "week_index": 0,
@@ -1482,15 +1482,15 @@
       "section": "2.3: Acceleration",
       "day_number": 2,
       "student_slots": [
-        "Warmups",
+        "Custom Item",
         "Investigation",
         "Practice Set",
-        "Extra Practice",
+        "",
         ""
       ],
       "custom_slots": [
         {
-          "label": "",
+          "label": "Warm Ups",
           "url": ""
         },
         {
@@ -1528,7 +1528,7 @@
         "Activity",
         "Practice Set",
         "Extra Practice",
-        "Quick Check"
+        ""
       ],
       "custom_slots": [
         {
@@ -9039,5 +9039,5 @@
   "migrations": [
     "unit-transition-test-labels-v1"
   ],
-  "updated_at": "2026-10-16T06:12:38"
+  "updated_at": "2026-10-18T21:22:19"
 }
