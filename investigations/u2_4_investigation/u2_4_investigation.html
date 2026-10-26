@@ -1,79 +1,99 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Physics 2.4 | How Far in Each Interval? Free Fall Investigation</title><style>
-:root{--navy:#183e65;--blue:#23668f;--ink:#243541;--muted:#587080;--line:#b4c6d1;--shade:#edf5fa;--light:#f6f9fb}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}body{font:10.5pt/1.32 Arial,Helvetica,sans-serif;color:var(--ink);background:#e9eef2}
-.sheet{position:relative;width:8.5in;height:11in;margin:15px auto;padding:.41in .56in .47in;background:#fff;box-shadow:0 4px 20px #213a501b;break-after:page;page-break-after:always;overflow:hidden}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Physics 2.4 | How Far in Each Interval? Ball and Cotton Ball</title><style>
+:root{--navy:#183e65;--blue:#27698e;--ink:#233541;--muted:#536b7b;--line:#9fb9c9;--shade:#edf5fa;--off:#f7fafc}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font:10.3pt/1.31 Arial,Helvetica,sans-serif;background:#e9eef2;color:var(--ink)}
+.sheet{position:relative;width:8.5in;height:11in;margin:15px auto;background:#fff;padding:.38in .55in .44in;box-shadow:0 4px 20px #183e651c;overflow:hidden;break-after:page;page-break-after:always}
 .sheet:last-child{break-after:auto;page-break-after:auto}
-.head{border-bottom:3px solid var(--navy);padding-bottom:.095in;margin-bottom:.12in}
-.kicker{font-size:9pt;font-weight:800;color:var(--blue);letter-spacing:.055em;text-transform:uppercase}
-h1{font-size:21.3pt;line-height:1.08;color:var(--navy);margin:.045in 0 .02in}
-.sub{font-size:10pt;color:var(--muted);margin:0}
-h2{font-size:13pt;color:var(--navy);margin:.16in 0 .085in;border-bottom:1.5px solid var(--line);padding-bottom:.04in}
-h3{font-size:11pt;color:var(--navy);margin:.09in 0 .05in}
-p{margin:.055in 0 .085in}
-.ident{display:flex;gap:.25in;align-items:center;margin:.07in 0 .12in;font-size:10.4pt}
-.fill{display:inline-block;min-width:2.0in;border-bottom:1px solid #6e8390;height:.16in;vertical-align:bottom}
-.target{padding:.075in .105in;background:var(--shade);border-left:4px solid var(--blue);font-size:10pt;margin:.09in 0}
-.question{margin:.105in 0;font-size:10pt}
-.slimbox{background:var(--light);border:1px solid #cbd9e2;padding:.095in .115in;margin:.09in 0;font-size:10pt}
-.slimbox strong{color:var(--navy)}
-.steps{padding-left:.245in;margin:.07in 0 .10in;font-size:10pt}
-.steps li{margin:0 0 .07in;padding-left:.018in}
-.tiny{color:var(--muted);font-size:9.0pt}
-.predictions{display:grid;grid-template-columns:1fr 1fr;gap:.11in;margin:.09in 0}
-.predictions>div{border:1px solid var(--line);padding:.085in .10in;font-size:9.6pt;background:#fafcfe}
-.choice{font-weight:800;color:#35536a;white-space:nowrap}
-.tag{display:inline-block;padding:.02in .08in;background:var(--shade);font-size:9pt;color:var(--blue);font-weight:800;border-radius:2px}
-.shortline{display:inline-block;min-width:1.25in;border-bottom:1px solid #8497a4;height:.14in;vertical-align:bottom}
-.data{width:100%;border-collapse:collapse;table-layout:fixed;margin:.095in 0 .13in;break-inside:avoid}
-.data th{background:var(--shade);color:var(--navy);border:1px solid #9eb7c5;padding:.08in .06in;font-size:9.9pt;line-height:1.18}
-.data td{border:1px solid #9eb7c5;text-align:center;height:.37in;font-size:10pt}
-.data td:first-child{font-weight:750;background:#f8fbfc}
-.data tr:last-child td{border-bottom-width:1.5px}
-.data .dash{color:#728999;font-size:15pt}
-.one-line{font-size:10pt;margin:.075in 0}
-.answer{height:.54in;background:#fbfdfe;border:1px solid #e1e9ee;margin:.07in 0 .11in}
-.answer.medium{height:.70in}.answer.large{height:.86in}
-.note{font-size:9.3pt;color:#4e6576;margin:.08in 0;line-height:1.3}
-.prompt{margin:.105in 0 .055in;font-weight:700}
-.prompt strong{color:var(--navy)}
-.analysis{margin:.10in 0 .15in;break-inside:avoid}
-.analysis .answer{margin:.06in 0 .09in}
-.footer{position:absolute;bottom:.21in;left:.56in;right:.56in;display:flex;justify-content:space-between;font-size:8.4pt;color:#6b8292}
-@page{size:letter;margin:0}
-@media print{body{background:white}.sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always}.sheet:last-child{break-after:auto;page-break-after:auto}}
-</style></head><body><section class="sheet" id="ball">
-<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>How Far in Each Interval?</h1><p class="sub">Free fall vs. air resistance • Two student-recorded videos • About 35–45 minutes</p></header>
-<div class="ident"><span><b>Name:</b> <span class="fill"></span></span><span><b>Group:</b> __________</span></div>
-<div class="target"><b>Learning target:</b> I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.</div>
-<p class="question"><b>Research question:</b> Does a falling object travel the same distance during every equal time interval? What changes when air resistance matters?</p>
-<div class="predictions"><div><b>Ball prediction</b><br>Distance in each next interval:<br><span class="choice">MORE / LESS / SAME</span></div><div><b>Coffee filter prediction</b><br>Distance in each next interval:<br><span class="choice">MORE / LESS / SAME</span></div></div>
-<h2>1. Record Two Short Videos <span class="tag">5–12 min</span></h2>
-<div class="slimbox"><b>Materials:</b> small dense ball, one open coffee filter, meter stick, iPad/camera, Vernier Video Analysis, clear drop area.</div>
-<ol class="steps"><li>Place a <b>meter stick upright</b> next to a safe <b>1.5–2.0 m</b> drop. Film from the <b>side</b>. Keep the iPad still and the whole fall in view.</li><li>Record the <b>ball</b> being <b>released without a push</b>. Start filming before release.</li><li>Without moving the iPad, record an <b>open coffee filter</b> falling from about the same height. Do not throw it.</li></ol>
-<p class="note"><b>Safety:</b> Stay on the floor. Never climb furniture. Keep people and devices out of the drop zone.</p>
-<h2>2. Video 1 — Ball <span class="tag">8–10 min</span></h2>
-<ol class="steps"><li>Open <a href="https://videoanalysis.app/" target="_blank" rel="noopener">Vernier Video Analysis</a> and <b>Import Video</b> (ball). Set the <b>scale</b> using the meter stick.</li><li>Place the <b>origin at the release point</b>. Point the <b>positive vertical (Y) direction down</b>.</li><li>Choose <b>Add</b>. Mark the <b>center of the ball</b> at release and then about every <b>0.10 s</b>. Read its <b>Y position</b> from Vernier.</li><li>Record the <b>distance fallen from the start</b>. Subtract consecutive readings to fill the last column.</li></ol>
-<table class="data"><colgroup><col style="width:23%"><col style="width:36%"><col style="width:41%"></colgroup><thead><tr><th>Time after release<br>(s)</th><th>Total distance fallen<br>from start (m)</th><th>Distance fallen during<br>this interval (m)</th></tr></thead><tbody><tr><td>0.00</td><td></td><td class="dash">—</td></tr><tr><td>0.10</td><td></td><td class=""></td></tr><tr><td>0.20</td><td></td><td class=""></td></tr><tr><td>0.30</td><td></td><td class=""></td></tr><tr><td>0.40</td><td></td><td class=""></td></tr><tr><td>0.50</td><td></td><td class=""></td></tr></tbody></table>
-<p class="one-line"><b>Example subtraction:</b> If the object is at 0.05 m and then 0.20 m, it traveled <b>0.15 m</b> during that interval.</p>
-<div class="footer"><span>Physics 2.4 • Ball • Record distance, not speed</span><span>1 / 3</span></div>
-</section><section class="sheet" id="filter">
-<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>The Slower Fall</h1><p class="sub">Use the same recording setup; now examine the coffee filter.</p></header>
-<h2>3. Video 2 — Open Coffee Filter <span class="tag">8–10 min</span></h2>
-<ol class="steps"><li>Import your <b>coffee-filter video</b> into Vernier Video Analysis.</li><li>Set the <b>scale</b> and place the <b>origin at release</b>. Again, set <b>positive Y downward</b>.</li><li>Choose <b>Add</b>. Mark the same spot near the filter’s <b>center</b> at release and then about every <b>0.20 s</b>.</li><li>Copy the <b>Y position</b> (distance fallen) into the table. Subtract consecutive readings to find distance during each interval.</li></ol>
-<div class="slimbox"><strong>Important:</strong> The ball uses <b>0.10 s</b> intervals; the filter uses <b>0.20 s</b> intervals. Each row within one table represents the <b>same amount of time</b>. Compare the <b>pattern of changes</b>, not the sizes of the two objects’ interval distances.</div>
-<table class="data"><colgroup><col style="width:23%"><col style="width:36%"><col style="width:41%"></colgroup><thead><tr><th>Time after release<br>(s)</th><th>Total distance fallen<br>from start (m)</th><th>Distance fallen during<br>this interval (m)</th></tr></thead><tbody><tr><td>0.00</td><td></td><td class="dash">—</td></tr><tr><td>0.20</td><td></td><td class=""></td></tr><tr><td>0.40</td><td></td><td class=""></td></tr><tr><td>0.60</td><td></td><td class=""></td></tr><tr><td>0.80</td><td></td><td class=""></td></tr><tr><td>1.00</td><td></td><td class=""></td></tr></tbody></table>
-<p class="note">If the filter lands before the last row, write <b>N/A</b> after landing. If the video is blurry, repeat one clear drop instead of guessing.</p>
-<h2>4. What Does the Filter Show?</h2>
-<p class="prompt">1. As the filter falls, do the interval distances keep growing, become almost equal, or vary unpredictably? Describe the evidence.</p>
-<div class="answer large"></div>
-<p class="prompt">2. Look back at the ball data. What is <b>one clear difference</b> between the two distance patterns?</p>
-<div class="answer large"></div>
-<div class="footer"><span>Physics 2.4 • Coffee filter • Look for a pattern</span><span>2 / 3</span></div>
-</section><section class="sheet" id="reasoning">
-<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>What Do the Intervals Tell Us?</h1><p class="sub">Use your actual measurements—not just what you expected to happen.</p></header>
-<div class="slimbox"><b>Reminder:</b> In <b>free fall</b>, gravity is the only important force. Significant <b>air resistance</b> changes the pattern of motion. Falling objects can still speed up even when air resistance is present.</div>
-<h2>5. Use Your Evidence <span class="tag">8–12 min</span></h2>
-<div class="analysis"><p class="prompt"><strong>1.</strong> Which <b>0.10 s interval</b> had the greatest distance fallen for your ball? Give the interval and its distance.</p><div class="answer medium"></div></div><div class="analysis"><p class="prompt"><strong>2.</strong> What does the ball’s changing distance <b>during equal time intervals</b> tell you about its speed?</p><div class="answer medium"></div></div><div class="analysis"><p class="prompt"><strong>3.</strong> Based on your measurements, which object more closely shows <b>free fall</b>? Support your choice with evidence.</p><div class="answer large"></div></div><div class="analysis"><p class="prompt"><strong>4.</strong> How could you tell that <b>air resistance</b> was affecting the other object? Point to a pattern in its data.</p><div class="answer large"></div></div><div class="analysis"><p class="prompt"><strong>5.</strong> If a coffee filter begins falling at a <b>nearly constant speed</b>, what would happen to the distances during equal time intervals?</p><div class="answer medium"></div></div><div class="analysis"><p class="prompt"><strong>6.</strong> Does <b>gravity stop acting</b> when air resistance is significant? Explain why the two falling objects can move differently.</p><div class="answer medium"></div></div>
-<div class="footer"><span>Physics 2.4 • Explain patterns with evidence</span><span>3 / 3</span></div>
-</section></body></html>
+.head{border-bottom:3px solid var(--navy);padding-bottom:.085in;margin-bottom:.12in}
+.kicker{font-size:9pt;font-weight:800;color:var(--blue);letter-spacing:.045em;text-transform:uppercase}
+h1{font-size:21pt;line-height:1.08;color:var(--navy);margin:.045in 0 .025in}
+.sub{font-size:9.7pt;color:var(--muted);margin:0}
+h2{font-size:12.9pt;color:var(--navy);margin:.135in 0 .065in;padding-bottom:.045in;border-bottom:1.3px solid var(--line)}
+p{margin:.06in 0 .085in}.ident{display:flex;gap:.28in;margin:.095in 0;font-size:10pt}
+.line{min-width:2.22in;display:inline-block;border-bottom:1px solid #7f96a5;vertical-align:baseline;height:.16in}
+.target{margin:.095in 0;padding:.082in .12in;background:var(--shade);border-left:4px solid var(--blue);font-size:10pt}
+.qlead{font-size:9.9pt;margin:.085in 0}
+.info{padding:.085in .12in;background:var(--off);border:1px solid #cbdbe4;font-size:9.55pt;margin:.10in 0}
+.info b{color:var(--navy)}
+.steps{padding-left:.235in;margin:.075in 0 .10in;font-size:9.9pt;line-height:1.32}
+.steps li{margin:.045in 0;padding-left:.015in}
+.note{font-size:9.1pt;color:var(--muted);margin:.08in 0;line-height:1.3}
+.tag{display:inline-block;padding:.02in .08in;background:var(--shade);border-radius:3px;color:var(--blue);font-weight:800;font-size:8.8pt;vertical-align:middle}
+.data-layout{display:grid;grid-template-columns:1.42fr 1fr;gap:.13in;align-items:stretch;margin:.095in 0}
+table{border-collapse:collapse;width:100%}.data{table-layout:fixed}
+.data th{font-size:8.6pt;line-height:1.2;background:var(--shade);color:var(--navy);padding:.085in .04in;border:1px solid var(--line);text-align:center}
+.data td{height:.44in;border:1px solid var(--line);text-align:center;font-size:9.6pt}
+.data td:first-child{font-weight:800;background:#f8fbfd;color:#294d65}
+.data .none{font-size:16pt;color:#91a5b0}
+.sketch{position:relative;border:1px solid var(--line);background:#f6f9fb;min-height:3.71in;overflow:hidden}
+.sketch .sketch-head{font-weight:800;color:var(--navy);padding:.065in .08in;font-size:9.15pt;border-bottom:1px solid #c5d5df;background:#edf5fa}
+.sketch .sketch-sub{font-size:8.25pt;color:var(--muted);padding:.035in .08in}
+.sketch svg{width:100%;height:3.14in;display:block}
+.sketch .caption{position:absolute;bottom:.05in;left:.10in;right:.10in;font-size:8.3pt;color:var(--muted);text-align:center}
+.short{font-size:9.4pt;margin:.075in 0}
+.one-line{display:inline-block;min-width:1.0in;border-bottom:1px solid #98abb7;height:.13in;vertical-align:baseline}
+.prompt{font-weight:700;margin:.105in 0 .06in}.prompt b{color:var(--navy)}
+.response{border:1px solid #d2dfe6;background:repeating-linear-gradient(to bottom,transparent 0,transparent .285in,#e3e9ed .294in,transparent .301in);height:.69in;margin:.07in 0 .11in}
+.response.mid{height:.79in}.response.tall{height:.92in}
+.analysis{margin:.12in 0 .18in;break-inside:avoid}
+.footer{position:absolute;bottom:.19in;left:.55in;right:.55in;color:#687f8f;font-size:8pt;display:flex;justify-content:space-between}
+a{color:#075b89;font-weight:700}
+@page{size:letter;margin:0}@media print{body{background:white}.sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always}.sheet:last-child{break-after:auto;page-break-after:auto}}
+</style></head><body>
+<section class="sheet" id="ball">
+<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>How Far in Each Interval?</h1><p class="sub">Free fall and air resistance • Two videos • Approximately 35–45 minutes</p></header>
+<div class="ident"><span><b>Name:</b> <span class="line"></span></span><span><b>Class:</b> __________</span></div>
+<div class="target"><b>I can</b> use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.</div>
+<p class="qlead"><b>Question:</b> Does an object fall the same distance in each equal time interval? Does a cotton ball show the same pattern as a dense ball?</p>
+<h2>1. Record Both Drops <span class="tag">5–10 min</span></h2>
+<div class="info"><b>Materials:</b> iPad, meter stick, Vernier Video Analysis. Your teacher will release a <b>dense ball</b> and a <b>cotton ball</b>.</div>
+<ol class="steps"><li>Record your teacher dropping the <b>dense ball</b> from rest. Record again for the <b>cotton ball</b>.</li><li>Film from the <b>side</b>. Keep your iPad still and the <b>meter stick</b> visible. Capture the entire fall.</li><li>Save <b>two separate videos</b>. Stay clear of the drop area.</li></ol>
+<h2>2. Track the Dense Ball <span class="tag">10–12 min</span></h2>
+<ol class="steps"><li>Import the ball video into <a href="https://videoanalysis.app/" target="_blank" rel="noopener">Vernier Video Analysis</a>. Set the distance scale with the meter stick. Set the origin at the <b>release point</b> and <b>+Y downward</b>.</li><li>Open <b>Settings (gear) → Advanced Video Options → Advance Frames = 5</b>.</li><li>Find the frame when the ball is released. Choose <b>Add</b> and mark the <b>center of the ball</b>. Continue marking the same spot at each five-frame advance.</li><li>Copy <b>your actual times</b> and <b>Y positions</b> from Vernier. For each new row, subtract the previous position to find the distance in that interval.</li></ol>
+<div class="data-layout"><table class="data" aria-label="Recorded frame time and vertical position data"><colgroup><col style="width:12%"><col style="width:24%"><col style="width:31%"><col style="width:33%"></colgroup><thead><tr><th>Frame<br>point</th><th>Actual<br>time (s)</th><th>Distance from<br>release (m)</th><th>Distance in<br>last interval (m)</th></tr></thead><tbody><tr><td>1</td><td></td><td></td><td class="none">—</td></tr><tr><td>2</td><td></td><td></td><td class=""></td></tr><tr><td>3</td><td></td><td></td><td class=""></td></tr><tr><td>4</td><td></td><td></td><td class=""></td></tr><tr><td>5</td><td></td><td></td><td class=""></td></tr><tr><td>6</td><td></td><td></td><td class=""></td></tr></tbody></table><div class="sketch" role="group" aria-label="Blank vertical motion diagram space for ball">
+      <div class="sketch-head">My ball motion diagram</div>
+      <div class="sketch-sub">Draw a circle for each recorded frame. Label each with its actual time. Use the distances to show the gaps.</div>
+      <svg viewBox="0 0 240 320" role="img" aria-label="Blank vertical guide, downward arrow, space to draw falling object positions and time labels">
+        <line x1="77" y1="15" x2="77" y2="291" stroke="#c0d5e0" stroke-width="2" stroke-dasharray="4 7"/>
+        <path d="M 70 284 L 77 298 L 84 284" stroke="#658ba3" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <text x="88" y="17" font-size="12" fill="#526e7e">release</text>
+        <text x="91" y="302" font-size="12" fill="#526e7e">down</text>
+      </svg>
+      <div class="caption">Sketch the spacing; exact scale is not required.</div>
+    </div></div>
+<p class="short"><b>Example:</b> A position changes from 0.06 m to 0.22 m. The distance in that interval is <b>0.16 m</b>.</p>
+<p class="note">The times depend on your video. Do not try to match special times. If the ball lands before row 6, mark unused rows <b>N/A</b>.</p>
+<div class="footer"><span>Physics 2.4 • Dense ball • Real Vernier times</span><span>1 / 3</span></div></section>
+<section class="sheet" id="cotton">
+<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>What About a Cotton Ball?</h1><p class="sub">Repeat the same five-frame method with the cotton ball video.</p></header>
+<h2>3. Track the Cotton Ball <span class="tag">8–12 min</span></h2>
+<ol class="steps"><li>Import your <b>cotton ball</b> video. Set the scale with the meter stick. Set the origin at release and <b>+Y downward</b>.</li><li>Set <b>Advanced Video Options → Advance Frames = 5</b> again.</li><li>Start at release. Mark the <b>center of the cotton ball</b> at each five-frame advance, keeping track of the same point even if it drifts sideways.</li><li>Record <b>actual Vernier times</b> and <b>vertical (Y) distances</b> below. Subtract neighboring positions to find each interval distance.</li></ol>
+<div class="info"><b>Compare fairly:</b> Within <em>each</em> video, five frames is the same time step from point to point. If the two videos have different frame rates, their time steps may be different—compare the <b>patterns</b>, not the raw interval sizes across objects.</div>
+<div class="data-layout"><table class="data" aria-label="Recorded frame time and vertical position data"><colgroup><col style="width:12%"><col style="width:24%"><col style="width:31%"><col style="width:33%"></colgroup><thead><tr><th>Frame<br>point</th><th>Actual<br>time (s)</th><th>Distance from<br>release (m)</th><th>Distance in<br>last interval (m)</th></tr></thead><tbody><tr><td>1</td><td></td><td></td><td class="none">—</td></tr><tr><td>2</td><td></td><td></td><td class=""></td></tr><tr><td>3</td><td></td><td></td><td class=""></td></tr><tr><td>4</td><td></td><td></td><td class=""></td></tr><tr><td>5</td><td></td><td></td><td class=""></td></tr><tr><td>6</td><td></td><td></td><td class=""></td></tr></tbody></table><div class="sketch" role="group" aria-label="Blank vertical motion diagram space for cotton ball">
+      <div class="sketch-head">My cotton ball motion diagram</div>
+      <div class="sketch-sub">Draw a circle for each recorded frame. Label each with its actual time. Use the distances to show the gaps.</div>
+      <svg viewBox="0 0 240 320" role="img" aria-label="Blank vertical guide, downward arrow, space to draw falling object positions and time labels">
+        <line x1="77" y1="15" x2="77" y2="291" stroke="#c0d5e0" stroke-width="2" stroke-dasharray="4 7"/>
+        <path d="M 70 284 L 77 298 L 84 284" stroke="#658ba3" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <text x="88" y="17" font-size="12" fill="#526e7e">release</text>
+        <text x="91" y="302" font-size="12" fill="#526e7e">down</text>
+      </svg>
+      <div class="caption">Sketch the spacing; exact scale is not required.</div>
+    </div></div>
+<p class="prompt">Circle what your cotton ball's <b>interval distances</b> do as it falls:</p>
+<p class="short" style="font-weight:700;color:#304b60">Mostly increase &nbsp; / &nbsp; Become nearly equal &nbsp; / &nbsp; Vary a lot</p>
+<p class="prompt">What part of your cotton ball video was hardest to track?</p><div class="response mid"></div>
+<p class="note">If the cotton ball lands early, use <b>N/A</b> for unused rows. Real data may be uneven because the cotton ball can drift or flutter.</p>
+<div class="footer"><span>Physics 2.4 • Cotton ball • Five-frame intervals</span><span>2 / 3</span></div></section>
+<section class="sheet" id="analysis">
+<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>What Do the Spacings Show?</h1><p class="sub">Use numbers from your tables and the drawings you created.</p></header>
+<div class="info"><b>Remember:</b> The circles represent positions at <b>equal frame intervals</b>. Larger gaps mean more distance traveled in the same amount of time. Gravity still acts even when air resistance is important.</div>
+<h2>4. Explain Your Evidence <span class="tag">8–12 min</span></h2>
+<div class="analysis"><p class="prompt"><b>1.</b> Give the <b>first</b> and <b>last</b> measured interval distances for the ball. How did they change?</p><div class="response mid"></div></div>
+<div class="analysis"><p class="prompt"><b>2.</b> Look at your <b>ball diagram</b>. What do the gaps between circles tell you about the ball's speed?</p><div class="response mid"></div></div>
+<div class="analysis"><p class="prompt"><b>3.</b> Compare two interval distances for the <b>cotton ball</b>. Did its distance pattern match the ball's? Explain what you saw.</p><div class="response tall"></div></div>
+<div class="analysis"><p class="prompt"><b>4.</b> Which of your two motion diagrams is more like <b>free fall</b>? Support your choice with <b>one observation or number</b>.</p><div class="response tall"></div></div>
+<div class="analysis"><p class="prompt"><b>5.</b> If an object fell at an almost <b>constant speed</b>, how would the gaps in its motion diagram look?</p><div class="response mid"></div></div>
+<div class="analysis"><p class="prompt"><b>6.</b> Gravity pulls on <b>both</b> objects. Why might the cotton ball fall differently than the dense ball?</p><div class="response mid"></div></div>
+<div class="footer"><span>Physics 2.4 • Compare distance patterns</span><span>3 / 3</span></div></section>
+</body></html>
