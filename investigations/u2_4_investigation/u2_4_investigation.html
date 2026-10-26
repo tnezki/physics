@@ -1,1 +1,79 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>U2.4 Investigation - Full-period ball-drop investigation with video analysis</title><link rel="stylesheet" href="../../css/investigation.css"/></head><body><main class="student-page"><div class="kicker">Physics - Unit 2 - Section 4 - Investigation</div><h1>Full-period ball-drop investigation with video analysis</h1><p class="subtitle">Use evidence from the activity to test and apply the motion model from Section 2.4.</p><div class="target"><strong>Learning target:</strong> Describe free fall as motion under gravity alone and use simple free-fall relationships to determine speed or distance fallen.</div><div class="question">Research Question: How well do real falling objects match the free-fall model g ≈ 10 m/s², and when does air resistance make the model less useful?</div><h2>1. Make a Prediction</h2><p>Before collecting evidence, write the result or pattern you expect and give one reason.</p><div class="workspace" style="--ws:110px" data-label="Prediction"></div><h2>2. Set Up and Collect Evidence</h2><div class="check"><strong>Equipment:</strong> 2-3 compact balls of different masses, one sheet of paper per group, meter stick, phone/tablet camera or Vernier video capture, Vernier Graphical Analysis, safe drop area</div><div class="step"><div class="step-num">1</div><div>Measure and mark a drop height of about 1.5-2.0 m. Keep feet and faces clear of the drop zone.</div></div><div class="step"><div class="step-num">2</div><div>Record a compact ball falling from rest. Use video analysis to obtain position-time and velocity-time data.</div></div><div class="step"><div class="step-num">3</div><div>Estimate the acceleration from a useful interval of the velocity-time data using a=Δv/t. Compare with g≈10 m/s².</div></div><div class="step"><div class="step-num">4</div><div>Use d=1/2 gt² to predict the fall time for your measured height, or use the measured fall time to predict distance. Compare model and observation.</div></div><div class="step"><div class="step-num">5</div><div>Repeat the qualitative drop with a different compact mass. Then compare flat paper with the same paper crumpled tightly to isolate the effect of air resistance.</div></div><h2>3. Record Your Evidence</h2><table class="data-table"><tr><th>Object / model</th><th>Drop height (m)</th><th>Time (s)</th><th>Velocity evidence</th><th>Acceleration / comparison</th></tr><tr><td>Compact ball 1</td><td></td><td></td><td></td><td></td></tr><tr><td>Compact ball 2</td><td></td><td></td><td></td><td></td></tr><tr><td>Flat vs. crumpled paper</td><td></td><td></td><td></td><td></td></tr></table><div class="workspace blank" style="--ws:190px" data-label="Graph, diagram, or additional evidence"></div><h2>4. Analyze the Evidence</h2><h3>1. How close was your measured acceleration to 10 m/s²? Identify at least one source of measurement uncertainty.</h3><div class="workspace" style="--ws:110px" data-label="Response"></div><h3>2. Did compact objects of different mass show meaningfully different free-fall acceleration?</h3><div class="workspace" style="--ws:110px" data-label="Response"></div><h3>3. Why did flat and crumpled paper behave differently even though their masses were the same?</h3><div class="workspace" style="--ws:130px" data-label="Response"></div><h3>4. State when the free-fall model is a good approximation and when it is not.</h3><div class="workspace" style="--ws:130px" data-label="Response"></div><h2>5. Final Model</h2><p>Write a concise conclusion that answers the research question using specific evidence from your group’s data or observations.</p><div class="workspace" style="--ws:150px" data-label="Conclusion / model"></div><p class="footer-note">Use the physics ideas from the completed Section 2.4 notes. Do not add explanations from later sections unless your teacher specifically asks you to.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Physics 2.4 | How Far in Each Interval? Free Fall Investigation</title><style>
+:root{--navy:#183e65;--blue:#23668f;--ink:#243541;--muted:#587080;--line:#b4c6d1;--shade:#edf5fa;--light:#f6f9fb}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}body{font:10.5pt/1.32 Arial,Helvetica,sans-serif;color:var(--ink);background:#e9eef2}
+.sheet{position:relative;width:8.5in;height:11in;margin:15px auto;padding:.41in .56in .47in;background:#fff;box-shadow:0 4px 20px #213a501b;break-after:page;page-break-after:always;overflow:hidden}
+.sheet:last-child{break-after:auto;page-break-after:auto}
+.head{border-bottom:3px solid var(--navy);padding-bottom:.095in;margin-bottom:.12in}
+.kicker{font-size:9pt;font-weight:800;color:var(--blue);letter-spacing:.055em;text-transform:uppercase}
+h1{font-size:21.3pt;line-height:1.08;color:var(--navy);margin:.045in 0 .02in}
+.sub{font-size:10pt;color:var(--muted);margin:0}
+h2{font-size:13pt;color:var(--navy);margin:.16in 0 .085in;border-bottom:1.5px solid var(--line);padding-bottom:.04in}
+h3{font-size:11pt;color:var(--navy);margin:.09in 0 .05in}
+p{margin:.055in 0 .085in}
+.ident{display:flex;gap:.25in;align-items:center;margin:.07in 0 .12in;font-size:10.4pt}
+.fill{display:inline-block;min-width:2.0in;border-bottom:1px solid #6e8390;height:.16in;vertical-align:bottom}
+.target{padding:.075in .105in;background:var(--shade);border-left:4px solid var(--blue);font-size:10pt;margin:.09in 0}
+.question{margin:.105in 0;font-size:10pt}
+.slimbox{background:var(--light);border:1px solid #cbd9e2;padding:.095in .115in;margin:.09in 0;font-size:10pt}
+.slimbox strong{color:var(--navy)}
+.steps{padding-left:.245in;margin:.07in 0 .10in;font-size:10pt}
+.steps li{margin:0 0 .07in;padding-left:.018in}
+.tiny{color:var(--muted);font-size:9.0pt}
+.predictions{display:grid;grid-template-columns:1fr 1fr;gap:.11in;margin:.09in 0}
+.predictions>div{border:1px solid var(--line);padding:.085in .10in;font-size:9.6pt;background:#fafcfe}
+.choice{font-weight:800;color:#35536a;white-space:nowrap}
+.tag{display:inline-block;padding:.02in .08in;background:var(--shade);font-size:9pt;color:var(--blue);font-weight:800;border-radius:2px}
+.shortline{display:inline-block;min-width:1.25in;border-bottom:1px solid #8497a4;height:.14in;vertical-align:bottom}
+.data{width:100%;border-collapse:collapse;table-layout:fixed;margin:.095in 0 .13in;break-inside:avoid}
+.data th{background:var(--shade);color:var(--navy);border:1px solid #9eb7c5;padding:.08in .06in;font-size:9.9pt;line-height:1.18}
+.data td{border:1px solid #9eb7c5;text-align:center;height:.37in;font-size:10pt}
+.data td:first-child{font-weight:750;background:#f8fbfc}
+.data tr:last-child td{border-bottom-width:1.5px}
+.data .dash{color:#728999;font-size:15pt}
+.one-line{font-size:10pt;margin:.075in 0}
+.answer{height:.54in;background:#fbfdfe;border:1px solid #e1e9ee;margin:.07in 0 .11in}
+.answer.medium{height:.70in}.answer.large{height:.86in}
+.note{font-size:9.3pt;color:#4e6576;margin:.08in 0;line-height:1.3}
+.prompt{margin:.105in 0 .055in;font-weight:700}
+.prompt strong{color:var(--navy)}
+.analysis{margin:.10in 0 .15in;break-inside:avoid}
+.analysis .answer{margin:.06in 0 .09in}
+.footer{position:absolute;bottom:.21in;left:.56in;right:.56in;display:flex;justify-content:space-between;font-size:8.4pt;color:#6b8292}
+@page{size:letter;margin:0}
+@media print{body{background:white}.sheet{margin:0;box-shadow:none;break-after:page;page-break-after:always}.sheet:last-child{break-after:auto;page-break-after:auto}}
+</style></head><body><section class="sheet" id="ball">
+<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>How Far in Each Interval?</h1><p class="sub">Free fall vs. air resistance • Two student-recorded videos • About 35–45 minutes</p></header>
+<div class="ident"><span><b>Name:</b> <span class="fill"></span></span><span><b>Group:</b> __________</span></div>
+<div class="target"><b>Learning target:</b> I can use free-fall patterns to compare distance fallen during different time intervals and distinguish free fall from falling with significant air resistance.</div>
+<p class="question"><b>Research question:</b> Does a falling object travel the same distance during every equal time interval? What changes when air resistance matters?</p>
+<div class="predictions"><div><b>Ball prediction</b><br>Distance in each next interval:<br><span class="choice">MORE / LESS / SAME</span></div><div><b>Coffee filter prediction</b><br>Distance in each next interval:<br><span class="choice">MORE / LESS / SAME</span></div></div>
+<h2>1. Record Two Short Videos <span class="tag">5–12 min</span></h2>
+<div class="slimbox"><b>Materials:</b> small dense ball, one open coffee filter, meter stick, iPad/camera, Vernier Video Analysis, clear drop area.</div>
+<ol class="steps"><li>Place a <b>meter stick upright</b> next to a safe <b>1.5–2.0 m</b> drop. Film from the <b>side</b>. Keep the iPad still and the whole fall in view.</li><li>Record the <b>ball</b> being <b>released without a push</b>. Start filming before release.</li><li>Without moving the iPad, record an <b>open coffee filter</b> falling from about the same height. Do not throw it.</li></ol>
+<p class="note"><b>Safety:</b> Stay on the floor. Never climb furniture. Keep people and devices out of the drop zone.</p>
+<h2>2. Video 1 — Ball <span class="tag">8–10 min</span></h2>
+<ol class="steps"><li>Open <a href="https://videoanalysis.app/" target="_blank" rel="noopener">Vernier Video Analysis</a> and <b>Import Video</b> (ball). Set the <b>scale</b> using the meter stick.</li><li>Place the <b>origin at the release point</b>. Point the <b>positive vertical (Y) direction down</b>.</li><li>Choose <b>Add</b>. Mark the <b>center of the ball</b> at release and then about every <b>0.10 s</b>. Read its <b>Y position</b> from Vernier.</li><li>Record the <b>distance fallen from the start</b>. Subtract consecutive readings to fill the last column.</li></ol>
+<table class="data"><colgroup><col style="width:23%"><col style="width:36%"><col style="width:41%"></colgroup><thead><tr><th>Time after release<br>(s)</th><th>Total distance fallen<br>from start (m)</th><th>Distance fallen during<br>this interval (m)</th></tr></thead><tbody><tr><td>0.00</td><td></td><td class="dash">—</td></tr><tr><td>0.10</td><td></td><td class=""></td></tr><tr><td>0.20</td><td></td><td class=""></td></tr><tr><td>0.30</td><td></td><td class=""></td></tr><tr><td>0.40</td><td></td><td class=""></td></tr><tr><td>0.50</td><td></td><td class=""></td></tr></tbody></table>
+<p class="one-line"><b>Example subtraction:</b> If the object is at 0.05 m and then 0.20 m, it traveled <b>0.15 m</b> during that interval.</p>
+<div class="footer"><span>Physics 2.4 • Ball • Record distance, not speed</span><span>1 / 3</span></div>
+</section><section class="sheet" id="filter">
+<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>The Slower Fall</h1><p class="sub">Use the same recording setup; now examine the coffee filter.</p></header>
+<h2>3. Video 2 — Open Coffee Filter <span class="tag">8–10 min</span></h2>
+<ol class="steps"><li>Import your <b>coffee-filter video</b> into Vernier Video Analysis.</li><li>Set the <b>scale</b> and place the <b>origin at release</b>. Again, set <b>positive Y downward</b>.</li><li>Choose <b>Add</b>. Mark the same spot near the filter’s <b>center</b> at release and then about every <b>0.20 s</b>.</li><li>Copy the <b>Y position</b> (distance fallen) into the table. Subtract consecutive readings to find distance during each interval.</li></ol>
+<div class="slimbox"><strong>Important:</strong> The ball uses <b>0.10 s</b> intervals; the filter uses <b>0.20 s</b> intervals. Each row within one table represents the <b>same amount of time</b>. Compare the <b>pattern of changes</b>, not the sizes of the two objects’ interval distances.</div>
+<table class="data"><colgroup><col style="width:23%"><col style="width:36%"><col style="width:41%"></colgroup><thead><tr><th>Time after release<br>(s)</th><th>Total distance fallen<br>from start (m)</th><th>Distance fallen during<br>this interval (m)</th></tr></thead><tbody><tr><td>0.00</td><td></td><td class="dash">—</td></tr><tr><td>0.20</td><td></td><td class=""></td></tr><tr><td>0.40</td><td></td><td class=""></td></tr><tr><td>0.60</td><td></td><td class=""></td></tr><tr><td>0.80</td><td></td><td class=""></td></tr><tr><td>1.00</td><td></td><td class=""></td></tr></tbody></table>
+<p class="note">If the filter lands before the last row, write <b>N/A</b> after landing. If the video is blurry, repeat one clear drop instead of guessing.</p>
+<h2>4. What Does the Filter Show?</h2>
+<p class="prompt">1. As the filter falls, do the interval distances keep growing, become almost equal, or vary unpredictably? Describe the evidence.</p>
+<div class="answer large"></div>
+<p class="prompt">2. Look back at the ball data. What is <b>one clear difference</b> between the two distance patterns?</p>
+<div class="answer large"></div>
+<div class="footer"><span>Physics 2.4 • Coffee filter • Look for a pattern</span><span>2 / 3</span></div>
+</section><section class="sheet" id="reasoning">
+<header class="head"><div class="kicker">Physics • Unit 2.4 • Investigation</div><h1>What Do the Intervals Tell Us?</h1><p class="sub">Use your actual measurements—not just what you expected to happen.</p></header>
+<div class="slimbox"><b>Reminder:</b> In <b>free fall</b>, gravity is the only important force. Significant <b>air resistance</b> changes the pattern of motion. Falling objects can still speed up even when air resistance is present.</div>
+<h2>5. Use Your Evidence <span class="tag">8–12 min</span></h2>
+<div class="analysis"><p class="prompt"><strong>1.</strong> Which <b>0.10 s interval</b> had the greatest distance fallen for your ball? Give the interval and its distance.</p><div class="answer medium"></div></div><div class="analysis"><p class="prompt"><strong>2.</strong> What does the ball’s changing distance <b>during equal time intervals</b> tell you about its speed?</p><div class="answer medium"></div></div><div class="analysis"><p class="prompt"><strong>3.</strong> Based on your measurements, which object more closely shows <b>free fall</b>? Support your choice with evidence.</p><div class="answer large"></div></div><div class="analysis"><p class="prompt"><strong>4.</strong> How could you tell that <b>air resistance</b> was affecting the other object? Point to a pattern in its data.</p><div class="answer large"></div></div><div class="analysis"><p class="prompt"><strong>5.</strong> If a coffee filter begins falling at a <b>nearly constant speed</b>, what would happen to the distances during equal time intervals?</p><div class="answer medium"></div></div><div class="analysis"><p class="prompt"><strong>6.</strong> Does <b>gravity stop acting</b> when air resistance is significant? Explain why the two falling objects can move differently.</p><div class="answer medium"></div></div>
+<div class="footer"><span>Physics 2.4 • Explain patterns with evidence</span><span>3 / 3</span></div>
+</section></body></html>
