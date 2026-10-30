@@ -1,9 +1,9 @@
 {
   "catalog_schema": "physics_curriculum_catalog/1",
-  "catalog_version": "2026-10-30-first-durable-audit",
+  "catalog_version": "2026-10-30-readiness-audit-addendum",
   "created_date": "2026-10-30",
   "course": "Conceptual High School Physics",
-  "status": "resource_mapping_complete; equipment/browser QA and assessment item audit pending",
+  "status": "resource_map_completed; cross-chapter structural and Chapter 5 source readiness audited; classroom/date/device/equipment/Question Bank QA pending",
   "authority": {
     "course_pacing": "107 core teaching periods (82 publisher-based, 25 section readings), approved",
     "precedence": "This resource map records approved conversation decisions; it does not supersede any separate signed school calendar or lesson packet in active use.",
@@ -16,7 +16,9 @@
     "video_analysis": "Teacher may create instructions on MacBook; students ALREADY have browser-based video analysis on iPads. Test individual recording/calibration workflow but do not assume missing app.",
     "distribution": "Purchased Course Pack and Question Bank remain access-restricted in Google Drive. No purchased binaries or answer keys may be published in the Physics GitHub repository.",
     "schedule": "Publisher lesson days and 25 full-period section readings count as core. Monday Modeling Monday / optional short (42 min) experiments, Monday pretest review, formal tests, extensions and buffer are separate and NOT part of 107.",
-    "known_calendar": "Senior cutoff May 7, 2027 and remaining students June 9, 2027. Approved full 107 core periods despite cutoff; do not silently trim."
+    "known_calendar": "Senior cutoff May 7, 2027 and remaining students June 9, 2027. Approved full 107 core periods despite cutoff; do not silently trim.",
+    "no_homework": "All required class lessons, readings, exercises and lab writeups are completed in class. An independently usable teacher data backup is supplied for follow-on experiments or absentees.",
+    "lesson_activity_order": "Follow the actual publisher plan and approved lesson decisions; there is no mandated universal order. Existing 5.1.1 pilot: guided notes/discourse -> Momentum Think Sheet pair practice -> Marshmallow Launcher lab -> optional post-lab synthesis."
   },
   "reference_hubs": {
     "publisher_plan": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics",
@@ -2822,5 +2824,51 @@
     "Preserve senior cutoff and separate reviews/tests in final calendar without changing 107 core count.",
     "Confirm exact direct URL of publisher interactive items recorded only as chapter collection links.",
     "Ensure all private Drive links remain access controlled; do not publish purchased source content."
-  ]
+  ],
+  "pacing_readiness_audit": {
+    "date": "2026-10-30",
+    "file": "PHYSICS_PACING_AND_RESOURCE_READINESS_20261030.md",
+    "verified": {
+      "chapter_count": 9,
+      "natural_sections": 25,
+      "publisher_based_periods": 82,
+      "section_reading_periods": 25,
+      "core_periods": 107,
+      "unique_lesson_ids": 82,
+      "mapped_digital_url_occurrences": 41,
+      "distinct_mapped_digital_url_strings": 31,
+      "chapter_5_purchased_think_sheets": 8,
+      "chapter_5_purchased_lab_files": 4,
+      "chapter_5_purchased_teacher_guides": 4,
+      "chapter_5_existing_pilot_verified": "protected student.pdf and student.html and teacher folder observed; public interactive file present"
+    },
+    "separate_review_test_meetings_if_once_per_chapter": 18,
+    "minimum_meetings_before_other_modeling_or_buffers": 125,
+    "calendar_dates_verified": false,
+    "real_student_ipad_testing_complete": false,
+    "all_paid_question_bank_items_audited": false,
+    "publisher_day_merges_pending_timing": [
+      "2.3.2",
+      "3.2.2",
+      "3.3.2",
+      "4.2.2"
+    ],
+    "chapter_5_next_build_lesson": "5.1.2",
+    "chapter_5_build_order": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.R",
+      "5.2.1",
+      "5.2.2",
+      "5.2.3",
+      "5.2.R",
+      "5.3.1",
+      "5.3.2",
+      "5.3.3",
+      "5.3.4",
+      "5.3.R"
+    ],
+    "readiness_conclusion": "Resource mapping passes structural QA; Chapter 5 source files and pilot available. This is not blanket equipment, browser, device, school calendar or publication-permissions approval."
+  }
 }

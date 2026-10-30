@@ -7,7 +7,8 @@
 - **Sequence:** Physics Classroom chapters **1 → 2 → 3 → 4 → 5 → 6 → 10 → 12 → 9**; Electric Circuits is last.
 - **Pacing:** 107 core instructional periods = 82 publisher-based lessons and 25 standalone, approximately 54-minute, section **Reading & Consolidation** periods. Tests, Monday review, Modeling Monday, lab extensions and buffers are outside this core count.
 - **No automatic cuts:** Senior cutoff is 7 May 2027; other students continue to 9 June 2027. The complete 107-period sequence was approved, even with senior scheduling pressure.
-- **Teaching:** Concept and observed phenomena before algebra; preserve physical labs, publisher simulations and distinct real video labs. Provide highlightable definitions and generous iPad drawing/handwriting space. Respect the publisher Notes → Lab → Thinking Sheet sequence when lesson construction calls for it.
+- **Teaching:** Concept and observed phenomena before algebra; preserve physical labs, publisher simulations and distinct real video labs. Provide highlightable definitions and generous iPad drawing/handwriting space. Follow the actual publisher day plan and the approved pilot activity order; do not impose a universal Notes/Lab/Think Sheet sequence.
+- **No homework:** All required work fits in-class; provide substitute data when an activity depends on measurements from a previous day or the student was absent. Existing 5.1.1 activity order: notes/discussion → Think Sheet pair practice → Marshmallow lab → optional post-lab synthesis.
 - **Student delivery:** Agenda → private Google Drive PDF → Send a Copy to Notability on iPad; PDF links can open original public Physics Classroom/other interactives. Student video analysis is **already browser-based on the iPad**, notwithstanding that the teacher authored some directions on MacBook.
 - **Assessment:** Paper/duplex scan + AI-assisted grading with teacher review and eventual Portfolio evidence, not Canvas quizzes or Task Tracker.
 - **Purchased material boundary:** This public repo has **only names, access-controlled folder pointers, mapping decisions and original public URL references**. It contains **none of the purchased publisher PDF/DOCX contents or answer keys**, nor student-specific data. Keep Drive share permissions restricted.
@@ -735,3 +736,8 @@ The items below are **metadata only**. The purchased student/teacher files remai
 - Do not silently assign omitted publisher materials back to required lessons. Mark any suggested change as **PROPOSED** until approved.
 - Validate user devices, lab timing and teacher access before calling a candidate ready for students.
 - Catalog currently documents resource assignments, timings, omissions and implementation risks; does not claim final student PDF content, Question Bank item choices, assessment mapping or day/date calendar are complete.
+
+
+## 9. Readiness audit addendum (30 October 2026)
+
+The full pacing/resource readiness review and the **Chapter 5 build queue** are preserved in [PHYSICS_PACING_AND_RESOURCE_READINESS_20261030.md](PHYSICS_PACING_AND_RESOURCE_READINESS_20261030.md). It verifies 9 chapters / 25 sections / 82 publisher-based lesson periods / 25 reading periods / 107 core periods; documents 18 additional chapter review-and-test meetings if scheduled once per chapter; prioritizes four provisional publisher-day merges, experiment timing, device permissions, private sharing, source-vs-student-ready distinctions, and the Chapter 5 build order. Existing Chapter 5.1.1 pilot stays unchanged. Full school-calendar date allocation, iPad checks, physical equipment availability, Question Bank item audit and final lesson readings remain outstanding. This addendum does not amend the 107-day commitment.
