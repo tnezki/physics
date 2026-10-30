@@ -1,0 +1,2826 @@
+{
+  "catalog_schema": "physics_curriculum_catalog/1",
+  "catalog_version": "2026-10-30-first-durable-audit",
+  "created_date": "2026-10-30",
+  "course": "Conceptual High School Physics",
+  "status": "resource_mapping_complete; equipment/browser QA and assessment item audit pending",
+  "authority": {
+    "course_pacing": "107 core teaching periods (82 publisher-based, 25 section readings), approved",
+    "precedence": "This resource map records approved conversation decisions; it does not supersede any separate signed school calendar or lesson packet in active use.",
+    "scope": "Nine included Physics Classroom chapters in order 1,2,3,4,5,6,10,12,9; Chapter 9 is last."
+  },
+  "teaching_workflow": {
+    "student": "Teacher agenda link -> private/shared Google Drive lesson PDF -> Send a Copy -> Notability on iPad; hyperlinks from PDF to public original web interactives.",
+    "document_design": "Highlightable vocabulary and brief conceptual reading, meaningful diagrams and student handwriting/drawing space, physics-phenomenon first, then appropriate mathematics; follow purchased publisher Notes -> Lab -> Thinking Sheet order where applicable.",
+    "assessment": "Paper assessment packets, scanner duplex workflow, AI-assisted grading with teacher review, Portfolio tracking; not Canvas quizzes or Task Tracker.",
+    "video_analysis": "Teacher may create instructions on MacBook; students ALREADY have browser-based video analysis on iPads. Test individual recording/calibration workflow but do not assume missing app.",
+    "distribution": "Purchased Course Pack and Question Bank remain access-restricted in Google Drive. No purchased binaries or answer keys may be published in the Physics GitHub repository.",
+    "schedule": "Publisher lesson days and 25 full-period section readings count as core. Monday Modeling Monday / optional short (42 min) experiments, Monday pretest review, formal tests, extensions and buffer are separate and NOT part of 107.",
+    "known_calendar": "Senior cutoff May 7, 2027 and remaining students June 9, 2027. Approved full 107 core periods despite cutoff; do not silently trim."
+  },
+  "reference_hubs": {
+    "publisher_plan": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics",
+    "paid_course_pack": "https://drive.google.com/drive/folders/1pxyjDqIFDCV11JNda5G8ICKY65UpM6v0",
+    "paid_question_bank": "https://drive.google.com/drive/folders/19etimFNkACIUBAtscd7COWuqAmJm-ll8",
+    "physics_master_drive": "https://drive.google.com/drive/folders/1dWgyPpIg6HlTlfhwvcv0VIT3ggKL82QH",
+    "hewitt": "Hewitt Conceptual Physics, 12th edition; teacher-provided excerpt PDF CP_Curriculum_Sections(5).pdf in private source library",
+    "openstax": "https://openstax.org/books/physics/pages/1-introduction",
+    "phet": "https://phet.colorado.edu/en/simulations/browse",
+    "isle": "https://www.islevideos.net/introduction.php",
+    "smu": "https://demos.smu.ca/demos",
+    "ophysics": "https://ophysics.com/index.html",
+    "walter_fendt": "https://www.walter-fendt.de/html5/phen/",
+    "falstad": "https://falstad.com/mathphysics.html"
+  },
+  "verification_legend": {
+    "source_inspected": "Purchased Course Pack file or teacher guide text inspected during chat audits; not proof of classroom operation.",
+    "mapped": "Assigned to a lesson or classified optional/omitted, not necessarily student-ready.",
+    "classroom_iPad_test_pending": "Link and specific interaction or PDF -> browser -> Notability path still requires physical class-device testing.",
+    "teacher_prep_pending": "Equipment timing and safety adaptations noted but not executed.",
+    "item_audit_pending": "Purchased Question Bank item-by-item learning target alignment not yet undertaken."
+  },
+  "chapters": [
+    {
+      "publisher_chapter": 1,
+      "name": "Graphs and Relationships",
+      "core_periods": 9,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1htj4H_Y3rUhn34DEq5wbNxBOARvCcqd4",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1IlzJANoEJyR1lNuSnAn9VG8uZE_-8tly",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1uKrCaygI-1zdzpdu7jQ5Qus4z5Nm0VE2",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/15GV2Ok41OLr5i_bWy0pNqvHOec8I45Af",
+        "think_sheet_filenames": [
+          "Graphs1_ClaimEvReasoning.pdf",
+          "Graphs2_RelationshipsDesmos.pdf",
+          "Graphs3_ProportionalReasoning.pdf",
+          "Graphs4_Using Graphs.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_DuneBuggy.docx",
+          "Lab2_BounceHeight.docx",
+          "Lab3_ParagraphGraphs.docx",
+          "Lab4_StoppingDistance.docx",
+          "Lab5_DoesMassMatter.docx",
+          "ParagraphHtWidth.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_DuneBuggy.docx",
+          "TG2_BounceHeight.docx",
+          "TG3_ParagraphGraphs.docx",
+          "TG4_StoppingDistance.docx",
+          "TG5_DoesMassMatter.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "1.1",
+          "title": "Scientific Investigations and Relationships",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "1.1.1",
+              "title": "Dune Buggy and Claim-Evidence-Reasoning",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_DuneBuggy.docx"
+              ],
+              "purchased_selected": [
+                "Graphs1_ClaimEvReasoning.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Begin with collecting/predicting real motion data before slope arithmetic. Keep first-day orientation brief.",
+              "verification_flags": [
+                "First day tight with orientation and CER."
+              ]
+            },
+            {
+              "lesson_id": "1.1.2",
+              "title": "Types of Relationships with Desmos",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Graphs2_RelationshipsDesmos.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Desmos graph model 1",
+                  "url": "https://www.desmos.com/calculator/mvl8sk6qer",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                },
+                {
+                  "name": "Desmos graph model 2",
+                  "url": "https://www.desmos.com/calculator/5gxv44prt1",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                },
+                {
+                  "name": "Desmos graph model 3",
+                  "url": "https://www.desmos.com/calculator/zhwpyvtq8l",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                },
+                {
+                  "name": "Desmos graph model 4",
+                  "url": "https://www.desmos.com/calculator/nj6olrzfpy",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Explore and classify model relationships; manipulate parameters before formal equation solving.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "1.1.3",
+              "title": "Bounce Height and Proportional Reasoning",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [
+                "Lab2_BounceHeight.docx"
+              ],
+              "purchased_selected": [
+                "Graphs3_ProportionalReasoning.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Bounce Height Desmos graph",
+                  "url": "https://www.desmos.com/calculator/0e3vcdwwcy",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Release-height versus first-bounce-height data; focus on proportional reasoning.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "1.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Scientific questions, variables, observational evidence, simple relationships, CER, highlighting core definitions.",
+            "sources": [
+              "Physics Classroom Graphs and Relationships Tutorial",
+              "Hewitt Chapter 1 §§1.1–1.2",
+              "OpenStax High School Physics §1.2"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "1.2",
+          "title": "Graphs, Patterns, and Scientific Models",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "1.2.1",
+              "title": "Slope and Graph Interpretation",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Graphs4_Using Graphs.pdf",
+                "UsingGraphsShortVersion.docx"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Publisher Calculating Slope Concept Builder"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Prefer purchased short sheet; slope meaning before repetitive calculations.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "1.2.2",
+              "title": "Paragraph Graphs",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [
+                "Lab3_ParagraphGraphs.docx",
+                "ParagraphHtWidth.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Publisher Desmos Paragraph Graphs",
+                  "url": "https://www.desmos.com/calculator/24w4p41cns",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Measure fixed-text paragraph height and width; inverse relationship.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "1.2.3",
+              "title": "Stopping Distance",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [
+                "Lab4_StoppingDistance.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Physics Classroom Stopping Distance",
+                  "url": "https://www.physicsclassroom.com/PhysicsClassroom/media/interactive/Stopping%20Distance/StoppingDistance.html",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                },
+                {
+                  "name": "Desmos Stopping Distance chart",
+                  "url": "https://www.desmos.com/calculator/peziftfbex",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Required publisher simulation/data investigation; avoid duplicate chapter review.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "1.2.4",
+              "title": "Does Mass Matter?",
+              "publisher_days": [
+                "8"
+              ],
+              "purchased_required": [
+                "Lab5_DoesMassMatter.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [
+                "PhET Pendulum Lab: https://phet.colorado.edu/en/simulations/pendulum-lab",
+                "SMU How a Pendulum Works demonstration video: https://demos.smu.ca/demos/mechanics/192-how-a-pendulum-works"
+              ],
+              "teacher_guide_lab_minutes": "25-35",
+              "decision": "Physical pendulum investigation first; mass-independent period under controlled length/amplitude conditions.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "1.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Slope with units, linear and inverse patterns, graph-based prediction, controlling variables, CER.",
+            "sources": [
+              "Physics Classroom Graphs and Relationships Tutorial",
+              "Hewitt Chapter 1",
+              "OpenStax Physics §1.3"
+            ],
+            "note": "Publisher Day 6 slope practice integrated here and into 1.2.1."
+          }
+        }
+      ],
+      "optional_resources": [],
+      "omissions_and_integrations": [
+        "Day 6 not a standalone period; chosen concepts integrated with slope instruction and consolidation."
+      ],
+      "risks": [
+        "Dune Buggy first-day orientation + lab likely tight; test Desmos and Stopping Distance on student iPads."
+      ],
+      "chapter_decision": "Keep all five original physical/simulation investigations; 7 publisher-based periods plus 2 readings."
+    },
+    {
+      "publisher_chapter": 2,
+      "name": "1-Dimensional Kinematics",
+      "core_periods": 14,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1LLnQhczKtGY8B8vPpmPP7EjS2WNbMf3D",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1GMm6DkRQHVkvJ9yMl3Rm8DhmQQlGFVgq",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1eyqrWvkzm4hvAUQyxc0-A0SL-gTYUODc",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/10KzjS1Cxa5jVmpJfxdab8InWVPmlX7gC",
+        "think_sheet_filenames": [
+          "Kinematics1_DistanceDisplacement.pdf",
+          "Kinematics2_SpeedVelocity.pdf",
+          "Kinematics3_Acceleration.pdf",
+          "Kinematics4_DiagramsData.pdf",
+          "Kinematics5_PositionTimeGraphs.pdf",
+          "Kinematics6_PosnTimeAnalysis.pdf",
+          "Kinematics7_VelocityTimeGraphs.pdf",
+          "Kinematics8_SlopeAreaVTGraphs.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_Physics500.docx",
+          "Lab2_PositionTimeGraphsLab.docx",
+          "Lab3_VelocityTimeGraphsLab.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_Physics500.docx",
+          "TG2PositionTimeGraphsLab.docx",
+          "TG3_VelocityTimeGraphs.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "2.1",
+          "title": "Describing Motion with Words and Diagrams",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "2.1.1",
+              "title": "Distance and Displacement",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Kinematics1_DistanceDisplacement.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Scalar vs vector, direction, relative position; no online account setup.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.1.2",
+              "title": "Physics 500: Speed and Velocity",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [
+                "Lab1_Physics500.docx"
+              ],
+              "purchased_selected": [
+                "Kinematics2_SpeedVelocity.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Actual activity is a two-meter finger race; measure average speed.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.1.3",
+              "title": "Acceleration and Direction",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Kinematics3_Acceleration.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Changes in velocity, including signed direction; few meaningful calculations.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.1.4",
+              "title": "Motion Diagrams and Data Tables",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Kinematics4_DiagramsData.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Name That Motion",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/1-D-Kinematics/Name-That-Motion",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Analyze dot spacing and arrow directions before graph instruction.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "2.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Position, distance, displacement, speed, velocity, acceleration; motion diagrams, signed direction.",
+            "sources": [
+              "Physics Classroom 1-D Kinematics Lessons 1–2",
+              "Hewitt Chapter 3",
+              "OpenStax High School Physics §§2.1–2.2"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "2.2",
+          "title": "Position-Time Graphs",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "2.2.1",
+              "title": "Position-Time Graphs Lab",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [
+                "Lab2_PositionTimeGraphsLab.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-25",
+              "decision": "Physical motion-detector graphing, Vernier equipment appropriate; remove publisher quiz.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.2.2",
+              "title": "Interpreting Graph Shape",
+              "publisher_days": [
+                "6"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Kinematics5_PositionTimeGraphs.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Publisher Position-Time Graph Concept Builder"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Distinguish graph height versus slope; curving versus straight motion.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.2.3",
+              "title": "Slope and Pace Tracer 1",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Kinematics6_PosnTimeAnalysis.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Pace Tracer 1 camera-based movement lab",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/1-D-Kinematics/Pace-Tracer",
+                  "classification": "required",
+                  "kind": "camera_lab",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Requires camera permissions, printed ArUco marker, calibration and floor space.",
+              "verification_flags": [
+                "Verify iPad camera and marker workflow before required use."
+              ]
+            }
+          ],
+          "reading": {
+            "period_id": "2.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Position-time slope as velocity; rest, direction and changing speed; graph-table-description translation.",
+            "sources": [
+              "Physics Classroom 1-D Kinematics Lesson 3",
+              "Hewitt Chapter 3",
+              "OpenStax Physics §2.3"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "2.3",
+          "title": "Velocity-Time Graphs and Motion Models",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "2.3.1",
+              "title": "Velocity-Time Graphs Lab",
+              "publisher_days": [
+                "8"
+              ],
+              "purchased_required": [
+                "Lab3_VelocityTimeGraphsLab.docx"
+              ],
+              "purchased_selected": [
+                "Kinematics7_VelocityTimeGraphs.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-25",
+              "decision": "Vernier physical measurements including speeding up, slowing down and direction.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.3.2",
+              "title": "Velocity-Time Graphs and Pace Tracer 2",
+              "publisher_days": [
+                "9",
+                "10"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Pace Tracer 2 camera lab",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/1-D-Kinematics/Pace-Tracer-2",
+                  "classification": "required",
+                  "kind": "camera_lab",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [
+                "Selected Velocity-Time Graph Concept Builder"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Publisher Days 9–10 merged by dropping short quiz and repeated practice.",
+              "verification_flags": [
+                "Timing of combined Days 9–10 is provisional; validate in 54 minutes."
+              ]
+            },
+            {
+              "lesson_id": "2.3.3",
+              "title": "Kinematic Graphing",
+              "publisher_days": [
+                "11"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Kinematic Graphing",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/1-D-Kinematics",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Locate Kinematic Graphing in collection; confirm direct link"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Connect animated motion to paired x-t and v-t graphs.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "2.3.4",
+              "title": "Slope, Area and Representations",
+              "publisher_days": [
+                "12"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Kinematics8_SlopeAreaVTGraphs.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Interpret acceleration from slope and displacement from signed area; avoid redundant problems.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "2.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Velocity-time sign, slope as acceleration, displacement from area, matched representations.",
+            "sources": [
+              "Physics Classroom 1-D Kinematics Lesson 4",
+              "Hewitt Chapter 3",
+              "OpenStax Physics §§2.4, 3.1"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [],
+      "omissions_and_integrations": [],
+      "risks": [
+        "Pace Tracer 1 and 2 camera/marker compatibility; Day 9–10 merge may require extension."
+      ],
+      "chapter_decision": "3 physical labs preserved; Pace Tracer camera-based motion work distinct from ordinary simulation; 11 teaching days plus 3 readings."
+    },
+    {
+      "publisher_chapter": 3,
+      "name": "Newton's Laws",
+      "core_periods": 13,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/11Qw5ydzT56iRsSRsFIdzxW0tlNY01fBI",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1DcEW7toCdcEY9BUvJCDePdhrIthwBoec",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1uH6jYQ2CBVHltmn3DzRWtsFcjoG8KG_d",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/1N0tbYIVJlkUHPWlp6dvArC3GKaLaA1sJ",
+        "think_sheet_filenames": [
+          "NewtLaws1_Inertia.pdf",
+          "NewtLaws2_BeliefsForceAndMotion.pdf",
+          "NewtLaws3_BalancedVsUnbalanced.pdf",
+          "NewtLaws4_BeliefsMassWeight.pdf",
+          "NewtLaws5_MassAndWeight.pdf",
+          "NewtLaws6_N2LProportReasoning.pdf",
+          "NewtLaws7_ForceHelpSheetdocx.pdf",
+          "NewtLaws8_RecognizingForces.pdf",
+          "NewtLaws9_DrawingFBDs.pdf",
+          "NewtLaws10_FBDsAndAcceleration.pdf",
+          "NewtLaws11_NetForceAndAcceleration.pdf",
+          "NewtLaws12_Newt2ndLawProblems.pdf",
+          "NewtLaws13_Skydiving.pdf",
+          "NewtLaws14_NewtThirdLaw.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_PassTheWater.docx",
+          "Lab2_WaitHmmmGee.docx",
+          "Lab3_Fma.docx",
+          "Lab4_CoffeeFilterPhysics.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_PassTheWaterLab.docx",
+          "TG2_WaitHmmmGeeLab.docx",
+          "TG3_FMALab.docx",
+          "TG4_CoffeeFilterLab.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "3.1",
+          "title": "Inertia, Balanced Forces and Mass",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "3.1.1",
+              "title": "Pass the Water and Inertia",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_PassTheWater.docx"
+              ],
+              "purchased_selected": [
+                "NewtLaws1_Inertia.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Physics Classroom inertia observation videos"
+              ],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Start/stop/turn water evidence; manage spills and slipping.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "3.1.2",
+              "title": "Balanced and Unbalanced Forces",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "NewtLaws2_BeliefsForceAndMotion.pdf",
+                "NewtLaws3_BalancedVsUnbalanced.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "PhET Forces and Motion: Basics: https://phet.colorado.edu/en/simulations/forces-and-motion-basics"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Misconception survey + motion-versus-net-force discussions.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "3.1.3",
+              "title": "Mass and Weight",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [
+                "Lab2_WaitHmmmGee.docx"
+              ],
+              "purchased_selected": [
+                "NewtLaws4_BeliefsMassWeight.pdf",
+                "NewtLaws5_MassAndWeight.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Measure gravitational force and mass; interpret weight-mass graph slope.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "3.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "First law, inertia, mass versus weight, balanced forces, constant velocity, graph interpretation.",
+            "sources": [
+              "Physics Classroom Newton Laws Tutorial",
+              "Hewitt §§2.3–2.5, 4.3",
+              "OpenStax Physics §§4.2–4.3"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "3.2",
+          "title": "Recognizing and Representing Forces",
+          "core_periods": 3,
+          "publisher_based_periods": 2,
+          "lessons": [
+            {
+              "lesson_id": "3.2.1",
+              "title": "Force Types and Rocket Sled",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "NewtLaws7_ForceHelpSheetdocx.pdf",
+                "NewtLaws8_RecognizingForces.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Rocket Sled",
+                  "url": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics/Newtons-Laws",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Publisher chapter plan links to activity; find direct deep link"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Force Help Sheet is a highlightable reference; gravity, normal, friction, tension and air resistance.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "3.2.2",
+              "title": "Drawing Free-Body Diagrams",
+              "publisher_days": [
+                "5",
+                "6"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "NewtLaws9_DrawingFBDs.pdf",
+                "NewtLaws10_FBDsAndAcceleration.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Free-Body Diagrams Interactive",
+                  "url": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics/Newtons-Laws",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Find direct deep link from publisher plan"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Combine Days 5–6; keep diagrams and reduce repeated practice/quiz.",
+              "verification_flags": [
+                "Merged Day 5–6 is provisional."
+              ]
+            }
+          ],
+          "reading": {
+            "period_id": "3.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Force identification, interactions, net force, free-body diagram conventions and predictions.",
+            "sources": [
+              "Physics Classroom Newton Laws Tutorial",
+              "Hewitt §§2.4–2.7",
+              "OpenStax Physics §4.1"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "3.3",
+          "title": "Acceleration, Air Resistance and Interaction",
+          "core_periods": 6,
+          "publisher_based_periods": 5,
+          "lessons": [
+            {
+              "lesson_id": "3.3.1",
+              "title": "F-m-a Investigation",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [
+                "Lab3_Fma.docx"
+              ],
+              "purchased_selected": [
+                "NewtLaws6_N2LProportReasoning.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Force/mass/acceleration on Vernier carts; conceptual variation if full graphing is too technical.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "3.3.2",
+              "title": "Force, Mass and Acceleration",
+              "publisher_days": [
+                "8",
+                "9"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "NewtLaws11_NetForceAndAcceleration.pdf",
+                "NewtLaws12_Newt2ndLawProblems.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Force Interactive",
+                  "url": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics/Newtons-Laws",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Find direct deep link"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Publisher Days 8–9 combined; simulation drives learning; selected equations only.",
+              "verification_flags": [
+                "Merged Days 8–9 timing provisional."
+              ]
+            },
+            {
+              "lesson_id": "3.3.3",
+              "title": "Skydiving and Air Resistance",
+              "publisher_days": [
+                "10"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "NewtLaws13_Skydiving.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Skydiving Interactive",
+                  "url": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics/Newtons-Laws",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Find direct deep link"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Terminal velocity as balanced forces; Day 11 practice moves to reading.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "3.3.4",
+              "title": "Coffee Filter Skydivers",
+              "publisher_days": [
+                "12"
+              ],
+              "purchased_required": [
+                "Lab4_CoffeeFilterPhysics.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [
+                "Verified teacher-guide alternative: calibrated, student-recorded coffee-filter video analysis"
+              ],
+              "teacher_guide_lab_minutes": "20-30 detector / 30-40 video",
+              "decision": "Physical drop with motion sensor or real quantitative video lab alternative. Meter stick visible for scale.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "3.3.5",
+              "title": "Newton's Third Law",
+              "publisher_days": [
+                "13"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "NewtLaws14_NewtThirdLaw.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Selected real interaction-force video demonstration"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Force pairs on different objects; explanation rather than heavy formula use.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "3.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Newton second law, proportional reasoning, terminal speed, drag, interaction forces, equal-opposite pairs.",
+            "sources": [
+              "Physics Classroom Newton Laws Tutorial",
+              "Hewitt Chapters 4–5",
+              "OpenStax Physics §§4.3–4.4"
+            ],
+            "note": "Select publisher Day 11 skydiving practice without a standalone period."
+          }
+        }
+      ],
+      "optional_resources": [],
+      "omissions_and_integrations": [
+        "Publisher Day 11 practice integrated into Section 3.3 reading.",
+        "Publisher Day 14 review placed on Modeling/Review Monday."
+      ],
+      "risks": [
+        "Two combined publisher day pairs; Coffee Filter video alternative should use student iPad browser workflow."
+      ],
+      "chapter_decision": "Four purchased experiments retained; four publisher digital simulations retained; no extra formula-driven days."
+    },
+    {
+      "publisher_chapter": 4,
+      "name": "Free Fall and Projectiles",
+      "core_periods": 11,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1ervm3JgYgvovJNrYGrtm6x7UzALPLwLj",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1t9rT9ONjgF2sH9AspoLPaOQwxmXF1q_F",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1Va33PTMm4GH42RlPharxBvSyN_c4hNV8",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/1sdGhDoy9hjiz-lTZNxHTVpo9QJQ_KsQ-",
+        "think_sheet_filenames": [
+          "FreeFall1_FreeFallModel.pdf",
+          "FreeFall2_HowFastHowMuchTime.pdf",
+          "FreeFall3_Speed.pdf",
+          "FreeFall4_UpAndDown.pdf",
+          "FreeFall5_VectorDsUpAndDown.pdf",
+          "FreeFall6_ProjectileMotionModel.pdf",
+          "FreeFall7_VelVsTime.pdf",
+          "FreeFall8_ApplyingTheModel.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_FreeFallAccelern.docx",
+          "Lab2_RocketScience.docx",
+          "Lab3_LauncherSpeed.docx",
+          "Lab4_HitTheTarget.docx",
+          "VideoAnalysisDirns.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_FreeFallAccelnLab.docx",
+          "TG2_RocketScience.docx",
+          "TG3_LauncherSpeed.docx",
+          "TG4_HitTheTarget.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "4.1",
+          "title": "Free Fall and Vertical Motion",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "4.1.1",
+              "title": "Free Fall Acceleration Video Lab",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_FreeFallAccelern.docx"
+              ],
+              "purchased_selected": [
+                "VideoAnalysisDirns.docx"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Prepared teacher sample video and FreeFallClassData.xlsx backup"
+              ],
+              "teacher_guide_lab_minutes": "40-50",
+              "decision": "REQUIRED QUANTITATIVE VIDEO LAB: fixed-camera ball toss, meter-stick calibration, tracking, v-t slope, objects of different masses.",
+              "verification_flags": [
+                "Tight 54-minute lesson; prepare sample data/video fallback."
+              ]
+            },
+            {
+              "lesson_id": "4.1.2",
+              "title": "Free Fall Patterns",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "FreeFall1_FreeFallModel.pdf",
+                "FreeFall2_HowFastHowMuchTime.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Distance pattern and 10 m/s² as conceptual approximate g.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "4.1.3",
+              "title": "Upward and Downward Motion",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "FreeFall4_UpAndDown.pdf",
+                "FreeFall5_VectorDsUpAndDown.pdf",
+                "FreeFall3_Speed.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Publisher Up-and-Down Desmos",
+                  "url": "https://www.desmos.com/calculator/o5psilwrba",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Signed v; acceleration downward at all times including top; Day 3 speed practice selected.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "4.1.4",
+              "title": "Rocket Science",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [
+                "Lab2_RocketScience.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Desmos Vertical Launch Model",
+                  "url": "https://www.desmos.com/calculator/o5psilwrba",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Physical stomp rocket timing then model launch speed/height; avoid separate quiz.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "4.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "g ≈ 10 m/s², velocity gained each second, increasing distance intervals, air-resistance idealization, upward versus downward motion.",
+            "sources": [
+              "Physics Classroom 1-D Kinematics Free Fall Lesson 5",
+              "Hewitt Chapter 3 §3.5",
+              "OpenStax Physics §3.2"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "4.2",
+          "title": "Projectile Motion Models",
+          "core_periods": 3,
+          "publisher_based_periods": 2,
+          "lessons": [
+            {
+              "lesson_id": "4.2.1",
+              "title": "How Projectiles Move",
+              "publisher_days": [
+                "6"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "FreeFall6_ProjectileMotionModel.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Projectile Simulator",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Vectors-and-Projectiles/Projectile-Simulator",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Horizontal and vertical independence; prioritize horizontal launch rather than angle algebra.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "4.2.2",
+              "title": "Projectile Velocity, Graphs and Predictions",
+              "publisher_days": [
+                "7",
+                "8"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "FreeFall7_VelVsTime.pdf",
+                "FreeFall8_ApplyingTheModel.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Projectile Simulator continued",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Vectors-and-Projectiles/Projectile-Simulator",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [
+                "Purchased bonus basketball VideoAnalysis.docx",
+                "Purchased bonus WhichHitsGroundFirst.docx as Modeling Monday experiment"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Combine publisher Days 7–8, preserve velocity tables/diagrams; trim repetition.",
+              "verification_flags": [
+                "Merged Days 7–8 provisional."
+              ]
+            }
+          ],
+          "reading": {
+            "period_id": "4.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Projectile trajectory, horizontal/vertical motion components, predictable fall timing, diagrams, tables.",
+            "sources": [
+              "Physics Classroom 2-D Motion Lesson 2",
+              "Hewitt Chapter 10 §10.1",
+              "OpenStax Physics §5.3"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "4.3",
+          "title": "Projectile Predictions and Investigations",
+          "core_periods": 3,
+          "publisher_based_periods": 2,
+          "lessons": [
+            {
+              "lesson_id": "4.3.1",
+              "title": "Launcher Speed",
+              "publisher_days": [
+                "9"
+              ],
+              "purchased_required": [
+                "Lab3_LauncherSpeed.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Vertical Launch Desmos",
+                  "url": "https://www.desmos.com/calculator/o5psilwrba",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Vertical launching and five peak-height measurements; determine launch speed to use on the NEXT DAY.",
+              "verification_flags": [
+                "Save student group calibration data by launcher/setting."
+              ]
+            },
+            {
+              "lesson_id": "4.3.2",
+              "title": "Hit the Target",
+              "publisher_days": [
+                "10"
+              ],
+              "purchased_required": [
+                "Lab4_HitTheTarget.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Use 4.3.1 measured launch speed to predict horizontal target position; only one committed test launch; supply backup speed for absent students.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "4.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Prediction, model testing, uncertainty, projectile launcher dependency, CER on result.",
+            "sources": [
+              "Physics Classroom 2-D Motion Lesson 2",
+              "Hewitt Chapter 10 §10.1",
+              "OpenStax Physics §5.3"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [
+        "WhichHitsGroundFirst.docx: optional Modeling Monday experiment",
+        "VideoAnalysis.docx: basketball example as prepared video-data evidence"
+      ],
+      "omissions_and_integrations": [
+        "Publisher Day 3 speed practice consolidated in 4.1 reading.",
+        "Publisher Days 7–8 compressed to one period.",
+        "Optional Trajectory project omitted."
+      ],
+      "risks": [
+        "Free Fall video lab 40–50 minutes tight.",
+        "4.3.1 -> 4.3.2 dependency: same launcher settings and backup data.",
+        "Students already have browser-based iPad video analysis; teacher directions made on Mac need not imply student tool unavailable."
+      ],
+      "chapter_decision": "Retain all four required labs, including a real quantitative video lab; 8 teaching periods plus 3 readings."
+    },
+    {
+      "publisher_chapter": 5,
+      "name": "Momentum and Collisions",
+      "core_periods": 13,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1i_9WMpZuPWMLYw_VjgkB7ZDnPI6AKZfe",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1wO1WJZZ30GNiuJA2_MlHQbWc33EFlsDy",
+        "student_labs_folder": "https://drive.google.com/drive/folders/14BwUoaY29NQa_Ri_hjCa0CLV_Qfo2MXI",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/1145e30TABOLFZlhZb-mY2Ia6rEpwXFxC",
+        "think_sheet_filenames": [
+          "Mom1_ImpulseMomentum.pdf",
+          "Mom2_ImpulseMomentumChange.pdf",
+          "Mom3_ImpDeltaPApplicns.pdf",
+          "Mom4_ActionReaction.pdf",
+          "Mom5_RedCartVsBlueCart.pdf",
+          "Mom6_ExplosionAnalysis.pdf",
+          "Mom7_CollisionAnalysis.pdf",
+          "Mom8_ProportionalReasoning.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_MarshmallowLauncher.docx",
+          "Lab2_BalloonToss.docx",
+          "Lab3_ExplosionAnalysis.docx",
+          "Lab4_CartAndTheBrick.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_MarshmallowLauncher.docx",
+          "TG2_BalloonTossLab.docx",
+          "TG3_ExplosionAnalysis.docx",
+          "TG4_CartAndBrick.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "5.1",
+          "title": "Momentum and Impulse",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "5.1.1",
+              "title": "Momentum and Marshmallow Launcher",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_MarshmallowLauncher.docx"
+              ],
+              "purchased_selected": [
+                "Mom1_ImpulseMomentum.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "15-20",
+              "decision": "Existing lesson package pilot is reference; physical experiment shows impulse force-time effects.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "5.1.2",
+              "title": "Balloon Toss and Impulse",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [
+                "Lab2_BalloonToss.docx"
+              ],
+              "purchased_selected": [
+                "Mom2_ImpulseMomentumChange.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "25-40",
+              "decision": "Teacher water-balloon demonstration; stopping time versus force, select few calculations.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "5.1.3",
+              "title": "Impulse and Collision Safety",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Mom3_ImpDeltaPApplicns.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Impulse and Force Concept Builder selected cases"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Protect airbags/padding/catching contexts and explanations.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "5.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Momentum, impulse, stopping time, delta-p, average collision force and safety mechanisms.",
+            "sources": [
+              "Physics Classroom Momentum and Its Conservation Lesson 1",
+              "Hewitt Chapter 6",
+              "OpenStax Physics §8.1"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "5.2",
+          "title": "Conservation of Momentum",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "5.2.1",
+              "title": "Explosion Analysis Lab",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [
+                "Lab3_ExplosionAnalysis.docx"
+              ],
+              "purchased_selected": [
+                "Mom4_ActionReaction.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Publisher teacher guide permits Vernier/motion detector OR recorded calibrated video analysis"
+              ],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Spring-loaded carts with varying mass ratios; equal opposite momentum changes.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "5.2.2",
+              "title": "Exploding Carts and Red Cart vs. Blue Cart",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Mom5_RedCartVsBlueCart.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Exploding Carts",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Momentum-and-Collisions/Exploding-Carts",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Variation of masses and speeds; shorter physical cart demonstration.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "5.2.3",
+              "title": "Conservation of System Momentum",
+              "publisher_days": [
+                "6"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Mom6_ExplosionAnalysis.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Momentum tables and isolated system reasoning; avoid long algebra sets.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "5.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Isolated systems, internal impulses, before/after momentum tables, conservation.",
+            "sources": [
+              "Physics Classroom Momentum Lesson 2",
+              "Hewitt Chapter 6",
+              "OpenStax Physics §8.2"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "5.3",
+          "title": "Collisions and Applications",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "5.3.1",
+              "title": "Hit-and-Stick Collisions",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Mom7_CollisionAnalysis.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Collision Carts (inelastic mode)",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Momentum-and-Collisions/Collision-Carts",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Momentum before and after collision; introduce stick without requiring energy content.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "5.3.2",
+              "title": "Hit-and-Bounce Collisions",
+              "publisher_days": [
+                "8"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Mom7_CollisionAnalysis.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Collision Carts (elastic mode)",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Momentum-and-Collisions/Collision-Carts",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Sign changes and rebounds; compare conservation across collision types.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "5.3.3",
+              "title": "Cart and Brick Lab",
+              "publisher_days": [
+                "9"
+              ],
+              "purchased_required": [
+                "Lab4_CartAndTheBrick.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [
+                "Publisher Cart and Brick simulation",
+                "Calibrated iPad video collision analysis",
+                "Purchased bonus HitAndStickCollisionLab.docx"
+              ],
+              "teacher_guide_lab_minutes": "20-25 collection + 15-20 analysis",
+              "decision": "Use ACTUAL timing with Vernier/video or digital lab; do not perpetuate misleading simplified ticker-tape frequency.",
+              "verification_flags": [
+                "Adapt timing to correct device rate or calibrated video; equipment workflow needs testing."
+              ]
+            },
+            {
+              "lesson_id": "5.3.4",
+              "title": "Fish Catch and Proportional Reasoning",
+              "publisher_days": [
+                "10"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Mom8_ProportionalReasoning.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Fish Catch",
+                  "url": "https://www.physicsclassroom.com/PhysicsClassroom/media/interactive/Fish%20Catch/FishCatch.html",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Final system momentum model; conceptual ratio reasoning.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "5.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Comparison of stick/bounce, direction, momentum conservation, collision predictions, system perspective.",
+            "sources": [
+              "Physics Classroom Momentum Lesson 2",
+              "Hewitt Chapter 6",
+              "OpenStax Physics §8.3 (introductory material)"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [
+        "PhET Collision Lab: https://phet.colorado.edu/en/simulations/collision-lab",
+        "SMU Newton cradle / 2-D collisions observation videos",
+        "Purchased HitAndStickCollisionLab.docx optional"
+      ],
+      "omissions_and_integrations": [],
+      "risks": [
+        "Ticker-tape simplification in original Cart and Brick guide must be corrected.",
+        "Explosion Analysis supports calibrated quantitative video lab alternative.",
+        "Avoid kinetic-energy calculations before Chapter 6."
+      ],
+      "chapter_decision": "10 publisher lesson days plus 3 readings; all four original labs retained, not every optional demo required."
+    },
+    {
+      "publisher_chapter": 6,
+      "name": "Work and Energy",
+      "core_periods": 12,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1GAFVo_GqwnzlRfChcanCYkM-L7-Z8EyY",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1p3N9Ajf3drbYnTZhpM_ayQD6oc5PMD4k",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1wpTsZfpmKK0JzR-dllIKW3UWpGCFizIq",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/1jLb7nho-MY93SnLr6adiaIZJuu9Egpzv",
+        "think_sheet_filenames": [
+          "Energy1_Work.pdf",
+          "Energy2_EnergyConcepts.pdf",
+          "Energy3_KEPETME.pdf",
+          "Energy4_MechEConservn.pdf",
+          "Energy5_WorkETransfn.pdf",
+          "Energy6_BarCharts.pdf",
+          "Energy7_EnergyAnalysis1.pdf",
+          "Energy8_EnergyAnalysis2.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_ItsAllUphill.docx",
+          "Lab2_PushThePlow.docx",
+          "Lab3_EnergyOnAnIncline.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_ItsAllUphill.docx",
+          "TG2_PushThePlow.docx",
+          "TG3_EnergyOnAnIncline.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "6.1",
+          "title": "Work and Forms of Energy",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "6.1.1",
+              "title": "It's All Uphill",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_ItsAllUphill.docx"
+              ],
+              "purchased_selected": [
+                "Energy1_Work.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "35-45",
+              "decision": "Cart to same height at different ramp angles; force-distance tradeoff; only first 2 Think Sheet questions.",
+              "verification_flags": [
+                "Day 1 tight; preassemble ramp."
+              ]
+            },
+            {
+              "lesson_id": "6.1.2",
+              "title": "Push the Plow",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [
+                "Lab2_PushThePlow.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [
+                "Publisher Science Reasoning: Push the Plow"
+              ],
+              "teacher_guide_lab_minutes": "25-35",
+              "decision": "Marble release height versus plow travel distance; keep both parts.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "6.1.3",
+              "title": "Kinetic, Potential and Mechanical Energy",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Energy2_EnergyConcepts.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Name That Energy; KE/PE Concept Builders"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Proportional effect of speed/height and energy forms; limited formula practice.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "6.1.4",
+              "title": "Energy on an Incline",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [
+                "Lab3_EnergyOnAnIncline.docx"
+              ],
+              "purchased_selected": [
+                "Energy3_KEPETME.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Guide-supported cart video analysis: derive height, speed and KE/PE from fixed-view recording"
+              ],
+              "teacher_guide_lab_minutes": "20-30 sensors",
+              "decision": "Use Vernier detector as primary; video analysis legitimate alternate data collection.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "6.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Work, energy transfer, KE, gravitational PE, mechanical energy, changes with speed/height.",
+            "sources": [
+              "Physics Classroom Work Energy and Power Lesson 1",
+              "Hewitt Chapter 7",
+              "OpenStax Physics §9.1"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "6.2",
+          "title": "Conservation of Mechanical Energy",
+          "core_periods": 3,
+          "publisher_based_periods": 2,
+          "lessons": [
+            {
+              "lesson_id": "6.2.1",
+              "title": "Conservation of Mechanical Energy",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Energy4_MechEConservn.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Conservation as a model when frictional transfer negligible; selected ranking tables.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "6.2.2",
+              "title": "Roller Coaster Model",
+              "publisher_days": [
+                "6"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Roller Coaster Model",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Work-and-Energy/Roller-Coaster-Model",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Explore speed, height, track and friction; energy bars.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "6.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Mechanical energy conservation, KE<->PE, friction and system boundaries.",
+            "sources": [
+              "Physics Classroom Work Energy and Power Lesson 2",
+              "Hewitt Chapter 7",
+              "OpenStax Physics §9.2"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "6.3",
+          "title": "Energy Transfers and Representations",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "6.3.1",
+              "title": "Energy Transfers and Nonconservative Forces",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Energy5_WorkETransfn.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Friction and energy dissipated to surroundings; not heavy algebra.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "6.3.2",
+              "title": "Energy Bar Charts",
+              "publisher_days": [
+                "8"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Energy6_BarCharts.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Students draw/interpret simple mechanical and work-energy bar charts.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "6.3.3",
+              "title": "Chart That Motion",
+              "publisher_days": [
+                "9"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Energy7_EnergyAnalysis1.pdf",
+                "Energy8_EnergyAnalysis2.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Chart That Motion",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Work-and-Energy",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Select Chart That Motion within interactive collection"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Required chart-matching interactive; selected practice from later sheets; Day 10 integrated.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "6.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Energy transfers, thermal dissipation, system energy accounting, diagram/bar-chart evidence.",
+            "sources": [
+              "Physics Classroom Work Energy and Power Lessons 1–2",
+              "Hewitt Chapter 7",
+              "OpenStax Physics Chapter 9"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [
+        "PhET Energy Skate Park Basics: https://phet.colorado.edu/en/simulations/energy-skate-park-basics",
+        "SMU Bowling Ball Nose Crusher: optional VIDEO ONLY, never student recreation"
+      ],
+      "omissions_and_integrations": [
+        "Publisher Day 10 extra Energy Analysis practice integrated into 6.3.3 and reading."
+      ],
+      "risks": [
+        "It's All Uphill 35–45 minutes is tight.",
+        "Video Energy on Incline needs more processing than detector approach."
+      ],
+      "chapter_decision": "Three physical labs and two required interactives retained; 9 publisher days plus 3 readings."
+    },
+    {
+      "publisher_chapter": 10,
+      "name": "Vibrations, Waves, and Sound",
+      "core_periods": 11,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1_BZv0M2AsjJd4dwzdtb-JIIL9-bK8WOy",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1yMZvXrrFbLpI90zY8IXovPZpQflAWO30",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1vjQMH-hRVmymC2Lfjj-uiS0UNmJp1D_q",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/1dox9rnBgNh-jxgItqgBuUs8kwJAVSATU",
+        "think_sheet_filenames": [
+          "Waves1_Vibrations.pdf",
+          "Waves2_Waves.pdf",
+          "Waves3_WaveProperties.pdf",
+          "Waves4_WaveSpeed.pdf",
+          "Waves5_WaveBehavior.pdf",
+          "Waves6_StndingWaveMath.pdf",
+          "Waves7_Sound.pdf",
+          "Waves8_DecibelScale.pdf",
+          "Waves9_StWavesStrings.pdf",
+          "Waves10_OpenEnd.pdf",
+          "Waves11_ClosedEnd.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_PendulumPaint.docx",
+          "Lab2_WiggleInTimeAndSpace.docx",
+          "Lab3_SpeedOfAWave.docx",
+          "Lab4-TuningForkFrequency.docx",
+          "Lab5_NaturalFrequency.docx",
+          "Lab6_ClosedEndAirColumns.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_PendulumPaint.docx",
+          "TG2_WiggleInSpaceAndTime.docx",
+          "TG3_SpeedOfWave.docx",
+          "TG4_TuningForkFrequency.docx",
+          "TG5_NaturalFrequency.docx",
+          "TG6_ClosedEndAirColumns.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "10.1",
+          "title": "How Waves Work",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "10.1.1",
+              "title": "Vibrations and Pendulum Paint",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_PendulumPaint.docx"
+              ],
+              "purchased_selected": [
+                "Waves1_Vibrations.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Transverse Sine Wave Maker simulation substitute"
+              ],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Teacher-led paint pendulum demonstration; significant prep/cleanup; substitute publisher sim if infeasible.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "10.1.2",
+              "title": "A Wiggle in Time and Space",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [
+                "Lab2_WiggleInTimeAndSpace.docx"
+              ],
+              "purchased_selected": [
+                "Waves2_Waves.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Slinky/Snakey and vibrating mass; particle motion versus wave propagation.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "10.1.3",
+              "title": "Simple Wave Simulator and Properties",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Waves3_WaveProperties.pdf",
+                "Waves4_WaveSpeed.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Simple Wave Simulator",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Waves-and-Sound/Simple-Wave-Simulator",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [
+                "Purchased Lab3_SpeedOfAWave.docx: short optional wave-driver demonstration"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Include essential publisher Days 4–5 wave speed content with v=fλ without full standalone math days.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "10.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Vibration, period, frequency, amplitude, wavelength, transverse/longitudinal, wave speed and medium dependence.",
+            "sources": [
+              "Physics Classroom Vibrations and Waves Lessons 0–2",
+              "Hewitt Chapter 19",
+              "OpenStax Physics §§13.1–13.2"
+            ],
+            "note": "Wave speed demonstration optional within reading if equipment available."
+          }
+        },
+        {
+          "section_id": "10.2",
+          "title": "Wave Behavior",
+          "core_periods": 3,
+          "publisher_based_periods": 2,
+          "lessons": [
+            {
+              "lesson_id": "10.2.1",
+              "title": "Wave Boundary Behavior",
+              "publisher_days": [
+                "6"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Waves5_WaveBehavior.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Boundary Behavior of Waves",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Waves-and-Sound",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Locate exact Boundary Behavior activity"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Reflection/transmission and inversion at fixed/free ends.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "10.2.2",
+              "title": "Wave Addition and Interference",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Waves5_WaveBehavior.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Wave Addition",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Waves-and-Sound/Wave-Addition",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Constructive/destructive interference and superposition.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "10.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Boundaries, reflection, transmission, interference, nodes and antinodes as prep for natural frequency lab.",
+            "sources": [
+              "Physics Classroom Vibrations and Waves Lesson 3 + selected 4",
+              "Hewitt Chapter 19",
+              "OpenStax Physics Chapter 13"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "10.3",
+          "title": "Sound and Resonance",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "10.3.1",
+              "title": "Sound as a Pressure Wave",
+              "publisher_days": [
+                "10"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Waves7_Sound.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Sound as a Pressure Wave Science Reasoning",
+                  "url": "https://www.physicsclassroom.com/Lesson-Plans/Conceptual-Physics",
+                  "classification": "required",
+                  "kind": "science_reasoning",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Use publisher resource list to access activity"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Compression/rarefaction, pitch, intensity; decibel math optional.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "10.3.2",
+              "title": "Tuning Fork Frequency",
+              "publisher_days": [
+                "11"
+              ],
+              "purchased_required": [
+                "Lab4-TuningForkFrequency.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Audio Analyzer",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Waves-and-Sound/Audio-Analyzer",
+                  "classification": "required",
+                  "kind": "microphone_lab",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "15-25",
+              "decision": "Audio pressure-time cycles measured; screenshot graph to Notability, microphone permissions.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "10.3.3",
+              "title": "Natural Frequency and Standing Waves",
+              "publisher_days": [
+                "13"
+              ],
+              "purchased_required": [
+                "Lab5_NaturalFrequency.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [
+                {
+                  "name": "Sound Spectrum Viewer",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Waves-and-Sound/Spectrum-Viewer/Interactive",
+                  "classification": "required",
+                  "kind": "microphone_lab",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [
+                "Lab6_ClosedEndAirColumns.docx: optional resonance extension",
+                "SMU resonance tube demonstration"
+              ],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Teacher-led pole resonance; accept two good trials if higher harmonics unreliable; avoid cross-group mic interference.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "10.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Sound as mechanical pressure wave; pitch, amplitude/loudness, standing waves, natural frequencies, resonance.",
+            "sources": [
+              "Physics Classroom Sound Waves and Music Lessons 1,2,4",
+              "Hewitt Chapter 20",
+              "OpenStax Physics §§14.1,14.4"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [
+        "Purchased SoundReadingPassage.docx and WavesSpeedReadingPasage.docx bonus references",
+        "PhET Wave on a String optional",
+        "SMU standing-wave and resonance demonstration videos"
+      ],
+      "omissions_and_integrations": [
+        "Days 4–5 wave speed math integrated in 10.1.3 and reading; Lab3 remains optional.",
+        "Publisher Days 8–9 full standing-wave math replaced by introductory node/antinode concepts in reading.",
+        "Day 12 decibel calculations optional (Waves8_DecibelScale.pdf).",
+        "Days 14–18 full harmonics/string/air-column calculations omitted.",
+        "Days 19–20 pan flute project omitted.",
+        "Lab6_ClosedEndAirColumns.docx optional not core."
+      ],
+      "risks": [
+        "Pendulum Paint setup/cleanup.",
+        "Must protect v=fλ and visible standing-wave prerequisites.",
+        "Mic apps on iPads need microphone permissions and quiet environment."
+      ],
+      "chapter_decision": "8 publisher periods + 3 readings; 4 required original labs/demos plus optional Lab3 and Lab6; no advanced harmonics requirement."
+    },
+    {
+      "publisher_chapter": 12,
+      "name": "Reflection and Mirrors",
+      "core_periods": 11,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1o8dG0vsbEx7Zej8XG-PY2WJOnHa0w_MJ",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1ltTWi4DXgiTdV8pb3h4V3mbZRQqlpfHo",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1AfxkuCXzO3DNs5vrimlKgm0G8WZN2Ve-",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/1nyhDSqzP2HnlyTR5TfHxT--TDZCGzx0L",
+        "think_sheet_filenames": [
+          "Optics1_Reflection.pdf",
+          "Optics2_PMImageFormation.pdf",
+          "Optics3_PMRayDiagrams.pdf",
+          "Optics4_RayDApplicns.pdf",
+          "Optics5_DiffuseReflection.pdf",
+          "Optics6_SphericalMirrors.pdf",
+          "Optics7_RayDsConcaveMs.pdf",
+          "Optics8_RayDsConvexMs.pdf",
+          "Optics9_Object-ImageRelations.pdf",
+          "Optics10_Refraction.pdf",
+          "Optics11_TwoRulesThreeWays.pdf",
+          "Optics12_IndexOfRefrnStudies.pdf",
+          "Optics13_TotalInternalRefln.pdf",
+          "Optics14_Lenses.pdf",
+          "Optics15_RayDsConvergingLs.pdf",
+          "Optics16_RayDsDivergingLs.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_LawOfReflection.docx",
+          "Lab2_Images.docx",
+          "Lab3_SixFootPersonProblem.docx",
+          "Lab4_ExploringCurvedMirrors.docx",
+          "Lab5_FindingSmiley.docx",
+          "Lab6_IntroToRefraction.docx",
+          "Lab7_HowMuchLab.docx",
+          "Lab8_Determining N.docx",
+          "Lab9_ACriticalLab.docx",
+          "Lab10_ExploringLenses.docx",
+          "Lab11_LOSTArt.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_LawOfReflection.docx",
+          "TG2_ImagesLab.docx",
+          "TG3_SixFootPerson.docx",
+          "TG4_ExploringCurvedMirrors.docx",
+          "TG5_FindingSmiley.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "12.1",
+          "title": "Reflection and Plane Mirrors",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "12.1.1",
+              "title": "Law of Reflection Lab",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_LawOfReflection.docx"
+              ],
+              "purchased_selected": [
+                "Optics1_Reflection.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "15-20",
+              "decision": "Mirror/laser ray geometry discovery before formal vocabulary; safe ray box/low-power line laser.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.1.2",
+              "title": "Plane Mirror Images Lab",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [
+                "Lab2_Images.docx"
+              ],
+              "purchased_selected": [
+                "Optics2_PMImageFormation.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Plane Mirror Images",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Reflection-and-Mirrors",
+                  "classification": "supporting",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Select Plane Mirror Images part 2"
+                }
+              ],
+              "optional_resources": [
+                "Official 6-minute lab-replica observation video https://youtu.be/YEDFxjpTF5M"
+              ],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Half-silvered mirror and real matching lights; diagram back-trace to virtual image.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.1.3",
+              "title": "Six Foot Person Lab and Ray Diagrams",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [
+                "Lab3_SixFootPersonProblem.docx"
+              ],
+              "purchased_selected": [
+                "Optics3_PMRayDiagrams.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-30",
+              "decision": "Mirror height half object height, independent of distance; give substantial diagram space.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.1.4",
+              "title": "Who Can See Who?",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Optics4_RayDApplicns.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Who Can See Who?",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Reflection-and-Mirrors/Who-Can-See-Who",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Mirror sight lines and visibility, selected ray drawings.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "12.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Light and sight, reflection law, normal line, plane mirror images, virtual images, ray diagrams, viewing geometry.",
+            "sources": [
+              "Physics Classroom Reflection and the Ray Model of Light Lessons 1–2",
+              "Hewitt Chapter 28 §§28.1–28.2",
+              "OpenStax Physics §16.1"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "12.2",
+          "title": "Curved Mirrors and Image Formation",
+          "core_periods": 6,
+          "publisher_based_periods": 5,
+          "lessons": [
+            {
+              "lesson_id": "12.2.1",
+              "title": "Diffuse and Curved Mirrors",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [
+                "Lab4_ExploringCurvedMirrors.docx"
+              ],
+              "purchased_selected": [
+                "Optics5_DiffuseReflection.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "20-25",
+              "decision": "Specular versus diffuse; concave/convex image orientation and size.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.2.2",
+              "title": "Spherical Mirrors and Finding Smiley",
+              "publisher_days": [
+                "6"
+              ],
+              "purchased_required": [
+                "Lab5_FindingSmiley.docx"
+              ],
+              "purchased_selected": [
+                "Optics6_SphericalMirrors.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "25-35",
+              "decision": "Concave projected real images versus upright virtual; locate focal point and center of curvature.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.2.3",
+              "title": "Optics Bench and Concave Mirror Diagrams",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Optics7_RayDsConcaveMs.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Optics Bench Mirrors",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Reflection-and-Mirrors/Optics-Bench",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Start tool in mirror mode (default may be lenses); independent variation after physical lab.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.2.4",
+              "title": "Convex Mirrors",
+              "publisher_days": [
+                "8"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Optics8_RayDsConvexMs.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [
+                "Lost Art of Image Description Concept Builder (selected levels)"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Image type/size and wide field-of-view, selected drawings.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "12.2.5",
+              "title": "Object-Image Relationships",
+              "publisher_days": [
+                "9"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Optics9_Object-ImageRelations.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "Name That Image",
+                  "url": "https://www.physicsclassroom.com/Physics-Interactives/Reflection-and-Mirrors",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": "Locate direct link in collection"
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "L•O•S•T predictions; do not import honors mirror equations.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "12.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Concave/convex reflections, real versus virtual, F/C, ray construction, LOST image descriptions.",
+            "sources": [
+              "Physics Classroom Reflection Lesson 3–4",
+              "Hewitt Chapter 28",
+              "OpenStax Physics §16.1"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [
+        "Official plane mirror lab observation video https://youtu.be/YEDFxjpTF5M",
+        "oPhysics plane mirror: https://ophysics.com/l9.html; spherical: https://ophysics.com/l10.html"
+      ],
+      "omissions_and_integrations": [
+        "Publisher Days 10–20 on refraction, total internal reflection and lenses omitted from core.",
+        "Optics10–16 sheets and Labs6–11 archive-only.",
+        "Mirror equation and full magnification algebra NOT part of conceptual 9-day plan."
+      ],
+      "risks": [
+        "Large ray drawing areas needed in Notability.",
+        "Laser eye safety and secure stands.",
+        "Optics Bench default lens mode: explicitly switch to mirror mode."
+      ],
+      "chapter_decision": "All five core physical mirror labs kept. 9 publisher lessons + 2 readings; alternate demos are not quantitative video labs."
+    },
+    {
+      "publisher_chapter": 9,
+      "name": "Electric Circuits",
+      "core_periods": 13,
+      "paid_course_pack": {
+        "chapter_folder": "https://drive.google.com/drive/folders/1dkKDl6X0BskYSQwTFnUCVLc7W_Mb0DSH",
+        "think_sheets_folder": "https://drive.google.com/drive/folders/1dDdaWM_LKIkTI6rWOABUobLdjpCtenf-",
+        "student_labs_folder": "https://drive.google.com/drive/folders/1x-4Iyy36qHECnJpCIMV0MsxTg_ql9-L1",
+        "teacher_guides_folder": "https://drive.google.com/drive/folders/10ORsHPL8y1Sz801YBTlzJG3n7xekBadm",
+        "think_sheet_filenames": [
+          "Circuits1_Voltage.pdf",
+          "Circuits2_Current.pdf",
+          "Circuits3_LightBulbAnatomy.pdf",
+          "Circuits4_WhatAffectsI.pdf",
+          "Circuits5_VIR.pdf",
+          "Circuits6_SeriesAndParallel.pdf",
+          "Circuits7_SeriesCircuits.pdf",
+          "Circuits8_SeriesCircuitsAnalysis.pdf",
+          "Circuits9_ParallelConcepts.pdf",
+          "Circuits10_ParallelCircuitAnalysis.pdf"
+        ],
+        "student_lab_filenames": [
+          "Lab1_SparkyTheElectrician.docx",
+          "Lab2_ChargeFlowInWires.docx",
+          "Lab3_BulbAndSocketAnalysis.docx",
+          "Lab4_Resistance.docx",
+          "Lab5_TheGreatestResistance.docx",
+          "Lab6_SeriesVsParallel.docx"
+        ],
+        "teacher_guide_filenames": [
+          "TG1_SparkyElectrician.docx",
+          "TG2_ChargeFlowInWires.docx",
+          "TG3_BulbSocketAnalysis.docx",
+          "TG4_Resistance.docx",
+          "TG5_TheGreatestR.docx",
+          "TG6_SeriesVsParallel.docx"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "9.1",
+          "title": "Electric Charge, Current and Complete Circuits",
+          "core_periods": 5,
+          "publisher_based_periods": 4,
+          "lessons": [
+            {
+              "lesson_id": "9.1.1",
+              "title": "Sparky the Electrician",
+              "publisher_days": [
+                "1"
+              ],
+              "purchased_required": [
+                "Lab1_SparkyTheElectrician.docx"
+              ],
+              "purchased_selected": [
+                "Circuits1_Voltage.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "15-25",
+              "decision": "D-cell, wire, bulb multiple successful/failed arrangements. Prevent direct terminal shorts.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "9.1.2",
+              "title": "Charge Flow in Wires",
+              "publisher_days": [
+                "2"
+              ],
+              "purchased_required": [
+                "Lab2_ChargeFlowInWires.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [
+                "CASTLE Hula Hoop vs Penny charge model"
+              ],
+              "teacher_guide_lab_minutes": "35-45",
+              "decision": "Bulb timing and compass deflection; tackle battery-supplies-charge and charge-used-up misconceptions.",
+              "verification_flags": [
+                "35-45 minutes tight; pretest equipment/compass setup."
+              ]
+            },
+            {
+              "lesson_id": "9.1.3",
+              "title": "Current and Conventional Direction",
+              "publisher_days": [
+                "3"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Circuits2_Current.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Charge rate I=Q/t, electron drift vs conventional direction, starbursts and arrowtails.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "9.1.4",
+              "title": "Bulb and Socket Analysis",
+              "publisher_days": [
+                "4"
+              ],
+              "purchased_required": [
+                "Lab3_BulbAndSocketAnalysis.docx"
+              ],
+              "purchased_selected": [
+                "Circuits3_LightBulbAnatomy.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "25-35",
+              "decision": "Conductor/insulator, ribbed edge-tip-filament path. NO exposed broken glass; use protected model.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "9.1.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Battery transfers energy rather than supplying charge; closed path, current, voltage, conductors, bulb anatomy.",
+            "sources": [
+              "Physics Classroom Electric Circuits Lessons 1–2",
+              "Hewitt Chapters 22–23",
+              "OpenStax Physics Chapters 18–19"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "9.2",
+          "title": "Resistance and Current Relationships",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "9.2.1",
+              "title": "Investigating Resistance",
+              "publisher_days": [
+                "5"
+              ],
+              "purchased_required": [
+                "Lab4_Resistance.docx"
+              ],
+              "purchased_selected": [],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "30-40",
+              "decision": "Straw air-flow analog for tube length/diameter/series-parallel; hygiene and voluntary syringe alternative; qualitative not exact quantitative.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "9.2.2",
+              "title": "Voltage, Current and Resistance",
+              "publisher_days": [
+                "7"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Circuits4_WhatAffectsI.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "DC Circuit Builder",
+                  "url": "https://www.physicsclassroom.com/interactive/electric-circuits/dc-circuit-builder",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Manipulate voltage/resistance to discover I=ΔV/R; use physical observations before full formulas.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "9.2.3",
+              "title": "Ohm's Law and Series/Parallel Preview",
+              "publisher_days": [
+                "8"
+              ],
+              "purchased_required": [
+                "Lab6_SeriesVsParallel.docx"
+              ],
+              "purchased_selected": [
+                "Circuits5_VIR.pdf"
+              ],
+              "digital_required": [],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": "15-20 per teacher-group demo",
+              "decision": "Hands-on teacher series/parallel indicator bulb demo; targeted Ohm law calculations only.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "9.2.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Resistance, voltage/current changes, qualitative Ohm law, initial single-path versus branches.",
+            "sources": [
+              "Physics Classroom Electric Circuits Lesson 3",
+              "Hewitt Chapter 23",
+              "OpenStax Physics §19.1"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "section_id": "9.3",
+          "title": "Series and Parallel Circuits",
+          "core_periods": 4,
+          "publisher_based_periods": 3,
+          "lessons": [
+            {
+              "lesson_id": "9.3.1",
+              "title": "Series Circuits with DC Circuit Builder",
+              "publisher_days": [
+                "9"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Circuits6_SeriesAndParallel.pdf",
+                "Circuits7_SeriesCircuits.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "DC Circuit Builder Series activity",
+                  "url": "https://www.physicsclassroom.com/interactive/electric-circuits/dc-circuit-builder",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Same current, voltage drops sum to battery, adding series resistance increases total R.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "9.3.2",
+              "title": "Parallel Circuits with DC Circuit Builder",
+              "publisher_days": [
+                "11"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Circuits9_ParallelConcepts.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "DC Circuit Builder Parallel activity",
+                  "url": "https://www.physicsclassroom.com/interactive/electric-circuits/dc-circuit-builder",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Parallel voltage equal, branch currents add, added branch lowers equivalent R.",
+              "verification_flags": []
+            },
+            {
+              "lesson_id": "9.3.3",
+              "title": "Voltage Drops and Circuit Comparisons",
+              "publisher_days": [
+                "14"
+              ],
+              "purchased_required": [],
+              "purchased_selected": [
+                "Circuits8_SeriesCircuitsAnalysis.pdf",
+                "Circuits10_ParallelCircuitAnalysis.pdf"
+              ],
+              "digital_required": [
+                {
+                  "name": "DC Circuit Builder Voltage Drops",
+                  "url": "https://www.physicsclassroom.com/interactive/electric-circuits/dc-circuit-builder/activities/circuit-builder-exercise-5",
+                  "classification": "required",
+                  "kind": "interactive",
+                  "link_check": "classroom_iPad_test_pending",
+                  "notes": ""
+                }
+              ],
+              "optional_resources": [
+                "Equivalent Resistance Interactive (concept levels)"
+              ],
+              "teacher_guide_lab_minutes": null,
+              "decision": "Conceptual capstone; selected rather than all advanced calculations.",
+              "verification_flags": []
+            }
+          ],
+          "reading": {
+            "period_id": "9.3.R",
+            "type": "full_period_reading_and_consolidation",
+            "minutes": 54,
+            "focus": "Single/multiple pathways, current conservation, branch voltages and comparative circuit models.",
+            "sources": [
+              "Physics Classroom Electric Circuits Lesson 4",
+              "Hewitt Chapter 23",
+              "OpenStax Physics §§19.2–19.3"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "optional_resources": [
+        "Purchased Lab5_TheGreatestResistance.docx optional 15–20 min on publisher Day 6",
+        "PhET DC Circuit Construction Kit https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc",
+        "PhET Ohm Law https://phet.colorado.edu/en/simulations/ohms-law",
+        "oPhysics four bulb circuits https://ophysics.com/em4a.html",
+        "Purchased bonus CircuitBuilderSeries.docx and CircuitBuilderParallel.docx"
+      ],
+      "omissions_and_integrations": [
+        "Publisher Days 6, 10, 12, 13 not standalone; selected insights integrated or optional.",
+        "Publisher Day 15 review moves to Monday.",
+        "Circuits8 and Circuits10 full mathematical sheets not assigned in their entirety."
+      ],
+      "risks": [
+        "35–45 minute Charge Flow lab tight.",
+        "Low-voltage short-circuit/bulb/connection safety.",
+        "Protect bulb cross-section rather than broken glass.",
+        "Student iPad DC builder and screenshot flow needs testing.",
+        "Student recorded quantitative video lab not indicated in publisher pack."
+      ],
+      "chapter_decision": "Last instructional unit. Ten publisher-based periods plus three readings; five required labs/demos, one purchased lab optional; digital circuit builder essential."
+    }
+  ],
+  "qa_backlog": [
+    "Confirm every required external simulation direct URL and student iPad interaction including camera/microphone permissions.",
+    "Validate Google Drive link from agenda -> Send a Copy -> Notability and PDF external links; keep private permissions intact.",
+    "Verify four planned publisher day merges 2.3.2 (D9-10), 3.2.2 (D5-6), 3.3.2 (D8-9), 4.2.2 (D7-8) within a real 54-minute period.",
+    "Check timing of Chapter 4 free fall quantitative video lab (40-50m), Chapter 9 charge flow lab (35-45m), Chapter 6 It’s All Uphill (35-45m), Chapter 1 Dune Buggy opening.",
+    "Audit purchased Question Bank item by item to targets; select for practice, Quick Checks, checkpoints and tests without copying paid question content into public repo.",
+    "Create/synchronize chapter, section and daily learning targets with reading passages and teacher preparation checklists.",
+    "Preserve senior cutoff and separate reviews/tests in final calendar without changing 107 core count.",
+    "Confirm exact direct URL of publisher interactive items recorded only as chapter collection links.",
+    "Ensure all private Drive links remain access controlled; do not publish purchased source content."
+  ]
+}
