@@ -1,7 +1,7 @@
 {
   "schema": "physics-planner-state/0.4",
   "school_year": "2026-2027",
-  "current_week_index": 8,
+  "current_week_index": 9,
   "days": [
     {
       "week_index": 0,
@@ -1899,19 +1899,19 @@
       "dow": "Monday",
       "display_date": "11/2",
       "control": "Regular Day",
-      "section": "2.5: Vel Vectors",
-      "day_number": 3,
+      "section": "Unit 2 Test",
+      "day_number": 1,
       "student_slots": [
-        "Warmups",
-        "Activity",
-        "Practice Set",
-        "Extra Practice",
-        "Quick Check"
+        "Custom Item",
+        "",
+        "",
+        "",
+        ""
       ],
       "custom_slots": [
         {
-          "label": "",
-          "url": ""
+          "label": "Review",
+          "url": "https://tnezki.github.io/physics/reviews/review2/review_2.html"
         },
         {
           "label": "",
@@ -1983,12 +1983,12 @@
       "dow": "Wednesday",
       "display_date": "11/4",
       "control": "Regular Day",
-      "section": "3.1: Force & Accel",
-      "day_number": 1,
+      "section": "",
+      "day_number": 0,
       "student_slots": [
-        "Warmups",
-        "Notes",
-        "Practice Set",
+        "",
+        "",
+        "",
         "",
         ""
       ],
@@ -2025,13 +2025,13 @@
       "dow": "Thursday",
       "display_date": "11/5",
       "control": "Regular Day",
-      "section": "3.1: Force & Accel",
-      "day_number": 2,
+      "section": "",
+      "day_number": 0,
       "student_slots": [
-        "Warmups",
-        "Investigation",
-        "Practice Set",
-        "Extra Practice",
+        "",
+        "",
+        "",
+        "",
         ""
       ],
       "custom_slots": [
@@ -2067,14 +2067,14 @@
       "dow": "Friday",
       "display_date": "11/6",
       "control": "Regular Day",
-      "section": "3.1: Force & Accel",
-      "day_number": 3,
+      "section": "",
+      "day_number": 0,
       "student_slots": [
-        "Warmups",
-        "Activity",
-        "Practice Set",
-        "Extra Practice",
-        "Quick Check"
+        "",
+        "",
+        "",
+        "",
+        ""
       ],
       "custom_slots": [
         {
@@ -9039,5 +9039,5 @@
   "migrations": [
     "unit-transition-test-labels-v1"
   ],
-  "updated_at": "2026-10-29T08:39:31"
+  "updated_at": "2026-11-01T19:28:31"
 }
