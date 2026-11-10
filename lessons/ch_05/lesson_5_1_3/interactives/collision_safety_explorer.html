@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#17324d">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#17324d" name="theme-color"/>
 <title>5.1.3 · Collision Safety Explorer — Motion, Momentum &amp; Foam Bumpers</title>
 <style>
 :root{--navy:#17324d;--ink:#25364a;--muted:#61758a;--accent:#b45b30;--green:#236f60;--line:#cfdbe5;--soft:#f3f7fa;--light:#f8fafc;--paper:#fff;--violet:#6e6092}
@@ -90,124 +91,123 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
 <body>
 <header><div class="eyebrow">Physics · 5.1.3 · Original interactive investigation</div><h1>Collision Safety Explorer</h1><p>See the collision. Follow the momentum. Test a foam bumper.</p></header>
 <main>
-<nav class="steps" aria-label="Investigation progress">
-  <div id="step-1" class="step active"><span class="number">1</span> Set the collision</div>
-  <div id="step-2" class="step"><span class="number">2</span> Watch before &amp; after</div>
-  <div id="step-3" class="step"><span class="number">3</span> Unpack the math</div>
-  <div id="step-4" class="step"><span class="number">4</span> Test foam bumpers</div>
+<nav aria-label="Investigation progress" class="steps">
+<div class="step active" id="step-1"><span class="number">1</span> Set the collision</div>
+<div class="step" id="step-2"><span class="number">2</span> Watch before &amp; after</div>
+<div class="step" id="step-3"><span class="number">3</span> Unpack the math</div>
+<div class="step" id="step-4"><span class="number">4</span> Test foam bumpers</div>
 </nav>
-<section class="panel">
-  <div class="context"><strong>I can</strong> explain why bouncing changes momentum differently from stopping, and why a longer collision time can reduce average force.</div>
-  <div class="row"><h2 id="scene-title">Watch a cart approach a wall</h2><span id="scene-chip" class="small muted">Right is positive (+) · Left is negative (−)</span></div>
-  <div class="scenario-view">
-    <div class="scenario-head"><span id="scene-kicker">Before the collision · values shown on the cart</span><span id="slow-label">Motion shown in instructional slow motion</span></div>
-    <svg id="stage" class="motion-stage" viewBox="0 0 1000 355" role="img" aria-labelledby="stage-title stage-desc">
-      <title id="stage-title">Animated cart and wall collision</title>
-      <desc id="stage-desc">A cart approaches a wall from the left. Its velocity and momentum are labeled above it. After the animation the cart is stopped or rebounds.</desc>
-      <defs>
-        <pattern id="gridlines" width="75" height="75" patternUnits="userSpaceOnUse"><path d="M 75 0 L 0 0 0 75" fill="none" stroke="#d7e7ef" stroke-width="1" opacity=".63"/></pattern>
-        <linearGradient id="cartPaint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b8f89"/><stop offset="1" stop-color="#246a67"/></linearGradient>
-        <linearGradient id="foamPaint" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9ad5ab"/><stop offset="1" stop-color="#45987f"/></linearGradient>
-        <pattern id="wallBrick" width="20" height="25" patternUnits="userSpaceOnUse"><rect width="20" height="25" fill="#8ea3b3"/><path d="M0 0H20M0 12H20M10 12V25" stroke="#d1dce5" stroke-width="1.8" opacity=".8"/></pattern>
-        <filter id="softShadow" x="-35%" y="-50%" width="170%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
-      </defs>
-      <rect x="0" y="0" width="1000" height="355" fill="url(#gridlines)"/>
-      <text x="25" y="32" fill="#65869a" font-size="13" font-weight="700">ONE-DIMENSIONAL MOTION</text>
-      <line x1="34" y1="289" x2="952" y2="289" stroke="#7897aa" stroke-width="5" stroke-linecap="round"/>
-      <line x1="34" y1="303" x2="952" y2="303" stroke="#c8dae4" stroke-width="10" opacity=".6" stroke-linecap="round"/>
-      <g opacity=".35" stroke="#7da2b5"><path d="M90 314v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10" stroke-width="3"/></g>
-      <g id="wall"><rect x="890" y="146" width="45" height="144" fill="url(#wallBrick)" stroke="#7e94a6" stroke-width="2" rx="3"/><rect x="935" y="145" width="7" height="146" fill="#6a8091"/><text x="911" y="132" fill="#506c82" text-anchor="middle" font-size="13" font-weight="800">WALL</text></g>
-      <g id="foam-layer"><rect id="foam-rect" x="890" y="174" width="0" height="116" rx="4" fill="url(#foamPaint)" stroke="#2f7d69" stroke-width="1.5"/><g id="foam-hatch" opacity=".45"></g></g>
-      <ellipse id="impact-glow" cx="890" cy="243" rx="23" ry="63" fill="#f2b67e" opacity="0" filter="url(#softShadow)"/>
-      <g id="motion-traces" opacity="0"><path d="M35 223h62M43 240h60M55 256h52" stroke="#b45b30" stroke-width="4" stroke-linecap="round" stroke-dasharray="25 10"/></g>
-      <g id="cart-move" transform="translate(145 0)">
-        <g id="cart-data">
-          <rect x="-117" y="55" width="234" height="94" rx="12" fill="white" stroke="#c0d9df" stroke-width="2"/>
-          <text id="cart-state" x="0" y="77" text-anchor="middle" font-weight="850" font-size="12" letter-spacing="1" fill="#226e61">BEFORE COLLISION</text>
-          <text id="cart-line-one" x="0" y="103" text-anchor="middle" fill="#193b56" font-weight="750" font-size="17">m = 0.60 kg  |  v = +4.0 m/s</text>
-          <text id="cart-line-two" x="0" y="130" text-anchor="middle" fill="#275f6b" font-weight="800" font-size="16">p = +2.40 kg·m/s</text>
-        </g>
-        <g id="motion-arrow"><line id="velocity-line" x1="-31" y1="190" x2="87" y2="190" stroke="#b45b30" stroke-width="7" stroke-linecap="round"/><path id="velocity-head" d="M87 190l-18-13v26z" fill="#b45b30"/><text id="velocity-word" x="26" y="171" font-size="14" text-anchor="middle" fill="#955330" font-weight="800">MOVING RIGHT</text></g>
-        <g id="cart-squash">
-          <ellipse cx="0" cy="285" rx="72" ry="11" fill="#5f8e99" opacity=".22"/>
-          <path d="M-69 252 L-66 220 Q-63 208 -51 208H51Q63 208 66 220L69 252Z" fill="url(#cartPaint)" stroke="#205a60" stroke-width="3"/>
-          <rect x="-46" y="220" width="92" height="23" rx="5" fill="#c7e4df" opacity=".9"/>
-          <rect x="-15" y="224" width="30" height="16" rx="3" fill="#3a7775" opacity=".65"/>
-          <rect x="-75" y="250" width="150" height="12" rx="5" fill="#29475f"/>
-          <g id="wheels" fill="#2e4156" stroke="#fff" stroke-width="2.6"><circle cx="-47" cy="269" r="17"/><circle cx="47" cy="269" r="17"/><circle cx="-47" cy="269" r="6" fill="#8bc7c0"/><circle cx="47" cy="269" r="6" fill="#8bc7c0"/></g>
-        </g>
-      </g>
-      <text x="956" y="338" text-anchor="end" font-size="12" fill="#78909f">Animation is a visual model · not a distance or time scale</text>
-    </svg>
-    <div class="stage-status" aria-live="polite" id="stage-status">Set the values below, predict the result, then press Play Collision.</div>
-  </div>
-  <div class="under-stage" aria-label="Before and after momentum summary">
-    <div class="mini-stat"><div class="tag">Before · initial momentum</div><b id="before-momentum">+2.40 kg·m/s</b><em id="before-velocity">Velocity: +4.0 m/s (right)</em></div>
-    <div class="mini-stat"><div class="tag">After · final momentum</div><b id="after-momentum">Press Play to reveal</b><em id="after-velocity">The cart may stop or rebound.</em></div>
-  </div>
-</section>
-
 <section class="panel" id="case-controls">
-  <div class="two-column">
-    <div><h2>1 · Choose the collision</h2><p class="small muted">Change a parameter, then use Play to see the result. All values describe the <strong>cart</strong>, not the wall.</p>
-      <div class="controls">
-        <div class="control"><label for="mass">Cart mass <output id="mass-value">0.60 kg</output></label><input type="range" id="mass" min="0.2" max="2" step="0.1" value="0.6"><div class="range-ends"><span>0.2 kg</span><span>2.0 kg</span></div></div>
-        <div class="control"><label for="speed">Incoming speed <output id="speed-value">4.0 m/s</output></label><input type="range" id="speed" min="1" max="10" step="0.5" value="4"><div class="range-ends"><span>1.0 m/s</span><span>10.0 m/s</span></div></div>
-        <div class="control"><label for="rebound">Rebound speed <output id="rebound-value">0%</output></label><input type="range" id="rebound" min="0" max="1" step="0.1" value="0"><div class="range-ends"><span>0% = stops</span><span>100% = same speed, left</span></div></div>
-        <div class="control"><label for="contact">Contact time <output id="contact-value">0.20 s</output></label><input type="range" id="contact" min="0.04" max="0.6" step="0.02" value="0.2"><div class="range-ends"><span>0.04 s</span><span>0.60 s</span></div></div>
-      </div>
-      <div class="action-row"><button type="button" class="btn btn-primary" id="play"><span class="icon-play">▶</span>Play collision</button><button type="button" class="btn btn-plain" id="replay">Reset view</button><button type="button" class="btn btn-next" id="next-math" hidden>Next: see momentum math →</button></div>
-    </div>
-    <aside class="flow-panel"><div class="caption">Think before you play</div><ol>
-       <li>Will the cart <strong>stop</strong> or <strong>bounce left</strong>?</li><li>Which way will its change in momentum point?</li><li>Does a shorter contact time change the momentum change, or the average force?</li>
-       </ol><p class="small"><span class="key">Quick experiment</span> Try the same mass and speed with <strong>0%</strong>, then <strong>50%</strong> rebound.</p>
-       <p class="small muted">The cart keeps a constant mass. Signed momentum is based on right = +.</p></aside>
-  </div>
-  <div id="math-panel" class="reveal-panel" hidden>
-    <div class="reveal-title">3 · Watch the momentum calculation unfold</div>
-    <div class="math-steps">
-      <div class="math-step" id="math-1"><div class="math-label">Step A · Before the collision</div><div class="equation" id="eq-before"></div><div class="exp">Momentum points right, so the initial value is positive.</div></div>
-      <div class="math-step" id="math-2"><div class="math-label">Step B · After the collision</div><div class="equation" id="eq-after"></div><div class="exp" id="after-exp"></div></div>
-      <div class="math-step" id="math-3"><div class="math-label">Step C · Subtract final minus initial</div><div class="equation" id="eq-change"></div><div class="exp" id="change-exp"></div></div>
-      <div class="math-step" id="math-4"><div class="math-label">Step D · Connect momentum change to average net force</div><div class="equation" id="eq-force"></div><div class="exp">Same change in momentum in less time means greater average net-force magnitude.</div></div>
-    </div>
-    <div class="action-row" style="padding:0 16px 17px"><button type="button" class="btn btn-primary" id="try-foam" disabled>Next: investigate foam thickness →</button><button type="button" class="btn btn-plain" id="replay-math">Replay math steps</button></div>
-  </div>
-</section>
+<div class="two-column">
+<div><h2>1 · Choose the collision</h2><p class="small muted">Change a parameter, then use Play to see the result. All values describe the <strong>cart</strong>, not the wall.</p>
+<div class="controls">
+<div class="control"><label for="mass">Cart mass <output id="mass-value">0.60 kg</output></label><input id="mass" max="2" min="0.2" step="0.1" type="range" value="0.6"/><div class="range-ends"><span>0.2 kg</span><span>2.0 kg</span></div></div>
+<div class="control"><label for="speed">Incoming speed <output id="speed-value">4.0 m/s</output></label><input id="speed" max="10" min="1" step="0.5" type="range" value="4"/><div class="range-ends"><span>1.0 m/s</span><span>10.0 m/s</span></div></div>
+<div class="control"><label for="rebound">Rebound speed <output id="rebound-value">0%</output></label><input id="rebound" max="1" min="0" step="0.1" type="range" value="0"/><div class="range-ends"><span>0% = stops</span><span>100% = same speed, left</span></div></div>
+<div class="control"><label for="contact">Contact time <output id="contact-value">0.20 s</output></label><input id="contact" max="0.6" min="0.04" step="0.02" type="range" value="0.2"/><div class="range-ends"><span>0.04 s</span><span>0.60 s</span></div></div>
+</div>
+<div class="action-row"><button class="btn btn-primary" id="play" type="button"><span class="icon-play">▶</span>Play collision</button><button class="btn btn-plain" id="replay" type="button">Reset view</button><button class="btn btn-next" hidden="" id="next-math" type="button">Next: see momentum math →</button></div>
+</div>
+<aside class="flow-panel"><div class="caption">Prediction challenge</div>
+<p><strong>Compare a stop with a rebound.</strong> With the same mass and incoming speed, which will create a larger magnitude of momentum change?</p>
+<p><strong>Change the contact time.</strong> If the cart's before-and-after speeds stay the same, what changes: its momentum change, its average force, or both?</p>
+<p class="small"><span class="key">Try two trials</span> Hold mass, speed, and time fixed. Test <strong>0%</strong> and <strong>50%</strong> rebound, then compare the animated calculations.</p>
+<p class="small muted">The model assigns right = + and left = −. Use the after-collision evidence to check your predictions.</p></aside>
+</div>
 
-<section id="foam-section" class="panel" hidden>
-  <h2>4 · A different test: what if the bumper has foam?</h2>
-  <p>Now the cart <strong>stops without bouncing</strong>. Keep its mass and incoming speed fixed. Add layers of compressible foam; a thicker layer increases the distance over which the cart stops.</p>
-  <div class="two-column">
-     <div>
-       <div class="control"><label for="foam-thickness">Foam thickness <output id="foam-value">0 cm · no foam</output></label><input id="foam-thickness" type="range" min="0" max="20" step="5" value="0"><div class="range-ends"><span>0 cm</span><span>5 cm</span><span>10 cm</span><span>15 cm</span><span>20 cm</span></div><p>Each layer is modeled as compressing through its full listed thickness.</p></div>
-       <div class="choice-row" aria-label="Choose a thickness directly">
-         <button type="button" class="choice selected" data-thickness="0">No foam</button>
-         <button type="button" class="choice" data-thickness="5">5 cm</button>
-         <button type="button" class="choice" data-thickness="10">10 cm</button>
-         <button type="button" class="choice" data-thickness="15">15 cm</button>
-         <button type="button" class="choice" data-thickness="20">20 cm</button>
-       </div>
-       <div class="action-row"><button type="button" class="btn btn-primary" id="foam-run"><span class="icon-play">▶</span>Play foam test</button><button type="button" class="btn btn-plain" id="foam-clear">Clear comparison table</button></div>
-     </div>
-     <aside class="flow-panel"><div class="caption">Prediction challenge</div><p><strong>If mass and incoming speed stay the same, what stays the same?</strong></p><p class="small">The cart starts with the same momentum and always stops, so the momentum change stays the same.</p><p class="small"><strong>What can change?</strong> Contact time and average force.</p><p class="small muted">Try <strong>0 cm</strong> and <strong>5 cm</strong>. Can you cut the average force roughly in half in this model?</p></aside>
-  </div>
-  <div id="foam-results" hidden>
-    <div class="compare-grid" aria-live="polite">
-      <div class="mini-stat"><div class="tag">Stopping time</div><b id="foam-time">—</b><em>Model's contact interval</em></div>
-      <div class="mini-stat"><div class="tag">Momentum change</div><b id="foam-impulse">—</b><em>Cart stops each time</em></div>
-      <div class="mini-stat"><div class="tag">Average net force</div><b id="foam-force">—</b><em>Magnitude, not peak impact force</em></div>
-    </div>
-    <p id="foam-comparison" class="results-note"></p>
-    <div class="force-compare" aria-label="Bar chart comparing average force with and without foam">
-      <div class="bar-label">No foam <span id="base-force-label"></span></div><div class="bar-track"><span class="bar-fill" style="width:100%"></span></div>
-      <div class="bar-label">Selected foam <span id="selected-force-label"></span></div><div class="bar-track"><span class="bar-fill foam" id="selected-force-bar" style="width:100%"></span></div>
-    </div>
-  </div>
-  <h3 style="margin-top:18px">Your trials · same cart, different bumpers</h3>
-  <div class="table-wrap"><table aria-label="Comparison of foam bumper trials"><thead><tr><th>Foam</th><th>Stopping time</th><th>Momentum change</th><th>Average force</th><th>Compared with no foam</th></tr></thead><tbody id="trial-list"><tr><td colspan="5" class="placeholder">Run a baseline trial with 0 cm, then test a thicker bumper.</td></tr></tbody></table></div>
-  <div class="note-box"><strong>How this model works:</strong> It assumes constant average deceleration during the stop and an initial 5 cm effective stopping distance even without foam. The idealized stopping distance is 5 cm + foam thickness, so <strong>Δt = 2d / v</strong>. These are <strong>not measured foam properties</strong>. Actual collision forces and foam behavior depend on material stiffness, compression, peak load, and energy loss.</div>
-  <div class="action-row"><button type="button" class="btn btn-plain" id="back-collision">← Explore another collision</button></div>
+</section><section class="panel" id="visual-section">
+<div class="context"><strong>I can</strong> explain why bouncing changes momentum differently from stopping, and why a longer collision time can reduce average force.</div>
+<div class="row"><h2 id="scene-title">Watch a cart approach a wall</h2><span class="small muted" id="scene-chip">Right is positive (+) · Left is negative (−)</span></div>
+<div class="scenario-view">
+<div class="scenario-head"><span id="scene-kicker">Before the collision · values shown on the cart</span><span id="slow-label">Motion shown in instructional slow motion</span></div>
+<svg aria-labelledby="stage-title stage-desc" class="motion-stage" id="stage" role="img" viewbox="0 0 1000 355">
+<title id="stage-title">Animated cart and wall collision</title>
+<desc id="stage-desc">A cart approaches a wall from the left. Its velocity and momentum are labeled above it. After the animation the cart is stopped or rebounds.</desc>
+<defs>
+<pattern height="75" id="gridlines" patternunits="userSpaceOnUse" width="75"><path d="M 75 0 L 0 0 0 75" fill="none" opacity=".63" stroke="#d7e7ef" stroke-width="1"></path></pattern>
+<lineargradient id="cartPaint" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#3b8f89"></stop><stop offset="1" stop-color="#246a67"></stop></lineargradient>
+<lineargradient id="foamPaint" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#9ad5ab"></stop><stop offset="1" stop-color="#45987f"></stop></lineargradient>
+<pattern height="25" id="wallBrick" patternunits="userSpaceOnUse" width="20"><rect fill="#8ea3b3" height="25" width="20"></rect><path d="M0 0H20M0 12H20M10 12V25" opacity=".8" stroke="#d1dce5" stroke-width="1.8"></path></pattern>
+<filter height="220%" id="softShadow" width="170%" x="-35%" y="-50%"><fegaussianblur stddeviation="6"></fegaussianblur></filter>
+</defs>
+<rect fill="url(#gridlines)" height="355" width="1000" x="0" y="0"></rect>
+<text fill="#65869a" font-size="13" font-weight="700" x="25" y="32">ONE-DIMENSIONAL MOTION</text>
+<line stroke="#7897aa" stroke-linecap="round" stroke-width="5" x1="34" x2="952" y1="289" y2="289"></line>
+<line opacity=".6" stroke="#c8dae4" stroke-linecap="round" stroke-width="10" x1="34" x2="952" y1="303" y2="303"></line>
+<g opacity=".35" stroke="#7da2b5"><path d="M90 314v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10m90-10v10" stroke-width="3"></path></g>
+<g id="wall"><rect fill="url(#wallBrick)" height="144" rx="3" stroke="#7e94a6" stroke-width="2" width="45" x="890" y="146"></rect><rect fill="#6a8091" height="146" width="7" x="935" y="145"></rect><text fill="#506c82" font-size="13" font-weight="800" text-anchor="middle" x="911" y="132">WALL</text></g>
+<g id="foam-layer"><rect fill="url(#foamPaint)" height="116" id="foam-rect" rx="4" stroke="#2f7d69" stroke-width="1.5" width="0" x="890" y="174"></rect><g id="foam-hatch" opacity=".45"></g></g>
+<ellipse cx="890" cy="243" fill="#f2b67e" filter="url(#softShadow)" id="impact-glow" opacity="0" rx="23" ry="63"></ellipse>
+<g id="motion-traces" opacity="0"><path d="M35 223h62M43 240h60M55 256h52" stroke="#b45b30" stroke-dasharray="25 10" stroke-linecap="round" stroke-width="4"></path></g>
+<g id="cart-move" transform="translate(145 0)">
+<g id="cart-data">
+<rect fill="white" height="94" rx="12" stroke="#c0d9df" stroke-width="2" width="234" x="-117" y="55"></rect>
+<text fill="#226e61" font-size="12" font-weight="850" id="cart-state" letter-spacing="1" text-anchor="middle" x="0" y="77">BEFORE COLLISION</text>
+<text fill="#193b56" font-size="17" font-weight="750" id="cart-line-one" text-anchor="middle" x="0" y="103">m = 0.60 kg  |  v = +4.0 m/s</text>
+<text fill="#275f6b" font-size="16" font-weight="800" id="cart-line-two" text-anchor="middle" x="0" y="130">p = +2.40 kg·m/s</text>
+</g>
+<g id="motion-arrow"><line id="velocity-line" stroke="#b45b30" stroke-linecap="round" stroke-width="7" x1="-31" x2="87" y1="190" y2="190"></line><path d="M87 190l-18-13v26z" fill="#b45b30" id="velocity-head"></path><text fill="#955330" font-size="14" font-weight="800" id="velocity-word" text-anchor="middle" x="26" y="171">MOVING RIGHT</text></g>
+<g id="cart-squash">
+<ellipse cx="0" cy="285" fill="#5f8e99" opacity=".22" rx="72" ry="11"></ellipse>
+<path d="M-69 252 L-66 220 Q-63 208 -51 208H51Q63 208 66 220L69 252Z" fill="url(#cartPaint)" stroke="#205a60" stroke-width="3"></path>
+<rect fill="#c7e4df" height="23" opacity=".9" rx="5" width="92" x="-46" y="220"></rect>
+<rect fill="#3a7775" height="16" opacity=".65" rx="3" width="30" x="-15" y="224"></rect>
+<rect fill="#29475f" height="12" rx="5" width="150" x="-75" y="250"></rect>
+<g fill="#2e4156" id="wheels" stroke="#fff" stroke-width="2.6"><circle cx="-47" cy="269" r="17"></circle><circle cx="47" cy="269" r="17"></circle><circle cx="-47" cy="269" fill="#8bc7c0" r="6"></circle><circle cx="47" cy="269" fill="#8bc7c0" r="6"></circle></g>
+</g>
+</g>
+<text fill="#78909f" font-size="12" text-anchor="end" x="956" y="338">Animation is a visual model · not a distance or time scale</text>
+</svg>
+<div aria-live="polite" class="stage-status" id="stage-status">Set the values below, predict the result, then press Play Collision.</div>
+</div>
+<div aria-label="Before and after momentum summary" class="under-stage">
+<div class="mini-stat"><div class="tag">Before · initial momentum</div><b id="before-momentum">+2.40 kg·m/s</b><em id="before-velocity">Velocity: +4.0 m/s (right)</em></div>
+<div class="mini-stat"><div class="tag">After · final momentum</div><b id="after-momentum">Press Play to reveal</b><em id="after-velocity">Outcome appears after Play.</em></div>
+</div>
+</section><div class="reveal-panel" hidden="" id="math-panel">
+<div class="reveal-title">3 · Watch the momentum calculation unfold</div>
+<div class="math-steps">
+<div class="math-step" id="math-1"><div class="math-label">Step A · Before the collision</div><div class="equation" id="eq-before"></div><div class="exp">Momentum points right, so the initial value is positive.</div></div>
+<div class="math-step" id="math-2"><div class="math-label">Step B · After the collision</div><div class="equation" id="eq-after"></div><div class="exp" id="after-exp"></div></div>
+<div class="math-step" id="math-3"><div class="math-label">Step C · Subtract final minus initial</div><div class="equation" id="eq-change"></div><div class="exp" id="change-exp"></div></div>
+<div class="math-step" id="math-4"><div class="math-label">Step D · Connect momentum change to average net force</div><div class="equation" id="eq-force"></div><div class="exp">Same change in momentum in less time means greater average net-force magnitude.</div></div>
+</div>
+<div class="action-row" style="padding:0 16px 17px"><button class="btn btn-primary" disabled="" id="try-foam" type="button">Next: investigate foam thickness →</button><button class="btn btn-plain" id="replay-math" type="button">Replay math steps</button></div>
+</div>
+
+<section class="panel" hidden="" id="foam-section">
+<h2>4 · A different test: what if the bumper has foam?</h2>
+<p>Now the cart <strong>stops without bouncing</strong>. Keep its mass and incoming speed fixed. Add layers of compressible foam; a thicker layer increases the distance over which the cart stops.</p>
+<div class="two-column">
+<div>
+<div class="control"><label for="foam-thickness">Foam thickness <output id="foam-value">0 cm · no foam</output></label><input id="foam-thickness" max="20" min="0" step="5" type="range" value="0"/><div class="range-ends"><span>0 cm</span><span>5 cm</span><span>10 cm</span><span>15 cm</span><span>20 cm</span></div><p>Each layer is modeled as compressing through its full listed thickness.</p></div>
+<div aria-label="Choose a thickness directly" class="choice-row">
+<button class="choice selected" data-thickness="0" type="button">No foam</button>
+<button class="choice" data-thickness="5" type="button">5 cm</button>
+<button class="choice" data-thickness="10" type="button">10 cm</button>
+<button class="choice" data-thickness="15" type="button">15 cm</button>
+<button class="choice" data-thickness="20" type="button">20 cm</button>
+</div>
+<div class="action-row"><button class="btn btn-primary" id="foam-run" type="button"><span class="icon-play">▶</span>Play foam test</button><button class="btn btn-plain" id="foam-clear" type="button">Clear comparison table</button></div>
+</div>
+<aside class="flow-panel"><div class="caption">Prediction challenge</div><p><strong>If mass and incoming speed stay the same, what stays the same?</strong></p><p class="small">The cart starts with the same momentum and always stops, so the momentum change stays the same.</p><p class="small"><strong>What can change?</strong> Contact time and average force.</p><p class="small muted">Try <strong>0 cm</strong> and <strong>5 cm</strong>. Can you cut the average force roughly in half in this model?</p></aside>
+</div>
+<div hidden="" id="foam-results">
+<div aria-live="polite" class="compare-grid">
+<div class="mini-stat"><div class="tag">Stopping time</div><b id="foam-time">—</b><em>Model's contact interval</em></div>
+<div class="mini-stat"><div class="tag">Momentum change</div><b id="foam-impulse">—</b><em>Cart stops each time</em></div>
+<div class="mini-stat"><div class="tag">Average net force</div><b id="foam-force">—</b><em>Magnitude, not peak impact force</em></div>
+</div>
+<p class="results-note" id="foam-comparison"></p>
+<div aria-label="Bar chart comparing average force with and without foam" class="force-compare">
+<div class="bar-label">No foam <span id="base-force-label"></span></div><div class="bar-track"><span class="bar-fill" style="width:100%"></span></div>
+<div class="bar-label">Selected foam <span id="selected-force-label"></span></div><div class="bar-track"><span class="bar-fill foam" id="selected-force-bar" style="width:100%"></span></div>
+</div>
+</div>
+<h3 style="margin-top:18px">Your trials · same cart, different bumpers</h3>
+<div class="table-wrap"><table aria-label="Comparison of foam bumper trials"><thead><tr><th>Foam</th><th>Stopping time</th><th>Momentum change</th><th>Average force</th><th>Compared with no foam</th></tr></thead><tbody id="trial-list"><tr><td class="placeholder" colspan="5">Run a baseline trial with 0 cm, then test a thicker bumper.</td></tr></tbody></table></div>
+<div class="note-box"><strong>How this model works:</strong> It assumes constant average deceleration during the stop and an initial 5 cm effective stopping distance even without foam. The idealized stopping distance is 5 cm + foam thickness, so <strong>Δt = 2d / v</strong>. These are <strong>not measured foam properties</strong>. Actual collision forces and foam behavior depend on material stiffness, compression, peak load, and energy loss.</div>
+<div class="action-row"><button class="btn btn-plain" id="back-collision" type="button">← Explore another collision</button></div>
 </section>
 <footer>Physics Build · 5.1.3 · Original learning model, offline-capable · No accounts, data collection or third-party libraries. Values are illustrative; the animation runs in slow motion to show the sequence. <strong>Average net force</strong> is not peak contact force or an injury prediction.</footer>
 </main>
@@ -244,17 +244,17 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
   }
   function setCart(x,squash=1){position=x;$('cart-move').setAttribute('transform','translate('+x.toFixed(2)+' 0)');$('cart-squash').setAttribute('transform','scale('+squash.toFixed(3)+' 1)')}
   function foamLayer(cm,compress=0){const w=cm*6.4*(1-.58*compress);$('foam-rect').setAttribute('x',(wallX-w).toFixed(2));$('foam-rect').setAttribute('width',w.toFixed(2));$('foam-rect').setAttribute('opacity',cm?'1':'0')}
-  function resetScene(preserveFoam=false){cancelAnimationFrame(raf);locked(false);const c=collision(snapshot());const cm=preserveFoam?+$('foam-thickness').value:0;const f=preserveFoam?foamCase(c,cm):c;foamLayer(cm,0);setCart(145);$('impact-glow').setAttribute('opacity','0');$('motion-traces').setAttribute('opacity','0');showReadout('BEFORE COLLISION',f);$('before-momentum').textContent=positive(f.pi)+' kg·m/s';$('before-velocity').textContent='Velocity: +'+f.v.toFixed(1)+' m/s (right)';$('after-momentum').textContent='Press Play to reveal';$('after-velocity').textContent='The cart may stop or rebound.';if(preserveFoam){say('Choose a foam thickness and press Play Foam Test. The cart always stops.');$('scene-kicker').textContent='Foam trial · before the collision';$('scene-title').textContent='How far can the bumper compress?'}else{say('Set the values below, predict the result, then press Play Collision.');$('scene-kicker').textContent='Before the collision · values shown on the cart';$('scene-title').textContent='Watch a cart approach a wall'}}
+  function resetScene(preserveFoam=false){cancelAnimationFrame(raf);locked(false);const c=collision(snapshot());const cm=preserveFoam?+$('foam-thickness').value:0;const f=preserveFoam?foamCase(c,cm):c;foamLayer(cm,0);setCart(145);$('impact-glow').setAttribute('opacity','0');$('motion-traces').setAttribute('opacity','0');showReadout('BEFORE COLLISION',f);$('before-momentum').textContent=positive(f.pi)+' kg·m/s';$('before-velocity').textContent='Velocity: +'+f.v.toFixed(1)+' m/s (right)';$('after-momentum').textContent='Press Play to reveal';$('after-velocity').textContent='Outcome appears after Play.';if(preserveFoam){say('Choose a foam thickness and press Play Foam Test. The cart always stops.');$('scene-kicker').textContent='Foam trial · before the collision';$('scene-title').textContent='How far can the bumper compress?'}else{say('Set the values above, then press Play Collision. The cart keeps its speed until it reaches the wall.');$('scene-kicker').textContent='Before the collision · values shown on the cart';$('scene-title').textContent='Watch a cart approach a wall'}}
   function clearMath(){mathTimers.forEach(clearTimeout);mathTimers=[];document.querySelectorAll('.math-step').forEach(e=>e.classList.remove('visible'));$('try-foam').disabled=true}
   function updateControls(){const c=collision(snapshot());$('mass-value').textContent=c.m.toFixed(2)+' kg';$('speed-value').textContent=c.v.toFixed(1)+' m/s';$('rebound-value').textContent=Math.round(c.r*100)+'%';$('contact-value').textContent=c.t.toFixed(2)+' s';stage='setup';progress(1);$('math-panel').hidden=true;$('next-math').hidden=true;$('foam-section').hidden=true;clearMath();resetScene(false)}
   function easeOut(t){return 1-Math.pow(1-t,3)}
-  function easeInOut(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
   function animatePath(c,isFoam,cm){
     if(busy)return;
     const goal=wallX-(isFoam?cm*6.4:0)-76;
     const end=wallX-(isFoam?cm*6.4*.42:0)-76;
     const contactDuration=reduced?90:Math.max(420,Math.min(1700,380+c.t*5200));
-    const moveDuration=reduced?90:Math.max(850,1900-c.v*95);
+    // Approach is constant-velocity motion. In this visual, distance / time is constant until contact.
+    const moveDuration=reduced?90:Math.max(700,Math.min(3200,(goal-145)*12/c.v));
     const reboundDuration=reduced?70:(c.vf<0?1100:320);
     const total=moveDuration+contactDuration+reboundDuration;
     locked(true);
@@ -264,16 +264,16 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
     $('scene-kicker').textContent='Playing · first the approach, then the collision';
     const start=performance.now();let phase=-1;
     function tick(now){const elapsed=Math.min(total,now-start);
-      if(elapsed<moveDuration){if(phase!==0){phase=0;showReadout('BEFORE COLLISION',c)}const k=easeInOut(elapsed/moveDuration);setCart(145+(goal-145)*k);}
-      else if(elapsed<moveDuration+contactDuration){if(phase!==1){phase=1;say('Contact! The cart’s momentum is changing. Watch the bumper compress.');$('cart-state').textContent='DURING CONTACT';$('cart-line-one').textContent='Velocity is changing';$('cart-line-two').textContent='Momentum is changing'}const k=easeOut((elapsed-moveDuration)/contactDuration);setCart(goal+(end-goal)*k,1-.08*Math.sin(Math.PI*k));if(isFoam)foamLayer(cm,k);$('impact-glow').setAttribute('opacity',String(Math.sin(Math.PI*k)*.46));}
+      if(elapsed<moveDuration){if(phase!==0){phase=0;showReadout('BEFORE COLLISION',c)}const k=elapsed/moveDuration;setCart(145+(goal-145)*k);}
+      else if(elapsed<moveDuration+contactDuration){if(phase!==1){phase=1;say('Contact! The cart’s momentum is changing. Watch the bumper compress.');$('cart-state').textContent='DURING CONTACT';$('cart-line-one').textContent='Velocity is changing';$('cart-line-two').textContent='Momentum is changing'}const k=easeOut((elapsed-moveDuration)/contactDuration);setCart(goal+(end-goal)*k+(isFoam?0:6*Math.sin(Math.PI*k)),1-.08*Math.sin(Math.PI*k));if(isFoam)foamLayer(cm,k);$('impact-glow').setAttribute('opacity',String(Math.sin(Math.PI*k)*.46));}
       else{if(phase!==2){phase=2;showReadout(isFoam?'AFTER FOAM TEST':'AFTER COLLISION',c);say(c.vf<0?'After contact: the cart rebounds to the left.':'After contact: the cart has stopped.');$('impact-glow').setAttribute('opacity','0');$('motion-traces').setAttribute('opacity','0')}
-       const k=easeOut((elapsed-moveDuration-contactDuration)/reboundDuration);const back=c.vf<0?Math.min(315,70+Math.abs(c.vf)*28):0;setCart(end-back*k);
+       const k=(elapsed-moveDuration-contactDuration)/reboundDuration;const back=c.vf<0?Math.min(315,70+Math.abs(c.vf)*28):0;setCart(end-back*k);
       }
       if(elapsed<total){raf=requestAnimationFrame(tick)}else{locked(false);stage=isFoam?'foam-result':'collision-result';if(isFoam){showFoamResults(c);$('scene-kicker').textContent='After foam test · compare your trials'}else{progress(2);$('next-math').hidden=false;$('scene-kicker').textContent='After collision · now compare the values'}$('after-momentum').textContent=signed(c.pf)+' kg·m/s';$('after-velocity').textContent=c.vf<0?'Velocity: '+signed(c.vf,1)+' m/s (left)':'Velocity: 0.0 m/s (stopped)';say(c.vf<0?'The cart bounced left. Its final momentum is negative. Choose Next to see the change.':isFoam?'The cart stopped. Add or remove foam to test another contact time.':'The cart stopped. Choose Next to see the change in momentum.');}
     }
     raf=requestAnimationFrame(tick);
   }
-  function playMain(){if(busy)return;clearMath();$('math-panel').hidden=true;$('next-math').hidden=true;resetScene(false);const c=collision(snapshot());stage='playing';animatePath(c,false,0)}
+  function playMain(){if(busy)return;clearMath();$('math-panel').hidden=true;$('next-math').hidden=true;resetScene(false);const c=collision(snapshot());stage='playing';$('visual-section').scrollIntoView({block:'start',behavior:'instant'});requestAnimationFrame(()=>animatePath(c,false,0))}
   function math(){if(busy||stage!=='collision-result')return;stage='math';progress(3);const c=collision(snapshot());const ve=c.vf<0?positive(c.vf,1):'0.0';const pf=signed(c.pf),pi=positive(c.pi),dp=signed(c.dp);
     $('eq-before').textContent='pᵢ = m × vᵢ = '+c.m.toFixed(2)+' × (+'+c.v.toFixed(1)+') = '+pi+' kg·m/s';
     $('eq-after').textContent='p𝒇 = m × v𝒇 = '+c.m.toFixed(2)+' × ('+ve+') = '+pf+' kg·m/s';
@@ -286,9 +286,9 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
     for(let i=1;i<=4;i++){mathTimers.push(setTimeout(()=>{$('math-'+i).classList.add('visible');if(i===4){$('try-foam').disabled=false}},delay*(i-1)+80))}
     $('math-panel').scrollIntoView({block:'nearest',behavior:reduced?'instant':'smooth'});
   }
-  function chooseFoam(){if(busy)return;const now=snapshot();const signature=now.m.toFixed(2)+'|'+now.v.toFixed(1);if(signature!==foamSignature){trials.clear();displayTrials();foamSignature=signature}stage='foam';progress(4);$('foam-section').hidden=false;$('case-controls').hidden=true;$('scene-chip').textContent='Foam study · no rebound in these trials';$('slow-label').textContent='Visualized in instructional slow motion';$('foam-thickness').value='0';updateFoam(true);$('foam-section').scrollIntoView({block:'nearest',behavior:reduced?'instant':'smooth'})}
+  function chooseFoam(){if(busy)return;const now=snapshot();const signature=now.m.toFixed(2)+'|'+now.v.toFixed(1);if(signature!==foamSignature){trials.clear();displayTrials();foamSignature=signature}stage='foam';progress(4);$('foam-section').hidden=false;$('case-controls').hidden=true;$('math-panel').hidden=true;$('scene-chip').textContent='Foam study · no rebound in these trials';$('slow-label').textContent='Visualized in instructional slow motion';$('foam-thickness').value='0';updateFoam(true);$('foam-section').scrollIntoView({block:'nearest',behavior:reduced?'instant':'smooth'})}
   function updateFoam(reset=true){const cm=+$('foam-thickness').value;$('foam-value').textContent=cm===0?'0 cm · no foam':cm+' cm';document.querySelectorAll('[data-thickness]').forEach(e=>{const b=+e.dataset.thickness===cm;e.classList.toggle('selected',b);e.setAttribute('aria-pressed',String(b))});$('foam-results').hidden=true;if(reset&&!busy)resetScene(true)}
-  function runFoam(){if(busy)return;const c=foamCase(snapshot(),+$('foam-thickness').value);resetScene(true);$('foam-results').hidden=true;stage='foam-playing';animatePath(c,true,c.cm)}
+  function runFoam(){if(busy)return;const c=foamCase(snapshot(),+$('foam-thickness').value);resetScene(true);$('foam-results').hidden=true;stage='foam-playing';$('visual-section').scrollIntoView({block:'start',behavior:'instant'});requestAnimationFrame(()=>animatePath(c,true,c.cm))}
   function showFoamResults(c){$('foam-results').hidden=false;$('foam-time').textContent=c.t.toFixed(3)+' s';$('foam-impulse').textContent=signed(c.dp)+' N·s';$('foam-force').textContent=c.force.toFixed(1)+' N';const baseline=foamCase(c,0);const reduction=100*(1-c.force/baseline.force);$('foam-comparison').textContent=c.cm===0?'This is the no-foam comparison case. Now try 5, 10 or 20 cm.':'Compared with no foam, the model predicts '+reduction.toFixed(0)+'% less average force for the same momentum change.';$('base-force-label').textContent=baseline.force.toFixed(1)+' N';$('selected-force-label').textContent=c.force.toFixed(1)+' N';$('selected-force-bar').style.width=(100*c.force/baseline.force).toFixed(1)+'%';
     trials.set(c.cm,{...c});displayTrials();}
   function displayTrials(){const rows=[...trials.values()].sort((a,b)=>a.cm-b.cm);const body=$('trial-list');body.replaceChildren();if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=5;td.className='placeholder';td.textContent='Run a baseline trial with 0 cm, then test a thicker bumper.';tr.append(td);body.append(tr);return}for(const c of rows){const base=foamCase(c,0);const tr=document.createElement('tr');const vals=[c.cm+' cm',c.t.toFixed(3)+' s',signed(c.dp)+' N·s',c.force.toFixed(1)+' N',c.cm===0?'Baseline':(100*(1-c.force/base.force)).toFixed(0)+'% lower'];vals.forEach((val,i)=>{const td=document.createElement('td');td.textContent=val;if(i===3)td.className='td-strong';tr.append(td)});body.append(tr)}}
