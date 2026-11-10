@@ -86,6 +86,21 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
 @media(max-width:600px){header{padding:16px 15px}main{padding:12px 10px 45px}.panel{padding:13px;border-radius:11px}.steps{gap:6px}.step{min-width:calc(50% - 3px);padding:8px 7px;font-size:11px}.controls,.under-stage{grid-template-columns:1fr}.compare-grid{grid-template-columns:1fr 1fr}.scenario-head{padding:9px 10px}.motion-stage{min-height:180px}.mini-stat b{font-size:18px}.action-row .btn{flex:1}.flow-panel{padding:12px}.math-steps{padding:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.math-step{transition:none}.btn{transition:none}}
 @media print{body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}header{padding:14px}.panel,.step{break-inside:avoid;box-shadow:none}.btn,.steps,.action-row{display:none}.math-step{opacity:1;visibility:visible;transform:none}}
+
+/* Guided five-step foam investigation */
+.lab-progress{border:1px solid #cee2db;border-radius:10px;padding:12px 14px;background:#eff8f4;margin:13px 0 16px;color:#1d6954;font-weight:850}
+.lab-progress-track{height:9px;margin-top:10px;background:#d3e6dd;border-radius:99px;overflow:hidden}
+#foam-progress-bar{display:block;background:#287663;width:0%;height:100%;transition:width .4s ease}
+.locked-choice{color:#788c9c;background:#f5f7f9;border-color:#d8e2e8;cursor:default;opacity:1!important}
+.choice.completed{background:#e3f3ed;border-color:#78ad99;color:#185e4d;font-weight:850;opacity:1!important}
+.choice.current{background:#e8f0f8;border-color:#7099bb;color:#174f73;font-weight:850;opacity:1!important}
+.lab-discussion{margin-top:18px;border:1px solid #b5d6c8;border-radius:12px;background:#f5fbf8;padding:17px}
+.lab-discussion h3{color:#1d6654;font-size:18px}
+.lab-discussion label{display:block;margin:12px 0 6px;font-size:13px;color:#263f54}
+.lab-discussion textarea{width:100%;min-height:68px;background:white;border:1px solid #bfd1db;border-radius:8px;padding:11px;color:#263f54;font-size:14px;resize:vertical}
+.lab-discussion textarea:focus-visible{outline:3px solid #82b9ac}
+.lab-discussion .note-box{margin-top:13px;background:#fffaf2}
+@media(max-width:600px){.lab-discussion{padding:12px}.lab-discussion textarea{min-height:85px}}
 </style>
 </head>
 <body>
@@ -95,18 +110,18 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
 <div class="step active" id="step-1"><span class="number">1</span> Set the collision</div>
 <div class="step" id="step-2"><span class="number">2</span> Watch before &amp; after</div>
 <div class="step" id="step-3"><span class="number">3</span> Unpack the math</div>
-<div class="step" id="step-4"><span class="number">4</span> Test foam bumpers</div>
+<div class="step" id="step-4"><span class="number">4</span> Five foam trials + conclusion</div>
 </nav>
 <section class="panel" id="case-controls">
 <div class="two-column">
-<div><h2>1 · Choose the collision</h2><p class="small muted">Change a parameter, then use Play to see the result. All values describe the <strong>cart</strong>, not the wall.</p>
+<div><h2>1 · Choose the cart and collision</h2><p class="small muted">Set mass and speed, then start the five-trial foam investigation. You may also explore a rebound first.</p>
 <div class="controls">
 <div class="control"><label for="mass">Cart mass <output id="mass-value">0.60 kg</output></label><input id="mass" max="2" min="0.2" step="0.1" type="range" value="0.6"/><div class="range-ends"><span>0.2 kg</span><span>2.0 kg</span></div></div>
 <div class="control"><label for="speed">Incoming speed <output id="speed-value">4.0 m/s</output></label><input id="speed" max="10" min="1" step="0.5" type="range" value="4"/><div class="range-ends"><span>1.0 m/s</span><span>10.0 m/s</span></div></div>
 <div class="control"><label for="rebound">Rebound speed <output id="rebound-value">0%</output></label><input id="rebound" max="1" min="0" step="0.1" type="range" value="0"/><div class="range-ends"><span>0% = stops</span><span>100% = same speed, left</span></div></div>
 <div class="control"><label for="contact">Contact time <output id="contact-value">0.20 s</output></label><input id="contact" max="0.6" min="0.04" step="0.02" type="range" value="0.2"/><div class="range-ends"><span>0.04 s</span><span>0.60 s</span></div></div>
 </div>
-<div class="action-row"><button class="btn btn-primary" id="play" type="button"><span class="icon-play">▶</span>Play collision</button><button class="btn btn-plain" id="replay" type="button">Reset view</button><button class="btn btn-next" hidden="" id="next-math" type="button">Next: see momentum math →</button></div>
+<div class="action-row"><button class="btn btn-primary" id="play" type="button"><span class="icon-play">▶</span>Play collision</button><button class="btn btn-plain" id="replay" type="button">Reset view</button><button class="btn btn-next" hidden="" id="next-math" type="button">Next: see momentum math →</button><button class="btn btn-primary" id="start-foam" type="button">Start the 5-trial foam investigation →</button></div>
 </div>
 <aside class="flow-panel"><div class="caption">Prediction challenge</div>
 <p><strong>Compare a stop with a rebound.</strong> With the same mass and incoming speed, which will create a larger magnitude of momentum change?</p>
@@ -114,9 +129,8 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
 <p class="small"><span class="key">Try two trials</span> Hold mass, speed, and time fixed. Test <strong>0%</strong> and <strong>50%</strong> rebound, then compare the animated calculations.</p>
 <p class="small muted">The model assigns right = + and left = −. Use the after-collision evidence to check your predictions.</p></aside>
 </div>
-
 </section><section class="panel" id="visual-section">
-<div class="context"><strong>I can</strong> explain why bouncing changes momentum differently from stopping, and why a longer collision time can reduce average force.</div>
+<div class="context"><strong>I can</strong> compare five foam bumper designs, use their measured-from-model results as evidence, and explain why a longer stop changes average force but not momentum change.</div>
 <div class="row"><h2 id="scene-title">Watch a cart approach a wall</h2><span class="small muted" id="scene-chip">Right is positive (+) · Left is negative (−)</span></div>
 <div class="scenario-view">
 <div class="scenario-head"><span id="scene-kicker">Before the collision · values shown on the cart</span><span id="slow-label">Motion shown in instructional slow motion</span></div>
@@ -172,25 +186,31 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
 <div class="math-step" id="math-3"><div class="math-label">Step C · Subtract final minus initial</div><div class="equation" id="eq-change"></div><div class="exp" id="change-exp"></div></div>
 <div class="math-step" id="math-4"><div class="math-label">Step D · Connect momentum change to average net force</div><div class="equation" id="eq-force"></div><div class="exp">Same change in momentum in less time means greater average net-force magnitude.</div></div>
 </div>
-<div class="action-row" style="padding:0 16px 17px"><button class="btn btn-primary" disabled="" id="try-foam" type="button">Next: investigate foam thickness →</button><button class="btn btn-plain" id="replay-math" type="button">Replay math steps</button></div>
+<div class="action-row" style="padding:0 16px 17px"><button class="btn btn-primary" disabled="" id="try-foam" type="button">Next: start the five-trial foam lab →</button><button class="btn btn-plain" id="replay-math" type="button">Replay math steps</button></div>
 </div>
-
 <section class="panel" hidden="" id="foam-section">
-<h2>4 · A different test: what if the bumper has foam?</h2>
-<p>Now the cart <strong>stops without bouncing</strong>. Keep its mass and incoming speed fixed. Add layers of compressible foam; a thicker layer increases the distance over which the cart stops.</p>
+<h2>4 · The five-trial foam bumper laboratory</h2><p>Keep the <strong>same mass and incoming speed</strong>. The cart stops in every test. You must run each thickness in order, starting with no foam. Watch the collision, record the result, and compare all five trials before answering the discussion questions.</p><div class="lab-progress"><span id="foam-progress-label">Trial 1 of 5 · No foam</span><div class="lab-progress-track"><span id="foam-progress-bar"></span></div></div>
+
 <div class="two-column">
 <div>
-<div class="control"><label for="foam-thickness">Foam thickness <output id="foam-value">0 cm · no foam</output></label><input id="foam-thickness" max="20" min="0" step="5" type="range" value="0"/><div class="range-ends"><span>0 cm</span><span>5 cm</span><span>10 cm</span><span>15 cm</span><span>20 cm</span></div><p>Each layer is modeled as compressing through its full listed thickness.</p></div>
-<div aria-label="Choose a thickness directly" class="choice-row">
-<button class="choice selected" data-thickness="0" type="button">No foam</button>
-<button class="choice" data-thickness="5" type="button">5 cm</button>
-<button class="choice" data-thickness="10" type="button">10 cm</button>
-<button class="choice" data-thickness="15" type="button">15 cm</button>
-<button class="choice" data-thickness="20" type="button">20 cm</button>
+<div class="control"><label>Current required trial <output id="foam-value">0 cm · no foam</output></label>
+<input aria-label="Foam thickness selected automatically by the guided lab" disabled="" id="foam-thickness" max="20" min="0" step="5" type="range" value="0"/>
+<div class="range-ends"><span>0 cm</span><span>5 cm</span><span>10 cm</span><span>15 cm</span><span>20 cm</span></div><p>The lab unlocks one thickness at a time. All five trials are required.</p></div>
+<div aria-label="Five required foam trials shown in order" class="choice-row">
+<button aria-disabled="true" aria-pressed="false" class="choice locked-choice" data-thickness="0" disabled="" type="button">No foam</button>
+<button aria-disabled="true" aria-pressed="false" class="choice locked-choice" data-thickness="5" disabled="" type="button">5 cm</button>
+<button aria-disabled="true" aria-pressed="false" class="choice locked-choice" data-thickness="10" disabled="" type="button">10 cm</button>
+<button aria-disabled="true" aria-pressed="false" class="choice locked-choice" data-thickness="15" disabled="" type="button">15 cm</button>
+<button aria-disabled="true" aria-pressed="false" class="choice locked-choice" data-thickness="20" disabled="" type="button">20 cm</button>
 </div>
-<div class="action-row"><button class="btn btn-primary" id="foam-run" type="button"><span class="icon-play">▶</span>Play foam test</button><button class="btn btn-plain" id="foam-clear" type="button">Clear comparison table</button></div>
+<div class="action-row"><button class="btn btn-primary" id="foam-run" type="button"><span class="icon-play">▶</span>Run trial 1 of 5 · No foam</button>
+<button class="btn btn-next" hidden="" id="foam-next" type="button">Next trial: 5 cm →</button>
+<button class="btn btn-plain" id="foam-clear" type="button">Restart all five trials</button></div>
 </div>
-<aside class="flow-panel"><div class="caption">Prediction challenge</div><p><strong>If mass and incoming speed stay the same, what stays the same?</strong></p><p class="small">The cart starts with the same momentum and always stops, so the momentum change stays the same.</p><p class="small"><strong>What can change?</strong> Contact time and average force.</p><p class="small muted">Try <strong>0 cm</strong> and <strong>5 cm</strong>. Can you cut the average force roughly in half in this model?</p></aside>
+<aside class="flow-panel"><div class="caption">Before collecting data</div>
+<p><strong>Prediction:</strong> If all five carts start with the same mass and velocity and all finish at rest, which quantity should stay the same?</p>
+<p><strong>What should change?</strong> As more foam compresses, predict what will happen to stopping time and average force.</p>
+<p class="small muted">Do not look ahead to future trial results. Compare your prediction with the growing table after each impact.</p></aside>
 </div>
 <div hidden="" id="foam-results">
 <div aria-live="polite" class="compare-grid">
@@ -205,8 +225,24 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
 </div>
 </div>
 <h3 style="margin-top:18px">Your trials · same cart, different bumpers</h3>
-<div class="table-wrap"><table aria-label="Comparison of foam bumper trials"><thead><tr><th>Foam</th><th>Stopping time</th><th>Momentum change</th><th>Average force</th><th>Compared with no foam</th></tr></thead><tbody id="trial-list"><tr><td class="placeholder" colspan="5">Run a baseline trial with 0 cm, then test a thicker bumper.</td></tr></tbody></table></div>
-<div class="note-box"><strong>How this model works:</strong> It assumes constant average deceleration during the stop and an initial 5 cm effective stopping distance even without foam. The idealized stopping distance is 5 cm + foam thickness, so <strong>Δt = 2d / v</strong>. These are <strong>not measured foam properties</strong>. Actual collision forces and foam behavior depend on material stiffness, compression, peak load, and energy loss.</div>
+<div class="table-wrap"><table aria-label="Comparison of foam bumper trials"><thead><tr><th>Foam</th><th>Stopping time</th><th>Momentum change</th><th>Average force</th><th>Compared with no foam</th></tr></thead><tbody id="trial-list"><tr data-row="0"><td><b>0 cm</b></td><td class="placeholder" colspan="4">Ready to test</td></tr><tr data-row="5"><td><b>5 cm</b></td><td class="placeholder" colspan="4">Locked: complete the earlier trials</td></tr><tr data-row="10"><td><b>10 cm</b></td><td class="placeholder" colspan="4">Locked: complete the earlier trials</td></tr><tr data-row="15"><td><b>15 cm</b></td><td class="placeholder" colspan="4">Locked: complete the earlier trials</td></tr><tr data-row="20"><td><b>20 cm</b></td><td class="placeholder" colspan="4">Locked: complete the earlier trials</td></tr></tbody></table></div>
+<div class="note-box"><strong>How this model works:</strong> It assumes constant average deceleration during the stop and an initial 5 cm effective stopping distance even without foam. The idealized stopping distance is 5 cm + foam thickness, so <strong>Δt = 2d / v</strong>. These are <strong>not measured foam properties</strong>. Actual collision forces and foam behavior depend on material stiffness, compression, peak load, and energy loss.</div><div class="lab-discussion" hidden="" id="foam-discussion">
+<h3>All five trials completed · Explain the evidence</h3>
+<p class="small muted">Use your completed table. You may also write your answers on pages 6–7 of the student packet.</p>
+<label for="dq1"><b>1. What stayed the same in every trial? Explain using initial and final momentum.</b></label>
+<textarea id="dq1" placeholder="Use the five trials as evidence..." rows="2"></textarea>
+<label for="dq2"><b>2. How did stopping time and average force change as the foam became thicker? Cite two trials.</b></label>
+<textarea id="dq2" placeholder="For example, compare 0 cm with 10 cm..." rows="2"></textarea>
+<label for="dq3"><b>3. The 5 cm bumper doubles stopping distance in this model. Why doesn't it halve the momentum change?</b></label>
+<textarea id="dq3" placeholder="Distinguish momentum change from average force..." rows="2"></textarea>
+<label for="dq4"><b>4. What is one limitation of using this simulation to choose a real helmet, mat, or vehicle bumper?</b></label>
+<textarea id="dq4" placeholder="Consider real material behavior or peak force..." rows="2"></textarea>
+<div class="action-row"><button class="btn btn-plain" id="foam-reasoning" type="button">Reveal discussion talking points</button></div>
+<div class="note-box" hidden="" id="foam-talking-points"><b>Check your reasoning:</b>
+<ol><li>Initial momentum and final momentum stay fixed, so Δp = −2.40 kg·m/s at the default settings.</li>
+<li>Longer stopping distance gives longer stopping time and lower average force. For example, 0 cm: 0.025 s, 96.0 N; 10 cm: 0.075 s, 32.0 N.</li>
+<li>The cart has the same before/after momentum. Only the contact interval changes; the required impulse does not.</li>
+<li>Real foam may not compress completely, may bottom out, and may have a highly variable force-time curve. These are predicted averages, not measured impact forces or injury ratings.</li></ol></div></div>
 <div class="action-row"><button class="btn btn-plain" id="back-collision" type="button">← Explore another collision</button></div>
 </section>
 <footer>Physics Build · 5.1.3 · Original learning model, offline-capable · No accounts, data collection or third-party libraries. Values are illustrative; the animation runs in slow motion to show the sequence. <strong>Average net force</strong> is not peak contact force or an injury prediction.</footer>
@@ -222,12 +258,12 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
   const wallX=890;
   const defaults={mass:.6,speed:4,rebound:0,contact:.2};
   let stage='setup',busy=false,raf=0,mathTimers=[],trials=new Map();
-  let position=145,foamSignature='';
+  let position=145,foamSignature='';const FOAM_ORDER=[0,5,10,15,20];let foamStepIndex=0;
   const snapshot=()=>({m:+$('mass').value,v:+$('speed').value,r:+$('rebound').value,t:+$('contact').value});
   const collision=(c)=>{const pi=c.m*c.v,pf=-c.r*pi,dp=pf-pi;return {...c,pi,pf,dp,force:Math.abs(dp/c.t),vf:-c.r*c.v};};
   const foamCase=(c,cm)=>{const d=.05+cm/100,t=2*d/c.v,pi=c.m*c.v;return {...c,cm,d,t,pi,pf:0,dp:-pi,force:Math.abs(pi/t),vf:0,r:0};};
   function progress(number){for(let i=1;i<=4;i++){$('step-'+i).classList.toggle('active',i===number);$('step-'+i).classList.toggle('done',i<number)}}
-  function locked(b){busy=b;inputs.forEach(id=>$(id).disabled=b);$('play').disabled=b;$('replay').disabled=b;$('next-math').disabled=b;$('foam-run').disabled=b;$('foam-clear').disabled=b;$('foam-thickness').disabled=b;document.querySelectorAll('[data-thickness]').forEach(el=>el.disabled=b);$('back-collision').disabled=b}
+  function locked(b){busy=b;inputs.forEach(id=>$(id).disabled=b);$('play').disabled=b;$('replay').disabled=b;$('next-math').disabled=b;$('foam-run').disabled=b;$('foam-clear').disabled=b;$('foam-thickness').disabled=true;document.querySelectorAll('[data-thickness]').forEach(el=>el.disabled=true);$('foam-next').disabled=b;$('back-collision').disabled=b}
   function say(s){$('stage-status').textContent=s}
   function showReadout(state,c){
     $('cart-state').textContent=state;
@@ -244,7 +280,7 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
   }
   function setCart(x,squash=1){position=x;$('cart-move').setAttribute('transform','translate('+x.toFixed(2)+' 0)');$('cart-squash').setAttribute('transform','scale('+squash.toFixed(3)+' 1)')}
   function foamLayer(cm,compress=0){const w=cm*6.4*(1-.58*compress);$('foam-rect').setAttribute('x',(wallX-w).toFixed(2));$('foam-rect').setAttribute('width',w.toFixed(2));$('foam-rect').setAttribute('opacity',cm?'1':'0')}
-  function resetScene(preserveFoam=false){cancelAnimationFrame(raf);locked(false);const c=collision(snapshot());const cm=preserveFoam?+$('foam-thickness').value:0;const f=preserveFoam?foamCase(c,cm):c;foamLayer(cm,0);setCart(145);$('impact-glow').setAttribute('opacity','0');$('motion-traces').setAttribute('opacity','0');showReadout('BEFORE COLLISION',f);$('before-momentum').textContent=positive(f.pi)+' kg·m/s';$('before-velocity').textContent='Velocity: +'+f.v.toFixed(1)+' m/s (right)';$('after-momentum').textContent='Press Play to reveal';$('after-velocity').textContent='Outcome appears after Play.';if(preserveFoam){say('Choose a foam thickness and press Play Foam Test. The cart always stops.');$('scene-kicker').textContent='Foam trial · before the collision';$('scene-title').textContent='How far can the bumper compress?'}else{say('Set the values above, then press Play Collision. The cart keeps its speed until it reaches the wall.');$('scene-kicker').textContent='Before the collision · values shown on the cart';$('scene-title').textContent='Watch a cart approach a wall'}}
+  function resetScene(preserveFoam=false){cancelAnimationFrame(raf);locked(false);const c=collision(snapshot());const cm=preserveFoam?+$('foam-thickness').value:0;const f=preserveFoam?foamCase(c,cm):c;foamLayer(cm,0);setCart(145);$('impact-glow').setAttribute('opacity','0');$('motion-traces').setAttribute('opacity','0');showReadout('BEFORE COLLISION',f);$('before-momentum').textContent=positive(f.pi)+' kg·m/s';$('before-velocity').textContent='Velocity: +'+f.v.toFixed(1)+' m/s (right)';$('after-momentum').textContent='Press Play to reveal';$('after-velocity').textContent='Outcome appears after Play.';if(preserveFoam){say('Required foam trial: '+cm+' cm. The cart stops in every trial. Press Play Foam Test.');$('scene-kicker').textContent='Foam trial · before the collision';$('scene-title').textContent='How far can the bumper compress?'}else{say('Set the values above, then press Play Collision. The cart keeps its speed until it reaches the wall.');$('scene-kicker').textContent='Before the collision · values shown on the cart';$('scene-title').textContent='Watch a cart approach a wall'}}
   function clearMath(){mathTimers.forEach(clearTimeout);mathTimers=[];document.querySelectorAll('.math-step').forEach(e=>e.classList.remove('visible'));$('try-foam').disabled=true}
   function updateControls(){const c=collision(snapshot());$('mass-value').textContent=c.m.toFixed(2)+' kg';$('speed-value').textContent=c.v.toFixed(1)+' m/s';$('rebound-value').textContent=Math.round(c.r*100)+'%';$('contact-value').textContent=c.t.toFixed(2)+' s';stage='setup';progress(1);$('math-panel').hidden=true;$('next-math').hidden=true;$('foam-section').hidden=true;clearMath();resetScene(false)}
   function easeOut(t){return 1-Math.pow(1-t,3)}
@@ -269,7 +305,7 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
       else{if(phase!==2){phase=2;showReadout(isFoam?'AFTER FOAM TEST':'AFTER COLLISION',c);say(c.vf<0?'After contact: the cart rebounds to the left.':'After contact: the cart has stopped.');$('impact-glow').setAttribute('opacity','0');$('motion-traces').setAttribute('opacity','0')}
        const k=(elapsed-moveDuration-contactDuration)/reboundDuration;const back=c.vf<0?Math.min(315,70+Math.abs(c.vf)*28):0;setCart(end-back*k);
       }
-      if(elapsed<total){raf=requestAnimationFrame(tick)}else{locked(false);stage=isFoam?'foam-result':'collision-result';if(isFoam){showFoamResults(c);$('scene-kicker').textContent='After foam test · compare your trials'}else{progress(2);$('next-math').hidden=false;$('scene-kicker').textContent='After collision · now compare the values'}$('after-momentum').textContent=signed(c.pf)+' kg·m/s';$('after-velocity').textContent=c.vf<0?'Velocity: '+signed(c.vf,1)+' m/s (left)':'Velocity: 0.0 m/s (stopped)';say(c.vf<0?'The cart bounced left. Its final momentum is negative. Choose Next to see the change.':isFoam?'The cart stopped. Add or remove foam to test another contact time.':'The cart stopped. Choose Next to see the change in momentum.');}
+      if(elapsed<total){raf=requestAnimationFrame(tick)}else{locked(false);stage=isFoam?'foam-result':'collision-result';if(isFoam){showFoamResults(c);$('scene-kicker').textContent='After foam test · compare your trials'}else{progress(2);$('next-math').hidden=false;$('scene-kicker').textContent='After collision · now compare the values'}$('after-momentum').textContent=signed(c.pf)+' kg·m/s';$('after-velocity').textContent=c.vf<0?'Velocity: '+signed(c.vf,1)+' m/s (left)':'Velocity: 0.0 m/s (stopped)';if(!isFoam)say(c.vf<0?'The cart bounced left. Its final momentum is negative. Choose Next to see the change.':'The cart stopped. Choose Next to see the change in momentum.');}
     }
     raf=requestAnimationFrame(tick);
   }
@@ -286,16 +322,98 @@ footer{font-size:12px;color:#607486;line-height:1.5;padding:13px 0}
     for(let i=1;i<=4;i++){mathTimers.push(setTimeout(()=>{$('math-'+i).classList.add('visible');if(i===4){$('try-foam').disabled=false}},delay*(i-1)+80))}
     $('math-panel').scrollIntoView({block:'nearest',behavior:reduced?'instant':'smooth'});
   }
-  function chooseFoam(){if(busy)return;const now=snapshot();const signature=now.m.toFixed(2)+'|'+now.v.toFixed(1);if(signature!==foamSignature){trials.clear();displayTrials();foamSignature=signature}stage='foam';progress(4);$('foam-section').hidden=false;$('case-controls').hidden=true;$('math-panel').hidden=true;$('scene-chip').textContent='Foam study · no rebound in these trials';$('slow-label').textContent='Visualized in instructional slow motion';$('foam-thickness').value='0';updateFoam(true);$('foam-section').scrollIntoView({block:'nearest',behavior:reduced?'instant':'smooth'})}
-  function updateFoam(reset=true){const cm=+$('foam-thickness').value;$('foam-value').textContent=cm===0?'0 cm · no foam':cm+' cm';document.querySelectorAll('[data-thickness]').forEach(e=>{const b=+e.dataset.thickness===cm;e.classList.toggle('selected',b);e.setAttribute('aria-pressed',String(b))});$('foam-results').hidden=true;if(reset&&!busy)resetScene(true)}
-  function runFoam(){if(busy)return;const c=foamCase(snapshot(),+$('foam-thickness').value);resetScene(true);$('foam-results').hidden=true;stage='foam-playing';$('visual-section').scrollIntoView({block:'start',behavior:'instant'});requestAnimationFrame(()=>animatePath(c,true,c.cm))}
-  function showFoamResults(c){$('foam-results').hidden=false;$('foam-time').textContent=c.t.toFixed(3)+' s';$('foam-impulse').textContent=signed(c.dp)+' N·s';$('foam-force').textContent=c.force.toFixed(1)+' N';const baseline=foamCase(c,0);const reduction=100*(1-c.force/baseline.force);$('foam-comparison').textContent=c.cm===0?'This is the no-foam comparison case. Now try 5, 10 or 20 cm.':'Compared with no foam, the model predicts '+reduction.toFixed(0)+'% less average force for the same momentum change.';$('base-force-label').textContent=baseline.force.toFixed(1)+' N';$('selected-force-label').textContent=c.force.toFixed(1)+' N';$('selected-force-bar').style.width=(100*c.force/baseline.force).toFixed(1)+'%';
-    trials.set(c.cm,{...c});displayTrials();}
-  function displayTrials(){const rows=[...trials.values()].sort((a,b)=>a.cm-b.cm);const body=$('trial-list');body.replaceChildren();if(!rows.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=5;td.className='placeholder';td.textContent='Run a baseline trial with 0 cm, then test a thicker bumper.';tr.append(td);body.append(tr);return}for(const c of rows){const base=foamCase(c,0);const tr=document.createElement('tr');const vals=[c.cm+' cm',c.t.toFixed(3)+' s',signed(c.dp)+' N·s',c.force.toFixed(1)+' N',c.cm===0?'Baseline':(100*(1-c.force/base.force)).toFixed(0)+'% lower'];vals.forEach((val,i)=>{const td=document.createElement('td');td.textContent=val;if(i===3)td.className='td-strong';tr.append(td)});body.append(tr)}}
+  function chooseFoam(){
+    if(busy)return;
+    trials.clear();foamStepIndex=0;displayTrials();
+    stage='foam';progress(4);$('foam-section').hidden=false;$('case-controls').hidden=true;$('math-panel').hidden=true;
+    $('scene-chip').textContent='Foam study · five trials · zero rebound';
+    $('slow-label').textContent='Visualized in instructional slow motion';
+    setFoamStep();
+    $('foam-section').scrollIntoView({block:'start',behavior:reduced?'instant':'smooth'});
+  }
+  function setFoamStep(){
+    const cm=FOAM_ORDER[foamStepIndex];
+    $('foam-thickness').value=cm;
+    $('foam-value').textContent=cm===0?'0 cm · no foam':cm+' cm';
+    $('foam-progress-label').textContent='Trial '+(foamStepIndex+1)+' of 5 · '+(cm===0?'No foam':cm+' cm foam');
+    $('foam-progress-bar').style.width=(foamStepIndex*20)+'%';
+    document.querySelectorAll('[data-thickness]').forEach(e=>{
+      const thickness=+e.dataset.thickness;
+      e.classList.toggle('completed',thickness<cm);
+      e.classList.toggle('current',thickness===cm);
+      e.classList.toggle('locked-choice',thickness>cm);
+      e.textContent=(thickness<cm?'✓ ':'')+(thickness===0?'No foam':thickness+' cm');
+      e.disabled=true;
+    });
+    $('foam-run').innerHTML='<span class="icon-play">▶</span> Run trial '+(foamStepIndex+1)+' of 5 · '+(cm===0?'No foam':cm+' cm');
+    $('foam-run').disabled=false;
+    $('foam-next').hidden=true;
+    $('foam-results').hidden=true;
+    $('foam-discussion').hidden=true;
+    $('foam-talking-points').hidden=true;
+    resetScene(true);
+  }
+  function runFoam(){
+    if(busy||stage==='foam-playing'||stage==='foam-result')return;
+    const cm=FOAM_ORDER[foamStepIndex];
+    const c=foamCase(snapshot(),cm);
+    resetScene(true);
+    $('foam-results').hidden=true;
+    $('foam-run').disabled=true;
+    stage='foam-playing';
+    $('visual-section').scrollIntoView({block:'start',behavior:'instant'});
+    requestAnimationFrame(()=>animatePath(c,true,cm));
+  }
+  function showFoamResults(c){
+    trials.set(c.cm,{...c});displayTrials();
+    $('foam-results').hidden=false;
+    $('foam-time').textContent=c.t.toFixed(3)+' s';
+    $('foam-impulse').textContent=signed(c.dp)+' N·s';
+    $('foam-force').textContent=c.force.toFixed(1)+' N';
+    const baseline=foamCase(c,0);
+    const reduction=100*(1-c.force/baseline.force);
+    $('foam-comparison').textContent=c.cm===0?'Baseline established. Record the time, impulse and force in your packet before advancing.':'Compared with no foam, the model predicts '+reduction.toFixed(0)+'% lower average force for the same momentum change.';
+    $('base-force-label').textContent=baseline.force.toFixed(1)+' N';
+    $('selected-force-label').textContent=c.force.toFixed(1)+' N';
+    $('selected-force-bar').style.width=(100*c.force/baseline.force).toFixed(1)+'%';
+    $('foam-run').disabled=true;
+    $('foam-progress-bar').style.width=((foamStepIndex+1)*20)+'%';
+    if(foamStepIndex===4){
+      stage='foam-complete';$('foam-discussion').hidden=false;$('foam-next').hidden=true;
+      $('foam-progress-label').textContent='Complete · all five foam trials recorded';
+      $('stage-status').textContent='Five trials complete! Review the full table and answer the discussion questions.';
+      document.querySelectorAll('[data-thickness]').forEach(e=>{
+        e.classList.add('completed');e.classList.remove('current','locked-choice');e.textContent='✓ '+(+e.dataset.thickness===0?'No foam':e.dataset.thickness+' cm');
+      });
+    }else{
+      const next=FOAM_ORDER[foamStepIndex+1];
+      $('foam-next').hidden=false;$('foam-next').disabled=false;
+      $('foam-next').textContent='Next required trial: '+next+' cm →';
+      $('stage-status').textContent='Trial '+(foamStepIndex+1)+' recorded. Copy the results, then advance to '+next+' cm.';
+    }
+    $('foam-section').scrollIntoView({block:'start',behavior:reduced?'instant':'smooth'});
+  }
+  function displayTrials(){
+    const body=$('trial-list');body.replaceChildren();
+    for(const cm of FOAM_ORDER){
+      const tr=document.createElement('tr');tr.dataset.row=String(cm);
+      const c=trials.get(cm);
+      if(c){
+        const base=foamCase(c,0);
+        const vals=[cm+' cm',c.t.toFixed(3)+' s',signed(c.dp)+' N·s',c.force.toFixed(1)+' N',cm===0?'Baseline':(100*(1-c.force/base.force)).toFixed(0)+'% lower'];
+        vals.forEach((val,i)=>{const td=document.createElement('td');td.textContent=val;if(i===3)td.className='td-strong';tr.append(td)});
+      }else{
+        const td=document.createElement('td');td.textContent=cm+' cm';tr.append(td);
+        const blank=document.createElement('td');blank.colSpan=4;blank.className='placeholder';
+        blank.textContent=cm===FOAM_ORDER[foamStepIndex]?'Next required trial':'Locked until previous trial is complete';tr.append(blank);
+      }
+      body.append(tr);
+    }
+  }
   function goBack(){if(busy)return;$('foam-section').hidden=true;$('case-controls').hidden=false;$('math-panel').hidden=true;clearMath();$('scene-chip').textContent='Right is positive (+) · Left is negative (−)';$('slow-label').textContent='Motion shown in instructional slow motion';updateControls();window.scrollTo({top:0,behavior:reduced?'instant':'smooth'})}
   inputs.forEach(id=>$(id).addEventListener('input',updateControls));
   $('play').addEventListener('click',playMain);$('replay').addEventListener('click',updateControls);$('next-math').addEventListener('click',math);$('replay-math').addEventListener('click',()=>{if(stage==='math'){stage='collision-result';math()}});$('try-foam').addEventListener('click',chooseFoam);
-  $('foam-thickness').addEventListener('input',()=>updateFoam());document.querySelectorAll('[data-thickness]').forEach(b=>b.addEventListener('click',()=>{$('foam-thickness').value=b.dataset.thickness;updateFoam()}));$('foam-run').addEventListener('click',runFoam);$('foam-clear').addEventListener('click',()=>{trials.clear();displayTrials();$('foam-results').hidden=true});$('back-collision').addEventListener('click',goBack);
+  $('start-foam').addEventListener('click',chooseFoam);$('foam-run').addEventListener('click',runFoam);$('foam-next').addEventListener('click',()=>{if(busy||stage!=='foam-result')return;foamStepIndex++;stage='foam';setFoamStep();});$('foam-clear').addEventListener('click',()=>{if(!busy)chooseFoam()});$('foam-reasoning').addEventListener('click',()=>{$('foam-talking-points').hidden=!$('foam-talking-points').hidden});$('back-collision').addEventListener('click',goBack);
   updateControls();displayTrials();
 })();
 </script>
