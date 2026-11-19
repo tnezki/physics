@@ -45,6 +45,26 @@ button{border:1px solid var(--navy);border-radius:8px;background:var(--navy);col
 .day-badge{display:block;font-size:.68rem;color:#5f6c78;margin-top:-2px;margin-bottom:4px;font-weight:800}.teacher-row td{padding:0;background:var(--teacher);border-top:1px solid #bcc9d7}.teacher-row.alt td{background:var(--teacher-alt)}.teacher-cell{display:grid;grid-template-columns:minmax(0,1fr) 42px;min-height:39px;align-items:stretch}.teacher-label{display:flex;align-items:center;justify-content:center;padding:6px 8px;color:#274663;font-size:.82rem;font-weight:800;min-width:0}.teacher-open{border-left:1px solid #bcc9d7}.teacher-key{display:inline-block;margin-right:6px;color:#687f97;font-size:.66rem;letter-spacing:.04em;text-transform:uppercase}.missing-assessment{color:#8a5a00;font-style:italic;font-size:.75rem;font-weight:800}
 .footer-note{text-align:center;color:var(--muted);font-size:.77rem;margin-top:10px}
 @media(max-width:900px){.wrapper{width:100%;margin:0}.titlebar{border-radius:0}.titlebar h1{font-size:1.15rem}.resource-panel{padding:10px}.resources a,.resources button{font-size:.78rem;padding:7px 10px}.week-shell{grid-template-columns:1fr}.current-rail{justify-content:flex-start}.current-picker{width:auto;min-height:auto;flex-direction:row;padding:6px 10px}.current-picker .check-box{width:24px;height:24px}}
+
+/* Stable six student rows + one local teacher guide row. Dates are the header (row one). */
+.tool-strip{justify-content:flex-end;gap:11px}
+.tool-strip button,.tool-strip a{min-height:43px;display:inline-flex;align-items:center;justify-content:center}
+.tool-strip button.gold{font-size:1rem;min-width:230px}
+.student-url{font-size:.76rem;color:#5c6670;margin-top:9px;text-align:right;overflow-wrap:anywhere}
+.student-url span{color:var(--navy);font-weight:800}
+.preview-row td{height:44px}.preview-row .preview-item{min-height:43px}.preview-section .preview-item{font-size:.93rem}
+.week-shell .editor-week .week-head th{border-top:0}
+.short-name{font-weight:900;min-height:46px;display:flex;align-items:center;justify-content:center;padding:6px 8px;color:var(--navy);font-size:.91rem}
+.editor-week .student-row select.lesson-select{border:1px solid #c6cdd5;border-radius:7px;background:#fff;margin:4px 2px 4px 5px;min-height:37px;text-align:left;text-align-last:left}
+.editor-week .student-row .resource-cell{grid-template-columns:minmax(0,1fr) 42px}
+.optional-cell{display:flex;min-height:42px;align-items:stretch}
+.edit-optional{display:block;min-height:42px;min-width:0;width:100%;background:transparent;border:0;border-radius:0;padding:6px 8px;color:var(--navy);font-size:.84rem;text-align:center;font-weight:750}
+.edit-optional:hover,.edit-optional:focus-visible{background:rgba(215,190,113,.15);filter:none;outline:1px solid #d0af54}
+.optional-cell .open-link{flex:0 0 40px}
+.teacher-row.guide-only td{background:#e9f0f5!important}
+.teacher-row.guide-only .teacher-label{font-weight:900;color:#365977}
+.editor-week th,.editor-week td{height:45px}
+@media(max-width:900px){.tool-strip{justify-content:center}.student-url{text-align:center}}
 </style>
 </head>
 <body>
@@ -80,106 +100,145 @@ button{border:1px solid var(--navy);border-radius:8px;background:var(--navy);col
     <a href="https://tnezki.github.io/teacher_shared/physics/" target="_blank" rel="noopener">Co-Teacher Agenda</a>
     <a href="/physics/agenda/index.html" target="_blank" rel="noopener">Student Agenda</a>
   </nav>
-  <div class="tool-strip" aria-label="Physics planner tools">
-    <a href="/">Physics Tools</a>
-    <a href="/library/">Library</a>
-    <a href="/warmup_builder/editor.html">Warmup Editor</a>
-    <a href="/practice_builder/">Practice Set Editor</a>
-    <a href="/physics/agenda/index.html" target="_blank" rel="noopener">Student Agenda ↗</a>
-    <a class="sync" href="http://127.0.0.1:8771/" target="_blank" rel="noopener">GitHub Sync ↗</a>
-    <span class="spacer"></span>
+  <div class="tool-strip" aria-label="Physics planner actions">
     <button id="applyBtn" type="button" class="gold">Save + Update Student Agenda</button>
-    <button id="undoBtn" type="button" class="secondary">Undo</button>
     <button id="jumpBtn" type="button" class="secondary">Current Week</button>
+    <a href="/physics/agenda/index.html" target="_blank" rel="noopener">Student Page ↗</a>
+    <a class="sync" href="http://127.0.0.1:8771/" target="_blank" rel="noopener">GitHub Sync ↗</a>
   </div>
+  <div class="student-url">Public student URL: <span>https://tnezki.github.io/physics/agenda/index.html</span> (publish through GitHub Desktop when ready)</div>
 </div>
 <div id="connectionStatus" class="status"></div>
 <div class="section-title">Current State</div>
-<p class="note">Read-only student preview of the manually selected current week. Quick Check stays display-only for students; test-day labels such as Unit 1 Test appear as plain agenda text.</p>
+<p class="note">Student view: date + short lesson title + linked lesson PDF + four optional rows. The teacher guide does not appear here.</p>
 <div class="calendar-wrap"><table id="previewTable" aria-label="Current Planner state"></table></div>
 <div class="section-title">Planner Editor – All Weeks</div>
-<p class="note"><strong>Every week is editable.</strong> Use <strong>Bump Forward</strong> to insert a blank instructional day at that date and move the remaining instructional sequence forward one school day. <strong>Insert Blank Day</strong> remains as the same forward-shift action; <strong>Bump Back</strong> removes one instructional day and pulls the sequence back. Planned blank days between units are automatically labeled <strong>Unit 1 Test</strong>, <strong>Unit 2 Test</strong>, and so on, with an <strong>Approved Assessments</strong> teacher link. Use <strong>Custom Day Label...</strong> only for other special day labels. For anything not in a resource dropdown, choose <strong>Custom Item...</strong>.</p>
+<p class="note">Select the lesson in row 3. Row 2 fills automatically. Click any blank row 4–7 to add optional text or a link. Row 8 opens the teacher guide in the Planner only. Choose the current week using the button beside that week.</p>
 <div id="editor"></div>
-<div class="footer-note"><strong>Save + Update Student Agenda</strong> saves Planner changes and refreshes the Physics student and co-teacher agendas. Use the separate <strong>GitHub Sync</strong> app when you are ready to pull, commit, or push.</div>
+<div class="footer-note">Save updates both local agenda views. The public Student Page URL changes after you publish your Physics repository manually.</div>
 </div>
 <script>
-const FALLBACK_RESOURCES=["","Warmups","Notes","Investigation","Activity","Demo","Performance Task","Practice Set","Extra Practice","Quick Check","Review","Custom Item"];
-const FALLBACK_CONTROLS=["Regular Day","Insert Blank Day","Bump Forward","Bump Back","Snow Day","P.D.","1/2 Day","Break","No School","Assembly Schedule","Testing","Sub Assignment"];
-const SHIFTING=new Set(["Insert Blank Day","Snow Day","P.D.","Break","No School"]);
-const BLOCKED=new Set(["Snow Day","P.D.","Break","No School"]);
-const CUSTOM_DAY_OPTION="__CUSTOM_DAY_LABEL__";
-let state=null,registry={sections:[],resources:{},teacher:{},welcome:{},weekly_warmups:{},shared:{section:{},summative:{}}},RESOURCE_OPTIONS=[...FALLBACK_RESOURCES],DAY_OPTIONS=[...FALLBACK_CONTROLS];
-function dayControlOptions(options){const out=[...(options||[])];if(!out.includes('Bump Forward')){const i=out.indexOf('Insert Blank Day');out.splice(i>=0?i+1:1,0,'Bump Forward')}return out}
-let connected=false;
-function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
-function setStatus(message,kind="good"){const el=document.getElementById('connectionStatus');el.textContent=message;el.className=`status show ${kind}`}
-function defaultSlots(n){if(n===1)return["Warmups","Notes","Practice Set","",""];if(n===2)return["Warmups","Investigation","Practice Set","Extra Practice",""];if(n===3)return["Warmups","Activity","Practice Set","Extra Practice","Quick Check"];return["","","","",""]}
+const STUDENT_PAGE_URL='https://tnezki.github.io/physics/agenda/index.html';
+const LOCAL_STUDENT_URL='/physics/agenda/index.html';
+const CUSTOM_CHOICE='__custom__';
+let state=null, connected=false, lessonCatalog=[], lessonsByID=new Map();
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function setStatus(message,kind='good'){const el=document.getElementById('connectionStatus');el.textContent=message;el.className=`status show ${kind}`}
+function cleanURL(v){v=String(v||'').trim();if(!v)return'';if(/^https?:\/\//i.test(v))return v;if(/^\/(?!\/)/.test(v))return v;if(/^[\w.-]+\.[a-z]{2,}(?:\/|$)/i.test(v))return 'https://'+v;return''}
 function currentWeek(){return Number(state?.current_week_index||0)}
-function currentDays(){const wi=currentWeek();return state.days.filter(d=>Number(d.week_index)===wi).slice(0,5)}
-function sectionCode(title){const m=String(title||'').match(/^\s*(\d+)\.(\d+)/);return m?`${Number(m[1])}.${Number(m[2])}`:null}
-function unitFromSection(title){const c=sectionCode(title);return c?Number(c.split('.')[0]):0}
-function currentUnit(){for(const d of currentDays()){const u=unitFromSection(d.section);if(u)return u}const wi=currentWeek();for(let i=state.days.length-1;i>=0;i--){const d=state.days[i];if(Number(d.week_index)>wi)continue;const u=unitFromSection(d.section);if(u)return u}return 1}
-function updateTeacherLibraryLink(){const a=document.getElementById('teacherLibraryLink');if(a)a.href=`https://tnezki.github.io/teacher_shared/physics/library/unit${currentUnit()}/index.html`}
-function sectionOptions(){const set=new Set(registry.sections||[]);state.days.forEach(d=>{if(d.section)set.add(d.section)});return["",...[...set].sort(sectionSort),CUSTOM_DAY_OPTION]}
-function sectionSort(a,b){const ma=String(a).match(/^(\d+)\.(\d+)/),mb=String(b).match(/^(\d+)\.(\d+)/);if(!ma&&!mb)return a.localeCompare(b);if(!ma)return 1;if(!mb)return-1;return Number(ma[1])-Number(mb[1])||Number(ma[2])-Number(mb[2])||a.localeCompare(b)}
-function optionHTML(options,selected){return options.map(o=>{const label=o===CUSTOM_DAY_OPTION?'Custom Day Label...':(o||' ');return`<option value="${esc(o)}"${o===selected?' selected':''}>${esc(label)}</option>`}).join('')}
-function welcomeFor(day){return registry.welcome?.[day.section]?.[String(day.day_number)]||null}
-function customFor(day,slot){const list=Array.isArray(day.custom_slots)?day.custom_slots:[];const item=list[slot];return item&&typeof item==='object'?item:{label:'',url:''}}
-function customLabel(day,slot){const item=customFor(day,slot);return String(item.label||'Custom Item').trim()||'Custom Item'}
-function normalizeCustomURL(raw){const v=String(raw||'').trim();if(!v)return'';if(/^https?:\/\//i.test(v))return v;if(/^(\/|\.\.?\/)/.test(v))return v;if(/^[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:\/|$)/.test(v))return'https://'+v;return''}
-function resourceFor(day,type,slot=-1){if(!type||type==='Quick Check')return null;if(type==='Custom Item')return normalizeCustomURL(customFor(day,slot).url)||null;if(type==='Warmups'||type==='Warm Up')return registry.weekly_warmups?.[String(Number(day.week_index))]||null;return registry.resources?.[day.section]?.[type]||null}
-function resourceOptionHTML(day,slot,selected){return RESOURCE_OPTIONS.map(o=>{let label=o||' ';if(o==='Custom Item')label=(selected==='Custom Item')?`Custom: ${customLabel(day,slot)}`:'Custom Item...';return`<option value="${esc(o)}"${o===selected?' selected':''}>${esc(label)}</option>`}).join('')}
-function inferAssessmentUnit(idx){const d=state.days[idx];const own=Number(d.assessment_unit||0)||unitFromSection(d.section);if(own)return own;for(let i=idx-1;i>=0;i--){const u=unitFromSection(state.days[i].section);if(u)return u}return 0}
-function addUnique(out,item){if(!item||!item.url||out.some(x=>x.url===item.url))return;out.push(item)}
-function isAssessmentDayLabel(label){return /\b(?:unit\s*\d+\s*)?(?:test|exam|assessment)\b/i.test(String(label||''))}
-function teacherLinksFor(day,idx){
-  const out=[];
-  for(const type of day.student_slots||[]){if(!type||type==='Quick Check')continue;const entry=registry.teacher?.[day.section]?.[type];if(entry?.url)addUnique(out,{label:entry.label,url:entry.url,role:'Teacher'})}
-  if((day.student_slots||[]).includes('Quick Check')){const u=inferAssessmentUnit(idx)||1;addUnique(out,{label:'Approved Quick Checks',url:`/shared/physics/library/unit${u}/index.html#quick-checks`,role:'Assessment'})}
-  if(isAssessmentDayLabel(day.section)){const u=inferAssessmentUnit(idx)||1;addUnique(out,{label:'Approved Assessments',url:`/shared/physics/library/unit${u}/index.html#assessments`,role:'Assessment'})}
-  const code=sectionCode(day.section);if(code)(registry.shared?.section?.[code]||[]).forEach(x=>addUnique(out,x));
-  return out.slice(0,3)
-}
-function previewSection(day){const label=day.control!=='Regular Day'?day.control:day.section;if(!label)return'<span class="preview-item preview-empty">&nbsp;</span>';const url=day.control==='Regular Day'?welcomeFor(day):null;return url?`<a class="preview-item" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`:`<span class="preview-item plain">${esc(label)}</span>`}
-function previewItem(day,type,slot){if(!type)return'<span class="preview-item preview-empty">&nbsp;</span>';const label=type==='Custom Item'?customLabel(day,slot):type;const url=resourceFor(day,type,slot);return url?`<a class="preview-item" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`:`<span class="preview-item plain">${esc(label)}</span>`}
-function renderPreview(){updateTeacherLibraryLink();const days=currentDays();if(!days.length){document.getElementById('previewTable').innerHTML='';return}let h='<tbody><tr class="week-head">';days.forEach(d=>h+=`<th><span class="dow">${esc(d.dow)}</span><span class="date">${esc(d.display_date)}</span></th>`);h+='</tr><tr class="preview-row preview-section">';days.forEach(d=>h+=`<td>${previewSection(d)}</td>`);h+='</tr>';let max=0;for(let r=0;r<5;r++)if(days.some(d=>d.student_slots?.[r]))max=r+1;for(let r=0;r<max;r++){h+=`<tr class="preview-row ${r%2===0?'alt':''}">`;days.forEach(d=>h+=`<td>${previewItem(d,d.student_slots?.[r]||'',r)}</td>`);h+='</tr>'}h+='</tbody>';document.getElementById('previewTable').innerHTML=h}
-function daysByWeek(){const map=new Map();state.days.forEach((d,i)=>{const wi=Number(d.week_index);if(!map.has(wi))map.set(wi,[]);map.get(wi).push({d,i})});return map}
-function renderTeacherCell(day,idx,row){const links=teacherLinksFor(day,idx),item=links[row];if(!item)return'<div class="teacher-cell"><span class="teacher-label">&nbsp;</span><span></span></div>';if(item.missing)return`<div class="teacher-cell"><span class="teacher-label"><span class="teacher-key">${esc(item.role)}</span><span class="missing-assessment">${esc(item.label)}</span></span><span></span></div>`;return`<div class="teacher-cell"><span class="teacher-label"><span class="teacher-key">${esc(item.role||'Teacher')}</span>${esc(item.label)}</span><a class="open-link teacher-open" href="${esc(item.url)}" target="_blank" rel="noopener" title="Open ${esc(item.label)}">↗</a></div>`}
-function applyLocks(){state.days.forEach(d=>d.locked_past=false)}
-function renderEditor(){
-  applyLocks();const host=document.getElementById('editor'),map=daysByWeek(),sections=sectionOptions(),weeks=[...map.keys()].sort((a,b)=>a-b),cw=currentWeek();let out='';
-  for(const wi of weeks){const entries=(map.get(wi)||[]).slice(0,5);if(!entries.length)continue;const current=wi===cw,past=wi<cw;
-    out+=`<section id="week-${wi}" class="week-shell ${current?'is-current':''} ${past?'is-past':'is-future'}"><div class="current-rail"><button type="button" class="current-picker" data-week="${wi}" aria-pressed="${current?'true':'false'}" title="Set this as the current week"><span class="check-box"><span class="check-mark">✓</span></span><span>${current?'Current':'Set Current'}</span></button></div><div class="calendar-wrap editor-week"><table aria-label="Planner week ${wi+1}"><tbody>`;
-    out+='<tr class="day-control">';entries.forEach(({d,i})=>{
-      out+=`<td><div class="day-control-stack"><select data-kind="control" data-index="${i}">${optionHTML(DAY_OPTIONS,d.control)}</select></div></td>`
-    });out+='</tr><tr class="week-head">';entries.forEach(({d})=>out+=`<th><span class="dow">${esc(d.dow)}</span><span class="date">${esc(d.display_date)}</span></th>`);out+='</tr><tr class="section-row">';entries.forEach(({d,i})=>out+=`<td><select data-kind="section" data-index="${i}" ${BLOCKED.has(d.control)?'disabled':''}>${optionHTML(sections,d.section||'')}</select><span class="day-badge">${d.day_number?`Day ${d.day_number}`:''}</span></td>`);out+='</tr>';
-    for(let r=0;r<5;r++){out+=`<tr class="student-row ${r%2===0?'alt':''}">`;entries.forEach(({d,i})=>{const type=d.student_slots?.[r]||'',url=resourceFor(d,type,r),isCustom=type==='Custom Item';out+=`<td><div class="resource-cell"><select data-kind="slot" data-index="${i}" data-slot="${r}" ${BLOCKED.has(d.control)?'disabled':''}>${resourceOptionHTML(d,r,type)}</select><button type="button" class="custom-edit" data-index="${i}" data-slot="${r}" ${isCustom?'':'hidden'} title="Edit custom item">✎</button><a class="open-link" ${url?`href="${esc(url)}" target="_blank" rel="noopener"`:'aria-disabled="true"'} title="Open selected resource">↗</a></div></td>`});out+='</tr>'}
-    for(let r=0;r<3;r++){out+=`<tr class="teacher-row ${r%2?'alt':''}">`;entries.forEach(({d,i})=>out+=`<td>${renderTeacherCell(d,i,r)}</td>`);out+='</tr>'}
-    out+='</tbody></table></div></section>';
+function getWeekDays(wi){return state.days.map((d,i)=>({d,i})).filter(x=>Number(x.d.week_index)===wi).slice(0,5)}
+function byWeek(){const map=new Map();state.days.forEach((d,i)=>{const wi=Number(d.week_index);if(!map.has(wi))map.set(wi,[]);map.get(wi).push({d,i})});return map}
+function resolveSelection(d){
+  if(Object.prototype.hasOwnProperty.call(d,'lesson_choice'))return String(d.lesson_choice||'');
+  const old=(d.student_slots||[])[0], item=(d.custom_slots||[])[0]||{};
+  if(old==='Custom Item'&&item&&typeof item==='object'){
+    const url=String(item.url||'').trim(), label=String(item.label||'');
+    for(const lesson of lessonCatalog){if(url&&[lesson.student_url,...(lesson.legacy_student_urls||[])].some(u=>u.split('?')[0].replace(/\/$/,'')===url.split('?')[0].replace(/\/$/,'')))return lesson.id}
+    const m=label.match(/(?:^|\D)(\d{1,2})[._](\d{1,2})[._](\d{1,2})(?:\D|$)/);
+    if(m){const id=`${Number(m[1])}.${Number(m[2])}.${Number(m[3])}`;if(lessonsByID.has(id))return id}
+    if(/reading\s+and\s+consolidation/i.test(label)&&lessonsByID.has('5.1.R'))return '5.1.R';
+    if(label&&/[^.,;\s]/.test(label))return CUSTOM_CHOICE;
   }
-  host.innerHTML=out;host.querySelectorAll('select').forEach(el=>el.addEventListener('change',onEdit));host.querySelectorAll('.current-picker').forEach(el=>el.addEventListener('click',()=>setCurrentWeek(Number(el.dataset.week))));host.querySelectorAll('.custom-edit').forEach(el=>el.addEventListener('click',()=>editCustomItem(Number(el.dataset.index),Number(el.dataset.slot))));
+  return '';
 }
-function ensureCustomSlots(day){if(!Array.isArray(day.custom_slots))day.custom_slots=[];while(day.custom_slots.length<5)day.custom_slots.push({label:'',url:''});for(let i=0;i<5;i++){if(!day.custom_slots[i]||typeof day.custom_slots[i]!=='object')day.custom_slots[i]={label:'',url:''}}}
-function editCustomItem(idx,slot){const d=state.days[idx];ensureCustomSlots(d);const item=d.custom_slots[slot]||{label:'',url:''};const label=window.prompt('Agenda label:',String(item.label||''));if(label===null)return;const cleanLabel=String(label).trim();if(!cleanLabel){setStatus('Custom item needs a label.','warn');return}const url=window.prompt('Link (optional - leave blank for text only):',String(item.url||''));if(url===null)return;d.student_slots[slot]='Custom Item';d.custom_slots[slot]={label:cleanLabel,url:normalizeCustomURL(url)};renderEditor();renderPreview();setStatus('Custom agenda item added. Save or publish when ready.','warn')}
+function customLesson(d){if(Object.prototype.hasOwnProperty.call(d,'lesson_choice'))return d.lesson_custom||{};const old=(d.custom_slots||[])[0]||{};return {label:String(old.label||''),short_name:String(old.label||''),url:String(old.url||''),teacher_url:''}}
+function dayView(d){
+  const choice=resolveSelection(d), lesson=lessonsByID.get(choice), custom=choice===CUSTOM_CHOICE?customLesson(d):{};
+  let short_name='', label='', url='', teacher='';
+  if(lesson){short_name=lesson.short_name||lesson.label;label=lesson.label;url=lesson.student_url||'';teacher=lesson.teacher_url||''}
+  else if(choice===CUSTOM_CHOICE){short_name=custom.short_name||custom.label||'';label=custom.label||'';url=cleanURL(custom.url);teacher=cleanURL(custom.teacher_url)}
+  else if(!Object.prototype.hasOwnProperty.call(d,'lesson_choice'))short_name=String(d.section||'');
+  if(['Snow Day','P.D.','Break','No School'].includes(d.control)){short_name=d.control;label='';url='';teacher=''}
+  const extra=Array.isArray(d.extra_rows)?d.extra_rows:[];
+  return {choice,short_name,label,url,teacher,extra:Array.from({length:4},(_,i)=>{let x=extra[i]||{};return {label:String(x.label||''),url:cleanURL(x.url)}})};
+}
+function displayItem(label,url,css='preview-item'){
+  if(!label)return '<span class="preview-item preview-empty">&nbsp;</span>';
+  return url?`<a class="${css}" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`:`<span class="${css} plain">${esc(label)}</span>`;
+}
+function renderPreview(){
+  if(!state)return;
+  const ds=getWeekDays(currentWeek());let h='<tbody><tr class="week-head">';
+  ds.forEach(({d})=>h+=`<th><span class="dow">${esc(d.dow)}</span><span class="date">${esc(d.display_date)}</span></th>`);
+  h+='</tr>';
+  const vs=ds.map(({d})=>dayView(d));
+  for(let ri=0;ri<6;ri++){
+    h+=`<tr class="preview-row ${ri%2?'alt':''} ${ri===0?'preview-section':''}">`;
+    vs.forEach(v=>{
+      let item=ri===0?{label:v.short_name,url:''}:ri===1?{label:v.label,url:v.url}:v.extra[ri-2];
+      h+=`<td>${displayItem(item.label,item.url)}</td>`;
+    });h+='</tr>';
+  }
+  h+='</tbody>';document.getElementById('previewTable').innerHTML=h;
+}
+function optionsHTML(selected){
+  let result=`<option value="${CUSTOM_CHOICE}"${selected===CUSTOM_CHOICE?' selected':''}>Custom…</option>`;
+  for(const l of lessonCatalog){result+=`<option value="${esc(l.id)}"${selected===l.id?' selected':''}>${esc(l.label)}</option>`}
+  return result+`<option value=""${selected===''?' selected':''}>— Blank —</option>`;
+}
+function renderEditor(){
+  if(!state)return;const el=document.getElementById('editor'),weeks=[...byWeek().entries()].sort((a,b)=>a[0]-b[0]);let h='';
+  for(const [wi,full] of weeks){const ds=full.slice(0,5),current=wi===currentWeek();if(!ds.length)continue;
+    h+=`<section id="week-${wi}" class="week-shell ${current?'is-current':'is-future'}"><div class="current-rail"><button type="button" class="current-picker" data-week="${wi}" aria-pressed="${current?'true':'false'}" title="Select current week"><span class="check-box"><span class="check-mark">✓</span></span><span>${current?'Current':'Set Current'}</span></button></div><div class="calendar-wrap editor-week"><table aria-label="Planner week ${wi+1}"><tbody>`;
+    h+='<tr class="week-head">';ds.forEach(({d})=>h+=`<th><span class="dow">${esc(d.dow)}</span><span class="date">${esc(d.display_date)}</span></th>`);h+='</tr>';
+    const views=ds.map(({d})=>dayView(d));
+    h+='<tr class="section-row auto-short-name">';views.forEach(v=>h+=`<td><div class="short-name" title="Automatically filled by lesson selection">${esc(v.short_name)||'&nbsp;'}</div></td>`);h+='</tr>';
+    h+='<tr class="student-row">';ds.forEach(({d,i},j)=>{const v=views[j];h+=`<td><div class="resource-cell"><select class="lesson-select" aria-label="Lesson for ${esc(d.date)}" data-index="${i}" data-kind="lesson">${optionsHTML(v.choice)}</select><a class="open-link" ${v.url?`href="${esc(v.url)}" target="_blank" rel="noopener"`:'aria-disabled="true"'} title="Open student PDF">↗</a></div></td>`});h+='</tr>';
+    for(let ri=0;ri<4;ri++){h+=`<tr class="student-row ${ri%2?'alt':''} optional-row">`;ds.forEach(({d,i},j)=>{const item=views[j].extra[ri];h+=`<td><div class="optional-cell"><button type="button" class="edit-optional" data-index="${i}" data-slot="${ri}" title="Edit optional row ${ri+4} for ${esc(d.date)}">${item.label?esc(item.label):'&nbsp;'}</button>${item.url?`<a class="open-link" href="${esc(item.url)}" target="_blank" rel="noopener" title="Open optional item">↗</a>`:''}</div></td>`});h+='</tr>'}
+    h+='<tr class="teacher-row guide-only">';views.forEach(v=>h+=`<td><div class="teacher-cell"><span class="teacher-label">${v.teacher?'Teacher Guide':'&nbsp;'}</span>${v.teacher?`<a class="open-link teacher-open" href="${esc(v.teacher)}" target="_blank" rel="noopener" title="Open teacher guide PDF">↗</a>`:''}</div></td>`);h+='</tr>';
+    h+='</tbody></table></div></section>';
+  }
+  el.innerHTML=h;
+  el.querySelectorAll('.lesson-select').forEach(x=>x.addEventListener('change',chooseLesson));
+  el.querySelectorAll('.edit-optional').forEach(x=>x.addEventListener('click',editOptional));
+  el.querySelectorAll('.current-picker').forEach(x=>x.addEventListener('click',()=>setCurrentWeek(Number(x.dataset.week))));
+}
+function rerender(){renderPreview();renderEditor()}
+function setCurrentWeek(wi){state.current_week_index=wi;rerender();setStatus('Current week selected. Save to update the Student Page.','warn')}
+function chooseLesson(evt){
+  const el=evt.target,day=state.days[Number(el.dataset.index)],choice=el.value;
+  if(choice===CUSTOM_CHOICE){
+    const old=customLesson(day);
+    let label=window.prompt('Custom lesson label:',String(old.label||''));if(label===null){rerender();return}
+    label=label.trim();if(!label){setStatus('Custom lesson needs a label.','warn');rerender();return}
+    let url=window.prompt('Student link (optional):',String(old.url||''));if(url===null){rerender();return}
+    if(url.trim()&&!cleanURL(url)){setStatus('Use an http(s) link or local path.','warn');rerender();return}
+    let short=window.prompt('Short title for row 2:',String(old.short_name||label));if(short===null){rerender();return}
+    let teacher=window.prompt('Teacher guide PDF link (optional):',String(old.teacher_url||''));if(teacher===null){rerender();return}
+    if(teacher.trim()&&!cleanURL(teacher)){setStatus('Teacher guide needs a valid link.','warn');rerender();return}
+    day.lesson_custom={label,short_name:short.trim()||label,url:cleanURL(url),teacher_url:cleanURL(teacher)};
+  }
+  day.lesson_choice=choice;
+  if(choice!==CUSTOM_CHOICE)day.lesson_custom={};
+  rerender();setStatus('Lesson selection updated. Save to publish the Student Page.','warn');
+}
+function editOptional(evt){
+  const el=evt.currentTarget,day=state.days[Number(el.dataset.index)],slot=Number(el.dataset.slot);
+  if(!Array.isArray(day.extra_rows)||day.extra_rows.length!==4)day.extra_rows=Array.from({length:4},()=>({label:'',url:''}));
+  const item=day.extra_rows[slot]||{label:'',url:''};
+  const label=window.prompt(`Optional row ${slot+4} — text (leave blank to clear):`,String(item.label||''));if(label===null)return;
+  let url='';if(label.trim()){const input=window.prompt('Optional link (blank for plain text):',String(item.url||''));if(input===null)return;url=cleanURL(input);if(input.trim()&&!url){setStatus('Please enter a valid http(s) link.','warn');return}}
+  day.extra_rows[slot]={label:label.trim(),url};rerender();setStatus('Optional row changed. Save when ready.','warn');
+}
+async function publishAgendas(){
+  if(!connected){setStatus('Open or restart Physics Tools before saving.','warn');return}
+  const btn=document.getElementById('applyBtn');btn.disabled=true;setStatus('Saving and refreshing student/teacher pages…','warn');
+  try{const r=await fetch('/api/publish',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({state})});const v=await r.json();if(!r.ok||!v.ok)throw new Error(v.error||`HTTP ${r.status}`);state=v.state;rerender();setStatus('Saved locally. Student Page updated. Use GitHub Desktop/Sync tool to publish the URL below.','good')}
+  catch(e){setStatus(`Save failed: ${e.message}`,'bad')}
+  finally{btn.disabled=false}
+}
+async function bootstrap(){
+  try{
+    const r=await fetch('/api/bootstrap',{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const v=await r.json();
+    if(!Array.isArray(v.lessons))throw new Error('Older Planner server detected. Restart Physics Tools so the new lesson catalog can load.');
+    state=v.state;lessonCatalog=v.lessons;lessonsByID=new Map(lessonCatalog.map(x=>[x.id,x]));connected=true;
+    rerender();setStatus(`${lessonCatalog.length} verified Drive lesson PDFs available. Save changes before GitHub Sync.`,'good');
+  }catch(e){connected=false;document.getElementById('applyBtn').disabled=true;setStatus(`Planner not connected: ${e.message}`,'bad')}
+}
+document.getElementById('applyBtn').addEventListener('click',publishAgendas);
+document.getElementById('jumpBtn').addEventListener('click',()=>document.getElementById(`week-${currentWeek()}`)?.scrollIntoView({behavior:'smooth',block:'start'}));
+bootstrap();
 
-function inferDayNumber(index,section){for(let i=index-1;i>=0;i--){const d=state.days[i];if(d.section===section&&d.day_number)return d.day_number>=3?1:d.day_number+1}return 1}
-function setCurrentWeek(wi){state.current_week_index=wi;applyLocks();renderPreview();renderEditor();setStatus('Current week changed in Planner. Apply changes when ready.','warn')}
-function onEdit(e){const el=e.target,idx=Number(el.dataset.index),kind=el.dataset.kind,d=state.days[idx];ensureCustomSlots(d);if(kind==='control'){d.control=el.value;d.shift_applied=false}if(kind==='section'){if(el.value===CUSTOM_DAY_OPTION){const label=window.prompt('Day label (example: Unit 1 Test):',String(d.section||''));if(label===null){renderEditor();return}const clean=String(label).trim();if(!clean){renderEditor();setStatus('Custom day label was not changed.','warn');return}d.section=clean;d.control='Regular Day';d.day_number=0;d.student_slots=["","","","",""];d.custom_slots=[{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''}];d.shift_applied=false}else{d.section=el.value;if(d.section){d.control='Regular Day';d.day_number=inferDayNumber(idx,d.section);d.student_slots=defaultSlots(d.day_number);d.custom_slots=[{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''}];d.shift_applied=false}else{d.day_number=0;d.student_slots=["","","","",""]}}}if(kind==='slot'){const slot=Number(el.dataset.slot);d.student_slots[slot]=el.value;if(el.value==='Custom Item'&&!String(customFor(d,slot).label||'').trim()){renderEditor();editCustomItem(idx,slot);return}}renderEditor();renderPreview()}
-
-function contentPayload(d){ensureCustomSlots(d);return{section:d.section||'',day_number:Number(d.day_number||0),student_slots:[...(d.student_slots||["","","","",""])],custom_slots:d.custom_slots.map(x=>({...x}))}}
-function putPayload(d,p){d.section=p.section;d.day_number=p.day_number;d.student_slots=[...p.student_slots];d.custom_slots=(p.custom_slots||[]).map(x=>({...x}));ensureCustomSlots(d)}
-function blankPayload(d){d.section='';d.day_number=0;d.student_slots=["","","","",""];d.custom_slots=[{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''}]}
-function movableIndexesFrom(idx){const out=[];for(let j=idx;j<state.days.length;j++){const t=state.days[j];if(j!==idx&&BLOCKED.has(t.control))continue;out.push(j)}return out}
-function applyInsertAt(idx){const d=state.days[idx];let displaced=contentPayload(d);blankPayload(d);d.control='Regular Day';d.shift_applied=false;for(let j=idx+1;j<state.days.length;j++){const target=state.days[j];if(BLOCKED.has(target.control))continue;const next=contentPayload(target);putPayload(target,displaced);displaced=next}}
-function applyBumpBackAt(idx){const movable=movableIndexesFrom(idx);for(let k=0;k<movable.length-1;k++)putPayload(state.days[movable[k]],contentPayload(state.days[movable[k+1]]));if(movable.length)blankPayload(state.days[movable[movable.length-1]]);state.days[idx].control='Regular Day';state.days[idx].shift_applied=false}
-function applyDayActions(){for(let i=0;i<state.days.length;i++){const d=state.days[i];if(d.control==='Bump Back'){applyBumpBackAt(i);continue}if(d.control==='Insert Blank Day'||d.control==='Bump Forward'){applyInsertAt(i);continue}if(SHIFTING.has(d.control)&&!d.shift_applied){let displaced=contentPayload(d);blankPayload(d);d.shift_applied=true;for(let j=i+1;j<state.days.length;j++){const target=state.days[j];if(BLOCKED.has(target.control))continue;const next=contentPayload(target);putPayload(target,displaced);displaced=next}}}}
-async function postJSON(path,payload){const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});const data=await r.json();if(!r.ok||!data.ok)throw new Error(data.error||`HTTP ${r.status}`);return data}
-async function publishAgendas(){applyDayActions();renderEditor();renderPreview();if(!connected){setStatus('Open Teacher Tools.app before applying changes.','warn');return}try{const data=await postJSON('/api/publish',{state});state=data.state;setStatus(data.message,'good');renderEditor();renderPreview()}catch(e){setStatus(`Agenda update failed: ${e.message}`,'bad')}}
-async function runGitAction(path,label){if(!connected){setStatus('Open Teacher Tools.app before using GitHub actions.','warn');return}const pull=document.getElementById('gitPullBtn'),push=document.getElementById('gitPushBtn');pull.disabled=true;push.disabled=true;setStatus(`${label} running...`,'warn');try{const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});const data=await r.json();if(!r.ok||!data.ok)throw new Error(data.message||data.error||`HTTP ${r.status}`);setStatus(data.message,'good')}catch(e){setStatus(`${label} stopped: ${e.message}`,'bad')}finally{pull.disabled=false;push.disabled=false}}
-function fallbackState(){const raw=[['2026-09-28','Monday','9/28','1.3: Fn Families',2],['2026-09-29','Tuesday','9/29','1.3: Fn Families',3],['2026-09-30','Wednesday','9/30','1.4: Exprs & Struct.',1],['2026-10-01','Thursday','10/1','1.4: Exprs & Struct.',2],['2026-10-02','Friday','10/2','1.4: Exprs & Struct.',3],['2026-10-05','Monday','10/5','1.5: Eqns as Models',1],['2026-10-06','Tuesday','10/6','1.5: Eqns as Models',2],['2026-10-07','Wednesday','10/7','1.5: Eqns as Models',3],['2026-10-08','Thursday','10/8','',0],['2026-10-09','Friday','10/9','2.1: Rate of Change',1]];return{schema:'algebra-planner-state/0.4',school_year:'2026-2027',current_week_index:0,days:raw.map((x,i)=>({week_index:Math.floor(i/5),date:x[0],dow:x[1],display_date:x[2],control:'Regular Day',section:x[3],day_number:x[4],student_slots:defaultSlots(x[4]),custom_slots:[{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''},{label:'',url:''}],legacy_items:[],locked_past:false,shift_applied:false,assessment_unit:0}))}}
-function fallbackRegistry(){const sections=['1.3: Fn Families','1.4: Exprs & Struct.','1.5: Eqns as Models','2.1: Rate of Change'];const r={sections,resources:{},teacher:{},welcome:{},shared:{section:{},summative:{}}};for(const s of sections){r.resources[s]={};r.teacher[s]={};r.welcome[s]={}}return r}
-async function bootstrap(){try{if(location.protocol==='file:')throw new Error('file mode');const r=await fetch('/api/bootstrap',{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();state=data.state;registry=data.registry;RESOURCE_OPTIONS=data.options.resources;DAY_OPTIONS=dayControlOptions(data.options.controls);connected=true;setStatus('Local Planner companion connected. Current week changes only when you set it.','good')}catch(e){state=fallbackState();registry=fallbackRegistry();connected=false;document.getElementById('applyBtn').disabled=true;setStatus('Preview mode only. Open Teacher Tools.app to start the local services.','warn')}renderPreview();renderEditor()}
-document.getElementById('applyBtn').addEventListener('click',publishAgendas);document.getElementById('undoBtn').addEventListener('click',async()=>{if(!connected){location.reload();return}try{const r=await fetch('/api/bootstrap',{cache:'no-store'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const data=await r.json();state=data.state;registry=data.registry;RESOURCE_OPTIONS=data.options.resources;DAY_OPTIONS=dayControlOptions(data.options.controls);renderPreview();renderEditor();setStatus('Unsaved changes undone. Returned to the last saved Planner.','good')}catch(e){setStatus(`Undo failed: ${e.message}`,'bad')}});document.getElementById('jumpBtn').addEventListener('click',()=>document.getElementById(`week-${currentWeek()}`)?.scrollIntoView({behavior:'smooth',block:'start'}));bootstrap();
 </script>
 <a id="local-tools-back-to-top" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" aria-label="Back to top" style="position:fixed;right:22px;bottom:22px;z-index:9999;background:#173f73;color:#fff;text-decoration:none;font-weight:900;border-radius:999px;padding:12px 16px;box-shadow:0 6px 18px rgba(0,0,0,.22)">↑ Top</a>
 

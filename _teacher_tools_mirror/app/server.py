@@ -13,7 +13,7 @@ ROOT=HERE.parent
 sys.path.insert(0,str(ROOT/'planner'))
 import planner_server as base
 
-VERSION='1.2-planner-bump-forward'
+VERSION='1.3-planner-seven-row-drive-links'
 PHYSICS_ROOT=base.PHYSICS_ROOT
 PUBLIC_BASE=base.PUBLIC_BASE
 PRACTICE_CFG=ROOT/'practice_builder'/'sections'

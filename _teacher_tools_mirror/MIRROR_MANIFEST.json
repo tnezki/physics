@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "_physics_teacher_tools",
   "destination": "physics/_teacher_tools_mirror",
-  "file_count": 34,
+  "file_count": 36,
   "files": [
     {
       "path": "Physics Tools.app/Contents/Info.plist",
@@ -36,8 +36,8 @@
     },
     {
       "path": "app/server.py",
-      "bytes": 29734,
-      "sha256": "212d485f0ea85aaabea6b99ecbc7db7e9009d7f35a70d0d128a750297c19eb31"
+      "bytes": 29743,
+      "sha256": "4e5135001c209ba4bcd9b3a233b5301b2567534490fed56fd7a8754043b5b5d5"
     },
     {
       "path": "fixtures/fake_students.json",
@@ -76,18 +76,28 @@
     },
     {
       "path": "planner/index.html",
-      "bytes": 33728,
-      "sha256": "95dd846c44bb5cb993e07c1da82022172b636083a543a983071c8c519bb44b04"
+      "bytes": 26444,
+      "sha256": "8ecbe5da7861183483ba0411ff94a6a0151a022ada14758738ed7610ae344f1e"
+    },
+    {
+      "path": "planner/lesson_catalog.json",
+      "bytes": 4622,
+      "sha256": "1d25222b80e5108709d361fb308f6f27b6015703ff222ce56fc5ce2658ad5805"
     },
     {
       "path": "planner/planner_server.py",
-      "bytes": 76023,
-      "sha256": "93975763e3cd937576fb3f7683c21c49933dabaf2e59bf206398a5d14f4bf49b"
+      "bytes": 84559,
+      "sha256": "8b53355420e121aaffd140fa1885c15dd8fb576b84e0f72ad98cac495233a510"
     },
     {
       "path": "planner/planner_state.json",
       "bytes": 170691,
-      "sha256": "5db041efc602393ae03556593bccf620c1d8125f71cadf306ea6994840dfde8f"
+      "sha256": "3d2e5c7eb3cac7854dc7a3ddce082ba624486eaa2582f4615d8dd912b8bd2a09"
+    },
+    {
+      "path": "planner/tests/test_seven_row_agenda.py",
+      "bytes": 2198,
+      "sha256": "66c91982cc3560a9c5ea9051e31390c87e11a8bbb7ecb0d618b92c8f214b70ee"
     },
     {
       "path": "practice_builder/index.html",

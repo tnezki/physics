@@ -18,7 +18,7 @@ from urllib.parse import quote, unquote, urlparse
 
 HOST = "127.0.0.1"
 PORT = 8768
-PLANNER_VERSION = "0.1.1"
+PLANNER_VERSION = "0.2.0-simple-agenda"
 HERE = Path(__file__).resolve().parent
 TEACHER_TOOLS_ROOT = HERE.parent
 GITHUB_ROOT = HERE.parents[1]
@@ -29,6 +29,7 @@ SHARED_PHYSICS_ROOT = SHARED_ROOT / "physics"
 SHARED_INDEX = SHARED_PHYSICS_ROOT / "index.html"
 PRIVATE_ARTIFACTS = SHARED_PHYSICS_ROOT / "data" / "private_artifacts.json"
 STATE_PATH = HERE / "planner_state.json"
+LESSON_CATALOG_PATH = HERE / "lesson_catalog.json"
 QUICK_CHECK_LIBRARY = PHYSICS_ROOT / "quick_check____htq5855" / "library.json"
 PUBLIC_BASE = "https://tnezki.github.io/physics/"
 
@@ -1064,6 +1065,27 @@ def validate_state(state: dict) -> None:
                 raise ValueError(f"days[{i}].custom_slots[{ci}] must be an object")
             if not isinstance(item.get("label", ""), str) or not isinstance(item.get("url", ""), str):
                 raise ValueError(f"days[{i}].custom_slots[{ci}] must contain string label/url")
+        if "lesson_choice" in d:
+            choice = d["lesson_choice"]
+            allowed = {x["id"] for x in lesson_catalog()}
+            if not isinstance(choice, str) or (choice not in allowed and choice not in {"", "__custom__"}):
+                raise ValueError(f"days[{i}] has invalid lesson selection")
+        for field in ("lesson_custom",):
+            obj = d.get(field, {})
+            if not isinstance(obj, dict) or any(not isinstance(obj.get(k, ""), str) or len(obj.get(k, "")) > 1000 for k in ("label", "short_name", "url", "teacher_url")):
+                raise ValueError(f"days[{i}] has invalid {field}")
+            for key in ("url", "teacher_url"):
+                if obj.get(key) and not normalize_custom_url(obj[key]):
+                    raise ValueError(f"days[{i}] has unsafe {field}.{key}")
+        if "extra_rows" in d:
+            extras = d["extra_rows"]
+            if not isinstance(extras, list) or len(extras) != 4:
+                raise ValueError(f"days[{i}] requires four optional rows")
+            for row in extras:
+                if not isinstance(row, dict) or any(not isinstance(row.get(k,""),str) or len(row.get(k,""))>1000 for k in ("label","url")):
+                    raise ValueError(f"days[{i}] has invalid extra row")
+                if row.get("url") and not normalize_custom_url(row["url"]):
+                    raise ValueError(f"days[{i}] has unsafe extra row URL")
         control = d.get("control", "Regular Day")
         if control not in DAY_CONTROLS:
             raise ValueError(f"days[{i}] has unsupported control: {control}")
@@ -1466,11 +1488,141 @@ def build_teacher_agenda(state: dict) -> str:
 </html>'''
 
 
+
+# Simplified 7-row public Physics agenda plus one teacher-only guide row.
+# The source URLs are actual verified Google Drive file IDs, never paths guessed from names.
+def lesson_catalog() -> list[dict]:
+    if not LESSON_CATALOG_PATH.is_file():
+        return []
+    data = json.loads(LESSON_CATALOG_PATH.read_text(encoding="utf-8"))
+    records = data.get("lessons", [])
+    if not isinstance(records, list):
+        raise ValueError("Lesson catalog must contain a lessons list")
+    seen = set()
+    for item in records:
+        if not isinstance(item, dict) or not item.get("id") or item["id"] in seen:
+            raise ValueError("Invalid or duplicate lesson catalog ID")
+        seen.add(item["id"])
+        for field in ("student_url", "teacher_url"):
+            u = item.get(field, "")
+            if u and (not isinstance(u, str) or not u.startswith("https://drive.google.com/file/d/")):
+                raise ValueError("Lesson catalog contains a non-Drive PDF URL")
+    return records
+
+
+def agenda_lesson_choice(day: dict, lessons: list[dict] | None = None) -> tuple[str, dict]:
+    lessons = lessons if lessons is not None else lesson_catalog()
+    catalog = {x["id"]: x for x in lessons}
+    custom = day.get("lesson_custom") if isinstance(day.get("lesson_custom"), dict) else {}
+    if "lesson_choice" in day:
+        choice = str(day.get("lesson_choice") or "")
+        return choice if choice in catalog or choice in {"", "__custom__"} else "", custom
+
+    # Adopt existing teacher-entered first-slot links without editing older state.
+    slots = day.get("student_slots") or []
+    customs = day.get("custom_slots") or []
+    if slots and slots[0] == "Custom Item" and customs and isinstance(customs[0], dict):
+        old = customs[0]
+        url = str(old.get("url") or "").strip()
+        label = str(old.get("label") or "").strip()
+        for item in lessons:
+            if url and url.split("?", 1)[0].rstrip("/") in [u.split("?", 1)[0].rstrip("/") for u in ([item.get("student_url", "")] + item.get("legacy_student_urls", []))]:
+                return item["id"], {}
+        match = re.search(r"(?<!\d)(\d{1,2})[._](\d{1,2})[._](\d{1,2})(?!\d)", label)
+        if match:
+            key = ".".join(str(int(n)) for n in match.groups())
+            if key in catalog:
+                return key, {}
+        if re.search(r"reading\s+and\s+consolidation", label, re.I) and "5.1.R" in catalog:
+            return "5.1.R", {}
+        if label and label not in {".", ",", ";"}:
+            return "__custom__", {"label": label, "short_name": label, "url": url, "teacher_url": ""}
+    return "", {}
+
+
+def agenda_day_rows(day: dict, lessons: list[dict] | None = None) -> tuple[list[dict], dict]:
+    lessons = lessons if lessons is not None else lesson_catalog()
+    choice, custom = agenda_lesson_choice(day, lessons)
+    match = next((x for x in lessons if x.get("id") == choice), None)
+    title = ""
+    lesson_item = {"label": "", "url": None, "kind": ""}
+    teacher_item = {"label": "", "url": None, "kind": ""}
+    if match:
+        title = str(match.get("short_name") or match.get("label") or choice)
+        lesson_item = {"label": str(match.get("label") or choice), "url": match.get("student_url") or None, "kind": "lesson"}
+        teacher_item = {"label": "Teacher Guide", "url": match.get("teacher_url") or None, "kind": ""}
+    elif choice == "__custom__":
+        title = str(custom.get("short_name") or custom.get("label") or "").strip()
+        lesson_item = {"label": str(custom.get("label") or "").strip(), "url": normalize_custom_url(custom.get("url")), "kind": "lesson"}
+        teacher_item = {"label": "Teacher Guide", "url": normalize_custom_url(custom.get("teacher_url")), "kind": ""}
+    elif "lesson_choice" not in day:
+        # Keep historical labels visible until the teacher chooses a new lesson.
+        title = str(day.get("section") or "").strip()
+    if str(day.get("control") or "Regular Day") in BLOCKED_CONTROLS:
+        title = str(day.get("control"))
+        lesson_item = {"label": "", "url": None, "kind": ""}
+        teacher_item = {"label": "", "url": None, "kind": ""}
+
+    rows = [{"label": title, "url": None, "kind": "lesson"}, lesson_item]
+    extras = day.get("extra_rows")
+    if not isinstance(extras, list):
+        extras = []  # New layout begins with blank optional rows, even for historical resource slots.
+    for i in range(4):
+        x = extras[i] if i < len(extras) and isinstance(extras[i], dict) else {}
+        rows.append({"label": str(x.get("label") or "").strip(), "url": normalize_custom_url(x.get("url")), "kind": ""})
+    assert len(rows) == 6
+    return rows, teacher_item
+
+
+def render_week(state: dict, week_index: int, display_class: str, featured: bool = False) -> str:
+    days = [d for d in state["days"] if int(d.get("week_index", 0)) == week_index][:5]
+    if len(days) < 5:
+        return ""
+    if featured:
+        headers = "".join(f"<th><span class='dow'>{escape(d['dow'])}</span><span class='date'>{escape(d['display_date'])}</span></th>" for d in days)
+    else:
+        headers = "".join(f"<th><div class='date'>{escape(d['display_date'])}</div></th>" for d in days)
+    lesson_list = lesson_catalog()
+    per_day = [agenda_day_rows(d, lesson_list)[0] for d in days]
+    rows=[]
+    for ri in range(6):
+        cells=[]
+        for items in per_day:
+            item = items[ri]
+            cells.append(f"<td>{render_item(item)}</td>" if item.get("label") else "<td></td>")
+        rows.append(f'<tr class="agenda-row-{ri + 2}">'+''.join(cells)+'</tr>')
+    return f'<tbody class="week-block {display_class}"><tr class="week-head">{headers}</tr>{"".join(rows)}</tbody>'
+
+
+def render_teacher_week(state: dict, week_index: int, display_class: str, featured: bool = False) -> str:
+    days = [d for d in state["days"] if int(d.get("week_index", 0)) == week_index][:5]
+    if len(days) < 5:
+        return ""
+    if featured:
+        headers = "".join(f"<th>{escape(d['dow'])}<span class='date'>{escape(d['display_date'])}</span></th>" for d in days)
+    else:
+        headers = "".join(f"<th><span class='date'>{escape(d['display_date'])}</span></th>" for d in days)
+    lesson_list = lesson_catalog()
+    items = [agenda_day_rows(d, lesson_list) for d in days]
+    rows=[]
+    for ri in range(6):
+        cells=[]
+        for day_rows, _ in items:
+            item = day_rows[ri]
+            cells.append(f"<td>{render_item(item, 'item')}</td>" if item.get("label") else "<td></td>")
+        rows.append(f'<tr class="{"lesson-row" if ri == 0 else "student-row"}">'+''.join(cells)+'</tr>')
+    guide_cells=[]
+    for _, teacher in items:
+        guide_cells.append(f"<td>{render_teacher_link({'label':'Teacher Guide','url':teacher['url'],'role':'Guide'})}</td>" if teacher.get('url') else "<td></td>")
+    rows.append('<tr class="teacher-row guide-only">'+''.join(guide_cells)+'</tr>')
+    return f'<tbody class="week-block {display_class}"><tr class="week-head">{headers}</tr>{"".join(rows)}</tbody>'
+
 def bootstrap_payload() -> dict:
     state = get_state()
     return {
         "state": state,
         "registry": build_registry(state),
+        "lessons": lesson_catalog(),
         "options": {"resources": STUDENT_RESOURCE_OPTIONS, "controls": EDITOR_DAY_CONTROLS},
     }
 
